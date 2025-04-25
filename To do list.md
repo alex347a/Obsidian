@@ -42,4 +42,4 @@
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
-- [ ] Få derefter Obsidian til at virke på Linux
+- [x] Få derefter Obsidian til at virke på Linux ✅ 2025-04-25
