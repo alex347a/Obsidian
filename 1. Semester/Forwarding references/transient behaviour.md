@@ -1,0 +1,1 @@
+[[Capacitor#transient behaviour ( capacitor )]]

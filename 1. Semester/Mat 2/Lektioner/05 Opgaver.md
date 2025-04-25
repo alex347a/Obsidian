@@ -1,0 +1,1 @@
+![[05 Opgaver Den inverse og egenværdiproblemer.pdf]]

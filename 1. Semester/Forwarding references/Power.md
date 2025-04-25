@@ -1,0 +1,1 @@
+[[Power (effekt) and power dissipation (effekttab)]]

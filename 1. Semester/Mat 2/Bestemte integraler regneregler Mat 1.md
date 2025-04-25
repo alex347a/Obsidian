@@ -1,0 +1,1 @@
+![[Bestemte integraler regneregler.png]]

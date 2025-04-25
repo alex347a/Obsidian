@@ -1,0 +1,15 @@
+These circuits use operational amplifiers to perform mathematical integration (accumulating input signal over time) and differentiation (finding the rate of change of the input signal).
+- **Key Features**:
+    - **Integrator**:
+        - Produces an output proportional to the time integral of the input [[Voltage]].
+        - Typically consists of an op-amp with a [[Capacitor]] in the feedback path and a [[Resistor]] at the input.
+        - Frequency Response: Low-pass behaviour, allowing low frequencies to pass while attenuating high frequencies.
+        - **Applications**: Analog computation, generating ramp signals, and signal smoothing.
+    - **Differentiator**:
+        - Produces an output proportional to the rate of change (derivative) of the input [[Voltage]].
+        - Typically consists of an op-amp with a [[Resistor]] in the feedback path and a [[Capacitor]] at the input.
+        - Frequency Response: High-pass behaviour, amplifying high frequencies.
+        - **Applications**: Edge detection in signal processing and waveform shaping.
+- **Design Considerations**:
+    - Stability: Ideal [[Differentiator]] can amplify noise; practical designs often include compensations.
+    - Frequency Limits: Real-world components limit the frequency range over which these circuits operate effectively.

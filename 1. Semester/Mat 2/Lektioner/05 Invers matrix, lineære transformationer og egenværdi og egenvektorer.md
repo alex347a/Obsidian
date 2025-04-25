@@ -1,0 +1,1 @@
+![[05 Invers matrix, lineære transformationer og egenværdi og egenvektorer.pdf]]

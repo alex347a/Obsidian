@@ -1,0 +1,4 @@
+Electrons are in orbitals (shells); they are in circles, with 2 electrons in the innermost shell and 8 in the next. The first two are in circles because the distance to the center must be the same everywhere as the electrons move. This is because this is the structure that uses the least [[Energy]]. The next ones are in p-orbitals (8s). There can be 8 electrons in each shell; 3 in the 8s. In a [[Conductor]], the electrons can move because they share them. In an [[Insulator]], the orbitals are so strong that the electrons do not have enough [[Energy]] to break free. In a [[Semiconductor]], they are semi-fixed.  
+The force depends on the inverse square law of distance.  
+$$\vec{F} = \frac{1}{r^2}$$  
+It becomes harder and harder to move more electrons because there will be a greater [[Voltage]] difference.

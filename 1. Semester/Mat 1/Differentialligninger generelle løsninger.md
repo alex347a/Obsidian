@@ -1,0 +1,1 @@
+![[Differentialligniner generelle løsninger.png]]

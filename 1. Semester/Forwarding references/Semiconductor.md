@@ -1,0 +1,1 @@
+[[Conductors (ledere), superconductors (superledere) insulators and semiconductors (halvledere)]]

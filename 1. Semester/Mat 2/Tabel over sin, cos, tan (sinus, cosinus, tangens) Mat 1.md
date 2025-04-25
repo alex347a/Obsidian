@@ -1,0 +1,1 @@
+![[Sinus,cosinus,tangens tabel.png]]

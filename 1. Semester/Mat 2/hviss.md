@@ -1,0 +1,1 @@
+Hvis og kun hvis

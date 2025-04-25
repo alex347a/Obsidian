@@ -1,0 +1,1 @@
+![[11 Opgaver taylorrækker og fejlvurdering.pdf]]
