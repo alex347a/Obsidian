@@ -131,5 +131,3 @@ Løs SQL opgaver
 ![[Begrænsninger af antal grupper.png]]
 ### GROUP BY med HAVING
 ![[GROUP BY med HAVING.png]]
-
-Lille test til at se om git opdatere.
