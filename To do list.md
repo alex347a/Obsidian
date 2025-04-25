@@ -41,5 +41,5 @@
 - [ ] Færddiggør SQL opgaver til lektion 10
 
 Obsidian:
-- [ ] Fix obsidian, sådan at det virker med git
+- [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
 - [ ] Få derefter Obsidian til at virke på Linux
