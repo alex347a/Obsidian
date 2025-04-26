@@ -132,12 +132,19 @@ $$
 \theta_{1} = \frac{23 \pi}{30} \text{ rad}
 $$
 $$
-\theta_{2} = 
+\theta_{2} = \frac{30 \pi}{60} - \frac{23\pi}{60} = \frac{7\pi}{60} \text{ rad}
+$$
+$$
+\theta_{new} = 
+\begin{bmatrix}
+\frac{23\pi}{30} \\ 
+\frac{7\pi}{60}
+\end{bmatrix}
+\text{ rad}
 $$
 
-
-
 (b) Calculate the resulting Jacobian. 
+So now I 
 
 
 (c) Calculate the Cartesian-space end-effector velocity at this time.
