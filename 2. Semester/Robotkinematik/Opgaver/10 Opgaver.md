@@ -144,7 +144,17 @@ $$
 $$
 
 (b) Calculate the resulting Jacobian. 
-So now I 
+So now I have to use the $\theta_{new}$ joint angles to compute the jacobian.
+Earlier I calculated the jacobian to be:
+$$
+J = 
+\begin{bmatrix}
+-L_{1} \sin(\theta_{1}) - L_{2} \sin(\theta_{1} + \theta_{2}) & -L_{2} \sin(\theta_{1} + \theta_{2}) \\ 
+L_{1} \cos(\theta_{1}) + L_{2} \cos(\theta_{1} + \theta_{2}) & L_{2} \cos(\theta_{1} + \theta_{2})
+\end{bmatrix}
+$$
+
+Look in MATLAB *10_Opgaver.mlx for the last two calculations.
 
 
 (c) Calculate the Cartesian-space end-effector velocity at this time.
