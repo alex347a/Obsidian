@@ -98,7 +98,14 @@ I can calculate the new joint configuration at that point in time using the form
 $$
 \theta_{new} = \theta_{initial} + \dot{\theta} \cdot t
 $$
-
+The initial joint angle was:
+$$
+\theta_{initial} = 
+\begin{bmatrix}
+0 \\ 
+\frac{\pi}{2}
+\end{bmatrix}
+$$
 Joint speed was:
 $$
 \dot{\theta} = 
@@ -107,6 +114,27 @@ $$
 - \frac{\pi}{6} 
 \end{bmatrix}
 $$
+For the time $t = 2.3 s$
+I insert the values into the formula:
+$$
+\begin{bmatrix}
+0 \\ 
+\frac{\pi}{2}
+\end{bmatrix}
++ 
+\begin{bmatrix}
+\frac{\pi}{3} \\
+- \frac{\pi}{6} 
+\end{bmatrix}
+\cdot 2.3
+$$
+$$
+\theta_{1} = \frac{23 \pi}{30} \text{ rad}
+$$
+$$
+\theta_{2} = 
+$$
+
 
 
 (b) Calculate the resulting Jacobian. 
