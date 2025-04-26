@@ -94,6 +94,19 @@ Dermed bliver $\dot{x} = \begin{bmatrix} \frac{7\pi}{60} \\ \frac{\pi}{6}\end{bm
    
 3. If the robot continues moving at this joint speed for t = 2.3 s: 
 (a) Calculate the new joint configuration at this point in time. 
+I can calculate the new joint configuration at that point in time using the formula:
+$$
+\theta_{new} = \theta_{initial} + \dot{\theta} \cdot t
+$$
+
+Joint speed was:
+$$
+\dot{\theta} = 
+\begin{bmatrix}
+\frac{\pi}{3} \\
+- \frac{\pi}{6} 
+\end{bmatrix}
+$$
 
 
 (b) Calculate the resulting Jacobian. 
