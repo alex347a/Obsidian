@@ -154,7 +154,11 @@ L_{1} \cos(\theta_{1}) + L_{2} \cos(\theta_{1} + \theta_{2}) & L_{2} \cos(\theta
 \end{bmatrix}
 $$
 
-Look in MATLAB *10 Opgaver.mlx for the last two calculations.
+Look in MATLAB *10 Opgaver.mlx* for the calculation:
 ![[10 3b MATLAB.png]]
 
 (c) Calculate the Cartesian-space end-effector velocity at this time.
+To calculate the velocity in Cartesian-space I have to multiply the new jacobian with the angles:
+$$
+\dot{x} = J_{new} \cdot \dot{\theta} = 
+$$
