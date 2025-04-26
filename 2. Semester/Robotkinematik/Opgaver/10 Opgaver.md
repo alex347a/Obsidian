@@ -154,7 +154,7 @@ L_{1} \cos(\theta_{1}) + L_{2} \cos(\theta_{1} + \theta_{2}) & L_{2} \cos(\theta
 \end{bmatrix}
 $$
 
-Look in MATLAB *10_Opgaver.mlx for the last two calculations.
+Look in MATLAB *10 Opgaver.mlx for the last two calculations.
 
 
 (c) Calculate the Cartesian-space end-effector velocity at this time.
