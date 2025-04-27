@@ -164,4 +164,3 @@ $$
 $$
 ![[10 3c MATLAB.png]]
 
-DER ER FLERE OPGAVER
