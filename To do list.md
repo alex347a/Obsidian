@@ -38,7 +38,7 @@
 		- [ ] Brugsmønstre
 		- [ ] Domain model
 		- [ ] Class diagram
-- [ ] Færddiggør SQL opgaver til lektion 10
+- [x] Færddiggør SQL opgaver til lektion 10 ✅ 2025-04-25
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
