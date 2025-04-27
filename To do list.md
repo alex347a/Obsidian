@@ -40,7 +40,8 @@
 		- [ ] Domain model
 		- [ ] Class diagram
 - [x] Færddiggør SQL opgaver til lektion 10 ✅ 2025-04-25
-- [ ] Review pointgivende 📅 2025-05-08 
+- [x] Review pointgivende 📅 2025-05-08 ✅ 2025-04-27
+- [ ] 
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
