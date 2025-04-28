@@ -89,6 +89,7 @@ $$
 Den har den modsatte retning af tværvektoren?????? eller sådan noget
 
 #### Eksempel
+Her er det ikke C'erne vi regner på, det er de stykker som vi tager integralerne af. Det er derfor vi slutter med at plusse alle I'erne, som er integrales værdier.
 $$
 \begin{align*}
 w &=  (x + 3y)^{2} + 3x\\
@@ -143,7 +144,13 @@ I_{2} &= \int_{\frac{\pi}{2}} ^{\pi}
 \begin{pmatrix}
 4 \cos(t)\\
 4 \sin(t)
-\end{pmatrix}
+\end{pmatrix}\\
+424
+&= 4 \int_\frac{\pi}{2} ^{\pi} (8 + 64 \sin^{2}(t) + 48 \sin(t) \cos(t) + 3 \cos(t)) \, dt\\
+&= 4 \int_\frac{\pi}{2}^{\pi} 8 + 64 \frac{1}{2} (1 - \cos(2t)) + 48 \sin(t) \cos(t) + 3 \cos(t) \, dt\\
+&= 80 \pi - 108\\
+I_{1} + I_{2} + I_{3} &= 60 + 48 + 80 \pi - 108\\
+&= 80 \pi
 \end{align*}
 $$
 $$
