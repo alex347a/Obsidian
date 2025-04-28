@@ -19,11 +19,14 @@ $$
 \int_{x^{2}} ^{x} 2xy \, dy = [x y^{2}]_{x^{2}}^{x} &= x\cdot x^{2} - (x \cdot x^{4})\\
 &= x^{3} - x^{5}\\
 \text{udregner det venstre integrale:}\\
-\int_{0}^{1} 1  \, dx &= [x]_{x^{2}} ^{x} = x - x^{2}\\
+\int_{0}^{1} 1  \, dx = [x]_{x^{2}} ^{x} &=  x - x^{2}\\
 \text{Sætter de to resultater ind:}\\
 x - x^{2} - (x^{3} - x^{5}) &= x-x^{2} - x^{3} + x^{5}\\
 \text{Indsætter i det ydre integrale}\\
-\int_{0}^{1} x-x^{2} x - x^{3} + x^{5}
+\int_{0}^{1} x - x^{2} - x^{3} + x^{5} \, dx &= \left[\frac{1}{2} x^{2} - \frac{1}{3} x^{3} - \frac{1}{4} x^{4} + \frac{1}{6} x^{6}\right]_{0}^{1}\\
+&= \frac{1}{2} - \frac{1}{3} - \frac{1}{4} + \frac{1}{6}\\
+&= \frac{6}{12} - \frac{4}{12} - \frac{3}{12} + \frac{2}{12}\\
+&= \underline{\underline{\frac{1}{12}}}
 \end{align*}
 $$
 ### 10.3.9
