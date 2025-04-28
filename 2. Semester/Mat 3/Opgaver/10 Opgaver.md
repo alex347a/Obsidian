@@ -12,8 +12,16 @@ Find the center of gravity $(\overline{x}, \overline{y})$ of a mass of density $
 ![[10.3.15 opgavetegning.png]]
 
 ### 10.4.1
+Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
+$$
+F = [y,-x], C \text{ the circle } x^{2} + y^{2} = \frac{1}{4}
+$$
 
 ### 10.4.3
+Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
+$$
+F = [x^{2} e^{y}, y^{2} e^{x}], r \text{ the rectangle } x^{2} + y^{2} = \frac{1}{4}
+$$
 
 ### 10.4.9
 
