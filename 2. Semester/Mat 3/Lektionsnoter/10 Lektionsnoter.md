@@ -144,10 +144,9 @@ I_{2} &= \int_{\frac{\pi}{2}} ^{\pi}
 \begin{pmatrix}
 4 \cos(t)\\
 4 \sin(t)
-\end{pmatrix}\\
-424
+\end{pmatrix} 4 \, dt\\
 &= 4 \int_\frac{\pi}{2} ^{\pi} (8 + 64 \sin^{2}(t) + 48 \sin(t) \cos(t) + 3 \cos(t)) \, dt\\
-&= 4 \int_\frac{\pi}{2}^{\pi} 8 + 64 \frac{1}{2} (1 - \cos(2t)) + 48 \sin(t) \cos(t) + 3 \cos(t) \, dt\\
+&= 4 \int_\frac{\pi}{2}^{\pi} 8 + 64 \cdot \frac{1}{2} (1 - \cos(2t)) + 48 \sin(t) \cos(t) + 3 \cos(t) \, dt\\
 &= 80 \pi - 108\\
 I_{1} + I_{2} + I_{3} &= 60 + 48 + 80 \pi - 108\\
 &= 80 \pi
