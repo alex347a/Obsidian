@@ -94,9 +94,73 @@ Dermed bliver $\dot{x} = \begin{bmatrix} \frac{7\pi}{60} \\ \frac{\pi}{6}\end{bm
    
 3. If the robot continues moving at this joint speed for t = 2.3 s: 
 (a) Calculate the new joint configuration at this point in time. 
-
+I can calculate the new joint configuration at that point in time using the formula:
+$$
+\theta_{new} = \theta_{initial} + \dot{\theta} \cdot t
+$$
+The initial joint angle was:
+$$
+\theta_{initial} = 
+\begin{bmatrix}
+0 \\ 
+\frac{\pi}{2}
+\end{bmatrix}
+$$
+Joint speed was:
+$$
+\dot{\theta} = 
+\begin{bmatrix}
+\frac{\pi}{3} \\
+- \frac{\pi}{6} 
+\end{bmatrix}
+$$
+For the time $t = 2.3 s$
+I insert the values into the formula:
+$$
+\begin{bmatrix}
+0 \\ 
+\frac{\pi}{2}
+\end{bmatrix}
++ 
+\begin{bmatrix}
+\frac{\pi}{3} \\
+- \frac{\pi}{6} 
+\end{bmatrix}
+\cdot 2.3
+$$
+$$
+\theta_{1} = \frac{23 \pi}{30} \text{ rad}
+$$
+$$
+\theta_{2} = \frac{30 \pi}{60} - \frac{23\pi}{60} = \frac{7\pi}{60} \text{ rad}
+$$
+$$
+\theta_{new} = 
+\begin{bmatrix}
+\frac{23\pi}{30} \\ 
+\frac{7\pi}{60}
+\end{bmatrix}
+\text{ rad}
+$$
 
 (b) Calculate the resulting Jacobian. 
+So now I have to use the $\theta_{new}$ joint angles to compute the jacobian.
+Earlier I calculated the jacobian to be:
+$$
+J = 
+\begin{bmatrix}
+-L_{1} \sin(\theta_{1}) - L_{2} \sin(\theta_{1} + \theta_{2}) & -L_{2} \sin(\theta_{1} + \theta_{2}) \\ 
+L_{1} \cos(\theta_{1}) + L_{2} \cos(\theta_{1} + \theta_{2}) & L_{2} \cos(\theta_{1} + \theta_{2})
+\end{bmatrix}
+$$
 
+Look in MATLAB *10 Opgaver.mlx* for the calculation:
+![[10 3b MATLAB.png]]
 
 (c) Calculate the Cartesian-space end-effector velocity at this time.
+To calculate the velocity in Cartesian-space I have to multiply the new Jacobian with the angles:
+$$
+\dot{x} = J_{new} \cdot \dot{\theta}
+$$
+![[10 3c MATLAB.png]]
+

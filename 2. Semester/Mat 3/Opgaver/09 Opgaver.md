@@ -1,4 +1,4 @@
-10.1.4 Calculate $\int_{C} F(r) \cdot dr$ for the given data. If F is a force, this gives the work done by the force in the displacement along C. Show the details.
+### 10.1.4 Calculate $\int_{C} F(r) \cdot dr$ for the given data. If F is a force, this gives the work done by the force in the displacement along C. Show the details.
 $$
 F = [xy, x^{2}y^{2}], C \text{ from } (2,0) \text{ straight to } (0,2)
 $$
@@ -58,7 +58,7 @@ $$
 \int_{C} F \cdot dr = - \frac{4}{15}
 $$
 
-10.1.5 Calculate $\int_{C} F(r) \cdot dr$ for the given data. If F is a force, this gives the work done by the force in the displacement along C. Show the details.
+### 10.1.5 Calculate $\int_{C} F(r) \cdot dr$ for the given data. If F is a force, this gives the work done by the force in the displacement along C. Show the details.
 $$
 F = [xy, x^{2}y^{2}], C \text{ the quarter-circle from } (2,0) \text{ to } (0,2) \text{ with center} (0,0)
 $$

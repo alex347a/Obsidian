@@ -15,6 +15,7 @@
 - [x] Læs lektien om forsøget inden kinematik (MEGET VIGTIG) 📅 2025-03-24 ✅ 2025-03-24
 - [x] Lav post-exercise 📅 2025-03-31 ✅ 2025-03-30
 - [x] Pointgivende 2. 📅 2025-04-10 ✅ 2025-04-09
+- [ ] Færddiggør 09 exercises
 - [ ] 10 Exercise 
 
 - [x] Lav mønter ✅ 2025-04-18
@@ -39,6 +40,11 @@
 		- [ ] Domain model
 		- [ ] Class diagram
 - [x] Færddiggør SQL opgaver til lektion 10 ✅ 2025-04-25
+<<<<<<< HEAD
+=======
+- [x] Review pointgivende 📅 2025-05-08 ✅ 2025-04-27
+- [ ] Find ud af det der reflect pointgivende 📅 2025-05-08
+>>>>>>> origin/main
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
