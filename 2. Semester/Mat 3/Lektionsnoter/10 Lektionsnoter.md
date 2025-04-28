@@ -12,7 +12,7 @@ Transformere et fladeintegrale til et linjeintegrale
 Greens: R er et lukket område i xy-planet
 To kontinuerte funktioner $F_{1}(x,y)$ og $F_{2}(x,y)$
 $$
-\iint_{R} \left(\frac{F_{2}}{\partial x} - \frac{F_{1}}{\partial y}\right) \, dx \, dy = \oint_{C}(F_{1} \, dx + F_{2} \, dy)
+\iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dx \, dy = \oint_{C}(F_{1} \, dx + F_{2} \, dy)
 $$
 #### Eksempel
 $$
@@ -54,7 +54,12 @@ sæt $F_{1} = 0$ og $F_{2} = x$
 
 $$
 \begin{align*}
-\iint_{R} \left(\frac{F_{2}}{\partial x} - \frac{F_{1}}{\partial y}\right) \, dx \, dy\\
-\iint_{R}(1-0) \, dx \, dy = A
+\iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dx \, dy\\
+\iint_{R}(1-0) \, dx \, dy = A  &=  \oint_{C} x \, dy \\
+\text{sæt } F_{1} = -y \text{ og } F_{2} &=  0\\
+\iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dx \, dy\\
+\iint_{R} (0+1) \, dx \, dy = A &=  \oint_{C} -y \, dx\\
+\oint_{C} x \, du - \oint y \, dx =  A+A &=  2A\\
+A &= \frac{1}{2} \oint_{C} x \, dy - y \, dx
 \end{align*}
 $$
