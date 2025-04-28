@@ -66,6 +66,8 @@ $$
 ### 10.3.15
 Find the center of gravity $(\overline{x}, \overline{y})$ of a mass of density $f(x,y) = 1$ in the given region R.
 ![[10.3.15 opgavetegning.png]]
+Formlen for en cirkel er $x^{2} + y^{2} = r^{2}$
+Formlen for en halvcirkel er derfor: $y = \sqrt{r^{2} - x^{2}}$ når $-r \leq x \leq r$ og $y \leq 0$
 
 
 ### 10.4.1
