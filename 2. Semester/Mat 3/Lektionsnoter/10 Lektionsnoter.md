@@ -129,7 +129,21 @@ C_{3}: y = 0 \quad \text{ og } ds &= dx\\
 \text{Da }r &= 4:\\
 x &= 4\cos(t)\\
 y &=  4\sin(t)\\
-t \in [\frac{\pi}{2} ,]
+t &\in \left[\frac{\pi}{2} , \pi\right]\\
+ds &= 4 \cdot dt\\
+\overline{r} &= (4 \cos(t), 4 \sin(t))\\
+\overline{r}' &= (-4 \sin(t), 4\cos(t))\\
+\overline{n} &= (4 \cos(t), 4 \sin(t))\\
+I_{2} &= \int_{\frac{\pi}{2}} ^{\pi}
+\begin{pmatrix}
+2 (4 (\cos(t) + 3 \cdot 4 \sin(t)) + 3)\\
+2 (4 \cos(t)) + 3 \cdot 4 \sin(t) \cdot 3)
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+4 \cos(t)\\
+4 \sin(t)
+\end{pmatrix}
 \end{align*}
 $$
 $$
