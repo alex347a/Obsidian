@@ -102,7 +102,22 @@ $$
 \int_{-r}^{r} \frac{r^{2} - x^{2}}{2} \, dx &= \frac{1}{2} \left(\int_{-r}^{r} r^{2} \, dx - \int_{-r}^{r} x^{2} \, dx\right)
 \end{align*}
 $$
-Start
+Starter med det venstre integrale:
+$$
+\int_{-r}^{r} r^{2} \, dx = [r^{2}x]_{-r}^{r} = r^{3} - (-r^{3}) =  2r^{3}
+$$
+Det højre integrale:
+$$
+\int_{-r}^{r} x^{2} \, dx = \left[\frac{1}{3} x^{3}\right]_{-r} ^{r} = \frac{1}{3}r^{3} - \left(-\frac{1}{3} r^{3}\right) = \frac{2}{3} r^{3}
+$$
+Indsætter værdierne af integralerne:
+$$
+\begin{align*}
+\frac{1}{2} \left(\int_{-r}^{r} r^{2} \, dx - \int_{-r}^{r} x^{2} \, dx\right) &= \frac{1}{2}\left(2r^{3} - \frac{2}{3} r^{3}\right)\\
+&= \frac{1}{2}\left(\frac{4}{3} r^{3}\right)\\
+&= \frac{2}{3} r^{3}
+\end{align*}
+$$
 
 ### 10.4.1
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
