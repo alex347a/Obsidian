@@ -46,7 +46,11 @@ $$
 \begin{align*}
 V &= \int_{x=0} ^{3}  \,dx \int_{y=0} ^{2} (4x^{2} + 9y^{2}) \, dy\\
 \text{Regner det indre integrale:}\\
-
+\int_{y=0} ^{2} (4x^{2} + 9y^{2}) \, dy &=  \int_{y=0} ^{2} 4x^{2} \, dy + \int_{y=0} ^{2} 9y^{2} \, dy\\
+\text{Starter med det venstre integrale:}\\
+\int_{y=0} ^{2} 4x^{2} \, dy &= [4x^{2}y]
+\\
+\int_{y=0} ^{2} 9y^{2} \, dy
 \end{align*}
 $$
 
