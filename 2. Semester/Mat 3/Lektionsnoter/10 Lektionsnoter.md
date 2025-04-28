@@ -86,4 +86,13 @@ $$
 =
 \frac{\partial w}{\partial n}
 $$
-Den har den modsatte retning af tværvektoren??????
+Den har den modsatte retning af tværvektoren?????? eller sådan noget
+
+#### Eksempel
+$$
+\begin{align*}
+w &=  (x + 3y)^{2} + 3x\\
+R &= x^{2} + y^{2} \leq 16, \quad x \leq 0, \quad y \geq 0\\
+\oint_{C} = \frac{\partial w}{\partial n} \, ds &=  
+\end{align*}
+$$
