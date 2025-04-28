@@ -93,6 +93,24 @@ $$
 \begin{align*}
 w &=  (x + 3y)^{2} + 3x\\
 R &= x^{2} + y^{2} \leq 16, \quad x \leq 0, \quad y \geq 0\\
-\oint_{C} = \frac{\partial w}{\partial n} \, ds &=  
+\oint_{C} &=  \frac{\partial w}{\partial n} \, ds\\
+\frac{\partial w}{\partial x} &= 2(x+3y) + 3\\
+\frac{\partial w}{\partial y} &= 2(x+3y) \cdot 3\\
+C_{1}: \int_{0}^{4} 
+\begin{pmatrix}
+6y+3\\
+18y
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+\, dy 
+=
+\int_{0} ^{4} (6y + 3) \, dy = [3y^{2} + 3y]_{0}^{4} 
 \end{align*}
+$$
+$$
+C_{1}: x = 0, \quad ds = dy
 $$
