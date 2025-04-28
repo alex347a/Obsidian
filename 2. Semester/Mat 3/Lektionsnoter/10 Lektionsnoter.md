@@ -36,6 +36,16 @@ Fordi det er en cirkel så er det smart at gøre det i polære koordinater.
 
 $$
 \begin{align*}
-
+x &=  r \cdot \cos(t) \rightarrow x' = - r \sin(t)\\
+y &=  r \cdot \sin(t) \rightarrow y' = r \cos(t)
 \end{align*}
+$$
+$$
+\int_{0}^{2\pi} ((r^{2} \sin^{2} (t) - 7 \cdot r \cdot \sin(t)) (- r \sin(t) ) + 2 \cdot r \cdot \cos(t) \cdot r \sin(t) + 2 \cdot r \cos(t)) \cdot r \cos(t)) \, dt
+$$
+$$
+= \int_{0}^{2\pi}(- \sin^{3}(t) + 7\sin^{2}(t) + 2 \cos^{2} \sin(t) + 2 \cos^{2} (t)) \, dt
+$$
+$$
+0 + 7 \pi + 0 + 2\pi
 $$
