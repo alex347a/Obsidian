@@ -13,8 +13,11 @@ Dermed er linjen $y=x$ ovenover parablen $y=x^{2}$ over hele intervallet.
 
 $$
 \begin{align*}
-\int_{0}^{1} \int_{x^{2}}^{x} (1-2xy) \, dy \, dx &= \int_{0}^{1} dx \int_{x^{2}} ^{x} (1-2xy) \, dy\\
-\int_{x^{2}} ^{x} (1-2xy) \, dy &= [1-]\\
+\int_{0}^{1} \int_{x^{2}}^{x} (1-2xy) \, dy \, dx &= \int_{0}^{1} 1 \, dx \int_{x^{2}} ^{x} 2xy \, dy \\
+\int_{x^{2}} ^{x} 2xy \, dy = [x y^{2}]_{x^{2}}^{x} &= x\cdot x^{2} - (x \cdot x^{4})\\
+&= x^{3} - x^{5}\\
+\text{indsætter resultatet i det ydre integrale:}\\
+\int_{0}^{1} 1 \cdot (x^{3} - x^{5}) \, dy &= 
 \end{align*}
 $$
 ### 10.3.9
