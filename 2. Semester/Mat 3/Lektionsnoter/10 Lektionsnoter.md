@@ -60,6 +60,13 @@ $$
 \iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dx \, dy\\
 \iint_{R} (0+1) \, dx \, dy = A &=  \oint_{C} -y \, dx\\
 \oint_{C} x \, du - \oint y \, dx =  A+A &=  2A\\
-A &= \frac{1}{2} \oint_{C} x \, dy - y \, dx
+A &= \frac{1}{2} \oint_{C} (x \, dy - y \, dx) \quad \text{Planimeter}
 \end{align*}
+$$
+#### Laplacian
+$$
+\nabla^{2} = \Delta = \left(\frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\right) = 0
+$$
+$$
+\iint \nabla^{2} w \, dx \, dy = \int \frac{\partial w}{\partial n} \, dn
 $$
