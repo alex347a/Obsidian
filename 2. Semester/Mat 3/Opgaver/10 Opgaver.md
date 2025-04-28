@@ -118,7 +118,17 @@ $$
 &= \frac{2}{3} r^{3}
 \end{align*}
 $$
-
+For at finde $\overline{y}$ skal jeg dividere med arealet A:
+$$
+\begin{align*}
+\frac{\frac{2}{3} r^{3}}{\frac{1}{2} \pi r^{2}} &= \frac{4 r}{3 \pi}
+\end{align*}
+$$
+Derfor bliver tyngdepunktet 
+$$
+(\overline{x}, \overline{y}) = \left(0, \frac{4r}{3\pi}\right)
+$$
+Dette kunne også være beregnet ved at bruge polære koordinater.
 ### 10.4.1
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$y
