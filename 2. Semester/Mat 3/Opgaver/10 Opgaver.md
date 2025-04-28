@@ -82,7 +82,27 @@ $$
 Hvor A er arealet af regionen R.
 
 Arealet for en halvcirkel er givet ved: $A = \frac{1}{2} \pi r^{2}$
-
+Fordi en halvcirkel er symmetrisk omkring y-aksen så bliver integralet over x nødt til at være 0, fordi alle punkterne i den første kvadrant har et tilsvarende punkt for de negative x-værdier, så alle punkterne går ud med hinanden:
+$$
+\overline{x} = \frac{1}{A} \iint_{R} x \, dA = 0
+$$
+Siden det kun er en halvcirkel så gælder det samme ikke for $\overline{y}$ og derfor skal jeg beregne det:
+$$
+\iint_{R} y \, dA = \int_{-r}^{r} \left(\int_{0} ^{\sqrt{r^{2}-x^{2}}}y \, dy\right) \, dx
+$$
+Starter med det indre integrale:
+$$
+\begin{align*}
+\int_{0} ^{\sqrt{r^{2}-x^{2}}}y \, dy = \left[\frac{1}{2} y^{2}\right]_{0} ^{\sqrt{r^{2}-x^{2}}} = \frac{r^{2} - x^{2}}{2}
+\end{align*}
+$$
+Indsætter i det ydre integrale:
+$$
+\begin{align*}
+\int_{-r}^{r} \frac{r^{2} - x^{2}}{2} \, dx &= \frac{1}{2} \left(\int_{-r}^{r} r^{2} \, dx - \int_{-r}^{r} x^{2} \, dx\right)
+\end{align*}
+$$
+Start
 
 ### 10.4.1
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
