@@ -48,9 +48,16 @@ V &= \int_{x=0} ^{3}  \,dx \int_{y=0} ^{2} (4x^{2} + 9y^{2}) \, dy\\
 \text{Regner det indre integrale:}\\
 \int_{y=0} ^{2} (4x^{2} + 9y^{2}) \, dy &=  \int_{y=0} ^{2} 4x^{2} \, dy + \int_{y=0} ^{2} 9y^{2} \, dy\\
 \text{Starter med det venstre integrale:}\\
-\int_{y=0} ^{2} 4x^{2} \, dy &= [4x^{2}y]
-\\
-\int_{y=0} ^{2} 9y^{2} \, dy
+\int_{y=0} ^{2} 4x^{2} \, dy = [4x^{2}y]_{y=0}^{2} &=  8x^{2}\\
+\int_{y=0} ^{2} 9y^{2} \, dy = \left[\frac{1}{3} y^{3}\right]_{y=0}^{2} = 3 \cdot 2^{3} &= 24\\
+\text{Samler de to integraler:}\\
+\int_{y=0} ^{2} 4x^{2} \, dy + \int_{y=0} ^{2} 9y^{2} \, dy &= 8x^{2} + 24\\
+\text{Indsætter i det ydre integrale:}\\
+\int_{x=0} ^{3} 8x^{2} + 24 \, dx = \int_{x=0} ^{3} 8x^{2} \, dx + \int_{x=0} ^{3} 24 \, dx\\
+\text{Starter med det venstre integrale:}\\
+\int_{x=0} ^{3} 8x^{2} \, dx = \left[\frac{8}{3} x^{3}\right]_{x=0}^{3} &= \frac{8}{3} \cdot 27 \\
+\int_{x=0} ^{3} 24 \, dx = [24x]_{x=0} ^{3} = [24 \cdot 3] &= 72\\
+\text{#}
 \end{align*}
 $$
 
