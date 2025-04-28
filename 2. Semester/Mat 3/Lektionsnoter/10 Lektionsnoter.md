@@ -49,7 +49,7 @@ $$
 $$
 0 + 7 \pi + 0 + 2\pi
 $$
-#### Areal
+### Areal
 sæt $F_{1} = 0$ og $F_{2} = x$
 
 $$
@@ -63,10 +63,11 @@ $$
 A &= \frac{1}{2} \oint_{C} (x \, dy - y \, dx) \quad \text{Planimeter}
 \end{align*}
 $$
-#### Laplacian
+### Laplacian
 $$
 \nabla^{2} = \Delta = \left(\frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\right) = 0
 $$
 $$
-\iint \nabla^{2} w \, dx \, dy = \int \frac{\partial w}{\partial n} \, dn
+\iint_{R} \nabla^{2} w \, dx \, dy = \int \frac{\partial w}{\partial n} \, dn
 $$
+n er egentlig en normalvektor, se fig 240, men den skrives ikke sådan i formlen.
