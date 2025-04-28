@@ -55,15 +55,18 @@ V &= \int_{x=0} ^{3}  \,dx \int_{y=0} ^{2} (4x^{2} + 9y^{2}) \, dy\\
 \text{Indsætter i det ydre integrale:}\\
 \int_{x=0} ^{3} 8x^{2} + 24 \, dx = \int_{x=0} ^{3} 8x^{2} \, dx + \int_{x=0} ^{3} 24 \, dx\\
 \text{Starter med det venstre integrale:}\\
-\int_{x=0} ^{3} 8x^{2} \, dx = \left[\frac{8}{3} x^{3}\right]_{x=0}^{3} &= \frac{8}{3} \cdot 27 \\
+\int_{x=0} ^{3} 8x^{2} \, dx = \left[\frac{8}{3} x^{3}\right]_{x=0}^{3} = \frac{8}{3} \cdot 27 =  \frac{216}{3} &= 72\\
 \int_{x=0} ^{3} 24 \, dx = [24x]_{x=0} ^{3} = [24 \cdot 3] &= 72\\
-\text{#}
+\text{Sætter de to resultater sammen}\\
+\int_{x=0} ^{3} 8x^{2} \, dx + \int_{x=0} ^{3} 24 \, dx &= 72 + 72\\
+&= 144
 \end{align*}
 $$
 
 ### 10.3.15
 Find the center of gravity $(\overline{x}, \overline{y})$ of a mass of density $f(x,y) = 1$ in the given region R.
 ![[10.3.15 opgavetegning.png]]
+
 
 ### 10.4.1
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
