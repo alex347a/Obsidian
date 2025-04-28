@@ -108,7 +108,28 @@ C_{1}: \int_{0}^{4}
 \end{pmatrix}
 \, dy 
 =
-\int_{0} ^{4} (6y + 3) \, dy = [3y^{2} + 3y]_{0}^{4} 
+\int_{0} ^{4} (6y + 3) \, dy &=  [3y^{2} + 3y]_{0}^{4} \\
+= 48+12 &= 60\\
+\text{Starter med } C_{3}:\\
+C_{3}: y = 0 \quad \text{ og } ds &= dx\\
+\int_{-4}^{0}
+\begin{pmatrix}
+2x + 3\\
+6x
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+0\\
+-1
+\end{pmatrix}
+\, dx = \int_{-4} ^{0} -6x \, dx &= [-3x^{2}]_{-4}^{0}\\
+&= 48\\
+\text{Nu til } C_{2}\\
+\text{Polære koordinater:}\\
+\text{Da }r &= 4:\\
+x &= 4\cos(t)\\
+y &=  4\sin(t)\\
+t \in [\frac{\pi}{2} ,]
 \end{align*}
 $$
 $$
