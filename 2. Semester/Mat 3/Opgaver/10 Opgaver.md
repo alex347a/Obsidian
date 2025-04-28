@@ -67,7 +67,21 @@ $$
 Find the center of gravity $(\overline{x}, \overline{y})$ of a mass of density $f(x,y) = 1$ in the given region R.
 ![[10.3.15 opgavetegning.png]]
 Formlen for en cirkel er $x^{2} + y^{2} = r^{2}$
-Formlen for en halvcirkel er derfor: $y = \sqrt{r^{2} - x^{2}}$ når $-r \leq x \leq r$ og $y \leq 0$
+Formlen for en halvcirkel er derfor: $y = \sqrt{r^{2} - x^{2}}$ når $-r \leq x \leq r$ og $y \geq 0$
+Dvs. regionen R er:
+$$
+R = ((x,y) |- r \leq x \leq r, \quad 0 \leq y \leq \sqrt{r^{2} -x^{2}})
+$$
+tyngdepunktet ($\overline{x}, \overline{y}$) er givet ved:
+$$
+\begin{align*}
+\overline{x} &=  \frac{1}{A} \iint_{R} x \, dA \\
+\overline{y} &=  \frac{1}{A} \iint_{R} y \, dA
+\end{align*}
+$$
+Hvor A er arealet af regionen R.
+
+Arealet for en halvcirkel er givet ved: $A = \frac{1}{2} \pi r^{2}$
 
 
 ### 10.4.1
