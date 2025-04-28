@@ -13,11 +13,17 @@ Dermed er linjen $y=x$ ovenover parablen $y=x^{2}$ over hele intervallet.
 
 $$
 \begin{align*}
-\int_{0}^{1} \int_{x^{2}}^{x} (1-2xy) \, dy \, dx &= \int_{0}^{1} 1 \, dx \int_{x^{2}} ^{x} 2xy \, dy \\
+\int_{0}^{1} \int_{x^{2}}^{x} (1-2xy) \, dy \, dx &= \int_{0}^{1} dx
+\left(\int_{x^{2}}^{x} 1 \, dy - \int_{x^{2}} ^{x} 2xy \, dy\right) \\
+\text{Udregner det højre integrale:}\\
 \int_{x^{2}} ^{x} 2xy \, dy = [x y^{2}]_{x^{2}}^{x} &= x\cdot x^{2} - (x \cdot x^{4})\\
 &= x^{3} - x^{5}\\
-\text{indsætter resultatet i det ydre integrale:}\\
-\int_{0}^{1} 1 \cdot (x^{3} - x^{5}) \, dy &= 
+\text{udregner det venstre integrale:}\\
+\int_{0}^{1} 1  \, dx &= [x]_{x^{2}} ^{x} = x - x^{2}\\
+\text{Sætter de to resultater ind:}\\
+x - x^{2} - (x^{3} - x^{5}) &= x-x^{2} - x^{3} + x^{5}\\
+\text{Indsætter i det ydre integrale}\\
+\int_{0}^{1} x-x^{2} x - x^{3} + x^{5}
 \end{align*}
 $$
 ### 10.3.9
