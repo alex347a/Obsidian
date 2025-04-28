@@ -71,3 +71,19 @@ $$
 \iint_{R} \nabla^{2} w \, dx \, dy = \int \frac{\partial w}{\partial n} \, dn
 $$
 n er egentlig en normalvektor, se fig 240, men den skrives ikke sådan i formlen.
+
+$$
+\nabla w \cdot \overline{n} = 
+\begin{pmatrix}
+\frac{\partial w}{\partial x} \\ 
+\frac{\partial w}{\partial y} \\ 
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+\frac{dy}{ds} \\
+- \frac{dx}{ds} 
+\end{pmatrix}
+=
+\frac{\partial w}{\partial n}
+$$
+Den har den modsatte retning af tværvektoren??????
