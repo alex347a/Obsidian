@@ -134,7 +134,10 @@ Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the 
 $$y
 F = [y,-x], C \text{ the circle } x^{2} + y^{2} = \frac{1}{4}
 $$
-
+Jeg bruger Green's sætning:
+$$
+\int_{C} F \cdot dr = \iint_{R} (\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{2}}{\partial x})
+$$
 ### 10.4.3
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
