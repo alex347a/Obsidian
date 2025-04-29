@@ -150,6 +150,28 @@ F_{2} &=  -x\\
 &= -2 \iint_{R} \, dA
 \end{align*}
 $$
+Siden regionen R er indelukket af cirklen C: 
+$$
+x^{2} + y^{2} = \frac{1}{4}
+$$
+Da formlen for en cirkel er givet ved:
+$$
+x^{2} + y^{2} = r^{2}
+$$
+Så er $r^{2}$ af denne cirkel:
+$$
+r^{2} = \frac{1}{4}
+$$
+Arealet af en cirkel er givet ved:
+$$
+\begin{align*}
+A &=  \pi \cdot r^{2}\\
+A  &= \pi \cdot \frac{1}{4}
+\end{align*}
+$$
+$$
+\int_{C} F \cdot dr =  \iint_{R} \left(-1-1\right) \, dA
+$$
 ### 10.4.3
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
