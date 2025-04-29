@@ -166,12 +166,14 @@ Arealet af en cirkel er givet ved:
 $$
 \begin{align*}
 A &=  \pi \cdot r^{2}\\
-A  &= \pi \cdot \frac{1}{4}
+A = \pi \cdot \frac{1}{4} &=  \frac{\pi}{4}
 \end{align*}
 $$
 $$
-\int_{C} F \cdot dr =  \iint_{R} \left(-1-1\right) \, dA
+\int_{C} F \cdot dr =  -2 \cdot \frac{\pi}{4} = \underline{\underline{-\frac{\pi}{2}}}
 $$
+Her kunne man også bruge polære koordinater.
+
 ### 10.4.3
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
