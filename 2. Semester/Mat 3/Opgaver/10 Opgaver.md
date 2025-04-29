@@ -234,11 +234,12 @@ $$
 Nu kan jeg regne det endelige integrale:
 $$
 \begin{align*}
-
+\int_{C} F \cdot dr &= 9e^{2} - 9 - \left((e^{3}-1) \frac{8}{3}\right)\\
+&= 9e^{2} - 9 - \frac{8e^{3}}{8} - \frac{8}{3}\\
+&= -\frac{8e^{3}}{8} + 9e^{2} - \frac{27}{3} - \frac{8}{3}\\
+&= \underline{\underline{-\frac{8e^{3}}{8} + 9e^{2} - \frac{19}{3}}}\\
 \end{align*}
 $$
-
-Indsætter 
 ### 10.4.9
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
