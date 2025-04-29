@@ -221,10 +221,23 @@ $$
 \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (x^{2} e^{y}) \, dy\\
 \text{Starter med det indre integrale:}\\
 \int_{y = 0} ^{3} (x^{2} e^{y}) \, dy &=  x^{2}[e^{y}]_{y=0}^{3}\\
-&= x^{2}e^{3} - (x^{2}e^{0})\\
-&= x^{2}e^{3} - x^{2}
+&= x^{2}(e^{3} - (e^{0})\\
+&= x^{2}e^{3} - x^{2}\\
+\text{Indsætter i værdien i det ydre integrale}:\\
+\int_{x=0} ^{2} (x^{2}e^{3}-x^{2}) \, dx \\
+\text{Jeg faktoriserer lige:}\\
+\int_{x=0} ^{2} (x^{2}(e^{3}-1)) \, dx &= (e^{3}-1) \int_{x=0} ^{2} x^{2} \, dx\\
+&= (e^{3}-1) \left[\frac{1}{3} x^{3}\right]_{x=0} ^{2}\\
+&= (e^{3}-1) \frac{8}{3}
 \end{align*}
 $$
+Nu kan jeg regne det endelige integrale:
+$$
+\begin{align*}
+
+\end{align*}
+$$
+
 Indsætter 
 ### 10.4.9
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
