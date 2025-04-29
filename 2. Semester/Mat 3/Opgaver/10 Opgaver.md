@@ -197,7 +197,10 @@ $$
 Siden regionen R er indelukket af rektanglet r hvor $0 \leq x \leq 2$ og $0 \leq y \leq 3$:
 $$
 \begin{align*}
-\int_{C} F \cdot dr = \int_{x = 0} ^{2} \int_{y = 0} ^{3}
+\int_{C} F \cdot dr &=  \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x} - x^{2} e^{y}) \, dy\\
+\text{Deler integralet op i 2:}\\
+\int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x} - x^{2} e^{y}) \, dy &= \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x}) \, dy - \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (x^{2} e^{y}) \, dy\\
+
 \end{align*}
 $$
 ### 10.4.9
