@@ -184,10 +184,20 @@ Jeg bruger Green's sætning:
 $$
 \int_{C} F \cdot dr = \iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dA
 $$
-
+Hvor:
 $$
 \begin{align*}
-
+F_{1} &= x^{2} e^{y}\\
+F_{2} &=  y^{2} e^{x}\\
+\frac{\partial F_{2}}{\partial x} = \frac{\partial(y^{2} e^{x})}{\partial x} &= y^{2} e^{x}\\
+\frac{\partial F_{1}}{\partial y} = \frac{\partial(x^{2} e^{y})}{\partial y} &= x^{2} e^{y}\\
+\int_{C} F \cdot dr &=  \iint_{R} (y^{2} e^{x} - x^{2} e^{y}) \, dA\\
+\end{align*}
+$$
+Siden regionen R er indelukket af rektanglet r hvor $0 \leq x \leq 2$ og $0 \leq y \leq 3$:
+$$
+\begin{align*}
+\int_{C} F \cdot dr = \int_{x = 0} ^{2} \int_{y = 0} ^{3}
 \end{align*}
 $$
 ### 10.4.9
