@@ -257,10 +257,11 @@ $$
 \iint_{R} \nabla^{2} w \, dx \, dy = \oint_{C} \frac{\partial w}{\partial n} \, ds
 $$
 
-Svaret:
+Svaret i bogen er:
 $$
 \nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh (4 - \frac{1}{2})
 $$
+Den første del er rigtigt, jeg ved ikke hvad den fabler om i resten af svaret.
 ### 10.4.17
 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 $$
