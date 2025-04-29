@@ -245,11 +245,16 @@ Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the 
 $$
 F = [e^{\frac{y}{x}}, e^{y} \ln(x) + 2x], R: 1 + x^{4} \leq y \leq 2
 $$
+Kom tilbage til denne her. Den virker lidt underlig. Svaret burde være $\frac{16}{5}$ 
 
 ### 10.4.13
 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 $$
 w = \cosh (x), \quad \text{R the triangle with vertices } (0,0), (4,2), (0,2). 
+$$
+(9):
+$$
+
 $$
 
 ### 10.4.17
