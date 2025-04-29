@@ -136,7 +136,19 @@ F = [y,-x], C \text{ the circle } x^{2} + y^{2} = \frac{1}{4}
 $$
 Jeg bruger Green's sætning:
 $$
-\int_{C} F \cdot dr = \iint_{R} (\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{2}}{\partial x})
+\int_{C} F \cdot dr = \iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dA
+$$
+Hvor:
+$$
+\begin{align*}
+F_{1} &= y\\
+F_{2} &=  -x\\
+\frac{\partial F_{2}}{\partial x} = \frac{\partial(-x)}{\partial x} &= -1\\
+\frac{\partial F_{1}}{\partial y} = \frac{\partial(y)}{\partial y} &= 1\\
+\int_{C} F \cdot dr &=  \iint_{R} \left(-1-1\right) \, dA\\
+&= \iint_{R} \left(-2\right) \, dA\\
+&= -2 \iint_{R} \, dA
+\end{align*}
 $$
 ### 10.4.3
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
