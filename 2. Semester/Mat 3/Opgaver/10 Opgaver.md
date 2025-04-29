@@ -259,10 +259,21 @@ $$
 Jeg starter med at beregne laplacian:
 $$
 \begin{align*}
-\nabla^{2} w = \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\\
-\text{}
+\nabla^{2} w &=  \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\\
+\text{Indsætter } w &= \cosh\\
+\frac{\partial w}{\partial x} = \sinh(x), \quad \frac{\partial^{2} w}{\partial x^{2}} &=  \cosh\\
+\frac{\partial w}{\partial y} = 0, \quad \frac{\partial^{2} w}{\partial y^{2}} &=  0\\
+\nabla^{2} w = \cosh(x) + 0 &=  \cosh()
 \end{align*}
 $$
+Beregner dobbeltintegralet
+$$
+\begin{align*}
+\iint_{R} \cosh(x) \, dx \, dy &=  \oint_{C} \frac{\partial w}{\partial n} \, ds\\
+
+\end{align*}
+$$
+Regionen R e
 Svaret i bogen er:
 $$
 \nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh \left(4 - \frac{1}{2}\right)
