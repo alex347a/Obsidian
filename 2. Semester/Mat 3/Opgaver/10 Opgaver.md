@@ -254,9 +254,13 @@ w = \cosh (x), \quad \text{R the triangle with vertices } (0,0), (4,2), (0,2).
 $$
 (9):
 $$
-
+\iint_{R} \nabla^{2} w \, dx \, dy = \oint_{C} \frac{\partial w}{\partial n} \, ds
 $$
 
+Svaret:
+$$
+\nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh (4 - \frac{1}{2})
+$$
 ### 10.4.17
 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 $$
@@ -265,3 +269,8 @@ $$
 
 ### 10.4.19
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
+
+(12):
+$$
+\iint_{R} \left[\left(\frac{\partial w}{\partial x}\right)^{2} + \left(\frac{\partial w}{\partial y}\right)^{2}\right] \, dx \, dy = \oint_{C} w \frac{\partial w}{\partial n} \, ds
+$$
