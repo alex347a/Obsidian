@@ -173,13 +173,23 @@ $$
 \int_{C} F \cdot dr =  -2 \cdot \frac{\pi}{4} = \underline{\underline{-\frac{\pi}{2}}}
 $$
 Her kunne man også bruge polære koordinater.
+Det giver god nok mening at integralet er negativt idet feltet roterer i urets retning, hvor den positive retning er mod uret i matematik.
 
 ### 10.4.3
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
 F = [x^{2} e^{y}, y^{2} e^{x}], r \text{ the rectangle with vertices } (0,0), (2,0), (2,3), (0,3)
 $$
+Jeg bruger Green's sætning:
+$$
+\int_{C} F \cdot dr = \iint_{R} \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \, dA
+$$
 
+$$
+\begin{align*}
+
+\end{align*}
+$$
 ### 10.4.9
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
