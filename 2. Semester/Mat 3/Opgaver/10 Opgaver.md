@@ -273,7 +273,7 @@ $$
 
 \end{align*}
 $$
-Regionen R e
+Regionen R er en trekant der er begrænset fra $y = 0$ til $y=0$
 Svaret i bogen er:
 $$
 \nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh \left(4 - \frac{1}{2}\right)
