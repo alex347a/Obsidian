@@ -207,7 +207,12 @@ $$
 \begin{align*}
 \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x}) \, dy\\
 \text{Starter med det indre integrale:}\\
-\int_{y = 0} ^{3} (y^{2} e^{x}) \, dy &= [\frac{1}{3} y^{3} ]
+\int_{y = 0} ^{3} (y^{2} e^{x}) \, dy &=  e^{x}\left[\frac{1}{3} y^{3}\right]_{y=0} ^{3}\\
+&= 9 e^{x}\\
+\text{Indsætter i værdien i det ydre integrale}:\\
+\int_{x=0} ^{2} 9e^{x} \, dx &= [9 e^{x}]_{x=0} ^{2}\\
+&= 9e^{2} - (9 e^{0})\\
+&= 9e^{2} - 9
 \end{align*}
 $$
 Nu til det højre integrale:
@@ -215,9 +220,12 @@ $$
 \begin{align*}
 \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (x^{2} e^{y}) \, dy\\
 \text{Starter med det indre integrale:}\\
-
+\int_{y = 0} ^{3} (x^{2} e^{y}) \, dy &=  x^{2}[e^{y}]_{y=0}^{3}\\
+&= x^{2}e^{3} - (x^{2}e^{0})\\
+&= x^{2}e^{3} - x^{2}
 \end{align*}
 $$
+Indsætter 
 ### 10.4.9
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
