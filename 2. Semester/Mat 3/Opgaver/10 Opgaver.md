@@ -256,10 +256,16 @@ $$
 $$
 \iint_{R} \nabla^{2} w \, dx \, dy = \oint_{C} \frac{\partial w}{\partial n} \, ds
 $$
-
+Jeg starter med at beregne laplacian:
+$$
+\begin{align*}
+\nabla^{2} w = \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\\
+\text{}
+\end{align*}
+$$
 Svaret i bogen er:
 $$
-\nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh (4 - \frac{1}{2})
+\nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh \left(4 - \frac{1}{2}\right)
 $$
 Den første del er rigtigt, jeg ved ikke hvad den fabler om i resten af svaret.
 ### 10.4.17
