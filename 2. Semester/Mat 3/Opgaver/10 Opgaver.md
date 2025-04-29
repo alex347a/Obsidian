@@ -200,6 +200,21 @@ $$
 \int_{C} F \cdot dr &=  \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x} - x^{2} e^{y}) \, dy\\
 \text{Deler integralet op i 2:}\\
 \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x} - x^{2} e^{y}) \, dy &= \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x}) \, dy - \int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (x^{2} e^{y}) \, dy\\
+\end{align*}
+$$
+Jeg starter med det venstre integrale:
+$$
+\begin{align*}
+\int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (y^{2} e^{x}) \, dy\\
+\text{Starter med det indre integrale:}\\
+\int_{y = 0} ^{3} (y^{2} e^{x}) \, dy &= [\frac{1}{3} y^{3} ]
+\end{align*}
+$$
+Nu til det højre integrale:
+$$
+\begin{align*}
+\int_{x = 0} ^{2} \, dx \int_{y = 0} ^{3} (x^{2} e^{y}) \, dy\\
+\text{Starter med det indre integrale:}\\
 
 \end{align*}
 $$
