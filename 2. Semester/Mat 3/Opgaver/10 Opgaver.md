@@ -284,6 +284,20 @@ Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ take
 $$
 w = x^{3} - y^{3}, \quad 0 \leq y \leq x^{2}, \quad |x| \leq 2
 $$
+(9):
+$$
+\iint_{R} \nabla^{2} w \, dx \, dy = \oint_{C} \frac{\partial w}{\partial n} \, ds
+$$
+Jeg starter med at beregne laplacian:
+$$
+\begin{align*}
+\nabla^{2} w &=  \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\\
+\text{Indsætter } w &= \cosh\\
+\frac{\partial w}{\partial x} = \sinh(x), \quad \frac{\partial^{2} w}{\partial x^{2}} &=  \cosh\\
+\frac{\partial w}{\partial y} = 0, \quad \frac{\partial^{2} w}{\partial y^{2}} &=  0\\
+\nabla^{2} w = \cosh(x) + 0 &=  \cosh()
+\end{align*}
+$$
 
 ### 10.4.19
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
