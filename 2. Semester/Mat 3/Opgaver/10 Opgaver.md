@@ -281,19 +281,22 @@ $$
 = \sinh(2y) - 0 &= \sinh(2y)\\
 \text{Indsætter værdien i det ydre integrale:}\\
 \int_{y=0}^{2} \sinh(2y) \, dy \\
-\text{Bruger regneregl:} \int \sinh(ay) &= \frac{1}{a} \sinh(ay)\\
+\text{Bruger regneregl:} \int \sinh(ax) \, dx &= \frac{1}{a} \cosh(ax) + C\\
 &= \left[\frac{1}{2}\cosh(2y)\right]_{0} ^{2}\\
 &= \frac{1}{2} (\cosh(4) - \cosh(0))\\
 &= \frac{1}{2} (\cosh(4) - 1)\\
 \end{align*}
 $$
-Dette er så svaret.
+Svaret bliver altså:
+$$
+\underline{\underline{\frac{1}{2} (\cosh(4)-1)}}
+$$
 
 Svaret i bogen er:
 $$
 \nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh \left(4 - \frac{1}{2}\right)
 $$
-Den første del er rigtigt, jeg ved ikke hvad den fabler om i resten af svaret.
+Den første del er rigtigt, jeg ved ikke hvad den fabler om med y, men den sidste del får den $\frac{-1}{2}$ i stedet for min $-1$ hvilket jeg ikke kan se hvorfor.
 ### 10.4.17
 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 $$
@@ -307,12 +310,13 @@ Jeg starter med at beregne laplacian:
 $$
 \begin{align*}
 \nabla^{2} w &=  \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\\
-\text{Indsætter } w &= \cosh\\
-\frac{\partial w}{\partial x} = \sinh(x), \quad \frac{\partial^{2} w}{\partial x^{2}} &=  \cosh\\
-\frac{\partial w}{\partial y} = 0, \quad \frac{\partial^{2} w}{\partial y^{2}} &=  0\\
-\nabla^{2} w = \cosh(x) + 0 &=  \cosh()
+\text{Indsætter } w &= x^{3} - y^{3}\\
+\frac{\partial w}{\partial x} = 3x^{2}, \quad \frac{\partial^{2} w}{\partial x^{2}} &= 6x \\
+\frac{\partial w}{\partial y} = -3y^{2}, \quad \frac{\partial^{2} w}{\partial y^{2}} &= -6y\\
+\nabla^{2} w = 6x-6y &= 6(x-y)
 \end{align*}
 $$
+Beregner 
 
 ### 10.4.19
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
