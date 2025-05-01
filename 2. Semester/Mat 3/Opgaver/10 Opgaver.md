@@ -348,11 +348,15 @@ $$
 &= \frac{1}{2}\left(\frac{64}{5}\right)\\
 &= \frac{64}{10}\\
 \text{Derfor bliver integralet:}\\
-6 \cdot \\
-6 \cdot \frac{64}{10} &= \frac{384}{10}
+6 \left(\int_{x=-2} ^{2} x^{3} \, dx - \frac{1}{2} \int_{x=-2} ^{2} x^{4} \, dx\right) &= 6 \cdot \left(0-\frac{64}{10}\right)\\
+6 \cdot \left(-\frac{64}{10}\right) &= -\frac{384}{10}\\
+&= -\frac{192}{5}
 \end{align*}
 $$
-
+Dermed bliver svaret:
+$$
+\underline{\underline{-\frac{192}{5}}}
+$$
 ### 10.4.19
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
 
