@@ -367,6 +367,11 @@ $$
 Først skal jeg vise at for ligningen $w = e^{x} \sin(y)$ gælder at $\nabla^{2} w = 0$
 $$
 \begin{align*}
-
+\nabla^{2} w &=  \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}}\\
+\text{Indsætter } w &= e^{x} \sin(y)\\
+\frac{\partial w}{\partial x} = e^{x} \sin(y), \quad \frac{\partial^{2} w}{\partial x^{2}} &= e^{x} \sin(y)\\
+\frac{\partial w}{\partial y} = e^{x} \cos(y), \quad \frac{\partial^{2} w}{\partial y^{2}} &= -e^{x} \sin(y)\\
+\frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}} &= e^{x} \sin(y) + (-e^{x} \sin(y))\\
+&= 0
 \end{align*}
 $$
