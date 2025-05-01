@@ -332,6 +332,21 @@ $$
 &= x^{3} - \frac{1}{2} x^{4}
 \end{align*}
 $$
+Indsætter I det ydre integrale:
+$$
+\begin{align*}
+6 \int_{x=-2} ^{2} x^{3} - \frac{1}{2} x^{4} \, dx\\
+\text{Dette splitter jeg op i to integraler:}\\
+&= 6 \left(\int_{x=-2} ^{2} x^{3} \, dx - \frac{1}{2} \int_{x=-2} ^{2} x^{4} \, dx\right)\\
+\text{Starter med venstre side:}\\
+\int_{x=-2} ^{2} x^{3} \, dx &=  \left[\frac{1}{4}x^{4}\right]_{x=-2} ^{2}\\
+&= \frac{16}{4} - \left(- \frac{16}{4}\right)\\
+&= 0\\
+\text{Dette passer også med at } x^{3} \text{ er en ulige funktion.}\\
+\text{Højre integrale:}\\
+
+\end{align*}
+$$
 
 ### 10.4.19
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
