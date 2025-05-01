@@ -271,9 +271,22 @@ $$
 \oint_{C} \frac{\partial w}{\partial n} \, ds = \iint_{R} \cosh(x) \, dx \, dy
 $$
 Regionen R var givet ved en trekant med hjørnerne: $(0,0)$, $(4,2)$, $(0,2)$
+Derfor er regionen R givet ved en trekant der er begrænset fra $0 \leq y \leq 2$ ved $x=0$ og til $x=2y$
+Derfor bliver dobbeltintegralet med grænserne:
+$$
+\begin{align*}
+\iint_{R} \cosh(x) \, dx \, dy &= \int_{y=0}^{2} \, dy \int_{x=0} ^{2y} \cosh(x) \, dx\\
+\text{Beregner det indre integrale:}\\
+\int_{x=0} ^{2y} \cosh(x) \, dx &= [\sinh(x)]_{0}^{2y}\\
+= \sinh(2y) - 0 &= \sinh(2y)\\
+\text{Indsætter værdien i det ydre integrale:}\\
+\int_{y=0}^{2} \sinh(2y) \, dy &= \left[\frac{1}{2}\cosh(2y)\right]_{0} ^{2}\\
+&= \frac{1}{2} (\cosh(4) - \cosh(0))\\
+&= \frac{1}{2} (\cosh(4) - 1)\\
+\end{align*}
+$$
+Dette er så svaret.
 
-
-er en trekant der er begrænset fra $y = 0$ til $y=0$
 Svaret i bogen er:
 $$
 \nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh \left(4 - \frac{1}{2}\right)
