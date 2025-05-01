@@ -364,3 +364,9 @@ Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ an
 $$
 \iint_{R} \left[\left(\frac{\partial w}{\partial x}\right)^{2} + \left(\frac{\partial w}{\partial y}\right)^{2}\right] \, dx \, dy = \oint_{C} w \frac{\partial w}{\partial n} \, ds
 $$
+Først skal jeg vise at for ligningen $w = e^{x} \sin(y)$ gælder at $\nabla^{2} w = 0$
+$$
+\begin{align*}
+
+\end{align*}
+$$
