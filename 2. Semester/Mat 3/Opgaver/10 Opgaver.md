@@ -375,3 +375,16 @@ $$
 &= 0
 \end{align*}
 $$
+Så det passede altså at når $w = e^{x} \sin(y)$ så er $\nabla^{2} w = 0$
+
+Det næste jeg skulle gøre var at integrere $w(\frac{\partial w}{\partial n})$ mod uret omkring grænsekurven C af rektanglet $0 \leq x \leq 2$, $0 \leq y \leq 5$
+$$
+\begin{align*}
+\iint_{R} \left[\left(\frac{\partial w}{\partial x}\right)^{2} + \left(\frac{\partial w}{\partial y}\right)^{2}\right] \, dx \, dy &=  \oint_{C} w \frac{\partial w}{\partial n} \, ds\\
+\text{Integranden beregnes ved at indsætte værdierne:}\\
+\left(\frac{\partial w}{\partial x}\right)^{2} + \left(\frac{\partial w}{\partial y}\right)^{2} &= (e^{x} \sin(y))^{2} + (e^{x} \cos(y))^{2}\\
+&= e^{2x} \sin^{2}(y) + e^{2x} \cos^{2}(x)\\
+\text{Trigonometrisk grundrelation (idiotformel):}\\
+
+\end{align*}
+$$
