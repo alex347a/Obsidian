@@ -280,7 +280,9 @@ $$
 \int_{x=0} ^{2y} \cosh(x) \, dx &= [\sinh(x)]_{0}^{2y}\\
 = \sinh(2y) - 0 &= \sinh(2y)\\
 \text{Indsætter værdien i det ydre integrale:}\\
-\int_{y=0}^{2} \sinh(2y) \, dy &= \left[\frac{1}{2}\cosh(2y)\right]_{0} ^{2}\\
+\int_{y=0}^{2} \sinh(2y) \, dy \\
+\text{Bruger regneregl:} \int \sinh(ay) &= \frac{1}{a} \sinh(ay)\\
+&= \left[\frac{1}{2}\cosh(2y)\right]_{0} ^{2}\\
 &= \frac{1}{2} (\cosh(4) - \cosh(0))\\
 &= \frac{1}{2} (\cosh(4) - 1)\\
 \end{align*}
