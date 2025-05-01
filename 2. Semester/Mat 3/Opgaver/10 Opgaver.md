@@ -384,7 +384,16 @@ $$
 \text{Integranden beregnes ved at indsætte værdierne:}\\
 \left(\frac{\partial w}{\partial x}\right)^{2} + \left(\frac{\partial w}{\partial y}\right)^{2} &= (e^{x} \sin(y))^{2} + (e^{x} \cos(y))^{2}\\
 &= e^{2x} \sin^{2}(y) + e^{2x} \cos^{2}(x)\\
-\text{Trigonometrisk grundrelation (idiotformel):}\\
-
+&= e^{2x}(\sin^{2}(y) + \cos^{2}(x))\\
+\text{Trigonometrisk grundrelation (idiotformel): } (\sin^{2}(y) + \cos^{2}(x)) &=  1\\
+= e^{2x}
+\end{align*}
+$$
+Dermed bliver dobbeltintegralet:
+$$
+\begin{align*}
+\iint_{R} e^{2x} \, dx \, dy &= \int_{x=0} ^{2} \, dx \int_{y=0} ^{5} e^{2x} \, dy\\
+\text{Starter med det indre integrale:}\\
+\int_{y=0} ^{5} e^{2x} \, dy &= 
 \end{align*}
 $$
