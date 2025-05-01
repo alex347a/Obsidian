@@ -313,10 +313,25 @@ $$
 \text{Indsætter } w &= x^{3} - y^{3}\\
 \frac{\partial w}{\partial x} = 3x^{2}, \quad \frac{\partial^{2} w}{\partial x^{2}} &= 6x \\
 \frac{\partial w}{\partial y} = -3y^{2}, \quad \frac{\partial^{2} w}{\partial y^{2}} &= -6y\\
-\nabla^{2} w = 6x-6y &= 6(x-y)
+\nabla^{2} w = \frac{\partial^{2} w}{\partial x^{2}} + \frac{\partial^{2} w}{\partial y^{2}} = 6x-6y &= 6(x-y)
 \end{align*}
 $$
-Beregner 
+Beregner dobbeltintegralet:
+$$
+\oint_{C} \frac{\partial w}{\partial n} \, ds = \iint_{R} \cosh(x) \, dx \, dy
+$$
+Regionen R var givet ved $0 \leq y \leq x^{2}$ hvor $-2 \leq x \leq 2$ siden det var givet at $|x| \leq 2$
+Derfor bliver integralet med indsættede grænser:
+$$
+\int_{x=-2} ^{2} \, dx \int_{y=0} ^{x^{2}} 6(x-y) \, dy
+$$
+Jeg starter med det indre integrale hvor jeg kan tage konstanten $6$ udenfor
+$$
+\begin{align*}
+\int_{y=0} ^{x^{2}} (x-y) \, dy &= \left[xy - \frac{1}{2}y^{2}\right]_{y=0}^{x^{2}}\\
+&= x^{3} - \frac{1}{2} x^{4}
+\end{align*}
+$$
 
 ### 10.4.19
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
