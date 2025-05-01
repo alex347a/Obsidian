@@ -409,5 +409,5 @@ $$
 $$
 Dermed bliver svaret:
 $$
-\oint_{C} w \frac{\partial w}{\partial n} \, ds\\ = \underline{\underline{}}
+\oint_{C} w \frac{\partial w}{\partial n} \, ds\\ = \underline{\underline{\frac{5}{2} e^{4} - \frac{5}{2}}}
 $$
