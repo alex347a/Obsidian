@@ -394,6 +394,20 @@ $$
 \begin{align*}
 \iint_{R} e^{2x} \, dx \, dy &= \int_{x=0} ^{2} \, dx \int_{y=0} ^{5} e^{2x} \, dy\\
 \text{Starter med det indre integrale:}\\
-\int_{y=0} ^{5} e^{2x} \, dy &= 
+\int_{y=0} ^{5} e^{2x} \, dy &= [e^{2x} y]_{y=0} ^{5}\\
+&= e^{2x} (5-0)\\
+&= 5e^{2x}\\
+\text{Indsætter værdien i det ydre integrale:}\\
+\int_{x=0} ^{2} 5e^{2x} \, dx \\
+\text{Bruger formlen:}\\
+\int e^{ax} \, dx &= \frac{1}{a} e^{ax} + C\\
+&= 5\left[ \frac{1}{2}e^{2x}\right]_{x=0} ^{2}\\
+&= 5 \cdot \left(\frac{1}{2} e^{4} - \frac{1}{2} e^{0}\right)\\
+&= 5 \cdot \left(\frac{1}{2} e^{4} - \frac{1}{2}\right)\\
+&= \frac{5}{2} e^{4} - \frac{5}{2}
 \end{align*}
+$$
+Dermed bliver svaret:
+$$
+\oint_{C} w \frac{\partial w}{\partial n} \, ds\\ = \underline{\underline{}}
 $$
