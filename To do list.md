@@ -22,7 +22,7 @@
 - [ ] Lav Værksted færdig
 - [x] Lav Stakopgaver ✅ 2025-04-03
 - [x] Lav Templateopgaver ✅ 2025-04-24
-- [ ] Lav kunstværkopgave (det du har lige nu er chatten. Tæller overhovedet ikke)
+- [x] Lav kunstværkopgave ✅ 2025-05-01
 - [ ] Lav IO opgaver
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
 
