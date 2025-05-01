@@ -340,11 +340,16 @@ $$
 &= 6 \left(\int_{x=-2} ^{2} x^{3} \, dx - \frac{1}{2} \int_{x=-2} ^{2} x^{4} \, dx\right)\\
 \text{Starter med venstre side:}\\
 \int_{x=-2} ^{2} x^{3} \, dx &=  \left[\frac{1}{4}x^{4}\right]_{x=-2} ^{2}\\
-&= \frac{16}{4} - \left(- \frac{16}{4}\right)\\
-&= 0\\
-\text{Dette passer også med at } x^{3} \text{ er en ulige funktion.}\\
+&= \frac{16}{4} -  \frac{16}{4}\\
+&= 0 \text{ (ulige funktion over symmetrisk interval)}\\
 \text{Højre integrale:}\\
-
+\frac{1}{2} \int_{x=-2} ^{2} x^{4} \, dx &= \frac{1}{2} \left[\frac{1}{5} x^{5}\right]_{x=-2} ^{2}\\
+&= \frac{1}{2}\left(\frac{32}{5} - \left(- \frac{32}{5}\right)\right)\\
+&= \frac{1}{2}\left(\frac{64}{5}\right)\\
+&= \frac{64}{10}\\
+\text{Derfor bliver integralet:}\\
+6 \cdot \\
+6 \cdot \frac{64}{10} &= \frac{384}{10}
 \end{align*}
 $$
 
