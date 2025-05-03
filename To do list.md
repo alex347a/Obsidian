@@ -15,8 +15,9 @@
 - [x] Læs lektien om forsøget inden kinematik (MEGET VIGTIG) 📅 2025-03-24 ✅ 2025-03-24
 - [x] Lav post-exercise 📅 2025-03-31 ✅ 2025-03-30
 - [x] Pointgivende 2. 📅 2025-04-10 ✅ 2025-04-09
-- [ ] Færddiggør 09 exercises
-- [ ] 10 Exercise 
+- [x] Færddiggør 09 exercises ✅ 2025-05-03
+- [ ] 10 Exercise
+- [ ] Lav pointgivende quiz.
 
 - [x] Lav mønter ✅ 2025-04-18
 - [ ] Lav Værksted færdig
