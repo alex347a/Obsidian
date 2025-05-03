@@ -27,9 +27,6 @@
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
 
 - [ ] Skim kap 1 og 6 i softwareudvikling
-- [x] Lav en domænemodel over ordene på tavlen 📅 2025-03-27 ✅ 2025-03-27
-- [x] Færddiggør noter til timen 09 (indsæt slides) ✅ 2025-04-16
-- [x] Opgave til timen i SQL ✅ 2025-04-15
 - [ ] Lav Portfolien:
 	- [x] Brugsmønstre ✅ 2025-04-03
 	- [x] Domain model ✅ 2025-04-03
@@ -39,9 +36,7 @@
 		- [ ] Brugsmønstre
 		- [ ] Domain model
 		- [ ] Class diagram
-- [x] Færddiggør SQL opgaver til lektion 10 ✅ 2025-04-25
-- [x] Review pointgivende 📅 2025-05-08 ✅ 2025-04-27
-- [x] Find ud af det der reflect pointgivende 📅 2025-05-08 ✅ 2025-05-03
+- [ ] 2. Iteration
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
