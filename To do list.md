@@ -17,7 +17,8 @@
 - [x] Pointgivende 2. 📅 2025-04-10 ✅ 2025-04-09
 - [x] Færddiggør 09 exercises ✅ 2025-05-03
 - [ ] 10 Exercise
-- [ ] Lav pointgivende quiz.
+- [x] Lav pointgivende quiz. 📅 2025-05-08 ✅ 2025-05-03
+- [ ] Tryk afslut på pointgivende quiz efter at tjekke den med billedet. 📅 2025-05-08 
 
 - [x] Lav mønter ✅ 2025-04-18
 - [ ] Lav Værksted færdig
