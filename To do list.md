@@ -19,7 +19,7 @@
 - [ ] 10 Exercise (mangler den hvor du bruger FK fra opgave 8)
 - [x] Lav pointgivende quiz. 📅 2025-05-08 ✅ 2025-05-03
 - [x] Tryk afslut på pointgivende quiz efter at tjekke den med billedet. 📅 2025-05-08 ✅ 2025-05-04
-- [ ] 
+- [x] 11 Exercise ✅ 2025-05-04
 
 - [x] Lav mønter ✅ 2025-04-18
 - [ ] Lav Værksted færdig
