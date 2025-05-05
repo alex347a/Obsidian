@@ -35,7 +35,14 @@ x &= u_{0} \cos(v)\\
 y &= u_{0} \sin(v)\\
 z &= cu_{0}\\
 z &= cu_{0} \text{ beskriver en cirkel i planen med radius } u_{0}\\
-\text{Som er centreret på z-aksen}
+\text{Som er centreret på z-aksen}\\
+\text{For } v &= v_{0}\\
+x &= u \cos(v_{0})\\
+y &= u \sin(v_{0})\\
+z &= cu\\
+u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
+\text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
+\text{Med }
 \end{align*}
 $$
 ### 10.5.4
