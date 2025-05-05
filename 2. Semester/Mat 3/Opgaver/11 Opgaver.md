@@ -241,11 +241,13 @@ t = u, dt = du, dv &=  \cos(u) \, du, v = \sin(u)\\
 -2u^{2} \sin(u) \text{ og ikke bare } u^{2}\\
 \int u \cos(u) \, du &=  2u^{2} \cos(u) - 4 u \sin(u) - 4 \cos(u) + C\\
 \text{Nu kan jeg evaluere over intervallet af det orignale integrale:}\\
-\left[- \left(\frac{\pi}{4}\right)^{2} \cos\left(\frac{\pi}{4}\right) + 2 \cdot \frac{\pi}{4} \sin\left(\frac{\pi}{4}\right) + 2 \cos\left(\frac{\pi}{4}\right)\right] - [0 + 0 + 2 \cos(0)]\\
+\left[2 \left(\frac{\pi}{4}\right)^{2} \cos\left(\frac{\pi}{4}\right) - 4 \cdot \left(\frac{\pi}{4}\right) \sin\left(\frac{\pi}{4}\right) - 4 \cos\left(\frac{\pi}{4}\right)\right] - [0 + 0 + 2 \cos(0)]\\
 \text{Da } \cos\left(\frac{\pi}{4}\right) = \sin\left(\frac{\pi}{4}\right) &= \frac{\sqrt{2}}{2}:\\
-&= 2 \frac{\pi^{2}}{16} \cdot \frac{\sqrt{2}}{2} + \frac{\pi}{2} \cdot \frac{\sqrt{2}}{2} + \sqrt{2} - 2
+&= 2 \left(\frac{\pi^{2}}{16}\right) \left(\frac{\sqrt{2}}{2}\right) - 4 \left(\frac{\pi}{4}\right) \left(\frac{\sqrt{2}}{2}\right) - 4 \left(\frac{\sqrt{2}}{2}\right)+ 4\\
+&= \underline{\underline{\frac{\pi^{2} \sqrt{2}}{16} - \frac{\pi \sqrt{2}}{2} - 2 \sqrt{2} + 4}}
 \end{align*}
 $$
+Det er en parabolsk cylinder, som er afgrænset af $0 \leq y \leq \frac{\pi}{4}$ og $0 \leq z \leq y$. Ved konstant z er parablerne $x = y^{2}$ 
 ### 10.6.15
 Evaluate these integrals for the following data. Indicate the kind of surface. Show the details.
 
