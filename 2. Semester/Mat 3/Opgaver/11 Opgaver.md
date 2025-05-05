@@ -42,7 +42,15 @@ y &= u \sin(v_{0})\\
 z &= cu\\
 u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
 \text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
-\text{Med }
+\text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)
+\end{align*}
+$$
+Nu skal jeg beregne normalvektoren:
+$$
+\begin{align*}
+\vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
+r (u,v) &= (u \cos(v), u \sin(v), cu)\\
+\vec{r}_{u} &= (\frac{\partial x}{\partial y})
 \end{align*}
 $$
 ### 10.5.4
