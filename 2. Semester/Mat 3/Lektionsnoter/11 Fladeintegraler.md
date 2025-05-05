@@ -95,10 +95,16 @@ $$
 \vec{N} = \vec{r}_{u} \times \vec{r}_{v}\\
 \vec{N} 
 &= 
-\begin{bmatrix}
+\begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
 1  & 2u & 0\\
 0 & 0 & 0
-\end{bmatrix}
+\end{vmatrix}
+= 2u \vec{i} - \vec{j} + 0 \vec{k} = 2 u \vec{i} - \vec{j}\\
+|\vec{N}| &= \sqrt{4u^{2} + 1} \Rightarrow \vec{n} = \frac{\vec{N}}{|\vec{N}|} \\
+&= \underline{\underline{\frac{2u}{\sqrt{4u^{2} + 1}} \vec{i} - \frac{1}{\sqrt{4u^{2} + 1}}\vec{j}}}
 \end{align*}
+$$
+$$
+\vec{F} = (3z^{2}, 6, 6xz) \Rightarrow \vec{F}(\vec{r}(u,v)) = (3v^{2}, 6, 6uv)
 $$
