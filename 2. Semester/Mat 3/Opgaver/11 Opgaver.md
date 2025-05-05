@@ -87,7 +87,7 @@ Familiarize yourself with parametric representations of important surfaces by de
 For reference (1) is the equation:
 $z = f(x,y) \quad \text{ or } \quad g(x,y,z) = 0$.
 
-Elliptic cylinder $r(u,v) = [a \cos(u), b \sin(v), u]$.
+Elliptic cylinder $r(u,v) = [a \cos(v), b \sin(v), u]$.
 
 Jeg skal altså
 1. Derive a representation of the surface in the form $z=f(x,y)$ or $g(x,y,z)=0$.
