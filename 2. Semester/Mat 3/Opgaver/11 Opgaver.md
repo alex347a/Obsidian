@@ -62,7 +62,7 @@ r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \cos(v)  & \sin(v) & c\\
 - u \sin(v) & u \cos(v) & 0
 \end{vmatrix}\\
-\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot )
+\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))
 
 \end{align*}
 $$
