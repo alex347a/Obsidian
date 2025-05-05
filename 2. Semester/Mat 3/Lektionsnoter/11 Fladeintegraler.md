@@ -108,3 +108,18 @@ $$
 $$
 \vec{F} = (3z^{2}, 6, 6xz) \Rightarrow \vec{F}(\vec{r}(u,v)) = (3v^{2}, 6, 6uv)
 $$
+$$
+\iint 
+\begin{pmatrix}
+3v^{2}  \\ 
+6 \\ 
+6uv
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+2u \\ 
+-1 \\ 
+0
+\end{pmatrix}
+
+$$
