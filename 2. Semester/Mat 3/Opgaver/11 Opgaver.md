@@ -191,6 +191,15 @@ Evaluate the integral for the given data. Describe the kind of surface. Show the
 $$
 F = [0, \sin(y), \cos(z)], \quad \text{ S the cylinder } x = y^{2}, \quad \text{ where } 0 \leq y \leq \frac{\pi}{4} \quad \text{ and } \quad 0 \leq z \leq y
 $$
+
+Først parameteriserer jeg fladen:
+$$
+\begin{align*}
+u = y, \quad \text{ og } \quad v &=  z\\
+r (u,v) = [u^{2}, u, v], \quad 0 \leq u &\leq \frac{\pi}{4}, \quad 0 \leq v \leq u\\
+\vec{r}_{u} = \frac{\partial r}{\partial u} = [2u,1,0], \quad \vec{r}_{u} = \frac{\partial r}{\partial v} &= [0,0,1]
+\end{align*}
+$$
 ### 10.6.15
 Evaluate these integrals for the following data. Indicate the kind of surface. Show the details.
 
