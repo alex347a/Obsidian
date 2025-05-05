@@ -44,8 +44,11 @@ u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
 \text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
 \text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
 \text{I stedet for at beregne krydsproduktet kan jeg beregne:}\\
-\vec{n} = \frac{\text{grad g}}{\text{|grad g|}} = \frac{\nabla g}{|\nabla g|}\\
-
+\vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
+g(x,y,z) &= x^{2} + y^{2} - \frac{z^{2}}{c^{2}} &= 0\\
+\nabla g = \left(\frac{\partial g}{\partial x}, \frac{\partial g}{\partial y}, \frac{\partial g}{\partial z}\right) &= \left(2x, 2y, -\frac{2z}{c^{2}}\right)\\
+|\nabla g| &= \sqrt{(2x)^{2} + (2y)^{2} - \left(\frac{2z}{c^{2}}\right)^{2}}\\
+&= 4x + 4y + \frac{4 \sqrt{z}}{c^{2}}
 \end{align*}
 $$
 Nu skal jeg beregne normalvektoren:
