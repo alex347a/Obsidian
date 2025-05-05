@@ -48,7 +48,10 @@ u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
 g(x,y,z) &= x^{2} + y^{2} - \frac{z^{2}}{c^{2}} &= 0\\
 \nabla g = \left(\frac{\partial g}{\partial x}, \frac{\partial g}{\partial y}, \frac{\partial g}{\partial z}\right) &= \left(2x, 2y, -\frac{2z}{c^{2}}\right)\\
 |\nabla g| &= \sqrt{(2x)^{2} + (2y)^{2} - \left(\frac{2z}{c^{2}}\right)^{2}}\\
-&= 4x + 4y + \frac{4 \sqrt{z}}{c^{2}}
+&= \sqrt{4x + 4y + \frac{4 z^{2}}{c^{4}}}\\
+&= 2 \sqrt{x + y + \frac{z^{2}}{c^{4}}}\\
+\vec{n} &= \frac{2\left(x,y, - \frac{2z}{c^{2}}\right)}{2 \sqrt{x + y + \frac{z^{2}}{c^{4}}}}\\
+&= \frac{\left(x,y, - \frac{2z}{c^{2}}\right)}{\sqrt{x + y + \frac{z^{2}}{c^{4}}}}\\
 \end{align*}
 $$
 Nu skal jeg beregne normalvektoren:
