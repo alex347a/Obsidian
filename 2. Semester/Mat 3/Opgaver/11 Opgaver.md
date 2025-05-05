@@ -133,14 +133,10 @@ $$
 \vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
 \begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
-
+-a \sin(v)  &  b \cos(v)  &  0\\
+0  &  0  &  1\\
 \end{vmatrix}\\
-\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))\\
-&= \vec{i}(-cu \cos(v)) - \vec{j}(cu \sin(v)) + \vec{k}(u \cos^{2}(v) + \sin^{2}(v))\\
-&= [-cu \cos(v), -cu \sin(v), u]\\
-\vec{N} &=  \underline{\underline{[-cu \cos(v), -cu \sin(v), u]}}\\
-\text{Kan også skrives:}\\
-\vec{N} &= u[-c \cos(v), -c \sin(v), 1]
+\vec{N} &= \vec{i}(b \cos(v) \cdot 1 - 0 \cdot 0) - \vec{j}(0 \cdot 0 - ) + \vec{k}()\\
 \end{align*}
 $$
 Svaret i bogen er:
