@@ -26,7 +26,8 @@ x^{2} + y^{2} = u^{2} \cos^{2}(v) + u^{2} \sin^{2}(v) = u^{2}(\cos^{2}(v) + \sin
 u &= \frac{z}{c}\\
 \text{Substituerer ind i den forrige formel:}\\
 x^{2}+y^{2} &= \left(\frac{z}{c}\right)^{2}\\
-x^{2}+y^{2}- \frac{z^{2}}{c^{2}} &= 0
+x^{2}+y^{2}- \frac{z^{2}}{c^{2}} &= 0\\
+x^{2}+y^{2}- \frac{z^{2}}{c^{2}} = 0 \Rightarrow z = c \sqrt{x^{2} + y^{2}}
 \end{align*}
 $$
 Nu skal jeg finde parameterkurverne:
@@ -76,17 +77,85 @@ Svaret i bogen er:
 $$
 z = c \sqrt{x^{2} + y^{2}}, \quad \text{ circles, straight lines}, \quad [-cu \cos(v), - cu \sin(v), u]
 $$
-Dvs. mine svar passer idet:
-$$
-x^{2}+y^{2}- \frac{z^{2}}{c^{2}} = 0 \Rightarrow z = c \sqrt{x^{2} + y^{2}}
-$$
 ### 10.5.4
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 
 For reference (1) is the equation:
 $z = f(x,y) \quad \text{ or } \quad g(x,y,z) = 0$.
 
-Elliptic cylinder $r(u,v) = [a \cos(u), b \sin(v), u]0$
+Elliptic cylinder $r(u,v) = [a \cos(u), b \sin(v), u]$.
+
+Jeg skal altså
+1. Derive a representation of the surface in the form $z=f(x,y)$ or $g(x,y,z)=0$.
+2. Find the parameter curves where $u=constant$ and $v=constant$.
+3. Compute the normal vector $\vec{N} = \vec{r}_{u} \times \vec{r}_{v}$ to the surface.
+
+Først udleder jeg representationen af fladen:
+$$
+\begin{align*}
+g(x,y,z) &= 0\\
+x &= a \cos(v)\\
+y &= b \sin(v)\\
+z&= u\\
+\text{Formlen for en elliptisk cylinder er:}\\
+x^{2} + y^{2} &= a^{2} z^{2}\\
+\text{Indsætter mine værdier:}\\
+x^{2} + y^{2} = u^{2} \cos^{2}(v) + u^{2} \sin^{2}(v) = u^{2}(\cos^{2}(v) + \sin^{2}(v)) &= u^{2}\\
+\text{Siden } z&= cu:\\
+u &= \frac{z}{c}\\
+\text{Substituerer ind i den forrige formel:}\\
+x^{2}+y^{2} &= \left(\frac{z}{c}\right)^{2}\\
+x^{2}+y^{2}- \frac{z^{2}}{c^{2}} &= 0\\
+x^{2}+y^{2}- \frac{z^{2}}{c^{2}} = 0 \Rightarrow z = c \sqrt{x^{2} + y^{2}}
+\end{align*}
+$$
+Nu skal jeg finde parameterkurverne:
+$$
+\begin{align*}
+\text{For } u &=  u_{0}\\
+x &= u_{0} \cos(v)\\
+y &= u_{0} \sin(v)\\
+z &= cu_{0}\\
+z &= cu_{0} \text{ beskriver en cirkel i planen med radius } u_{0}\\
+\text{Som er centreret på z-aksen}\\
+\text{For } v &= v_{0}\\
+x &= u \cos(v_{0})\\
+y &= u \sin(v_{0})\\
+z &= cu\\
+u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
+\text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
+\text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
+\end{align*}
+$$
+Nu skal jeg beregne normalvektoren:
+$$
+\begin{align*}
+\vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
+r (u,v) &= (u \cos(v), u \sin(v), cu)\\
+\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &=  (\cos(v), \sin(v), c)\\
+\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &=  (-u \sin(v), u \cos(v), 0)\\
+\text{Siden jeg ikke skal finde unit vectoren}\\
+\text{er der ingen grund til at gøre brug af}\\
+\vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
+\text{Jeg skal bare beregne normalvektoren } \vec{N}:\\
+\vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+\cos(v)  & \sin(v) & c\\
+- u \sin(v) & u \cos(v) & 0
+\end{vmatrix}\\
+\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))\\
+&= \vec{i}(-cu \cos(v)) - \vec{j}(cu \sin(v)) + \vec{k}(u \cos^{2}(v) + \sin^{2}(v))\\
+&= [-cu \cos(v), -cu \sin(v), u]\\
+\vec{N} &=  \underline{\underline{[-cu \cos(v), -cu \sin(v), u]}}\\
+\text{Kan også skrives:}\\
+\vec{N} &= u[-c \cos(v), -c \sin(v), 1]
+\end{align*}
+$$
+Svaret i bogen er:
+$$
+z = c \sqrt{x^{2} + y^{2}}, \quad \text{ circles, straight lines}, \quad [-cu \cos(v), - cu \sin(v), u]
+$$
 ### 10.5.19
 Find a normal vector. The answer gives one representation; there are many. Sketch the surface and parameter curves.
 
