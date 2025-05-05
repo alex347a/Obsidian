@@ -15,3 +15,21 @@ Der er altså to forskellige parametre til at fremstille en flade.
 Enten kan det gives ved en kurve fra a til b eller ved en flade ved at tag en vektor der peger rundt i fladen.
 
 ![[Fig 242 og 243.png]]
+Overflade udpeges af:
+$$
+\vec{r} (u,v)
+$$
+#### Normalvektor:
+$$
+\vec{r}_{u} = \frac{\partial \vec{r}(u,v)}{\partial u} \quad \text{ og } \quad \vec{r}_{v} = \quad \frac{\partial \vec{r} (u,v)}{\partial v}
+$$
+er tangentvektorer til planen. De danner basis for faldens tangentplan i P.
+Normalvektoren:
+$$
+\vec{N} = \vec{r}_{u} \times \vec{r}_{v}
+$$
+
+Enhedsnormalvektoren:
+$$
+\vec{n} = \frac{grad }{grad}
+$$
