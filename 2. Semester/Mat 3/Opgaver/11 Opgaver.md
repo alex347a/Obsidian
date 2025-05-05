@@ -17,10 +17,17 @@ $$
 g(x,y,z) &= 0\\
 x &= u \cos(v)\\
 y &= u \sin(v)\\
-z&= cu
-
+z&= cu\\
+\\
+x^{2} + y^{2} = u^{2} \cos^{2}(v) + u^{2} \sin^{2}(v) = u^{2}(\cos^{2}(v) + \sin^{2}(v)) &= u^{2}\\
+\text{Siden } z&= cu:\\
+u &= \frac{z}{c}\\
+\text{Substituerer ind i den forrige formel:}\\
+x^{2}+y^{2} &= \left(\frac{z}{c}\right)^{2}\\
+x^{2}+y^{2}- \frac{z^{2}}{c^{2}} &= 0
 \end{align*}
 $$
+
 ### 10.5.4
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 
