@@ -45,7 +45,6 @@ y &= u \sin(v_{0})\\
 z &= cu\\
 u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
 \text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
-\text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
 \end{align*}
 $$
 Nu skal jeg beregne normalvektoren:
@@ -118,16 +117,15 @@ x &= a \cos(v_{0})\\
 y &= b \sin(v_{0})\\
 z &= u\\
 \text{Dette er en lige linje parallel med z-aksen}\\
-\text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
 \end{align*}
 $$
 Nu skal jeg beregne normalvektoren:
 $$
 \begin{align*}
 \vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
-r (u,v) &= (u \cos(v), u \sin(v), cu)\\
-\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &=  (\cos(v), \sin(v), c)\\
-\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &=  (-u \sin(v), u \cos(v), 0)\\
+\vec{r} = (a \cos(v_{0}), b \sin(v_{0}), 0)\\
+\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &=  (-a \sin(v), b \cos(v), 0)\\
+\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &=  (0, 0, 1)\\
 \text{Siden jeg ikke skal finde unit vectoren}\\
 \text{er der ingen grund til at gøre brug af}\\
 \vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
@@ -135,8 +133,7 @@ r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
 \begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
-\cos(v)  & \sin(v) & c\\
-- u \sin(v) & u \cos(v) & 0
+
 \end{vmatrix}\\
 \vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))\\
 &= \vec{i}(-cu \cos(v)) - \vec{j}(cu \sin(v)) + \vec{k}(u \cos^{2}(v) + \sin^{2}(v))\\
