@@ -54,5 +54,16 @@ $$
 Man kunne også godt krydse, men det er mere besværligt end at dividere med længden, i hvert fald i dette tilfælde.
 
 ### Fladeintegraler
-Givet en flade S
-og normalvektorerne $\vec{N}$
+Givet en flade S $\vec{r} (u,v) = x(u,v) \vec{i} + y(u,v) \vec{j} + z(u,v) \vec{k}$
+og normalvektorerne $\vec{N} = \vec{r}_{u} \times \vec{r_{v}}$ og $\vec{n} = \frac{\vec{N}}{|\vec{N}|}$
+For en vektorfunktion $\vec{F}$ defineres fladeintegralet:
+$$
+\iint_{S} \vec{F} \cdot \vec{n} \, dA = \iint_{R} \vec{F} (\vec{r} (u,v)) \cdot \vec{N} (u,v) \, du \, dv
+$$
+Siden $\vec{n} = \frac{\vec{N}}{|\vec{N}|}$
+Så er:
+$$
+\vec{N} = \vec{n}|\vec{N}|
+$$
+
+Flux: $\vec{F} = \rho \vec{\underbrace{v}_{\text{hastighed}}}$
