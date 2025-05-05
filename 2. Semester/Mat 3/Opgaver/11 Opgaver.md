@@ -157,7 +157,7 @@ Hyperbolic cylinder $x^{2} y^{2} = 1$
 
 Svaret i bogen er:
 $$
-[\cosh u, ]
+[\cosh u, \sinh u, v], \quad [\cosh u, - \sinh u, 0]
 $$
 ### 10.6.7
 Evaluate the integral for the given data. Describe the kind of surface. Show the details of your work.
