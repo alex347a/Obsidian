@@ -56,7 +56,13 @@ r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \text{er der ingen grund til at gøre brug af}\\
 \vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
 \text{Jeg skal bare beregne normalvektoren } \vec{N}:\\
-g(x,y,z) &= x^{2} + y^{2} - \frac{z^{2}}{c^{2}} &= 0\\
+\vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+\cos(v)  & \sin(v) & c\\
+- u \sin(v) & u \cos(v) & 0
+\end{vmatrix}\\
+\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot )
 
 \end{align*}
 $$
