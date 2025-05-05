@@ -179,6 +179,7 @@ b_{1}  & b_{2} &  b_{3}\\
 &= (-\cosh(v), \sinh(v), 0)
 \end{align*}
 $$
+Mangler at tegne den.
 
 Svaret i bogen er:
 $$
