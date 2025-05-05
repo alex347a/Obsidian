@@ -30,6 +30,9 @@ Normalvektoren:
 $$
 \vec{N} = \vec{r}_{u} \times \vec{r}_{v}
 $$
+$$
+\vec{N} = \vec{r}
+$$
 
 Enhedsnormalvektoren:
 $$
