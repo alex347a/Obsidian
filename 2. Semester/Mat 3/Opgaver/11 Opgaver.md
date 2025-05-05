@@ -159,7 +159,17 @@ $$
 \begin{align*}
 g(x,y,z) &=  0\\
 x^{2} y^{2} + 1 &= 0\\
-
+\text{Jeg kan parameteriser funktionen til:}\\
+\cosh^{2}(v) - \sinh^{2}(v) &= 1\\
+\vec{N} &= \vec{r}_{u} \times \vec{r}_{v}\\
+\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &= (0, 0, 1)\\
+\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &= (-a \sin(v), b \cos(v), 0)\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+\\
 \end{align*}
 $$
 
