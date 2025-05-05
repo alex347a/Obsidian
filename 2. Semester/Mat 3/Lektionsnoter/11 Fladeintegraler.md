@@ -75,5 +75,30 @@ Så det er bare en specialudgave af fladeintegralet.
 
 Parabolsk cylinder S (en parabel man trækker i z-retningen)
 $$
-y = x
+\begin{align*}
+y &=  x^{2}, \quad 0 \leq x \leq 2, \quad 0 \leq z \leq 3\\
+u &= x, \quad v = z
+\end{align*}
+$$
+u og v skal være uafhængige, fordi ellers kan man ikke køre i området.
+$$
+F (u,v) = (u,u^{2}, v)
+$$
+Indsæt billede af grafen for V over u, hvor V går op ad y-aksen til 3 og u går ud af x-aksen til 2.
+
+$$
+F_{u} (1, 2u, 0), \quad F_{v} = (0,0,1)
+$$
+Finder normalvektoren ved at krydse dem:
+$$
+\begin{align*}
+\vec{N} = \vec{r}_{u} \times \vec{r}_{v}\\
+\vec{N} 
+&= 
+\begin{bmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+1  & 2u & 0\\
+0 & 0 & 0
+\end{bmatrix}
+\end{align*}
 $$
