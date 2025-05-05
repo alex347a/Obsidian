@@ -171,9 +171,12 @@ b_{1}  & b_{2} &  b_{3}\\
 \end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
 \begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
-a_{1}  & a_{2}  & a_{3}\\
-b_{1}  & b_{2} &  b_{3}\\
-\end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+0  &  0  &  1\\
+\sinh(v)  &  \cosh(v)  &  0\\
+\end{vmatrix} \\
+&= \vec{i}(0 \cdot 0 - 1 \cdot \cosh(v)) - \vec{j}(0 \cdot 0 - 1 \cdot \sinh(v)) + \vec{k}(0 \cdot \cosh(v) - 0 \cdot \sinh(v))\\
+&= \vec{i}(\cosh(v)) - \vec{j}(-\sinh(v)) + 0\\
+&= (-\cosh(v), \sinh(v), 0)
 \end{align*}
 $$
 
