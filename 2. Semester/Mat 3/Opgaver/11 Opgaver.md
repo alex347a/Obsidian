@@ -17,6 +17,9 @@ Find a normal vector. The answer gives one representation; there are many. Sketc
 
 Hyperbolic cylinder $x^{2} y^{2} = 1$
 ### 10.6.7
+Evaluate the integral for the given data. Describe the kind of surface. Show the details of your work.
 
-
+$$
+F = [0, \sin(y), \cos(z)], \text{ S the cylinder } x = y^{2}, \text{ where } 0 \leq y \leq \frac{\pi}{4} \text{ and } 0 \leq z \leq y
+$$
 ### 10.6.15

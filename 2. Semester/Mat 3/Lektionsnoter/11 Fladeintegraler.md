@@ -220,5 +220,6 @@ Where A is the area of S.
 
 Applications: If $G(r)$ is the mass density of S, then the integral is the total mass of S. If $G=1$ then the integral gives the area A(S) of S:
 $$
-A(S) = \iint_{S} dA = \iint_{S} |\vec{r}
+A(S) = \iint_{S} dA = \iint_{S} |\vec{r}_{u} \times \vec{r}_{v}| \, du \, dv
 $$
+This can be used for calculating the area of a sphere, the surface of a torus, and the moments of inertia for a surface. This can be seen in the book from page 448 and on.
