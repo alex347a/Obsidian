@@ -6,12 +6,12 @@ $z = f(x,y) \quad \text{ or } \quad g(x,y,z) = 0$.
 
 Cone $r(u,v) = [u \cos(v), u \sin(v), cu]$
 
-I am tasked with:
+Jeg skal altså
 1. Derive a representation of the surface in the form $z=f(x,y)$ or $g(x,y,z)=0$.
 2. Find the parameter curves where $u=constant$ and $v=constant$.
 3. Compute the normal vector $\vec{N} = \vec{r}_{u} \times \vec{r}_{v}$ to the surface.
 
-First I derive the representation:
+Først udleder jeg representationen af fladen:
 $$
 \begin{align*}
 g(x,y,z) &= 0\\
@@ -27,7 +27,17 @@ x^{2}+y^{2} &= \left(\frac{z}{c}\right)^{2}\\
 x^{2}+y^{2}- \frac{z^{2}}{c^{2}} &= 0
 \end{align*}
 $$
-
+Nu skal jeg finde parameterkurverne:
+$$
+\begin{align*}
+\text{For } u &=  u_{0}\\
+x &= u_{0} \cos(v)\\
+y &= u_{0} \sin(v)\\
+z &= cu_{0}\\
+z &= cu_{0} \text{ beskriver en cirkel i planen med radius } u_{0}\\
+\text{Som er centreret på z-aksen}
+\end{align*}
+$$
 ### 10.5.4
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 
