@@ -98,15 +98,9 @@ x &= a \cos(v)\\
 y &= b \sin(v)\\
 z&= u\\
 \text{Formlen for en elliptisk cylinder er:}\\
-x^{2} + y^{2} &= a^{2} z^{2}\\
+\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} &= 1\\
 \text{Indsætter mine værdier:}\\
-x^{2} + y^{2} = u^{2} \cos^{2}(v) + u^{2} \sin^{2}(v) = u^{2}(\cos^{2}(v) + \sin^{2}(v)) &= u^{2}\\
-\text{Siden } z&= cu:\\
-u &= \frac{z}{c}\\
-\text{Substituerer ind i den forrige formel:}\\
-x^{2}+y^{2} &= \left(\frac{z}{c}\right)^{2}\\
-x^{2}+y^{2}- \frac{z^{2}}{c^{2}} &= 0\\
-x^{2}+y^{2}- \frac{z^{2}}{c^{2}} = 0 \Rightarrow z = c \sqrt{x^{2} + y^{2}}
+\frac{(a \cos(v))^{2}}{a^{2}} + \frac{(b \sin(v))^{2}}{b^{2}} = \cos^{2}(v) + \sin^{2}(v) &= 1
 \end{align*}
 $$
 Nu skal jeg finde parameterkurverne:
