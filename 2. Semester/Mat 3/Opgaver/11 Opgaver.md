@@ -228,7 +228,12 @@ F \cdot (\vec{r}_{u} \times \vec{r}_{v}) &= 0 \cdot 1 + \sin(u) \cdot (-2u) + \c
 \text{Indsætter i det ydre integrale:}\\
 \int_{0}^{\frac{\pi}{4}} -2u^{2} \sin(u) \, du \\
 \text{Bruger integration i dele:}\\
-
+t = u^{2}, dt &=  2u \, du, \\
+dv = \sin(u) \, du, v &=  - \cos(u)\\
+\int u^{2} \sin(u) \, du &= - u^{2} \cos(u) + 2 \int u \cos(u) \, du\\
+\text{Substituere:}\\
+\text{For }\int u \cos(u) \, du,\\
+t = u, dt = du, dv &=  \cos(u) \, du, v = \sin(u)
 \end{align*}
 $$
 ### 10.6.15
