@@ -1,3 +1,5 @@
+Hvor vi i linjeintegraler integrerer over kurver i rummet, så bliver der i fladeintegraler integrereret over flader i rummet. Hver kurve i rummet er repræsenteret af en parametrisk repræsentation. Idet flader er to-dimensionelle kræves der to parametre: v og u.
+
 #### Overflader
 Kugle:
 $$
