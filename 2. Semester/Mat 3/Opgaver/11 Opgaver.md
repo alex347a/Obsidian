@@ -128,9 +128,8 @@ Nu skal jeg beregne normalvektoren:
 $$
 \begin{align*}
 \vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
-\vec{r} = (a \cos(v_{0}), b \sin(v_{0}), 0)\\
-\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &=  (-a \sin(v), b \cos(v), 0)\\
-\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &=  (0, 0, 1)\\
+\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &= (0, 0, 1)\\
+\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &= (-a \sin(v), b \cos(v), 0)\\
 \text{Siden jeg ikke skal finde unit vectoren}\\
 \text{er der ingen grund til at gøre brug af}\\
 \vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
@@ -138,15 +137,15 @@ $$
 \vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
 \begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
--a \sin(v)  &  b \cos(v)  &  0\\
 0  &  0  &  1\\
+-a \sin(v)  &  b \cos(v)  &  0\\
 \end{vmatrix}\\
 \begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
 a_{1}  & a_{2}  & a_{3}\\
 b_{1}  & b_{2} &  b_{3}\\
 \end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
-\vec{N} &= \vec{i}(b \cos(v) \cdot 1 - 0 \cdot 0) - \vec{j}(- a \sin(v) \cdot 1 - 0 \cdot 0) + \vec{k}(- a \sin(v) \cdot 0 - b \cos(v) \cdot 0)\\
+\vec{N} &= \vec{i}(0 \cdot ) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
 &= \vec{i}(b \cos(v)) - \vec{j}(- a \sin(v)) + 0\\
 &= (b \cos(v), a \sin(v), 0)
 \end{align*}
