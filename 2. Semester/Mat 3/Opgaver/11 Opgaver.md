@@ -43,15 +43,6 @@ z &= cu\\
 u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
 \text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
 \text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
-\text{I stedet for at beregne krydsproduktet kan jeg beregne:}\\
-\vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
-g(x,y,z) &= x^{2} + y^{2} - \frac{z^{2}}{c^{2}} &= 0\\
-\nabla g = \left(\frac{\partial g}{\partial x}, \frac{\partial g}{\partial y}, \frac{\partial g}{\partial z}\right) &= \left(2x, 2y, -\frac{2z}{c^{2}}\right)\\
-|\nabla g| &= \sqrt{(2x)^{2} + (2y)^{2} - \left(\frac{z}{c^{2}}\right)^{2}}\\
-&= \sqrt{4x + 4y + \frac{4 z^{2}}{c^{4}}}\\
-&= 2 \sqrt{x^{2} + y^{2} + \frac{z^{2}}{c^{4}}}\\
-\vec{n} &= \frac{2\left(x,y, - \frac{z}{c^{2}}\right)}{2 \sqrt{x^{2} + y^{2} + \frac{z^{2}}{c^{4}}}}\\
-&= \frac{\left(x,y, - \frac{z}{c^{2}}\right)}{\sqrt{x^{2} + y^{2} + \frac{z^{2}}{c^{4}}}}\\
 \end{align*}
 $$
 Nu skal jeg beregne normalvektoren:
@@ -61,6 +52,11 @@ $$
 r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &=  (\cos(v), \sin(v), c)\\
 \vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &=  (-u \sin(v), u \cos(v), 0)\\
+\text{Siden jeg ikke skal finde unit vectoren}\\
+\text{er der ingen grund til at gøre brug af}\\
+\vec{n} = \frac{\text{grad g}}{\text{|grad g|}} &=  \frac{\nabla g}{|\nabla g|}\\
+\text{Jeg skal bare beregne normalvektoren } \vec{N}:\\
+g(x,y,z) &= x^{2} + y^{2} - \frac{z^{2}}{c^{2}} &= 0\\
 
 \end{align*}
 $$
