@@ -62,8 +62,9 @@ r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \cos(v)  & \sin(v) & c\\
 - u \sin(v) & u \cos(v) & 0
 \end{vmatrix}\\
-\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))
-
+\vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))\\
+&= \vec{i}(-cu \cos(v)) - \vec{j}(cu \sin(v)) + \vec{k}(u \cos^{2}(v) + \sin^{2}(v))\\
+&= 
 \end{align*}
 $$
 ### 10.5.4
