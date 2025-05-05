@@ -188,3 +188,18 @@ $$
 \end{align*}
 $$
 Det giver altså det samme.
+
+### Orientation of surfaces (ikke gennemgået i timen, og nok derfor heller ikke super vigtigt)
+Orientation can be changed by choosing -n instead of the normal vector n. This effectively means that each component of n is multiplied by -1.
+The easiest way to do it is to go from:
+$$
+N = \vec{r}_{u} \times \vec{r}_{v}
+$$
+to:
+$$
+-N = \vec{r}_{v} \times \vec{r}_{u}
+$$
+Which can also be written as:
+$$
+-N = -\vec{r}_{u} \times \vec{r}_{v}
+$$
