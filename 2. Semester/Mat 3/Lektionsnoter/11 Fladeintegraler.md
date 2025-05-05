@@ -81,6 +81,7 @@ u &= x, \quad v = z
 \end{align*}
 $$
 u og v skal være uafhængige, fordi ellers kan man ikke køre i området.
+Vi får ud fra y, at y variere mellem $0 \leq y \leq 4$ da $0 \leq x \leq 2$ og $0^{2} = 0$ og $2^{2} = 4$
 $$
 F (u,v) = (u,u^{2}, v)
 $$
@@ -131,6 +132,7 @@ $$
 = {[4v^{3} - 12v]_{0}^{3}} = 108 - 36 &=  72
 \end{align*}
 $$
+Man kan også regne det med krydsproduktet:
 $$
 \begin{align*}
 \vec{N} \cdot \vec{i} &= 
@@ -171,7 +173,11 @@ $$
 $$
 $$
 \begin{align*}
-\iint_{R} \vec{F}(\vec{r}(\vec{u}, \vec{v})) \cdot \vec{N} (u,v) \, du \, dv = \iint_{S} F_{1} \, dy \, dz - F_{2} \, dx \, dz\\
-\int_{0}^{3} \int_{0}^{4} 3z^{2}
+\iint_{R} \vec{F}(\vec{r}(\vec{u}, \vec{v})) \cdot \vec{N} (u,v) \, du \, dv &=  \iint_{S} F_{1} \, dy \, dz - F_{2} \, dx \, dz\\
+\int_{0}^{3} \int_{0}^{4} 3z^{2} \, dy \, dz - \int_{0}^{3} \int_{0}^{2} 6 \, dx \, dz
+&= \int_{0}^{3} [3yz^{2}]_{0}^{4} \, dz - \int_{0}^{3} [6x]_{0}^{2} \, dz\\
+&=  \int_{0}^{3} 12 z^{2} \, dz - \int_{0}^{3} 12 \, dz\\
+= [4z^{3}]_{0}^{3} - [12z]_{0}^{3} = 108 - 36 &=  \underline{\underline{72}}
 \end{align*}
 $$
+Det giver altså det samme.
