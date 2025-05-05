@@ -67,3 +67,13 @@ $$
 $$
 
 Flux: $\vec{F} = \rho \vec{\underbrace{v}_{\text{hastighed}}}$
+Fluxintegrale:
+$$
+\iint_{S} \vec{F} \cdot \vec{n} \, dA = \iint_{R} \vec{F} (\vec{r} (u,v)) \cdot \vec{N} (u,v) \, du \, dv = \underline{\iint_{S} F_{1} \, dy \, dz + F_{2} \, dx \, dz + F_{3} \, dx \, dy}
+$$
+Så det er bare en specialudgave af fladeintegralet.
+
+Parabolsk cylinder S (en parabel man trækker i z-retningen)
+$$
+y = x
+$$
