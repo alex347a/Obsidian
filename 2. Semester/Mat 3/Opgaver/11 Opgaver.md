@@ -213,9 +213,15 @@ b_{1}  & b_{2} &  b_{3}\\
 &= \vec{i}(1 \cdot 1 - 0 \cdot 0) - \vec{j} (2u \cdot 1 - 0 \cdot 0) + \vec{k} (2u \cdot 0 - 1 \cdot 0)\\
 &= \vec{i}(1) - \vec{j}(2u) + 0\\
 &= [1,-2u,0]\\
-\text{Tilbagesubstituerer }\\
+\text{Substituerer } y &=  u \quad \text{ og } \quad z =  v\\
+F &=  [0, \sin(u), \cos(v)]\\
 \text{Nu skal jeg beregne fluxintegralet:}\\
-\iint_{S} F  \cdot (\vec{r}_{u} \times \vec{r}_{v}) \, dA = \int_{0} ^ {\frac{\pi}{4}} \int_{0}^{u} F \cdot [1,-2,0] \, dv \, du
+\iint_{S} F  \cdot (\vec{r}_{u} \times \vec{r}_{v}) \, dA &=  \int_{0} ^ {\frac{\pi}{4}} \int_{0}^{u} F \cdot [1,-2,0] \, dv \, du\\
+\text{Beregner prikproduktet:}\\
+F \cdot (\vec{r}_{u} \times \vec{r}_{v}) &= 0 \cdot 1 + \sin(u) \cdot (-2u) + \cos(v) \cdot 0 \\
+&= -2 \sin(u)\\
+\text{Integralet bliver derfor:}\\
+\int_{0}^{\frac{\pi}{4}} \int_{0} ^{u} - 2u \sin(u) \, dv \, du &= \int_{0} ^{\frac{\pi}{4}} - 2u^{2} \sin(u) \, du
 \end{align*}
 $$
 ### 10.6.15
