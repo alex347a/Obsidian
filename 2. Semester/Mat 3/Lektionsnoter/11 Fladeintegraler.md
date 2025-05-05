@@ -130,5 +130,48 @@ $$
 \int_{0}^{3} [3 u^{2} v^{2} - 6u]_{0}^{2} \, dv &=  \int (12 v^{2} - 12) \, dv\\
 = {[4v^{3} - 12v]_{0}^{3}} = 108 - 36 &=  72
 \end{align*}
-
+$$
+$$
+\begin{align*}
+\vec{N} \cdot \vec{i} &= 
+\begin{pmatrix}
+2u\\
+-1\\
+0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1\\
+0\\
+0
+\end{pmatrix}
+= 2u \text{ er positiv}
+\\
+\vec{N} \cdot \vec{j} &= 
+\begin{pmatrix}
+2u\\
+-1\\
+0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+= -1 \text{ er negativt}\\
+\vec{N} \cdot \vec{k} &=  
+\begin{pmatrix}
+2u  &  0\\
+-1  &  0\\
+0  &  1
+\end{pmatrix}
+= 0
+\end{align*}
+$$
+$$
+\begin{align*}
+\iint_{R} \vec{F}(\vec{r}(\vec{u}, \vec{v})) \cdot \vec{N} (u,v) \, du \, dv = \iint_{S} F_{1} \, dy \, dz - F_{2} \, dx \, dz\\
+\int_{0}^{3} \int_{0}^{4} 3z^{2}
+\end{align*}
 $$
