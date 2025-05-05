@@ -227,7 +227,8 @@ F \cdot (\vec{r}_{u} \times \vec{r}_{v}) &= 0 \cdot 1 + \sin(u) \cdot (-2u) + \c
 &= -2u^{2} \sin(u)\\
 \text{Indsætter i det ydre integrale:}\\
 \int_{0}^{\frac{\pi}{4}} -2u^{2} \sin(u) \, du \\
-\text{B}
+\text{Bruger integration i dele:}\\
+
 \end{align*}
 $$
 ### 10.6.15
