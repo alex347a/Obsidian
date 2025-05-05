@@ -197,7 +197,25 @@ $$
 \begin{align*}
 u = y, \quad \text{ og } \quad v &=  z\\
 r (u,v) = [u^{2}, u, v], \quad 0 \leq u &\leq \frac{\pi}{4}, \quad 0 \leq v \leq u\\
-\vec{r}_{u} = \frac{\partial r}{\partial u} = [2u,1,0], \quad \vec{r}_{u} = \frac{\partial r}{\partial v} &= [0,0,1]
+\vec{r}_{u} = \frac{\partial r}{\partial u} = [2u,1,0], \quad \vec{r}_{u} = \frac{\partial r}{\partial v} &= [0,0,1]\\\\
+\text{Nu skal jeg beregne krydsproduktet:}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+\vec{r}_{u} \times \vec{r}_{v} &= 
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+2u  & 1  & 0\\
+0  & 0  & 1\\
+\end{vmatrix}\\
+&= \vec{i}(1 \cdot 1 - 0 \cdot 0) - \vec{j} (2u \cdot 1 - 0 \cdot 0) + \vec{k} (2u \cdot 0 - 1 \cdot 0)\\
+&= \vec{i}(1) - \vec{j}(2u) + 0\\
+&= [1,-2u,0]\\
+\text{Tilbagesubstituerer }\\
+\text{Nu skal jeg beregne fluxintegralet:}\\
+\iint_{S} F  \cdot (\vec{r}_{u} \times \vec{r}_{v}) \, dA = \int_{0} ^ {\frac{\pi}{4}} \int_{0}^{u} F \cdot [1,-2,0] \, dv \, du
 \end{align*}
 $$
 ### 10.6.15
