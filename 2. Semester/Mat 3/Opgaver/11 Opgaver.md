@@ -100,24 +100,24 @@ z&= u\\
 \text{Formlen for en elliptisk cylinder er:}\\
 \frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} &= 1\\
 \text{Indsætter mine værdier:}\\
-\frac{(a \cos(v))^{2}}{a^{2}} + \frac{(b \sin(v))^{2}}{b^{2}} = \cos^{2}(v) + \sin^{2}(v) &= 1
+\frac{(a \cos(v))^{2}}{a^{2}} + \frac{(b \sin(v))^{2}}{b^{2}} = \cos^{2}(v) + \sin^{2}(v) &= 1\\
+\text{Dvs. } z &= u \text{ er en cylinder der udstrækker sig uendeligt langs z-aksen}
 \end{align*}
 $$
 Nu skal jeg finde parameterkurverne:
 $$
 \begin{align*}
 \text{For } u &=  u_{0}\\
-x &= u_{0} \cos(v)\\
-y &= u_{0} \sin(v)\\
-z &= cu_{0}\\
-z &= cu_{0} \text{ beskriver en cirkel i planen med radius } u_{0}\\
-\text{Som er centreret på z-aksen}\\
+x &= a \cos(v)\\
+y &= b \sin(v)\\
+z &= u_{0}\\
+z &= u_{0} \text{ en ellipse centreret på z-aksen} \\
+\text{med halvakserne a (langs x) og b (langs y) }\\
 \text{For } v &= v_{0}\\
-x &= u \cos(v_{0})\\
-y &= u \sin(v_{0})\\
-z &= cu\\
-u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
-\text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
+x &= a \cos(v_{0})\\
+y &= b \sin(v_{0})\\
+z &= u\\
+\text{Dette er en lige linje parallel med z-aksen}\\
 \text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
 \end{align*}
 $$
