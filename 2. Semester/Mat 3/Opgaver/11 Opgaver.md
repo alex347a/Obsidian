@@ -237,10 +237,13 @@ t = u, dt = du, dv &=  \cos(u) \, du, v = \sin(u)\\
 \int u \cos(u) \, du = u \sin(u) - \int \sin(u) \, du &= u \sin(u) + \cos(u)\\
 \text{Kombinerer resultaterne:}\\
 \int u \cos(u) \, du &=  -u^{2} \cos(u) + 2 u \sin(u) + 2 \cos(u) + C\\
+\text{Jeg husker at gange med -2, da jeg havde:}\\
+-2u^{2} \sin(u) \text{ og ikke bare } u^{2}\\
+\int u \cos(u) \, du &=  2u^{2} \cos(u) - 4 u \sin(u) - 4 \cos(u) + C\\
 \text{Nu kan jeg evaluere over intervallet af det orignale integrale:}\\
 \left[- \left(\frac{\pi}{4}\right)^{2} \cos\left(\frac{\pi}{4}\right) + 2 \cdot \frac{\pi}{4} \sin\left(\frac{\pi}{4}\right) + 2 \cos\left(\frac{\pi}{4}\right)\right] - [0 + 0 + 2 \cos(0)]\\
 \text{Da } \cos\left(\frac{\pi}{4}\right) = \sin\left(\frac{\pi}{4}\right) &= \frac{\sqrt{2}}{2}:\\
-&= - \frac{\pi^{2}}{16} \cdot \frac{\sqrt{2}}{2} + \frac{\pi}{2} \cdot \frac{\sqrt{2}}{2} + \sqrt{2} - 2
+&= 2 \frac{\pi^{2}}{16} \cdot \frac{\sqrt{2}}{2} + \frac{\pi}{2} \cdot \frac{\sqrt{2}}{2} + \sqrt{2} - 2
 \end{align*}
 $$
 ### 10.6.15
