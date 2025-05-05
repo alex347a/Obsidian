@@ -74,7 +74,7 @@ $$
 $$
 
 Flux: $\vec{F} = \rho \vec{\underbrace{v}_{\text{hastighed}}}$
-Fluxintegrale:
+Fluxintegrale (husk at flux er massen af væsken der går igennem S per tidsenhed):
 $$
 \iint_{S} \vec{F} \cdot \vec{n} \, dA = \iint_{R} \vec{F} (\vec{r} (u,v)) \cdot \vec{N} (u,v) \, du \, dv = \underline{\iint_{S} F_{1} \, dy \, dz + F_{2} \, dx \, dz + F_{3} \, dx \, dy}
 $$

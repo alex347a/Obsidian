@@ -13,7 +13,10 @@ $z = f(x,y) \quad \text{ or } \quad g(x,y,z) = 0$.
 
 Elliptic cylinder $r(u,v) = [a \cos(u), b \sin(v), u]0$
 ### 10.5.19
+Find a normal vector. The answer gives one representation; there are many. Sketch the surface and parameter curves.
 
+Hyperbolic cylinder $x^{2} y^{2} = 1$
 ### 10.6.7
+
 
 ### 10.6.15
