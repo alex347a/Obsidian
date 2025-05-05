@@ -203,4 +203,5 @@ Which can also be written as:
 $$
 -N = -\vec{r}_{u} \times \vec{r}_{v}
 $$
-A small piece of smooth surface is always [orientable]
+A small piece of smooth surface is always [[orientable]], but it may not always hold for entire surfaces, for example take a look at the Möbius strip
+![[Fig 248.png]]
