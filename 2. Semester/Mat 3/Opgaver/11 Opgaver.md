@@ -145,19 +145,20 @@ $$
 a_{1}  & a_{2}  & a_{3}\\
 b_{1}  & b_{2} &  b_{3}\\
 \end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
-\vec{N} &= \vec{i}(0 \cdot 0 - 1 \cdot ) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
-&= \vec{i}(b \cos(v)) - \vec{j}(- a \sin(v)) + 0\\
-&= (b \cos(v), a \sin(v), 0)
+\vec{N} &= \vec{i}(0 \cdot 0 - 1 \cdot b \cos(v)) - \vec{j}(0 \cdot 0 - 1 \cdot (- a \sin(v))) + \vec{k}(0 \cdot b \cos(v) - 0 \cdot (-a \sin(v))\\
+&= \vec{i}(-b \cos(v)) - \vec{j}(-(- a \sin(v))) + 0\\
+&= (-b \cos(v), - a \sin(v), 0)
 \end{align*}
-$$
-Svaret i bogen er:
-$$
-z = c \sqrt{x^{2} + y^{2}}, \quad \text{ circles, straight lines}, \quad [-cu \cos(v), - cu \sin(v), u]
 $$
 ### 10.5.19
 Find a normal vector. The answer gives one representation; there are many. Sketch the surface and parameter curves.
 
 Hyperbolic cylinder $x^{2} y^{2} = 1$
+
+Svaret i bogen er:
+$$
+[\cosh u, ]
+$$
 ### 10.6.7
 Evaluate the integral for the given data. Describe the kind of surface. Show the details of your work.
 
