@@ -155,6 +155,14 @@ Find a normal vector. The answer gives one representation; there are many. Sketc
 
 Hyperbolic cylinder $x^{2} y^{2} = 1$
 
+$$
+\begin{align*}
+g(x,y,z) &=  0\\
+x^{2} y^{2} + 1 &= 0\\
+
+\end{align*}
+$$
+
 Svaret i bogen er:
 $$
 [\cosh u, \sinh u, v], \quad [\cosh u, - \sinh u, 0]
