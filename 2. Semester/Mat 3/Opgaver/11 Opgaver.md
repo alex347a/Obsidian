@@ -7,10 +7,20 @@ $z = f(x,y) \quad \text{ or } \quad g(x,y,z) = 0$.
 Cone $r(u,v) = [u \cos(v), u \sin(v), cu]$
 
 I am tasked with:
-1. Derive a representation of the surface in the form $z=f(x,y)z=f(x,y)$ or $g(x,y,z)=0g(x,y,z)=0$.
+1. Derive a representation of the surface in the form $z=f(x,y)$ or $g(x,y,z)=0$.
 2. Find the parameter curves where $u=constant$ and $v=constant$.
-3. Compute the normal vector $N=ru×rv$to the surface.
+3. Compute the normal vector $\vec{N} = \vec{r}_{u} \times \vec{r}_{v}$ to the surface.
 
+First I derive the representation:
+$$
+\begin{align*}
+g(x,y,z) &= 0\\
+x &= u \cos(v)\\
+y &= u \sin(v)\\
+z&= cu
+
+\end{align*}
+$$
 ### 10.5.4
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 
