@@ -221,7 +221,13 @@ F &=  [0, \sin(u), \cos(v)]\\
 F \cdot (\vec{r}_{u} \times \vec{r}_{v}) &= 0 \cdot 1 + \sin(u) \cdot (-2u) + \cos(v) \cdot 0 \\
 &= -2 \sin(u)\\
 \text{Integralet bliver derfor:}\\
-\int_{0}^{\frac{\pi}{4}} \int_{0} ^{u} - 2u \sin(u) \, dv \, du &= \int_{0} ^{\frac{\pi}{4}} - 2u^{2} \sin(u) \, du
+\int_{0}^{\frac{\pi}{4}} \int_{0} ^{u} - 2u \sin(u) \, dv \, du \\
+\text{Beregner det indre integrale:}\\
+\int_{0} ^{u} - 2u \sin(u) \, dv &= [-2u \sin(u) \cdot v]_{0}^{u}\\
+&= -2u^{2} \sin(u)\\
+\text{Indsætter i det ydre integrale:}\\
+\int_{0}^{\frac{\pi}{4}} -2u^{2} \sin(u) \, du \\
+\text{B}
 \end{align*}
 $$
 ### 10.6.15
