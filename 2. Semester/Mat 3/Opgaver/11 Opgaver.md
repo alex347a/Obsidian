@@ -42,7 +42,10 @@ y &= u \sin(v_{0})\\
 z &= cu\\
 u &= \frac{x}{\cos(v_{0})} = \frac{y}{\sin(v_{0})} = \frac{z}{c}\\
 \text{Dette er en lige linje igennem origo idet når } u &= 0, x = y = z = 0\\
-\text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)
+\text{Med retningensvektor: } \vec{r} = (\cos(v_{0}), \sin(v_{0}), c)\\
+\text{I stedet for at beregne krydsproduktet kan jeg beregne:}\\
+\vec{n} = \frac{\text{grad g}}{\text{|grad g|}} = \frac{\nabla g}{|\nabla g|}\\
+
 \end{align*}
 $$
 Nu skal jeg beregne normalvektoren:
@@ -50,7 +53,9 @@ $$
 \begin{align*}
 \vec{N} &=  \vec{r}_{u} \times \vec{r}_{v}\\
 r (u,v) &= (u \cos(v), u \sin(v), cu)\\
-\vec{r}_{u} &= (\frac{\partial x}{\partial y})
+\vec{r}_{u} = \left(\frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u}\right) &=  (\cos(v), \sin(v), c)\\
+\vec{r}_{v} = \left(\frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v}\right) &=  (-u \sin(v), u \cos(v), 0)\\
+
 \end{align*}
 $$
 ### 10.5.4
