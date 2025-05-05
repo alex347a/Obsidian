@@ -64,6 +64,11 @@ r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \cos(v)  & \sin(v) & c\\
 - u \sin(v) & u \cos(v) & 0
 \end{vmatrix}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
 \vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))\\
 &= \vec{i}(-cu \cos(v)) - \vec{j}(cu \sin(v)) + \vec{k}(u \cos^{2}(v) + \sin^{2}(v))\\
 &= [-cu \cos(v), -cu \sin(v), u]\\
@@ -136,7 +141,14 @@ $$
 -a \sin(v)  &  b \cos(v)  &  0\\
 0  &  0  &  1\\
 \end{vmatrix}\\
-\vec{N} &= \vec{i}(b \cos(v) \cdot 1 - 0 \cdot 0) - \vec{j}(0 \cdot 0 - ) + \vec{k}()\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+\vec{N} &= \vec{i}(b \cos(v) \cdot 1 - 0 \cdot 0) - \vec{j}(- a \sin(v) \cdot 1 - 0 \cdot 0) + \vec{k}(- a \sin(v) \cdot 0 - b \cos(v) \cdot 0)\\
+&= \vec{i}(b \cos(v)) - \vec{j}(- a \sin(v)) + 0\\
+&= (b \cos(v), a \sin(v), 0)
 \end{align*}
 $$
 Svaret i bogen er:
