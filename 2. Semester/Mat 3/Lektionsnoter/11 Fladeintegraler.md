@@ -30,10 +30,11 @@ Normalvektoren:
 $$
 \vec{N} = \vec{r}_{u} \times \vec{r}_{v}
 $$
-Som også skrevet længere oppe så antages det at de to konstanter er lineært uafhængige af hinanden, hvilket betyder at kurverne u og v på S krydser hinanden på P med en vinkel der ikke er 0.
+Som også skrevet længere nede så antages det at de to konstanter er lineært uafhængige af hinanden, hvilket betyder at kurverne u og v på S krydser hinanden på P med en vinkel der ikke er 0.
 $$
 \vec{N} = \vec{r}_{u} \times \vec{r}_{v} \neq 0
 $$
+![[Fig 244.png]]
 
 Enhedsnormalvektoren:
 $$
