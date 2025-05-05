@@ -18,7 +18,9 @@ g(x,y,z) &= 0\\
 x &= u \cos(v)\\
 y &= u \sin(v)\\
 z&= cu\\
-\\
+\text{Formlen for en kegle er:}\\
+x^{2} + y^{2} &= a^{2} z^{2}\\
+\text{Indsætter mine værdier:}\\
 x^{2} + y^{2} = u^{2} \cos^{2}(v) + u^{2} \sin^{2}(v) = u^{2}(\cos^{2}(v) + \sin^{2}(v)) &= u^{2}\\
 \text{Siden } z&= cu:\\
 u &= \frac{z}{c}\\
@@ -64,8 +66,19 @@ r (u,v) &= (u \cos(v), u \sin(v), cu)\\
 \end{vmatrix}\\
 \vec{N} &= \vec{i} (\sin(v) \cdot 0 - c \cdot u \cos(v)) - \vec{j}(\cos(v) \cdot 0 - c \cdot(-u \sin(v))) + \vec{k} (\cos(v) \cdot u \cos(v) - \sin(v) \cdot(- u \sin(v))\\
 &= \vec{i}(-cu \cos(v)) - \vec{j}(cu \sin(v)) + \vec{k}(u \cos^{2}(v) + \sin^{2}(v))\\
-&= 
+&= [-cu \cos(v), -cu \sin(v), u]\\
+\vec{N} &=  \underline{\underline{[-cu \cos(v), -cu \sin(v), u]}}\\
+\text{Kan også skrives:}\\
+\vec{N} &= u[-c \cos(v), -c \sin(v), 1]
 \end{align*}
+$$
+Svaret i bogen er:
+$$
+z = c \sqrt{x^{2} + y^{2}}, \quad \text{ circles, straight lines}, \quad [-cu \cos(v), - cu \sin(v), u]
+$$
+Dvs. mine svar passer idet:
+$$
+x^{2}+y^{2}- \frac{z^{2}}{c^{2}} = 0 \Rightarrow z = c \sqrt{x^{2} + y^{2}}
 $$
 ### 10.5.4
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
