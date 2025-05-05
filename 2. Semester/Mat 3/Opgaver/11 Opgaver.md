@@ -231,7 +231,7 @@ F \cdot (\vec{r}_{u} \times \vec{r}_{v}) &= 0 \cdot 1 + \sin(u) \cdot (-2u) + \c
 t = u^{2}, dt &=  2u \, du, \\
 dv = \sin(u) \, du, v &=  - \cos(u)\\
 \int u^{2} \sin(u) \, du &= - u^{2} \cos(u) + 2 \int u \cos(u) \, du\\
-\text{Substituere:}\\
+\text{Integration i dele igen:}\\
 \text{For }\int u \cos(u) \, du,\\
 t = u, dt = du, dv &=  \cos(u) \, du, v = \sin(u)\\
 \int u \cos(u) \, du = u \sin(u) - \int \sin(u) \, du &= u \sin(u) + \cos(u)\\
@@ -240,7 +240,7 @@ t = u, dt = du, dv &=  \cos(u) \, du, v = \sin(u)\\
 \text{Nu kan jeg evaluere over intervallet af det orignale integrale:}\\
 \left[- \left(\frac{\pi}{4}\right)^{2} \cos\left(\frac{\pi}{4}\right) + 2 \cdot \frac{\pi}{4} \sin\left(\frac{\pi}{4}\right) + 2 \cos\left(\frac{\pi}{4}\right)\right] - [0 + 0 + 2 \cos(0)]\\
 \text{Da } \cos\left(\frac{\pi}{4}\right) = \sin\left(\frac{\pi}{4}\right) &= \frac{\sqrt{2}}{2}:\\
-- \frac{\pi^{2}}{16} \cdot 
+&= - \frac{\pi^{2}}{16} \cdot \frac{\sqrt{2}}{2} + \frac{\pi}{2} \cdot \frac{\sqrt{2}}{2} + \sqrt{2} - 2
 \end{align*}
 $$
 ### 10.6.15
