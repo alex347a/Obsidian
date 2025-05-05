@@ -205,3 +205,20 @@ $$
 $$
 A small piece of smooth surface is always [[orientable]], but it may not always hold for entire surfaces, for example take a look at the Möbius strip
 ![[Fig 248.png]]
+
+#### Surface integrals without regard for orientation
+Another type of surface integral is:
+$$
+\iint_{S} G (r) \, dA = \iint_{R} G (r (u,v)) |N (u,v)| \, du \, dv
+$$
+Here $dA = |N| \, du \, dv = |\vec{r}_{u} \times \vec{r}_{v}| \, du \, dv$  is the element of area of the surface S.
+The mean value theorem for surface integrals (in section 10.9) states thar R in the formula above is simply connected, so that:
+$$
+\iint_{S} G(r) \, dA = G (r (u_{0}, v_{0})) \, A
+$$
+Where A is the area of S.
+
+Applications: If $G(r)$ is the mass density of S, then the integral is the total mass of S. If $G=1$ then the integral gives the area A(S) of S:
+$$
+A(S) = \iint_{S} dA = \iint_{S} |\vec{r}
+$$
