@@ -254,3 +254,13 @@ Evaluate these integrals for the following data. Indicate the kind of surface. S
 $$
 G = (1 + 9xz)^{\frac{3}{2}}, \quad S: r = [u,v,u^{3}], \quad 0 \leq u \leq 1, \quad -2 \leq v \leq 2
 $$
+
+Først parameteriserer jeg fladen:
+$$
+\begin{align*}
+x &= u,\\
+y &= v,\\
+z &= u^{3}\\
+\text{Dette svarer til en cube}
+\end{align*}
+$$
