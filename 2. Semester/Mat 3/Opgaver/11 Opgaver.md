@@ -261,6 +261,26 @@ $$
 x &= u,\\
 y &= v,\\
 z &= u^{3}\\
-\text{Dette svarer til en cube}
+\end{align*}
+$$
+Dette svarer til en cube-flade, hvor x og y er lineære og z varierer med $u^{3}$
+
+Dernæst beregner jeg normalvektoren:
+$$
+\begin{align*}
+\vec{r}_{u} = \frac{\partial r}{\partial u} = [1,0,3 u^{2}], \quad \vec{r}_{v} = \frac{\partial r}{\partial v} &= [0,1,0]\\
+\text{Nu skal jeg beregne krydsproduktet:}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix} &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+\vec{r}_{u} \times \vec{r}_{v} &= 
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+1  & 0  & 3u^{2}\\
+0  & 1 &  0\\
+\end{vmatrix} \\
+&= \vec{i}(0 \cdot 0 - 3u^{2} - 1) - \vec{j}
 \end{align*}
 $$
