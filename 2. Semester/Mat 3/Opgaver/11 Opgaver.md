@@ -281,8 +281,8 @@ b_{1}  & b_{2} &  b_{3}\\
 1  & 0  & 3u^{2}\\
 0  & 1 &  0\\
 \end{vmatrix} \\
-&= \vec{i}(0 \cdot 0 - 3u^{2} - 1) - \vec{j} (1 \cdot 0 - 3u^{2} \cdot 0) + \vec{k} (1 \cdot 1 - 0 \cdot 0)\\
-&= \vec{i}(-3u^{2}-1) + \vec{k}(1)\\
-
+&= \vec{i}(0 \cdot 0 - 3u^{2} \cdot 1) - \vec{j} (1 \cdot 0 - 3u^{2} \cdot 0) + \vec{k} (1 \cdot 1 - 0 \cdot 0)\\
+&= \vec{i}(-3u^{2}) + \vec{k}(1)\\
+&= [-3u^{2}, 0 , 1]
 \end{align*}
 $$
