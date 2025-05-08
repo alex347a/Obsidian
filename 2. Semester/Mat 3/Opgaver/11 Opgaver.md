@@ -284,6 +284,14 @@ b_{1}  & b_{2} &  b_{3}\\
 &= \vec{i}(0 \cdot 0 - 3u^{2} \cdot 1) - \vec{j} (1 \cdot 0 - 3u^{2} \cdot 0) + \vec{k} (1 \cdot 1 - 0 \cdot 0)\\
 &= \vec{i}(-3u^{2}) + \vec{k}(1)\\
 &= [-3u^{2}, 0 , 1]\\
-|N| = \sqrt{(-3u^{2})^{2} + 0^{2} + 1^{2}} &= \sqrt{9u^{4}}+1
+|N| = \sqrt{(-3u^{2})^{2} + 0^{2} + 1^{2}} &= \sqrt{9u^{4} + 1}\\
+\text{Dermed bliver funktionen:}\\
+G = (1+9xz)^{\frac{3}{2}} = (1+9u \cdot u^{3}) &= (1+9u^{4})^{\frac{3}{2}}\\
+\text{Integralet bliver derfor:}\\
+\iint_{S} G \, dS = \iint_{S} (1+9u^{4})^{\frac{3}{2}} |N| \, du \, dv &= \iint_{S} (1+9u^{4})^{\frac{3}{2}} \cdot \sqrt{9u^{4} + 1} \, du \, dv\\
+\text{Reducerer først integranden:}\\
+(1+9u^{4})^{\frac{3}{2}} \cdot \sqrt{9u^{4} + 1} &= (1 + 9^{4})^{2}\\
+\text{Indsætter grænserne i integralet:}\\
+\text{For } u=
 \end{align*}
 $$
