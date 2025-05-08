@@ -292,6 +292,10 @@ G = (1+9xz)^{\frac{3}{2}} = (1+9u \cdot u^{3}) &= (1+9u^{4})^{\frac{3}{2}}\\
 \text{Reducerer først integranden:}\\
 (1+9u^{4})^{\frac{3}{2}} \cdot \sqrt{9u^{4} + 1} &= (1 + 9^{4})^{2}\\
 \text{Indsætter grænserne i integralet:}\\
-\text{For } u=
+\text{Grænserne for u er } 0 \leq u \leq 1 \text{ og for v: } -2 &\leq v \leq 2:\\
+\iint_{S} (1+9u^{4})^{2} \, du \, dv &= \int_{v=-2} ^{2} \int_{u=0} ^{1} (1+9u^{4})^{2} \, du \, dv\\
+\int_{v=-2} ^{2} (1+9u^{4})^{2} \, dv = [v]_{-2}^{2} = 2-(-2) &= 4\\
+\int_{u=0} ^{1} (1+9u^{4})^{2} \, du = \int_{u=0} ^{1} (1 + 9u^{8} + 18)^{2} \, du \\
+
 \end{align*}
 $$
