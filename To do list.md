@@ -40,6 +40,7 @@
 		- [ ] Domain model
 		- [ ] Class diagram
 - [ ] 2. Iteration
+- [ ] 3. Iteration
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
