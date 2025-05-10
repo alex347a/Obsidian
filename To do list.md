@@ -31,16 +31,21 @@
 
 - [ ] Skim kap 1 og 6 i softwareudvikling
 - [ ] Lav Portfolien:
-	- [x] Brugsmønstre ✅ 2025-04-03
-	- [x] Domain model ✅ 2025-04-03
-	- [x] Class diagram ✅ 2025-04-03
-	- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-04-24
-	- [ ] Gennemgå og ret:
+	- [ ] 1. Iteration
+		- [x] Brugsmønstre ✅ 2025-04-03
+		- [x] Domain model ✅ 2025-04-03
+		- [x] Class diagram ✅ 2025-04-03
+		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-04-24
+		- [ ] Gennemgå og ret:
+			- [ ] Brugsmønstre
+			- [ ] Domain model
+			- [x] Class diagram ✅ 2025-05-10
+	- [ ] 2. Iteration
 		- [ ] Brugsmønstre
 		- [ ] Domain model
 		- [ ] Class diagram
-- [ ] 2. Iteration
-- [ ] 3. Iteration
+		- [ ] Kod det hele (husk git for hver class minimum)
+	- [ ] 3. Iteration
 
 Obsidian:
 - [x] Fix obsidian, sådan at det virker med git ✅ 2025-04-25
