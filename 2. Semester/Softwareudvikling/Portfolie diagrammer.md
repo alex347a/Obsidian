@@ -6,5 +6,8 @@ Brugsmønstre:
 Portfolie domænemodel
 ![[Portfolie domænemodel.png]]
 
-Portfolie klassediagram
-![[Portfolie klassediagram.png]]
+Portfolie klassediagram: (første iteration, ikke helt gennemført)
+![[Portfolie klassediagram 1. iteration (ikke færdig).png]]
+
+Portfolie klassediagram: Første iteration:
+![[Portfolie klassediagram 1. iteration.drawio.png]]
