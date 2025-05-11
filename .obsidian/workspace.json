@@ -11,12 +11,14 @@
             "id": "e329a29009e3f22d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration.png"
+                "file": "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Portfolie klassediagram 1. iteration"
+              "icon": "lucide-file",
+              "title": "Portfolie diagrammer"
             }
           }
         ]
@@ -170,9 +172,9 @@
   },
   "active": "e329a29009e3f22d",
   "lastOpenFiles": [
+    "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration (ikke færdig).png",
     "To do list.md",
-    "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie usecase.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie domænemodel.png",
     "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
