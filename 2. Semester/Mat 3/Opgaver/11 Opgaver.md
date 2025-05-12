@@ -296,8 +296,10 @@ G = (1+9xz)^{\frac{3}{2}} = (1+9u \cdot u^{3}) &= (1+9u^{4})^{\frac{3}{2}}\\
 \iint_{S} (1+9u^{4})^{2} \, du \, dv &= \int_{v=-2} ^{2} \int_{u=0} ^{1} (1+9u^{4})^{2} \, du \, dv\\
 \int_{v=-2} ^{2} (1+9u^{4})^{2} \, dv = [v]_{-2}^{2} = 2-(-2) &= 4\\
 \text{Til integralet med u skal jeg bruge 1. kvadratsætning}\\
-\int_{u=0} ^{1} (1+9u^{4})^{2} \, du = \int_{u=0} ^{1} (1 + 18u^{4} + 91u^{8})^{2} \, du &=  \left[u + \frac{18u^{5}}{5} + \frac{81^{9}}{9}\right]_{u=0}^{1}\\
-= 1 + \frac{18}{5} + 9 = \frac{5}{5} + \frac{18}{5} + \frac{45}{5} &= \frac{68}{5}
-
+\int_{u=0} ^{1} (1+9u^{4})^{2} \, du = \int_{u=0} ^{1} (1 + 18u^{4} + 81u^{8})^{2} \, du &=  \left[u + \frac{18u^{5}}{5} + \frac{81^{9}}{9}\right]_{u=0}^{1}\\
+= 1 + \frac{18}{5} + 9 = \frac{5}{5} + \frac{18}{5} + \frac{45}{5} &= \frac{68}{5}\\
+\text{ganger de to resultater af integralerne:}\\
+4 \cdot \frac{68}{5} &= \underline{\underline{\frac{272}{5}}}
 \end{align*}
 $$
+Fladen var altså en kubisk overflade der er parametriseret ved $z = u^{3}$.
