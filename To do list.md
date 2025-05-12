@@ -6,6 +6,7 @@
 - [x] Mat 03 08 Opgaver 📅 2025-04-07 ✅ 2025-04-07
 - [x] Mat 03 09 Opgaver ✅ 2025-04-07
 - [x] Mat 03 Pointgivende 2 📅 2025-04-27 ✅ 2025-04-15
+- [ ] Opgaver 12
 
 - [ ] Færddiggør 09 exercises
 - [ ] 10 Exercise (mangler den hvor du bruger FK fra opgave 8)
@@ -30,7 +31,7 @@
 		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-04-24
 		- [ ] Gennemgå og ret:
 			- [ ] Brugsmønstre
-			- [ ] Domain model
+			- [x] Domain model ✅ 2025-05-12
 			- [x] Class diagram ✅ 2025-05-10
 	- [ ] 2. Iteration
 		- [ ] Brugsmønstre
