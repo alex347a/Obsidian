@@ -254,7 +254,7 @@ z &= x^{2} + (1 - (x-1)^{2})\\
 $$
 $$
 \begin{align*}
-\text{Kraft } \vec{F} &=  2xy^{3} \sin(z) \vec{i} + 3x^{2} y^{2} \sin(z) \vec{j} + x^{2}y^{3} \cos(z) \vec{k}\\
+\text{Kraft } \vec{F} &=  \underbrace{2xy^{3} \sin(z)}_{F_{1}} \vec{i} + \underbrace{3x^{2} y^{2} \sin(z)}_{F_{2}} \vec{j} + \underbrace{x^{2}y^{3} \cos(z)}_{F_{3}} \vec{k}\\
 \text{Opgaven er nu at finde arbejdet:}\\
 \text{Man finder en potentiel funktion:}\\
 f &=  x^{2} y^{3} \sin(z)\\
@@ -267,6 +267,9 @@ f &=  x^{2} y^{3} \sin(z)\\
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 F_{1}  &  F_{2} &  F_{3}\\
 \end{vmatrix}\\
-(\frac{\partial F_{3}}{\partial y} - \frac{\partial}{\partial})
+&= \left(\frac{\partial F_{3}}{\partial y} - \frac{\partial F_{2}}{\partial z}\right)\vec{i} - \left(\frac{\partial F_{3}}{\partial x} - \frac{\partial F_{1}}{\partial z}\right) \vec{j} + \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \vec{k}\\
+&= (\underbrace{3x^{2} y^{2} \cos(z) - 3x^{2} y^{2} \cos(z)}_{=0}) \vec{i} + (\underbrace{2 x y^{3} \cos(z) - 2 x y^{3} \cos(z)}_{=0}) + (\underbrace{6 x y^{2} \sin(z) - 6 x y^{2} \sin(z)}_{=0})\vec{k}\\
+\text{Så curl } (\vec{F}) \text{ er altså 0, og dermed bliver integralet 0}
 \end{align*}
 $$
+Dette skyldes at hvis man ender det samme sted efter rotationen så er arbejdet 0.
