@@ -226,9 +226,27 @@ F_{1}  &  F_{2} &   F_{3}
 \vec{i}  &  \vec{j}  &  \vec{k}\\
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 F_{1}  &  F_{2} &  0
-\end{vmatrix} &= - \frac{\partial F_{2}}{\partial z} \vec{i} + \frac{\partial F_{1}}{\partial z} \vec{j} + \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \vec{k}\\
+\end{vmatrix}\\
+\text{Pga. mellemregningerne kommer der andre fortegn}\\
+ &= - \frac{\partial F_{2}}{\partial z} \vec{i} + \frac{\partial F_{1}}{\partial z} \vec{j} + \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \vec{k}\\
 \vec{n} &=  \vec{k}\\
 \text{curl } \vec{F} \cdot \vec{n} &= \frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}
 \end{align*}
 $$
 Greens sætning (s. 433)
+
+#### Eksempel
+$$
+\begin{align*}
+\text{Paraboloide: } z &=  x^{2} + y^{2}\\
+\text{Cylinder: } (x-1)^{2} + y^{2} &= 1\\
+\end{align*}
+$$
+Cylinderen svarer til formlen for en cirkel med radius i centrum $(1,0)$
+Skæringsfladen mellem cylinderen og paraboloiden betegnes $C$
+$$
+\begin{align*}\\
+\text{Sætter de to ligmed hinanden for at finde skæringsfa}
+z &= x^{2} + (1 - (x-1)^{2})
+\end{align*}
+$$
