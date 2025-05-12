@@ -214,11 +214,21 @@ Hvis man i stedet for beregner linjeintegralet:
 $$
 \begin{align*}
 \iint_{S} \text{curl } (\vec{F}) \cdot \vec{n} \, dA\\
+\text{Standardformel:}\\
 \text{curl } (\vec{F}) &= 
 \begin{vmatrix}
 \vec{i}  &  \vec{j}  &  \vec{k}\\
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 F_{1}  &  F_{2} &   F_{3}
 \end{vmatrix}\\
+\text{Indsætter:}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+\frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
+F_{1}  &  F_{2} &  0
+\end{vmatrix} &= - \frac{\partial F_{2}}{\partial z} \vec{i} + \frac{\partial F_{1}}{\partial z} \vec{j} + \left(\frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}\right) \vec{k}\\
+\vec{n} &=  \vec{k}\\
+\text{curl } \vec{F} \cdot \vec{n} &= \frac{\partial F_{2}}{\partial x} - \frac{\partial F_{1}}{\partial y}
 \end{align*}
 $$
+Greens sætning (s. 433)
