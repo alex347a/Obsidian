@@ -63,15 +63,31 @@ Hvis man har en flade S og en rand C så har man ds der er en lille strækning
 $$
 \begin{align*}
 \iint_{S} \text{curl} \vec{F} \cdot \vec{n} \, dA &= \oint_{C} \vec{F} \cdot \vec{r}' \, ds\\
-\text{Læg mærke til det er vektor r differentieret}
-\text{curl } \vec{F} = \vec{rot} = \nabla \times \vec{F} = 
+\text{Læg mærke til det er vektor r differentieret}\\
+\text{curl } \vec{F} = \text{rot } \vec{F} = \nabla \times \vec{F} = 
 \begin{pmatrix}
 \vec{i}  &  \vec{j}  &  \vec{k}\\
-
+\frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
+F_{1}  &  F_{2}  &  F_{3}
 \end{pmatrix}
 \end{align*}
 $$
 #### Eksempel
 $$
-
+\begin{align*}
+F &=  (y, z, x)\\
+S &=  \text{paraboloide}\\
+z &=  f(x,y) = 1 - x^{2} - y^{2}, \quad z \geq 0\\
+\end{align*}
+$$
+C er det der omgrænser xy-planet, mens S er selve overfladen.
+Linjeintegrale:
+$$
+\begin{align*}
+\begin{pmatrix}
+\cos(s)\\
+\sin(s)\\
+0
+\end{pmatrix}, \quad 0 \leq s le
+\end{align*}
 $$
