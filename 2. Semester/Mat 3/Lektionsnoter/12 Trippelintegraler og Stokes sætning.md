@@ -36,6 +36,20 @@ S: \vec{r} &=  (\underbrace{2 \cos(v) \cos(u)}_{x}, 2 \cos(v) \sin(u), \underbra
 \text{Normalvektoren findes ved at krydse:}\\
 \vec{N} &= \vec{r}_{u} \times \vec{r}_{v}\\
 \vec{N} &= (4 \cos^{2}(v) \cos(u), 4 \cos^{2}(v) \sin(u), 4 \cos(v) \sin(v))\\
-\text{På S:} \iint 7 \cdot 2 \cos(v) \cos(u), 2 \sin()
+\text{På S:} \iint_{S} (7 \cdot 2 \cos(v) \cos(u), 2 \sin(u), 0) \cdot (4 \cos^{2}(v) \cos(u), 4 \cos^{2}(v), 4 \cos(v) \sin(v))\\
+= \iint_{S} (56 \cos^{3}(v) \cos^{2}(u) - 8 \cos(v) \sin^{2}(v)) \, dA &= 64 \pi
 \end{align*}
+$$
+$$
+\begin{pmatrix}
+7 \cdot 2 \cos(v) \cos(u) \\ 
+2 \sin(u) \\  
+0
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+(4 \cos^{2}(v) \cos(u)  \\ 
+4 \cos^{2}(v) \\ 
+ 4 \cos(v) \sin(v)\\
+\end{pmatrix}
 $$
