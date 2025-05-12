@@ -3,8 +3,10 @@ Brugsmønstre:
 ![[Brugsmønstre.docx]]
 ![[Portfolie usecase.png]]
 
-Portfolie domænemodel
+Portfolie domænemodel (første iteration ikke helt gennemført)
 ![[Portfolie domænemodel.png]]
+Portfolie domænemodel første iteration
+![[Domænemodel.drawio.png]]
 
 sequenceDiagram
     participant Spiller
