@@ -187,7 +187,12 @@ Hvis man har en flade i xy planen, som betragtes som fladen S.
 Så har man parameterfremstillingen
 $$
 \begin{align*}
-\vec{r}(s) \text{ og } \vec{r}' (s) &=
+\vec{r}(s) &= 
+\begin{pmatrix}
+x\\
+y
+\end{pmatrix} \\
+\text{dermed er } \vec{r}' (s) &=
 \begin{pmatrix}
 \frac{dx}{ds}\\
 \frac{dy}{ds}
@@ -196,12 +201,24 @@ $$
 \begin{pmatrix}
 F_{1}\\
 F_{2}
-\end{pmatrix}\\
+\end{pmatrix}
 \cdot 
 \begin{pmatrix}
 \frac{dx}{ds}\\
 \frac{dy}{ds}
 \end{pmatrix} \, ds &=  \int_{C}\left(F_{1} \frac{dx}{ds} + F_{2} \frac{dy}{ds}\right) \, ds\\
-&= \int_{C} F_{1} \, dx + F_{2} \, dy
+&= \int_{C} F_{1} \, dx + F_{2} \, dy\\
+\end{align*}
+$$
+Hvis man i stedet for beregner linjeintegralet:
+$$
+\begin{align*}
+\iint_{S} \text{curl } (\vec{F}) \cdot \vec{n} \, dA\\
+\text{curl } (\vec{F}) &= 
+\begin{vmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+\frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
+F_{1}  &  F_{2} &   F_{3}
+\end{vmatrix}\\
 \end{align*}
 $$
