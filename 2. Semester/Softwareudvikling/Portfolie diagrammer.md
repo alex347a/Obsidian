@@ -3,11 +3,10 @@ Brugsmønstre:
 ![[Brugsmønstre.docx]]
 ![[Portfolie usecase.png]]
 
-Portfolie domænemodel (første iteration ikke helt gennemført)
-![[Portfolie domænemodel.png]]
 Portfolie domænemodel første iteration
 ![[Domænemodel.drawio.png]]
 
+Udvalgt sekvensdiagram (loadHero)
 sequenceDiagram
     participant Spiller
     participant GameManager
@@ -17,6 +16,9 @@ sequenceDiagram
     GameManager->>Hero: opret Hero (kopi af predefineret)
     GameManager-->>GameManager: aktivHero = ny Hero
 
+
+Udvalgt sekvensdiagram (Hero kæmper mod fjende)
+![[Pasted image 20250512162917.png]]
 
 sequenceDiagram
     participant Spiller
@@ -44,9 +46,6 @@ sequenceDiagram
     else Fjende vinder
         GameManager-->>Spiller: Helt døde
     end
-
-Portfolie klassediagram: (første iteration, ikke helt gennemført)
-![[Portfolie klassediagram 1. iteration (ikke færdig).png]]
 
 Portfolie klassediagram: Første iteration:
 ![[Portfolie klassediagram 1. iteration.png]]
