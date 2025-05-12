@@ -182,3 +182,26 @@ r^{2} &= x^{2} + y^{2}\\
 &= -\pi
 \end{align*}
 $$
+#### Eksempel
+Hvis man har en flade i xy planen, som betragtes som fladen S.
+Så har man parameterfremstillingen
+$$
+\begin{align*}
+\vec{r}(s) \text{ og } \vec{r}' (s) &=
+\begin{pmatrix}
+\frac{dx}{ds}\\
+\frac{dy}{ds}
+\end{pmatrix}\\
+\int_{C} 
+\begin{pmatrix}
+F_{1}\\
+F_{2}
+\end{pmatrix}\\
+\cdot 
+\begin{pmatrix}
+\frac{dx}{ds}\\
+\frac{dy}{ds}
+\end{pmatrix} \, ds &=  \int_{C}\left(F_{1} \frac{dx}{ds} + F_{2} \frac{dy}{ds}\right) \, ds\\
+&= \int_{C} F_{1} \, dx + F_{2} \, dy
+\end{align*}
+$$
