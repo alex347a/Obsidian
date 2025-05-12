@@ -128,6 +128,14 @@ F_{1}  &  F_{2}  &  F_{3}
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 y  &  z  &  x
 \end{pmatrix}\\
-&= \vec{i}()
+&= \vec{i}\left(\frac{\partial x}{\partial y} - \frac{\partial z}{\partial z}\right)- \vec{j} \left(\frac{\partial x}{\partial x} - \frac{\partial y}{\partial z}\right) + \vec{k}\left(\frac{\partial z}{\partial x} - \frac{\partial y}{\partial y}\right)\\
+= \vec{i} (0 - 1) - \vec{j} (1-0) + \vec{k} (0-1) &= - \vec{i} - \vec{j} - \vec{k}\\
+\text{Man kan vælge x og y frit, hvor z afhænger af de to:}\\
+z = f(x,y) &=  1-x^{2}-y^{2}, \quad z \geq 0\\
+\vec{r}(x, y, 1 - x^{2} - y^{2})\\
+\vec{r}_{x} &= (1, 0, -2x)\\
+\vec{r}_{y} &= (0, 1, -2y)\\
+\vec{N} &=  \vec{r}_{x} \times \vec{r}_{y}\\
+
 \end{align*}
 $$
