@@ -84,10 +84,50 @@ C er det der omgrænser xy-planet, mens S er selve overfladen.
 Linjeintegrale:
 $$
 \begin{align*}
+\vec{r}(s) &= 
 \begin{pmatrix}
 \cos(s)\\
 \sin(s)\\
 0
-\end{pmatrix}, \quad 0 \leq s le
+\end{pmatrix}, \quad 0 \leq s \leq 2\pi\\
+r'(s) &= 
+\begin{pmatrix}
+-\sin(s)\\
+\cos(s)\\
+0
+\end{pmatrix}\\
+\text{Så } \vec{F} &= (\underbrace{y}_{\sin(s)},\underbrace{z}_{0},\underbrace{x}_{\cos(s)})\\
+\vec{F} \cdot \vec{r}' = 
+\begin{pmatrix}
+\sin(s)\\
+0\\
+\cos(s)
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+-\sin(s)\\
+\cos(s)\\
+0
+\end{pmatrix}\\
+\int_{0}^{2\pi} - \sin^{2} (s) \, ds  = - \pi\\
+\end{align*}
+$$
+Fladeintegrale:
+$$
+\begin{align*}
+\text{Standardformlen er:}\\
+\text{curl } \vec{F} &= \begin{pmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+\frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
+F_{1}  &  F_{2}  &  F_{3}
+\end{pmatrix}\\
+\text{Med indsatte værdier:}\\
+\text{curl } \vec{F} &= 
+\begin{pmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+\frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
+y  &  z  &  x
+\end{pmatrix}\\
+&= \vec{i}()
 \end{align*}
 $$
