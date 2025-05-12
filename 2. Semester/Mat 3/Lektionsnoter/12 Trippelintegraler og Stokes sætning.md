@@ -257,7 +257,16 @@ $$
 \text{Kraft } \vec{F} &=  2xy^{3} \sin(z) \vec{i} + 3x^{2} y^{2} \sin(z) \vec{j} + x^{2}y^{3} \cos(z) \vec{k}\\
 \text{Opgaven er nu at finde arbejdet:}\\
 \text{Man finder en potentiel funktion:}\\
-f = x^{2} y^{3} \sin(z)\\
-\text{Hvis man differentiere mht. x, y og z så passer det henholdsvist til F_{1}, F_{2}
+f &=  x^{2} y^{3} \sin(z)\\
+\text{Hvis man differentiere mht. x, y og } & \text{z så passer det henholdsvist til } F_{1}, \space F_{2} \text{ og } F_{3}\\
+\vec{F} &= \nabla f \Rightarrow \vec{F} \text{ er konservativ}\\
+\text{Dvs. Arbejdet er det samme } & \text{uanset hvilken rute der tages}\\
+\text{curl } (\vec{F}) &= 
+\begin{vmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+\frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
+F_{1}  &  F_{2} &  F_{3}\\
+\end{vmatrix}\\
+(\frac{\partial F_{3}}{\partial y} - \frac{\partial}{\partial})
 \end{align*}
 $$
