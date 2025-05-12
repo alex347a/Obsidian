@@ -544,6 +544,7 @@ apt
 aux
 aktive
 alias
+alt
 polar
 pol
 planet
@@ -640,6 +641,8 @@ procesmonitor
 ps
 proces
 ping
+participant
+predefineret
 totale
 tyngdepunkt
 the
@@ -739,6 +742,7 @@ top
 tulnp
 tidligere
 terminalen
+tryk
 re
 retning
 rvektoren
@@ -996,6 +1000,7 @@ visning
 versioner
 vis
 vim
+vinder
 for
 function
 fladeintegrale
@@ -1103,6 +1108,7 @@ fejlende
 filindhold
 filens
 forgrunden
+fjende
 double
 derivative
 de
@@ -1380,6 +1386,8 @@ less
 logout
 locate
 ll
+loop
+live
 normal
 normalvektor
 noget
@@ -1478,6 +1486,7 @@ ndr
 nohup
 nyttige
 now
+nge
 Areal
 Arealet
 AUTO
@@ -1630,6 +1639,7 @@ Git
 Gener
 Genoptag
 Genstart
+GameManager
 et
 er
 en
@@ -1711,6 +1721,7 @@ editoren
 eksekverbar
 echo
 exit
+else
 xy
 xuu
 xZ
@@ -1887,6 +1898,7 @@ Exercise
 Entity
 En
 Eksempler
+ENTER
 hs
 har
 hver
@@ -1967,6 +1979,7 @@ hjemmemappen
 htop
 hurtigt
 history
+hent
 Fordi
 For
 Find
@@ -2199,6 +2212,8 @@ server
 sleep
 sekunder
 shutdown
+sequenceDiagram
+stadig
 Laplacian
 Laplace
 Let
@@ -2391,6 +2406,8 @@ Hy
 Hvorfor
 Hvordan
 Hent
+HP
+Helt
 ydre
 your
 yZ
@@ -2519,6 +2536,7 @@ baggrunden
 baggrundsprocesser
 bg
 baggrundsjob
+begge
 jeg
 jre
 ja
@@ -2703,6 +2721,7 @@ System
 Send
 Skub
 Sluk
+Spiller
 Inds
 Incompressible
 Indicate
