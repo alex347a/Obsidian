@@ -152,6 +152,15 @@ z = f(x,y) &=  1-x^{2}-y^{2}, \quad z \geq 0\\
 \iint_{S} \text{curl } \vec{F} \cdot \vec{n} \, dA &= \iint_{R} \text{curl } \vec{F} \cdot \vec{N} \, dx \, dy
 \end{align*}
 $$
+
+Det kan også skrive som:
+$$
+\iint_{S} \vec{F} \cdot \vec{n} \, dA = \iint_{R} \vec{F} (r(u,v)) \cdot \vec{N}(u,v) \, du\, dv
+$$
+Her er det vigtigt at se at store $\vec{N}$ ikke er en enhedsvektor ligesom lille $\vec{n}$
+$$
+\vec{n} \, dA = \vec{n} |\vec{N}| \, du \, dv = \vec{N} \, du \, dv
+$$
 I stedet for at integrere på fladen, så kan man integrere på skyggen, ligesom sidste lektion afsnit 10.6. Her skal man så beregne store $\vec{N}$ ud fra lille $\vec{n}$:
 $$
 |\vec{N}| = \sqrt{4x^{2} + 4{y}^{2} + 1}
@@ -172,8 +181,4 @@ r^{2} &= x^{2} + y^{2}\\
 &= \int_{0} ^{2\pi} \int_{0}^{1} (-2 r \cos(\theta) - 2 r \sin(\theta) - 1)\, dr \, d \theta\\
 &= -\pi
 \end{align*}
-$$
-
-$$
-	\iint_{S} \vec{F} \cdot \vec{n} \, dA = \iint_{R} F (r(u,v))
 $$
