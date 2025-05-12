@@ -65,11 +65,11 @@ $$
 \iint_{S} \text{curl} \vec{F} \cdot \vec{n} \, dA &= \oint_{C} \vec{F} \cdot \vec{r}' \, ds\\
 \text{Læg mærke til det er vektor r differentieret}\\
 \text{curl } \vec{F} = \text{rot } \vec{F} = \nabla \times \vec{F} = 
-\begin{pmatrix}
+\begin{vmatrix}
 \vec{i}  &  \vec{j}  &  \vec{k}\\
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 F_{1}  &  F_{2}  &  F_{3}
-\end{pmatrix}
+\end{vmatrix}
 \end{align*}
 $$
 #### Eksempel
@@ -116,18 +116,19 @@ Fladeintegrale:
 $$
 \begin{align*}
 \text{Standardformlen er:}\\
-\text{curl } \vec{F} &= \begin{pmatrix}
+\text{curl } \vec{F} &= 
+\begin{vmatrix}
 \vec{i}  &  \vec{j}  &  \vec{k}\\
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 F_{1}  &  F_{2}  &  F_{3}
-\end{pmatrix}\\
+\end{vmatrix}\\
 \text{Med indsatte værdier:}\\
 \text{curl } \vec{F} &= 
-\begin{pmatrix}
+\begin{vmatrix}
 \vec{i}  &  \vec{j}  &  \vec{k}\\
 \frac{\partial }{\partial x}  &  \frac{\partial }{\partial y}  &  \frac{\partial }{\partial z}\\
 y  &  z  &  x
-\end{pmatrix}\\
+\end{vmatrix}\\
 &= \vec{i}\left(\frac{\partial x}{\partial y} - \frac{\partial z}{\partial z}\right)- \vec{j} \left(\frac{\partial x}{\partial x} - \frac{\partial y}{\partial z}\right) + \vec{k}\left(\frac{\partial z}{\partial x} - \frac{\partial y}{\partial y}\right)\\
 = \vec{i} (0 - 1) - \vec{j} (1-0) + \vec{k} (0-1) &= - \vec{i} - \vec{j} - \vec{k}\\
 \text{Man kan vælge x og y frit, hvor z afhænger af de to:}\\
@@ -136,6 +137,22 @@ z = f(x,y) &=  1-x^{2}-y^{2}, \quad z \geq 0\\
 \vec{r}_{x} &= (1, 0, -2x)\\
 \vec{r}_{y} &= (0, 1, -2y)\\
 \vec{N} &=  \vec{r}_{x} \times \vec{r}_{y}\\
-
+\begin{vmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+1  &  0  &  -2x\\
+0  &  1  &  -2y
+\end{vmatrix}
+&= 2x \vec{i} + 2y \vec{j} + \vec{k}\\
+\text{curl } \vec{F} \cdot \vec{N} &= 
+\begin{pmatrix}
+-1\\
+-1\\
+-1
+\end{pmatrix}\\
+\iint_{S} \text{curl } \vec{F} \cdot \vec{n} \, dA &= \iint_{R} \text{curl } \vec{F} \cdot \vec{N} , dx \, dy
 \end{align*}
+$$
+I stedet for at integrere på fladen, så kan man integrere på skyggen, ligesom sidste lektion afsnit 10.6
+$$
+\vec{N}
 $$
