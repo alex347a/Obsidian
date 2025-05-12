@@ -235,7 +235,7 @@ F_{1}  &  F_{2} &  0
 $$
 Greens sætning (s. 433)
 
-#### Eksempel
+#### Eksempel 5
 $$
 \begin{align*}
 \text{Paraboloide: } z &=  x^{2} + y^{2}\\
