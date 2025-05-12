@@ -244,9 +244,20 @@ $$
 $$
 Cylinderen svarer til formlen for en cirkel med radius i centrum $(1,0)$
 Skæringsfladen mellem cylinderen og paraboloiden betegnes $C$
+Derfor skal de to ligninger sættes ligmed hinanden for at finde skæringsfladen:
 $$
 \begin{align*}\\
-\text{Sætter de to ligmed hinanden for at finde skæringsfa}
-z &= x^{2} + (1 - (x-1)^{2})
+z &= x^{2} + (1 - (x-1)^{2})\\
+&= x^{2} + 1 - (x^{2} - 2x+1)\\
+&= 2x
+\end{align*}
+$$
+$$
+\begin{align*}
+\text{Kraft } \vec{F} &=  2xy^{3} \sin(z) \vec{i} + 3x^{2} y^{2} \sin(z) \vec{j} + x^{2}y^{3} \cos(z) \vec{k}\\
+\text{Opgaven er nu at finde arbejdet:}\\
+\text{Man finder en potentiel funktion:}\\
+f = x^{2} y^{3} \sin(z)\\
+\text{Hvis man differentiere mht. x, y og z så passer det henholdsvist til F_{1}, F_{2}
 \end{align*}
 $$
