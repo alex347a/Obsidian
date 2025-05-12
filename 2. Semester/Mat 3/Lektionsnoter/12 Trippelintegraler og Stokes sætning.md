@@ -164,8 +164,16 @@ Se figur 253 for sammenligning mellem regionen S og regionen R.
 $$
 \begin{align*}
 \iint_{R} (-2x -2y -1) \, dx \, dy\\
-&= \iint_{R} (-2 \cos(\theta) - 2 \sin(\theta) - 1) \, \underbrace{r}_{1} \, dr \, d \theta\\
-&= \int_{0} ^{2\pi} \int_{0}^{1} (-2 \cos(\theta) - 2 \sin(\theta) - 1) \, r \, dr \, d \theta\\
-
+x &= r \cos(\theta)\\
+y &= r \sin(\theta)\\
+r^{2} &= x^{2} + y^{2}\\
+\tan(\theta) &= \frac{y}{x}\\
+&= \iint_{R} (-2 r \cos(\theta) - 2 r \sin(\theta) - 1) \, \underbrace{r}_{1} \, dr \, d \theta\\
+&= \int_{0} ^{2\pi} \int_{0}^{1} (-2 r \cos(\theta) - 2 r \sin(\theta) - 1)\, dr \, d \theta\\
+&= -\pi
 \end{align*}
+$$
+
+$$
+	\iint_{S} \vec{F} \cdot \vec{n} \, dA = \iint_{R} F (r(u,v))
 $$
