@@ -23,6 +23,19 @@ $$
 Trippelintegrale:
 $$
 \begin{align*}
-\iiint_{T} 6 \, dv = 6 \iiint_{T} \, dv
+\iiint_{T} 6 \, dv &=  6 \iiint_{T} \, dv \\
+= 6 \cdot \frac{4}{3} \pi \cdot 2^{3} &= 64 \pi
+\end{align*}
+$$
+Parameterfremstilling af fladen:
+$$
+\begin{align*}
+S: \vec{r} &=  (\underbrace{2 \cos(v) \cos(u)}_{x}, 2 \cos(v) \sin(u), \underbrace{2 \sin(u)}_{z})\\
+\vec{r}_{u} &= (-2 \cos(v) \sin(u), 2 \cos(v) \cos(u), 2 \cos(u))\\
+\vec{r}_{v} &= (-2 \sin(v) \cos(u), -2 \sin(v) \sin(u), 0)\\
+\text{Normalvektoren findes ved at krydse:}\\
+\vec{N} &= \vec{r}_{u} \times \vec{r}_{v}\\
+\vec{N} &= (4 \cos^{2}(v) \cos(u), 4 \cos^{2}(v) \sin(u), 4 \cos(v) \sin(v))\\
+\text{På S:} \iint 7 \cdot 2 \cos(v) \cos(u), 2 \sin()
 \end{align*}
 $$
