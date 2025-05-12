@@ -149,10 +149,23 @@ z = f(x,y) &=  1-x^{2}-y^{2}, \quad z \geq 0\\
 -1\\
 -1
 \end{pmatrix}\\
-\iint_{S} \text{curl } \vec{F} \cdot \vec{n} \, dA &= \iint_{R} \text{curl } \vec{F} \cdot \vec{N} , dx \, dy
+\iint_{S} \text{curl } \vec{F} \cdot \vec{n} \, dA &= \iint_{R} \text{curl } \vec{F} \cdot \vec{N} \, dx \, dy
 \end{align*}
 $$
-I stedet for at integrere på fladen, så kan man integrere på skyggen, ligesom sidste lektion afsnit 10.6
+I stedet for at integrere på fladen, så kan man integrere på skyggen, ligesom sidste lektion afsnit 10.6. Her skal man så beregne store $\vec{N}$ ud fra lille $\vec{n}$:
 $$
-\vec{N}
+|\vec{N}| = \sqrt{4x^{2} + 4{y}^{2} + 1}
+$$
+$$
+\vec{n} = \frac{\vec{N}}{|\vec{N}|}
+$$
+Se figur 253 for sammenligning mellem regionen S og regionen R.
+![[Fig 253.png]]
+$$
+\begin{align*}
+\iint_{R} (-2x -2y -1) \, dx \, dy\\
+&= \iint_{R} (-2 \cos(\theta) - 2 \sin(\theta) - 1) \, \underbrace{r}_{1} \, dr \, d \theta\\
+&= \int_{0} ^{2\pi} \int_{0}^{1} (-2 \cos(\theta) - 2 \sin(\theta) - 1) \, r \, dr \, d \theta\\
+
+\end{align*}
 $$
