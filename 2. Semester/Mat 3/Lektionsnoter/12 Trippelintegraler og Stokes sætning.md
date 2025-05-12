@@ -36,11 +36,7 @@ S: \vec{r} &=  (\underbrace{2 \cos(v) \cos(u)}_{x}, 2 \cos(v) \sin(u), \underbra
 \text{Normalvektoren findes ved at krydse:}\\
 \vec{N} &= \vec{r}_{u} \times \vec{r}_{v}\\
 \vec{N} &= (4 \cos^{2}(v) \cos(u), 4 \cos^{2}(v) \sin(u), 4 \cos(v) \sin(v))\\
-\text{På S:} \iint_{S} (7 \cdot 2 \cos(v) \cos(u), 2 \sin(u), 0) \cdot (4 \cos^{2}(v) \cos(u), 4 \cos^{2}(v), 4 \cos(v) \sin(v))\\
-= \iint_{S} (56 \cos^{3}(v) \cos^{2}(u) - 8 \cos(v) \sin^{2}(v)) \, dA &= 64 \pi
-\end{align*}
-$$
-$$
+\text{På S:} 
 \begin{pmatrix}
 7 \cdot 2 \cos(v) \cos(u) \\ 
 2 \sin(u) \\  
@@ -48,8 +44,34 @@ $$
 \end{pmatrix}
 \cdot 
 \begin{pmatrix}
-(4 \cos^{2}(v) \cos(u)  \\ 
+4 \cos^{2}(v) \cos(u)  \\ 
 4 \cos^{2}(v) \\ 
  4 \cos(v) \sin(v)\\
 \end{pmatrix}
+\\
+= \iint_{S} (56 \cos^{3}(v) \cos^{2}(u) - 8 \cos(v) \sin^{2}(v)) \, dA &= 64 \pi
+\end{align*}
+$$
+$$
+
+$$
+### Stokes sætning
+Transformation af fladeintegraler til linjeintegraler.
+
+Hvis man har en flade S og en rand C så har man ds der er en lille strækning
+
+$$
+\begin{align*}
+\iint_{S} \text{curl} \vec{F} \cdot \vec{n} \, dA &= \oint_{C} \vec{F} \cdot \vec{r}' \, ds\\
+\text{Læg mærke til det er vektor r differentieret}
+\text{curl } \vec{F} = \vec{rot} = \nabla \times \vec{F} = 
+\begin{pmatrix}
+\vec{i}  &  \vec{j}  &  \vec{k}\\
+
+\end{pmatrix}
+\end{align*}
+$$
+#### Eksempel
+$$
+
 $$
