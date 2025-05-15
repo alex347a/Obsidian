@@ -41,6 +41,7 @@ Tips
 TYPE
 Tilf
 Tidsstyring
+Trippelintegrale
 mass
 moments
 moment
@@ -135,6 +136,7 @@ mkdir
 mappen
 mode
 mulighed
+mper
 center
 cirkel
 counterclockwise
@@ -218,6 +220,8 @@ chmod
 chown
 cal
 clear
+centrum
+cylinderen
 of
 og
 omr
@@ -289,6 +293,9 @@ omd
 out
 outputfil
 oppetid
+overflade
+omgr
+overfladen
 gravity
 given
 givet
@@ -545,6 +552,8 @@ aux
 aktive
 alias
 alt
+afsnit
+arbejdet
 polar
 pol
 planet
@@ -643,6 +652,7 @@ proces
 ping
 participant
 predefineret
+paraboloiden
 totale
 tyngdepunkt
 the
@@ -743,6 +753,8 @@ tulnp
 tidligere
 terminalen
 tryk
+trippelintegrale
+ttes
 re
 retning
 rvektoren
@@ -857,6 +869,11 @@ rettigheder
 repository
 reboot
 recursive
+randen
+rand
+radius
+ringsfladen
+rotationen
 Change
 Calculate
 Check
@@ -915,6 +932,7 @@ CreditCardPayment
 CRUD
 CMake
 Commit
+Cylinderen
 variables
 vs
 vi
@@ -1001,6 +1019,7 @@ versioner
 vis
 vim
 vinder
+vektorfoelt
 for
 function
 fladeintegrale
@@ -1109,6 +1128,8 @@ filindhold
 filens
 forgrunden
 fjende
+fladeintegraler
+figur
 double
 derivative
 de
@@ -1210,6 +1231,7 @@ diskplads
 databaseopdatering
 date
 dato
+divergenss
 using
 under
 ud
@@ -1388,6 +1410,13 @@ locate
 ll
 loop
 live
+legeme
+linjeintegraler
+lille
+linjeintegralet
+ligninger
+ligmed
+load
 normal
 normalvektor
 noget
@@ -1487,6 +1516,7 @@ nohup
 nyttige
 now
 nge
+nser
 Areal
 Arealet
 AUTO
@@ -1640,6 +1670,7 @@ Gener
 Genoptag
 Genstart
 GameManager
+Gauss
 et
 er
 en
@@ -1722,6 +1753,8 @@ eksekverbar
 echo
 exit
 else
+enhedsvektor
+ender
 xy
 xuu
 xZ
@@ -1849,6 +1882,7 @@ killall
 kommandoer
 kalender
 kommando
+kning
 Eksempel
 Evaluate
 Eq
@@ -2061,6 +2095,7 @@ Flyt
 Fjern
 Filvisning
 Filrettigheder
+Fladeintegrale
 smart
 se
 skrives
@@ -2214,6 +2249,11 @@ sekunder
 shutdown
 sequenceDiagram
 stadig
+str
+selve
+store
+skyggen
+sammenligning
 Laplacian
 Laplace
 Let
@@ -2261,6 +2301,7 @@ LNN
 LDt
 Lektien
 Luk
+Linjeintegrale
 Den
 Det
 Describe
@@ -2537,6 +2578,9 @@ baggrundsprocesser
 bg
 baggrundsjob
 begge
+betragtes
+beregner
+betegnes
 jeg
 jre
 ja
@@ -2658,6 +2702,7 @@ UP
 Understreg
 Ubuntu
 Udskriv
+Udvalgt
 Siden
 Starter
 Svaret
@@ -2722,6 +2767,8 @@ Send
 Skub
 Sluk
 Spiller
+Stokes
+Sk
 Inds
 Incompressible
 Indicate
@@ -2880,6 +2927,7 @@ Kompilering
 Kompiler
 Konfigurer
 Klon
+Kode
 Beregner
 Begge
 Begreber
@@ -3101,6 +3149,7 @@ Popcorn
 Process
 Pakkeh
 PID
+Parameterfremstilling
 Medmindre
 Man
 Magic
