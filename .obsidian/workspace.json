@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Softwareudvikling/06 Class diagram.md",
+                "file": "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 Class diagram"
+              "title": "Linux terminal kommandoer"
             }
           }
         ]
@@ -172,8 +172,11 @@
   },
   "active": "e329a29009e3f22d",
   "lastOpenFiles": [
-    "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
+    "2. Semester/Softwareudvikling/Git kommandoer.md",
+    "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
+    "2. Semester/Softwareudvikling/Data flow diagrammer (DFD).md",
     "2. Semester/Softwareudvikling/06 Class diagram.md",
+    "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
     "2. Semester/Softwareudvikling/07 Sequence diagram.md",
     "2. Semester/Mat 3/Lektionsnoter/12 Trippelintegraler og Stokes sætning.md",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Udvalgt sekvensdiagram (load en eksisterende hero).png",
@@ -184,12 +187,9 @@
     "2. Semester/Mat 3/Opgaver/12 Opgaver.md",
     "Fig 253.png",
     "2. Semester/Softwareudvikling/UML-diagrammer.md",
-    "2. Semester/Softwareudvikling/Data flow diagrammer (DFD).md",
     "2. Semester/Softwareudvikling/09 Databaser SQL.md",
     "2. Semester/Softwareudvikling/10 SQL continued.md",
     "2. Semester/Softwareudvikling/11 SQL continued again.md",
-    "2. Semester/Softwareudvikling/Git kommandoer.md",
-    "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
     "2. Semester/Softwareudvikling/08 Good coding practises.md",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie domænemodel.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie usecase.png",
