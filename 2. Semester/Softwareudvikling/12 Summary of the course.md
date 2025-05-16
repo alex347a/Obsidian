@@ -17,3 +17,4 @@ Actiondiagram/flowdiagram: Basically et flowchart.
 #### SQL
 SQL er ikke så godt til hvis ens datatyper ændrer sig hele tiden.
 For at skalere det skal man købe en større server, man kan ikke fordele det ud på flere servere.
+SQL svarer lidt til en mappe med csv filer.
