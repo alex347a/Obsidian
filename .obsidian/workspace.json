@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
+                "file": "2. Semester/Softwareudvikling/12 Summary of the course.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux terminal kommandoer"
+              "title": "12 Summary of the course"
             }
           }
         ]
@@ -172,8 +172,10 @@
   },
   "active": "e329a29009e3f22d",
   "lastOpenFiles": [
-    "2. Semester/Softwareudvikling/Git kommandoer.md",
+    "2. Semester/Softwareudvikling/11 SQL continued again.md",
+    "2. Semester/Softwareudvikling/12 Summary of the course.md",
     "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
+    "2. Semester/Softwareudvikling/Git kommandoer.md",
     "2. Semester/Softwareudvikling/Data flow diagrammer (DFD).md",
     "2. Semester/Softwareudvikling/06 Class diagram.md",
     "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
@@ -189,7 +191,6 @@
     "2. Semester/Softwareudvikling/UML-diagrammer.md",
     "2. Semester/Softwareudvikling/09 Databaser SQL.md",
     "2. Semester/Softwareudvikling/10 SQL continued.md",
-    "2. Semester/Softwareudvikling/11 SQL continued again.md",
     "2. Semester/Softwareudvikling/08 Good coding practises.md",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie domænemodel.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie usecase.png",
