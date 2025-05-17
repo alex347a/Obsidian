@@ -38,6 +38,6 @@
 	- [ ] 2. Iteration
 		- [x] Brugsmønstre ✅ 2025-05-16
 		- [ ] Domain model
-		- [ ] Class diagram
+		- [x] Class diagram ✅ 2025-05-17
 		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-05-16
 	- [ ] 3. Iteration
