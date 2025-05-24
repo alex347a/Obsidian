@@ -21,21 +21,28 @@
 - [x] Lav kunstværkopgave ✅ 2025-05-01
 - [ ] Lav IO opgaver
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
+- [ ] Se gennemgang af critical path
+- [ ] Lav eksamensopgaver
 
 - [ ] Skim kap 1 og 6 i softwareudvikling
 - [ ] Lav Portfolien:
-	- [ ] 1. Iteration
+	- [x] 1. Iteration ✅ 2025-05-14
 		- [x] Brugsmønstre ✅ 2025-04-03
 		- [x] Domain model ✅ 2025-04-03
 		- [x] Class diagram ✅ 2025-04-03
 		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-04-24
-		- [ ] Gennemgå og ret:
-			- [ ] Brugsmønstre
+		- [x] Gennemgå og ret: ✅ 2025-05-14
+			- [x] Brugsmønstre ✅ 2025-05-14
 			- [x] Domain model ✅ 2025-05-12
 			- [x] Class diagram ✅ 2025-05-10
 	- [ ] 2. Iteration
+		- [x] Brugsmønstre ✅ 2025-05-16
+		- [ ] Domain model
+		- [x] Class diagram ✅ 2025-05-17
+		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-05-16
+	- [ ] 3. Iteration
 		- [ ] Brugsmønstre
 		- [ ] Domain model
 		- [ ] Class diagram
 		- [ ] Kod det hele (husk git for hver class minimum)
-	- [ ] 3. Iteration
+- [ ] Smæk det hele ind i et dokument og lav en beskrivelse af hver iteration.
