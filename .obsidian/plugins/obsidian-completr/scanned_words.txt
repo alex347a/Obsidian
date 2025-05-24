@@ -222,6 +222,7 @@ cal
 clear
 centrum
 cylinderen
+csv
 of
 og
 omr
@@ -374,6 +375,7 @@ genskaber
 gning
 grep
 gamle
+gger
 intertia
 inertimomenter
 intertimomenter
@@ -469,6 +471,7 @@ installation
 internettet
 init
 itererer
+interagerer
 and
 at
 af
@@ -655,6 +658,7 @@ ping
 participant
 predefineret
 paraboloiden
+planl
 totale
 tyngdepunkt
 the
@@ -876,6 +880,7 @@ rand
 radius
 ringsfladen
 rotationen
+rre
 Change
 Calculate
 Check
@@ -1132,6 +1137,10 @@ forgrunden
 fjende
 fladeintegraler
 figur
+formelt
+flowdiagram
+flowchart
+fordele
 double
 derivative
 de
@@ -1234,6 +1243,7 @@ databaseopdatering
 date
 dato
 divergenss
+datatyper
 using
 under
 ud
@@ -1576,6 +1586,7 @@ Author
 Aktiver
 Andre
 Agil
+Actiondiagram
 Volumen
 Vi
 VALUES
@@ -2260,6 +2271,11 @@ selve
 store
 skyggen
 sammenligning
+stories
+softwareklasser
+sekvens
+skalere
+servere
 Laplacian
 Laplace
 Let
@@ -2455,6 +2471,7 @@ Hvordan
 Hent
 HP
 Helt
+Hvilke
 ydre
 your
 yZ
@@ -2709,6 +2726,7 @@ Understreg
 Ubuntu
 Udskriv
 Udvalgt
+User
 Siden
 Starter
 Svaret
@@ -3024,6 +3042,7 @@ Byg
 BUILD
 Baggrundsprocesser
 Bring
+Basically
 Regionen
 Referential
 RC
