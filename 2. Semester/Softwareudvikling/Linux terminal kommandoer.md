@@ -98,3 +98,18 @@ exit                             # Luk terminalen
 reboot                           # Genstart systemet
 shutdown now                     # Sluk systemet med det samme
 zip -r `<navn.zip>` `<navn på det der zippes>`    # Zipper en mappe, hvor -r betyder recursive.
+
+# Dagligdagskommandoer
+wget <image_url> -O <save_as> # Gemme et billede
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+
+# ROS
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5 robot_ip:=192.168.1.54
+(Husk at sætte connection på PC til at være 192.168.1.55; 255.255.255.0; 1.1.1.1)
+ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur5 launch_rviz:=true
+ros2 run ur5_sem2_scripts svejse_frame 
+ros2 run ur5_sem2_scripts final_main --ros-args -p camera_index:=`<insert index>`
+# Pico
+sudo chmod a+rw /dev/ttyACM0

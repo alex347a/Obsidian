@@ -137,6 +137,7 @@ mappen
 mode
 mulighed
 mper
+moveit
 center
 cirkel
 counterclockwise
@@ -223,6 +224,10 @@ clear
 centrum
 cylinderen
 csv
+control
+connection
+config
+camera
 of
 og
 omr
@@ -472,6 +477,8 @@ internettet
 init
 itererer
 interagerer
+image
+index
 and
 at
 af
@@ -559,6 +566,8 @@ alias
 alt
 afsnit
 arbejdet
+autoremove
+args
 polar
 pol
 planet
@@ -761,6 +770,9 @@ terminalen
 tryk
 trippelintegrale
 ttes
+type
+true
+ttyACM
 re
 retning
 rvektoren
@@ -881,6 +893,10 @@ radius
 ringsfladen
 rotationen
 rre
+ros
+robot
+rviz
+run
 Change
 Calculate
 Check
@@ -1141,6 +1157,8 @@ formelt
 flowdiagram
 flowchart
 fordele
+frame
+final
 double
 derivative
 de
@@ -1244,6 +1262,8 @@ date
 dato
 divergenss
 datatyper
+driver
+dev
 using
 under
 ud
@@ -1311,6 +1331,8 @@ upgrade
 uname
 uptime
 uger
+url
+ur
 Jacobian
 Jeg
 JOIN
@@ -1430,6 +1452,7 @@ linjeintegralet
 ligninger
 ligmed
 load
+launch
 normal
 normalvektor
 noget
@@ -1688,6 +1711,7 @@ Genstart
 GameManager
 Gauss
 Giver
+Gemme
 et
 er
 en
@@ -2276,6 +2300,10 @@ softwareklasser
 sekvens
 skalere
 servere
+save
+sem
+scripts
+svejse
 Laplacian
 Laplace
 Let
@@ -2418,6 +2446,7 @@ DCMAKE
 Debug
 Debian
 Download
+Dagligdagskommandoer
 Her
 Hvor
 Hvis
@@ -2472,6 +2501,7 @@ Hent
 HP
 Helt
 Hvilke
+Husk
 ydre
 your
 yZ
@@ -3080,6 +3110,7 @@ Resource
 Requirements
 Rediger
 Ryd
+ROS
 What
 WHERE
 WZ
@@ -3176,6 +3207,8 @@ Process
 Pakkeh
 PID
 Parameterfremstilling
+PC
+Pico
 Medmindre
 Man
 Magic
