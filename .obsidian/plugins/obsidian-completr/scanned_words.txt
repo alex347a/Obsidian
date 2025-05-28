@@ -228,6 +228,7 @@ control
 connection
 config
 camera
+critical
 of
 og
 omr
@@ -302,6 +303,7 @@ oppetid
 overflade
 omgr
 overfladen
+output
 gravity
 given
 givet
@@ -381,6 +383,7 @@ gning
 grep
 gamle
 gger
+gennemgang
 intertia
 inertimomenter
 intertimomenter
@@ -479,6 +482,7 @@ itererer
 interagerer
 image
 index
+igennem
 and
 at
 af
@@ -568,6 +572,7 @@ afsnit
 arbejdet
 autoremove
 args
+addmode
 polar
 pol
 planet
@@ -668,6 +673,7 @@ participant
 predefineret
 paraboloiden
 planl
+path
 totale
 tyngdepunkt
 the
@@ -1043,6 +1049,7 @@ vis
 vim
 vinder
 vektorfoelt
+vsync
 for
 function
 fladeintegrale
@@ -1159,6 +1166,8 @@ flowchart
 fordele
 frame
 final
+force
+forbindelse
 double
 derivative
 de
@@ -1264,6 +1273,8 @@ divergenss
 datatyper
 driver
 dev
+dokument
+display
 using
 under
 ud
@@ -1453,6 +1464,7 @@ ligninger
 ligmed
 load
 launch
+lav
 normal
 normalvektor
 noget
@@ -1553,6 +1565,7 @@ nyttige
 now
 nge
 nser
+newmode
 Areal
 Arealet
 AUTO
@@ -1796,6 +1809,8 @@ exit
 else
 enhedsvektor
 ender
+eksamensopgaver
+eksternt
 xy
 xuu
 xZ
@@ -1833,6 +1848,7 @@ xYD
 xY
 xpp
 xDpT
+xrandr
 kontinuerte
 koordinater
 kvadrant
@@ -2055,6 +2071,7 @@ htop
 hurtigt
 history
 hent
+hsync
 Fordi
 For
 Find
@@ -2502,6 +2519,7 @@ HP
 Helt
 Hvilke
 Husk
+HDMI
 ydre
 your
 yZ
@@ -2634,6 +2652,7 @@ begge
 betragtes
 beregner
 betegnes
+beskrivelse
 jeg
 jre
 ja

@@ -105,6 +105,11 @@ sudo apt update
 sudo apt upgrade
 sudo apt autoremove
 
+For at force en forbindelse med et eksternt display igennem HDMI
+xrandr --newmode "2560x1080_144.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
+xrandr --addmode HDMI-1 "2560x1080_144.00"
+xrandr --output HDMI-1 --mode "2560x1080_144.00"
+
 # ROS
 ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5 robot_ip:=192.168.1.54
 (Husk at sætte connection på PC til at være 192.168.1.55; 255.255.255.0; 1.1.1.1)
