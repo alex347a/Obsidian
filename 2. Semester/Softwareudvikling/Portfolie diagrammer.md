@@ -5,8 +5,13 @@ Brugsmønstre:
 
 Portfolie domænemodel første iteration
 ![[Domænemodel.drawio.png]]
+Portfolie domænemodel anden iteration:
 
-Udvalgt sekvensdiagram (load en eksisterende hero)
+
+Portfolie domænemodel tredje iteration:
+![[3. Iteration domænemodel.drawio.png]]
+
+Udvalgt sekvensdiagram (1. iteration) (load en eksisterende hero)
 ![[Udvalgt sekvensdiagram (load en eksisterende hero).png]]
 Kode
 	sequenceDiagram
@@ -19,7 +24,7 @@ Kode
 	    GameManager-->>GameManager: aktivHero = ny Hero
 
 
-Udvalgt sekvensdiagram (Hero kæmper mod fjende)
+Udvalgt sekvensdiagram (1. iteration) (Hero kæmper mod fjende)
 ![[Udvalgt sekvensdiagram (Hero kæmper mod fjende).png]]
 Kode
 	sequenceDiagram
