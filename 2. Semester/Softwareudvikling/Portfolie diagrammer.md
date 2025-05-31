@@ -54,4 +54,4 @@ Portfolie klassediagram: Første iteration:
 Portfolie klassediagram: Anden iteration:
 ![[2. iteration klassediagram.png]]
 Portfolie klassediagram: Tredje iteration:
-![[3. Iteration klassediagram 1.png]]
+![[3. Iteration klassediagram 1.png]]![[3. Iteration Sekvensdiagram.png]]
