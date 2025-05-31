@@ -42,6 +42,7 @@ TYPE
 Tilf
 Tidsstyring
 Trippelintegrale
+Timeboxed
 mass
 moments
 moment
@@ -138,6 +139,8 @@ mode
 mulighed
 mper
 moveit
+minutters
+master
 center
 cirkel
 counterclockwise
@@ -304,6 +307,7 @@ overflade
 omgr
 overfladen
 output
+opgaverne
 gravity
 given
 givet
@@ -483,6 +487,7 @@ interagerer
 image
 index
 igennem
+individuelle
 and
 at
 af
@@ -674,6 +679,9 @@ predefineret
 paraboloiden
 planl
 path
+problemer
+planlagte
+processen
 totale
 tyngdepunkt
 the
@@ -903,6 +911,12 @@ ros
 robot
 rviz
 run
+rugby
+rbare
+res
+rdigg
+review
+retrospective
 Change
 Calculate
 Check
@@ -1168,6 +1182,7 @@ frame
 final
 force
 forbindelse
+fremskridt
 double
 derivative
 de
@@ -1275,6 +1290,9 @@ driver
 dev
 dokument
 display
+des
+diskuteres
+delt
 using
 under
 ud
@@ -1465,6 +1483,7 @@ ligmed
 load
 launch
 lav
+let
 normal
 normalvektor
 noget
@@ -1566,6 +1585,7 @@ now
 nge
 nser
 newmode
+ngde
 Areal
 Arealet
 AUTO
@@ -1811,6 +1831,7 @@ enhedsvektor
 ender
 eksamensopgaver
 eksternt
+emner
 xy
 xuu
 xZ
@@ -1940,6 +1961,7 @@ kommandoer
 kalender
 kommando
 kning
+kommer
 Eksempel
 Evaluate
 Eq
@@ -1990,6 +2012,7 @@ Entity
 En
 Eksempler
 ENTER
+Efter
 hs
 har
 hver
@@ -2072,6 +2095,8 @@ hurtigt
 history
 hent
 hsync
+holdet
+holdsport
 Fordi
 For
 Find
@@ -2321,6 +2346,9 @@ save
 sem
 scripts
 svejse
+scrum
+session
+sprint
 Laplacian
 Laplace
 Let
@@ -2464,6 +2492,7 @@ Debug
 Debian
 Download
 Dagligdagskommandoer
+Del
 Her
 Hvor
 Hvis
@@ -2520,6 +2549,9 @@ Helt
 Hvilke
 Husk
 HDMI
+Hele
+Holdet
+Han
 ydre
 your
 yZ
@@ -2558,6 +2590,7 @@ yrQ
 yVw
 yX
 yu
+yderligere
 begr
 betyde
 beneath
@@ -2653,6 +2686,9 @@ betragtes
 beregner
 betegnes
 beskrivelse
+blokere
+breakout
+backlog
 jeg
 jre
 ja
@@ -2843,6 +2879,8 @@ Spiller
 Stokes
 Sk
 Sprints
+Sprint
+Scrum
 Inds
 Incompressible
 Indicate
@@ -2897,6 +2935,8 @@ Identificer
 Installer
 Interaktiv
 Initialiser
+Indhold
+Iterations
 Nu
 Normalvektor
 Normalvektoren
@@ -3092,6 +3132,7 @@ BUILD
 Baggrundsprocesser
 Bring
 Basically
+Bagefter
 Regionen
 Referential
 RC
@@ -3228,6 +3269,7 @@ PID
 Parameterfremstilling
 PC
 Pico
+Product
 Medmindre
 Man
 Magic
