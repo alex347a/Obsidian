@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Portfolie diagrammer"
             }
+          },
+          {
+            "id": "1013b2a9accba824",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Domænemodel.drawio.png"
+              },
+              "icon": "lucide-image",
+              "title": "Domænemodel.drawio"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,14 +183,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e329a29009e3f22d",
+  "active": "1013b2a9accba824",
   "lastOpenFiles": [
+    "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
     "3. Iteration domænemodel.drawio.png",
     "3. Iteration Sekvensdiagram.png",
     "3. Iteration klassediagram 1.png",
     "3. Iteration klassediagram.png",
     "2. iteration klassediagram.drawio.png",
-    "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
     "2. iteration klassediagram.png",
     "2. iteration klassediagram.drawio",
     "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
@@ -202,7 +215,6 @@
     "Pasted Images/2. Semester/Mat 3/12/Fig 253.png",
     "Pasted Images/2. Semester/Mat 3/12",
     "2. Semester/Mat 3/Opgaver/12 Opgaver.md",
-    "Fig 253.png",
     "Portfolie klassediagram 1 2. iteration",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1 1. iteration",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration",

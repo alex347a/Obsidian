@@ -56,6 +56,8 @@ TfE
 TVk
 Tt
 TzP
+TUI
+TCt
 mass
 moments
 moment
@@ -261,6 +263,8 @@ cI
 cxo
 cHY
 cB
+connectable
+cZ
 of
 og
 omr
@@ -342,6 +346,9 @@ oI
 oxl
 oa
 oN
+offset
+ou
+oUR
 gravity
 given
 givet
@@ -547,6 +554,7 @@ iE
 iF
 iI
 iZb
+it
 and
 at
 af
@@ -642,6 +650,7 @@ amp
 agc
 abH
 av
+aA
 polar
 pol
 planet
@@ -999,6 +1008,7 @@ rH
 rF
 rNZ
 rN
+rounded
 Change
 Calculate
 Check
@@ -1072,6 +1082,7 @@ CuL
 Ccu
 CS
 Cz
+CCC
 variables
 vs
 vi
@@ -1299,6 +1310,8 @@ fNY
 fZ
 fsH
 fq
+fSOkU
+fgg
 double
 derivative
 de
@@ -1419,6 +1432,9 @@ dOX
 dh
 dxi
 dCR
+deltager
+dz
+dE
 using
 under
 ud
@@ -1499,6 +1515,7 @@ ut
 uB
 uzH
 uj
+uLV
 Jacobian
 Jeg
 JOIN
@@ -1547,6 +1564,7 @@ JZ
 JW
 JB
 Ji
+JP
 laplacian
 line
 linjeintegrale
@@ -1645,6 +1663,7 @@ lV
 lYw
 lC
 lri
+ltEXtmxfile
 normal
 normalvektor
 noget
@@ -2034,6 +2053,9 @@ eq
 eE
 ew
 eG
+edgeLabel
+ezq
+eyyY
 xy
 xuu
 xZ
@@ -2602,6 +2624,11 @@ sI
 sO
 sHQ
 sJTR
+styrer
+sss
+suuU
+sP
+sU
 Laplacian
 Laplace
 Let
@@ -2658,6 +2685,9 @@ LEQ
 LU
 LJDs
 Ly
+Lu
+LtBb
+LGn
 Den
 Det
 Describe
@@ -2763,6 +2793,9 @@ DJ
 Di
 DsJ
 DY
+Dnone
+Do
+Dx
 Her
 Hvor
 Hvis
@@ -2875,6 +2908,8 @@ yc
 yQ
 yh
 yW
+yD
+yR
 begr
 betyde
 beneath
@@ -2985,6 +3020,7 @@ bES
 bI
 bzI
 bz
+btu
 jeg
 jre
 ja
@@ -3024,6 +3060,7 @@ jer
 jobs
 job
 jGVG
+jVe
 with
 where
 whose
@@ -3075,6 +3112,11 @@ wu
 wy
 wB
 wf
+whiteSpace
+wp
+wDl
+wwEkZ
+wG
 Ud
 Using
 Undg
@@ -3134,6 +3176,7 @@ UJ
 UE
 UHR
 UWY
+UMV
 Siden
 Starter
 Svaret
@@ -3272,6 +3315,7 @@ IDATq
 IL
 Im
 ImZb
+ILWr
 Nu
 Normalvektor
 Normalvektoren
@@ -3327,6 +3371,9 @@ NL
 NiuM
 NX
 NAv
+NT
+Nf
+NM
 Kom
 Kommentarer
 Kugle
@@ -3391,6 +3438,8 @@ KDK
 KX
 KK
 Kf
+Kamp
+Kv
 Beregner
 Begge
 Begreber
@@ -3498,6 +3547,10 @@ Bh
 BGL
 BBf
 BI
+Bresizable
+Bautosize
+BstrokeColor
+BfillColor
 Regionen
 Referential
 RC
@@ -3591,6 +3644,9 @@ Wj
 WYo
 WNx
 WH
+Windows
+Win
+WC
 Parameterfremstillingen
 Parabolsk
 PRIMARY
@@ -3764,6 +3820,8 @@ OV
 OD
 OHa
 Oo
+OM
+ORR
 zz
 zx
 zr
@@ -3841,6 +3899,7 @@ Xr
 Xsh
 Xt
 Xh
+XX
 Yw
 Yd
 YD
@@ -3887,6 +3946,11 @@ Yp
 YnC
 YI
 Yo
+YYY
+Yj
+YqeG
+YZZ
+YA
 ZvYD
 Ztc
 Zx
