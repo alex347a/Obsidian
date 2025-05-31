@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Softwareudvikling/09 Databaser SQL.md",
+                "file": "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 Databaser SQL"
+              "title": "Portfolie diagrammer"
             }
           }
         ]
@@ -170,20 +170,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e329a29009e3f22d",
+  "active": "af2180a01d80d8b6",
   "lastOpenFiles": [
+    "2. iteration klassediagram.drawio.png",
+    "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
+    "2. iteration klassediagram.png",
+    "2. iteration klassediagram.drawio",
+    "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
+    "2. Semester/Softwareudvikling/Git kommandoer.md",
+    "2. Semester/Softwareudvikling/Data flow diagrammer (DFD).md",
+    "2. Semester/Softwareudvikling/12 Summary of the course.md",
+    "2. Semester/Softwareudvikling/11 SQL continued again.md",
+    "2. Semester/Softwareudvikling/10 SQL continued.md",
+    "2. Semester/Softwareudvikling/09 Databaser SQL.md",
     "2. Semester/Softwareudvikling/08 Good coding practises.md",
     "2. Semester/Softwareudvikling/04 Scrum.md",
-    "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
     "2. Semester/Softwareudvikling/UML-diagrammer.md",
-    "2. Semester/Softwareudvikling/11 SQL continued again.md",
-    "2. Semester/Softwareudvikling/12 Summary of the course.md",
-    "2. Semester/Softwareudvikling/Data flow diagrammer (DFD).md",
     "2. Semester/Softwareudvikling/06 Class diagram.md",
     "2. Semester/Softwareudvikling/07 Sequence diagram.md",
-    "2. Semester/Softwareudvikling/Linux terminal kommandoer.md",
     "To do list.md",
-    "2. Semester/Softwareudvikling/Git kommandoer.md",
     "2. Semester/Softwareudvikling/11 SQL continued again-ALEXANDERS_PC.md",
     "2. Semester/Softwareudvikling/05 Iterativ softwareudvikling (Unified Process) og UML (Unified Modelling Language).md",
     "2. Semester/Mat 3/Lektionsnoter/12 Trippelintegraler og Stokes sætning.md",
@@ -194,18 +199,14 @@
     "Pasted Images/2. Semester/Mat 3/12",
     "2. Semester/Mat 3/Opgaver/12 Opgaver.md",
     "Fig 253.png",
-    "2. Semester/Softwareudvikling/09 Databaser SQL.md",
-    "2. Semester/Softwareudvikling/10 SQL continued.md",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie domænemodel.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie usecase.png",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration (ikke færdig).png",
-    "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration.png",
     "Portfolie klassediagram 1 2. iteration",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1 1. iteration",
     "Pasted Images/2. Semester/Softwareudvikling/Portfolie/Portfolie klassediagram 1. iteration",
     "Portfolie klassediagram 1 1. iteration",
     "Portfolie klassediagram 1. iteration",
-    "Portfolie klassediagram 1. iteration.drawio 1.png",
     "Pasted Images/2. Semester/Softwareudvikling/11",
     "2. Semester/Mat 3/Lektionsnoter/11 Fladeintegraler.md",
     "2. Semester/Mat 3/Formler og udtryk/orientable.md",
@@ -215,8 +216,6 @@
     "Pasted Images/2. Semester/Robotkinematik/11",
     "2. Semester/Robotkinematik/Lektionsnoter/11 Applications of the Jacobian matrix (numerical IK and manipulability).md",
     "2. Semester/Mat 3/Lektionsnoter/10 Dobbeltintegraler og Green's sætning.md",
-    "2. Semester/Mat 3/Opgaver/10 Opgaver.md",
-    "2. Semester/Mat 3/Lektionsnoter/10 Lektionsnoter.md",
-    "Pasted Images/2. Semester/Mat 3/10"
+    "2. Semester/Mat 3/Opgaver/10 Opgaver.md"
   ]
 }

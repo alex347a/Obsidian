@@ -52,3 +52,4 @@ Kode
 Portfolie klassediagram: Første iteration:
 ![[Portfolie klassediagram 1. iteration.png]]
 Portfolie klassediagram: Anden iteration:
+![[2. iteration klassediagram.png]]
