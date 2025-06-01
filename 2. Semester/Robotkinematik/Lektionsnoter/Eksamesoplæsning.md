@@ -8,3 +8,4 @@ Since the axis are always orthogonal, that means the transposed matrix is always
 ![[Fixed angles x-y-z to rotation matrix.png]]
 ![[General Mappings (in multiple frames).png]]
 ![[How to save computation.png]]
+![[Generic Homogenous Transformations.png]]
