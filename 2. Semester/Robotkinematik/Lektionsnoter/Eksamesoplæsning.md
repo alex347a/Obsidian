@@ -9,3 +9,16 @@ Since the axis are always orthogonal, that means the transposed matrix is always
 ![[General Mappings (in multiple frames).png]]
 ![[How to save computation.png]]
 ![[Generic Homogenous Transformations.png]]
+You can use homogenous transformations for only translations and rotations, where you just write 0 in the place where you don't have your translation or rotation.
+
+$$
+\begin{align*}
+_{B}^{A}R ^{B}P =^{A}P - ^{A}P_{Borg}\\
+_{A}^{B}R _{B}^{A}R ^{B}P = _{A}^{B}R (^{A}P - ^{A}P_{Borg})\\
+\end{align*}
+$$
+![[Exercise Solution (Efficient inverse).jpg]]
+
+$$
+\sideset{^{T}_{A}}{}{T} = \sideset{_{T}^{B}}{}{T^{-1}} \sideset{^{Sh} _{B}}{}{T^{-1}} \sideset{^{W}_{Sh}}{}{T^{-1}} \sideset{_{Sat}^{W}}{}{T} \sideset{^{Sat}_{A}}{}{T}
+$$
