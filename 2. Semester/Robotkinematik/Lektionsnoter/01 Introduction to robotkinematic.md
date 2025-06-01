@@ -21,3 +21,4 @@ Frames can move relative to each other.
 ![[Special matrices.png]]
 ### Trigonometric Identities
 ![[Trigonometric Identities.png]]
+For at se matlab funktioner tjek slides for lektion 1
