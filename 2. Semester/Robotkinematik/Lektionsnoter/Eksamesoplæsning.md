@@ -29,3 +29,4 @@ DET HER ER FOR AT FINDE $\alpha_{i}$ og $a_{i}$ men i DH parameter skemaet skal 
 ![[Recap DH parameters.png]]
 ![[DH parameters example.png]]
 Tjek lektion 9 for alle de forskellige velocity profiles.
+Tjek lektion 10 og 11 for Jacobian, sinuglarities og numerical IK og manipulability.
