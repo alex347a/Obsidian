@@ -28,3 +28,4 @@ Essentially you look at the arrows, if you are going the opposite way you need t
 DET HER ER FOR AT FINDE $\alpha_{i}$ og $a_{i}$ men i DH parameter skemaet skal man bruge $\alpha_{i-1}$ og $a_{i-1}$ Derfor er det lidt lettere at bruge:
 ![[Recap DH parameters.png]]
 ![[DH parameters example.png]]
+Tjek lektion 9 for alle de forskellige velocity profiles.

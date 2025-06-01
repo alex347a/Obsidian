@@ -11,7 +11,7 @@
 ### The forward velocity kinematics equation
 ![[The forward velocity kinematics equation.png]]
 All characters in bold are vectors (characters in caps are matrices like J)
-The jacobian is a function of the joint position **q**.
+The Jacobian is a function of the joint position **q**. And the dot above simply means the time derivative.
 ### The two Jacobians in robotics
 ![[The two Jacobians in robotics.png]]
 ### Building a geometric Jacobian
