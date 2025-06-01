@@ -27,7 +27,7 @@ _{B}^{A}R ^{B}P =^{A}P - ^{A}P_{Borg}\\
 _{A}^{B}R _{B}^{A}R ^{B}P = _{A}^{B}R (^{A}P - ^{A}P_{Borg})\\
 \end{align*}
 $$
-INSERT PICTURE HERE FROM PHONE:
+
 
 ### A Note on Notation
 ![[A Note on Notation.png]]
