@@ -18,7 +18,8 @@ _{A}^{B}R _{B}^{A}R ^{B}P = _{A}^{B}R (^{A}P - ^{A}P_{Borg})\\
 \end{align*}
 $$
 ![[Exercise Solution (Efficient inverse).jpg]]
-
+![[Example 2 Space Robotics.png]]
 $$
 \sideset{^{T}_{A}}{}{T} = \sideset{_{T}^{B}}{}{T^{-1}} \sideset{^{Sh} _{B}}{}{T^{-1}} \sideset{^{W}_{Sh}}{}{T^{-1}} \sideset{_{Sat}^{W}}{}{T} \sideset{^{Sat}_{A}}{}{T}
 $$
+Essentially you look at the arrows, if you are going the opposite way you need the inverse, if you are following the arrow direction it is simply the transformation matrix.
