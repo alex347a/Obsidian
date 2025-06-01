@@ -24,8 +24,7 @@
 - [ ] Se gennemgang af critical path
 - [ ] Lav eksamensopgaver
 
-- [ ] Skim kap 1 og 6 i softwareudvikling
-- [ ] Lav Portfolien:
+- [x] Lav Portfolien: ✅ 2025-05-31
 	- [x] 1. Iteration ✅ 2025-05-14
 		- [x] Brugsmønstre ✅ 2025-04-03
 		- [x] Domain model ✅ 2025-04-03
@@ -41,8 +40,8 @@
 		- [x] Class diagram ✅ 2025-05-17
 		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-05-16
 	- [x] 3. Iteration ✅ 2025-05-31
-		- [x] Brugsmønstre ✅ 2025-06-01
-		- [x] Domain model ✅ 2025-06-01
-		- [x] Class diagram ✅ 2025-06-01
-		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-06-01
-- [ ] Smæk det hele ind i et dokument og lav en beskrivelse af hver iteration.
+		- [x] Brugsmønstre ✅ 2025-05-31
+		- [x] Domain model ✅ 2025-05-31
+		- [x] Class diagram ✅ 2025-05-31
+		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-05-31
+- [x] Smæk det hele ind i et dokument og lav en beskrivelse af hver iteration. ✅ 2025-05-31
