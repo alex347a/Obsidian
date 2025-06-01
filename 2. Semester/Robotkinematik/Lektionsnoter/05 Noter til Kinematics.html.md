@@ -434,14 +434,3 @@ Algorithm 1. Forward kinematics
 - [Forward kinematics](https://motion.cs.illinois.edu/RoboticSystems/Kinematics.html#Forward-kinematics): The process of computing coordinate frames for robot links given a robot configuration as input. A basic subroutine used throughout robotics.
 - [URDF file](https://motion.cs.illinois.edu/RoboticSystems/Kinematics.html#Robot-kinematic-definition-files): a popular XML-based format for robot kinematic definitions.
 
-## 4  Exercises[](https://motion.cs.illinois.edu/RoboticSystems/Kinematics.html#Exercises)
-
-TODO...
-
-1. Describe the configuration space of 1) a door (with a handle), 2) your arm, 3) a bicycle, 4) a car, and 5) your body while standing. How many links, joints, and closed loops do each system have? How many degrees of freedom are available in each system?
-    
-2. Suppose a 2R manipulator with unit link lengths and joint limits of ±45∘±45∘. Illustrate the workspace of its end effector position as precisely as possible. Then, illustrate the workspace of its end effector yy position and angle θθ.
-    
-3. Suppose in an nn-link serial robot, we've computed all the frames for configuration qq. Now, suppose only one joint angle ii is changed from qi→q′iqi→qi′. What is the minimal number of operations that must we perform to determine Tn(q′)Tn(q′)?
-    
-4. Implement a workspace approximation algorithm that takes a 6-link industrial robot as input, and calculates an approximate end-effector position workspace. You should loop through all combinations of joint angles within its joint range, up to a resolution of 10∘10∘, and for each configuration calculates the end effector position using forward kinematics. Output and plot these points using a 3D graphing program, such as Matlab or Excel. What kind of shape do the points approximate? How densely or sparsely is this shape sampled?

@@ -24,3 +24,6 @@ $$
 \sideset{^{T}_{A}}{}{T} = \sideset{_{T}^{B}}{}{T^{-1}} \sideset{^{Sh} _{B}}{}{T^{-1}} \sideset{^{W}_{Sh}}{}{T^{-1}} \sideset{_{Sat}^{W}}{}{T} \sideset{^{Sat}_{A}}{}{T}
 $$
 Essentially you look at the arrows, if you are going the opposite way you need the inverse, if you are following the arrow direction it is simply the transformation matrix.
+![[DH parameters procedure.png]]
+DET HER ER FOR AT FINDE $\alpha_{i}$ og $a_{i}$ men i DH parameter skemaet skal man bruge $\alpha_{i-1}$ og $a_{i-1}$ Derfor er det lidt lettere at bruge:
+![[Recap DH parameters.png]]
