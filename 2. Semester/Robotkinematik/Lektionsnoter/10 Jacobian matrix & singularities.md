@@ -22,7 +22,7 @@ Check *FK_2_link_planar_sym.m* for an in-class exercise.
 
 ### Calculating the positional Jacobian analytically
 ![[Calculating the positional Jacobian analytically.png]]
-
+Det i den røde kasse på højresiden af ... er selvfølgelig forkert, hvis det er en 6 DOF så vil der stå q6 til højre for ... og ikke q1 igen.
 ### Dimensions of Jacobian
 ![[Dimensions of Jacobian.png]]
 ## Singularities
