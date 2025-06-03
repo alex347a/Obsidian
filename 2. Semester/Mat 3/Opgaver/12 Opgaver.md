@@ -171,7 +171,10 @@ $$
 $$
 Integralet bliver derfor:
 $$
-\iiint_{T} (y^{2} z^{2}) \, dV = \int_{\theta} ^{2\pi} d \theta \int_{\phi=0} ^{\pi} d\phi \int_{\rho=0} ^{a} \rho^{2} (\sin^{2}(\phi) \sin^{2}(\theta) + \cos^{2}(\phi)) \cdot \rho^{2} \sin(\phi) \, d \rho
+\begin{align*}
+\iiint_{T} (y^{2} z^{2}) \, dV &=  \int_{\theta} ^{2\pi} d \theta \int_{\phi=0} ^{\pi} d\phi \int_{\rho=0} ^{a} \rho^{2} (\sin^{2}(\phi) \sin^{2}(\theta) + \cos^{2}(\phi)) \cdot \rho^{2} \sin(\phi) \, d \rho\\
+&= \int_{\theta} ^{2\pi} d \theta \int_{\phi=0} ^{\pi} d\phi \int_{\rho=0} ^{a} \rho^{4}((\sin^{2}(\phi) \sin^{2}(\theta) + \cos^{2}(\phi)) \sin(\phi) \, d \rho)
+\end{align*}
 $$
 
 
