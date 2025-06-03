@@ -157,6 +157,24 @@ z &= \rho \cos(\phi)\\
 dV &= \rho^{2} \sin(\phi) \, d \rho \, d \phi \, d \theta
 \end{align*}
 $$
+Integranden er:
+$$
+y^{2} + z^{2} = (\rho \sin(\phi) \sin (\theta))^{2} + (\rho \cos(\phi))^{2} = \rho^{2} (\sin^{2}(\phi) \sin^{2}(\theta) + \cos^{2}(\phi))
+$$
+Grænserne er:
+$$
+\begin{align*}
+0 \leq \rho &\leq a\\
+0 \leq \phi &\leq \pi\\
+0 \leq \theta &\leq 2 \pi 
+\end{align*}
+$$
+Integralet bliver derfor:
+$$
+\iiint_{T} (y^{2} z^{2}) \, dV = \int_{\theta} ^{2\pi} d \theta \int_{\phi=0} ^{\pi} d\phi \int_{\rho=0} ^{a} \rho^{2} (\sin^{2}(\phi) \sin^{2}(\theta) + \cos^{2}(\phi)) \cdot \rho^{2} \sin(\phi) \, d \rho
+$$
+
+
 
 ### 10.7.21
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
