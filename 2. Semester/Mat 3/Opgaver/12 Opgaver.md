@@ -211,7 +211,7 @@ $$
 \int_{\phi=0} ^ {\pi} \sin^{3}(\phi) \, d \phi &= \int_{\phi=0} ^{\pi} (\sin(\phi) - \sin(\phi) \cos^{2}(\phi)) \, d \phi\\
 \text{Lad }u &= \cos(\phi), \quad du &= -\sin(\phi) \, d \phi,\\
 \text{Grænserne går fra } \phi = 0, \quad \phi &= \pi\\
-\text{til } u = \cos(0) = 1, \quad u = - \sin(\pi) &= 1
+\text{til } u = \cos(0) \Rightarrow 1, \quad u = - \sin(\pi) \Rightarrow 1
 \end{align*}
 $$
 
