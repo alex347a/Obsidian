@@ -100,8 +100,37 @@ $$
 \end{align*}
 $$
 $$
-\iiint_{V} - \sin(z) \, dV = \int_{z=-2} ^{2} \,dz \int_{\theta=0} ^{2\pi} \, d \theta, \int_{r=0} ^{2} - \sin(z) \, r \,dr
+\iiint_{V} - \sin(z) \, dV = \int_{z=-2} ^{2} - \sin(z) \,dz \int_{\theta=0} ^{2\pi} \, d \theta, \int_{r=0} ^{2} \, r \,dr
 $$
+$$
+\begin{align*}
+\int_{r=0} ^{2} \, r \,dr &= \left[\frac{1}{2} r^{2}\right]_{r=0}^{2}\\
+&= 2 - 0\\
+&= 2
+\end{align*}
+$$
+$$
+\begin{align*}
+\int_{\theta=0} ^{2\pi} \, d \theta &= [\theta]_{\theta=0}^{2\pi}\\
+&= 2\pi - 0\\
+&= 2 \pi
+\end{align*}
+$$
+$$
+\begin{align*}
+\int_{z=-2} ^{2} - \sin(z) \,dz &= [\cos(z)]_{z=-2}^{2}\\
+&= \cos(2) - \cos(-2)\\
+\text{Siden cos er en lige funktion:}\\
+\cos(2) - \cos(-2) &= 0
+\end{align*}
+$$
+Nu ganger jeg de tre integralers værdier sammen:
+$$
+2 \cdot 2\pi \cdot 0 = 0
+$$
+Dvs. jeg beregnede at:
+\text{div } F = -\sin(z)
+
 
 Svaret i bogen er:
 $$
