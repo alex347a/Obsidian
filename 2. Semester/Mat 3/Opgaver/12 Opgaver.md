@@ -162,6 +162,20 @@ $$
 y^{2} + z^{2} = (\rho \sin(\phi) \sin (\theta))^{2} + (\rho \cos(\phi))^{2} = \rho^{2} (\sin^{2}(\phi) \sin^{2}(\theta) + \cos^{2}(\phi))
 $$
 Grænserne er:
+Da bolden er givet ved:
+$$
+x^{2} + y^{2} + z^{2} \leq a^{2}
+$$
+Så bliver det til:
+$$
+0 \leq \rho \leq a
+$$
+i sfæriske koordinater.
+$\phi$ er hvor langt punktet er fra z-aksen:
+$$
+\phi = 0: \text{peger hen ad +z-akse}
+
+$$
 $$
 \begin{align*}
 0 \leq \rho &\leq a\\
