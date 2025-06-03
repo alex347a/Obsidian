@@ -65,6 +65,18 @@ Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem.
 
 $F = [\sin(y), \cos(x), \cos(z)]$, S, the surface of $x^{2} + y^{2} \leq 4, \quad |z| \leq 2$ (a cylinder and two disks!)
 
+
+$$
+\iiint_{T} \text{div } \vec{F} \, dV = \iint_{S} \vec{F} \cdot \vec{n} \,  dA
+$$
+$$
+\begin{align*}
+\vec{F} &=  (F_{1}, F_{2}, F_{3})\\
+\text{div } \vec{F} &= \frac{\partial F_{1}}{\partial x} + \frac{\partial F_{2}}{\partial y} + \frac{\partial F_{3}}{\partial z}\\
+&= \frac{\partial}{\partial x}() + \frac{\partial}{\partial y}() + \frac{\partial}{\partial z}()\\
+\end{align*}
+$$
+
 Svaret i bogen er:
 $$
 \text{div } F = -\sin(z), 0
