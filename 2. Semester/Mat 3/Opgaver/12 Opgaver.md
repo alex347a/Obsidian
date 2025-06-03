@@ -206,8 +206,12 @@ $$
 = \left[\frac{\rho^{5}}{5}\right]_{\rho= 0}^{a} &= \frac{a^{5}}{5}\\
 &= \frac{a^{5}}{5} \cdot \left[\int_{\theta} ^{2\pi} d \theta \int_{\phi=0} ^{\pi} \sin^{2}(\phi) \sin^{2}(\theta) \sin(\phi) \, d\phi + \int_{\theta} ^{2\pi} d \theta \int_{\phi=0} ^{\pi} \cos^{2}(\phi) \sin(\phi) \, d\phi\right]\\
 \text{Først udtryk:}\\
-\int_{\theta= 0} ^{2\pi} \int_{\phi = 0} ^{\pi}\\
-\int_{\theta=0} ^{2\pi} \sin^{2}(\theta) \, d \theta = \int_{\theta=0} ^{2\pi}  \frac{1- \cos(2 \theta)}{2} \, d \theta &= \left[\frac{\theta}{2} - \frac{\sin(2 \theta) }{4}\right]
+\int_{\theta= 0} ^{2\pi} \sin^{2}(\theta) \, d \theta \int_{\phi = 0} ^{\pi} \sin^{3} \phi \, d \phi\\
+\int_{\theta=0} ^{2\pi} \sin^{2}(\theta) \, d \theta &=  \int_{\theta=0} ^{2\pi}  \frac{1- \cos(2 \theta)}{2} \, d \theta = \left[\frac{\theta}{2} - \frac{\sin(2 \theta) }{4}\right]_{\theta=0} ^{2\pi} = \pi\\\\
+\int_{\phi=0} ^ {\pi} \sin^{3}(\phi) \, d \phi &= \int_{\phi=0} ^{\pi} (\sin(\phi) - \sin(\phi) \cos^{2}(\phi)) \, d \phi\\
+\text{Lad }u &= \cos(\phi), \quad du &= -\sin(\phi) \, d \phi,\\
+\text{Grænserne går fra } \phi = 0, \quad \phi &= \pi\\
+\text{til } u = \cos(0) = 1, \quad u = - \sin(\pi) &= 1
 \end{align*}
 $$
 
