@@ -9,12 +9,20 @@ $$
 $$
 \begin{align*}
 \vec{F} &=  (F_{1}, F_{2}, F_{3})\\
-\text{div } \vec{F} &= \frac{\partial F_{1}}{\partial x} + \frac{\partial F_{2}}{\partial y} + \frac{\partial F_{3}}{\partial z}
+\text{div } \vec{F} &= \frac{\partial F_{1}}{\partial x} + \frac{\partial F_{2}}{\partial y} + \frac{\partial F_{3}}{\partial z}\\
+&= \frac{\partial}{\partial x}(x^{2}) + \frac{\partial}{\partial y}(0) + \frac{\partial}{\partial z}(z^{2})\\
+&= 2x + 0 + 2z\\
+&= 2x + 2z
 \end{align*}
 $$
+Volumen er defineret til at have grænserne:
+$$
+x \in [-1,1], \quad y \in [-3,3], \quad z \in[0,2]
+$$
+Derfor bliver integralet:
 $$
 \begin{align*}
-
+\iiint_{V} (2x +2z) \, dV &= \int_{x=-1}^{1} \int_
 \end{align*}
 $$
 
