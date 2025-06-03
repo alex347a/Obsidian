@@ -82,7 +82,7 @@ Derfor bliver integralet:
 $$
 \iiint_{V} - \sin(z) \, dV
 $$
-Siden regionen E er cylindrisk, så er giver det god mening at bruge cylindriske koordinater.
+Siden regionen V er cylindrisk, så er giver det god mening at bruge cylindriske koordinater.
 $$
 \begin{align*}
 x &= r \cdot \cos(\theta)\\
@@ -99,7 +99,9 @@ $$
 -2 \leq z &\leq 2
 \end{align*}
 $$
-
+$$
+\iiint_{V} - \sin(z) \, dV = \int_{z=-2} ^{2} \,dz \int_{\theta=0} ^{2\pi} \, d \theta, \int_{r=0} ^{2} - \sin(z) \, r \,dr
+$$
 
 Svaret i bogen er:
 $$
