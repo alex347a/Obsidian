@@ -1,7 +1,8 @@
 ### 10.7.9
 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
 
-$$$$
+$F = [x^{2}, 0, z^{2}]$, S the surface of the box $|x| \leq 1, |y| \leq 3, 0 \leq z \leq 2$
+
 $$
 \iiint_{T} \text{div } \vec{F} \, dV = \iint_{S} \vec{F} \cdot \vec{n} \,  dA
 $$
