@@ -21,8 +21,21 @@ x \in [-1,1], \quad y \in [-3,3], \quad z \in[0,2]
 $$
 Derfor bliver integralet:
 $$
+\iiint_{V} (2x +2z) \, dV = \int_{x=-1}^{1} \, dx \int_{y=-3} ^{3} \, dy \int_{z=0}^{2} (2x + 2z) \, dz
+$$
+Jeg starter med det inderste integrale:
+$$
 \begin{align*}
-\iiint_{V} (2x +2z) \, dV &= \int_{x=-1}^{1} \int_
+\int_{z=0}^{2} (2x + 2z) \, dz &= [2xz + z^{2}]_{z=0}^{2}\\
+&= (4x + 2^{2}) - (0)\\
+&= 4x + 4
+\end{align*}
+$$
+Nu indsætter jeg dette i integralet mht. y:
+$$
+\begin{align*}
+\int_{y=-3} ^{3} (4x + 4) \,dy &=  (4x + 4) \int_{y=-3} ^{3} \,dy\\
+&= 
 \end{align*}
 $$
 
