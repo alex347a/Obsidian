@@ -73,7 +73,9 @@ $$
 \begin{align*}
 \vec{F} &=  (F_{1}, F_{2}, F_{3})\\
 \text{div } \vec{F} &= \frac{\partial F_{1}}{\partial x} + \frac{\partial F_{2}}{\partial y} + \frac{\partial F_{3}}{\partial z}\\
-&= \frac{\partial}{\partial x}() + \frac{\partial}{\partial y}() + \frac{\partial}{\partial z}()\\
+&= \frac{\partial}{\partial x}(\sin(y)) + \frac{\partial}{\partial y}(\cos(x)) + \frac{\partial}{\partial z}(\cos(z))\\
+&= 0 + 0 + (- \sin(1))\\
+&= \\
 \end{align*}
 $$
 
