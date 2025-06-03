@@ -241,19 +241,24 @@ $$
 $$
 Så jeg har altså beregnet at:
 $$
-I_{x} = \frac{8\pi a^{5}}{15}
+I_{x} = \underline{\underline{\frac{8\pi a^{5}}{15}}}
 $$
 Hvilket også passer med standardformlen for intertien af en solid sfære om sin diameter er givet ved:
 $$
 I = \frac{2}{5} M a^{2}
 $$
-Hvor M er massen af sfæren. Siden densiteten (massefylde) var 1. Så er massen ganget med volumen givet ved:
+Hvor M er massen af sfæren. Siden densiteten (massefylde) var 1. Så er massen givet ved densiteten ganget med volumen givet ved:
 $$
 V = \frac{4}{3} \pi a^{3}
 $$
 $$
-M = \rho \cdot V =
+M = \rho \cdot V = 1 \cdot \frac{4}{3} \pi a^{3} = \frac{4}{3} \pi a^{3}
 $$
+Smækker det ind i fomlen for inerti:
+$$
+I = \frac{2}{5} M a^{2} = \frac{2}{5} \left(\frac{4}{3} \pi a^{3}\right) a^{2} = \frac{2}{5} \cdot \frac{4}{3} \pi a^{5} = \frac{8\pi a^{5}}{15}
+$$
+Så det er altså præcist det samme som jeg fik i min udregning.
 ### 10.7.21
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
