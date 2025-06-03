@@ -52,16 +52,18 @@ $$
 Derfor blev:
 $$
 \begin{align*}
-\text{div } F = 2x + 2\\
-
+\text{div } F &=  2x + 2z\\
+\iint F \cdot n \, dA &= 48
 \end{align*}
 $$
 Svaret i bogen er:
 $$
-\text{div } F = 2x + 2<z, 48
+\text{div } F = 2x + 2z, 48
 $$
 ### 10.7.13
 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
+
+$F = [\sin(y), \cos(x), \cos(z)]$
 
 Svaret i bogen er:
 $$
