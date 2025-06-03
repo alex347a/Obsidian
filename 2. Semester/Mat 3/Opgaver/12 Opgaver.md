@@ -144,7 +144,7 @@ $$
 ### 10.7.20
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
-\iint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
+I_{x} = \iiint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
 $$
 The ball $x^{2} + y^{2} + z^{2} \leq a^{2}$
 
@@ -235,7 +235,25 @@ Jeg summere de to udtryk:
 $$
 \frac{4\pi}{3} + \frac{4\pi}{3} = \frac{8\pi}{3}
 $$
-
+Jeg husker at gange det led der var udenfor integralet på:
+$$
+\frac{a^{5}}{5} \cdot \frac{8\pi}{3} = \frac{8 \pi a^{5}}{15}
+$$
+Så jeg har altså beregnet at:
+$$
+I_{x} = \frac{8\pi a^{5}}{15}
+$$
+Hvilket også passer med standardformlen for intertien af en solid sfære om sin diameter er givet ved:
+$$
+I = \frac{2}{5} M a^{2}
+$$
+Hvor M er massen af sfæren. Siden densiteten (massefylde) var 1. Så er massen ganget med volumen givet ved:
+$$
+V = \frac{4}{3} \pi a^{3}
+$$
+$$
+M = \rho \cdot V =
+$$
 ### 10.7.21
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
