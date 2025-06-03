@@ -171,11 +171,23 @@ $$
 0 \leq \rho \leq a
 $$
 i sfæriske koordinater.
-$\phi$ er hvor langt punktet er fra z-aksen:
+$\phi$ er hvor langt punktet er fra z-aksen, hvor $\phi$ skal gå fra nordpol til sydpol:
 $$
-\phi = 0: \text{peger hen ad +z-akse}
-
+\begin{align*}
+\phi &=  0: \text{peger hen ad +z-akse}\\
+\phi &= \frac{\phi}{2}: \text{peger hen ad xy-planet}\\
+\phi &= \pi: \text{peger hen ad -z-akse}
+\end{align*}
 $$
+Så for at dække hele sfæren bliver det:
+$$
+0 \leq \phi \leq \pi
+$$
+$\theta$ roterer omkring z-aksen og dækker alle retninger i xy-planet. En fuld rotation kræver at $\theta$ går fra 0 til $2\pi$:
+$$
+0 \leq \theta \leq 2\pi
+$$
+Dermed bliver grænserne defineret som:
 $$
 \begin{align*}
 0 \leq \rho &\leq a\\
