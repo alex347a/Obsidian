@@ -142,13 +142,24 @@ $$
 \text{div } F = -\sin(z), 0
 $$
 ### 10.7.20
-Given a mass of density 1 in a region T of space, find the moment of intertia about the x-axis
+Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
 \iint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
 $$
 The ball $x^{2} + y^{2} + z^{2} \leq a^{2}$
+
+Fordi det er en sfærisk symmetri, så bruger jeg sfæriske koordinater. Derfor bliver:
+$$
+\begin{align*}
+x &= \rho \sin(\phi) \cos(\theta)\\
+y &= \rho \sin(\phi) \sin(\theta)\\
+z &= \rho \cos(\phi)\\
+dV &= \rho^{2} \sin(\phi) \, d \rho, d \theta
+\end{align*}
+$$
+
 ### 10.7.21
-Given a mass of density 1 in a region T of space, find the moment of intertia about the x-axis
+Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
 I_{x} = \iiint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
 $$
