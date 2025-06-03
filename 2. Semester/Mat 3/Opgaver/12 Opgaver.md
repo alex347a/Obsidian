@@ -154,7 +154,7 @@ $$
 x &= \rho \sin(\phi) \cos(\theta)\\
 y &= \rho \sin(\phi) \sin(\theta)\\
 z &= \rho \cos(\phi)\\
-dV &= \rho^{2} \sin(\phi) \, d \rho, d \theta
+dV &= \rho^{2} \sin(\phi) \, d \rho \, d \phi \, d \theta
 \end{align*}
 $$
 
