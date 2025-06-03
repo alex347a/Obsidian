@@ -211,11 +211,21 @@ $$
 \int_{\phi=0} ^ {\pi} \sin^{3}(\phi) \, d \phi &= \int_{\phi=0} ^{\pi} (\sin(\phi) - \sin(\phi) \cos^{2}(\phi)) \, d \phi\\
 \text{Lad }u &= \cos(\phi), \quad du &= -\sin(\phi) \, d \phi,\\
 \text{Grænserne går fra } \phi = 0, \quad \phi &= \pi\\
-\text{til } u = \cos(0) \Rightarrow 1, \quad u = - \sin(\pi) \Rightarrow 1
+\text{til } u = \cos(0) \Rightarrow 1, \quad u = - \sin(\pi) \Rightarrow -1\\
+\int_{1}^{-1} (1 - u^{2}) (- du) =  \int_{-1}^{1} (1 - u^{2}) \, du &=  \left[u - \frac{u^{3}}{3}\right]_{-1}^{1} &=  \left(1- \frac{1}{3}\right) - \left(-1 + \frac{1}{3}\right)\\
+ = \frac{2}{3} - \left(- \frac{2}{3}\right) &=  \frac{4}{3}\\
+\text{Dermed bliver det første udtryk: } \pi \cdot \frac{4}{3} &= \frac{4\pi}{3}
 \end{align*}
 $$
-
-
+Andet udtryk:
+$$
+\begin{align*}
+\int_{\theta=0 } ^{2\pi} \, d \theta \int_{\phi=0} ^{\pi} \cos^{2}(\phi) \sin(\phi) \, d \phi\\
+\int_{\theta=0} ^{2\pi} \, d \theta &= 2 \pi\\
+\int_{0}^{\pi} \cos^{2} (\phi) \sin(\phi) \, d \phi\\
+\text{Lad}
+\end{align*}
+$$
 
 ### 10.7.21
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
