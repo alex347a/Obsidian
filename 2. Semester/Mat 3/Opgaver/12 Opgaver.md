@@ -209,10 +209,10 @@ $$
 \int_{\theta= 0} ^{2\pi} \sin^{2}(\theta) \, d \theta \int_{\phi = 0} ^{\pi} \sin^{3} \phi \, d \phi\\
 \int_{\theta=0} ^{2\pi} \sin^{2}(\theta) \, d \theta &=  \int_{\theta=0} ^{2\pi}  \frac{1- \cos(2 \theta)}{2} \, d \theta = \left[\frac{\theta}{2} - \frac{\sin(2 \theta) }{4}\right]_{\theta=0} ^{2\pi} = \pi\\\\
 \int_{\phi=0} ^ {\pi} \sin^{3}(\phi) \, d \phi &= \int_{\phi=0} ^{\pi} (\sin(\phi) - \sin(\phi) \cos^{2}(\phi)) \, d \phi\\
-\text{Lad }u &= \cos(\phi), \quad du &= -\sin(\phi) \, d \phi,\\
+\text{Lad }u = \cos(\phi), \quad du &= -\sin(\phi) \, d \phi,\\
 \text{Grænserne går fra } \phi = 0, \quad \phi &= \pi\\
-\text{til } u = \cos(0) \Rightarrow 1, \quad u = - \sin(\pi) \Rightarrow -1\\
-\int_{1}^{-1} (1 - u^{2}) (- du) =  \int_{-1}^{1} (1 - u^{2}) \, du &=  \left[u - \frac{u^{3}}{3}\right]_{-1}^{1} &=  \left(1- \frac{1}{3}\right) - \left(-1 + \frac{1}{3}\right)\\
+\text{til } u = \cos(0) \Rightarrow 1, \quad u = - \sin(\pi) &\Rightarrow -1\\
+\int_{1}^{-1} (1 - u^{2}) (- du) =  \int_{-1}^{1} (1 - u^{2}) \, du &=  \left[u - \frac{u^{3}}{3}\right]_{u = -1}^{1} &=  \left(1- \frac{1}{3}\right) - \left(-1 + \frac{1}{3}\right)\\
  = \frac{2}{3} - \left(- \frac{2}{3}\right) &=  \frac{4}{3}\\
 \text{Dermed bliver det første udtryk: } \pi \cdot \frac{4}{3} &= \frac{4\pi}{3}
 \end{align*}
@@ -223,8 +223,17 @@ $$
 \int_{\theta=0 } ^{2\pi} \, d \theta \int_{\phi=0} ^{\pi} \cos^{2}(\phi) \sin(\phi) \, d \phi\\
 \int_{\theta=0} ^{2\pi} \, d \theta &= 2 \pi\\
 \int_{0}^{\pi} \cos^{2} (\phi) \sin(\phi) \, d \phi\\
-\text{Lad}
+\text{Lad } w = \cos(\phi), \quad dw &= - \sin(\phi) \, d \phi\\
+\text{Grænserne går fra } \phi = 0, \quad \phi &= \pi\\
+\text{til } w = \cos(0) \Rightarrow 1, w = - \sin(\pi) &\Rightarrow -1\\
+\int_{1}^{-1} w^{2}(-dw) = \int_{-1}^{1} w^{2} \, dw &= \left[\frac{w^{3}}{3}\right]_{w = -1}^{1}\\
+= \frac{1}{3} - \left(-\frac{1}{3}\right) &= \frac{2}{3}\\
+\text{Dermed bliver det andet udtryk: } 2 \pi \cdot \frac{2}{3} &= \frac{4\pi}{3}
 \end{align*}
+$$
+Jeg summere de to udtryk:
+$$
+\frac{4\pi}{3} + \frac{4\pi}{3} = \frac{8\pi}{3}
 $$
 
 ### 10.7.21
