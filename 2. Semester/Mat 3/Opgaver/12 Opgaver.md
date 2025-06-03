@@ -35,10 +35,27 @@ Nu indsætter jeg dette i integralet mht. y:
 $$
 \begin{align*}
 \int_{y=-3} ^{3} (4x + 4) \,dy &=  (4x + 4) \int_{y=-3} ^{3} \,dy\\
-&= 
+&=  (4x + 4) \cdot (3 - (-3))\\
+&= (4x + 4) \cdot 6\\
+&= (24x + 24)
 \end{align*}
 $$
+Nu indsætter jeg dette i integralet mht. x:
+$$
+\begin{align*}
+\int_{x=-1}^{1} (24x + 24) \, dx &= [12x^{2} + 24x]_{x=-1}^{1}\\
+&= 12 + 24 - (12 - 24)\\
+&= 36 - (-12)\\
+&= 48
+\end{align*}
+$$
+Derfor blev:
+$$
+\begin{align*}
+\text{div } F = 2x + 2\\
 
+\end{align*}
+$$
 Svaret i bogen er:
 $$
 \text{div } F = 2x + 2<z, 48
