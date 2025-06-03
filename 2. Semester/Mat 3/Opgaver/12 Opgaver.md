@@ -63,7 +63,7 @@ $$
 ### 10.7.13
 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
 
-$F = [\sin(y), \cos(x), \cos(z)]$
+$F = [\sin(y), \cos(x), \cos(z)]$, S, the surface of $x^{2} + y^{2} \leq 4, \quad |z| \leq 2$ (a cylinder and two disks!)
 
 Svaret i bogen er:
 $$
