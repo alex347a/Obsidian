@@ -78,6 +78,27 @@ $$
 &= - \sin(z)\\
 \end{align*}
 $$
+Derfor bliver integralet:
+$$
+\iiint_{V} - \sin(z) \, dV
+$$
+Siden regionen E er cylindrisk, så er giver det god mening at bruge cylindriske koordinater.
+$$
+\begin{align*}
+x &= r \cdot \cos(\theta)\\
+y &= r \cdot \sin(\theta)\\
+z &= z\\
+dV &= r \, dr \, d \theta \, dz
+\end{align*}
+$$
+Grænserne bliver:
+$$
+\begin{align*}
+0 \leq r &\leq 2 \text{ (da radius er 2)}\\
+0 \leq \theta &\leq 2\pi \text{ (en fuld cirkel)}\\
+-2 \leq z &\leq 2
+\end{align*}
+$$
 
 
 Svaret i bogen er:
