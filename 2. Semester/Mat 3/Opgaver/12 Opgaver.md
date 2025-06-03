@@ -67,7 +67,7 @@ $F = [\sin(y), \cos(x), \cos(z)]$, S, the surface of $x^{2} + y^{2} \leq 4, \qua
 
 
 $$
-\iiint_{T} \text{div } \vec{F} \, dV = \iint_{S} \vec{F} \cdot \vec{n} \,  dA
+\iiint_{V} \text{div } \vec{F} \, dV = \iint_{S} \vec{F} \cdot \vec{n} \,  dA
 $$
 $$
 \begin{align*}
@@ -129,8 +129,13 @@ $$
 2 \cdot 2\pi \cdot 0 = 0
 $$
 Dvs. jeg beregnede at:
-\text{div } F = -\sin(z)
-
+$$
+\begin{align*}
+\text{div } F &=  -\sin(z)\\
+\iiint_{V} - \sin(z) \, dV &= 0
+\end{align*}
+$$
+Dette passer også med at sinus er en ulige funktion, så når regionen er symmetrisk omkring $z=0$ så bliver volumen 0.
 
 Svaret i bogen er:
 $$
