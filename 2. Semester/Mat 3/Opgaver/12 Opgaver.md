@@ -349,7 +349,14 @@ a_{1}  & a_{2}  & a_{3}\\
 b_{1}  & b_{2} &  b_{3}\\
 \end{vmatrix}\\
 &= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
-\vec{i}()
+\text{Indsætter mine værdier:}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+\frac{\partial}{\partial x}  & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+-5y  & 4x &  z\\
+\end{vmatrix}\\
+&= \vec{i}\left(\frac{\partial}{\partial y} \left(z\right) - \frac{\partial}{\partial z} 4x\right) - \vec{j}\left(\frac{\partial}{\partial x}\left(z\right) - \frac{\partial}{\partial z} (-5y)\right) + \vec{k}\left(\frac{\partial}{\partial x}\left(4x\right) - \frac{\partial}{\partial y}(-5y)\right)\\
+&= \vec{i}(0 - 0) - 
 \end{align*}
 $$
 
