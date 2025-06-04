@@ -266,6 +266,20 @@ I_{x} = \iiint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
 $$
 The cylinder $y^{2} + z^{2} \leq a^{2}, \quad 0 \leq x \leq h$
 
+Fordi det er en cylindrisk symmetri, så bruger jeg cylindriske koordinater. Derfor bliver:
+$$
+\begin{align*}
+y &= r \cos(\theta)\\
+z &= r \sin(\theta)\\
+x &= x\\
+dV &= r \, dr \, d \theta \, dx
+\end{align*}
+$$
+Integranden bliver:
+$$
+y^{2} + z^{2} = (r \cos(\theta))^{2} + (r \sin(\theta))^{2} = r^{2} \cos^{2}(\theta) + r^{2} \sin^{2}(\theta) = r^{2} (cos^{2}(\theta) + \sin^{2}(\theta)) = r^{2}
+$$
+
 
 Svaret i bogen er:
 $$
