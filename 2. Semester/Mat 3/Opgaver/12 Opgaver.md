@@ -363,7 +363,7 @@ $$
 Dermed er $\nabla \times F = [0,0,9]$
 
 Dernæst vælger jeg fladen S:
-Kurven C er cirklen med en radius på 4 i planet $z = 4$. Derfor vil en passende flade S begrænset af C være disken givet ved $x^{2} + y^{2} \leq 16, z = 4$ (i dette tilfælde kunne man også vælge en cylinder eller halvsfære, men en disk er lettest). Givet at z-komponentet af normalen skal være ikke-negativ, så vælges den opadpegende normal $n = (0,0,1)$ Fladeelementet er $dS = (0,0,1)$
+Kurven C er cirklen med en radius på 4 i planet $z = 4$. Derfor vil en passende flade S begrænset af C være disken givet ved $x^{2} + y^{2} \leq 16, z = 4$ (i dette tilfælde kunne man også vælge en halvsfære, men en disk er lettest at beregne). Givet at z-komponentet af normalen skal være ikke-negativ, så vælges den opadpegende normal $n = (0,0,1)$ Fladeelementet er $dS = (0,0,1)$
 
 Nu beregner jeg fladeintegralet:
 $$
@@ -390,3 +390,27 @@ Det må være forkert, jeg fik 9k og dermed $144 \pi$
 ### 10.9.15
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [y^{2}, x^{2}, z+x]$, around the triangle with vertices $(0,0,0), (1,0,0), (1,1,0)$
+
+Stokes teori er:
+$$
+\oint_{C} F \cdot dr = \iint_{S} (\nabla \times F) \cdot ds
+$$
+Hvor S er en flade der er begrænset af C med en normal vektor der har et ikke negatigt z-komponent, som der står i opgavens beskrivelse.
+Først beregner jeg curl af F
+$$
+\begin{align*}
+\nabla \times F &= 
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix}\\
+&= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+\text{Indsætter mine værdier:}\\
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix}\\
+\end{align*}
+$$
