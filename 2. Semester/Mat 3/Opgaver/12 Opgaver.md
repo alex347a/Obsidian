@@ -279,7 +279,29 @@ Integranden bliver:
 $$
 y^{2} + z^{2} = (r \cos(\theta))^{2} + (r \sin(\theta))^{2} = r^{2} \cos^{2}(\theta) + r^{2} \sin^{2}(\theta) = r^{2} (cos^{2}(\theta) + \sin^{2}(\theta)) = r^{2}
 $$
+Grænserne er:
+Da cylinderen er givet ved:
+$$
+\begin{align*}
+y^{2} + z^{2} \leq a^{2}, \quad 0 \leq x \leq h
+\end{align*}
+$$
+Så da $y^{2}+z^{2} = r^{2}$ Så bliver det til:
+$$
+\begin{align*}
+r ^{2} &\leq a^{2}\\
+r &\leq a
+\end{align*}
+$$
+Dvs. grænserne bliver:
+$0 \leq r \leq a$
+$0 \leq \theta \leq 2\pi$
+$0 \leq x \leq h$
 
+Dermed bliver integralet:
+$$
+I_{x} = \int_{x=0} ^{h} \, dx \int_{\theta=0}^{2\pi} \, d \theta \int_y
+$$
 
 Svaret i bogen er:
 $$
