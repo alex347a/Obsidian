@@ -3,6 +3,8 @@
 Since the axis are always orthogonal, that means the transposed matrix is always the same as the inverse matrix, which makes calculating the inverse matrix a lot easier (as long as the axes are unit vectors).
 For at se matlab funktioner tjek slides for lektion 1
 ![[Rotation matrix properties.png]]
+## Rotation matrix from one point to another, columns and rows
+![[Rotation Matrix.png]]
 HUSK HER AT DET ER KUN FOR ROTATIONER, HVIS DU OGSÅ HAR EN TRANSLATION BLIVER DU NØDT TIL AT BRUGE TRANSFORMATIONSMATRICEN FOR AT INKLUDERE BEGGE.
 ![[Rotating points.png]]
 ![[Chains of rotations.png]]
