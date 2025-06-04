@@ -44,6 +44,6 @@ DET HER ER FOR AT FINDE $\alpha_{i}$ og $a_{i}$ men i DH parameter skemaet skal 
 HUSK AT PRISMATIC JOINTS SKAL LIGGE OVENI REVOLUT JOINTS, ALTSÅ NÅR DE ER FULLY EXTENDED LIGESOM HER:
 ![[Assignment of frames example.png]]
 For a 6 DOF robot the Jacobian has 3 rows for linear velocity and 3 rows for angular velocity. And the columns depeneds on the DOF, so for a 6 DOF it would be a $6 \times 6$ 
-
+![[Back to our robots.png]]
 Tjek lektion 9 for alle de forskellige velocity profiles.
 Tjek lektion 10 og 11 for Jacobian, sinuglarities og numerical IK og manipulability.
