@@ -1,5 +1,5 @@
 $$
-T_{i}^{i+1} = 
+\sideset{^{i-1}_{i}}{}{T} = 
 \begin{bmatrix}
 \cos(\theta_{i})  & - \sin(\theta_{i})  &  0  & a_{i-1} \\ 
 \sin(\theta_{i}) \cos(\alpha_{i-1})  &  \cos(\theta_{i}) \cos(\alpha_{i-1})  &  - \sin(\alpha_{i-1})  &  -\sin(\alpha_{i-1}) d_{i} \\ 
