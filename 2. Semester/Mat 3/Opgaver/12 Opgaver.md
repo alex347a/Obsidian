@@ -356,9 +356,14 @@ b_{1}  & b_{2} &  b_{3}\\
 -5y  & 4x &  z\\
 \end{vmatrix}\\
 &= \vec{i}\left(\frac{\partial}{\partial y} \left(z\right) - \frac{\partial}{\partial z} 4x\right) - \vec{j}\left(\frac{\partial}{\partial x}\left(z\right) - \frac{\partial}{\partial z} (-5y)\right) + \vec{k}\left(\frac{\partial}{\partial x}\left(4x\right) - \frac{\partial}{\partial y}(-5y)\right)\\
-&= \vec{i}(0 - 0) - 
+&= \vec{i}(0 - 0) - \vec{j}(0 - 0) + \vec{k}(4 - (-5))\\
+&= \vec{k}(9)
 \end{align*}
 $$
+Dermed er $\nabla \times F = [0,0,9]$
+
+Dernæst vælger jeg fladen S:
+Kurven C er cirklen med en radius på 4 i planet $z = 4$. Derfor vil en passende flade S begrænset af C være disken givet ved $x^{2} + y^{2} \leq 16, z = 4$. Givet at z-komponentet af normalen skal være ikke-negativ, så vælges den opadpegende normal $n = (0,0,1)$ Fladeelementet er $dS = (0,0,1)$
 
 Svaret i bogen er: $5k, 80 \pi$
 Det må være forkert
