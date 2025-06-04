@@ -435,8 +435,8 @@ $$
 
 $$
 \begin{align*}
-\oint_{C} \vec{F} \cdot dr &=  \iint_{S} (\nabla \times \vec{F}) \cdot d \vec{S}\\
-d \vec{S} = n \, dS &= k \, dx \, dy\\
+\oint_{C} \vec{F} \cdot d \vec{r} &=  \iint_{S} (\nabla \times \vec{F}) \cdot d \vec{S}\\
+d \vec{S} = \vec{n} \, dS &= k \, dx \, dy\\
 (\nabla \times \vec{F}) \cdot d \vec{S} = (- \vec{j} + \vec{k}(2x-2y)) \cdot \vec{k} \, dx \, dy &= (2x-2y) \, dx \, dy\\
 \iint_{S} (2x-2y) \, dx \, dy\\
 &= \int_{x=0}^{1} \, dx \int_{y=0}^ {x} (2x-2y) \, dy\\
