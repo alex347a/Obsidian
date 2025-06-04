@@ -424,18 +424,20 @@ Detter betyder at $z = 0$, så det er i xy-planet. Normalvektoren til S er derfo
 Belæg:
 $$
 \begin{align*}
-r(u,v) = (u,v,0), \quad \text{ hvor } 0 \leq u \leq 1 \quad \text{ og } 0 \leq v \leq 1\\
+\vec{r}(u,v) = (u,v,0), \quad \text{ hvor } 0 \leq u &\leq 1 \quad \text{ og } 0 \leq v \leq 1\\
 \text{u er x-koordinatet og går fra 0 til 1} \\
 \text{og v er y-koordinatet og går fra 0 til u (da y=x for hypotenusen)}\\
-r_{u}&= \partial\frac{r}{\partial}
+\vec{r_{u}} = \frac{\partial(\vec{r})}{\partial u} &= (1,0,0)\\
+\vec{r_{v}} = \frac{\partial(\vec{r})}{\partial v} &= (0,1,0)\\
+\vec{n} = \vec{r_{u}} \times \vec{r_{v}} &= (0,0,1)
 \end{align*}
 $$
 
 $$
 \begin{align*}
-\oint_{C} F \cdot dr &=  \iint_{S} (\nabla \times F) \cdot d \vec{S}\\
+\oint_{C} \vec{F} \cdot dr &=  \iint_{S} (\nabla \times \vec{F}) \cdot d \vec{S}\\
 d \vec{S} = n \, dS &= k \, dx \, dy\\
-(\nabla \times F) \cdot d \vec{S} = (- \vec{j} + \vec{k}(2x-2y)) \cdot \vec{k} \, dx \, dy &= (2x-2y) \, dx \, dy\\
+(\nabla \times \vec{F}) \cdot d \vec{S} = (- \vec{j} + \vec{k}(2x-2y)) \cdot \vec{k} \, dx \, dy &= (2x-2y) \, dx \, dy\\
 \iint_{S} (2x-2y) \, dx \, dy\\
 &= \int_{x=0}^{1} \, dx \int_{y=0}^ {x} (2x-2y) \, dy\\
 \int_{y=0}^ {x} (2x-2y) \, dy &=  [2xy-y^{2}]_{y=0} ^{x}\\
