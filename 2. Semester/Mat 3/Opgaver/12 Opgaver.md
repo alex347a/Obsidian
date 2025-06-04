@@ -363,7 +363,7 @@ $$
 Dermed er $\nabla \times F = [0,0,9]$
 
 Dernæst vælger jeg fladen S:
-Kurven C er cirklen med en radius på 4 i planet $z = 4$. Derfor vil en passende flade S begrænset af C være disken givet ved $x^{2} + y^{2} \leq 16, z = 4$. Givet at z-komponentet af normalen skal være ikke-negativ, så vælges den opadpegende normal $n = (0,0,1)$ Fladeelementet er $dS = (0,0,1)$
+Kurven C er cirklen med en radius på 4 i planet $z = 4$. Derfor vil en passende flade S begrænset af C være disken givet ved $x^{2} + y^{2} \leq 16, z = 4$ (i dette tilfælde kunne man også vælge en cylinder eller halvsfære, men en disk er lettest). Givet at z-komponentet af normalen skal være ikke-negativ, så vælges den opadpegende normal $n = (0,0,1)$ Fladeelementet er $dS = (0,0,1)$
 
 Nu beregner jeg fladeintegralet:
 $$
