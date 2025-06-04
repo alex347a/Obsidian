@@ -418,3 +418,13 @@ y^{2}  &  x^{2}  &  z+x
 \end{align*}
 $$
 Dermed er $\nabla \times F = - \vec{j} + \vec{k} (2x-2y)$
+
+Grænsen S er en trekant i xy-planet med hjørnerne $(0,0,0), (1,0,0), (1,1,0)$. Normalvektoren til S er $n = k$ Siden $z=0$ og orientationen er opad.
+
+$$
+\begin{align*}
+\oint_{C} F \cdot dr &=  \iint_{S} (\nabla \times F) \cdot d \vec{S}\\
+d \vec{S} = n \, dS &= k \, dx \, dy\\
+
+\end{align*}
+$$
