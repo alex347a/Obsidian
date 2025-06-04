@@ -3,8 +3,17 @@
 Since the axis are always orthogonal, that means the transposed matrix is always the same as the inverse matrix, which makes calculating the inverse matrix a lot easier (as long as the axes are unit vectors).
 For at se matlab funktioner tjek slides for lektion 1
 ![[Rotation matrix properties.png]]
+HUSK HER AT DET ER KUN FOR ROTATIONER, HVIS DU OGSÅ HAR EN TRANSLATION BLIVER DU NØDT TIL AT BRUGE TRANSFORMATIONSMATRICEN FOR AT INKLUDERE BEGGE.
 ![[Rotating points.png]]
 ![[Chains of rotations.png]]
+$$
+\sideset{^{A}_{B}}{}{T} = 
+\begin{bmatrix}
+\sideset{^{B}_{A}}{}{R^{T}}  & \sideset{^{B}_{A}}{}{R^{T}} \sideset{^{B}_{A}}{}{Q} \\ 
+0 \times 3  &  1
+\end{bmatrix}
+$$
+
 ![[Euler angles Z-Y-X to rotation matrix.png]]
 ![[Fixed angles x-y-z to rotation matrix.png]]
 ![[General Mappings (in multiple frames).png]]
