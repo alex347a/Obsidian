@@ -317,11 +317,23 @@ Dermed bliver det endelige svar de tre resultater ganget sammen:
 $$
 \frac{a^{4}}{4} \cdot 2 \pi \cdot h = \frac{ a^{4}2\pi h }{4} = \frac{a^{4} \pi h}{2}
 $$
-Dette passer også med intertien for en solid cylinder om s
+Dette passer også med intertien for en solid cylinder om sin centrale akse:
+$$
+I_{x} = \frac{1}{2} M a^{2}
+$$
+Hvor M er massen som er givet ved volumen ganget med densiteten (massefylde). Volumen for en cylinder er givet ved $V = \pi a^{2} h$ og siden densiteten i opgaven var 1:
+$$
+I_{x} = \frac{1}{2}(\pi a^{2} h) a^{2} = \frac{\pi a^{4} h}{2} 
+$$
+Hvilket er det samme resultat som det jeg fik af integralet.
 Svaret i bogen er:
 $$
 \left(\frac{a^{4}}{4}\right)\cdot 2\pi \cdot h = h a^{4} \frac{\pi}{2}
 $$
-### 10.9.13
+### 10.9.13 
+Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
+$F = [-5y, 4x, z]$ C the circle $x^{2} + y^{2} = 16, z = 4$
 
 ### 10.9.15
+Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
+$F = [z^{3}, x^{3}, y^{3}]$, C the circle $x = 2, y^{2} + z^{2} = 9$
