@@ -365,6 +365,26 @@ Dermed er $\nabla \times F = [0,0,9]$
 Dernæst vælger jeg fladen S:
 Kurven C er cirklen med en radius på 4 i planet $z = 4$. Derfor vil en passende flade S begrænset af C være disken givet ved $x^{2} + y^{2} \leq 16, z = 4$. Givet at z-komponentet af normalen skal være ikke-negativ, så vælges den opadpegende normal $n = (0,0,1)$ Fladeelementet er $dS = (0,0,1)$
 
+Nu beregner jeg fladeintegralet:
+$$
+\begin{align*}
+(\nabla \times F) \cdot dS = [0,0,9] \cdot [0,0,1] \cdot dS = 9 dS\\
+\iint_{S} 9 \, dS = 9 \iint_{S} dS\\
+\text{Arealet af en disk S er givet ved: } \pi r^{2}\\
+\pi r^{2} &= \pi \cdot 4 ^{2} = 16 \pi\\
+9 \iint_{S}16 \pi \, dS = 9 \cdot 16 \pi &= 144 \pi
+\end{align*}
+$$
+Dermed med Stokes teori så er linjeintegralet:
+$$
+\oint F \cdot dr = 144 \pi
+$$
+Dette skulle også gerne passe med at hvis man beregner med:
+$$
+x = 4 \cos(t), \quad y = 4 \sin(t), \quad 0 \leq t \leq 2 \pi
+$$
+Hvilket også gerne skulle give $144 \pi$
+
 Svaret i bogen er: $5k, 80 \pi$
 Det må være forkert
 ### 10.9.15
