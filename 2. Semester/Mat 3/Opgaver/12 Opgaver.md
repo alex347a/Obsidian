@@ -428,6 +428,8 @@ d \vec{S} = n \, dS &= k \, dx \, dy\\
 (\nabla \times F) \cdot d \vec{S} = (- \vec{j} + \vec{k}(2x-2y)) \cdot \vec{k} \, dx \, dy &= (2x-2y) \, dx \, dy\\
 \iint_{S} (2x-2y) \, dx \, dy\\
 &= \int_{x=0}^{1} \, dx \int_{y=0}^ {x} (2x-2y) \, dy\\
-\int_{y=0}^ {x} (2x-2y) \, dy &= [-y^{2}]
+\int_{y=0}^ {x} (2x-2y) \, dy &=  [2xy-y^{2}]_{y=0} ^{x}\\
+= 2x^{2} - x^{2} &= x^{2}\\
+\int_{x=0}^{1} x^{2} \, dx
 \end{align*}
 $$
