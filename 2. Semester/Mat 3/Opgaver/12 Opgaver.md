@@ -386,7 +386,7 @@ $$
 Hvilket også gerne skulle give $144 \pi$
 
 Svaret i bogen er: $5k, 80 \pi$
-Det må være forkert
+Det må være forkert, jeg fik 9k og dermed $144 \pi$ 
 ### 10.9.15
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [y^{2}, x^{2}, z+x]$, around the triangle with vertices $(0,0,0), (1,0,0), (1,1,0)$
