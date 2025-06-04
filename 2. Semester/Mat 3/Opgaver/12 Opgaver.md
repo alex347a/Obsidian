@@ -334,7 +334,27 @@ $$
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [-5y, 4x, z]$ C the circle $x^{2} + y^{2} = 16, z = 4$
 
+Stokes teori er:
+$$
+\oint_{C} F \cdot dr = \iint_{S} (\nabla \times F) \cdot ds
+$$
+Hvor S er en flade der er begrænset af C med en normal vektor der har et ikke negatigt z-komponent, som der står i opgavens beskrivelse.
+Først beregner jeg curl af F
+$$
+\begin{align*}
+\nabla \times F &= 
+\begin{vmatrix}
+\vec{i}  &  \vec{j} & \vec{k}\\
+a_{1}  & a_{2}  & a_{3}\\
+b_{1}  & b_{2} &  b_{3}\\
+\end{vmatrix}\\
+&= \vec{i}(a_{2}b_{3} - a_{3}b_{2}) - \vec{j}(a_{1}b_{3} - a_{3}b_{1}) + \vec{k}(a_{1}b_{2} - a_{2}b_{1})\\
+\vec{i}()
+\end{align*}
+$$
 
+Svaret i bogen er: $5k, 80 \pi$
+Det må være forkert
 ### 10.9.15
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [y^{2}, x^{2}, z+x]$, around the triangle with vertices $(0,0,0), (1,0,0), (1,1,0)$
