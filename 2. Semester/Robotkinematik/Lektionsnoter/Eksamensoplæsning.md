@@ -9,11 +9,10 @@ HUSK HER AT DET ER KUN FOR ROTATIONER, HVIS DU OGSÅ HAR EN TRANSLATION BLIVER D
 $$
 \sideset{^{A}_{B}}{}{T} = 
 \begin{bmatrix}
-\sideset{^{B}_{A}}{}{R^{T}}  & \sideset{^{B}_{A}}{}{R^{T}} \sideset{^{B}_{A}}{}{Q} \\ 
+\sideset{^{B}_{A}}{}{R^{T}}  & -\sideset{^{B}_{A}}{}{R^{T}} \sideset{^{A}_{B}}{}{Q} \\ 
 0 \times 3  &  1
 \end{bmatrix}
 $$
-
 ![[Euler angles Z-Y-X to rotation matrix.png]]
 ![[Fixed angles x-y-z to rotation matrix.png]]
 ![[General Mappings (in multiple frames).png]]
