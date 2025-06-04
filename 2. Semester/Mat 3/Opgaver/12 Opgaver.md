@@ -430,6 +430,6 @@ d \vec{S} = n \, dS &= k \, dx \, dy\\
 &= \int_{x=0}^{1} \, dx \int_{y=0}^ {x} (2x-2y) \, dy\\
 \int_{y=0}^ {x} (2x-2y) \, dy &=  [2xy-y^{2}]_{y=0} ^{x}\\
 = 2x^{2} - x^{2} &= x^{2}\\
-\int_{x=0}^{1} x^{2} \, dx
+\int_{x=0}^{1} x^{2} \, dx &= \left[\frac{x^{3}}{3}\right]_{0}^{1}  
 \end{align*}
 $$
