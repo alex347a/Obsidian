@@ -266,6 +266,7 @@ I_{x} = \iiint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
 $$
 The cylinder $y^{2} + z^{2} \leq a^{2}, \quad 0 \leq x \leq h$
 
+
 Svaret i bogen er:
 $$
 \left(\frac{a^{4}}{4}\right)\cdot 2\pi \cdot h = h a^{4} \frac{\pi}{2}
