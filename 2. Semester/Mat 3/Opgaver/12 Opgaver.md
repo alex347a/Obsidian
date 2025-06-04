@@ -409,8 +409,12 @@ b_{1}  & b_{2} &  b_{3}\\
 \text{Indsætter mine værdier:}\\
 \begin{vmatrix}
 \vec{i}  &  \vec{j} & \vec{k}\\
-a_{1}  & a_{2}  & a_{3}\\
-b_{1}  & b_{2} &  b_{3}\\
+\frac{\partial}{\partial x}  & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+y^{2}  &  x^{2}  &  z+x
 \end{vmatrix}\\
+&= \vec{i}\left(\frac{\partial}{\partial y}\left(z+x\right) - \frac{\partial}{\partial z}(x^{2})\right) - \vec{j}\left(\frac{\partial}{\partial x}\left(z+x\right) - \frac{\partial}{\partial z}(y^{2})\right) + \vec{k}\left(\frac{\partial}{\partial x}\left(x^{2}\right) - \frac{\partial}{\partial y}(y^{2})\right)\\
+&= \vec{i}(0 - 0) - \vec{j}(1 - 0) + \vec{k}(2x -2y)\\
+&= -\vec{j}(1) + \vec{k}(2x-2y)
 \end{align*}
 $$
+Dermed er $\nabla \times F = - \vec{j} + \vec{k} (2x-2y)$
