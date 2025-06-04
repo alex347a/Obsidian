@@ -334,6 +334,7 @@ $$
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [-5y, 4x, z]$ C the circle $x^{2} + y^{2} = 16, z = 4$
 
+
 ### 10.9.15
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
-$F = [z^{3}, x^{3}, y^{3}]$, C the circle $x = 2, y^{2} + z^{2} = 9$
+$F = [y^{2}, x^{2}, z+x]$, around the triangle with vertices $(0,0,0), (1,0,0), (1,1,0)$
