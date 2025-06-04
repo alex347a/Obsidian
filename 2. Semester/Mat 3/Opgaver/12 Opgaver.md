@@ -420,8 +420,16 @@ $$
 Dermed er $\nabla \times F = [0, -1, 2x-2y]$
 
 Grænsen S er en trekant i xy-planet med hjørnerne $(0,0,0), (1,0,0), (1,1,0)$. 
-Detter betyder at $z = 0$, så det er i xy-planet.
-Normalvektoren til S er $n = k$ Siden $z=0$ og orientationen er opad.
+Detter betyder at $z = 0$, så det er i xy-planet. Normalvektoren til S er derfor $n = [0,0,1]$
+Belæg:
+$$
+\begin{align*}
+r(u,v) = (u,v,0), \quad \text{ hvor } 0 \leq u \leq 1 \quad \text{ og } 0 \leq v \leq 1\\
+\text{u er x-koordinatet og går fra 0 til 1} \\
+\text{og v er y-koordinatet og går fra 0 til u (da y=x for hypotenusen)}\\
+r_{u}&= \partial\frac{r}{\partial}
+\end{align*}
+$$
 
 $$
 \begin{align*}
