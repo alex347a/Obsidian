@@ -417,7 +417,7 @@ y^{2}  &  x^{2}  &  z+x
 &= -\vec{j}(1) + \vec{k}(2x-2y)
 \end{align*}
 $$
-Dermed er $\nabla \times F = - \vec{j} + \vec{k} (2x-2y)$
+Dermed er $\nabla \times F = [0, -1, 2x-2y]$
 
 Grænsen S er en trekant i xy-planet med hjørnerne $(0,0,0), (1,0,0), (1,1,0)$. Normalvektoren til S er $n = k$ Siden $z=0$ og orientationen er opad.
 
@@ -430,6 +430,10 @@ d \vec{S} = n \, dS &= k \, dx \, dy\\
 &= \int_{x=0}^{1} \, dx \int_{y=0}^ {x} (2x-2y) \, dy\\
 \int_{y=0}^ {x} (2x-2y) \, dy &=  [2xy-y^{2}]_{y=0} ^{x}\\
 = 2x^{2} - x^{2} &= x^{2}\\
-\int_{x=0}^{1} x^{2} \, dx &= \left[\frac{x^{3}}{3}\right]_{0}^{1}  
+\int_{x=0}^{1} x^{2} \, dx = \left[\frac{x^{3}}{3}\right]_{0}^{1} &= \frac{1}{3}
 \end{align*}
+$$
+Dermed med Stokes' teori bliver linjeintegralet: 
+$$
+\oint F \cdot dr = \frac{1}{3}
 $$
