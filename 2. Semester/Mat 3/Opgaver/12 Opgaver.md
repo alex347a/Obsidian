@@ -419,7 +419,9 @@ y^{2}  &  x^{2}  &  z+x
 $$
 Dermed er $\nabla \times F = [0, -1, 2x-2y]$
 
-Grænsen S er en trekant i xy-planet med hjørnerne $(0,0,0), (1,0,0), (1,1,0)$. Normalvektoren til S er $n = k$ Siden $z=0$ og orientationen er opad.
+Grænsen S er en trekant i xy-planet med hjørnerne $(0,0,0), (1,0,0), (1,1,0)$. 
+Detter betyder at $z = 0$, så det er i xy-planet.
+Normalvektoren til S er $n = k$ Siden $z=0$ og orientationen er opad.
 
 $$
 \begin{align*}
