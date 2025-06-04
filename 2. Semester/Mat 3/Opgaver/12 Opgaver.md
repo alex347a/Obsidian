@@ -300,9 +300,24 @@ $0 \leq x \leq h$
 
 Dermed bliver integralet:
 $$
-I_{x} = \int_{x=0} ^{h} \, dx \int_{\theta=0}^{2\pi} \, d \theta \int_y
+I_{x} = \int_{x=0} ^{h} \, dx \int_{\theta=0}^{2\pi} \, d \theta \int_{r=0}^{a} r^{2} \, r \, dr
 $$
-
+Siden integranden er uafhængig af både x og theta så kan integralet separeres:
+$$
+I_{x} = \left(\int_{x=0} ^{h} \, dx\right) \left(\int_{\theta=0}^{2\pi} \, d \theta\right) \left(\int_{r=0}^{a} r^{2} \, r \, dr\right)
+$$
+$$
+\begin{align*}
+\int_{r=0}^{a} r^{2} \, r \, dr = \int_{r=0}^{a} r^{3} \, dr = \left[\frac{r^{4}}{4}\right]_{r=0}^{a} &= \frac{a^{4}}{4}\\
+\int_{\theta=0}^{2\pi} \, d \theta &=  2 \pi\\
+\int_{x=0} ^{h} \, dx &=  h
+\end{align*}
+$$
+Dermed bliver det endelige svar de tre resultater ganget sammen:
+$$
+\frac{a^{4}}{4} \cdot 2 \pi \cdot h = \frac{ a^{4}2\pi h }{4} = \frac{a^{4} \pi h}{2}
+$$
+Dette passer også med intertien for en solid cylinder om s
 Svaret i bogen er:
 $$
 \left(\frac{a^{4}}{4}\right)\cdot 2\pi \cdot h = h a^{4} \frac{\pi}{2}
