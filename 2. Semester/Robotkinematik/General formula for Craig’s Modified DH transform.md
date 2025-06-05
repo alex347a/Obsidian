@@ -29,3 +29,15 @@ $$
 \sin(2\pi) &= 0
 \end{align*}
 $$
+
+Hvis du skal bruge standard DH (highly doubt)
+$$
+T_{i} = 
+\begin{bmatrix}
+\cos(\theta_{i})  & - \sin(\theta_{i}) \cos(\alpha_{i-1})  &  \sin(\theta_{i}) \sin(\alpha_{i-1})  & a_{i-1} \cos(\theta_{i}) \\ 
+\sin(\theta_{i})  &  \cos(\theta_{i}) \cos(\alpha_{i-1})  &  - \cos(\theta_{i})\sin(\alpha_{i-1})  &  \alpha_{i-1} \sin(\theta_{i}) \\ 
+0  &  \sin(\alpha_{-1})  &  \cos(\alpha_{i-1})  &  d_{i} \\ 
+0  &  0  & 0  & 1
+\end{bmatrix}
+$$
+Og så ganger du bare $T_{i}$ med $T_{i+1}$ 
