@@ -17,6 +17,8 @@ $$
 $$
 ![[Euler angles Z-Y-X to rotation matrix.png]]
 ![[Fixed angles x-y-z to rotation matrix.png]]
+## Axis-Angle to rotation matrix
+![[Equivalent Angle-Axis to Rotation Matrix.png]]
 ![[General Mappings (in multiple frames).png]]
 ![[How to save computation.png]]
 ![[Generic Homogenous Transformations.png]]
