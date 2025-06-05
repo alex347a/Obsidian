@@ -9,3 +9,5 @@ $$
 \hat{v}_{y} &= \hat{v}_{z} \times \hat{v}_{x} 
 \end{align*}
 $$
+
+I matlab:
