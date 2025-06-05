@@ -22,4 +22,5 @@ v_z = v_z/norm(v_z)
 v_y = cross(v_z, v_x)
 
 % Til sidst indsæt alle værdierne i en rotationsmatrice. I dette tilfælde bliver det:
+![[Rotationsmatrice med vektorer eksempel.png]]
 R = [4/sqrt(21), -5/sqrt(105), 0; 1/sqrt(21), 4/sqrt(105), 2/sqrt(5); -2/sqrt(21), -8/sqrt(105), 1/sqrt(5)]
