@@ -1,1 +1,0 @@
-Formel for ro
