@@ -51,3 +51,7 @@ $$
  0  &  0  &  1
 \end{bmatrix}
 $$
+In matlab:
+J_p = [-a_1 * sin(theta_1) - a_2 * sin(theta_1 + theta_2), -a_2 * sin(theta_1 + theta_2), 0;
+a_1 * cos(theta_1) + a_2 * cos(theta_1 + theta_2), a_2 * cos(theta_1 + theta_2), 0;
+0, 0, 1]
