@@ -5,7 +5,7 @@
 $$
 \begin{align*}
 \hat{v}_{z} &=  \hat{v}_{x} \times \hat{v}_{y}\\
-\hat{v}_{x} &= \hat{v}_{z} \times \hat{v}_{y}\\
-\hat{v}_{y} &= \hat{v}_{z} \times v_{x} 
+\hat{v}_{x} &= \hat{v}_{y} \times \hat{v}_{z}\\
+\hat{v}_{y} &= \hat{v}_{z} \times \hat{v}_{x} 
 \end{align*}
 $$
