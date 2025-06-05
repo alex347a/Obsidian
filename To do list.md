@@ -6,7 +6,7 @@
 - [x] Mat 03 08 Opgaver 📅 2025-04-07 ✅ 2025-04-07
 - [x] Mat 03 09 Opgaver ✅ 2025-04-07
 - [x] Mat 03 Pointgivende 2 📅 2025-04-27 ✅ 2025-04-15
-- [ ] Opgaver 12
+- [x] Opgaver 12 ✅ 2025-06-04
 
 - [ ] Færddiggør 09 exercises
 - [ ] 10 Exercise (mangler den hvor du bruger FK fra opgave 8)
@@ -23,25 +23,3 @@
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
 - [ ] Se gennemgang af critical path
 - [ ] Lav eksamensopgaver
-
-- [x] Lav Portfolien: ✅ 2025-05-31
-	- [x] 1. Iteration ✅ 2025-05-14
-		- [x] Brugsmønstre ✅ 2025-04-03
-		- [x] Domain model ✅ 2025-04-03
-		- [x] Class diagram ✅ 2025-04-03
-		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-04-24
-		- [x] Gennemgå og ret: ✅ 2025-05-14
-			- [x] Brugsmønstre ✅ 2025-05-14
-			- [x] Domain model ✅ 2025-05-12
-			- [x] Class diagram ✅ 2025-05-10
-	- [x] 2. Iteration ✅ 2025-05-17
-		- [x] Brugsmønstre ✅ 2025-05-16
-		- [x] Domain model ✅ 2025-05-17
-		- [x] Class diagram ✅ 2025-05-17
-		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-05-16
-	- [x] 3. Iteration ✅ 2025-05-31
-		- [x] Brugsmønstre ✅ 2025-05-31
-		- [x] Domain model ✅ 2025-05-31
-		- [x] Class diagram ✅ 2025-05-31
-		- [x] Kod det hele (husk git for hver class minimum) ✅ 2025-05-31
-- [x] Smæk det hele ind i et dokument og lav en beskrivelse af hver iteration. ✅ 2025-05-31
