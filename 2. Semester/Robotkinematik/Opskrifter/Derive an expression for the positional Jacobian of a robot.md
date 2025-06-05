@@ -43,7 +43,7 @@ $$
 \frac{\partial p_{z}}{\partial d_{3}} &= 1
 \end{align*}
 $$
-Therefore the final positional jacobian derived becomes:
+Therefore the final positional Jacobian derived becomes:
 $$
 \begin{bmatrix}
  -0.4 \sin(\theta_{1} + \theta_{2}) - 0.5 \sin(\theta_{1})  & -0.4 \sin(\theta_{1} + \theta_{2})  &  0 \\ 
