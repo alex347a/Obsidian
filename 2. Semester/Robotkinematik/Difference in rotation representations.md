@@ -15,6 +15,7 @@ Cons:
 - Gimbal Lock when two axes align
 - Many sequences can represent same end rotation.
 
+To covert between the two remember to both reverse the order of the rotations but also the order of the angles, so the angle for x in Euler is also the angle for x in fixed.
 ## Equivalent axis-angle
 Its a single rotation of an angle $\theta$ about a unit axis $k = [k_{x}, k_{y}, k_{z}]$ 
 
