@@ -30,15 +30,24 @@ $$
 For $p_{y} = 0.4 \sin(\theta_{1} + \theta_{2}) + 0.5 \sin(\theta_{1})$:
 $$
 \begin{align*}
-\frac{\partial p_{y}}{\partial \theta_{1}} &= -0.4 \sin(\theta_{1} + \theta_{2}) - 0.5 \sin(\theta_{1})\\
-\frac{\partial p_{x}}{\partial \theta_{2}} &= -0.4 \sin(\theta_{1} + \theta_{2})\\
-\frac{\partial p_{x}}{\partial d_{3}} &= 0
+\frac{\partial p_{y}}{\partial \theta_{1}} &= 0.4 \cos(\theta_{1} + \theta_{2}) + 0.5 \cos(\theta_{1})\\
+\frac{\partial p_{y}}{\partial \theta_{2}} &= 0.4 \cos(\theta_{1} + \theta_{2})\\
+\frac{\partial p_{y}}{\partial d_{3}} &= 0
 \end{align*}
 $$
+For $p_{z} = d_{3}$:
+$$
+\begin{align*}
+\frac{\partial p_{z}}{\partial \theta_{1}} &= 0\\
+\frac{\partial p_{z}}{\partial \theta_{2}} &=0\\
+\frac{\partial p_{z}}{\partial d_{3}} &= 1
+\end{align*}
+$$
+Therefore the final positional jacobian derived becomes:
 $$
 \begin{bmatrix}
-\frac{\partial p_{x}}{\partial \theta_{1}} & \frac{\partial p_{x}}{\partial \theta_{2}} & \frac{\partial p_{x}}{\partial d_{3}} \\ 
-\frac{\partial p_{y}}{\partial \theta_{1}} & \frac{\partial y}{\partial \theta_{2}} & \frac{\partial y}{\partial d_{3}} \\ 
-\frac{\partial p_{z}}{\partial \theta_{1}} & \frac{\partial z}{\partial \theta_{2}} & \frac{\partial z}{\partial d{3}}
+ -0.4 \sin(\theta_{1} + \theta_{2}) - 0.5 \sin(\theta_{1})  & -0.4 \sin(\theta_{1} + \theta_{2})  &  0 \\ 
+ 0.4 \cos(\theta_{1} + \theta_{2}) + 0.5 \cos(\theta_{1})  &  0.4 \cos(\theta_{1} + \theta_{2})  &  0 \\ 
+ 0  &  0  &  1
 \end{bmatrix}
 $$
