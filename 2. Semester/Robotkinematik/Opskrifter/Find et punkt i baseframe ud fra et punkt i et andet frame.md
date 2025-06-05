@@ -6,7 +6,8 @@ Hvis nu du har $\sideset{^{C}_{B}}{}{T}$ så kan du bare finde den inverse: $\si
 
 I matlab:
 C_P = [0.5, 0.1, 0.2].'
-BC_Q = - CB_R.' * CB_Q
 BC_T = inv(CB_T)
 B_P = BC_T * [C_P; 1];
 B_P = B_P(1:3)
+
+% Man kan også beregne den inverse af rotationsmatricen og translationen individuelt og indsætte, men det er mere besværligt. Især fordi man skal huske at den inverse af translationen er givet ved $-\sideset{^{C}_{B}}{}{R}^{T} \sideset{^{C}_{B}}{}{Q}$ 
