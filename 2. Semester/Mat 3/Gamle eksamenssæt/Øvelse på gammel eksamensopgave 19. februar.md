@@ -129,7 +129,11 @@ $$
 #### b) Opskriv løsningen til bølgeligningen $u(x,t) = F(x)G(t)$ med løsningerne fra sp. a indsat. Bestem herefter de løsninger, der opfylder randbetingelserne.
 Den generelle løsning ved seperation af variable er:
 $$
-u(x,t) = \sum_{n=1} ^{\infty} \left[C_{n} \cos\left(\frac{n \pi c t}{2}\right) + D_{n} \sin\left(\frac{n \pi c t}{2}\right)\right] \sin\left(\frac{n \pi x}{2}\right)
+u(x,t) = \sum_{n=1} ^{\infty} \left[A_{n} \cos\left(\frac{n \pi c t}{2}\right) + B_{n} \sin\left(\frac{n \pi c t}{2}\right)\right] \sin\left(\frac{n \pi x}{2}\right)
+$$
+Siden $c^{2} = 1 \Rightarrow c = 1$
+$$
+u(x,t) = \sum_{n=1} ^{\infty} \left[A_{n} \cos\left(\frac{n \pi t}{2}\right) + B_{n} \sin\left(\frac{n \pi t}{2}\right)\right] \sin\left(\frac{n \pi x}{2}\right)
 $$
 
 #### c) Herefter anvdendes begyndelsesbetingelsen $u_{t} (x,0) = 0$ Gør rede for at den fuldstændige løsning til bølgeligningen herefter er:
