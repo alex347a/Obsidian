@@ -185,12 +185,11 @@ f(x) = \cases{0, \quad \text{for } -0.5 < x < -0.1\\
 $$
 $f(x+1) = f(x)$
 
-#### a) Skitsér grafen
-
+#### a) Skitsér grafen $f(x)$ i intervallet $-1.5 \leq x \leq 1.5$.
 #### b) Udled fourierrækken for $f(x)$
 Fourierrækken for en given funktion $f(x)$ er generelt givet ved formlen
 $$
-f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{2 \pi n x}{T}\right)+ b_{n} \sin\left(\frac{2 \pi n x}{T}\right)\right]
+f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{2 \pi n x}{p}\right)+ b_{n} \sin\left(\frac{2 \pi n x}{p}\right)\right]
 $$
 I dette tilfælde er perioden $p=1$. Da $p = 2L$ Så er $L = 0.5$
 
@@ -232,8 +231,11 @@ $b_{n}$ var jo lige og derfor 0.
 
 Nu hvor jeg har beregnet $a_{0}, a_{n}$ og $b_{n}$ kan jeg indsætte det i formlen for fourierrækken:
 $$
-\frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{ \pi n x}{2}\right)+ b_{n} \sin\left(\frac{\pi n x}{2}\right)\right] 
+f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{2 \pi n x}{p}\right)+ b_{n} \sin\left(\frac{2 \pi n x}{p}\right)\right]
 $$
 $$
-= \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{ \pi n x}{2}\right)+ b_{n} \sin\left(\frac{\pi n x}{2}\right)\right] 
+\begin{align*}
+&=  \frac{16}{2} + \sum_{n=1}^{\infty} \left[\frac{40}{\pi n} \sin(0.2 \pi n) \cos(2 \pi n x)\right] \\
+&= 8 + \sum_{n=1}^{\infty} \left[\frac{40}{\pi n} \sin(0.2 \pi n) \cos(2 \pi n x)\right] 
+\end{align*}
 $$

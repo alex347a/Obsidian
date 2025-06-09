@@ -1,8 +1,8 @@
 Fourierrækken for en given funktion $f(x)$ er generelt givet ved formlen
 $$
-f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{2 \pi n x}{T}\right)+ b_{n} \sin\left(\frac{2 \pi n x}{T}\right)\right]
+f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{2 \pi n x}{p}\right)+ b_{n} \sin\left(\frac{2 \pi n x}{p}\right)\right]
 $$
-Identificer perioden T og HUSK at $T = 2L$
+Identificer perioden p og HUSK at $p = 2L$
 Dernæst skal jeg beregne $a_{0}, a_{n} \text{ og } b_{n}$:
 $$
 \begin{align*}
@@ -11,7 +11,7 @@ a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, d
 b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx
 \end{align*}
 $$
-Hvor $2L = T$
+Hvor $2L = p$
 Jeg starter med at beregne $a_{0}$:
 
 Nu beregner jeg $a_{n}$: 
