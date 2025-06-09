@@ -220,37 +220,20 @@ $$
 \begin{align*}
 a_{n} &= \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
  &= 2 \int_{-0.1}^{0.1} 40 \cos\left(\frac{n \pi x}{0.5}\right) \, dx\\
-&= 2 \cdot 40 \int \cos\left(\frac{n \pi x}{0.5}\right) \, dx\\
-&= 80 \left[\sin\left(\frac{n \pi x}{0.5}\right)\right]
+&= 2 \cdot 40 \int_{-0.1}^{0.1} \cos(2 n \pi x) \, dx\\
+\text{Da } \cos(2 \pi n x) \text{er lige så bliver intervallet:}\\
+&= 80 \int_{0}^{0.1} \cos(2 n \pi x) \, dx\\
+&= 80 \left[\frac{\sin(2 \pi n x)}{2 \pi n}\right]_{0}^{0.1}\\
+&= \frac{80}{2 \pi n} \sin(0.2 \pi n)\\
+&= \frac{40}{\pi n} \sin(0.2 \pi n)\\
 \end{align*}
 $$
+$b_{n}$ var jo lige og derfor 0.
 
-Nu skal jeg trække den nedre grænse fra den øvre grænse:
-
-
-Nu skal jeg regne hvordan funktionen ser ud for lige og ulige n-værdier:
-
-Derfor bliver $a_{n}$:
-$$
-a_{n} = \cases{0, \quad \quad \quad \space \text{ hvis n er lige} \\
-- \frac{4}{n^{2} \pi^{2}}, \quad \text{ hvis n er ulige}}
-$$
-Nu beregner jeg $b_{n}$:
-$$
-b_{n} =  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx\\
-$$
-Indsætter i formlen for $b_{n}$
-
-Nu skal jeg trække den nedre grænse fra den øvre grænse:
-
-Nu skal jeg regne hvordan funktionen ser ud for lige og ulige n-værdier:
-
-Derfor bliver $b_{n}$:
-$$
-b_{n} = \cases{-\frac{2}{n \pi}, \quad  \text{ hvis n er lige} \\
-0, \quad \quad \space \space  \text{ hvis n er ulige}}
-$$
 Nu hvor jeg har beregnet $a_{0}, a_{n}$ og $b_{n}$ kan jeg indsætte det i formlen for fourierrækken:
 $$
 \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{ \pi n x}{2}\right)+ b_{n} \sin\left(\frac{\pi n x}{2}\right)\right] 
+$$
+$$
+= \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{ \pi n x}{2}\right)+ b_{n} \sin\left(\frac{\pi n x}{2}\right)\right] 
 $$
