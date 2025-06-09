@@ -202,13 +202,27 @@ a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, d
 b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx
 \end{align*}
 $$
-Men da jeg kan se at funktionen er lige, dvs. $f(x) = -f(x)$. Så betyder det at $b_{n}$ ud fra teorien har en værdi på 0. Dette skyldes at $\sin(2 \pi n x)$ er enulige funktion, og integralet af en lige funktion ganget med en ulige funktio
+Men da jeg kan se at funktionen er lige, dvs. $f(x) = -f(x)$. Så betyder det at $b_{n}$ ud fra teorien har en værdi på 0 for alle n-værdier. Dette skyldes at $\sin(2 \pi n x)$ er enulige funktion, og integralet af en lige funktion ganget med en ulige funktion over et symmetrisk interval er altid 0.
+
+Derfor skal jeg blot beregne $a_{0}$ og $a_{n}$
 
 Jeg starter med at beregne $a_{0}$:
+$$
+\begin{align*}
+a_{0} &=  \frac{1}{L} \int_{-L}^{L} f(x) \, dx\\
+a_{0} &= \frac{1}{0.5} \int_{-0.5}^{0.5} f(x) \, dx\\
+= 2 \int_{-0.1}^{0.1} 40 \, dx = 2 \cdot 40 \cdot 0.2 &= 16
+\end{align*}
+$$
 
 Nu beregner jeg $a_{n}$: 
 $$
-a_{n} =  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx
+\begin{align*}
+a_{n} &= \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
+ &= 2 \int_{-0.1}^{0.1} 40 \cos\left(\frac{n \pi x}{0.5}\right) \, dx\\
+&= 2 \cdot 40 \int \cos\left(\frac{n \pi x}{0.5}\right) \, dx\\
+&= 80 \left[\sin\left(\frac{n \pi x}{0.5}\right)\right]
+\end{align*}
 $$
 
 Nu skal jeg trække den nedre grænse fra den øvre grænse:
