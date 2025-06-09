@@ -142,27 +142,20 @@ u(x,t) = \sum_{n=1} ^{\infty} B_{n} \sin\left(\frac{n \pi}{2} \cdot x\right) \cd
 $$
 Fra begyndelsesbetingelsen $u_{t}(x,0) = 0$:
 $$
-u_{t}(x,0) = \sum_{n=1} ^{\infty} \left[- A_{n}\frac{n \pi}{2}\right] \sin\left(\frac{n \pi x}{2}\right) = 0 \Rightarrow D_{n} = 0, \text{ for alle n}
+u_{t}(x,0) = \sum_{n=1} ^{\infty} \left[- A_{n}\frac{n \pi}{2} \sin\left(\frac{n \pi 0}{2}\right) + B_{n}' \frac{n \pi}{2} \cos\left(\frac{n \pi 0}{2}\right) \right] \sin\left(\frac{n \pi x}{2}\right) = 0 \Rightarrow B_{n}' = 0, \text{ for alle n}
 $$
-Derfor kan løsningen simplificeres til:
-$$
-u(x,t) = \sum_{n=1} ^{\infty} \left[B_{n} \sin\left(\frac{n \pi x}{2}\right)\right] \cos\left(\frac{n \pi t}{2}\right)
-$$
+
 Fra den anden begyndelsesbetingelse $u(x,0) = f(x)$:
 $$
 f(x) = \sum_{n=1} ^{\infty} A_{n} \sin\left(\frac{n \pi x}{2}\right)
 $$
+
 Jeg beregner $A_{n}$ med formlen:
 $$
 A_{n} = \frac{2}{L} \int_{0}^{L} f(x) \sin\left(\frac{n \pi x}{2}\right) \, dx = \int_{0}^{2} f(x) \sin\left(\frac{n \pi x}{2}\right) \, dx 
 $$
 
-Fra randbetingelsen: $u_{t}(x,0) = 0$:
+#### d) Bestem den partikulære løsning, der opfylder begyndelsesbetingelsen
 $$
-G_{n}' (0) = \frac{n \pi}{2} D_{n} = 0 \Rightarrow D_{n} = 0
+u(x,0) = f(x) = 0.1 \cdot \sin\left(\frac{3 \pi}{2} \cdot x\right)
 $$
-Derfor bliver den fulde løsning:
-$$
-u(x,t) = \sum_{n=1} ^ {\infty} a_{n} \sin\left(\frac{n \pi x}{2}\right) \cos\left(\frac{n \pi x}{2}\right)
-$$
-hvor $a_{n} = B_{n} C_{n}$ bestemmes fra $u(x,0) = f(x)$
