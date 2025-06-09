@@ -159,3 +159,18 @@ $$
 $$
 u(x,0) = f(x) = 0.1 \cdot \sin\left(\frac{3 \pi}{2} \cdot x\right)
 $$
+Fourierrækken:
+$$
+f(x) = \sum A_{n} \sin\left(\frac{n \pi x}{2}\right)
+$$
+Ud fra begyndelsesbetingelsen ses det at $n=3$. Derfor er:
+$$
+\begin{align*}
+A_{3} &=  0-1\\
+A_{n} &= 0, \quad \text{ for } n \neq 3
+\end{align*}
+$$
+Dermed bliver den endelige løsning:
+$$
+u(x,t) = 0.1 \cdot \cos\left(\frac{3 \pi t}{2}\right) \sin\left(\frac{3 \pi}{2} \cdot x\right)
+$$
