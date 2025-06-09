@@ -7,12 +7,8 @@
 - [x] Mat 03 09 Opgaver ✅ 2025-04-07
 - [x] Mat 03 Pointgivende 2 📅 2025-04-27 ✅ 2025-04-15
 - [x] Opgaver 12 ✅ 2025-06-04
-
-- [ ] Færddiggør 09 exercises
-- [ ] 10 Exercise (mangler den hvor du bruger FK fra opgave 8)
-- [x] Lav pointgivende quiz. 📅 2025-05-08 ✅ 2025-05-03
-- [x] Tryk afslut på pointgivende quiz efter at tjekke den med billedet. 📅 2025-05-08 ✅ 2025-05-04
-- [x] 11 Exercise ✅ 2025-05-04
+- [x] Eksamenssæt August ✅ 2025-06-08
+- [ ] Eksamenssæt Juni
 
 - [x] Lav mønter ✅ 2025-04-18
 - [ ] Lav Værksted færdig

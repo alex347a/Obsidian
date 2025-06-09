@@ -1,4 +1,4 @@
-### 9.4.15
+### 9.4.15 Sketch figures similar to Fig. 198. Try to interpret the field of v as a velocity field.
 Sketch figures similar to Fig. 198. Try to interpret the field of v as a velocity field.
 Fig 198:
 ![[Fig 198.png]]
@@ -7,7 +7,7 @@ v = i + j
 $$
 Dette betyder at uanset hvor vi er så peger vektorene en hen ad x-aksen og en op ad y-aksen.
 ![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf]]
-### 9.4.17
+### 9.4.17 Sketch figures similar to Fig. 198. Try to interpret the field of v as a velocity field.
 Sketch figures similar to Fig. 198. Try to interpret the field of v as a velocity field.
 ![[Fig 198.png]]
 $$
@@ -15,14 +15,14 @@ v = xj
 $$
 Dette betyder at vektorerne afhænger af x og peger opad, hvis $x=1$ har vektoren længden 1, hvis $x=2$ har vektoren længden 2 osv. Hvis x er negativ peger vektorerne derfor nedad.
 ![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf#page=2|08 Opgaver]]
-### 9.5.7 
+### 9.5.7 What curves are represented by the following? Sketch them.
 What curves are represented by the following? Sketch them.
 $$
 [4 \cos(t), 4 \sin(t), 3t]
 $$
 Det svarer til en helix, fordi x og y svarer til en cirkel, mens z-værdien stiger med tiden, hvilket derfor danner en helix.
 ![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf#page=3|08 Opgaver]]
-### 9.5.13
+### 9.5.13 Find a parametric representation:
 Find a parametric representation:
 Straight line through (2, 1, 3) in the direction of $i + 2j$
 Siden det er en linje så må parameterfremstillingen se således ud:
@@ -38,7 +38,7 @@ $$
 $$
 (x,y,z) = (2,1,3) + (1,2,0)t, \quad t \space \in \space \mathbb{R}
 $$
-### 9.5.27
+### 9.5.27 Given a curve $C: r(t)$, find a tangent vector $r'(t)$, a unit tangent vector $u'(t)$ and the tangent of $C$ at $P$. Sketch the curve and tangent.
 Given a curve $C: r(t)$, find a tangent vector $r'(t)$, a unit tangent vector $u'(t)$ and the tangent of $C$ at $P$. Sketch the curve and tangent.
 $$
 r(t) = \left[t, \frac{1}{t}, 0\right], \quad P: \left(2, \frac{1}{2}, 0\right)
@@ -140,7 +140,7 @@ P &= 1296
 
 $$
 
-### 9.8.11
+### 9.8.11 Incompressible flow. Show that the flow with velocity $v = yi$ is incompressible. Show that the particles that at time $t = 0$ are in the cube whose faces are portions of the planes $x=0, x=1, y=0, y=1, z=0, z=1$ occupy at $t = 1$ the volume 1.
 Incompressible flow. Show that the flow with velocity $v = yi$ is incompressible. Show that the particles that at time $t = 0$ are in the cube whose faces are portions of the planes $x=0, x=1, y=0, y=1, z=0, z=1$ occupy at $t = 1$ the volume 1.
 Hvis det er incompressible så må det betyde at:
 $$
@@ -204,7 +204,8 @@ x'=y=c_{2}, x=c_{2}t+c_{1}
 \end{align*}
 $$
 Dermed når t går fra 0 til 1 så transformere "flowet" cuben til en parallelrøret volumen på 1.
-### 9.8.17
+### 9.8.17 Calculate $\nabla ^{2} f$ by Eq. (3). Check by direct differentiation.
+Indicate when (3) is simpler. Show the details of your work.
 Calculate $\nabla ^{2} f$ by Eq. (3). Check by direct differentiation.
 Indicate when (3) is simpler. Show the details of your work.
 $f = \ln(x^{2} + y^{2})$
@@ -253,7 +254,7 @@ $$
 $$
 Begge metoder giver det samme svar, men at bruge formel 3 kunne jeg forestille mig er simplere når man allerede kender gradienten på forhånd, eller hvis man nu bruger andre typer af koordinater, såsom polære eller sfæriske.
 
-### 9.9.9
+### 9.9.9 Let $v$ be the velocity vector of a steady fluid flow. Is the flow irrotational? Incompressible? Find the streamlines (the paths of the particles).
 Let $v$ be the velocity vector of a steady fluid flow. Is the flow irrotational? Incompressible? Find the streamlines (the paths of the particles).
 $$
 v = [0, 3z^{2}, 0]
@@ -308,7 +309,7 @@ $$
 v=r', = [x',y',z'] = [0,3z^{2},0], x = c_{1}, z= c_{3}, y' = 3z^{2} = 3c_{3}^{2}, y = 3c_{3}^{2} t + c_{2}
 \end{align*}
 $$
-### 9.9.11
+### 9.9.11 Let $v$ be the velocity vector of a steady fluid flow. Is the flow irrotational? Incompressible? Find the streamlines (the paths of the particles).
 Let $v$ be the velocity vector of a steady fluid flow. Is the flow irrotational? Incompressible? Find the streamlines (the paths of the particles).
 $$
 v = [y, -2x, 0]

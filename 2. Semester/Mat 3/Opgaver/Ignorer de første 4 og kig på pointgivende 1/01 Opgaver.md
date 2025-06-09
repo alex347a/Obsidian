@@ -1,8 +1,9 @@
-3.9
+Funktioner af flere variable, grænseværdier, niveauflader, middelværdisætningen, den afledte af Arcsin(x) og Arccos(x).
+## 3.9
 ![[Graphs of the arctangent, arccotangent, arcsecant, and arccosecant functions.png]]
 ![[Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions.png]]
 ![[Derivatives of the inverse trigonometric functions table.png]]
-Opgave 3.9.21
+## Opgave 3.9.21 Find the derivative of y with respect to the appropriate variable.
 Find the derivative of y with respect to the appropriate variable.
 $$
 \begin{align*}
@@ -14,9 +15,12 @@ y &= \cos^{-1}(x^{2})\\
 &= - \frac{2x}{\sqrt{1-x^{4}}}
 \end{align*}
 $$
+
+## Opgave 4.2.3 Find the value or values of c that satisfy the equation.
+
 4.2
 ![[Theorem 4 The Mean Value Theorem.png]]
-Opgave 4.2.3
+
 Find the value or values of c that satisfy the equation.
 $$
 \frac{f(b)-f(a)}{b-a}=f'(c)
@@ -30,7 +34,7 @@ f(2)= \frac{2+1}{2}&= \frac{3}{2}\\
 f(1)= \frac{\frac{1}{2}+1}{\frac{1}{2}}&= 3\\
 \frac{\frac{3}{2}-3}{2-\frac{1}{2}}= \frac{\frac{-3}{2}}{\frac{3}{2}}&= -1\\
 \text{Bruger kvotientregel:}\\
-f(x) &= g\frac{x}{h(x)}\\
+f(x) &= \frac{g(x)}{h(x)}\\
 f'(x) &= \frac{g'(x)h(x)- g(x)h'(x)}{h(x)^{2}}\\
 f'(x)&= \frac{1\cdot x - (x+1) \cdot 1}{x^{2}}\\
 = \frac{x-x-1}{x^{2}}&= \frac{-1}{x^{2}}\\
@@ -44,22 +48,21 @@ c&= 1
 \end{align*}
 $$
 
-13.1
-## Contour curves
-Contour curves and level curves are different things, however are both given by: $$ f(x,y)=c$$
-Opgave 13.1.15
+## Opgave 13.1.15 Find and sketch the level curves $f(x,y) = c$ on the same set of coordinate axes for the given values of c. We refer to these level curves as a contour map
 Find and sketch the level curves $f(x,y) = c$ on the same set of coordinate axes for the given values of c. We refer to these level curves as a contour map
+
+### Contour curves
+Contour curves and level curves are different things, however are both given by: $$ f(x,y)=c$$
+
 $f(x,y) = xy, \quad c = -9, -4, -1, 0, 1, 4, 9$
 ![[Mat 3 01 lektier .pdf]]
 
-Opgave 13.1.31
+## Opgave 13.1.31 Match the level curves with the curves and equations
 Match the level curves with the curves and equations
 ![[13.1.31 Level curve.png]]
 ![[13.1.31 Surface.png]]
 ![[13.1.31 Equation.png]]
-13.2
-
-Opgave 13.2.9
+## Opgave 13.2.9 Find the limit
 Find the limit
 $$
 \begin{align*}
@@ -69,11 +72,12 @@ $$
 \sin(x) &\approx x \text{ for små x-værdier}\\
 \lim_{x \space \rightarrow \space 0}\left(\frac{\sin(x)}{x}\right)&= 1\\
 \lim_{(x,y) \space \rightarrow \space (0,0)} e^{y}\cdot 1= e^{0}&= 1\\
-\lim_{(x,y) \space \rightarrow \space (0,0)} \left(\frac{e^{y}\sin(x)}{x}\right)=0
+\lim_{(x,y) \space \rightarrow \space (0,0)} \left(\frac{e^{y}\sin(x)}{x}\right)&= 1
 \end{align*}
 $$
+Man kunne også bruge L'Hôpital.
 
-Opgave 13.2.11
+## Opgave 13.2.11 Find the limit
 Find the limit
 $$
 \begin{align*}

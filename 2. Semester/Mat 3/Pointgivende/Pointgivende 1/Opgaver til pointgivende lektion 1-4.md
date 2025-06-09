@@ -1,5 +1,5 @@
-## Lektion 1: (VIGTIGT: Her er opgaverne fra Thomas og IKKE Kreyszig)
-### Opgave 3.9.21
+# Lektion 1: (VIGTIGT: Her er opgaverne fra Thomas og IKKE Kreyszig)
+## Opgave 3.9.21 Find the derivative of y with respect to the appropriate variable.
 Find the derivative of y with respect to the appropriate variable.
 $$
 \begin{align*}
@@ -10,7 +10,7 @@ y &= \cos^{-1}(x^{2})\\
 &= - \frac{2x}{\sqrt{1-x^{4}}}
 \end{align*}
 $$
-### Opgave 4.2.3
+## Opgave 4.2.3 Find the value or values of c that satisfy the equation.
 Find the value or values of c that satisfy the equation.
 $$
 \frac{f(b)-f(a)}{b-a}=f'(c)
@@ -38,12 +38,12 @@ c&= \pm 1\\
 \end{align*}
 $$
 
-### Opgave 13.1.15
+## Opgave 13.1.15 Find and sketch the level curves $f(x,y) = c$ on the same set of coordinate axes for the given values of c. We refer to these level curves as a contour map
 Find and sketch the level curves $f(x,y) = c$ on the same set of coordinate axes for the given values of c. We refer to these level curves as a contour map
 $f(x,y) = xy, \quad c = -9, -4, -1, 0, 1, 4, 9$
 ![[13.1.5 billede.png]]
 
-### Opgave 13.1.31
+## Opgave 13.1.31 Match the level curves with the curves and equations
 Match the level curves with the curves and equations
 ![[13.1.31 Level curve.png]]
 Denne niveaukurve passer med (f) og (h). 
@@ -52,7 +52,7 @@ Niveaukurven passer med funktionen (h) idet det kan observeres at funktionen i y
 ![[13.1.31 Surface.png]]
 ![[13.1.31 Equation.png]]
 
-### Opgave 13.2.9
+## Opgave 13.2.9 Find the limit
 Find the limit
 $$
 \begin{align*}
@@ -66,7 +66,7 @@ $$
 \lim_{(x,y) \space \rightarrow \space (0,0)} \left(\frac{e^{y}\sin(x)}{x}\right)=1
 \end{align*}
 $$
-### Opgave 13.2.11
+## Opgave 13.2.11 Find the limit $\lim_{(x,y) \space \rightarrow \space (1, \pi/6)} \frac{x \sin (y)}{x^{2}+1}$ 
 Find the limit $\lim_{(x,y) \space \rightarrow \space (1, \pi/6)} \frac{x \sin (y)}{x^{2}+1}$ 
 Jeg starter med at indsætte værdierne for x og y:
 $$
@@ -79,9 +79,10 @@ $$
 \end{align*}
 $$
 
-## Lektion 2:
+# Lektion 2:
 
-### Opgave 11.1.17
+## Opgave 11.1.17 Find the Fourier series of the given function $f(x)$, which is assumed to have the period $2\pi$. Show the details of your work. Sketch or graph the partial sums up to that including $\cos(5x)$ and $\sin(5x)$
+
 Find the Fourier series of the given function $f(x)$, which is assumed to have the period $2\pi$. Show the details of your work. Sketch or graph the partial sums up to that including $\cos(5x)$ and $\sin(5x)$
 
 Funktionen:
@@ -223,7 +224,7 @@ Svaret i bogen er:
 $$
 f(x) =\frac{\pi}{2} + \frac{4}{\pi} \left(\cos(x) + \frac{1}{9} \cos\left(3x\right) + \frac{1}{25}\cos(5x) + \dots\right)
 $$
-### Opgave 11.2.13
+## Opgave 11.2.13 Is the given function even or odd or neither even nor odd? Find its Fourier series. Show details of your work.
 Is the given function even or odd or neither even nor odd? Find its Fourier series. Show details of your work.
 ![[11.2.13.png]]
 
@@ -377,7 +378,7 @@ $$
 + \frac{1}{\pi} \left(\frac{1}{2} \sin\left(2\pi x\right) - \frac{1}{4} \sin(4 \pi x) + \frac{1}{6} \sin(6 \pi x) - \frac{1}{8} \sin(8 \pi x) + - \dots\right)
 \end{align*}
 $$
-### Opgave 11.2.29 
+## Opgave 11.2.29 Find (a) the Fourier cosine series, (b) the Fourier sine series. Sketch f(x) and its two periodic extensions. Show the details.
 Find (a) the Fourier cosine series, (b) the Fourier sine series. Sketch f(x) and its two periodic extensions. Show the details.
 $f(x)=\sin(x), \quad (0<x<\pi)$
 
@@ -575,7 +576,7 @@ $$
 f(x) = \sin x.
 $$
 ![[11.2.29 billede.png]]
-### Opgave 11.3.13
+## Opgave 11.3.13 Find the steady-state oscillations of $y'' + cy' + y = r(t)$ with $c > 0$ and $r(t)$ as given. Note that the spring constant is $k=1$. Show the details.
 Find the steady-state oscillations of $y'' + cy' + y = r(t)$ with $c > 0$ and $r(t)$ as given. Note that the spring constant is $k=1$. Show the details.
 $$r(t) = \sum_{n=1}^{N} \left( a_n \cos(n t) + b_n \sin(n t) \right)$$
 Jeg bruger formlen:
@@ -689,8 +690,8 @@ Svaret i bogen er givet ved:
 $$
 y = \sum_{n \, = \, 1} ^{N} (A_{n}\cos(nt) + B_{n}\sin(nt)), A_{n}= \frac{1(1 -n^{2}) a_{n}- nb_{n}c}{D_{n}}
 $$
-## Lektion 3:
-### 11.7.7
+# Lektion 3:
+## 11.7.7 Represent $f(x)$ as an integral
 Represent $f(x)$ as an integral
 $$
 f(x) = \cases{1 \text{ if } & 0 < x < 1\\ 0 \text{ if } & x>1}
@@ -719,7 +720,7 @@ f(x)&= \int_{0}^{\infty} \frac{2}{\pi} \frac{\sin(w)}{w} \cos(wx) \, dw\\
 \end{align*}
 $$
 
-### 11.7.17
+## 11.7.17 Represent $f(x)$ as an integral
 Represent $f(x)$ as an integral
 $$
 f(x) = \cases{1 \text{ if } & 0 < x < 1\\ 0 \text{ if } & x>1}
@@ -746,7 +747,8 @@ f(x)&= \int_{0}^{\infty} \frac{2}{\pi} \frac{1-\cos(w)}{w} \sin(wv) \, dw, \quad
 \end{align*}
 $$
 
-### 11.9.3
+## 11.9.3 **Fourier transforms by integration**.
+Find the Fourier transform of $f(x)$ (without using table III in Sec. 11.10) Show the details.
 **Fourier transforms by integration**.
 Find the Fourier transform of $f(x)$ (without using table III in Sec. 11.10) Show the details.
 $$
@@ -769,7 +771,7 @@ $$
 &= \frac{i(e^{iwb} - e^{iwa})}{w \sqrt{2\pi}}
 \end{align*}
 $$
-### 11.9.5 
+## 11.9.5 Find the Fourier transform of f(x) (without using Table III in Sec. 11.10). Show details.
 Find the Fourier transform of f(x) (without using Table III in Sec. 11.10). Show details.
 
 $$
@@ -824,8 +826,8 @@ Resultatet bliver:
 $$
 F(\omega) = \frac{e^{(1 - i\omega)a} - e^{-(1 - i\omega)a}}{\sqrt{2\pi} (1 - i\omega)}.
 $$
-## Lektion 4:
-### Opgave fra Niels:
+# Lektion 4:
+## Opgave fra Niels: Løs: $\frac{\delta u}{\delta x} = 2 \frac{\delta u}{\delta t}+u$ hvor $u(x,0) = 6e^{-3x}$
 Løs: $\frac{\delta u}{\delta x} = 2 \frac{\delta u}{\delta t}+u$ hvor $u(x,0) = 6e^{-3x}$
 
 $$
@@ -857,7 +859,7 @@ u(x,t)&= 6e ^{-3x-2t}\\
 \end{align*}
 $$
 
-### 12.1.3 Wave equation (1) with suitable c
+## 12.1.3 Wave equation (1) with suitable c. $u = \cos(4t) \sin(2x)$ Separerer variable:
 $u = \cos(4t) \sin(2x)$
 Separerer variable:
 $$
@@ -878,7 +880,7 @@ c&= 2\\
 \end{align*}
 $$
 
-### 12.3.5 
+## 12.3.5 Find $u(x,t)$ for the string of length $L = 1$ and $c^{2}= 1$ when the initial velocity is zero and the initial deflection with small $k$ (say 0.01) is as follows. Sketch or graph $u(x,t)$ as in Fig. 291 in the text.
 Find $u(x,t)$ for the string of length $L = 1$ and $c^{2}= 1$ when
 the initial velocity is zero and the initial deflection with small $k$ (say 0.01) is as follows. Sketch or graph $u(x,t)$ as in Fig. 291 in the text.
 
@@ -941,7 +943,7 @@ u(x,t) &= 0.01 \cdot \cos(3 \pi t) \sin(3 \pi x)\\
 $$
 Hvis jeg tegner den når $t=0$, så bliver $\cos(n \pi 0) = 0$:
 ![[12.3.5 billede.png]]
-### 12.3.9 
+## 12.3.9 Opgaven er givet ved den tegnede funktion: 
 Opgaven er givet ved den tegnede funktion: ![[12.3.9.png]]
 Ud fra grafen kan det ses at:
 $$

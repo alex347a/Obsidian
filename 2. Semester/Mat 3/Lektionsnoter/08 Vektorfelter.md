@@ -1,9 +1,9 @@
 Eks. 2 s. 377
 Roterende skive
 
-INDSÆT SIDE 1
+![[08 lektionsnoter.pdf#page=1]]
 
-INDSÆT SIDE 2
+![[08 lektionsnoter.pdf#page=2]]
 
 ### Parameterfremstilling
 Eks.
@@ -39,7 +39,7 @@ $$
 ### Eks. 3
 ![[Fig 203.png]]
 Her plejer vi at skrive $\vec{a}$ i stedet for a, $\vec{b}$ i stedet for b. $P_{0}$ i stedet for A og $P$ som punktet ude på linjen
-INDSÆT SIDE 3
+![[08 lektionsnoter.pdf#page=3]]
 
 $$
 \vec{r} = \vec{a} + t \vec{b} = \begin{pmatrix}a_{1} \\ a_{2} \\ a_{3}\end{pmatrix}+ t\begin{pmatrix}b_{1} \\ b_{2} \\ b_{3}\end{pmatrix}

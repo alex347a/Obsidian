@@ -1,9 +1,9 @@
-INDSÆT SIDE 1
+![[09 Linjeintegraler.pdf]]
 
 $$
 \int_{a}^{b} \vec{F} \cdot d\vec{r}
 $$
-INDSÆT SIDE 2
+![[09 Linjeintegraler.pdf#page=2]]
 
 $$
 \oint \vec{F} \cdot d \vec{r}
@@ -12,12 +12,12 @@ Arbejde:
 $$
 A = \vec{F} \cdot d \vec{s}
 $$
-INDSÆT SIDE 3
+![[09 Linjeintegraler.pdf#page=3]]
 
 $$
 A = F \cdot s \cos(\theta)
 $$
-INDSÆT SIDE 4
+![[09 Linjeintegraler.pdf#page=4]]
 
 $$
 E_{pot} = mgh = \int_{a}^{b} \vec{F} \cdot d \vec{r}
@@ -58,7 +58,7 @@ $$
 $$
 0 \leq t \leq \frac{\pi}{2}
 $$
-INDSÆT SIDE 5
+![[09 Linjeintegraler.pdf#page=5]]
 
 $$
 \begin{align*}
@@ -135,11 +135,11 @@ hvis $f$ findes kaldes:
 $$
 \vec{F} \cdot d \vec{r} = F_{1} dx + F_{2} dy, F_{3} dz = df
 $$
-Dette kaldes for [[det totale differentiale]]
+Dette kaldes for [[Det totale differentiale]]
 $$
 w = f(x,y), x = x(t), y = y(t)
 $$
-INDSÆT SIDE 6
+![[09 Linjeintegraler.pdf#page=6]]
 $$
 \frac{dw}{dt} = \frac{\partial w}{\partial x} \frac{dx}{dt} + \frac{\partial w}{\partial y} \cdot \frac{dy}{dt}
 $$

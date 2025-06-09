@@ -203,7 +203,7 @@ Which can also be written as:
 $$
 -N = -\vec{r}_{u} \times \vec{r}_{v}
 $$
-A small piece of smooth surface is always [[orientable]], but it may not always hold for entire surfaces, for example take a look at the Möbius strip
+A small piece of smooth surface is always [[Orientable]], but it may not always hold for entire surfaces, for example take a look at the Möbius strip
 ![[Fig 248.png]]
 
 #### Surface integrals without regard for orientation

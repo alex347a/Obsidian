@@ -4,7 +4,7 @@ $$
 \frac{\delta u}{\delta t} = c^{2} \frac{\delta ^{2} u}{\delta t^{2}}
 $$
 
-**Indsæt side 1:
+![[Mat 3 04.pdf]]
 
 
 Eksempel:
@@ -72,6 +72,7 @@ z = cx^{\frac{k}{2}}\cdot y^\frac{k}{3}
 \end{align*}
 $$
 #### Bølgeligningen:
+![[Mat 3 04.pdf#page=3]]
 $$
 \begin{align*}
 \frac{\delta^{2} u}{\delta t^{2}}&= c^{2}\frac{\delta^{2} u}{\delta x^{2}}\\
@@ -152,12 +153,12 @@ u(x,0) = \sum_{n\,=\,1} ^{\infty} A_{n}\sin\left(\frac{n \pi}{l}\right) x &= f(x
 A_{n}= \frac{2}{l}\int_{0}^{l} f(x) \sin\left(\frac{n \pi}{l}\right)x \, dx
 \end{align*}
 $$
-Indsæt side 5:
+![[Mat 3 04.pdf#page=5]]
 $$
 \cases{\frac{8kl^{2}}{(n \pi)^{3}} & \text{n ulige} \\ 0 & \text{n lige}}
 $$
 $$
 u(x,t)= \underbrace{\sum_{n \, = \, 1} ^{\infty}}_{\text{n ulige}} \frac{8kl^{2}}{(n \pi)^{3}} \sin\left(\frac{n \pi}{l}\right) x \cdot \cos\left(\frac{n \pi c}{l}\right)t
 $$
-
+![[Mat 3 04.pdf#page=6]]
 ![[Pasted Images/2. Semester/Mat 3/04/Fig 291.png]]

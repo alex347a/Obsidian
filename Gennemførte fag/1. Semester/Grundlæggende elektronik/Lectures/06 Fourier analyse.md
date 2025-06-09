@@ -1,3 +1,4 @@
+Fourier Analysis, Filters, and Transfer Functions, First-Order Lowpass Filter, Decibels, the Cascade Connection, and Logarithmic Frequency Scales
 ### 6.1 Fourier Analysis, Filters, and Transfer Functions
 - **Gain and Phase Shift:**  
     Amplifiers amplify signals, but their gain (output over input) can vary with frequency. This section discusses the frequency-dependent gain characteristics, demonstrating that at certain frequencies (like the cutoff frequency), the gain drops significantly. The phase shift, which indicates how much the output signal is delayed compared to the input, is also frequency-dependent. Understanding this shift is crucial for applications where timing is critical.

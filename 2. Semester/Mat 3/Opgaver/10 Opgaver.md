@@ -1,4 +1,4 @@
-### 10.3.5
+### 10.3.5 Describe the region of integration and evaluate.
 Describe the region of integration and evaluate.
 $$
 \int_{0}^{1} \int_{x^{2}}^{x} (1-2xy) \, dy \, dx
@@ -29,7 +29,8 @@ x - x^{2} - (x^{3} - x^{5}) &= x-x^{2} - x^{3} + x^{5}\\
 &= \underline{\underline{\frac{1}{12}}}
 \end{align*}
 $$
-### 10.3.9
+### 10.3.9 Find the volume of the given region in space. The region beneath $z = 4x^{2} + 9y^{2}$ and above the rectangle with vertices $(0, 0)$, $(3, 0)$, $(3, 2)$, $(0, 2)$ in the xy-plane.
+
 Find the volume of the given region in space
 The region beneath $z = 4x^{2} + 9y^{2}$ and above the rectangle with vertices $(0, 0)$, $(3, 0)$, $(3, 2)$, $(0, 2)$ in the xy-plane.
 
@@ -63,7 +64,7 @@ V &= \int_{x=0} ^{3}  \,dx \int_{y=0} ^{2} (4x^{2} + 9y^{2}) \, dy\\
 \end{align*}
 $$
 
-### 10.3.15
+### 10.3.15 Find the center of gravity $(\overline{x}, \overline{y})$ of a mass of density $f(x,y) = 1$ in the given region R.
 Find the center of gravity $(\overline{x}, \overline{y})$ of a mass of density $f(x,y) = 1$ in the given region R.
 ![[10.3.15 opgavetegning.png]]
 Formlen for en cirkel er $x^{2} + y^{2} = r^{2}$
@@ -129,7 +130,7 @@ $$
 (\overline{x}, \overline{y}) = \left(0, \frac{4r}{3\pi}\right)
 $$
 Dette kunne også være beregnet ved at bruge polære koordinater.
-### 10.4.1
+### 10.4.1 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$y
 F = [y,-x], C \text{ the circle } x^{2} + y^{2} = \frac{1}{4}
@@ -175,7 +176,7 @@ $$
 Her kunne man også bruge polære koordinater.
 Det giver god nok mening at integralet er negativt idet feltet roterer i urets retning, hvor den positive retning er mod uret i matematik.
 
-### 10.4.3
+### 10.4.3 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
 F = [x^{2} e^{y}, y^{2} e^{x}], r \text{ the rectangle with vertices } (0,0), (2,0), (2,3), (0,3)
@@ -240,14 +241,14 @@ $$
 &= \underline{\underline{-\frac{8e^{3}}{8} + 9e^{2} - \frac{19}{3}}}\\
 \end{align*}
 $$
-### 10.4.9
+### 10.4.9 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 Evaluate $\int_{C} F(r) \cdot dr$ counterclockwise around the boundary C of the region R by Green's theorem, where
 $$
 F = [e^{\frac{y}{x}}, e^{y} \ln(x) + 2x], R: 1 + x^{4} \leq y \leq 2
 $$
 Kom tilbage til denne her. Den virker lidt underlig. Svaret burde være $\frac{16}{5}$ 
 
-### 10.4.13
+### 10.4.13 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 $$
 w = \cosh (x), \quad \text{R the triangle with vertices } (0,0), (4,2), (0,2). 
@@ -297,7 +298,7 @@ $$
 \nabla^{2} w = \cosh(x), y = \frac{x}{2} \dots 2, \frac{1}{2} \cosh \left(4 - \frac{1}{2}\right)
 $$
 Den første del er rigtigt, jeg ved ikke hvad den fabler om med y, men den sidste del får den $\frac{-1}{2}$ i stedet for min $-1$ hvilket jeg ikke kan se hvorfor.
-### 10.4.17
+### 10.4.17 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 Using (9), find the value of $\int_{C} \frac{\partial w}{\partial n} \, ds$ taken counterclockwise over the boundary C of the region R.
 $$
 w = x^{3} - y^{3}, \quad 0 \leq y \leq x^{2}, \quad |x| \leq 2
@@ -357,7 +358,7 @@ Dermed bliver svaret:
 $$
 \underline{\underline{-\frac{192}{5}}}
 $$
-### 10.4.19
+### 10.4.19 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
 Show that $w = e^{x} \sin(y)$ satisfies Laplace's equation $\nabla^{2} w = 0$ and, using (12), integrate $w(\frac{\partial w}{\partial n})$ counterclockwise around the boundary curve C of the rectangle $0 \leq x \leq 2, \quad 0 \leq y \leq 5$ 
 
 (12):

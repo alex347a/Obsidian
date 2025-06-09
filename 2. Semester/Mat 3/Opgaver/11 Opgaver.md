@@ -1,4 +1,4 @@
-### 10.5.3
+### 10.5.3 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 
 For reference (1) is the equation:
@@ -81,7 +81,7 @@ Svaret i bogen er:
 $$
 z = c \sqrt{x^{2} + y^{2}}, \quad \text{ circles, straight lines}, \quad [-cu \cos(v), - cu \sin(v), u]
 $$
-### 10.5.4
+### 10.5.4 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 Familiarize yourself with parametric representations of important surfaces by deriving a representation (1), by finding the parameter curves (curves $u = const$ and $v = const$) of the surface and a normal vector $N = r_{u} \times r_{v}$ of the surface. Show the details in your work. 
 
 For reference (1) is the equation:
@@ -150,7 +150,7 @@ b_{1}  & b_{2} &  b_{3}\\
 &= (-b \cos(v), - a \sin(v), 0)
 \end{align*}
 $$
-### 10.5.19
+### 10.5.19 Find a normal vector. The answer gives one representation; there are many. Sketch the surface and parameter curves.
 Find a normal vector. The answer gives one representation; there are many. Sketch the surface and parameter curves.
 
 Hyperbolic cylinder $x^{2} - y^{2} = 1$
@@ -185,7 +185,7 @@ Svaret i bogen er:
 $$
 [\cosh u, \sinh u, v], \quad [\cosh u, - \sinh u, 0]
 $$
-### 10.6.7
+### 10.6.7 Evaluate the integral for the given data. Describe the kind of surface. Show the details of your work.
 Evaluate the integral for the given data. Describe the kind of surface. Show the details of your work.
 
 $$
@@ -248,7 +248,7 @@ t = u, dt = du, dv &=  \cos(u) \, du, v = \sin(u)\\
 \end{align*}
 $$
 Det er en parabolsk cylinder, som er afgrænset af $0 \leq y \leq \frac{\pi}{4}$ og $0 \leq z \leq y$. Ved konstant z er parablerne $x = y^{2}$ 
-### 10.6.15
+### 10.6.15 Evaluate these integrals for the following data. Indicate the kind of surface. Show the details.
 Evaluate these integrals for the following data. Indicate the kind of surface. Show the details.
 
 $$

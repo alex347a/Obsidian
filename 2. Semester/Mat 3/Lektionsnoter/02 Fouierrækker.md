@@ -1,4 +1,5 @@
 Givet en periodisk funktion:
+![[Mat 3 02 Lektion.pdf#page=1]]
 
 Kan beskrives vha sinusser og cosinusser
 Funktionerne er ikke differentiable fordi de enten har knæk eller lodrette linjer 
@@ -27,7 +28,7 @@ b_n &= \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(n x) \, dx
 \end{align*}
 $$
 ### Eksempel:
-Indsæt side 2:
+![[Mat 3 02 Lektion.pdf#page=2]]
 
 $$
 a_{0}=\frac{1}{2\pi} \int_{-\pi}^{\pi} f(x) \, dx=0
@@ -35,26 +36,26 @@ $$
 Arealet er 0, fordi arealet under x-aksen er nøjagtigt lige så stort som arealet over x-aksen.
 
 $$
-a_{n} = \frac{1}{\pi} \int_{-\pi}^{\pi} \cos(x) \, dx
+a_{n} = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx
 $$
 I dette tilfælde:
 $$
 \begin{align*}
-&= \frac{1}{\pi} \int_{-\pi} ^{0}(-1) \cos(x) \, dx + \frac{1}{\pi}\int_{0}^{\pi}1 \cdot \cos(x) \, dx\\
-&= \frac{1}{\pi} \left[\frac{-1}{n}\sin(x)\right]_{-\pi}^{0}+\frac{1}{\pi} \left[\frac{1}{n}\sin(x)\right]_{0}^{\pi}\\
+&= \frac{1}{\pi} \int_{-\pi} ^{0}(-1) \cos(nx) \, dx + \frac{1}{\pi}\int_{0}^{\pi}1 \cdot \cos(nx) \, dx\\
+&= \frac{1}{\pi} \left[\frac{-1}{n}\sin(nx)\right]_{-\pi}^{0}+\frac{1}{\pi} \left[\frac{1}{n}\sin(nx)\right]_{0}^{\pi}\\
 &= \frac{1}{\pi \, n}(0-(-\sin(-\pi \, n)))+ \frac{1}{\pi \, n} (\sin(\pi \, n)-0)\\
 &= 0
 \end{align*}
 $$
 $$
-b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} \sin(x) \, dx
+b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) \, dx
 $$
 I dette tilfælde:
 $$
 \begin{align*}
-&= \frac{1}{\pi} \int_{-\pi}^{0}(-1) \cdot \sin(x) \, dx + \frac{1}{\pi} \int_{-\pi}^{0}(-1) \cdot \sin(x) \, dx\\
-&= \frac{1}{\pi}\left[\frac{1}{n}\cos(x \, n)\right]_{-\pi}^{0} + \frac{1}{\pi} \left[-\frac{1}{n} \cos(x \, n)\right]_{0}^{\pi}\\
-&= \frac{1}{\pi \, n} (1- \cos(- \pi \, n)) + \frac{1}{\pi \, n} (-\cos(\pi \, n) - (-1))
+&= \frac{1}{\pi} \int_{-\pi}^{0}(-1) \cdot \sin(nx) \, dx + \frac{1}{\pi} \int_{0}^{\pi}(1) \cdot \sin(nx) \, dx\\
+&= \frac{1}{\pi}\left[-\frac{1}{n}\cos(nx)\right]_{-\pi}^{0} + \frac{1}{\pi} \left[\frac{1}{n} \cos(nx)\right]_{0}^{\pi}\\
+&= \frac{1}{\pi \, n} (1- \cos(- \pi \, n)) + \frac{1}{\pi \, n} (1 -\cos(\pi \, n))
 \end{align*}
 $$
 Hvis man tegner enhedscirklen så har cos den samme værdi uanset om den er positiv eller negativ, hvis vinklen er den samme.
@@ -80,7 +81,7 @@ $$
 $$
 
 $$
-\cases{0, & \text{når n er lige} \\ \frac{1}{\pi \, n}, & \text{når n er ulige}}
+\cases{0, & \text{når n er lige} \\ \frac{4}{\pi \, n}, & \text{når n er ulige}}
 $$
 $f(x)= \frac{4}{\pi} \left(\sin(x) + \frac{1}{3} \sin\left(3x\right) + \frac{1}{5} \sin(5x) + \dots\right)$ 
 
@@ -134,7 +135,7 @@ eksempel
 $$
 y''+0.05y'+25y =
 $$
-Se side 3:
+![[Mat 3 02 Lektion.pdf#page=3]]
 
 $$
 y''+0.05y'+25 y = \sum^{\infty}_{n\,= \, 1} \frac{4}{\pi \, n^{2}} \cos(\pi \, n)

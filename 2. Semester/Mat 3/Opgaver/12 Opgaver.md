@@ -1,4 +1,5 @@
-### 10.7.9
+### 10.7.9 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
+
 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
 
 $F = [x^{2}, 0, z^{2}]$, S the surface of the box $|x| \leq 1, |y| \leq 3, 0 \leq z \leq 2$
@@ -60,7 +61,7 @@ Svaret i bogen er:
 $$
 \text{div } F = 2x + 2z, 48
 $$
-### 10.7.13
+### 10.7.13 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
 Evaluate the surface integral $\iint F \cdot n \, dA$ by the divergence theorem. Show the details.
 
 $F = [\sin(y), \cos(x), \cos(z)]$, S, the surface of $x^{2} + y^{2} \leq 4, \quad |z| \leq 2$ (a cylinder and two disks!)
@@ -141,7 +142,7 @@ Svaret i bogen er:
 $$
 \text{div } F = -\sin(z), 0
 $$
-### 10.7.20
+### 10.7.20 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
 I_{x} = \iiint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
@@ -259,7 +260,7 @@ $$
 I = \frac{2}{5} M a^{2} = \frac{2}{5} \left(\frac{4}{3} \pi a^{3}\right) a^{2} = \frac{2}{5} \cdot \frac{4}{3} \pi a^{5} = \frac{8\pi a^{5}}{15}
 $$
 Så det er altså præcist det samme som jeg fik i min udregning.
-### 10.7.21
+### 10.7.21 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 Given a mass of density 1 in a region T of space, find the moment of inertia about the x-axis
 $$
 I_{x} = \iiint_{T} (y^{2} + z^{2}) \, dx \, dy \, dz
@@ -330,7 +331,7 @@ Svaret i bogen er:
 $$
 \left(\frac{a^{4}}{4}\right)\cdot 2\pi \cdot h = h a^{4} \frac{\pi}{2}
 $$
-### 10.9.13 
+### 10.9.13 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative. $F = [-5y, 4x, z]$ C the circle $x^{2} + y^{2} = 16, z = 4$
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [-5y, 4x, z]$ C the circle $x^{2} + y^{2} = 16, z = 4$
 
@@ -387,7 +388,8 @@ Hvilket også gerne skulle give $144 \pi$
 
 Svaret i bogen er: $5k, 80 \pi$
 Det må være forkert, jeg fik 9k og dermed $144 \pi$ 
-### 10.9.15
+### 10.9.15 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative. $F = [y^{2}, x^{2}, z+x]$, around the triangle with vertices $(0,0,0), (1,0,0), (1,1,0)$
+
 Calculate this line integral by Stokes' theorem for the given F and C. Assume the Cartesian coordinates to be right-handed and the z-component of the surface normal to be nonnegative.
 $F = [y^{2}, x^{2}, z+x]$, around the triangle with vertices $(0,0,0), (1,0,0), (1,1,0)$
 
