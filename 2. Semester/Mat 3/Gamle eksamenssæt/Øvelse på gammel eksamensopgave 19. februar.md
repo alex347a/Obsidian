@@ -142,17 +142,16 @@ u(x,t) = \sum_{n=1} ^{\infty} B_{n} \sin\left(\frac{n \pi}{2} \cdot x\right) \cd
 $$
 Fra begyndelsesbetingelsen $u_{t}(x,0) = 0$:
 $$
-u_{t}(x,0) = \sum_{n=1} ^{\infty} \left[- A_{n}\frac{n \pi}{2} \sin\left(\frac{n \pi 0}{2}\right) + B_{n}' \frac{n \pi}{2} \cos\left(\frac{n \pi 0}{2}\right) \right] \sin\left(\frac{n \pi x}{2}\right) = 0 \Rightarrow B_{n}' = 0, \text{ for alle n}
+u_{t}(x,t) = \sum_{n=1} ^{\infty} \left[- A_{n}\frac{n \pi}{2} \sin\left(\frac{n \pi t}{2}\right) + B_{n}' \frac{n \pi}{2} \cos\left(\frac{n \pi t}{2}\right) \right] \sin\left(\frac{n \pi x}{2}\right)
 $$
 
-Fra den anden begyndelsesbetingelse $u(x,0) = f(x)$:
+Ved $t=0$:
 $$
-f(x) = \sum_{n=1} ^{\infty} A_{n} \sin\left(\frac{n \pi x}{2}\right)
+u_{t}(x,0) = \sum_{n=1}^{\infty} B_{n} \frac{n \pi}{2} \sin\left(\frac{n \pi x}{2}\right) = 0
 $$
-
-Jeg beregner $A_{n}$ med formlen:
+Dette gælder kun hvis $B_{n} = 0$ for alle n. Derfor bliver løsningen:
 $$
-A_{n} = \frac{2}{L} \int_{0}^{L} f(x) \sin\left(\frac{n \pi x}{2}\right) \, dx = \int_{0}^{2} f(x) \sin\left(\frac{n \pi x}{2}\right) \, dx 
+u(x,t) = \sum_{n=1} ^ {\infty} A_{n}\cos\left(\frac{n \pi t}{2}\right) \sin\left(\frac{n \pi x}{2}\right)
 $$
 
 #### d) Bestem den partikulære løsning, der opfylder begyndelsesbetingelsen
@@ -166,11 +165,19 @@ $$
 Ud fra begyndelsesbetingelsen ses det at $n=3$. Derfor er:
 $$
 \begin{align*}
-A_{3} &=  0-1\\
+A_{3} &=  0.1\\
 A_{n} &= 0, \quad \text{ for } n \neq 3
 \end{align*}
 $$
 Dermed bliver den endelige løsning:
 $$
 u(x,t) = 0.1 \cdot \cos\left(\frac{3 \pi t}{2}\right) \sin\left(\frac{3 \pi}{2} \cdot x\right)
+$$
+## Opgave 3
+En laplace transformation. Ikke noget vi har haft om i dette kursus.
+
+## Opgave 4
+En periodisk funktion er givet ved:
+$$
+f(x) = \cases{0, \quad \text{for } }
 $$
