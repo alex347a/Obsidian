@@ -179,5 +179,64 @@ En laplace transformation. Ikke noget vi har haft om i dette kursus.
 ## Opgave 4
 En periodisk funktion er givet ved:
 $$
-f(x) = \cases{0, \quad \text{for } }
+f(x) = \cases{0, \quad \text{for } -0.5 < x < -0.1\\
+40, \quad \text{for } -0.1 < x < 0.1\\
+0 \quad \text{for } 0.1 < x <0.5}
+$$
+$f(x+1) = f(x)$
+
+#### a) Skitsér grafen
+
+#### b) Udled fourierrækken for $f(x)$
+Fourierrækken for en given funktion $f(x)$ er generelt givet ved formlen
+$$
+f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{2 \pi n x}{T}\right)+ b_{n} \sin\left(\frac{2 \pi n x}{T}\right)\right]
+$$
+I dette tilfælde er perioden $p=1$. Da $p = 2L$ Så er $L = 0.5$
+
+Dernæst skal jeg beregne $a_{0}, a_{n} \text{ og } b_{n}$:
+$$
+\begin{align*}
+a_{0} &=  \frac{1}{L} \int_{-L}^{L} f(x) \, dx\\
+a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
+b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx
+\end{align*}
+$$
+Men da jeg kan se at funktionen er lige, dvs. $f(x) = -f(x)$. Så betyder det at $b_{n}$ ud fra teorien har en værdi på 0. Dette skyldes at $\sin(2 \pi n x)$ er enulige funktion, og integralet af en lige funktion ganget med en ulige funktio
+
+Jeg starter med at beregne $a_{0}$:
+
+Nu beregner jeg $a_{n}$: 
+$$
+a_{n} =  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx
+$$
+
+Nu skal jeg trække den nedre grænse fra den øvre grænse:
+
+
+Nu skal jeg regne hvordan funktionen ser ud for lige og ulige n-værdier:
+
+Derfor bliver $a_{n}$:
+$$
+a_{n} = \cases{0, \quad \quad \quad \space \text{ hvis n er lige} \\
+- \frac{4}{n^{2} \pi^{2}}, \quad \text{ hvis n er ulige}}
+$$
+Nu beregner jeg $b_{n}$:
+$$
+b_{n} =  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx\\
+$$
+Indsætter i formlen for $b_{n}$
+
+Nu skal jeg trække den nedre grænse fra den øvre grænse:
+
+Nu skal jeg regne hvordan funktionen ser ud for lige og ulige n-værdier:
+
+Derfor bliver $b_{n}$:
+$$
+b_{n} = \cases{-\frac{2}{n \pi}, \quad  \text{ hvis n er lige} \\
+0, \quad \quad \space \space  \text{ hvis n er ulige}}
+$$
+Nu hvor jeg har beregnet $a_{0}, a_{n}$ og $b_{n}$ kan jeg indsætte det i formlen for fourierrækken:
+$$
+\frac{a_{0}}{2} + \sum_{n=1}^{\infty} \left[a_{n} \cos\left(\frac{ \pi n x}{2}\right)+ b_{n} \sin\left(\frac{\pi n x}{2}\right)\right] 
 $$
