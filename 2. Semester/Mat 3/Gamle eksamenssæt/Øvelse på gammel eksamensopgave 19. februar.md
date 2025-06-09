@@ -142,7 +142,7 @@ u(x,t) = \sum_{n=1} ^{\infty} B_{n} \sin\left(\frac{n \pi}{2} \cdot x\right) \cd
 $$
 Fra begyndelsesbetingelsen $u_{t}(x,0) = 0$:
 $$
-u_{t}(x,0) = \sum_{n=1} ^{\infty} \left[\frac{n \pi}{2} D_{n}\right] \sin\left(\frac{n \pi x}{2}\right) = 0 \Rightarrow D_{n} = 0, \text{ for alle n}
+u_{t}(x,0) = \sum_{n=1} ^{\infty} \left[- A_{n}\frac{n \pi}{2}\right] \sin\left(\frac{n \pi x}{2}\right) = 0 \Rightarrow D_{n} = 0, \text{ for alle n}
 $$
 Derfor kan løsningen simplificeres til:
 $$
