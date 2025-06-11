@@ -1,10 +1,10 @@
-For alle strings:
+#### Strings
 .length(): længden af string
 .at(): ved en position
 stoi(): string to int
 substr(sted, antal cifre): Vælger fra et sted givet ved et cifre og så en antal cifre frem fra det, husk det er 0 indekseret. 
 
-Vektorer:
+#### Vektorer
 Definerer en vektor som:
 vector<int/string> navn
 
@@ -17,7 +17,7 @@ Eksempel:
 Man kan også bruge:
 if (c >= '0' && c <= '9'), hvor c er en char og så kigger du i ascii alfabetet.
 
-###Array:
+#### Array
 ar[] = { 1, 5, 3}
 Du kan sagtens gange et array over i nogle værdier med et for-loop:
 Eksempel:
