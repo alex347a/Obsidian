@@ -6,6 +6,5 @@
 - [ ] Lav IO opgaver
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
 - [x] Se gennemgang af critical path ✅ 2025-06-10
-- [ ] Lav critical path
 - [ ] Lav eksamensopgaver
 - [ ] Leetcode
