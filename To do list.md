@@ -1,5 +1,5 @@
 - [x] Lav mønter ✅ 2025-04-18
-- [ ] Lav Værksted færdig
+- [ ] Lav Værksted
 - [x] Lav Stakopgaver ✅ 2025-04-03
 - [x] Lav Templateopgaver ✅ 2025-04-24
 - [x] Lav kunstværkopgave ✅ 2025-05-01
