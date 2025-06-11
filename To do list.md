@@ -5,5 +5,7 @@
 - [x] Lav kunstværkopgave ✅ 2025-05-01
 - [ ] Lav IO opgaver
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
-- [ ] Se gennemgang af critical path
+- [x] Se gennemgang af critical path ✅ 2025-06-10
+- [ ] Lav critical path
 - [ ] Lav eksamensopgaver
+- [ ] Leetcode
