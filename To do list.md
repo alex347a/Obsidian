@@ -6,5 +6,17 @@
 - [ ] Lav IO opgaver
 - [x] Gennemgå og fiks den pointgivende test, som du fejlede. ✅ 2025-04-24
 - [x] Se gennemgang af critical path ✅ 2025-06-10
+- [ ] Genlav alle opgaver:
+    -[ Vaerksted ✅ 2025-06-12
+	- [x] EAN ✅ 2025-06-12
+	- [x] CPR ✅ 2025-06-12
+	- [x] Fjernvarme ✅ 2025-06-12
+	- [x] Småopgaver ✅ 2025-06-12
+	- [ ] Kunstsamling
+	- [ ] Moenter
+	- [ ] PersonDatoBil
+	- [ ] Pointgivende
+	- [ ] Småopgaver med strings
+
 - [ ] Lav eksamensopgaver
 - [ ] Leetcode
