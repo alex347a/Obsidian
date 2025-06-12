@@ -1,4 +1,6 @@
 Size_t: unsigned integer (ikke-negativt heltal) den kan holde det størst mulige objekt i systemet.
+
+Static funktioner er funktioner der kun er synlige i den fil de er i. F.eks. i mainfilen.
 ## Strings
 ##### length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
 ###### eksempel:
