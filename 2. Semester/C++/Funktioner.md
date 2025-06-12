@@ -1,10 +1,53 @@
 #### Strings
 .length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
+find(): returnerer true hvis man kan finde stringen.
+##### eksempel
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str = "Hello, World!";
+    size_t found = str.find("World"); // Searches for "World"
+
+    if (found != std::string::npos) {
+        std::cout << "Found at position: " << found << std::endl;
+    } else {
+        std::cout << "Not found!" << std::endl;
+    }
+    return 0;
+}
+```
+
 .at(): ved en position
-stoi(): string to int
+stoi(): string to int.
+##### eksempel
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string numStr = "123";
+    int num = stoi(numStr);
+    std::cout << num + 1 << std::endl; // 124
+    return 0;
+}
+```
 substr(sted, antal cifre): Vælger fra et sted givet ved et cifre og så en antal cifre frem fra det, husk det er 0 indekseret. 
+##### eksempel
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str = "Hello, World!";
+    std::string sub = str.substr(7, 5); // "World"
+    std::cout << sub << std::endl;
+    return 0;
+}
+```
 string::npos
-#### Eksempler:
+##### eksempler:
 1. Find om en substring eller char eksisterer med find():
 ```
 #include <iostream>
@@ -52,23 +95,29 @@ int main() {
     return 0;
 }
 ```
-#### Vektorer
+## Vektorer
 Definerer en vektor som:
 vector<int/string> navn
 
 isdigit(): tjekker om en int består kun af cifre
 isNumeric(): tjekker om en string ved hver char er et cifre.
-Eksempel:
-	for (int i = 0; i < 9; i++)
+##### Eksempel:
+```
+for (int i = 0; i < 9; i++)
 		if (!isNumeric(nummeret.at(i)))
-	
+```
 Man kan også bruge:
-if (c >= '0' && c <= '9'), hvor c er en char og så kigger du i ascii alfabetet.
-
-#### Array
+```
+for (int i = 0; i < 9; i++)
+		if (c >= '0' && c <= '9')
+```
+hvor c er en char og så kigger du i ascii alfabetet.
+## Array
+```
 ar[] = { 1, 5, 3}
+```
 Du kan sagtens gange et array over i nogle værdier med et for-loop:
-#### Eksempel:
+##### eksempel:
 ```
 int weights[] = { 4,3,2,7,6,5,4,3,2,1 };
 	int sum = 0;
@@ -77,7 +126,7 @@ int weights[] = { 4,3,2,7,6,5,4,3,2,1 };
 		sum += stoi(etCprNr.substr(i, 1)) * weights[i];
 	}
 ```
-#### Modulus
+## Modulus
 Division hvor resten bliver returneret.
-Eksempel:
+##### eksempel:
 	10 % 3 = 1
