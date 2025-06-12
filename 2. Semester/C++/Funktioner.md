@@ -1,7 +1,7 @@
 #### Strings
 .length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
 
-##### string::npos: Fortæller om man finder noget i en string. Se find()
+##### string::npos: Returnerer false hvis man finder noget i en tekst, returnerer true hvis man ikke finder ordet. Se evt. find()
 ###### eksempel:
 Koden fortæller om et ord er i en tekst.
 ```
@@ -10,6 +10,7 @@ static bool ordITekst(string tekst, string ord)
 	return tekst.find(ord) != string::npos;
 }
 ```
+Så find leder efter ordet, hvis den finder ordet returnerer den indexet af den første gang ordet fremkommer. Hvis den ikke kan finde ordet så returnerer find en konstant npos, hvis den dermed svarer til npos så returneres der false, hvis det er forskelligt fra npos så er ordet fundet.
 ##### find(): returnerer true hvis man finder string
 
 ###### eksempler:
