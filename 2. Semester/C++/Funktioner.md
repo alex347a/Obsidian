@@ -4,29 +4,54 @@
 stoi(): string to int
 substr(sted, antal cifre): Vælger fra et sted givet ved et cifre og så en antal cifre frem fra det, husk det er 0 indekseret. 
 string::npos
-Eksempler:
-	1. Find om en substring eller char eksisterer med find():
-	```
-	```
+#### Eksempler:
+1. Find om en substring eller char eksisterer med find():
 ```
-```
-	1. Finde alle gange en karakter optrædder:
-	```
-	#include <iostream>
-	#include <string>
-	
-	int main() {
-	    std::string str = "Hello, World!";
-	    size_t pos = str.find('o'); // Find first 'o'
-	
-	    while (pos != std::string::npos) {
-	        std::cout << "'o' found at position: " << pos << std::endl;
-	        pos = str.find('o', pos + 1); // Continue searching from next position
-	    }
-	    return 0;
-	}
-	```
+#include <iostream>
+#include <string>
 
+int main() {
+    std::string str = "Hello, World!";
+    size_t found = str.find("Python"); // Searches for "Python"
+
+    if (found == std::string::npos) {
+        std::cout << "Substring not found!" << std::endl;
+    }
+    return 0;
+}
+```
+2. Finde alle gange en karakter optrædder:
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str = "Hello, World!";
+    size_t pos = str.find('o'); // Find first 'o'
+
+    while (pos != std::string::npos) {
+        std::cout << "'o' found at position: " << pos << std::endl;
+        pos = str.find('o', pos + 1); // Continue searching from next position
+    }
+    return 0;
+}
+```
+3. Check om en char er i en string:
+```
+#include <iostream>
+#include <string>
+
+bool contains(const std::string& str, char ch) {
+    return str.find(ch) != std::string::npos;
+}
+
+int main() {
+    std::string str = "Hello";
+    std::cout << std::boolalpha << contains(str, 'e') << std::endl; // true
+    std::cout << std::boolalpha << contains(str, 'z') << std::endl; // false
+    return 0;
+}
+```
 #### Vektorer
 Definerer en vektor som:
 vector<int/string> navn
