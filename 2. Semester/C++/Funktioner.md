@@ -68,13 +68,15 @@ if (c >= '0' && c <= '9'), hvor c er en char og så kigger du i ascii alfabetet.
 #### Array
 ar[] = { 1, 5, 3}
 Du kan sagtens gange et array over i nogle værdier med et for-loop:
-Eksempel:
-	int weights[] = { 4,3,2,7,6,5,4,3,2,1 };
+#### Eksempel:
+```
+int weights[] = { 4,3,2,7,6,5,4,3,2,1 };
 	int sum = 0;
 	for (int i = 0; i < 10; i++)
 	{
 		sum += stoi(etCprNr.substr(i, 1)) * weights[i];
 	}
+```
 #### Modulus
 Division hvor resten bliver returneret.
 Eksempel:
