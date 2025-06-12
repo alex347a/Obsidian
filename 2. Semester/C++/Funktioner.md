@@ -1,7 +1,8 @@
 #### Strings
 .length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
-find(): returnerer true hvis man kan finde stringen.
-##### eksempel
+
+##### stoi(): string to int.
+###### eksempel
 ```
 #include <iostream>
 #include <string>
@@ -18,10 +19,7 @@ int main() {
     return 0;
 }
 ```
-
-.at(): ved en position
-stoi(): string to int.
-##### eksempel
+###### eksempel
 ```
 #include <iostream>
 #include <string>
@@ -33,7 +31,8 @@ int main() {
     return 0;
 }
 ```
-substr(sted, antal cifre): Vælger fra et sted givet ved et cifre og så en antal cifre frem fra det, husk det er 0 indekseret. 
+##### substr(sted, antal cifre)
+Vælger fra et sted givet ved et cifre og så en antal cifre frem fra det, husk det er 0 indekseret. 
 ##### eksempel
 ```
 #include <iostream>
@@ -46,8 +45,10 @@ int main() {
     return 0;
 }
 ```
-string::npos
-##### eksempler:
+##### string::npos
+
+##### .find(): returnerer true hvis man finder string
+###### eksempler:
 1. Find om en substring eller char eksisterer med find():
 ```
 #include <iostream>
@@ -97,11 +98,22 @@ int main() {
 ```
 ## Vektorer
 Definerer en vektor som:
-vector<int/string> navn
+```
+vector<string> navne
+```
 
-isdigit(): tjekker om en int består kun af cifre
-isNumeric(): tjekker om en string ved hver char er et cifre.
-##### Eksempel:
+##### isdigit(): tjekker om en int består kun af cifre
+###### eksempel:
+```
+bool isNumeric(const string &str) {
+    for (char c : str) {
+        if (!isdigit(c)) return false;
+    }
+    return true;
+}
+```
+##### isNumeric(): tjekker om en string ved hver char er et cifre.
+###### Eksempel:
 ```
 for (int i = 0; i < 9; i++)
 		if (!isNumeric(nummeret.at(i)))
@@ -128,5 +140,5 @@ int weights[] = { 4,3,2,7,6,5,4,3,2,1 };
 ```
 ## Modulus
 Division hvor resten bliver returneret.
-##### eksempel:
+###### eksempel:
 	10 % 3 = 1
