@@ -1,5 +1,6 @@
-#### Strings
-.length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
+Size_t: unsigned integer (ikke-negativt heltal) den kan holde det størst mulige objekt i systemet.
+## Strings
+##### length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
 ###### eksempel:
 ```
 #include <iostream>
