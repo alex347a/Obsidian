@@ -1,5 +1,20 @@
 #### Strings
 .length(): længden af string (brug .size() for samme resultat men med kompitabilitet med andre typer)
+###### eksempel:
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str = "Hello World";
+    
+    // Begge metoder giver samme resultat
+    std::cout << "Length: " << str.length() << std::endl;  // 11
+    std::cout << "Size: " << str.size() << std::endl;      // 11
+    
+    return 0;
+}
+```
 
 ##### string::npos: Returnerer false hvis man finder noget i en tekst, returnerer true hvis man ikke finder ordet. Se evt. find()
 ###### eksempel:
