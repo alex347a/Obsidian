@@ -1,0 +1,1 @@
+If each smooth piece of S can be oriented so that along the curve $C^{*}$ which is a common boundary of two pieces $S_{1}$ and $S_{2}$ the positive direction of $C^{*}$ relative to $S_{1}$ is opposite to the direction of $C^{*}$ relative to $S_{2}$ 
