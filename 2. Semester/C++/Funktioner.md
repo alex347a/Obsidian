@@ -155,3 +155,15 @@ Division hvor resten bliver returneret.
 	10 % 3 = 1
 
 ## For loops
+##### Shorthand for-loop
+```
+// Traditional for loop (verbose)
+for (size_t i = 0; i < numbers.size(); ++i) {
+    std::cout << numbers[i] << " ";
+}
+
+// Range-based for loop (cleaner)
+for (auto num : numbers) {
+    std::cout << num << " ";
+}
+```
