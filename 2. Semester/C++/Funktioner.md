@@ -153,3 +153,5 @@ int weights[] = { 4,3,2,7,6,5,4,3,2,1 };
 Division hvor resten bliver returneret.
 ###### eksempel:
 	10 % 3 = 1
+
+## For loops
