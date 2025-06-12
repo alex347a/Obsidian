@@ -65,20 +65,19 @@ int main() {
     return 0;
 }
 ```
-3. Check om en char er i en string:
+3. Check om alle chars i en string er en lovlig char:
 ```
-#include <iostream>
-#include <string>
-
-bool contains(const std::string& str, char ch) {
-    return str.find(ch) != std::string::npos;
-}
-
-int main() {
-    std::string str = "Hello";
-    std::cout << std::boolalpha << contains(str, 'e') << std::endl; // true
-    std::cout << std::boolalpha << contains(str, 'z') << std::endl; // false
-    return 0;
+bool EMA::checkChars() const
+{
+	string legalLetters = "abcdefghijklmnopqrstuvwxyz0123456789.@%&";
+	for (char c : emailAddress)
+	{
+		if (legalLetters.find(c) == string::npos)
+		{
+			return false;
+		}
+	}
+	return true;
 }
 ```
 ##### stoi(): string to int.
