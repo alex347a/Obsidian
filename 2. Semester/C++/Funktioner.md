@@ -78,7 +78,7 @@ int main() {
 ```
 ##### substr(sted, antal cifre)
 Vælger fra et sted givet ved et cifre og så en antal cifre frem fra det, husk det er 0 indekseret. 
-##### eksempel
+###### eksempel
 ```
 #include <iostream>
 #include <string>
