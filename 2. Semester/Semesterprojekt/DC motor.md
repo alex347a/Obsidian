@@ -140,6 +140,8 @@ I en **DC-motor** er det primært **magnetfelt-delen** (v⃗×B⃗v×B) der 
 - **Rotor:** Strøm (I) løber gennem viklinger.
     
 - **Lorentz-kraften (F⃗=I⋅L⃗×B⃗F=I⋅L×B)** virker på hver leder i rotoren og skaber **drejningsmoment (τ)**.
+	Hvor I er strømstyrken, L er længden af lederen og B er magnetfeltet.
+- Drejningsmomentet er givet ved: $\tau = F \cdot r = (I \cdot L \cdot B) \cdot r$ kraft gange arm.
     
 - **Resultat:** Rotoren drejer, og kommutatoren vender strømmen for at holde rotationen i gang.
     
