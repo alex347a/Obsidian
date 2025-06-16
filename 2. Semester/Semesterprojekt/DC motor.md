@@ -75,3 +75,81 @@ En **DC-motor (jævnstrømsmotor)** fungerer ved at omdanne **elektrisk energ
 - **Kommutatoren** sikrer kontinuerlig rotation ved at vende strømmen.
     
 - **Modspændingen** hjælper med at regulere hastighed og strøm.
+
+## Lorentz-kraften
+Lorentz-kraften er den kraft, der virker på en **elektrisk ladning** (f.eks. en elektron), når den bevæger sig gennem både et **magnetfelt** og et **elektrisk felt**. I en DC-motor er det denne kraft, der får rotoren til at rotere.
+
+---
+
+### **Formel for Lorentz-kraften**
+
+Den samlede Lorentz-kraft (**F**) på en ladning (**q**) er givet ved:
+
+F⃗=q⋅(E⃗+v⃗×B⃗)F=q⋅(E+v×B)
+
+Hvor:
+
+- **F** = Kraften (Newton)
+    
+- **q** = Elektrisk ladning (Coulomb)
+    
+- **E** = Elektrisk felt (Volt/meter)
+    
+- **v** = Hastigheden af ladningen (m/s)
+    
+- **B** = Magnetfeltet (Tesla)
+    
+- **×** = Krydsprodukt (bestemmer kraftens retning)
+    
+
+I en **DC-motor** er det primært **magnetfelt-delen** (v⃗×B⃗v×B) der skaber rotation.
+
+---
+
+### **Hvordan virker Lorentz-kraften i en DC-motor?**
+
+1. **Strøm i viklingerne**
+    
+    - Når strøm løber gennem rotorens viklinger, skaber det et **magnetfelt** omkring lederne.
+        
+    - Elektroner bevæger sig gennem lederen og påvirkes af statorens **permanentmagnetfelt (B)**.
+        
+2. **Kraft på elektronerne (og dermed lederen)**
+    
+    - Ifølge Lorentz-kraften vil en ladet partikel i et magnetfelt føle en kraft vinkelret på både **strømretningen (v)** og **magnetfeltet (B)**.
+        
+    - Dette giver en **mekanisk kraft** på hele lederen, som får rotoren til at dreje.
+        
+3. **Højrehåndsreglen for retningen**
+    
+    - **Tommelfinger:** Strømretningen (I)
+        
+    - **Pegelfinger:** Magnetfeltet (B)
+        
+    - **Langefinger:** Kraftretningen (F)
+        
+    - I en DC-motor betyder dette, at kraften skubber rotoren rundt.
+        
+
+---
+
+### **Eksempel i en DC-motor**
+
+- **Stator:** Permanentmagneter skaber et fast **B-felt**.
+    
+- **Rotor:** Strøm (I) løber gennem viklinger.
+    
+- **Lorentz-kraften (F⃗=I⋅L⃗×B⃗F=I⋅L×B)** virker på hver leder i rotoren og skaber **drejningsmoment (τ)**.
+    
+- **Resultat:** Rotoren drejer, og kommutatoren vender strømmen for at holde rotationen i gang.
+    
+
+---
+
+### **Hvorfor er Lorentz-kraften vigtig?**
+
+- Den forklarer, **hvorfor en motor drejer** (kraft på ladede partikler i et magnetfelt).
+    
+- Den bestemmer **motorens drejeretning** (afhænger af strøm- og magnetfeltretning).
+    
+- Den bruges også i andre elektromagnetiske enheder (f.eks. **generatorer, partikelacceleratorer**).
