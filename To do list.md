@@ -13,7 +13,7 @@
 	- [x] CPR ✅ 2025-06-12
 	- [x] Fjernvarme ✅ 2025-06-12
 	- [x] Småopgaver ✅ 2025-06-12
-	- [ ] Pointgivende
+	- [x] Pointgivende ✅ 2025-06-12
 	- [ ] Kunstsamling
 	- [ ] Moenter
 	- [ ] PersonDatoBil
