@@ -7,3 +7,8 @@
 ![[Pasted image 20250828144429.png]]
 ![[Pasted image 20250828144510.png]]
 ![[Pasted image 20250828144529.png]]
+
+### Bevægelse i to og tre dimensioner
+![[Pasted image 20250828150902.png]]
+![[Pasted image 20250828150925.png]]
+![[Pasted image 20250828150943.png]]
