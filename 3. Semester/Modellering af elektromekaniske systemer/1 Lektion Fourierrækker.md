@@ -1,1 +1,2 @@
-![[Pasted image 20250828142529.png]]
+![[Fourierrække komplekse koefficienter.png]]
+![[Fourierrække koefficienter.png]]
