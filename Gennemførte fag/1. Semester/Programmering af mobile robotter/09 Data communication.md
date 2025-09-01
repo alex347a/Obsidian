@@ -3,7 +3,7 @@
 | Slide: | Concept:                                                              |
 | ------ | --------------------------------------------------------------------- |
 | 5-17   | Communication interfaces, Data, synchronous clock, asynchronous clock |
-| 18-21  | Duplex, Half Duplex, simplex                                          |
+| 18-21  | SSDuplex, Half Duplex, simplex                                        |
 | 22-24  | Protocol                                                              |
 | 25-30  | Digital sensors                                                       |
 | 31-47  | I2C (Inter- integrated circuit)                                       |
