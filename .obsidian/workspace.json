@@ -171,27 +171,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b732f229d52f19ee",
+  "active": "af2180a01d80d8b6",
   "lastOpenFiles": [
-    "Pasted image 20250901110755.png",
+    "Pasted Images/3. Semester/Industriel datakommunikation/1/I2C.png",
+    "Gennemførte fag/1. Semester/Programmering af mobile robotter/09 Data communication.md",
+    "3. Semester/Industriel datakommunikation/1.md",
+    "Pasted Images/3. Semester/Industriel datakommunikation/1/SPI.png",
+    "Gennemførte fag/1. Semester/Programmering af mobile robotter/Eksamensspørgsmål forkortet.md",
+    "Pasted Images/3. Semester/Industriel datakommunikation/1/Other communication options.png",
+    "Pasted Images/3. Semester/Industriel datakommunikation/1/Communication speed.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/OSI Reference Model.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/Layering and encapsulation.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/Packet Switching.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/Binary and ASCII.png",
-    "3. Semester/Industriel datakommunikation/1.md",
     "Pasted Images/3. Semester/Industriel datakommunikation/1",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/Circuit Switching.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/FDM and TDM.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1/Peer-to-peer vs. multidrop.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Network topologies.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Duplex, half-duplex, simplex.png",
     "Pasted Images/3. Semester/Industriel datakommunikation",
-    "Gennemførte fag/1. Semester/Programmering af mobile robotter/09 Data communication.md",
     "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
     "3. Semester/Signalbehandling",
     "3. Semester/Computerarkitektur og operativsystemer",
     "3. Semester/Industriel datakommunikation",
-    "Pasted Images/3. Semester/Modellering af elektromekaniske systemer/1. Lektion/Pasted image 20250828150943.png",
     "Pasted Images/3. Semester/Modellering af elektromekaniske systemer/1. Lektion",
     "Pasted Images/3. Semester/Modellering af elektromekaniske systemer",
     "Pasted Images/3. Semester",
@@ -217,7 +218,6 @@
     "Gennemførte fag/2. Semester/Robotkinematik-Alexanders_ASUS/Opskrifter/Tjek om en rotationsmatrice er korrekt.md",
     "Gennemførte fag/2. Semester/Robotkinematik-Alexanders_ASUS/Opskrifter/Tjek om en robot er ved en singularitet ud fra Jacobian.md",
     "Gennemførte fag/2. Semester/Robotkinematik-Alexanders_ASUS/Opskrifter/Sekvens af transformationsmatricer.md",
-    "Gennemførte fag/2. Semester/Robotkinematik-Alexanders_ASUS/Opskrifter/Rotationsmatrice ud fra equivalent axis-angle.md",
-    "Gennemførte fag/2. Semester/Robotkinematik-Alexanders_ASUS/Opskrifter/Rotationsmatrice fra et frame til et andet.md"
+    "Gennemførte fag/2. Semester/Robotkinematik-Alexanders_ASUS/Opskrifter/Rotationsmatrice ud fra equivalent axis-angle.md"
   ]
 }
