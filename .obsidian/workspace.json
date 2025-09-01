@@ -11,14 +11,12 @@
             "id": "b732f229d52f19ee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "3. Semester/Industriel datakommunikation/1.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted Images/2. Semester/Mat 3/01/Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions.png"
               },
-              "icon": "lucide-file",
-              "title": "1"
+              "icon": "lucide-image",
+              "title": "Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions"
             }
           }
         ]
@@ -171,23 +169,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "af2180a01d80d8b6",
+  "active": "b732f229d52f19ee",
   "lastOpenFiles": [
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/I2C.png",
-    "Gennemførte fag/1. Semester/Programmering af mobile robotter/09 Data communication.md",
+    "Pasted Images/2. Semester/Mat 3/01/Derivatives of the inverse trigonometric functions table.png",
+    "Pasted Images/2. Semester/Mat 3/01/Figur 4.11.png",
+    "Pasted Images/2. Semester/Mat 3/01/Theorem 1 - Properties of Limits of Functions of Two Variables.png",
+    "Pasted Images/2. Semester/Mat 3/01/Theorem 4 The Mean Value Theorem.png",
+    "Pasted Images/2. Semester/Mat 3/01/Middelværdisætningen.png",
+    "Pasted Images/2. Semester/Mat 3/01/Mat 3 01 lektier .pdf",
+    "Pasted Images/2. Semester/Mat 3/01/Graphs of the arctangent, arccotangent, arcsecant, and arccosecant functions.png",
+    "Pasted Images/2. Semester/Mat 3/01/Figur 4.13.png",
+    "Pasted Images/2. Semester/Mat 3/01/Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions.png",
+    "Pasted Images/2. Semester/Mat 3/02/Mat 3 11.2 Fourierrækker.png",
+    "Pasted Images/2. Semester/Mat 3/02/13.1.31 Equation.png",
+    "Pasted Images/2. Semester/Mat 3/02/11.3.13 Answer.png",
+    "Pasted Images/2. Semester/Mat 3/09/09 Linjeintegraler.pdf",
+    "Pasted Images/2. Semester/Mat 3/08/08 lektionsnoter.pdf",
     "3. Semester/Industriel datakommunikation/1.md",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/SPI.png",
+    "Gennemførte fag/1. Semester/Programmering af mobile robotter/09 Data communication.md",
     "Gennemførte fag/1. Semester/Programmering af mobile robotter/Eksamensspørgsmål forkortet.md",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Other communication options.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Communication speed.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/OSI Reference Model.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Layering and encapsulation.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Packet Switching.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Binary and ASCII.png",
     "Pasted Images/3. Semester/Industriel datakommunikation/1",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Circuit Switching.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/FDM and TDM.png",
-    "Pasted Images/3. Semester/Industriel datakommunikation/1/Peer-to-peer vs. multidrop.png",
     "Pasted Images/3. Semester/Industriel datakommunikation",
     "2. Semester/Softwareudvikling/Portfolie diagrammer.md",
     "3. Semester/Signalbehandling",
@@ -195,9 +196,6 @@
     "3. Semester/Industriel datakommunikation",
     "Pasted Images/3. Semester/Modellering af elektromekaniske systemer/1. Lektion",
     "Pasted Images/3. Semester/Modellering af elektromekaniske systemer",
-    "Pasted Images/3. Semester",
-    "Pasted Images/2. Semester/Robotkinematik/Eksamen",
-    "Pasted Images/2. Semester/Mat 3/Eksamen/1a 14. August 2024.pdf",
     "Gennemførte fag/2. Semester/Mat 3-Alexanders_ASUS/Pointgivende/Pointgivende 2/Pointgivende 2 opgaver.md",
     "Gennemførte fag/2. Semester/Mat 3/Pointgivende/Pointgivende 2/Pointgivende 2 opgaver.md",
     "Gennemførte fag/2. Semester/Mat 3-Alexanders_ASUS/Opgaver/Ignorer de første 4 og kig på pointgivende 1/04 Partielle differentialligninger 12.1-12.3.md",
