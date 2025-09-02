@@ -1,4 +1,4 @@
-Find Fourierkoefficienterne og Fourierrækken for firkant-signalet defineret som
+#### 1.1 Find Fourierkoefficienterne og Fourierrækken for firkant-signalet defineret som
 $$
 f(x) = \cases{0 \quad \text{hvis } - 1 \leq x \leq 0 \\ 1 \quad \text{hvis } 0 \leq x \leq 1}
 $$
@@ -66,10 +66,19 @@ $$
 Dermed bliver Fourierrækken givet ved:
 
 $$
-f(x) = \frac{a_{0}}{2} + \sum_{n=1} ^{\infty} \left[a_{n} \cos\left(\frac{n \pi x}{L}\right) + b_{n} \sin\left(\frac{n \pi x}{L}\right)\right] = \frac{1}{2} + \sum_{n=1} ^{\infty} \left[b_{n} \sin\left(\frac{n \pi x}{L}\right)\right]
+f(x) = \frac{a_{0}}{2} + \sum_{n=1} ^{\infty} \left[a_{n} \cos\left(\frac{n \pi x}{L}\right) + b_{n} \sin\left(\frac{n \pi x}{L}\right)\right] = \frac{1}{2} + \sum_{n=1} ^{\infty} b_{n} \sin(n \pi x)
 $$
+$$
+f(x) = \frac{1}{2} + \sum_{n = 1, 3, 5, \dots} ^{\infty} \frac{2}{n \pi} \sin(n \pi x)
+$$
+Hvilket passer med svaret i bogen.
 
-Løsning:
+#### 1.2 Fouriertransformation. Enhedstrinfunktionen er defineret som
 $$
-f(x) = \frac{1}{2} + \sum_{n = 1,3,5, \dots} \frac{2}{n \pi} \sin(n \pi x)
+u(t-a) = \cases{1 \quad \text{ for } t- a > 0 \\ 0 \quad \text{ for } t -a <0} 
 $$
+Benyttes til at definere en firkantimpuls:
+$$
+x(t) = u(t-a) - u(t-b)
+$$
+hvor $a<b$
