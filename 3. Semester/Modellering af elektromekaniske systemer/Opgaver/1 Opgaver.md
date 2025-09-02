@@ -118,6 +118,7 @@ Fouriertransformationen af $u(t-c)$:
 $$
 \mathcal{F} [u (t-c)] (\omega) = e^{\frac{-j \omega c}{j \omega}} + \pi \delta(\omega)
 $$
+Givet at $x(t) = u()$
 Løsning:
 $$
 X(\omega) = \frac{e^{-j \omega a} - e^{- j \omega b}}{j \omega}
