@@ -2629,6 +2629,7 @@ gyn
 gcA
 gruppere
 generelle
+gelse
 intertia
 inertimomenter
 intertimomenter
@@ -7508,6 +7509,7 @@ dvs
 deler
 dermed
 deflection
+dimensioner
 using
 under
 ud
@@ -20364,6 +20366,7 @@ BGg
 BQI
 Bdkk
 Bogens
+Bev
 Regionen
 Referential
 RC
