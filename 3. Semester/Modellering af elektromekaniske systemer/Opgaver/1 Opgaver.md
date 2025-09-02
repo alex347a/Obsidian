@@ -114,6 +114,24 @@ Hvilket passer med svaret i bogen.
 
 ### 1.3 (Invers Fouriertransformation) Betragt signalet (i frekvensdomæne) $X(\omega) = \delta (\omega - \omega_{0})$ hvor $\omega_0$ er en konstant. Benyt invers Fouriertransformation til at finde $x(t)$
 
+Den inverse Fouriertransformation er givet som:
+$$
+x(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} X(\omega) e^{j \omega t} \, dw
+$$
+Jeg indsætter at: $X(\omega) = \delta(\omega - \omega_{0})$:
+$$
+x(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \delta(\omega - \omega_{0}) e^{j \omega t} \, dw
+$$
+Diracs deltafunktion har udplukningsegenskaben:
+$$
+\int_{-\infty}^{\infty} f(\omega) \, \delta(\omega - \omega_{0}) \, dw = f(\omega_{0})
+$$
+Dette bruger jeg til funktionen:
+$$
+x(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \delta(\omega - \omega_{0}) e^{j \omega t} \, dw
+$$
+
+
 Løsning:
 $$
 x(t) = \frac{1}{2 \pi} e^{j \omega_{0} t} 
