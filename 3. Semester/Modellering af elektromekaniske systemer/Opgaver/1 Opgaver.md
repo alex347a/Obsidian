@@ -110,8 +110,13 @@ Diracs deltafunktion: $\delta(ω)$ er en distribution med egenskaberne:
 $$
 \begin{align*}
 \delta(\omega) = 0 \text{ for } \omega &\neq 0\\
-\int_{-\infty}^{\infty} \delta(\omega) &= 
+\int_{-\infty}^{\infty} \delta(\omega) d \omega &= 1\\
+\int_{-\infty}^{\infty} f(\omega) \delta(\omega) \, d \omega &= f(0) \quad (\text{udpluksegenskab})
 \end{align*}
+$$
+Fouriertransformationen af $u(t-c)$:
+$$
+\mathcal{F} [u (t-c)] (\omega) = e^{\frac{-j \omega c}{j \omega}} + \pi \delta(\omega)
 $$
 Løsning:
 $$
