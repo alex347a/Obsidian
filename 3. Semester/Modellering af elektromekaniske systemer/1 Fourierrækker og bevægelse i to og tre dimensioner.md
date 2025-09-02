@@ -7,7 +7,13 @@ a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, d
 b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx
 \end{align*}
 $$
+Man kan bruge eulers identitet til at udtrykke Fourierrækker med komplekse variable:
+#### Eulers identitet
+![[Eulers identitet.png]]
+
 ![[Fourierrække koefficienter.png]]
+#### Fourierrækker egenskaber
+![[Fourierrækker egenskaber.png]]
 ![[Pasted image 20250828144343.png]]
 
 ![[Pasted image 20250828144359.png]]
