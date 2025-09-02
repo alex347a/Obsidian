@@ -48,10 +48,26 @@ b_{n} &= \frac{1}{1} \int_{0} ^{1} 1 \cdot \sin\left(\frac{n \pi x }{1}\right) \
 &=  \int_{0}^{1} \sin(n \pi x)\\
 &= \left[-\cos \left(\frac{n \pi x}{n \pi}\right)\right]_{0}^{1}\\
 &= - \frac{\cos(n \pi)}{n \pi} - \frac{\cos(0)}{n \pi}\\
-&= 
+&= \frac{1 - \cos(n \pi)}{n \pi}
 \end{align*}
 $$
+Da:
+$$
+\cos(n \pi) = (-1) ^{n}
+$$
+$$
+\frac{1 - (-1)^{n}}{n \pi}
+$$
+For lige n giver det 0.
+For ulige n:
+$$
+b_{n} = \frac{2}{n \pi}
+$$
+Dermed bliver Fourierrækken givet ved:
 
+$$
+f(x) = \frac{a_{0}}{2} + \sum_{n=1} ^{\infty} \left[a_{n} \cos\left(\frac{n \pi x}{L}\right) + b_{n} \sin\left(\frac{n \pi x}{L}\right)\right] = \frac{1}{2} + \sum_{n=1} ^{\infty} \left[b_{n} \sin\left(\frac{n \pi x}{L}\right)\right]
+$$
 
 Løsning:
 $$
