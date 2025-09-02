@@ -24,11 +24,17 @@ En periode er 2L og en grundfrekvens er $\frac{1}{2L}$
 ![[Repræsentation af aperiodisk funktion 1.1.png]]
 ![[Repræsentation af aperiodisk funktion 2.png]]
 ![[Repræsentation af aperiodisk funktion 3.png]]
-![[Pasted image 20250828144529.png]]
+#### Fouriertransformation og invers Fouriertransformation
+![[Fouriertransformation og invers Fouriertransformation.png]]
 Dvs. hvis du har en periodisk funktion så bruger du Fourierrækker og hvis den er aperiodisk bruger du Fourier transformation.
 
 #### Dirac delta-funktion
-
+![[Dirac delta-funktion.png]]
+En dirac puls fylder alle frekvenser.
+#### Fouriertransformation egenskaber
+![[Fouriertransformation egenskaber.png]]
+#### Fouriertransformations par
+![[Pasted image 20250902134001.png]]
 
 ### Bevægelse i to og tre dimensioner
 ![[Pasted image 20250828150902.png]]
