@@ -17,8 +17,10 @@ Man kan bruge eulers identitet til at udtrykke Fourierrækker med komplekse vari
 #### Komplekse tal på polær form
 ![[Komplekse tal på polær form.png]]
 ![[Pasted image 20250828144343.png]]
+En periode er 2L og en grundfrekvens er $\frac{1}{2L}$ 
 
-![[Pasted image 20250828144359.png]]
+#### Repræsentation af aperiodisk funktion
+![[Repræsentation af aperiodisk funktion.png]]
 ![[Pasted image 20250828144415.png]]
 ![[Pasted image 20250828144429.png]]
 ![[Pasted image 20250828144510.png]]
