@@ -47,7 +47,8 @@ b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, d
 b_{n} &= \frac{1}{1} \int_{0} ^{1} 1 \cdot \sin\left(\frac{n \pi x }{1}\right) \, dx\\
 &=  \int_{0}^{1} \sin(n \pi x)\\
 &= \left[-\cos \left(\frac{n \pi x}{n \pi}\right)\right]_{0}^{1}\\
-&= - \frac{\cos(n \pi)}{n \pi} - 
+&= - \frac{\cos(n \pi)}{n \pi} - \frac{\cos(0)}{n \pi}\\
+&= 
 \end{align*}
 $$
 
