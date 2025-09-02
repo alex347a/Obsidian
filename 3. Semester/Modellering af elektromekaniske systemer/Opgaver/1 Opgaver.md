@@ -124,13 +124,10 @@ $$
 $$
 $$
 \begin{align*}
-\mathcal{F}(u(t-a)(\omega) - \mathcal{F} (t-b) (\omega) &=  \left[e^{\frac{-j \omega a}{j \omega}} + \pi \delta(\omega)\right] - \left[ e^{\frac{-j \omega b}{j \omega}} + \pi \delta(\omega)\right]\\
-&= e^{\frac{-j \omega a}{j \omega}} \cancel{+\pi \delta(\omega)} - e^{\frac{-j \omega b}{j \omega}} \cancel{-\pi \delta(\omega)}\\
-&= e^{\frac{-j \omega a}{j \omega}} - e^{\frac{-j \omega b}{j \omega}}
+\mathcal{F}(u(t-a)(\omega) - \mathcal{F} (t-b) (\omega) &=  \left[\frac{e^{-j \omega a}}{{j \omega}} + \pi \delta(\omega)\right] - \left[ \frac{e^{-j \omega b}}{{j \omega}} + \pi \delta(\omega)\right]\\
+&= \frac{e^{-j \omega a}}{{j \omega}} \cancel{+\pi \delta(\omega)} - \frac{e^{-j \omega b}}{{j \omega}} \cancel{-\pi \delta(\omega)}\\
+&= \frac{e^{-j \omega a}}{{j \omega}} - \frac{e^{-j \omega b}}{{j \omega}}\\
+&= \frac{e^{-j \omega a} - e^{-j \omega b}}{{j \omega}} 
 \end{align*}
 $$
-
-Løsning:
-$$
-X(\omega) = \frac{e^{-j \omega a} - e^{- j \omega b}}{j \omega}
-$$
+Hvilket passer med svaret i bogen.
