@@ -1,3 +1,7 @@
+#### Opsummering
+![[Opsummering.png]]
+![[Opsummering 2.png]]
+
 ![[Fourierrække komplekse koefficienter.png]]
 Konstanterne er givet ved
 $$
@@ -34,7 +38,8 @@ En dirac puls fylder alle frekvenser.
 #### Fouriertransformation egenskaber
 ![[Fouriertransformation egenskaber.png]]
 #### Fouriertransformations par
-![[Pasted image 20250902134001.png]]
+![[Fouriertransformations par.png]]
+Ved dirac pulsen er Fouriertransformationen 1 ved alle frekvenser og ved 1 er Fouriertransformationen 2 pi.
 
 ### Bevægelse i to og tre dimensioner
 ![[Pasted image 20250828150902.png]]
