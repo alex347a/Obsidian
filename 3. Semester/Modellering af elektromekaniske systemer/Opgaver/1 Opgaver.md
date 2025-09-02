@@ -35,6 +35,10 @@ $$
 $$
 \begin{align*}
 a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
+a_{n} &= \frac{1}{1} \int_{0} ^{1} 1 \cdot \cos\left(\frac{n \pi x }{1}\right) \, dx\\
+&=  \int_{0}^{1} \cos(n \pi x)\\
+&= \left[\sin \left(\frac{n \pi x}{n \pi}\right)\right]_{0}^{1}\\
+&= 
 \end{align*}
 $$
 
