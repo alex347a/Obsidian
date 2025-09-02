@@ -24,6 +24,20 @@ b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, d
 \end{align*}
 $$
 
+$$
+\begin{align*}
+a_{0} &=  \frac{1}{L} \int_{-L}^{L} f(x) \, dx\\
+a_{0} &= \frac{1}{1} \int_{-1} ^{1} f(x) \, dx\\
+\text{Da } -1 \text{ er udenfor intervallet 0 til 1}:\\
+= \int_{0}^{1} 1 \, dx &=  1
+\end{align*}
+$$
+$$
+\begin{align*}
+a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
+\end{align*}
+$$
+
 
 Løsning:
 $$
