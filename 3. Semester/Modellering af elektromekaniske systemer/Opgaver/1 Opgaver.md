@@ -6,6 +6,24 @@ og
 $$
 f(x+2) = f(x)
 $$
+Den generelle formel er givet ved:
+$$
+f(x) = \frac{a_{0}}{2} + \sum_{n=1} ^{\infty} \left[a_{n} \cos\left(\frac{n \pi x}{L}\right) + b_{n} \sin\left(\frac{n \pi x}{L}\right)\right]
+$$
+Idet jeg får givet at:
+$$
+f(x+2) = f(x)
+$$
+Så betyder det at perioden $2L = 2$
+Dernæst kan jeg beregne konstantleddende:
+$$
+\begin{align*}
+a_{0} &=  \frac{1}{L} \int_{-L}^{L} f(x) \, dx\\
+a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
+b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx
+\end{align*}
+$$
+
 
 Løsning:
 $$
