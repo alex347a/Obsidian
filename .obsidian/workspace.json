@@ -11,12 +11,14 @@
             "id": "b732f229d52f19ee",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted Images/2. Semester/Mat 3/01/Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions.png"
+                "file": "Gennemførte fag/2. Semester/Mat 3/Pointgivende/Pointgivende 1/Opgaver til pointgivende lektion 1-4.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions"
+              "icon": "lucide-file",
+              "title": "Opgaver til pointgivende lektion 1-4"
             }
           }
         ]
@@ -171,6 +173,8 @@
   },
   "active": "b732f229d52f19ee",
   "lastOpenFiles": [
+    "Gennemførte fag/2. Semester/Mat 3/Pointgivende/Pointgivende 1/Checkliste til pointgivendeopgave i mat.md",
+    "Pasted Images/2. Semester/Mat 3/01/Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions.png",
     "Pasted Images/2. Semester/Mat 3/01/Derivatives of the inverse trigonometric functions table.png",
     "Pasted Images/2. Semester/Mat 3/01/Figur 4.11.png",
     "Pasted Images/2. Semester/Mat 3/01/Theorem 1 - Properties of Limits of Functions of Two Variables.png",
@@ -179,10 +183,8 @@
     "Pasted Images/2. Semester/Mat 3/01/Mat 3 01 lektier .pdf",
     "Pasted Images/2. Semester/Mat 3/01/Graphs of the arctangent, arccotangent, arcsecant, and arccosecant functions.png",
     "Pasted Images/2. Semester/Mat 3/01/Figur 4.13.png",
-    "Pasted Images/2. Semester/Mat 3/01/Definitions of arctangent, arccotangent, arcsecant, and arccosecant functions.png",
     "Pasted Images/2. Semester/Mat 3/02/Mat 3 11.2 Fourierrækker.png",
     "Pasted Images/2. Semester/Mat 3/02/13.1.31 Equation.png",
-    "Pasted Images/2. Semester/Mat 3/02/11.3.13 Answer.png",
     "Pasted Images/2. Semester/Mat 3/09/09 Linjeintegraler.pdf",
     "Pasted Images/2. Semester/Mat 3/08/08 lektionsnoter.pdf",
     "3. Semester/Industriel datakommunikation/1.md",
@@ -207,7 +209,6 @@
     "Gennemførte fag/2. Semester/Mat 3-Alexanders_ASUS/Pointgivende/Pointgivende 1/Opgaver til pointgivende lektion 1-4-ALEXANDERS_PC.md",
     "Gennemførte fag/2. Semester/Mat 3-Alexanders_ASUS/Pointgivende/Pointgivende 1/Checkliste til pointgivendeopgave i mat.md",
     "Gennemførte fag/2. Semester/Mat 3/Pointgivende/Pointgivende 1/Opgaver til pointgivende lektion 1-4.md",
-    "Gennemførte fag/2. Semester/Mat 3/Pointgivende/Pointgivende 1/Checkliste til pointgivendeopgave i mat.md",
     "Gennemførte fag/2. Semester/Mat 3/Opgaver/Ignorer de første 4 og kig på pointgivende 1/04 Partielle differentialligninger 12.1-12.3.md",
     "Gennemførte fag/2. Semester/Mat 3/Opgaver/Ignorer de første 4 og kig på pointgivende 1/03 Opgaver.md",
     "Gennemførte fag/2. Semester/Mat 3/Opgaver/Ignorer de første 4 og kig på pointgivende 1/01 Opgaver.md",
