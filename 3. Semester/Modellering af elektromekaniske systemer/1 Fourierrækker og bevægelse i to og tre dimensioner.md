@@ -19,12 +19,16 @@ Man kan bruge eulers identitet til at udtrykke Fourierrækker med komplekse vari
 ![[Pasted image 20250828144343.png]]
 En periode er 2L og en grundfrekvens er $\frac{1}{2L}$ 
 
-#### Repræsentation af aperiodisk funktion
+### Repræsentation af aperiodisk funktion
 ![[Repræsentation af aperiodisk funktion.png]]
-![[Pasted image 20250828144415.png]]
-![[Pasted image 20250828144429.png]]
-![[Pasted image 20250828144510.png]]
+![[Repræsentation af aperiodisk funktion 1.1.png]]
+![[Repræsentation af aperiodisk funktion 2.png]]
+![[Repræsentation af aperiodisk funktion 3.png]]
 ![[Pasted image 20250828144529.png]]
+Dvs. hvis du har en periodisk funktion så bruger du Fourierrækker og hvis den er aperiodisk bruger du Fourier transformation.
+
+#### Dirac delta-funktion
+
 
 ### Bevægelse i to og tre dimensioner
 ![[Pasted image 20250828150902.png]]
