@@ -105,6 +105,14 @@ $$
 $$
 
 $$
+
+Diracs deltafunktion: $\delta(ω)$ er en distribution med egenskaberne:
+$$
+\begin{align*}
+\delta(\omega) = 0 \text{ for } \omega &\neq 0\\
+\int_{-\infty}^{\infty} \delta(\omega) &= 
+\end{align*}
+$$
 Løsning:
 $$
 X(\omega) = \frac{e^{-j \omega a} - e^{- j \omega b}}{j \omega}
