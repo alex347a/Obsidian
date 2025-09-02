@@ -85,26 +85,6 @@ hvor $a<b$
 
 #### 1. Tegn grafen for firkantimpulsen $x(t)$
 #### 2. Udregn den Fouriertransformerede af $x(t)$
-Den Fouriertransformerede af en funktion $x(t)$ er defineret som:
-$$
-X(\omega) = \int_{-\infty} ^{\infty} x (t) e^{-j \omega t} \, dt
-$$
-Jeg indsætter udtrykket for $x(t)$ i formlen ovenfor:
-$$
-X(\omega) = \int_{-\infty} ^{\infty} [u(t-a) - u(t-b)] e^{-j \omega t} \, dt
-$$
-Dette kan deles op i to integraler:
-$$
-X(\omega) = \int_{-\infty} ^{\infty} u(t-a) \cdot e^{-j \omega t} \, dt - \int_{-\infty} ^{\infty} u(t-b) \cdot e ^{-j \omega t} \, dt
-$$
-For enhedstrinfunktionen gælder det at:
-$$
-\int_{-\infty}^{\infty} u(t-c) \cdot e^{-j \omega t} \, dt = \int_{c} ^{\infty} e^{- j \omega t} \, dt
-$$
-
-$$
-
-$$
 
 Diracs deltafunktion: $\delta(ω)$ er en distribution med egenskaberne:
 $$
