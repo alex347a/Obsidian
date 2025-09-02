@@ -97,7 +97,14 @@ Dette kan deles op i to integraler:
 $$
 X(\omega) = \int_{-\infty} ^{\infty} u(t-a) \cdot e^{-j \omega t} \, dt - \int_{-\infty} ^{\infty} u(t-b) \cdot e ^{-j \omega t} \, dt
 $$
+For enhedstrinfunktionen gælder det at:
+$$
+\int_{-\infty}^{\infty} u(t-c) \cdot e^{-j \omega t} \, dt = \int_{c} ^{\infty} e^{- j \omega t} \, dt
+$$
 
+$$
+
+$$
 Løsning:
 $$
 X(\omega) = \frac{e^{-j \omega a} - e^{- j \omega b}}{j \omega}
