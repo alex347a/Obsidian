@@ -116,9 +116,20 @@ $$
 $$
 Fouriertransformationen af $u(t-c)$:
 $$
-\mathcal{F} [u (t-c)] (\omega) = e^{\frac{-j \omega c}{j \omega}} + \pi \delta(\omega)
+\mathcal{F} [u (t-c)] (\omega) = \frac{e^{-j \omega c}}{{j \omega}} + \pi \delta(\omega)
 $$
-Givet at $x(t) = u()$
+Givet at $x(t) =  u(t-a) - u(t-b)$
+$$
+\mathcal{F}  [u(t-a) - u(t-b)] (\omega) = \mathcal{F}(u(t-a)(\omega) - \mathcal{F} (t-b) (\omega)
+$$
+$$
+\begin{align*}
+\mathcal{F}(u(t-a)(\omega) - \mathcal{F} (t-b) (\omega) &=  \left[e^{\frac{-j \omega a}{j \omega}} + \pi \delta(\omega)\right] - \left[ e^{\frac{-j \omega b}{j \omega}} + \pi \delta(\omega)\right]\\
+&= e^{\frac{-j \omega a}{j \omega}} \cancel{+\pi \delta(\omega)} - e^{\frac{-j \omega b}{j \omega}} \cancel{-\pi \delta(\omega)}\\
+&= e^{\frac{-j \omega a}{j \omega}} - e^{\frac{-j \omega b}{j \omega}}
+\end{align*}
+$$
+
 Løsning:
 $$
 X(\omega) = \frac{e^{-j \omega a} - e^{- j \omega b}}{j \omega}
