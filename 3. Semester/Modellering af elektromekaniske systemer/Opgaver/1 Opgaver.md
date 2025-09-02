@@ -82,3 +82,11 @@ $$
 x(t) = u(t-a) - u(t-b)
 $$
 hvor $a<b$
+
+1. Tegn grafen for firkantimpulsen $x(t)$
+2. Udregn den Fouriertransformerede af $x(t)$
+
+Løsning:
+$$
+X(\omega) = \frac{e^{-j \omega a} - e^{- j \omega b}}{j \omega}
+$$
