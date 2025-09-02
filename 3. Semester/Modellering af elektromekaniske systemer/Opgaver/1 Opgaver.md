@@ -1,4 +1,4 @@
-#### 1.1 Find Fourierkoefficienterne og Fourierrækken for firkant-signalet defineret som
+### 1.1 Find Fourierkoefficienterne og Fourierrækken for firkant-signalet defineret som
 $$
 f(x) = \cases{0 \quad \text{hvis } - 1 \leq x \leq 0 \\ 1 \quad \text{hvis } 0 \leq x \leq 1}
 $$
@@ -73,7 +73,7 @@ f(x) = \frac{1}{2} + \sum_{n = 1, 3, 5, \dots} ^{\infty} \frac{2}{n \pi} \sin(n 
 $$
 Hvilket passer med svaret i bogen.
 
-#### 1.2 Fouriertransformation. Enhedstrinfunktionen er defineret som
+### 1.2 Fouriertransformation. Enhedstrinfunktionen er defineret som
 $$
 u(t-a) = \cases{1 \quad \text{ for } t- a > 0 \\ 0 \quad \text{ for } t -a <0} 
 $$
@@ -83,8 +83,20 @@ x(t) = u(t-a) - u(t-b)
 $$
 hvor $a<b$
 
-1. Tegn grafen for firkantimpulsen $x(t)$
-2. Udregn den Fouriertransformerede af $x(t)$
+#### 1. Tegn grafen for firkantimpulsen $x(t)$
+#### 2. Udregn den Fouriertransformerede af $x(t)$
+Den Fouriertransformerede af en funktion $x(t)$ er defineret som:
+$$
+X(\omega) = \int_{-\infty} ^{\infty} x (t) e^{-j \omega t} \, dt
+$$
+Jeg indsætter udtrykket for $x(t)$ i formlen ovenfor:
+$$
+X(\omega) = \int_{-\infty} ^{\infty} [u(t-a) - u(t-b)] e^{-j \omega t} \, dt
+$$
+Dette kan deles op i to integraler:
+$$
+X(\omega) = \int_{-\infty} ^{\infty} u(t-a) \cdot e^{-j \omega t} \, dt - \int_{-\infty} ^{\infty} u(t-b) \cdot e ^{-j \omega t} \, dt
+$$
 
 Løsning:
 $$
