@@ -21,3 +21,11 @@ Laplace transformeret:
 $$
 m \cdot s^{2} x(s) = f_{net} (s)
 $$
+
+$$
+\begin{align*}
+a_{0} &=  \frac{1}{L} \int_{-L}^{L} f(x) \, dx\\
+a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, dx\\
+b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx
+\end{align*}
+$$

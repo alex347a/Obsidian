@@ -2658,6 +2658,7 @@ gelse
 geometriske
 goes
 gas
+generelt
 intertia
 inertimomenter
 intertimomenter
@@ -4300,6 +4301,7 @@ piecewise
 positivt
 projektionen
 pilene
+perioden
 totale
 tyngdepunkt
 the
@@ -4863,6 +4865,7 @@ tegne
 tegn
 tninger
 tegning
+transformeret
 re
 retning
 rvektoren
@@ -6468,6 +6471,7 @@ vores
 vektorfelt
 vektorfelter
 vinkelret
+vre
 for
 function
 fladeintegrale
@@ -7005,6 +7009,7 @@ formen
 fourier
 forkert
 forbindes
+fourierr
 double
 derivative
 de
@@ -8918,6 +8923,7 @@ leder
 lgeligningen
 langs
 ligninerne
+lov
 normal
 normalvektor
 noget
@@ -9370,6 +9376,8 @@ nul
 ndring
 nomenet
 ngere
+nedre
+nse
 Areal
 Arealet
 AUTO
@@ -13676,6 +13684,7 @@ Faktoriserer
 Fouierr
 Fouiertrick
 Forced
+Fourierr
 smart
 se
 skrives
@@ -15476,6 +15485,7 @@ Dirichlet
 Differentierer
 Derimod
 Derudover
+Dern
 Her
 Hvor
 Hvis
@@ -15934,6 +15944,7 @@ HKKCII
 HNO
 Hvilket
 Hastighed
+HUSK
 ydre
 your
 yZ
@@ -19592,6 +19603,7 @@ Niels
 Niveaukurven
 Note
 Naturlogaritme
+Newtons
 Kom
 Kommentarer
 Kugle
