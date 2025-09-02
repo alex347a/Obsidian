@@ -178,7 +178,16 @@ Indsætter:
 $$
 \begin{align*}
 X(\omega) &=  \frac{1}{2j} \cdot 2 \pi \delta(\omega - \omega_{0}) - \frac{1}{2j} \cdot 2 \pi \delta(\omega + \omega_{0})\\
-&= 
+&= \frac{2 \pi \delta(\omega - \omega_{0})}{2j} - \frac{2 \pi \delta(\omega + \omega_{0})}{2j}\\
+&= \frac{ \pi }{j} \delta(\omega - \omega_{0}) - \frac{ \pi }{j} \delta(\omega + \omega_{0})\\
+\end{align*}
+$$
+Da $\frac{1}{j} = -j$:
+$$
+\begin{align*}
+&=  (-j\pi) \delta(\omega - \omega_{0}) - (-j\pi) \delta(\omega + \omega_{0})\\
+&= -j\pi \delta(\omega - \omega_{0}) + j\pi \delta(\omega + \omega_{0})\\
+&= -j\pi (\delta(\omega - \omega_{0}) - \delta(\omega + \omega_{0}))
 \end{align*}
 $$
 
