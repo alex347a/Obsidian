@@ -128,11 +128,27 @@ $$
 $$
 Dette bruger jeg til funktionen:
 $$
-x(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \delta(\omega - \omega_{0}) e^{j \omega t} \, dw
+\int_{-\infty}^{\infty} \delta(\omega - \omega_{0}) e^{j \omega t} \, dw = e^{j \omega_{0} t}
 $$
+Dermed bliver svaret:
+$$
+x(t) = \frac{1}{2\pi} e^{j \omega_{0} t}
+$$
+Hvilket passer med svaret i bogen.
+
+### 1.4 (Fouriertransformation) Betragt signalet (i tidsdomæne)$x(t) = \sin(ω_{0}t)$ hvor $ω_{0}$ er en konstant. Benyt Fouriertransformation til at finde $X(ω)$.
+Den generelle Fouriertransformation er givet ved:
+$$
+X(\omega) = \int_{-\infty}^{\infty} x(t) e^{- j \omega t} \, dt
+$$
+Indsætter den givet funktion $x(t) = \sin(ω_{0}t)$:
+$$
+X(\omega) = \int_{-\infty}^{\infty} \sin(ω_{0}t) e^{- j \omega t} \, dt
+$$
+
 
 
 Løsning:
 $$
-x(t) = \frac{1}{2 \pi} e^{j \omega_{0} t} 
+X(\omega) = -j \pi (\delta(\omega - \omega_{0}) - \delta(\omega + \omega_{0}))
 $$
