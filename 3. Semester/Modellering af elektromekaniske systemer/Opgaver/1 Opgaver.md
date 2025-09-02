@@ -111,3 +111,10 @@ $$
 \end{align*}
 $$
 Hvilket passer med svaret i bogen.
+
+### 1.3 (Invers Fouriertransformation) Betragt signalet (i frekvensdomæne) $X(\omega) = \delta (\omega - \omega_{0})$ hvor $\omega_0$ er en konstant. Benyt invers Fouriertransformation til at finde $x(t)$
+
+Løsning:
+$$
+x(t) = \frac{1}{2 \pi} e^{j \omega_{0} t} 
+$$
