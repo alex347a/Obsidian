@@ -14,6 +14,8 @@ Man kan bruge eulers identitet til at udtrykke Fourierrækker med komplekse vari
 ![[Fourierrække koefficienter.png]]
 #### Fourierrækker egenskaber
 ![[Fourierrækker egenskaber.png]]
+#### Komplekse tal på polær form
+![[Komplekse tal på polær form.png]]
 ![[Pasted image 20250828144343.png]]
 
 ![[Pasted image 20250828144359.png]]
