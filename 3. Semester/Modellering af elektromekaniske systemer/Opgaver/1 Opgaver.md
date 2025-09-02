@@ -38,7 +38,16 @@ a_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \cos\left(\frac{n \pi x}{L}\right) \, d
 a_{n} &= \frac{1}{1} \int_{0} ^{1} 1 \cdot \cos\left(\frac{n \pi x }{1}\right) \, dx\\
 &=  \int_{0}^{1} \cos(n \pi x)\\
 &= \left[\sin \left(\frac{n \pi x}{n \pi}\right)\right]_{0}^{1}\\
-&= 
+= \left[\sin \left(\frac{n \pi x}{n \pi}\right)\right]_{0}^{1} &= 0 \text{ for alle n-værdier}
+\end{align*}
+$$
+$$
+\begin{align*}
+b_{n} &=  \frac{1}{L} \int_{-L}^{L} f(x) \sin\left(\frac{n \pi x}{L}\right) \, dx\\
+b_{n} &= \frac{1}{1} \int_{0} ^{1} 1 \cdot \sin\left(\frac{n \pi x }{1}\right) \, dx\\
+&=  \int_{0}^{1} \sin(n \pi x)\\
+&= \left[-\cos \left(\frac{n \pi x}{n \pi}\right)\right]_{0}^{1}\\
+&= - \frac{\cos(n \pi)}{n \pi} - 
 \end{align*}
 $$
 
