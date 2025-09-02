@@ -161,7 +161,13 @@ $$
 Deler integralet op:
 $$
 X(\omega) = \frac{1}{2j} \int_{-\infty}^{\infty} e ^{j \omega_{0} t} e^{-j \omega t} \, dt - \frac{1}{2j} \int_{-\infty}^{\infty} e^{- j \omega_{0} t} e^{-j \omega t} \, dt
-$$Dette viser, at en ren sinusfunktion med frekvens $\omega_0$ i tidsdomænet kun indeholder netop én frekvenskomponent ($\omega_0$) i frekvensdomænet, repræsenteret ved to deltafunktioner ved $\omega = \omega_0$ og $\omega = -\omega_0$. Den imaginære enhed $j$ og minus-tegnene reflekterer faseforskydningen i den komplekse frekvensdomæne.
+$$
+Eksponenterne samles:
+$$
+X(\omega) = \frac{1}{2j} \int_{-\infty}^{\infty} e ^{-j (\omega - \omega_{0}) t} \, dt - \frac{1}{2j} \int_{-\infty}^{\infty} e ^{-j (\omega + \omega_{0}) t} \, dt
+$$
+
+Dette viser, at en ren sinusfunktion med frekvens $\omega_0$ i tidsdomænet kun indeholder netop én frekvenskomponent ($\omega_0$) i frekvensdomænet, repræsenteret ved to deltafunktioner ved $\omega = \omega_0$ og $\omega = -\omega_0$. Den imaginære enhed $j$ og minus-tegnene reflekterer faseforskydningen i den komplekse frekvensdomæne.
 
 Løsning:
 $$
