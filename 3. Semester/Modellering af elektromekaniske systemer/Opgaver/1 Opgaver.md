@@ -145,9 +145,19 @@ Indsætter den givet funktion $x(t) = \sin(ω_{0}t)$:
 $$
 X(\omega) = \int_{-\infty}^{\infty} \sin(ω_{0}t) e^{- j \omega t} \, dt
 $$
+Jeg bruger Eulers identitet:
+$$
+\sin(x) = \frac{e ^{j x} - e^{-j x}}{2j}
+$$
 
-
-
+Indsætter $x = \omega_{0} t$:
+$$
+\sin(\omega_{0} t) = \frac{e ^{j \omega_{0} t} - e^{-j \omega_{0} t}}{2j}
+$$
+Indsætter i integralet:
+$$
+X(\omega) = \int_{-\infty}^{\infty} \left(\frac{e ^{j \omega_{0} t} - e^{-j \omega_{0} t}}{2j}\right) e^{- j \omega t} \, dt
+$$
 Løsning:
 $$
 X(\omega) = -j \pi (\delta(\omega - \omega_{0}) - \delta(\omega + \omega_{0}))
