@@ -3,8 +3,7 @@ End systems are systems like a computer that are connected to the internet throu
 
 ### Packet switches
 Routers and link-layer switches.
-The sequence of communication links and packet switches traversed by a packet are called a route or path. 
-Most packet switches use store-and-forward transmission at the inputs to the links. Store-and-forward transmission means that the packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link.
+The sequence of communication links and packet switches traversed by a packet are called a route or path.
 
 ### Protocols
 A protocol defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event. End systems packet switches and other pieces of the internet run protocols that control the sending and receiving of information like TCP (Transmission Control Protocol) and IP (Internet Protocol) 
@@ -44,12 +43,8 @@ Radio channels carry signals in the electromagnetic spectrum. They are an attrac
 
 A communication satellite links two or more Earth-based microwave transmitter/receivers, known as ground stations. The satellite receives transmissions on one frequency band, regenerates the signal using a repeater (discussed below), and transmits the signal on another frequency. Two types of satellites are used in communications: 
 1. Geostationary satellites. They stay above the same spot on the Earth by being in orbit 36000 km above the ground, introduces 280 millisecond delay.
-2. Low-earth orbiting (LEO). They rotate around the earth and 
-satellites.
-### End-to-end delay
-$$
-d_{\text{end-to-end}} = N \frac{L}{R} 
-$$
+2. Low-earth orbiting (LEO). They rotate around the earth and communicate with each other and ground stations.
+### NÅET TIL SIDE 53
 
 ###
 
