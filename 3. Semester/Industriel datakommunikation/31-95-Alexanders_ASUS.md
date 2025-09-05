@@ -105,13 +105,10 @@ The internet is a network of networks, it is a a multi-tiered system with global
 - **Transmission Delay** is about the **volume of data** (the entire packet). It is the time to put the data _onto_ the link. It depends on the packet's length and the link's **data rate**.
 - **Propagation Delay** is about the **distance** the signal must travel. It is the time for a bit to travel _across_ the link. It depends on the physical distance and the **speed of light** in the medium.
 ### TCP/UDP
-The internets transport layer transports application-layer messages between application endpoints. TCP provides a connection-oriented service to its applications. This service includes guaranteed delivery of application-layer messages to the destination and flow control (that is, sender/receiver speed matching).
-TCP also breaks long messages into shorter segments
-and provides a congestion-control
-mechanism, so that a source throttles its transmission rate when the network is congested.
-The UDP protocol provides a connectionless service to its applications. This is a
-no-frills service that provides no reliability, no flow control, and no congestion control.
-In this book, we’ll refer to a transport-layer packet as a segment.
+The internets transport layer transports application-layer messages between application endpoints. TCP provides a connection-oriented service to its applications. This service includes guaranteed delivery of application-layer messages to the destination and flow control (that is, sender/receiver speed matching). TCP also breaks long messages into shorter segments and provides a congestion-control mechanism, so that a source throttles its transmission rate when the network is congested. 
+UDP provides a connectionless service to its applications. This is a no-frills service that provides no reliability, no flow control, and no congestion control.  The transport-layer packet is also called a segment.
+
+The Internet’s network layer routes a datagram through a series of routers between the source and destination. To move a packet from one node (host or router) to the next node in the route, the network layer relies on the services of the link layer. In particular, at each node, the network layer passes the datagram down to the link layer, which delivers the datagram to the next node along the route. At this next node, the link layer passes the datagram up to the network layer. The services provided by the link layer depend on the specific link-layer protocol that is employed over the link. The link-layer packets are also called frames.
 
 ###
 
