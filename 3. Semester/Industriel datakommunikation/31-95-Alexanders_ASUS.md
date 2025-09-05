@@ -104,7 +104,14 @@ The internet is a network of networks, it is a a multi-tiered system with global
 #### Key Distinction: Transmission vs. Propagation
 - **Transmission Delay** is about the **volume of data** (the entire packet). It is the time to put the data _onto_ the link. It depends on the packet's length and the link's **data rate**.
 - **Propagation Delay** is about the **distance** the signal must travel. It is the time for a bit to travel _across_ the link. It depends on the physical distance and the **speed of light** in the medium.
-### JEG ER NÅET TIL SIDE 74
+### TCP/UDP
+The internets transport layer transports application-layer messages between application endpoints. TCP provides a connection-oriented service to its applications. This service includes guaranteed delivery of application-layer messages to the destination and flow control (that is, sender/receiver speed matching).
+TCP also breaks long messages into shorter segments
+and provides a congestion-control
+mechanism, so that a source throttles its transmission rate when the network is congested.
+The UDP protocol provides a connectionless service to its applications. This is a
+no-frills service that provides no reliability, no flow control, and no congestion control.
+In this book, we’ll refer to a transport-layer packet as a segment.
 
 ###
 
