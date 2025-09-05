@@ -111,8 +111,18 @@ UDP provides a connectionless service to its applications. This is a no-frills s
 The Internet’s network layer routes a datagram through a series of routers between the source and destination. To move a packet from one node (host or router) to the next node in the route, the network layer relies on the services of the link layer. In particular, at each node, the network layer passes the datagram down to the link layer, which delivers the datagram to the next node along the route. At this next node, the link layer passes the datagram up to the network layer. The services provided by the link layer depend on the specific link-layer protocol that is employed over the link. Examples of link-layer protocols include Ethernet, WiFi, and the cable access network’s DOCSIS protocol. A datagram may be handled by different link-layer protocols at different links along its route. The link-layer packets are also called frames.
 
 The physical layer moves the individual bits (as opposed to the link-layer that moves entire frames) from one node to the next. The protocols depend on the actual transmission medium of the link. For example, Ethernet has many physical-layer protocols: one for twisted-pair copper wire, another for coaxial cable, another for fiber, and so on. In each case, a bit is moved across the link in a different way.
-###
-
+### Network Security
+DoS (denial-of-service) attacks renders a network or host unusable by legitimate users. There are three categories:
+1. Vulnerability attack. This involves sending a few well-crafted messages to a
+   vulnerable application or operating system running on a targeted host. If the right
+   sequence of packets is sent to a vulnerable application or operating system, the
+   service can stop or, worse, the host can crash.
+2. Bandwidth flooding. The attacker sends a deluge of packets to the targeted
+   host—so many packets that the target’s access link becomes clogged, preventing
+   legitimate packets from reaching the server.
+3. Connection flooding. The attacker establishes a large number of half-open or
+   fully open TCP connections at the target host. The host can become so bogged down with these bogus connections that it stops accepting legitimate connections.
+In a DDoS (Distributed Denial-of-Service) attack the attacker controls multiple sources that send loads of traffic to the target.
 ###
 
 ###
