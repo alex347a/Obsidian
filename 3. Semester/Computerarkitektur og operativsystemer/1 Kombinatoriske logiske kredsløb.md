@@ -1,4 +1,4 @@
-Se [[08 Logic gates]]
+Se evt. [[08 Logic gates]]
 ### Talsystemer
 
 ### Digitale kredsløb
