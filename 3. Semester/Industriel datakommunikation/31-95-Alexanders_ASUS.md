@@ -122,7 +122,9 @@ DoS (denial-of-service) attacks renders a network or host unusable by legitimate
    legitimate packets from reaching the server.
 3. Connection flooding. The attacker establishes a large number of half-open or
    fully open TCP connections at the target host. The host can become so bogged down with these bogus connections that it stops accepting legitimate connections.
-In a DDoS (Distributed Denial-of-Service) attack the attacker controls multiple sources that send loads of traffic to the target.
+In a DDoS (Distributed Denial-of-Service) attack the attacker controls multiple sources that all send loads of traffic to the target.
+When using a wireless connection a packet sniffer can copy the packets that are transmitted from the router. This is done passively meaning no packets are injected and is therefore hard to detect. Therefore, one of the solutions are cryptography.
+IP spoofing is when the attacker creates a packet with an arbitrary source address, packet content and destination address. To solve this issue end-point authentication is needed.
 ###
 
 ###
