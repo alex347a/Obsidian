@@ -16,3 +16,11 @@ $$
 $$
 G(s) = \frac{X(s)}{F(s)} = \frac{1}{ms^{2} + bs + k}
 $$
+
+$$
+\begin{align*}
+\mathcal{L}\left(\frac{1}{s^{2} + 0.2 s + 0.01}\right) = 2 \cdot \frac{\omega}{s^{2} + \omega^{2}}\\
+\omega = 5\\
+&= \frac{10}{s^{2} + 25}
+\end{align*}
+$$
