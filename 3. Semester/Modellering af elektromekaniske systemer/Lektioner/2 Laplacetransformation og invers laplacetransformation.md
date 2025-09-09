@@ -59,3 +59,8 @@ Overføringsfunktionen er i frekvensdomænet som er givet ved forholden af udgan
 
 #### Eksempel
 ![[Pasted image 20250909131811.png]]
+Nu hvor komplekse tal er medinkluderet så svarer antallet af rødder til polynomiets grad, så et 37. grads polynomie vil have 37 rødder og der vil være 37 udtryk nede under brøkstregen.
+
+![[Pasted image 20250909132430.png]]
+### Frekvensrespons
+![[Pasted image 20250909132543.png]]
