@@ -113,3 +113,8 @@ Man vil gerne have at ens system er i venstre halvplan, fordi man vil ikke have 
 
 ### Partialbrøksopspaltning/partialbrøksopløsning
 ![[Pasted image 20250909140715.png]]
+
+#### Eksempel
+![[Pasted image 20250909141050.png]]
+![[Pasted image 20250909141125.png]]
+I bode plottet ser man ikke det første led i y(t), fordi man sætter det til 1, men sinusdelen vil man se i bode plottet.
