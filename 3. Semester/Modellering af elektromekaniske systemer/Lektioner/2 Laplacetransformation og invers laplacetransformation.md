@@ -53,3 +53,9 @@ Laplacetransformationen kan bruge til at finde oscilleringsfrekvensen (egenfrekv
 
 ### Laplacetransformation
 ![[Pasted image 20250909131622.png]]
+### Overføringsfunktion
+![[Pasted image 20250909131644.png]]
+Overføringsfunktionen er i frekvensdomænet som er givet ved forholden af udgangssignalet divideret med indgangssignalet når de begge er laplacetransformeret.
+
+#### Eksempel
+![[Pasted image 20250909131811.png]]
