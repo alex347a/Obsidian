@@ -18,5 +18,9 @@ f(\alpha x) &=  \alpha f(x)
 \end{align*}
 $$
 Homogenitet er f.eks. hvis indgangssignalet f.eks. bliver fordoblet så bliver udgangssignalet også fordoblet.
-Superposition er at de to ingangssignaler hvert for sig behandlet er det samme  
+Superposition er at de to indgangssignaler hvert for sig behandlet er det samme som at summere dem og derefter behandlet den summerede funktion.
 ![[Pasted image 20250909122851.png]]
+
+### Superpositionsprincippet
+![[Pasted image 20250909123009.png]]
+Det er en lineær andenordens differentialligning. Den udledes ud fra Newtons 2. lov.
