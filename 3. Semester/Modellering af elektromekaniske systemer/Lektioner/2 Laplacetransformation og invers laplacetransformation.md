@@ -38,4 +38,11 @@ Når $t = \tau$ så bliver delta nul og dermed får man funktionen $u(\tau)$ ud.
 
 #### Eksempel
 ![[Pasted image 20250909124247.png]]
-Den homogene løsning vil være 0, men vi er selvfølgelig interesseret i den partikulære løsning.
+Den homogene løsning vil være 0, men vi er selvfølgelig interesseret i den partikulære løsning. Da y lige før 0 er 0 så må y lige efter 0 være 1.
+![[Pasted image 20250909124536.png]]
+![[Pasted image 20250909124618.png]]
+Siden vi ved at startbetingelsen er 1, så er $A=1$ og dermed må $s=-k$
+![[Pasted image 20250909124725.png]]
+### Enheds step funktion
+![[Pasted image 20250909124824.png]]
+Enheds step funktionen er altså $1(t)$, som gør at $e^{-kt}$ gælder for alle tider og ikke bare for $t>0$
