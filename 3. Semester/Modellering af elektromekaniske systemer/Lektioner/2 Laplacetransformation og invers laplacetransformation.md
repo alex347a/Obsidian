@@ -65,5 +65,12 @@ Nu hvor komplekse tal er medinkluderet så svarer antallet af rødder til polyno
 ### Frekvensrespons
 ![[Pasted image 20250909132543.png]]
 ![[Pasted image 20250909132754.png]]
+Det er meningen j skal ganges på begge dele af den eksponentielle funktion, så:
+$$
+y(t) = \frac{A}{2} M (\omega) (e^{j ( \omega t + \phi(\omega))} + e^{-j })
+$$
 ![[Pasted image 20250909133156.png]]
 $H(s)$ har her 1 pol, fordi $s=-k$ og det har 0 nulpunkter, fordi der står 1 i tælleren, og er et 0. grads polynomie.
+
+### Bode plot
+![[Pasted image 20250909134315.png]]
