@@ -46,3 +46,6 @@ Siden vi ved at startbetingelsen er 1, så er $A=1$ og dermed må $s=-k$
 ### Enheds step funktion
 ![[Pasted image 20250909124824.png]]
 Enheds step funktionen er altså $1(t)$, som gør at $e^{-kt}$ gælder for alle tider og ikke bare for $t>0$
+![[Pasted image 20250909125031.png]]
+Hvis man har en kompleks eksponentiel funktion så kan man også løse for sinus og cosinus funktioner.
+Hvis s kun var et kompleks tal (altså $j \omega$) så svarer det til en Fouriertransformation, men nu afhænger s af både $\sigma$ og $j \omega$, så både reelle tal og imaginære tal, og det er forskellen.
