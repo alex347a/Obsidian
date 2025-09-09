@@ -24,3 +24,10 @@ Superposition er at de to indgangssignaler hvert for sig behandlet er det samme 
 ### Superpositionsprincippet
 ![[Pasted image 20250909123009.png]]
 Det er en lineær andenordens differentialligning. Den udledes ud fra Newtons 2. lov.
+![[Pasted image 20250909123550.png]]
+Løsningen af begge summeret er også en løsningen.
+
+![[Pasted image 20250909123637.png]]
+Ud fra en impuls kan man bestemme udgangssignallet af alle indgangssignaler.
+![[Pasted image 20250909123753.png]]
+Når $t = \tau$ så bliver delta nul og dermed får man funktionen $u(t)$ ud.
