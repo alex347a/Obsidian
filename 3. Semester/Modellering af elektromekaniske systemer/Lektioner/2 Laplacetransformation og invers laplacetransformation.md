@@ -100,3 +100,16 @@ M(\omega) = |H(s)| = |H(j \omega)|_{\omega = 0} = H(0) = \frac{\frac{1}{m}}{0 +0
 $$
 $P(t) = \frac{1}{k}$
 Hvor $H(0)$ kaldes for DC gain.
+
+![[Pasted image 20250909140411.png]]
+
+### Relation mellem impulsrespons og polplacering
+![[Pasted image 20250909140424.png]]
+Man vil gerne have at ens system er i venstre halvplan, fordi man vil ikke have at det går imod uendelig. Så ud fra polerne kan man se om den er stabil/ustabil og om der er svingninger eller om det direkte konvertere mod 0.
+
+### Invers laplacetransformation
+![[Pasted image 20250909140558.png]]
+![[Pasted image 20250909140607.png]]
+
+### Partialbrøksopspaltning/partialbrøksopløsning
+![[Pasted image 20250909140715.png]]
