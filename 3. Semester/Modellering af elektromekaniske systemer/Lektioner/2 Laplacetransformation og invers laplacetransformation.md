@@ -93,3 +93,10 @@ $$
 $$
 F(t) = 1 = A \cos(\omega t)
 $$
+Derfor er $A = 1$ og $\omega = 0$
+Derfor får vi at:
+$$
+M(\omega) = |H(s)| = |H(j \omega)|_{\omega = 0} = H(0) = \frac{\frac{1}{m}}{0 +0 + \frac{k}{m}} = \frac{1}{k}
+$$
+$P(t) = \frac{1}{k}$
+Hvor $H(0)$ kaldes for DC gain.
