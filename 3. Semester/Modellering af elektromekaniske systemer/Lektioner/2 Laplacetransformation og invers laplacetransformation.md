@@ -30,4 +30,12 @@ Løsningen af begge summeret er også en løsningen.
 ![[Pasted image 20250909123637.png]]
 Ud fra en impuls kan man bestemme udgangssignallet af alle indgangssignaler.
 ![[Pasted image 20250909123753.png]]
-Når $t = \tau$ så bliver delta nul og dermed får man funktionen $u(t)$ ud.
+Når $t = \tau$ så bliver delta nul og dermed får man funktionen $u(\tau)$ ud.
+### Impulsresponset er defineret ved $h(t,\tau)$
+![[Pasted image 20250909124010.png]]
+### Superpositionsintegralet og foldningsintegralet
+![[Pasted image 20250909124136.png]]
+
+#### Eksempel
+![[Pasted image 20250909124247.png]]
+Den homogene løsning vil være 0, men vi er selvfølgelig interesseret i den partikulære løsning.
