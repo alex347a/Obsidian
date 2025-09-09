@@ -78,3 +78,18 @@ $H(s)$ har her 1 pol, fordi $s=-k$ og det har 0 nulpunkter, fordi der står 1 i 
 ### Laplacetransformation egenskaber
 ![[Pasted image 20250909135009.png]]
 Man antager ofte at begyndelsesbetingelserne er 0, for at slippe for ekstra led.
+
+$$
+\begin{align*}
+s^{2} P (s) = - \frac{k}{m} P (s) - \frac{b}{m} s P(s) + \frac{1}{m} F(s)\\
+output: P(s)\\
+H(s) &= \frac{P(s)}{F(s)}\\
+\left(s^{2} + \frac{b}{m} s + \frac{k}{m}\right) p(s) &= \frac{1}{m} F(s)\\
+H(s) = \frac{P(s)}{F(s)} &= \frac{\frac{1}{m}}{s^{2} + \frac{b}{m} s + \frac{k}{m}}\\
+F(t) &= 1\\
+P(t) &= ????
+\end{align*}
+$$
+$$
+F(t) = 1 = A \cos(\omega t)
+$$
