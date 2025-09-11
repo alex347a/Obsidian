@@ -54,7 +54,7 @@ The example microcomputer has two memory modules (M0, M1), each containing 8 wor
 ### VHDL Structural View
 The system's structure is described in VHDL, which declares components and connects them with signals.
 For a simple microcomputer:
-![[2.3.png]]
+![[Noter/Pasted Images/3. Semester/Computerarkitektur og operativsystemer/2/2.3.png]]
 
 - The **declaration part** (before `begin`) defines the input/output ports for each component (CPU, RAM, DEC, CLK) and declares signals (like `M`) for interconnecting them.
     
