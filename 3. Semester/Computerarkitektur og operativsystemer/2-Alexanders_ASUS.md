@@ -64,7 +64,7 @@ For a simple microcomputer:
 ### RAM Behavioral View
 The behavioral view of the RAM describes its function.
 For an 8-by-8 RAM
-![[2.4.png]]
+![[Noter/Pasted Images/3. Semester/Computerarkitektur og operativsystemer/2/2.4.png]]
 - An array variable `memory` represents the 8x8 bit storage.
     
 - A `while` loop checks if the RAM is selected (when `CS0` and `CS1` are both '1').
