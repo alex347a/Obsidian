@@ -96,7 +96,7 @@ The example microcomputer uses a simple instruction set with a 2-bit opcode and 
     
 - **ADDM:** Adds a register and a memory word and stores the result in the register.
 
-![[2.6.png]]
+![[Noter/Pasted Images/3. Semester/Computerarkitektur og operativsystemer/2/2.6.png]]
 
 ### Instruction Execution Phases
 Instruction execution is divided into three main phases:
