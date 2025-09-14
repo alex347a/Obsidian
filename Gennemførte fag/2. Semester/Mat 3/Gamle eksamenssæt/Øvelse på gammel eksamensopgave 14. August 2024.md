@@ -7,7 +7,7 @@ f(x+4) &= f(x)
 \end{align*}
 $$
 #### a) Skitsér grafen for $f(x)$.
-![[Pasted image 20250608133902.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/Eksamen/Pasted image 20250608133902.png]]
 
 #### b) Udled fourierrækken for $f(x)$
 Fourierrækken for en given funktion $f(x)$ er generelt givet ved formlen
@@ -487,7 +487,7 @@ $$
 Desuden er vektorfunktionen $\overline{F}(x,y,z)$ gives som: $\overline{F}(x,y,z) = (x,y,z)$
 
 #### a) Skitsér området T
-![[Pasted image 20250608135141.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/Eksamen/Pasted image 20250608135141.png]]
 #### b) Udregn Tripleintegralet $\iiint_{T} \nabla \cdot \overline{F} \, dv$
 Først beregner jeg divergensen af $\overline{F}$:
 $$

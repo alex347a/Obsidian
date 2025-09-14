@@ -17,7 +17,7 @@ p \cdot d\\
 W&= 14\\
 \end{align*}
 $$
-![[Pasted Images/2. Semester/Mat 3/07/07 Opgaver.pdf]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/07/07 Opgaver.pdf]]
 
 
 ### 9.3.11 With respect to right-handed Cartesian coordinates, let $a = [2,1,0]$, $b = [-3,2,0]$, $c = [1,4,-2]$ and $d = [5,-1,3]$ Showing details, find:
@@ -86,7 +86,7 @@ $$
 $$
 \nabla f(x,y) = \left(\frac{-y}{x^{2}}, \frac{1}{x}\right)=\left(- \frac{cx}{x^{2}}, \frac{1}{x}\right) = \left(- \frac{c}{x}, \frac{1}{x}\right)
 $$
-![[Pasted Images/2. Semester/Mat 3/07/07 Opgaver.pdf#page=2]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/07/07 Opgaver.pdf#page=2]]
 
 ### 9.7.8 Prove and illustrate by example.
 $$

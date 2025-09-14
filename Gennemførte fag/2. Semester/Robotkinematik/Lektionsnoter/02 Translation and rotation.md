@@ -1,5 +1,5 @@
 ### Summary of this lecture:
-![[Noter/Pasted Images/2. Semester/Robotkinematik/02/Summary.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Robotkinematik/02/Summary.png]]
 ## Types of joints
 ![[Types of Robot Joints.png]]
 Revolute:

@@ -19,7 +19,7 @@ Et sekvensdiagram viser en enkelt use case, hvor den viser sekvensen af beskeder
 ### Association
 ![[Association.png]]
 ### Multiplicity
-![[Multiplicity.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Softwareudvikling/07/Multiplicity.png]]
 ### Directed association
 ![[Directed association.png]]
 ### Aggregation

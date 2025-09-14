@@ -1,5 +1,5 @@
 ### Summary of this lecture:
-![[Noter/Pasted Images/2. Semester/Robotkinematik/04/Summary.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Robotkinematik/04/Summary.png]]
 ### Translation Mappings (with vectors)
 ![[Translation Mappings (with vectors).png]]
 ### Rotational Mappings (with rotation matrices)

@@ -1,5 +1,5 @@
 ### Summary
-![[Pasted Images/2. Semester/Robotkinematik/09/Summary.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Robotkinematik/09/Summary.png]]
 If a frame moves identically with a point then the velocity is relative 0, but if seen from another frame then the point is moving, and has a relative velocity.
 ### Velocity vectors as differential position
 ![[Velocity vectors as differential position.png]]

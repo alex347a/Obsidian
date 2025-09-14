@@ -19,4 +19,4 @@ $$x=-2-4t$$
 $$y=1-2t$$
 $$z=3-t$$
 ![[Pasted image 20241107215913.png]]
-![[Pasted Images/1. Semester/Mat 2/Mat 2 PDF filer/07 Opgaver.pdf]]
+![[Noter/Pasted Images/Gennemførte fag/1. Semester/Mat 2/Mat 2 PDF filer/07 Opgaver.pdf]]

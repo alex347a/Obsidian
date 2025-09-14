@@ -1,5 +1,5 @@
 ### Summary of this lecture:
-![[Noter/Pasted Images/2. Semester/Robotkinematik/03/Summary.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Robotkinematik/03/Summary.png]]
 ![[Overview of Orientation Representations.png]]
 ## Quaternions  
 Quaternions are a number system that extends complex numbers and are commonly used in 3D rotations. They consist of one real component and three imaginary components:  

@@ -161,4 +161,4 @@ $$
 u(x,t)= \underbrace{\sum_{n \, = \, 1} ^{\infty}}_{\text{n ulige}} \frac{8kl^{2}}{(n \pi)^{3}} \sin\left(\frac{n \pi}{l}\right) x \cdot \cos\left(\frac{n \pi c}{l}\right)t
 $$
 ![[Mat 3 04.pdf#page=6]]
-![[Pasted Images/2. Semester/Mat 3/04/Fig 291.png]]
+![[Fig 291.png]]

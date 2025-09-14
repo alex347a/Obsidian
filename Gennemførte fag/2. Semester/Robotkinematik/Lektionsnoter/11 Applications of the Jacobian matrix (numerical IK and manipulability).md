@@ -1,5 +1,5 @@
 ### Summary
-![[Noter/Pasted Images/2. Semester/Robotkinematik/11/Summary.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Robotkinematik/11/Summary.png]]
 ### Numerical IK: Conceptually
 ![[Numerical IK Conceptually.png]]
 The reason we move in small steps is because the Jacobian is a function of the joint position, so when the position changes the Jacobian also changes. So you can't just take one big step because the moves in cartesian spaces changes depending on the Jacobian that depends on the joint configuration. Because we are approximating a curved line in joint space as small chunks of straight lines, there are approximation errors, just like when taking the integral you divide the function into n numbers of rectangles.

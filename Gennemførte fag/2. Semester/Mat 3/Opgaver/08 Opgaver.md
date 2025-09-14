@@ -6,7 +6,7 @@ $$
 v = i + j
 $$
 Dette betyder at uanset hvor vi er så peger vektorene en hen ad x-aksen og en op ad y-aksen.
-![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/08/08 Opgaver.pdf]]
 ### 9.4.17 Sketch figures similar to Fig. 198. Try to interpret the field of v as a velocity field.
 Sketch figures similar to Fig. 198. Try to interpret the field of v as a velocity field.
 ![[Fig 198.png]]
@@ -14,14 +14,14 @@ $$
 v = xj
 $$
 Dette betyder at vektorerne afhænger af x og peger opad, hvis $x=1$ har vektoren længden 1, hvis $x=2$ har vektoren længden 2 osv. Hvis x er negativ peger vektorerne derfor nedad.
-![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf#page=2|08 Opgaver]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/08/08 Opgaver.pdf#page=2|08 Opgaver]]
 ### 9.5.7 What curves are represented by the following? Sketch them.
 What curves are represented by the following? Sketch them.
 $$
 [4 \cos(t), 4 \sin(t), 3t]
 $$
 Det svarer til en helix, fordi x og y svarer til en cirkel, mens z-værdien stiger med tiden, hvilket derfor danner en helix.
-![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf#page=3|08 Opgaver]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/08/08 Opgaver.pdf#page=3|08 Opgaver]]
 ### 9.5.13 Find a parametric representation:
 Find a parametric representation:
 Straight line through (2, 1, 3) in the direction of $i + 2j$
@@ -85,7 +85,7 @@ $$
 $$
 x = 2 + \lambda, \quad y = \frac{1}{2} - \frac{\lambda}{4}, \quad z =0
 $$
-![[Pasted Images/2. Semester/Mat 3/08/08 Opgaver.pdf#page=4|08 Opgaver]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/08/08 Opgaver.pdf#page=4|08 Opgaver]]
 Svaret i bogen er: 
 $$
 q(w) = \left[2+w, \frac{1}{2} - \frac{1}{4} w, 0\right]

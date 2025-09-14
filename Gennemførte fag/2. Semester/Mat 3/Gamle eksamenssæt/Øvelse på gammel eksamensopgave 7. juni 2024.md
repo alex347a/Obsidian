@@ -8,7 +8,7 @@ $$
 f(x+2) = f(x)
 $$
 #### a) Skitsér grafen for $f(x)$ i intervallet $-4 < x < 4$
-![[Pasted image 20250608175731.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/Eksamen/Pasted image 20250608175731.png]]
 #### b) Udled fourierrækken for $f(x)$
 Fourierrækken for en given funktion $f(x)$ er generelt givet ved formlen
 $$
@@ -532,7 +532,7 @@ C: \overline{r}(\theta) = (4 \cos(\theta), 4 \sin(\theta), 8), \quad \text{hvor 
 $$
 Desuden er vektorfunktionen $\overline{F}(x,y,z)$ givet som: $\overline{F}(x,y,z) = (x,x,z)$
 #### a) Skitsér området S:
-![[Pasted image 20250609104913.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Mat 3/Eksamen/Pasted image 20250609104913.png]]
 
 #### b) Udregn linjeintegralet $\oint_{C} \overline{F} \cdot d \overline{r}$
 Jeg har allerede parameterfremstillingen:

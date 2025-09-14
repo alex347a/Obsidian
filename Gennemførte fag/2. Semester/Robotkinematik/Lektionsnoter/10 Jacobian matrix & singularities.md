@@ -1,5 +1,5 @@
 ### Summary
-![[Pasted Images/2. Semester/Robotkinematik/10/Summary.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Robotkinematik/10/Summary.png]]
 ### What is expected when using the Jacobian matrix?
 ![[What is expected when using the Jacobian matrix.png]]
 ### Multivariate functions

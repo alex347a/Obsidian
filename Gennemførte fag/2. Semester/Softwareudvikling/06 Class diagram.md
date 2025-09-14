@@ -3,7 +3,7 @@
 ### Arv (inheritance)
 ![[Arv (inheritance).png]]
 ### Multiplicity
-![[Pasted Images/2. Semester/Softwareudvikling/06/Multiplicity.png]]
+![[Noter/Pasted Images/Gennemførte fag/2. Semester/Softwareudvikling/06/Multiplicity.png]]
 VIGTIG: Stjerne betyder fra 0 til uendelig^^
 
 inheritance er defineret med de hvide pile
