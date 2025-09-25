@@ -106,10 +106,10 @@ If you cascade (put one after the other) the ZOH and this compensation filter, t
 In practice, we combine this compensation with the necessary low-pass filtering. The ideal, combined **Reconstruction Filter** would have a response that is the product of the compensation response and the ideal low-pass response:
 
 $$
-H_{\text{ideal_recon}}
+H_{\text{ideal} \textunderscore \text{recon}} (f) = H_\text{comp} (f) \cdot H_\text{lowpass}(f) = \frac{1}{T \cdot sinc(f T)} \cdot rect\left(\frac{f}{f_{s}}\right)
 $$
 
-**What this means in practice:** Instead of being flat up to f_s/2, this filter has a **gentle, rising gain** as the frequency approaches f_s/2. This rising gain precisely counteracts the falling gain (sinc) of the ZOH.
+**What this means in practice:** Instead of being flat up to $\frac{f_{s}}{2}$, this filter has a **gentle, rising gain** as the frequency approaches $\frac{f_{s}}{2}$. This rising gain precisely counteracts the falling gain (sinc) of the ZOH.
 ### Summary: Analogy
 Think of it like an audio system:
 - **The ZOH** is like a bad speaker that can't reproduce high frequencies well (it has a weak "treble" response).
@@ -119,7 +119,7 @@ Think of it like an audio system:
 
 Your final point is exactly right. Using a compensating filter is better because:
 
-1. **It Preserves Fidelity:** It correctly reconstructs the _entire_ frequency content of the original signal (within 0 to f_s/2), not just the low-frequency parts. The high frequencies are restored to their proper amplitude.
+1. **It Preserves Fidelity:** It correctly reconstructs the _entire_ frequency content of the original signal (within 0 to $\frac{f_{s}}{2}$), not just the low-frequency parts. The high frequencies are restored to their proper amplitude.
 2. **It's More Accurate:** The goal of reconstruction is to get as close as possible to the original analog signal before it was sampled. A compensating filter gets you much closer than a simple low-pass filter.
 
 In real-world DAC chips, this compensation is often a built-in characteristic of the analog output filter.
