@@ -39,3 +39,7 @@ As you can see in the second impulse sampling spectrum is the aliasing problem, 
 ![[Pasted image 20250925101133.png]]
 ![[Pasted image 20250925101449.png]]
 ![[Pasted image 20250925101620.png]]
+Reconstruction is when you want to go from a discrete/digital signal to an analogue/continuos signal, so you have a value for the amplitude at every time, and not just at your sampling times.
+![[Pasted image 20250925102034.png]]
+So you just set the value between two points to the value of the point before the next point.
+![[Pasted image 20250925102141.png]]
