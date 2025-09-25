@@ -16,3 +16,5 @@ The equation means you only have one symmetric shape until you do your pulse sam
 ![[Pasted image 20250925090015.png]]
 m is the index for the frequency copies, so $m=0$ is the original.
 ![[Pasted image 20250925091811.png]]
+A discrete signal in the time domain becomes a periodic frequen
+![[Pasted image 20250925092423.png]]
