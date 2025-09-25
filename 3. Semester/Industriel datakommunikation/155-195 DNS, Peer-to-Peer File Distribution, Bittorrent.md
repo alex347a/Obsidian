@@ -32,11 +32,11 @@ A centralized DNS server would be impractical due to:
 - **Maintenance:** Managing all Internet host records would be overwhelming.
 
 Instead, DNS uses a **distributed, hierarchical database** with three main server classes, organized in a hierarchy as shown:
-![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/4/2.17.png]]
+![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/4/Book/2.17.png]]
 #### 1. Root DNS Servers
 - There are over 1,000 root server instances worldwide, replicating 13 logical root servers.
 - They provide the IP addresses of **Top-Level Domain (TLD) servers**.
-![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/4/2.18.png]]
+![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/4/Book/2.18.png]]
 
 #### 2. Top-Level Domain (TLD) Servers
 - Each TLD (e.g., `.com`, `.org`, `.edu`, country codes like `.uk`) has its own server cluster.
