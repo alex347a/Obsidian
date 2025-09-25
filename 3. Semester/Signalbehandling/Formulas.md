@@ -42,3 +42,7 @@ Nyquist frequency: $\frac{f_{s}}{2}$
 T is the sampling interval
 $\tau$ is the pulse width
 $d= \frac{\tau}{T}$ is the duty factor
+
+![[Pasted image 20250925094345.png]]
+After doing pulse-sampling:
+Null is at $\frac{f_{s}}{d}$
