@@ -6,4 +6,7 @@ This concept is VERY IMPORTANT
 
 ### Time domain
 ![[Pasted image 20250925084655.png]]
-$p(t)$ is an impulse sequence. T is the sampling period. n is 
+$p(t)$ is an impulse sequence. T is the sampling period. n is the amount of samples. $*$ is not a star its just a $\cdot$ its NOT A CONVOLUTION. So you just take different points of the graph, you don't care how the graph actually looks between the dots.
+
+![[Pasted image 20250925085050.png]]
+If the signal is periodic it can be represented as a Fourier transform.
