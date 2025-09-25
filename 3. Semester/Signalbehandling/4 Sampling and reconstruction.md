@@ -34,3 +34,4 @@ Only pulse amplitude modulation is discussed in this course.
 ![[Pasted image 20250925094046.png]]
 ![[Pasted image 20250925094345.png]]
 As you can see the amplitude changes with pulse-sampling.
+![[Pasted image 20250925095338.png]]
