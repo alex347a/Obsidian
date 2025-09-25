@@ -35,3 +35,4 @@ Only pulse amplitude modulation is discussed in this course.
 ![[Pasted image 20250925094345.png]]
 As you can see the amplitude changes with pulse-sampling.
 ![[Pasted image 20250925095338.png]]
+As you can see in the second impulse sampling spectrum is the aliasing problem, because the sampling rate is only 200 Hz while the highest frequency is 120 Hz.
