@@ -61,7 +61,9 @@ When a digital signal is converted to an analog one, the most common method is t
     
 
 The frequency response (how much it attenuates at a given frequency, *f*) of the ZOH is given by the **sinc function**:  
-`H_zoh(f) = T * sinc(f * T) = T * (sin(πfT) / (πfT))`  
+$$
+H_{zoh}(f) = T \cdot sinc(f \cdot T) = T \cdot \frac{\sin(πfT)}{(πfT)}
+$$  
 where `T` is the sampling period.
 
 - **Key Point:** At the fundamental frequency (f=0), there is no attenuation. But as the frequency increases, the attenuation gets worse. This happens **within the Nyquist bandwidth (0 to f_s/2)**! So, your desired high-frequency components are already quieter than they should be.
@@ -91,16 +93,21 @@ We can build a single filter that does both. This is the "better filter" you're 
 
 The ideal compensation would be to apply a filter that has the exact opposite effect of the ZOH. This is the **reciprocal** of the ZOH's frequency response.
 
-- **Compensation Filter Response:** `H_comp(f) = 1 / H_zoh(f) = 1 / (T * sinc(fT))`
-    
+**Compensation Filter Response:** 
+$$
+H_{comp}(f) = \frac{1}{H_{zoh}(f)} = \frac{1}{T \cdot sinc(fT)}
+$$
 
-If you cascade (put one after the other) the ZOH and this compensation filter, their combined effect would be `H_zoh(f) * H_comp(f) = 1`. This means the signal passes through perfectly with no distortion!
+
+If you cascade (put one after the other) the ZOH and this compensation filter, their combined effect would be $H_{zoh}(f) \cdot H_{comp}(f) = 1$. This means the signal passes through perfectly with no distortion!
 
 **Combining Compensation with Anti-Imaging**
 
 In practice, we combine this compensation with the necessary low-pass filtering. The ideal, combined **Reconstruction Filter** would have a response that is the product of the compensation response and the ideal low-pass response:
 
-`H_ideal_recon(f) = H_comp(f) * H_lowpass(f) = (1 / (T * sinc(fT))) * [1 for |f| < f_s/2, 0 for |f| > f_s/2]`
+$$
+H_{\text{ideal_recon}}
+$$
 
 **What this means in practice:** Instead of being flat up to f_s/2, this filter has a **gentle, rising gain** as the frequency approaches f_s/2. This rising gain precisely counteracts the falling gain (sinc) of the ZOH.
 ### Summary: Analogy
@@ -125,24 +132,3 @@ In real-world DAC chips, this compensation is often a built-in characteristic of
 |**Analogy**|Turning up the volume on a bad speaker.|Using an equalizer to fix the speaker's response.|
 ### 
 Multiplying in the time domain is the convolution in the frequency domain and vice versa.
-
-### Step 1: The Problem - The Zero-Order Hold (ZOH)
-
-When a digital signal is converted to an analog one, the most common method is the **Zero-Order Hold (ZOH)**.
-
-- **What it does:** The DAC takes each digital sample value and holds it constant until the next sample is available. This creates a "stair-step" waveform.
-    
-- **The Issue (Spectral Attenuation):** This holding process acts like a filter with a specific frequency response that **attenuates** (weakens) frequencies in the desired signal.
-    
-
-The frequency response of the ZOH is given by the **sinc function**:
-
-text
-
-H_zoh(f) = T · sinc(fT) = T · sin(πfT)/(πfT)
-
-where `T` is the sampling period.
-
-- **Key Point:** At `f = 0`, there is no attenuation. But as the frequency increases, the attenuation gets worse. This happens **within the Nyquist bandwidth (0 to f_s/2)**! So, your desired high-frequency components are already quieter than they should be.
-    
-
