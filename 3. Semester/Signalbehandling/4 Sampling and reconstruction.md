@@ -26,3 +26,8 @@ Your sampling frequency must always be at least twice the highest frequency in t
 ### Nyquist frequency: $\frac{f_{s}}{2}$ 
 ![[Pasted image 20250925093245.png]]
 The typical value is about 20%.
+
+![[Pasted image 20250925093712.png]]
+Only pulse amplitude modulation is discussed in this course.
+![[Pasted image 20250925093829.png]]
+![[Pasted image 20250925093834.png]]
