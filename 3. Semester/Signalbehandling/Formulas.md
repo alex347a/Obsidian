@@ -35,3 +35,11 @@ Power spectrum: $P(m) = \frac{1}{N^{2}} |X(m)|^{2} = \frac{1}{N^{2}} ([Re (X(m))
 
 Center frequency: $\omega_{c} = \sqrt{\omega_{a_{1}} \cdot \omega_{a_{2}}}$ 
 Stopband frequency: $\frac{\omega_{s}}{\omega_{a}}$
+
+Nyquist frequency: $\frac{f_{s}}{2}$
+
+![[Pasted image 20250925093245.png]]
+
+T is the sampling interval
+$\tau$ is the pulse width
+$d= \frac{\tau}{T}$ is the duty factor
