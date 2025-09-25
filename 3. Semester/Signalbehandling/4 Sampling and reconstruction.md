@@ -43,3 +43,9 @@ Reconstruction is when you want to go from a discrete/digital signal to an analo
 ![[Pasted image 20250925102034.png]]
 So you just set the value between two points to the value of the point before the next point.
 ![[Pasted image 20250925102141.png]]
+![[Pasted image 20250925102306.png]]
+The striped line is the original signal. The lowpass filter is at 4 because it is half of the sampling frequency at 8 kHz. 
+
+### MANGLER ET SLIDE DER HEDDER CORRECTION OF AMPLITUDE RESPONSE.
+
+you add the reciprocal of the function to your reconstruction filter to compensate of the attenuationed because of the zero hold.
