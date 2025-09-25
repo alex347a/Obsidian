@@ -12,3 +12,6 @@ $p(t)$ is an pulse sequence. T is the sampling period. n is the amount of sample
 If the signal is periodic it can be represented as a Fourier transform where $C_{m}$ is the Fourier coefficient. Since the pulse signal is also periodic, it can also be Fourier transformed.
 ![[Pasted image 20250925085617.png]]
 Remember here $*$ is wrong, it's just $\cdot$
+The equation means you only have one symmetric shape until you do your pulse sampling, which then repeats the shape:
+![[Pasted image 20250925090015.png]]
+m is the index for the frequency copies, so $m=0$ is the original.
