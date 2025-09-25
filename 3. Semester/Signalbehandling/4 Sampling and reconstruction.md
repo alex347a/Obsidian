@@ -16,5 +16,9 @@ The equation means you only have one symmetric shape until you do your pulse sam
 ![[Pasted image 20250925090015.png]]
 m is the index for the frequency copies, so $m=0$ is the original.
 ![[Pasted image 20250925091811.png]]
-A discrete signal in the time domain becomes a periodic frequen
+A discrete signal in the time domain becomes a periodic spectra in the frequency domain. For example a square wave becomes a sinusoidal.
+A periodic signal in the time domain becomes a discrete spectra in the frequency domain. For example a sinusoidal becomes a square.
 ![[Pasted image 20250925092423.png]]
+Aliasing is when the sample frequency is too low so the repeated spectra overlaps.
+![[Pasted image 20250925092838.png]]
+![[Pasted image 20250925092845.png]]
