@@ -126,3 +126,23 @@ In real-world DAC chips, this compensation is often a built-in characteristic of
 ### 
 Multiplying in the time domain is the convolution in the frequency domain and vice versa.
 
+### Step 1: The Problem - The Zero-Order Hold (ZOH)
+
+When a digital signal is converted to an analog one, the most common method is the **Zero-Order Hold (ZOH)**.
+
+- **What it does:** The DAC takes each digital sample value and holds it constant until the next sample is available. This creates a "stair-step" waveform.
+    
+- **The Issue (Spectral Attenuation):** This holding process acts like a filter with a specific frequency response that **attenuates** (weakens) frequencies in the desired signal.
+    
+
+The frequency response of the ZOH is given by the **sinc function**:
+
+text
+
+H_zoh(f) = T · sinc(fT) = T · sin(πfT)/(πfT)
+
+where `T` is the sampling period.
+
+- **Key Point:** At `f = 0`, there is no attenuation. But as the frequency increases, the attenuation gets worse. This happens **within the Nyquist bandwidth (0 to f_s/2)**! So, your desired high-frequency components are already quieter than they should be.
+    
+
