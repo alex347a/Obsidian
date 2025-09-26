@@ -73,4 +73,4 @@ POP: kopierer toppen af stacken til en variabel og erstatter den værdi der i fo
 ![[Pasted image 20250926095745.png]]
 
 ## Opgave
-![[Pasted image 20250926100805.png]]
+![[Pasted image 20250926100805.png]]![[Pasted image 20250926095716.png]]
