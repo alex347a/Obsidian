@@ -47,10 +47,9 @@ ved unsigned: MBR lægges på de 8 LSB og de øvre 24 bit sættes til 0.
 ved signed: MBR lægges på de 8 LSB og de øvre 24 bit sættes til værdien af bit 7, hvis bit 7 er 1 (negativ) så sættes bit 8-31 til 1, mens hvis værdien af bit 7 er 0 (positiv), så sættes bit 8-31 til 0
 
 ### Timing af hukommelse
-TIMING AF HUKOMMELSE SLIDE
+![[Pasted image 20250926095328.png]]
 
 ![[4.6.png]]
-INDSÆT SLIDE MED DET HER BILLEDE PÅ
 
 ### MIR
 INDSÆT SLIDE MED MIR
