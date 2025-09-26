@@ -31,3 +31,5 @@ Eksempel på at ligge to tal sammen:
 load et tal fra ?? sæt den på hold og så load sit næste tal og læg dem sammen.
 
 En shifter fungerer ved at der går et clock signal ind, og så har shifteren et input, hvor man kan læse alle værdierne af alle felterne, hvis 1 ligger helt til venstre så hver gang clock cyklus ændrer sig så rykker 1-tallet en plads til højre.
+
+![[4.3.png]]Man laver et clock signal om til et puls signal ved at 
