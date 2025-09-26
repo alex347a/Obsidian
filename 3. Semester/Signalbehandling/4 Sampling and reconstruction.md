@@ -46,7 +46,7 @@ So you just set the value between two points to the value of the point before th
 ![[Pasted image 20250925102306.png]]
 The striped line is the original signal. The lowpass filter is at 4 because it is half of the sampling frequency at 8 kHz. 
 
-### MANGLER ET SLIDE DER HEDDER CORRECTION OF AMPLITUDE RESPONSE.
+![[Pasted image 20250926090959.png]]
 
 You add the reciprocal of the function to your reconstruction filter to compensate of the attenuation because of the zero hold. This makes a better filter than using a low pass filter, since the low pass filter filters all of the high frequencies out completely.
 

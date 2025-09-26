@@ -48,4 +48,8 @@ ved signed: MBR lægges på de 8 LSB og de øvre 24 bit sættes til værdien af 
 
 TIMING AF HUKOMMELSE SLIDE
 
-![[Pasted image 20250926090805.png]]
+![[4.6.png]]
+INDSÆT SLIDE MED DET HER BILLEDE PÅ
+
+INDSÆT SLIDE MED MIR
+
