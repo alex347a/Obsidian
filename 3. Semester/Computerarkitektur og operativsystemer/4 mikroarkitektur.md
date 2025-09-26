@@ -35,3 +35,9 @@ load et tal fra ?? sæt den på hold og så load sit næste tal og læg dem samm
 En shifter fungerer ved at der går et clock signal ind, og så har shifteren et input, hvor man kan læse alle værdierne af alle felterne, hvis 1 ligger helt til venstre så hver gang clock cyklus ændrer sig så rykker 1-tallet en plads til højre.
 
 ![[4.3.png]]Man laver et clock signal om til et puls signal ved at bruge and gates med et delay, fordi så bliver signalet høj i lavere tid.
+
+Det er vigtigt at den tid klokken er lav skal være lang nok til at elektronikken kan nå at udføre det der skal gøres.
+
+Der er to porte til hukommelsen hvor 32 bit porten er styret af MAR og MDR mens en 8 bit port er styret af PC og MBR.
+
+MAR og MDR som tilgår wordstørrelse $2^{32}$ er 4 GB memory, hvor der er 1 GB adresser.
