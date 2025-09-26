@@ -66,3 +66,7 @@ ADD: Adder de øverste to variable og lægger resultatet på stacken.
 POP: kopierer toppen af stacken til en variabel og erstatter den værdi der i forvejen stod der.
 
 ### IJVM hukommelsesmodel
+
+### IJVM instruktionssæt
+
+#### Eksempel
