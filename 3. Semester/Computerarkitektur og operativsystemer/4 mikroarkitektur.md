@@ -50,22 +50,24 @@ ved signed: MBR lægges på de 8 LSB og de øvre 24 bit sættes til værdien af 
 ![[Pasted image 20250926095328.png]]
 
 ![[4.6.png]]
-
+![[Pasted image 20250926095406.png]]
 ### MIR
-INDSÆT SLIDE MED MIR
+![[Pasted image 20250926095416.png]]
 
-JAM SLIDE
+![[Pasted image 20250926095446.png]]
 Z er hvis ALUen har beregnet et 0, N er negativt tal
 
 ### LV og SP Lokale variable
-
+![[Pasted image 20250926095514.png]]
 ### Operand stack
 PUSH: lægger en variabel ind øverst på stacken.
 ADD: Adder de øverste to variable og lægger resultatet på stacken.
 POP: kopierer toppen af stacken til en variabel og erstatter den værdi der i forvejen stod der.
-
 ### IJVM hukommelsesmodel
-
+![[Pasted image 20250926095622.png]]
+![[Pasted image 20250926095635.png]]
+![[Pasted image 20250926095700.png]]
 ### IJVM instruktionssæt
-
+![[Pasted image 20250926095716.png]]
 #### Eksempel
+![[Pasted image 20250926095745.png]]
