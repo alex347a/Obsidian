@@ -41,3 +41,9 @@ Det er vigtigt at den tid klokken er lav skal være lang nok til at elektronikke
 Der er to porte til hukommelsen hvor 32 bit porten er styret af MAR og MDR mens en 8 bit port er styret af PC og MBR.
 
 MAR og MDR som tilgår wordstørrelse $2^{32}$ er 4 GB memory, hvor der er 1 GB adresser.
+
+MBR er der unsigned og signed data:
+ved unsigned: MBR lægges på de 8 LSB og de øvre 24 bit sættes til 0.
+ved signed: MBR lægges på de 8 LSB og de øvre 24 bit sættes til værdien af bit 7, hvis bit 7 er 1 (negativ) så sættes bit 8-31 til 1, mens hvis værdien af bit 7 er 0 (positiv), så sættes bit 8-31 til 0
+
+TIMING AF HUKOMMELSE
