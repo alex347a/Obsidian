@@ -53,3 +53,6 @@ INDSÆT SLIDE MED DET HER BILLEDE PÅ
 
 INDSÆT SLIDE MED MIR
 
+JAM SLIDE
+Z er hvis ALUen har beregnet et 0, N er negativt tal
+
