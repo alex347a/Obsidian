@@ -46,4 +46,6 @@ MBR er der unsigned og signed data:
 ved unsigned: MBR lægges på de 8 LSB og de øvre 24 bit sættes til 0.
 ved signed: MBR lægges på de 8 LSB og de øvre 24 bit sættes til værdien af bit 7, hvis bit 7 er 1 (negativ) så sættes bit 8-31 til 1, mens hvis værdien af bit 7 er 0 (positiv), så sættes bit 8-31 til 0
 
-TIMING AF HUKOMMELSE
+TIMING AF HUKOMMELSE SLIDE
+
+![[Pasted image 20250926090805.png]]
