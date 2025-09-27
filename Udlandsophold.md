@@ -20,3 +20,9 @@ ANSØGNINGEN TIL DENNE SKAL SENEST VÆRE SENDT DEN 24 OKTOBER 2025
 Studerende på Syddansk Universitet, som læser fag, der er rettet imod industri og/eller handel."
 
 ![[Pasted image 20250928000820.png]]
+
+
+#### Shibaura University
+Please kindly understand that even for applications from partner universities, an application (registration) fee is still required.
+Det koster 1280 kr.
+![[Pasted image 20250928002836.png]]
