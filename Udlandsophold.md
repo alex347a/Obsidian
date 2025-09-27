@@ -10,3 +10,13 @@
 ### Legater
 https://mitsdu.dk/da/mit_studie/legater
 ![[Pasted image 20250928000039.png]]
+
+![[Pasted image 20250928000544.png]]
+ANSØGNINGEN TIL DENNE SKAL SENEST VÆRE SENDT DEN 24 OKTOBER 2025
+![[Pasted image 20250928000458.png]]
+
+![[Pasted image 20250928000744.png]]
+"**Målgruppe**
+Studerende på Syddansk Universitet, som læser fag, der er rettet imod industri og/eller handel."
+
+![[Pasted image 20250928000820.png]]
