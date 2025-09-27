@@ -158,3 +158,4 @@ This helps system administrators with network inventory but is also used by atta
 ![[3.16.png]]
 JEG ER NÅET TIL SIDE 254
 ![[Table 3.1.png]]
+![[Table 3.2.png]]
