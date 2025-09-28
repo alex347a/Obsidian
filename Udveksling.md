@@ -26,6 +26,10 @@ Studerende på Syddansk Universitet, som læser fag, der er rettet imod industri
 Please kindly understand that even for applications from partner universities, an application (registration) fee is still required.
 Det koster 1280 kr.
 ![[Pasted image 20250928002836.png]]
+Bud på fag:
+Statistik
+Mechatronics
+
 #### Osaka
 Der er ingen kurser til robtek.
 
