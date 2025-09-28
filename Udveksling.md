@@ -27,4 +27,7 @@ Please kindly understand that even for applications from partner universities, a
 Det koster 1280 kr.
 ![[Pasted image 20250928002836.png]]
 #### Osaka
+Der er ingen kurser til robtek.
 
+### Chuo
+Der er ingen kurser til robtek
