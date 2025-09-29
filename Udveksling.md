@@ -22,13 +22,15 @@ Studerende på Syddansk Universitet, som læser fag, der er rettet imod industri
 ![[Pasted image 20250928000820.png]]
 
 
-#### Shibaura University
+### Shibaura University
 Please kindly understand that even for applications from partner universities, an application (registration) fee is still required.
 Det koster 1280 kr.
 ![[Pasted image 20250928002836.png]]
-Bud på fag:
-Statistik
-Mechatronics
+### Bud på fag:
+#### Statistik
+https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/150795.html.en?y=2024&g=M00
+
+#### Mechatronics
 
 #### Osaka
 Der er ingen kurser til robtek.
