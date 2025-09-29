@@ -27,11 +27,12 @@ Please kindly understand that even for applications from partner universities, a
 Det koster 1280 kr.
 ![[Pasted image 20250928002836.png]]
 ### Bud på fag:
-#### Statistik for udenlandske studerende er kun tilgængeligt i foråret det i efteråret er ikke til udenlandske studerende
+#### **Statistik for udenlandske studerende er kun tilgængeligt i foråret det i efteråret er ikke til udenlandske studerende**
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/150795.html.en?y=2024&g=M00
 
 #### Mechatronics
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149182.html?g=E00
+![[Pasted image 20250929165116.png]]
 
 #### Introduction to affective computing
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
@@ -39,6 +40,8 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
 #### Introduction to Advanced Science and Technology
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149646.html?g=MM0
 
+#### Introduction to Computer Science and Engineering
+https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/148850.html?g=L01
 #### Osaka
 Der er ingen kurser til robtek.
 
