@@ -370,68 +370,43 @@ TCP is the Internet's connection-oriented, reliable transport protocol. It build
     - With 40 bytes for TCP/IP headers, a typical MSS is **1460 bytes**.
 - On the receiving end, data is placed in the TCP **receive buffer**, from which the application process reads.
 
-**3.5.2 TCP Segment Structure**
+**TCP Segment Structure**
 
-The TCP segment consists of a header and a data field. The header is typically 20 bytes (without options). (INSERT FIGURE 3.29 HERE)
-
+The TCP segment consists of a header and a data field. The header is typically 20 bytes (without options).
+![[3.29.png]]
 **Key Header Fields:**
-
 - **Source & Destination Port Numbers:** For multiplexing/demultiplexing.
-    
 - **Checksum:** For error detection.
-    
 - **Sequence Number (32-bit):** The byte-stream number of the first data byte in the segment.
-    
 - **Acknowledgment Number (32-bit):** The sequence number of the next byte the sender of this segment expects to receive. It is a **cumulative acknowledgment**.
-    
 - **Receive Window (16-bit):** Used for flow control (indicates the number of bytes the receiver is willing to accept).
-    
 - **Header Length (4-bit):** Length of the TCP header in 32-bit words.
-    
 - **Options Field (Variable-length):** Used for negotiating parameters like MSS.
-    
 - **Flag Fields (6 bits):**
-    
     - **ACK:** Indicates that the acknowledgment number field is valid.
-        
     - **SYN, FIN, RST:** Used for connection setup and teardown.
-        
     - **PSH, URG:** Rarely used in practice.
-        
 
 **Sequence and Acknowledgment Numbers in Detail**
 
 **How Sequence Numbers Work:**
-
 - TCP views data as an **ordered stream of bytes**.
-    
 - The sequence number for a segment is the byte-stream number of the **first byte** in that segment's data field.
-    
-- **Example:** A 500,000-byte file with an MSS of 1,000 bytes would be broken into 500 segments. The first segment has sequence number 0, the second has 1000, the third has 2000, and so on. (INSERT FIGURE 3.30 HERE)
-    
+- **Example:** A 500,000-byte file with an MSS of 1,000 bytes would be broken into 500 segments. The first segment has sequence number 0, the second has 1000, the third has 2000, and so on.
+![[3.30.png]]
 
 **How Acknowledgment Numbers Work:**
-
 - Because TCP is full-duplex, each segment also carries an acknowledgment for data flowing in the reverse direction.
-    
 - The acknowledgment number is the sequence number of the **next byte that the receiver expects to receive**. This is a **cumulative acknowledgment**.
-    
 - **Example 1:** If Host A has received all bytes from B up through byte 535, it will set the acknowledgment number to **536** in its next segment to B.
-    
 - **Example 2:** If Host A has received bytes 0-535 and then bytes 900-1000 (but is missing 536-899), it will still acknowledge up to the first missing byte, sending an ACK for **536**.
-    
 
 **Out-of-Order Segments:**
-
 - The TCP RFCs allow implementers to decide how to handle out-of-order segments.
-    
 - The practical and efficient approach is for the receiver to **buffer out-of-order bytes** and wait for the missing data to fill the gaps, rather than discarding them.
-    
 
 **Initial Sequence Number (ISN):**
-
 - Both sides of a connection **randomly choose an initial sequence number**.
-    
 - This prevents a segment from a previous, terminated connection from being mistaken for a segment in a new connection between the same hosts and ports.
 
 
