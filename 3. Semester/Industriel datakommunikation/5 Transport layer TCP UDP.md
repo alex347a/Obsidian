@@ -56,3 +56,6 @@ Cumulative acknowledgements: the connection knows that all data up to that point
 ![[Pasted image 20250929105107.png]]
 ### TCP Connection management
 ![[Pasted image 20250929105214.png]]
+![[Pasted image 20250929105340.png]]
+### TCP 3-way handshake
+![[Pasted image 20250929105617.png]]
