@@ -40,3 +40,6 @@ RST: RESET
 SYN: SYNCHRONIZE
 FIN: FINISH
 ![[Pasted image 20250929103117.png]]
+#### Example
+![[Pasted image 20250929103336.png]]
+There are two different sequences for the hosts and when they send the number it means they have received data up to that sequence, so the number is the next to be sent. 
