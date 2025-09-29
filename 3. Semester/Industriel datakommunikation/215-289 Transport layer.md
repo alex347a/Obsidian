@@ -3,7 +3,8 @@
 The transport layer is a central piece of the network architecture, residing between the application and network layers. It provides communication services directly to application processes running on different hosts.
 
 **Logical Communication:**  
-The transport layer provides **logical communication** between application processes. From the application's perspective, it seems as if the hosts are directly connected, even if they are on opposite sides of the planet connected via numerous routers. This abstraction frees applications from worrying about the underlying physical infrastructure. (INSERT FIGURE 3.1 HERE)
+The transport layer provides **logical communication** between application processes. From the application's perspective, it seems as if the hosts are directly connected, even if they are on opposite sides of the planet connected via numerous routers. This abstraction frees applications from worrying about the underlying physical infrastructure.
+![[3.1.png]]
 
 **Key Points:**
 - Transport-layer protocols are implemented **only in end systems**, not in network routers.
@@ -27,7 +28,6 @@ The transport layer resides directly above the network layer. While both provide
 - **Transport Layer:** Provides logical communication **between processes** (applications) running on those hosts.
 #### Household Analogy
 This relationship is illustrated with a household analogy (and in Figure 3.1):
-![[3.1.png]]
 - **Houses** = **Hosts** (End systems)
 - **Cousins** in each house = **Application processes**
 - **Letters** in envelopes = **Application messages**
@@ -91,7 +91,8 @@ Multiplexing and demultiplexing are the fundamental services that extend the net
 - **Multiplexing:** At the sending host, the job of gathering data chunks from different application processes (via their sockets), encapsulating each chunk with header information to create segments, and passing the segments to the network layer.
 
 **The Role of Sockets:**  
-The transport layer delivers data to **sockets**, not directly to processes. Each socket is a unique endpoint for communication. A host running multiple network applications (e.g., a web browser, an FTP client, and Telnet sessions) will have multiple sockets. (INSERT FIGURE 3.2 HERE)
+The transport layer delivers data to **sockets**, not directly to processes. Each socket is a unique endpoint for communication. A host running multiple network applications (e.g., a web browser, an FTP client, and Telnet sessions) will have multiple sockets.
+![[3.2.png]]
 
 **How Demultiplexing Works: Port Numbers**  
 Demultiplexing relies on two special fields in every transport-layer segment header:
@@ -160,7 +161,7 @@ Web servers use TCP sockets and port numbers in specific ways:
 - A Web server listens on a well-known port (e.g., port 80 for HTTP).
 - All client segments sent to the server have **destination port 80**.
 - The server distinguishes between different clients using the **source IP address and source port number** from each segment, as illustrated in Figure 3.5.
-![[3.5.png]]
+![[3.5 1.png]]
 
 **Server Implementation:**
 - Traditional servers might spawn a **new process** for each connection, each with its own connection socket.
@@ -245,9 +246,9 @@ The protocol is built incrementally, handling increasingly complex channel model
     - If the sender's timer expires before an ACK is received, it assumes the packet (or its ACK) was lost and **retransmits**.
     - This approach handles lost data packets and lost ACK packets.
     - The sequence number handles the duplicate packets that result from premature timeouts (when a packet or ACK is merely delayed, not lost).
-- rdt3.0 is known as the **Alternating-Bit Protocol**. (INSERT FIGURE 3.15 & 3.16 HERE)
+- rdt3.0 is known as the **Alternating-Bit Protocol**.
 ![[3.15.png]]
-![[3.16.png]]
+![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/5/3.16.png]]
 **Summary of Key Mechanisms:**
 - **Checksums:** For error detection.
 - **Sequence Numbers:** To detect duplicate packets.
@@ -256,6 +257,88 @@ The protocol is built incrementally, handling increasingly complex channel model
 - **Retransmission:** The core action for recovery from errors and loss.
 
 These four mechanisms are the core building blocks for reliable data transfer, and are used extensively by TCP.
+### **Pipelined Reliable Data Transfer Protocols**
+**The Performance Problem of Stop-and-Wait (rdt3.0)**
+- rdt3.0 is correct but has very poor performance because it is a **stop-and-wait** protocol.
+- The sender must wait a full **Round-Trip Time (RTT)** for an ACK before sending the next packet.
+- This leads to very low **sender utilization**: `U_sender = (L/R) / (RTT + L/R)`
+    - **Example:** On a 1 Gbps link with a 30 msec RTT and 1KB packets, utilization is a dismal **0.027%**, yielding an effective throughput of only ~267 kbps.
+- The solution is **pipelining**.
+
+#### **Pipelining**
+- The sender is allowed to send **multiple packets** before waiting for acknowledgments.
+- This "fills the pipeline" and dramatically increases utilization, as shown in Figure 3.18(b).
+![[3.17.png]]
+![[3.18.png]]
+- **Consequences of Pipelining:**
+    1. **Increased Sequence Number Range:** Must be large enough to cover all in-flight packets.
+    2. **Increased Buffering:** Sender and receiver must be able to buffer multiple packets.
+    3. **New Error Recovery Strategies:** Two primary approaches: **Go-Back-N (GBN)** and **Selective Repeat (SR)**.
+### **Go-Back-N (GBN)**
+**Core Concept:**
+- The sender can have up to **N** unacknowledged packets in the pipeline.
+- This creates a **sliding window** of size N over the sequence number space.
+![[3.19.png]]
+- The window slides forward as cumulative acknowledgments are received.
+
+**Sender Rules (Figure 3.20):**
+- **Variables:**
+    - `base`: Sequence number of the oldest unacknowledged packet.
+    - `nextseqnum`: Sequence number of the next packet to be sent.
+- **Three Main Events:**
+    1. **Invocation from Above (`rdt_send`):** If the window is not full (`nextseqnum < base + N`), send the packet and increment `nextseqnum`. If the window is full, the sender refuses the data (or buffers it).
+    2. **Receipt of an ACK:** ACKs are **cumulative**. An ACK for sequence number `n` acknowledges all packets up to and including `n`. The window slides so that `base = n + 1`.
+    3. **Timeout:** The sender uses a **single timer** for the oldest unacknowledged packet. If a timeout occurs, it **retransmits all packets** from `base` to `nextseqnum - 1`. This is the "Go-Back-N" action.
+
+**Receiver Rules (Figure 3.21):**
+
+- The receiver only acknowledges **in-order** packets.
+- If the expected packet (`expectedseqnum`) is received correctly, it is delivered and an ACK is sent.
+- **All out-of-order packets are discarded**, and the receiver re-sends an ACK for the last correctly received in-order packet.
+- **Advantage:** Receiver simplicity (no need to buffer out-of-order packets).
+- **Disadvantage:** A single lost packet can cause the retransmission of many packets unnecessarily, which is inefficient on lossy or long-delay links.
+
+**Operation:** Figure 3.22 shows GBN in action with a window size of 4. A single lost packet (pkt2) causes all subsequent packets (pkt3, pkt4, pkt5) to be discarded and retransmitted.
+
+---
+
+### **Selective Repeat (SR)**
+
+**Core Concept:**
+
+- GBN can be inefficient if the window size or error rate is high.
+    
+- **Selective Repeat** aims to have the sender **retransmit only the packets that are suspected of being lost or corrupted**.
+    
+- This requires the receiver to **individually acknowledge** each correctly received packet (non-cumulative ACKs) and to **buffer out-of-order packets**.
+    
+
+**How SR Works:**
+
+- **Sender:**
+    
+    - Maintains a timer for each individual packet in the window.
+        
+    - Retransmits a packet only if its timer expires.
+        
+- **Receiver:**
+    
+    - Sends an **ACK for any correctly received packet**, whether in-order or not.
+        
+    - If a packet is received out-of-order but correctly, it is **buffered**.
+        
+    - Once all lower-sequence-number packets have been received, a batch of in-order data can be delivered to the upper layer.
+        
+
+**SR Advantages and Complexity:**
+
+- **Advantage:** More efficient than GBN; only lost packets are retransmitted, preserving bandwidth.
+    
+- **Complexity:**
+    
+    - Requires more sophisticated logic and state at both sender and receiver.
+        
+    - The sender and receiver windows are no longer identical, requiring careful management to avoid sequence number confusion, especially when the sequence number space is limited.
 
 
 
@@ -284,6 +367,5 @@ These four mechanisms are the core building blocks for reliable data transfer, a
 
 
 
-![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/5/3.16.png]]
 ![[Table 3.1.png]]
 ![[Table 3.2.png]]
