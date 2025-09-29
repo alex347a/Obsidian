@@ -27,7 +27,7 @@ Please kindly understand that even for applications from partner universities, a
 Det koster 1280 kr.
 ![[Pasted image 20250928002836.png]]
 ### Bud på fag:
-#### Statistik er kun tilgængeligt i foråret
+#### Statistik for udenlandske studerende er kun tilgængeligt i foråret det i efteråret er ikke til udenlandske studerende
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/150795.html.en?y=2024&g=M00
 
 #### Mechatronics
