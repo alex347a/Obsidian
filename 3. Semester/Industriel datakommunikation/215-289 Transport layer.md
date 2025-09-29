@@ -155,6 +155,8 @@ The fact that servers listen on specific ports has security implications. **Por
 
 This helps system administrators with network inventory but is also used by attackers to find vulnerable services (e.g., an application with a known security flaw listening on a specific port).
 
+
+
 ![[3.16.png]]
 ![[Table 3.1.png]]
 ![[Table 3.2.png]]
