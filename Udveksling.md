@@ -45,10 +45,13 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
 ![[Pasted image 20250929165655.png]]
 #### Introduction to Advanced Science and Technology
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149646.html?g=MM0
-
+![[Pasted image 20250929165730.png]]
+![[Pasted image 20250929165743.png]]
 
 #### Introduction to Computer Science and Engineering
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/148850.html?g=L01
+![[Pasted image 20250929165819.png]]
+![[Pasted image 20250929165852.png]]
 #### Osaka
 Der er ingen kurser til robtek.
 
