@@ -308,6 +308,8 @@ These four mechanisms are the core building blocks for reliable data transfer, a
 - This requires the receiver to **individually acknowledge** each correctly received packet (non-cumulative ACKs) and to **buffer out-of-order packets**.
 
 **How SR Works:**
+![[3.23.png]]
+![[3.24 and 3.25.png]]
 - **Sender:**
     - Maintains a timer for each individual packet in the window.
     - Retransmits a packet only if its timer expires.
@@ -322,74 +324,49 @@ These four mechanisms are the core building blocks for reliable data transfer, a
     - Requires more sophisticated logic and state at both sender and receiver.
     - The sender and receiver windows are no longer identical, requiring careful management to avoid sequence number confusion, especially when the sequence number space is limited.
 
-**Sender & Receiver Views (Figure 3.23):**
-
-- **Sender:** Maintains a window of sent but unacknowledged packets. It must track the ACK status of each packet within the window.
-    
-- **Receiver:** Maintains its own window of expected packets. It acknowledges any correctly received packet within its window and buffers out-of-order packets.
-    
-
-**SR Sender Actions (Figure 3.24):**
-
-1. **Data from Above:** If the next sequence number is within the window, the packet is sent.
-    
-2. **Timeout:** **Each packet has its own logical timer.** If a timeout occurs, only that specific packet is retransmitted.
-    
-3. **ACK Received:** Mark the corresponding packet as acknowledged. If this packet is at the base of the window (`send_base`), slide the window forward to the next unacknowledged packet. Send any new packets that now fall within the window.
-    
-
-**SR Receiver Actions (Figure 3.25):**
-
-1. **Packet in [`rcv_base`, `rcv_base + N - 1`] (within window):**
-    
-    - Send a selective ACK for that packet.
-        
-    - If it's a new packet, buffer it.
-        
-    - If this packet has a sequence number equal to `rcv_base`, deliver this and any consecutively numbered buffered packets to the upper layer, and slide the receive window forward.
-        
-2. **Packet in [`rcv_base - N`, `rcv_base - 1`] (already acknowledged):** **Must re-send an ACK for this packet.** This is crucial to resynchronize the sender's window if the original ACK was lost.
-    
-3. **Otherwise:** Ignore the packet.
-    
-
 **Operation:** Figure 3.26 shows SR in action. Packet 2 is lost, but packets 3, 4, and 5 are buffered at the receiver. When packet 2 is retransmitted and received, the receiver can deliver packets 2, 3, 4, and 5 in order to the upper layer.
-
+![[3.26.png]]
 **The Critical Issue: Window Size and Sequence Number Space**
-
 - The sender and receiver windows are not always perfectly synchronized.
-    
 - With a finite sequence number range, an old, delayed packet from a previous cycle of sequence numbers can be mistaken for a new packet. (See Figure 3.27 for the classic dilemma).
-    
 - **Solution:** To prevent this ambiguity, the **window size (N) must be less than or equal to half the size of the sequence number space**.
-    
     - Example: For a k-bit sequence number field (range 0 to 2^k - 1), the maximum window size is 2^(k-1).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![[3.27.png]]
 ![[Table 3.1.png]]
+### **Summary of Reliable Data Transfer Mechanisms (Table 3.1)**
+
+|Mechanism|Use and Comments|
+|---|---|
+|**Checksum**|Detects bit errors in a transmitted packet.|
+|**Timer**|Used to trigger retransmission of a potentially lost packet. Can cause duplicate packets.|
+|**Sequence Number**|Allows detection of lost packets (gaps) and duplicate packets (same number).|
+|**Acknowledgment (ACK)**|Receiver tells sender a packet was received correctly. Can be individual or cumulative.|
+|**Negative Ack (NAK)**|Receiver tells sender a packet was not received correctly.|
+|**Window / Pipelining**|Allows multiple packets to be in flight, increasing sender utilization over stop-and-wait.|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![[Table 3.2.png]]
