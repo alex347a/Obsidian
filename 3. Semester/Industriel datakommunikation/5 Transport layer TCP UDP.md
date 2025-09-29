@@ -10,3 +10,6 @@ The transport layer doesnt concern itself with how we get across the internet, b
 ![[Pasted image 20250929082433.png]]
 ### Transport vs. network layer
 ![[Pasted image 20250929082722.png]]
+### Multiplex/demultiplex
+![[Pasted image 20250929083130.png]]
+Multiplexing is NOT packaging packets into one big package, but instead that all of the different packets are sent. Demultiplexing is making sure the packets are received at the right host.
