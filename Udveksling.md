@@ -31,6 +31,10 @@ Det koster 1280 kr.
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/150795.html.en?y=2024&g=M00
 
 #### Mechatronics
+https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149182.html?g=E00
+
+#### Introduction to affective computing
+https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
 
 #### Osaka
 Der er ingen kurser til robtek.
