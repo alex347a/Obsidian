@@ -282,6 +282,7 @@ These four mechanisms are the core building blocks for reliable data transfer, a
 - The window slides forward as cumulative acknowledgments are received.
 
 **Sender Rules (Figure 3.20):**
+![[3.20.png]]
 - **Variables:**
     - `base`: Sequence number of the oldest unacknowledged packet.
     - `nextseqnum`: Sequence number of the next packet to be sent.
@@ -291,7 +292,7 @@ These four mechanisms are the core building blocks for reliable data transfer, a
     3. **Timeout:** The sender uses a **single timer** for the oldest unacknowledged packet. If a timeout occurs, it **retransmits all packets** from `base` to `nextseqnum - 1`. This is the "Go-Back-N" action.
 
 **Receiver Rules (Figure 3.21):**
-
+![[3.21.png]]
 - The receiver only acknowledges **in-order** packets.
 - If the expected packet (`expectedseqnum`) is received correctly, it is delivered and an ACK is sent.
 - **All out-of-order packets are discarded**, and the receiver re-sends an ACK for the last correctly received in-order packet.
@@ -299,45 +300,26 @@ These four mechanisms are the core building blocks for reliable data transfer, a
 - **Disadvantage:** A single lost packet can cause the retransmission of many packets unnecessarily, which is inefficient on lossy or long-delay links.
 
 **Operation:** Figure 3.22 shows GBN in action with a window size of 4. A single lost packet (pkt2) causes all subsequent packets (pkt3, pkt4, pkt5) to be discarded and retransmitted.
-
----
-
+![[3.22.png]]
 ### **Selective Repeat (SR)**
-
 **Core Concept:**
-
 - GBN can be inefficient if the window size or error rate is high.
-    
 - **Selective Repeat** aims to have the sender **retransmit only the packets that are suspected of being lost or corrupted**.
-    
 - This requires the receiver to **individually acknowledge** each correctly received packet (non-cumulative ACKs) and to **buffer out-of-order packets**.
-    
 
 **How SR Works:**
-
 - **Sender:**
-    
     - Maintains a timer for each individual packet in the window.
-        
     - Retransmits a packet only if its timer expires.
-        
 - **Receiver:**
-    
     - Sends an **ACK for any correctly received packet**, whether in-order or not.
-        
     - If a packet is received out-of-order but correctly, it is **buffered**.
-        
     - Once all lower-sequence-number packets have been received, a batch of in-order data can be delivered to the upper layer.
-        
 
 **SR Advantages and Complexity:**
-
 - **Advantage:** More efficient than GBN; only lost packets are retransmitted, preserving bandwidth.
-    
 - **Complexity:**
-    
     - Requires more sophisticated logic and state at both sender and receiver.
-        
     - The sender and receiver windows are no longer identical, requiring careful management to avoid sequence number confusion, especially when the sequence number space is limited.
 
 
