@@ -49,3 +49,10 @@ There are two different sequences for the hosts and when they send the number it
 ![[Pasted image 20250929104238.png]]
 Threaded is if one process needs to talk to different users at once.
 ![[Pasted image 20250929104752.png]]
+### Retransmission scenarios
+![[Pasted image 20250929104947.png]]
+Cumulative acknowledgements: the connection knows that all data up to that point have been received.
+### TCP Fast retransmit
+![[Pasted image 20250929105107.png]]
+### TCP Connection management
+![[Pasted image 20250929105214.png]]
