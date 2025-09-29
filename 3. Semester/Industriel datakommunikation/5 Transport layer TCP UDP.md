@@ -32,4 +32,5 @@ Sometimes you can send jumbo packages for example for sending an HD image and ma
 Then you just do the ones compliment of the number. The checksum is computed at the sender, the sum is computed at both the sender and receiver, so the receiver calculates a sum from its received data and checks if it fits the checksum that was sent from the sender. It is not perfect, but it works pretty well for how easy it is to compute and is therefore a good match for UDP.
 ## TCP - Transmission Control Protocol
 ![[Pasted image 20250929101906.png]]
+Throughput: no means that there is no guarantee of what the throughput rate is.
 ![[Pasted image 20250929102053.png]]
