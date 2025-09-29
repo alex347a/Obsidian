@@ -44,6 +44,8 @@ FIN: FINISH
 ![[Pasted image 20250929103336.png]]
 There are two different sequences for the hosts and when they send the number it means they have received data up to that sequence, so the number is the next to be sent. 
 ![[Pasted image 20250929103737.png]]
-### Example threaded vs. non-threa
+### Example threaded vs. non-threaded
 ![[Pasted image 20250929103921.png]]
 ![[Pasted image 20250929104238.png]]
+Threaded is if one process needs to talk to different users at once.
+![[Pasted image 20250929104752.png]]
