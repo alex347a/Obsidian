@@ -19,3 +19,8 @@ Multiplexing is NOT packaging packets into one big package, but instead that all
 ![[Pasted image 20250929083422.png]]
 ### Connectionless demultiplexing 
 ![[Pasted image 20250929083706.png]]
+For UDP the same destination port will have the same socket open no matter who the source IP addresses are sent from.
+#### Example
+![[Pasted image 20250929084028.png]]
+### UDP: Segment header
+![[Pasted image 20250929084147.png]]
