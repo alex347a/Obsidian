@@ -203,6 +203,119 @@ The checksum provides **error detection** (not correction). The sender calcula
 
 **Why UDP Needs Checksum When Link Layer May Have Error Checking:**  
 This follows the **end-end principle** - since not all links guarantee error checking, and errors can occur in router memory, error detection must be implemented at the transport layer for true end-to-end reliability.
+### **Principles of Reliable Data Transfer**
+Reliable data transfer (RDT) is a fundamental networking problem, crucial not only for the transport layer (like TCP) but also for the link and application layers. The goal is to create a **reliable channel** from an unreliable one, ensuring no corrupted or lost data, and in-order delivery.
+
+**Framework (Figure 3.8):**
+- **Sender Side:** Invoked by `rdt_send(data)` from the upper layer. Sends packets into the channel using `udt_send(packet)`.
+- **Receiver Side:** Invoked by `rdt_rcv(packet)` from the lower layer. Delivers data to the upper layer using `deliver_data(data)`.
+    
+- The protocol is developed for **unidirectional** data transfer, but requires **bidirectional** communication for control packets (ACKs/NAKs).
+    
+
+---
+
+### **Building a Reliable Data Transfer Protocol**
+
+The protocol is built incrementally, handling increasingly complex channel models.
+
+**1. rdt1.0: Perfectly Reliable Channel**
+
+- **Assumption:** The underlying channel is perfectly reliable.
+    
+- **Operation:** The sender creates a packet from the data and sends it. The receiver receives the packet and delivers the data. There is no need for feedback from the receiver.
+    
+- This is a trivial protocol with one state for both sender and receiver. (INSERT FIGURE 3.9 HERE)
+    
+
+**2. rdt2.0: Channel with Bit Errors**
+
+- **Assumption:** Packets can have bit errors, but are not lost and are delivered in order.
+    
+- **Mechanisms introduced:**
+    
+    - **Error Detection:** Using checksums (like UDP).
+        
+    - **Receiver Feedback:** The receiver sends positive acknowledgments (**ACK**) for correct packets and negative acknowledgments (**NAK**) for corrupted packets.
+        
+    - **Retransmission:** The sender resends the packet when a NAK is received.
+        
+- This is a **stop-and-wait** protocol: the sender sends one packet and then waits for an ACK or NAK before proceeding. (INSERT FIGURE 3.10 HERE)
+    
+- **Flaw:** What if the ACK or NAK itself is corrupted? The sender wouldn't know if the data was received correctly.
+    
+
+**3. rdt2.1 & rdt2.2: Handling Corrupted ACKs/NAKs**
+
+- The solution is to add a **sequence number** to data packets.
+    
+- For this stop-and-wait scenario, a **1-bit sequence number** (0 or 1) is sufficient.
+    
+- The receiver uses the sequence number to detect duplicate packets caused by the sender retransmitting on a lost or corrupted ACK.
+    
+- **rdt2.1 (Figures 3.11 & 3.12):** Explicitly uses ACKs and NAKs. The sender and receiver FSMs double in size to track the current sequence number.
+    
+- **rdt2.2 (Figures 3.13 & 3.14):** A NAK-free version. The receiver sends an ACK for the last _correctly received_ packet. If the sender receives a **duplicate ACK** (two ACKs for the same sequence number), it knows the next packet was not received correctly and retransmits. The ACK packets now also include the sequence number they are acknowledging.
+    
+
+**4. rdt3.0: Lossy Channel with Bit Errors**
+
+- **Assumption:** The underlying channel can now both corrupt _and lose_ packets.
+    
+- **New Mechanism: Timer-based Retransmission.**
+    
+    - The sender starts a **countdown timer** each time it sends a packet (first time or retransmission).
+        
+    - If the sender's timer expires before an ACK is received, it assumes the packet (or its ACK) was lost and **retransmits**.
+        
+    - This approach handles lost data packets and lost ACK packets.
+        
+    - The sequence number handles the duplicate packets that result from premature timeouts (when a packet or ACK is merely delayed, not lost).
+        
+- rdt3.0 is known as the **Alternating-Bit Protocol**. (INSERT FIGURE 3.15 & 3.16 HERE)
+    
+
+**Summary of Key Mechanisms:**
+
+- **Checksums:** For error detection.
+    
+- **Sequence Numbers:** To detect duplicate packets.
+    
+- **Timers:** To recover from lost packets.
+    
+- **Acknowledgments (ACKs):** For positive receiver feedback.
+    
+- **Retransmission:** The core action for recovery from errors and loss.
+    
+
+These four mechanisms are the core building blocks for reliable data transfer, and are used extensively by TCP.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![[3.16.png]]
 ![[Table 3.1.png]]
