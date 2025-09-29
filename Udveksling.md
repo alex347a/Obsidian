@@ -36,6 +36,9 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149182.html?g=E00
 #### Introduction to affective computing
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
 
+#### Introduction to Advanced Science and Technology
+https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149646.html?g=MM0
+
 #### Osaka
 Der er ingen kurser til robtek.
 
