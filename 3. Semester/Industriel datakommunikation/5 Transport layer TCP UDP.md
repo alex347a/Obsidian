@@ -24,3 +24,6 @@ For UDP the same destination port will have the same socket open no matter who t
 ![[Pasted image 20250929084028.png]]
 ### UDP: Segment header
 ![[Pasted image 20250929084147.png]]
+Sometimes you can send jumbo packages for example for sending an HD image and making sure the entire frame is received at once. Datagram contains all of the data, while the segments are parts of the data, so the segments are a part of a datagram.
+### UDP: Checksum
+![[Pasted image 20250929084817.png]]
