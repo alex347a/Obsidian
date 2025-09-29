@@ -59,3 +59,7 @@ Cumulative acknowledgements: the connection knows that all data up to that point
 ![[Pasted image 20250929105340.png]]
 ### TCP 3-way handshake
 ![[Pasted image 20250929105617.png]]
+### TCP: Closing a connection
+![[Pasted image 20250929111514.png]]
+#### Example
+![[Pasted image 20250929111527.png]]
