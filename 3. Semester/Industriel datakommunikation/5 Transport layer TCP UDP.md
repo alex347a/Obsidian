@@ -22,7 +22,7 @@ Multiplexing is NOT packaging packets into one big package, but instead that all
 For UDP the same destination port will have the same socket open no matter who the source IP addresses are sent from.
 #### Example
 ![[Pasted image 20250929084028.png]]
-### UDP: Segment header
+### UDP: Segment header / Segment structure
 ![[Pasted image 20250929084147.png]]
 Sometimes you can send jumbo packages for example for sending an HD image and making sure the entire frame is received at once. Datagram contains all of the data, while the segments are parts of the data, so the segments are a part of a datagram.
 ### UDP: Checksum
@@ -34,3 +34,9 @@ Then you just do the ones compliment of the number. The checksum is computed at 
 ![[Pasted image 20250929101906.png]]
 Throughput: no means that there is no guarantee of what the throughput rate is.
 ![[Pasted image 20250929102053.png]]
+### TCP segment structure
+![[Pasted image 20250929102738.png]]
+RST: RESET
+SYN: SYNCHRONIZE
+FIN: FINISH
+![[Pasted image 20250929103117.png]]
