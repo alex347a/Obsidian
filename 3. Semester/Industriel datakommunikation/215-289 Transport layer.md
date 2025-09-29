@@ -409,11 +409,60 @@ The TCP segment consists of a header and a data field. The header is typically 2
 - Both sides of a connection **randomly choose an initial sequence number**.
 - This prevents a segment from a previous, terminated connection from being mistaken for a segment in a new connection between the same hosts and ports.
 
+### **Telnet: A Case Study for Sequence and Acknowledgment Numbers**
+Telnet is an interactive application used for remote login. It runs over TCP and provides a clear example of how sequence and acknowledgment numbers work in practice.
+**Key Telnet Behavior:**
+- Each character typed by the client is sent to the server.
+- The server **"echoes"** the character back to the client, which then displays it on the user's screen.
+- This means every character makes a **round trip** across the network.
 
+**Example: User types the letter 'C'**  
+(Assume initial sequence numbers are 42 for client-to-server data and 79 for server-to-client data). 
+![[3.31.png]]
+1. **Client to Server Segment:**
+    - **Data:** The single byte 'C'.
+    - **Sequence Number:** 42 (the first byte of the client's data stream).
+    - **Acknowledgment Number:** 79 (the client tells the server "I have received up to byte 78 and am expecting byte 79 next").
 
+2. **Server to Client Segment (Piggybacking):**
+    - **Purpose 1 (Acknowledgment):** Acknowledges the client's data. The ACK number is 43 ("I successfully received up to byte 42, send byte 43 next").
+    - **Purpose 2 (Data):** Echoes the byte 'C' back to the client.
+    - **Sequence Number:** 79 (the first byte of the server's data stream).
+    - **Acknowledgment Number:** 43.
+    - This is called **piggybacking**—the ACK for one direction is carried in a data segment going the other way.
 
+3. **Client to Server Segment:**
+    - **Purpose:** Acknowledges the server's echoed data.
+    - **Data:** None (this segment is an ACK-only).
+    - **Sequence Number:** 43 (the next sequence number the client would use for data; required even though there's no data).
+    - **Acknowledgment Number:** 80 ("I successfully received your data up to byte 79, send byte 80 next").
+### **Round-Trip Time Estimation and Timeout**
+TCP uses a timeout/retransmit mechanism. Setting the timeout interval correctly is critical: too short causes unnecessary retransmissions; too long causes slow recovery from lost segments.
+**1. Estimating the Round-Trip Time (RTT)**
+- **SampleRTT:** The time from when a segment is sent until its acknowledgment is received.
+    - TCP measures this **approximately once per RTT**, not for every single segment.
+    - It is **not measured for retransmitted segments** (to avoid ambiguity).
+- **EstimatedRTT:** A smoothed average of the SampleRTT values. It is an **Exponential Weighted Moving Average (EWMA)** that gives more weight to recent samples.
+    - **Formula:** `EstimatedRTT = (1 - α) * EstimatedRTT + α * SampleRTT`
+    - **Recommended α:** **0.125**
 
+**2. Estimating RTT Variation**
+- **DevRTT:** An estimate of how much the SampleRTT typically deviates from the EstimatedRTT. It is also an EWMA.
+    - **Formula:** `DevRTT = (1 - β) * DevRTT + β * | SampleRTT - EstimatedRTT |`
+    - **Recommended β:** **0.25**
 
+**3. Setting the Retransmission Timeout Interval (RTO)**
+- The timeout interval must be based on both the average RTT and its variability.
+- **Formula:** `TimeoutInterval = EstimatedRTT + 4 * DevRTT`
+- **Initial Value:** Recommended to be 1 second.
+- **On Timeout:** When a timeout occurs, the `TimeoutInterval` is **doubled**. This is a form of backoff to prevent overloading a congested network. It is recalculated using the formula above when new ACKs arrive.
+### **Principles in Practice: TCP Reliable Data Transfer**
+- TCP provides reliable data transfer using acknowledgments, timers, and sequence numbers, similar to the rdt3.0 principles.
+- It uses **pipelining** to have multiple unacknowledged segments in flight, improving throughput.
+- It features an **implicit NAK** mechanism: the receipt of **three duplicate ACKs** (indicating a segment is missing) triggers a **fast retransmit** before the timer expires.
+- The number of outstanding segments is controlled by **flow control** and **congestion control** mechanisms.
+
+DETTE ER NOTER INDTIL 268
 
 
 
