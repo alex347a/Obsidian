@@ -143,7 +143,7 @@ All subsequent segments from this client that match this four-tuple will be demu
 #### Illustration with Multiple Connections
 
 This mechanism allows a server to handle many simultaneous connections from different clients. As shown in Figure 3.5:
-![[3.5.png]]
+![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/5/3.5.png]]
 - **Host C** can have two HTTP connections to **Server B**, using different source ports (e.g., 26145 and 7532). Server B distinguishes them by the different source ports.
 - **Host A** can also have an HTTP connection to **Server B** using the same source port as one of Host C's connections (e.g., 26145). Server B can still distinguish them because the **source IP addresses are different** (A vs. C).
 
@@ -155,7 +155,54 @@ The fact that servers listen on specific ports has security implications. **Por
 
 This helps system administrators with network inventory but is also used by attackers to find vulnerable services (e.g., an application with a known security flaw listening on a specific port).
 
+### Web Servers and TCP
+Web servers use TCP sockets and port numbers in specific ways:
+- A Web server listens on a well-known port (e.g., port 80 for HTTP).
+- All client segments sent to the server have **destination port 80**.
+- The server distinguishes between different clients using the **source IP address and source port number** from each segment, as illustrated in Figure 3.5.
+![[3.5.png]]
 
+**Server Implementation:**
+- Traditional servers might spawn a **new process** for each connection, each with its own connection socket.
+- Modern high-performance servers typically use **one process with multiple threads**, where each thread handles a client connection with its own socket.
+
+**HTTP and Socket Lifespan:**
+- **Persistent HTTP:** The same TCP connection (and server socket) is used for multiple request/response exchanges.
+- **Non-persistent HTTP:** A new TCP connection and socket are created and closed for every single request/response, which can impact performance on busy servers.
+### Connectionless Transport: UDP
+UDP is a minimal, "no-frills" transport protocol that does little more than provide multiplexing/demultiplexing and error checking. It is **connectionless** - there is no handshaking before sending data.
+
+**Why Use UDP Instead of TCP?**  
+Despite TCP's reliability, UDP is preferred for certain applications because:
+1. **Finer Application-Level Control:** UDP sends data immediately without TCP's congestion control throttling or retransmission delays. This is crucial for real-time applications that need a minimum sending rate and can tolerate some loss.
+2. **No Connection Establishment:** UDP has no handshake delay, making it faster for simple request-response applications like DNS.
+3. **No Connection State:** UDP doesn't maintain connection state (buffers, sequence numbers, etc.), allowing servers to support more active clients.
+4. **Smaller Header Overhead:** UDP header is only 8 bytes vs. TCP's 20 bytes.
+
+**Application Protocol Usage:**  
+Figure 3.6 shows which applications use which transport protocols:
+![[3.6.png]]
+- **TCP:** Email (SMTP), remote access (Telnet/SSH), Web (HTTP), file transfer (FTP) - where reliability is critical.
+- **UDP:** DNS, network management (SNMP), streaming multimedia - where speed/low latency is prioritized over reliability.
+- **Both:** Some modern applications like streaming media may use either.
+
+**Congestion Control Concern:**  
+UDP's lack of congestion control can be problematic. Uncontrolled UDP senders can overwhelm routers and crowd out TCP traffic. Researchers have proposed mechanisms to add congestion control to UDP sources.
+
+**Reliability with UDP:**  
+Applications can implement their own reliability mechanisms on top of UDP (like Google's QUIC protocol), but this is complex to develop.
+#### UDP Segment Structure
+The UDP segment structure is simple, with only four header fields (each 16 bits/2 bytes):
+![[3.7.png]]
+1. **Source Port Number**
+2. **Destination Port Number**
+3. **Length** (header + data in bytes)
+4. **Checksum**
+#### UDP Checksum
+The checksum provides **error detection** (not correction). The sender calculates the 1s complement of the sum of all 16-bit words in the segment. The receiver verifies the checksum; if errors are detected, the segment is typically discarded.
+
+**Why UDP Needs Checksum When Link Layer May Have Error Checking:**  
+This follows the **end-end principle** - since not all links guarantee error checking, and errors can occur in router memory, error detection must be implemented at the transport layer for true end-to-end reliability.
 
 ![[3.16.png]]
 ![[Table 3.1.png]]
