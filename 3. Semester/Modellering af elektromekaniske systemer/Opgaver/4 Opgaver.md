@@ -44,12 +44,13 @@ $$
 $$
 D = (2 mg \sin(\theta))^{2} + 8 k m g l \sin(\theta)
 $$
-Indsætter i rodf-
+Indsætter i rod-formlen
 $$
 \frac{b^{2} \pm \sqrt{D}}{2a}
 $$
+Hvor jeg kun beregner den positive rod:
 $$
-\frac{2 \sin(\theta) l m g - 2 \sin(\theta) d m g}{2kd^{2}}
+\frac{2 mg \sin(\theta) + \sqrt{(2 m g \sin(\theta))^{2} + 8 k m g l \sin(\theta)}}{2k}
 $$
 c) Hvor har klodsen sin maksimale hastighed?
 Det er når fjederkraften er ligeså stor som tyngdekraften i bevægelsesretningen:
