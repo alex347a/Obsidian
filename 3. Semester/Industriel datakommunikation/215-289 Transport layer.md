@@ -522,7 +522,106 @@ This simplified model uses a **single retransmission timer** and handles three
     1. Most implementations **buffer out-of-order segments** at the receiver (an SR feature).
     2. With fast retransmit, it often only retransmits the single lost segment.
 - With the **Selective Acknowledgment (SACK)** extension, TCP becomes even more like an SR protocol, as the receiver can explicitly inform the sender about out-of-order blocks of data it has received.
+### **Flow Control**
+**The Problem:**
+- Each side of a TCP connection has a **receive buffer**.
+- If the sender transmits data too quickly for the receiving application to read it, the buffer can **overflow**, causing data loss.
 
+**The Solution: TCP Flow Control**
+- A **speed-matching service** that prevents the sender from overwhelming the receiver's buffer.
+- **Note:** This is separate from **congestion control**, which prevents the sender from overwhelming the _network_.
+
+**How it Works: The Receive Window (`rwnd`)**
+- The receiver tells the sender how much spare room it has in its buffer by advertising a **receive window (`rwnd`)** in every segment it sends back.
+- **`rwnd` is dynamic** and calculated as:
+    - `rwnd = RcvBuffer - [LastByteRcvd - LastByteRead]`
+    - Where:
+        - `RcvBuffer`: Total size of the receive buffer.
+        - `LastByteRcvd`: Last byte received from the network.
+        - `LastByteRead`: Last byte read by the application.
+- The sender is required to ensure that the amount of unacknowledged data it has sent is always less than or equal to the receiver's advertised `rwnd`:
+    - `LastByteSent - LastByteAcked <= rwnd` (INSERT FIGURE 3.38 HERE)
+
+**The Zero Window Problem and Persist Timer**
+- **Problem:** If the receiver's buffer fills up and it advertises `rwnd = 0`, the sender must stop transmitting. If the receiver later has space but has no data to send back, it won't send a new `rwnd` update, and the sender will be stuck.
+- **Solution:** The TCP specification requires the sender to periodically send a **1-byte "probe" segment**. This forces the receiver to respond with an ACK, which will contain the new, non-zero `rwnd` value.
+
+**UDP and Flow Control:**
+- UDP **does not provide flow control**. A slow receiver can easily have its buffer overflowed by a fast sender, resulting in lost datagrams.
+    
+
+---
+
+### **3.5.6 TCP Connection Management**
+
+TCP uses a **three-way handshake** to establish and a four-step process to terminate a connection.
+
+**Connection Establishment: The Three-Way Handshake** (INSERT FIGURE 3.39 HERE)
+
+1. **SYN:** The client sends a segment with the **SYN bit set to 1**. It also chooses a random **initial sequence number (`client_isn`)** and places it in the sequence number field.
+    
+2. **SYN-ACK:** The server allocates buffers and variables, then sends a segment back with:
+    
+    - **SYN bit set to 1**.
+        
+    - **ACK number set to `client_isn + 1`**.
+        
+    - Its own random **initial sequence number (`server_isn`)**.
+        
+3. **ACK:** The client allocates its own buffers and variables. It sends a segment back with:
+    
+    - **SYN bit set to 0**.
+        
+    - **ACK number set to `server_isn + 1`**.
+        
+    - This segment may already carry application data.
+        
+
+**Why a Three-Way Handshake?**
+
+- To ensure both sides are ready and agree on the initial sequence numbers, preventing old, duplicate connection segments from being misinterpreted.
+    
+
+**Connection Teardown** (INSERT FIGURE 3.40 HERE)
+
+- Either side can initiate closure. Suppose the client does:
+    
+    1. **FIN:** The client sends a segment with the **FIN bit set to 1**.
+        
+    2. **ACK:** The server sends an acknowledgment for the FIN.
+        
+    3. **FIN:** The server sends its own segment with the **FIN bit set to 1**.
+        
+    4. **ACK:** The client sends a final acknowledgment for the server's FIN.
+        
+- The client then enters a **`TIME_WAIT` state** (typically 30-60 seconds) before fully closing. This ensures the final ACK was received and allows any old duplicate segments to expire in the network.
+    
+
+**TCP State Transition Diagrams**
+
+- **Client States (Figure 3.41):** `CLOSED` -> `SYN_SENT` -> `ESTABLISHED` -> `FIN_WAIT_1` -> `FIN_WAIT_2` -> `TIME_WAIT` -> `CLOSED`
+    
+- **Server States (Figure 3.42):** `CLOSED` -> `LISTEN` -> `SYN_RCVD` -> `ESTABLISHED` -> `CLOSE_WAIT` -> `LAST_ACK` -> `CLOSED`
+    
+
+**Resetting a Connection: The RST Segment**
+
+- If a host receives a TCP segment for a port that is not open (no application is "listening"), it responds with a segment that has the **RST (Reset) flag set to 1**.
+    
+
+---
+
+### **Focus on Security: The SYN Flood Attack**
+
+- **The Attack:** An attacker sends a flood of TCP SYN segments, often with a spoofed source IP address. The server allocates resources for each half-open connection but never receives the final ACK to complete the handshake. This exhausts the server's resources, creating a **Denial-of-Service (DoS)** for legitimate clients.
+    
+- **The Defense: SYN Cookies**
+    
+    - The server does **not** allocate resources upon receiving a SYN.
+        
+    - Instead, it creates a special initial sequence number (the "cookie") in the SYN-ACK, which is a cryptographic hash of connection details and a secret number.
+        
+    - Only when a legitimate client returns the ACK (with `ack = cookie + 1`) does the server allocate resources and fully establish the connection.
 
 
 
