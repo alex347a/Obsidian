@@ -26,9 +26,16 @@ E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
 \end{align*}
 $$
 $$
-d=b^{2} - 4 ac
+D=b^{2} - 4 ac
 $$
 $$
-\frac{b^{2} \pm \sqrt{d}}{2a}
+\frac{b^{2} \pm \sqrt{D}}{2a}
 $$
 c) Hvor har klodsen sin maksimale hastighed?
+Det er når fjederkraften er ligeså stor som tyngdekraften i bevægelsesretningen:
+$$
+\begin{align*}
+F_{t} = m g \cdot \sin(\theta)\\
+
+\end{align*}
+$$
