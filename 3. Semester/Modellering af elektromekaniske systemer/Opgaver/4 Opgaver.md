@@ -75,4 +75,28 @@ Energi ved starten er givet ved:
 $$
 E_{s,0} = \frac{1}{2} k d^{2}
 $$
-Under udfoldning fra komprimeret til naturlig længde udfører friktionen arbejde $W_{fr}=F_{fr} d$ Restenergien er kinetisk energi ved x=dx=dx=d (fjeder neutral):
+Under udfoldning fra komprimeret til naturlig længde udfører friktionen arbejde $W_{fr}=F_{fr} d$ Restenergien er kinetisk energi ved $x = d$ (fjeder neutral):
+$$
+\frac{1}{2} m v_{0}^{2} = \frac{1}{2} k d^{2} - F_{fr} d
+$$
+Løser for $v_{0}$:
+$$
+v_{0} = \sqrt{\frac{k d^{2} - 2 F_{fr} d}{m}}
+$$
+Indsætter tallene:
+$$
+\frac{1}{2} k d^{2} = \frac{1}{2} \cdot 1000 \cdot 0.15^{2} = 11.25 J
+$$
+$$
+W_{fr} = 5.0 \cdot 0.15 = 0.75 J
+$$
+$$
+\frac{1}{2} m v_{0}^{2} = 11.25 - 0.75 = 10.5 J
+$$
+$$
+v_{0} = \sqrt{\frac{2 \cdot 10.5}{8.0}} = \sqrt{2.625} \approx 1.62 \frac{m}{s}
+$$
+Efter fjederens naturlige længde virker kun friktionen og tager den kinetiske energi væk. Den samlede kinetiske energi $E_{k} = \frac{1}{2} m v_{0}^{2} = 10.5 J$ bruges på at overvinde friktionen over længden $l$:
+$$
+F_{fr} l = E_{k} \Rightarrow l = \frac{E_{k}}{F_{fr}}= 
+$$
