@@ -69,3 +69,10 @@ x = \frac{\cancel{2} mg \cdot \sin(\theta)}{\cancel{2}k} = \frac{mg \sin(\theta)
 $$
 4.4
 ![[Pasted image 20250930145051.png]]
+
+a)
+Energi ved starten er givet ved:
+$$
+E_{s,0} = \frac{1}{2} k d^{2}
+$$
+Under udfoldning fra komprimeret til naturlig længde udfører friktionen arbejde $W_{fr}=F_{fr} d$ Restenergien er kinetisk energi ved x=dx=dx=d (fjeder neutral):
