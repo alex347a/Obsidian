@@ -15,13 +15,13 @@ $$
 v = \sqrt{2 \sin(\theta) l g} \cdot m
 $$
 
-b)
+b) Bestem den maksimale sammenpresning d af fjederen
 $$
 \begin{align*}
 E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
 \\
-\sin(\theta) (l+d) l m g &=  \frac{1}{2} k d^{2}\\
-\frac{\sin(\theta)lmg}{2kd^{2}} &=  0\\
+\sin(\theta) (l+d) m g &=  \frac{1}{2} k d^{2}\\
+\sin(\theta) (l+d) m g - \frac{1}{2} k d^{2}&= 0\\
 
 \end{align*}
 $$
@@ -31,3 +31,4 @@ $$
 $$
 \frac{b^{2} \pm \sqrt{d}}{2a}
 $$
+c) Hvor har klodsen sin maksimale hastighed?
