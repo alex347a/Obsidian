@@ -34,10 +34,17 @@ $$
 k d^{2} - 2 \sin(\theta) l m g - 2 \sin(\theta) d m g &= 0
 \end{align*}
 $$
+$$
+a = k, \quad b = -2mg \sin(\theta), \quad c = - 2 mg \sin(\theta) l
+$$
 Diskriminantformel (med D for ikke at forveksle det med d i opgaven)
 $$
 D=b^{2} - 4 ac
 $$
+$$
+D = (2 mg \sin(\theta))^{2} + 8 k m g l \sin(\theta)
+$$
+Indsætter i rodf-
 $$
 \frac{b^{2} \pm \sqrt{D}}{2a}
 $$
