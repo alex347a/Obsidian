@@ -461,9 +461,8 @@ TCP uses a timeout/retransmit mechanism. Setting the timeout interval correctly 
 - It uses **pipelining** to have multiple unacknowledged segments in flight, improving throughput.
 - It features an **implicit NAK** mechanism: the receipt of **three duplicate ACKs** (indicating a segment is missing) triggers a **fast retransmit** before the timer expires.
 - The number of outstanding segments is controlled by **flow control** and **congestion control** mechanisms.
-
-DETTE ER NOTER INDTIL 268
-
+![[3.32.png]]
+DETTE ER NOTER INDTIL 268, MANGLER FRA 268 TIL 289
 
 
 
