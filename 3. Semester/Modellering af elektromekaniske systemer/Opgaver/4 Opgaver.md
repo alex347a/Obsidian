@@ -30,7 +30,8 @@ Den tabte tyngdeenergi er den potentielle energi over både l og d, siden d er d
 $$
 \begin{align*}
 \sin(\theta) (l+d) m g &=  \frac{1}{2} k d^{2}\\
-2\sin(\theta) (l+d) m g - k d^{2}&= 0\\
+ k d^{2} - 2\sin(\theta) (l+d) m g &= 0\\
+k d^{2} - 2 \sin(\theta) l m g - 2 \sin(\theta) d m g &= 0
 \end{align*}
 $$
 $$
