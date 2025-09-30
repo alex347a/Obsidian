@@ -64,3 +64,4 @@ Hvis der ikke er nogle partikler der bevæger sig ift. hinanden så kan der er i
 Det står der to gange, fordi v er i anden: $E_{\text{kin}} = \frac{1}{2} m v^{2}$
 ### Numerisk simulering af dynamiske systemer
 ![[Pasted image 20250930133022.png]]
+![[Pasted image 20250930133519.png]]
