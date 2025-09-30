@@ -100,3 +100,5 @@ Efter fjederens naturlige længde virker kun friktionen og tager den kinetiske e
 $$
 F_{fr} l = E_{k} \Rightarrow l = \frac{E_{k}}{F_{fr}}= \frac{10.5 \space J}{5.0 \space J} = 2.10 \space m
 $$
+![[Pasted image 20250930192449.png]]
+![[Pasted image 20250930192502.png]]
