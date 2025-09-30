@@ -1,3 +1,4 @@
+![[Pasted image 20250930132301.png]]
 ### Arbejde
 ![[Pasted image 20250930122029.png]]
 #### Eksempel
@@ -50,4 +51,12 @@ Dette gælder ved centrale kræfter, som er kræfter der afhænger af afstanden 
 ![[Pasted image 20250930125631.png]]
 Hvis en partikel der kun påvirkes af konservative kræfter så vil den totale mekaniske energi være konstant. Dvs. et konservativt system er et system hvor den totale mekaniske energi er bevaret.
 ![[Pasted image 20250930131639.png]]
+![[Pasted image 20250930132131.png]]
 ![[Pasted image 20250930132041.png]]
+Den potentielle energi er størst her når bolden er længst oppe i luften og det modsatte gælder for den kinetiske energi.
+### Partikelsystemer: arbejdssætningen
+Et partikelsystem er når der er flere en én partikel.
+![[Pasted image 20250930132235.png]]
+Massemidtpunktet er den vægtede sum af masser.
+![[Pasted image 20250930132549.png]]
+Hvis der ikke er nogle partikler der bevæger sig ift. hinanden så kan der er ikke være nogle interne kræfter.
