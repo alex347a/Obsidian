@@ -14,3 +14,10 @@ $$
 $$
 v = \sqrt{\frac{1}{2} \sin(\theta) l g} m
 $$
+
+b)
+$$
+\begin{align*}
+E_{\text{kin}} + E_{\text{pot}} + \frac{1}{2} k d^{2} &= 0
+\end{align*}
+$$
