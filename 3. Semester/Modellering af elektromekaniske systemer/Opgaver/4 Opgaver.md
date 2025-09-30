@@ -2,7 +2,7 @@
 $$
 \begin{align*}
 E_{\text{kin}} = \frac{1}{2} m v^{2}\\
-v^{2} = \frac{1}{2} E_{\text{kin}} m
+v^{2} = 2 E_{\text{kin}} m
 \end{align*}
 $$
 $$
@@ -18,6 +18,9 @@ $$
 b)
 $$
 \begin{align*}
-E_{\text{kin}} + E_{\text{pot}} + \frac{1}{2} k d^{2} &= 0
+E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
+\sin(\theta) l m g &=  \frac{1}{2} k d^{2}\\
+\frac{\sin(\theta)lmg}{2kd^{2}} &=  0\\
+
 \end{align*}
 $$
