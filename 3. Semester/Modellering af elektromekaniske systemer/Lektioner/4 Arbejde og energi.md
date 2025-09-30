@@ -59,4 +59,8 @@ Et partikelsystem er når der er flere en én partikel.
 ![[Pasted image 20250930132235.png]]
 Massemidtpunktet er den vægtede sum af masser.
 ![[Pasted image 20250930132549.png]]
-Hvis der ikke er nogle partikler der bevæger sig ift. hinanden så kan der er ikke være nogle interne kræfter.
+Hvis der ikke er nogle partikler der bevæger sig ift. hinanden så kan der er ikke være nogle interne kræfter, hvilket er tilfældet i stiftlegemer.
+![[Pasted image 20250930132648.png]]
+Det står der to gange, fordi v er i anden: $E_{\text{kin}} = \frac{1}{2} m v^{2}$
+### Numerisk simulering af dynamiske systemer
+![[Pasted image 20250930133022.png]]
