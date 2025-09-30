@@ -34,3 +34,7 @@ DET ER VIGTIGT AT LIGGE MÆRKE TIL AT DET ER SLUTPUNKTET MINUS STARTPUNKTET, MEN
 ### Arbejde udført af varierende kraft
 ![[Pasted image 20250930124241.png]]
 Her er x position.
+![[Pasted image 20250930124510.png]]
+Hooks lov: $F_{s} = - k x$
+Hvis man starter og slutter ved det samme punkt så er der 0 arbejde udført, så det er en **konservativ** kraft.
+Eksempel på en **ikke**-konservativ kraft er friktion.
