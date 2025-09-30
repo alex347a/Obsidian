@@ -463,7 +463,63 @@ TCP uses a timeout/retransmit mechanism. Setting the timeout interval correctly 
 - The number of outstanding segments is controlled by **flow control** and **congestion control** mechanisms.
 ![[3.32.png]]
 DETTE ER NOTER INDTIL 268, MANGLER FRA 268 TIL 289
+### **3.5.4 Reliable Data Transfer**
+TCP provides a reliable data transfer service on top of IP's unreliable service, ensuring the byte stream read by the receiving process is uncorrupted, without gaps, without duplication, and in sequence.
 
+**A Simplified TCP Sender**
+This simplified model uses a **single retransmission timer** and handles three major events:
+1. **Data Received from Application:**
+    - Create a TCP segment with sequence number `NextSeqNum`.
+    - If the timer is not running, **start the timer**.
+    - Pass the segment to IP and increment `NextSeqNum`.
+2. **Timeout:**
+    - **Retransmit the segment** with the smallest sequence number that has not been acknowledged.
+    - **Restart the timer**.
+3. **ACK Received (with value `y`):**
+    - This is a **cumulative acknowledgment**.
+    - If `y > SendBase` (the sequence number of the oldest unacknowledged byte), it means new data has been ACKed.
+        - Update `SendBase = y`.
+        - If there are still any not-yet-acknowledged segments, **restart the timer**.
+
+**Scenarios Illustrating the Protocol**
+- **Scenario 1: Lost ACK**
+![[3.34.png]]
+    - Host A sends a segment (seq=92). The ACK from B is lost.
+    - A's timer expires, causing it to retransmit the segment.
+    - Host B receives the duplicate data and simply discards it.
+- **Scenario 2: Cumulative ACK Prevents Unnecessary Retransmission**
+![[3.35.png]]
+    - Host A sends two segments (seq=92 and seq=100). Both arrive, but both ACKs are lost before the timeout.
+    - The timeout occurs for the first segment (seq=92), so it is retransmitted.
+    - The ACK for the second segment (seq=100) arrives before _its_ timeout, so it is **not** retransmitted. The cumulative nature of the ACK (ACK=120) confirms receipt of all data up to byte 119.
+- **Scenario 3: Cumulative ACK Covers Lost ACK**
+-
+    - Host A sends two segments (seq=92 and seq=100). The ACK for the first segment is lost.
+    - Before the timeout for the first segment, Host A receives the ACK for the second segment (ACK=120).
+    - This cumulative ACK (120) informs A that B received all data up to byte 119, so **neither segment is retransmitted**.
+
+**Doubling the Timeout Interval**
+- When a timeout occurs and a retransmission is triggered, TCP **doubles the timeout interval** for the next retransmission (e.g., 0.75s -> 1.5s -> 3.0s).
+- This provides a **limited form of congestion control**. It backs off the retransmission rate in the face of persistent loss, which is likely due to network congestion.
+- The timer is reset based on `EstimatedRTT` and `DevRTT` when it is started due to new data or a new ACK.
+
+**Fast Retransmit**
+- Waiting for a timeout to detect loss can be slow.
+- **Duplicate ACKs** are used as an early warning sign of loss. A duplicate ACK is sent when the receiver gets an out-of-order segment (see Table 3.2).
+- **Rule:** If the TCP sender receives **three duplicate ACKs** for the same data (i.e., four ACKs total for the same segment), it infers that the following segment was lost.
+- The sender then performs a **fast retransmit**, resending the missing segment **immediately**, without waiting for its timer to expire. (INSERT FIGURE 3.37 HERE)
+
+**TCP ACK Generation Policy (Table 3.2)**
+- **In-order segment arrival:** Often uses a **delayed ACK**, waiting up to 500ms for another in-order segment to piggyback the ACK onto.
+- **Out-of-order segment arrival:** Immediately sends a **duplicate ACK** for the last in-order byte received.
+
+**Is TCP Go-Back-N or Selective Repeat?**
+- TCP is a **hybrid**.
+- It resembles **GBN** because it uses cumulative ACKs and the sender only tracks `SendBase` and `NextSeqNum`.
+- However, it is more efficient than GBN because:
+    1. Most implementations **buffer out-of-order segments** at the receiver (an SR feature).
+    2. With fast retransmit, it often only retransmits the single lost segment.
+- With the **Selective Acknowledgment (SACK)** extension, TCP becomes even more like an SR protocol, as the receiver can explicitly inform the sender about out-of-order blocks of data it has received.
 
 
 
