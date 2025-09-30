@@ -28,4 +28,9 @@ $$
 ![[Pasted image 20250930123609.png]]
 A og B er start og slutningen af banen vi regner arbejdet på.
 Vi kan se at arbejdssætningen bare udtrykker at effekten mellem to punkter er givet ved forskellen i den kinetiske energi mellem to punkter.
-DET ER VIGTIGT AT LIGGE MÆRKE TIL AT DET ER SLUTPUNKTET MI
+DET ER VIGTIGT AT LIGGE MÆRKE TIL AT DET ER SLUTPUNKTET MINUS STARTPUNKTET, MENS DET I POTENTIEL ENERGI ER STARTPUNKTET MINUS SLUTPUNKTET.
+### Arbejde udført af tyngdekraft
+![[Pasted image 20250930123938.png]]
+### Arbejde udført af varierende kraft
+![[Pasted image 20250930124241.png]]
+Her er x position.
