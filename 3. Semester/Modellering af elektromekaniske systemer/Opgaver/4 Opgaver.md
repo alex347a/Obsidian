@@ -54,13 +54,18 @@ $$
 $$
 c) Hvor har klodsen sin maksimale hastighed?
 Det er når fjederkraften er ligeså stor som tyngdekraften i bevægelsesretningen:
-Det er toppunktet af funktionen
 $$
 \begin{align*}
 kx = mg \cdot \sin(\theta)\\
 x = \frac{mg \cdot \sin(\theta)}{k}
 \end{align*}
 $$
-
+Det svarer til toppunktet af funktionen:
+$$
+\frac{-b}{2a}
+$$
+$$
+x = \frac{\cancel{2} mg \cdot \sin(\theta)}{\cancel{2}k} = \frac{mg \sin(\theta)}{k}
+$$
 4.4
 ![[Pasted image 20250930145051.png]]
