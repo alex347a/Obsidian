@@ -49,3 +49,5 @@ Dette gælder ved centrale kræfter, som er kræfter der afhænger af afstanden 
 ### Mekanisk energi
 ![[Pasted image 20250930125631.png]]
 Hvis en partikel der kun påvirkes af konservative kræfter så vil den totale mekaniske energi være konstant. Dvs. et konservativt system er et system hvor den totale mekaniske energi er bevaret.
+![[Pasted image 20250930131639.png]]
+![[Pasted image 20250930132041.png]]
