@@ -68,3 +68,9 @@ Det står der to gange, fordi v er i anden: $E_{\text{kin}} = \frac{1}{2} m v^{2
 ![[Pasted image 20250930133901.png]]
 ![[Pasted image 20250930134106.png]]
 ![[Pasted image 20250930134200.png]]
+![[Pasted image 20250930134352.png]]
+### Opsummering
+![[Pasted image 20250930134503.png]]
+![[Pasted image 20250930134517.png]]
+![[Pasted image 20250930134523.png]]
+![[Pasted image 20250930134532.png]]
