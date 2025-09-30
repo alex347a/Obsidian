@@ -15,3 +15,5 @@ For så at få arbejdet så skal vi integrere.
 ### Effekt
 ![[Pasted image 20250930122745.png]]
 Gennemsnitseffekten er givet ved arbejdet divideret med tiden det har taget at udføre arbejdet.
+Den afledte af positionen til tiden er hastigheden og dermed kan man beregne den øjeblikkelige effekt ved at prikke kraften med hastigheden.
+![[Pasted image 20250930122947.png]]
