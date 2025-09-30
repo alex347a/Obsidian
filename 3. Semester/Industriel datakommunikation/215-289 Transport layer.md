@@ -144,7 +144,7 @@ All subsequent segments from this client that match this four-tuple will be demu
 #### Illustration with Multiple Connections
 
 This mechanism allows a server to handle many simultaneous connections from different clients. As shown in Figure 3.5:
-![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/5/3.5.png]]
+![[3.5.png]]
 - **Host C** can have two HTTP connections to **Server B**, using different source ports (e.g., 26145 and 7532). Server B distinguishes them by the different source ports.
 - **Host A** can also have an HTTP connection to **Server B** using the same source port as one of Host C's connections (e.g., 26145). Server B can still distinguish them because the **source IP addresses are different** (A vs. C).
 
@@ -248,7 +248,7 @@ The protocol is built incrementally, handling increasingly complex channel model
     - The sequence number handles the duplicate packets that result from premature timeouts (when a packet or ACK is merely delayed, not lost).
 - rdt3.0 is known as the **Alternating-Bit Protocol**.
 ![[3.15.png]]
-![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/5/3.16.png]]
+![[3.16.png]]
 **Summary of Key Mechanisms:**
 - **Checksums:** For error detection.
 - **Sequence Numbers:** To detect duplicate packets.
