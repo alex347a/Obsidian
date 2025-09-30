@@ -1,13 +1,16 @@
 ![[Pasted image 20250930140343.png]]
+Klodsen starter i hvile og glider ned ad skråplanet uden gnidning. Den taber potentiel energi:
+$$
+E_{\text{pot}} = \sin(\theta) l m g
+$$
+Dette bliver til kinetisk energi:
 $$
 \begin{align*}
 E_{\text{kin}} = \frac{1}{2} m v^{2}\\
 v^{2} = 2 E_{\text{kin}} m
 \end{align*}
 $$
-$$
-E_{\text{pot}} = \sin(\theta) l m g
-$$
+
 $$
 v^{2} = 2 \sin(\theta) l m^{2} g
 $$
