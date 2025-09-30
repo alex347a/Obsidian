@@ -9,10 +9,10 @@ $$
 E_{\text{pot}} = \sin(\theta) l m g
 $$
 $$
-v^{2} = \frac{1}{2} \sin(\theta) l m^{2} g
+v^{2} = 2 \sin(\theta) l m^{2} g
 $$
 $$
-v = \sqrt{\frac{1}{2} \sin(\theta) l g} m
+v = \sqrt{2 \sin(\theta) l g} \cdot m
 $$
 
 b)
@@ -23,4 +23,13 @@ E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
 \frac{\sin(\theta)lmg}{2kd^{2}} &=  0\\
 
 \end{align*}
+$$
+$$
+\frac{-b}{2a}
+$$
+$$
+d=b^{2} - 4 ac
+$$
+$$
+\frac{b^{2} \pm \sqrt{d}}{2a}
 $$
