@@ -5,20 +5,27 @@ E_{\text{pot}} = \sin(\theta) l m g
 $$
 Dette bliver til kinetisk energi:
 $$
-\begin{align*}
 E_{\text{kin}} = \frac{1}{2} m v^{2}\\
-v^{2} = 2 E_{\text{kin}} m
-\end{align*}
 $$
+Jeg sætter de to ligmed hinanden:
 
 $$
-v^{2} = 2 \sin(\theta) l m^{2} g
+\sin(\theta) l m g = \frac{1}{2} m v^{2}
+$$
+Forkorter m:
+$$
+\sin(\theta) l g = \frac{1}{2} v^{2}
+$$
+Isolerer v:
+$$
+v^{2} = 2 \sin(\theta) l g
 $$
 $$
-v = \sqrt{2 \sin(\theta) l g} \cdot m
+v = \sqrt{2 \sin(\theta) l g}
 $$
 
 b) Bestem den maksimale sammenpresning d af fjederen
+Den tabte tyngdeenergi svarer til fjederenergien ved maksimal kompression.
 $$
 \begin{align*}
 E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
