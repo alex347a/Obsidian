@@ -34,11 +34,15 @@ $$
 k d^{2} - 2 \sin(\theta) l m g - 2 \sin(\theta) d m g &= 0
 \end{align*}
 $$
+Diskriminantformel (med D for ikke at forveksle det med d i opgaven)
 $$
 D=b^{2} - 4 ac
 $$
 $$
 \frac{b^{2} \pm \sqrt{D}}{2a}
+$$
+$$
+\frac{2 \sin(\theta) l m g - 2 \sin(\theta) d m g}{2kd^{2}}
 $$
 c) Hvor har klodsen sin maksimale hastighed?
 Det er når fjederkraften er ligeså stor som tyngdekraften i bevægelsesretningen:
