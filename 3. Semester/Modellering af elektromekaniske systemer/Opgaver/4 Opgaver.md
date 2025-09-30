@@ -26,13 +26,11 @@ $$
 
 b) Bestem den maksimale sammenpresning d af fjederen
 Den tabte tyngdeenergi svarer til fjederenergien ved maksimal kompression.
+Den tabte tyngdeenergi er den potentielle energi over både l og d, siden d er distancen fjederen bliver komprimeret:
 $$
 \begin{align*}
-E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
-\\
 \sin(\theta) (l+d) m g &=  \frac{1}{2} k d^{2}\\
-\sin(\theta) (l+d) m g - \frac{1}{2} k d^{2}&= 0\\
-
+2\sin(\theta) (l+d) m g - k d^{2}&= 0\\
 \end{align*}
 $$
 $$
