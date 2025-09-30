@@ -19,13 +19,11 @@ b)
 $$
 \begin{align*}
 E_{\text{pot}} &= \frac{1}{2} k d^{2}\\
-\sin(\theta) l m g &=  \frac{1}{2} k d^{2}\\
+\\
+\sin(\theta) (l+d) l m g &=  \frac{1}{2} k d^{2}\\
 \frac{\sin(\theta)lmg}{2kd^{2}} &=  0\\
 
 \end{align*}
-$$
-$$
-\frac{-b}{2a}
 $$
 $$
 d=b^{2} - 4 ac
