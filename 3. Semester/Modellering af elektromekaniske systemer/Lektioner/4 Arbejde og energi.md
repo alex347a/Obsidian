@@ -43,5 +43,9 @@ Eksempel på en **ikke**-konservativ kraft er friktion.
 ![[Pasted image 20250930125016.png]]
 Som det ses her så er det omvendt af kinetisk energi, fordi her er punkt A først minus punkt B.
 ![[Pasted image 20250930125152.png]]
-Dette gælder ved centrale kræfter, som er kræfter der afhænger af afstanden fra et punkt.
+Dette gælder ved centrale kræfter, som er kræfter der afhænger af afstanden fra et punkt, ved tyngdekraften er det givet ved afstanden fra jordens centrum.
 ![[Pasted image 20250930125310.png]]
+![[Pasted image 20250930125547.png]]
+### Mekanisk energi
+![[Pasted image 20250930125631.png]]
+Hvis en partikel der kun påvirkes af konservative kræfter så vil den totale mekaniske energi være konstant. Dvs. et konservativt system er et system hvor den totale mekaniske energi er bevaret.
