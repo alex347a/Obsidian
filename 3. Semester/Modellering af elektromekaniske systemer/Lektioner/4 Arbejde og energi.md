@@ -38,3 +38,10 @@ Her er x position.
 Hooks lov: $F_{s} = - k x$
 Hvis man starter og slutter ved det samme punkt så er der 0 arbejde udført, så det er en **konservativ** kraft.
 Eksempel på en **ikke**-konservativ kraft er friktion.
+### Potentiel energi og energibevarelse: Konservativ kraft
+![[Pasted image 20250930125003.png]]
+![[Pasted image 20250930125016.png]]
+Som det ses her så er det omvendt af kinetisk energi, fordi her er punkt A først minus punkt B.
+![[Pasted image 20250930125152.png]]
+Dette gælder ved centrale kræfter, som er kræfter der afhænger af afstanden fra et punkt.
+![[Pasted image 20250930125310.png]]
