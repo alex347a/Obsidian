@@ -493,7 +493,7 @@ This simplified model uses a **single retransmission timer** and handles three
     - The timeout occurs for the first segment (seq=92), so it is retransmitted.
     - The ACK for the second segment (seq=100) arrives before _its_ timeout, so it is **not** retransmitted. The cumulative nature of the ACK (ACK=120) confirms receipt of all data up to byte 119.
 - **Scenario 3: Cumulative ACK Covers Lost ACK**
--
+![[3.36.png]]
     - Host A sends two segments (seq=92 and seq=100). The ACK for the first segment is lost.
     - Before the timeout for the first segment, Host A receives the ACK for the second segment (ACK=120).
     - This cumulative ACK (120) informs A that B received all data up to byte 119, so **neither segment is retransmitted**.
@@ -506,8 +506,10 @@ This simplified model uses a **single retransmission timer** and handles three
 **Fast Retransmit**
 - Waiting for a timeout to detect loss can be slow.
 - **Duplicate ACKs** are used as an early warning sign of loss. A duplicate ACK is sent when the receiver gets an out-of-order segment (see Table 3.2).
+![[Table 3.2.png]]
 - **Rule:** If the TCP sender receives **three duplicate ACKs** for the same data (i.e., four ACKs total for the same segment), it infers that the following segment was lost.
-- The sender then performs a **fast retransmit**, resending the missing segment **immediately**, without waiting for its timer to expire. (INSERT FIGURE 3.37 HERE)
+- The sender then performs a **fast retransmit**, resending the missing segment **immediately**, without waiting for its timer to expire.
+![[3.37.png]]
 
 **TCP ACK Generation Policy (Table 3.2)**
 - **In-order segment arrival:** Often uses a **delayed ACK**, waiting up to 500ms for another in-order segment to piggyback the ACK onto.
@@ -537,4 +539,4 @@ This simplified model uses a **single retransmission timer** and handles three
 
 
 
-![[Table 3.2.png]]
+
