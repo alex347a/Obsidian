@@ -75,8 +75,13 @@ https://imai.snu.ac.kr/%ea%b5%90%ec%9c%a1/%ec%a0%84%ea%b3%b5%ea%b5%90%ea%b3%bc%e
 ![[Pasted image 20251001165047.png]]
 
 ## Pohang University POSTECH
-instruktion til AI, Data structures, Algorithms, Statistik
+Fag for computer science:
+https://plms.postech.ac.kr/local/ubion/course/lists.php?year=2025&semester=20&dept=00039100&groupcode=U&cc&lang=all&keyfield=coursename&keyword&page=2
+- Introduction to Data Analysis
+- Introduction to Artificial Intelligence
+- ST: Deep Learning Implementation
 
+![[Pasted image 20251001170220.png]]
 ## Seoul Tech
 ## Kyung Hee University
 
