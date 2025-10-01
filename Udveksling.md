@@ -33,6 +33,7 @@ Man må vælge fag på begge campus, men der er 1 time og 40 min transport imell
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/150795.html.en?y=2024&g=M00
 
 #### Mechatronics
+
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149182.html?g=E00
 ![[Pasted image 20250929165116.png]]
 ![[Pasted image 20250929165225.png]]
