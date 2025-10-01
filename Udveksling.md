@@ -82,7 +82,8 @@ https://plms.postech.ac.kr/local/ubion/course/lists.php?year=2025&semester=20&de
 - ST: Deep Learning Implementation
 
 ![[Pasted image 20251001170220.png]]
-## Seoul Tech
+## SEOULTECH
+
 
 ## Kyung Hee University
 
