@@ -92,7 +92,7 @@ Artificial Intelligence på CS and engineering
 Sandsynlighed (statistik er kun på koreansk men det lader til at noget statistik indgår i dette fag idet de bruger bogen probability and statistics)
 ![[Pasted image 20251001172845.png]]
 Introduction to computer engineering:
-
+![[Pasted image 20251001173119.png]]
 ![[Pasted image 20251001173057.png]]
 ## Kyung Hee University
 
