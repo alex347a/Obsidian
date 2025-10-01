@@ -50,6 +50,7 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149646.html?g=MM0
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/148850.html?g=L01
 ![[Pasted image 20250929165819.png]]
 ![[Pasted image 20250929165852.png]]
+Dette svarer til 10 credits, hvor ham der tog den på masteren havde 11 credits (30 ECTS)
 #### Osaka
 Der er ingen kurser til robtek.
 
