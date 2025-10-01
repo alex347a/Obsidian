@@ -124,4 +124,6 @@ Dermed er $k_{eq}$:
 $$
 k_{eq} = k_{1} + k_{2}
 $$
-Dvs. for serie 
+Dvs. for seriekoblinger så er der større total forspændbarhed og mindre effektiv stiffhed, mens der for parallelkoblinger er større effektiv stiffhed og mindre forspændbarhed.
+
+c)
