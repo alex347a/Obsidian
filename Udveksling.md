@@ -83,7 +83,12 @@ https://plms.postech.ac.kr/local/ubion/course/lists.php?year=2025&semester=20&de
 
 ![[Pasted image 20251001170220.png]]
 ## SEOULTECH
-
+Machine Learning på electrical and information engineering
+![[Pasted image 20251001172306.png]]
+Data structures and algorithms på electronic engineering
+![[Pasted image 20251001172411.png]]
+Artificial Intelligence på CS and engineering
+![[Pasted image 20251001172451.png]]
 
 ## Kyung Hee University
 
