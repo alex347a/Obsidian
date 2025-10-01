@@ -32,28 +32,30 @@ Man må vælge fag på begge campus, men der er 1 time og 40 min transport imell
 #### **Statistik for udenlandske studerende er kun tilgængeligt i foråret det i efteråret er ikke til udenlandske studerende**
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/150795.html.en?y=2024&g=M00
 
-#### Mechatronics
+#### Mechatronics (2 credits)
 Onsdag 13:20-15:00
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149182.html?g=E00
 ![[Pasted image 20250929165116.png]]
 ![[Pasted image 20250929165225.png]]
 
-#### Introduction to affective computing
+#### Introduction to affective computing (2 credits)
+Onsdag 15:10-16:50
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
 
 ![[Pasted image 20250929165640.png]]
 ![[Pasted image 20250929165655.png]]
-#### Introduction to Advanced Science and Technology
+#### Introduction to Advanced Science and Technology (2 credits)
+Onsdag 13:20-15:00
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149646.html?g=MM0
 ![[Pasted image 20250929165730.png]]
 ![[Pasted image 20250929165743.png]]
 
-#### Introduction to Computer Science and Engineering
+#### Introduction to Computer Science and Engineering (2 credits)
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/148850.html?g=L01
 Fredag 9:00 - 10:40
 ![[Pasted image 20250929165819.png]]
 ![[Pasted image 20250929165852.png]]
-Dette svarer til 10 credits, hvor ham der tog den på masteren havde 11 credits (30 ECTS)
+ham der tog den på masteren havde 11 credits (30 ECTS)
 #### Osaka
 Der er ingen kurser til robtek.
 
