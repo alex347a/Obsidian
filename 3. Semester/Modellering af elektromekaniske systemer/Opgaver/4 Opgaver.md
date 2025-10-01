@@ -102,3 +102,26 @@ F_{fr} l = E_{k} \Rightarrow l = \frac{E_{k}}{F_{fr}}= \frac{10.5 \space J}{5.0 
 $$
 ![[Pasted image 20250930192449.png]]
 ![[Pasted image 20250930192502.png]]
+a)
+Når fjedre er i serieforbindelse har de samme kraft F, hvor deres forlængelser adderer til totalforlængelsen x:
+$$
+x_{1} = \frac{F}{k_{1}}, \quad x_{2} = \frac{F}{k_{2}}, \quad x = F\left(\frac{1}{k_{1}} + \frac{1}{k_{2}}\right)
+$$
+Siden den ækvivalente fjedermodstand er:
+$$
+\frac{1}{k_{eq}} = \frac{1}{k_{1}} + \frac{1}{k_{2}}
+$$
+Så må $k_{eq}$:
+$$
+k_{eq} = \frac{k_{1}k_{2}}{k_{1} + k_{2}}
+$$
+b)
+Når fjedre er i parallelforbindelse har de samme forskydning x og deler den samlede kraft F:
+$$
+F_{1} = k_{1}x, \quad F_{2} = k_{2}x, \quad F = F_{1} + F_{2} = (k_{1} + k_{2})x
+$$
+Dermed er $k_{eq}$:
+$$
+k_{eq} = k_{1} + k_{2}
+$$
+Dvs. for serie 
