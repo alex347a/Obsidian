@@ -40,6 +40,7 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149182.html?g=E00
 
 #### Introduction to affective computing
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/152430.html?g=MM0
+
 ![[Pasted image 20250929165640.png]]
 ![[Pasted image 20250929165655.png]]
 #### Introduction to Advanced Science and Technology
@@ -49,6 +50,7 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/149646.html?g=MM0
 
 #### Introduction to Computer Science and Engineering
 https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/148850.html?g=L01
+Fredag 9:00 - 10:40
 ![[Pasted image 20250929165819.png]]
 ![[Pasted image 20250929165852.png]]
 Dette svarer til 10 credits, hvor ham der tog den på masteren havde 11 credits (30 ECTS)
