@@ -108,3 +108,15 @@ Introduction to computer engineering:
 ## Chung-Ang University (intet program måske)
 
 ## Inha University
+
+## Hankuk University
+Engineering is at Campus Yong-In 1 hour from Seoul approximately.
+## Hanyang University
+## Kyungpook National University
+
+# Liste 
+1. SNU 
+2. POSTECH 
+3. SEOULTECH 
+4. SKKU 
+5. Inha 
