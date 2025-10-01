@@ -94,14 +94,17 @@ Sandsynlighed (statistik er kun på koreansk men det lader til at noget statisti
 Introduction to computer engineering:
 ![[Pasted image 20251001173119.png]]
 ![[Pasted image 20251001173057.png]]
-## Sungkyunkwan University (NSC (Natural Science Campus))
+## Sungkyunkwan University SKKU (NSC (Natural Science Campus))
 - Probability and random processes
 - Introduction to deep neural networks
 - Fundamentals of machine learning
-
+- Introduction to Artificial Intelligence
+- Algorithms
+- Data structures
 ## Kyung Hee University
 
 ## Sejong University
 
 ## Chung-Ang University (intet program måske)
 
+## Inha University
