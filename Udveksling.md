@@ -55,6 +55,9 @@ https://syllabus.sic.shibaura-it.ac.jp/syllabus/2025/ko1/148850.html?g=L01
 Fredag 9:00 - 10:40
 ![[Pasted image 20250929165819.png]]
 ![[Pasted image 20250929165852.png]]
+
+### Japansk 1 (2 credits)
+Det kan tages på mange forskellige dage.
 ham der tog den på masteren havde 11 credits (30 ECTS)
 #### Osaka
 Der er ingen kurser til robtek.
