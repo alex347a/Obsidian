@@ -66,7 +66,13 @@ Der er ingen kurser til robtek.
 Der er ingen kurser til robtek
 
 ## Seoul National University
-
+FAQ
+https://oia.snu.ac.kr/exchange-program-faqs
+List over all courses for all departments
+https://my.snu.ac.kr/login.jsp
+List over courses for computer science:
+https://imai.snu.ac.kr/%ea%b5%90%ec%9c%a1/%ec%a0%84%ea%b3%b5%ea%b5%90%ea%b3%bc%eb%aa%a9/
+![[Pasted image 20251001165047.png]]
 
 ## Pohang University POSTECH
 instruktion til AI, Data structures, Algorithms, Statistik
