@@ -30,4 +30,8 @@ The domains are used for:
 
 ![[Pasted image 20251002085258.png]]
 ![[Pasted image 20251002085314.png]]
-remember that $s = \sigma + j \omega$. $T$ is the sampling period. The amplitude is given by $e^{\sigma / f_{s}}$ while the angle will be given by $2 \pi \frac{f}{f_{s}}$. So z is essentially just a polar coordinate. The colours correspond to where the s-domain values will be located in the z-domain. When $\omega = 0$ the value of $\sigma$ will be infinite.
+remember that $s = \sigma + j \omega$. $T$ is the sampling period. The amplitude is given by $e^{\sigma / f_{s}}$ while the angle will be given by $2 \pi \frac{f}{f_{s}}$. So z is essentially just a polar coordinate. The colours correspond to where the s-domain values will be located in the z-domain. 
+![[Pasted image 20251002090054.png]]
+![[Pasted image 20251002090143.png]]![[Pasted image 20251002090154.png]]
+If the poles are not in the gray area the system will not be stable. So in the s-domain the values have to be negative $\sigma$ values.
+![[Pasted image 20251002090320.png]]
