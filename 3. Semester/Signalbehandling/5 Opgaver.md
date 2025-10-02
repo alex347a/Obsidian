@@ -113,11 +113,20 @@ $$
 X(z) = \sum_{n = - \infty} ^{\infty} \cos(\omega_{0} n T) z^{-n} = \left(\frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}\right) \cdot z^{-n}
 $$
 $$
-z= e^{sT} \Rightarrow z^{-n} = e^{-nsT}
+\left(\frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}\right) \cdot z^{-n}
+$$
+Split into two:
+$$
+\left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot z^{-n} + \left(\frac{e^{-i \omega_{0} n T}}{2}\right) \cdot z^{-n}
+$$
+Then I can expand using:
+$$
+\sum_{i=0}^{\infty} x^{i} = \frac{1}{1-x}
+$$
+For $z^{-n}$:
+$$
+\sum_{n=0}^{\infty} z^{-n} = \frac{1}{1-z^{-1}} \Rightarrow \frac{z}{z-1}
 $$
 $$
-\left(\frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}\right) \cdot e^{-nsT}
-$$
-$$
-\left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot e^{-nsT}
+\left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot z^{-n} + \left(\frac{e^{-i \omega_{0} n T}}{2}\right) \cdot z^{-n} \Rightarrow \left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot z^{-n} + \left(\frac{e^{-i \omega_{0} n T}}{2}\right) \cdot 
 $$
