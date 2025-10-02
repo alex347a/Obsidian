@@ -10,3 +10,5 @@ On the left we have the time domain where the square wave consists of multiple s
 ### Laplace transform and S domain
 ![[Pasted image 20251002082914.png]]
 When passing through a Laplace transform you include $e^{-st}$, which will be converted from the time domain to the S-domain.
+![[Pasted image 20251002083314.png]]
+When $|x| < 1$ you will always converge to 0.
