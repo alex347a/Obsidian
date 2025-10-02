@@ -46,3 +46,7 @@ $d= \frac{\tau}{T}$ is the duty factor
 ![[Pasted image 20250925094345.png]]
 After doing pulse-sampling:
 Null is at $\frac{f_{s}}{d}$
+
+### Z-transformation rules
+![[Pasted image 20251002093707.png]]
+![[Pasted image 20251002093929.png]]
