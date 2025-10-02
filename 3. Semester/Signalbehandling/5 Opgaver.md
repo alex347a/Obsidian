@@ -20,6 +20,25 @@ Jeg forlænger med s:
 $$
 \frac{R}{sR + s^{2}L + (C)^{-1}}
 $$
+Andengradsligning rødder:
+$$
+d = b^{2} - 4ac
+$$
+I dette tilfælde er:
+$$
+\begin{align*}
+a = L\\
+b = R\\
+c = \frac{1}{C}
+\end{align*}
+$$
+$$
+R^{2} - \frac{4 L}{C}
+$$
+
+$$
+\frac{-b \pm \sqrt{d}}{2a}
+$$
 
 Invers Laplace transformerede
 $$
