@@ -75,7 +75,7 @@ $$
 $$
 Y = HX = \frac{z}{z-0.5} \cdot \frac{z}{1-z} = \frac{z^{2}}{(z-0.5) (1-z)}
 $$
-Then inverse z-transform to get $y(n)$, which comes later.
+Then inverse z-transform to get $y(n)$, which comes later. [[5 Laplace transform and Z transform#Inverse z-transform]]
 ### Poles and zeros of a transfer function
 ![[Pasted image 20251002100710.png]]
 ![[Pasted image 20251002100736.png]]
