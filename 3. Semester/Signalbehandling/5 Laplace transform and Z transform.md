@@ -52,3 +52,7 @@ Causal sequence means we only consider $n>0$ so all values of $n<0$ will be 0.
 ### Common z-transform for signal
 ![[Pasted image 20251002094538.png]]
 ![[Pasted image 20251002094904.png]]
+### Transfer function in z-domain
+![[Pasted image 20251002095134.png]]
+![[Pasted image 20251002095157.png]]A recursive algorithm means the previous output is used to calculate the current output.
+![[Pasted image 20251002095440.png]]
