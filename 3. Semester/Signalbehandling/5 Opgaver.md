@@ -8,6 +8,13 @@ $$
 V_{o} = \frac{iR}{V_{s}} = \frac{R}{R +  sL + (sC)^{-1}}
 $$
 2. Assuming that $V_{s}$ is an impulse $V_{s} = \delta (0)$, can you plot $V_{o}(t)$ time response
+
+I plot it in matlab:
+
+
+
+I accidentally tried calculating it by hand:
+
 When inverse Laplace transforming the delta function $\delta(0)$ you get 1.
 Since our transfer function is:
 $$
