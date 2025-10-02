@@ -58,4 +58,20 @@ Causal sequence means we only consider $n>0$ so all values of $n<0$ will be 0.
 ![[Pasted image 20251002095440.png]]
 ![[Pasted image 20251002095912.png]]
 ![[Pasted image 20251002095931.png]]
-This sho
+This shows that the function is recursive.
+A slide for z-transfer was forgotten by Cheng.
+$$
+X(z) = \frac{z}{1-z}
+$$
+$$
+Y = X + 0.5z^{-1} Y
+$$
+$$
+(1 - 0.5 z^{-1}) Y = x
+$$
+$$
+H = \frac{Y}{X} = \frac{1}{1 - 0.5 z^{-1}} = \frac{z}{z - 0.5}
+$$
+$$
+Y = HX = \frac{z}{z-0.5} \cdot \frac{z}{1-z} = \frac{z^{2}}{(z-0.5) (1-z)}
+$$
