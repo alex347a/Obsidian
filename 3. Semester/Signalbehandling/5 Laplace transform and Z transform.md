@@ -37,3 +37,6 @@ If the poles are not in the gray area the system will not be stable. So in the s
 ![[Pasted image 20251002090320.png]]
 ![[Pasted image 20251002091224.png]]
 ![[Pasted image 20251002091800.png]]
+![[Pasted image 20251002093213.png]]
+ROC is the region of the value that z will converge, if z is 0 here the system will be unstable.
+![[Pasted image 20251002093428.png]]
