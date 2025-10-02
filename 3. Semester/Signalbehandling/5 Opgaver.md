@@ -100,5 +100,12 @@ I have to find this out by deriving it using the z-transform formula, and not ju
 ![[Pasted image 20251002135600.png]]
 ![[Pasted image 20251002135619.png]]
 $$
-X(z) = \sum_{n = - \infty} ^{\infty} \cos(\omega_{0})
+X(z) = \sum_{n = - \infty} ^{\infty} \cos(\omega_{0} n T) z^{-n}
+$$
+Eulers identity:
+$$
+\cos(x) = \frac{e^{ i x} + e^{- i x}}{2}
+$$
+$$
+\cos(\omega_{0} n T) = \frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}
 $$
