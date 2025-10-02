@@ -109,3 +109,12 @@ $$
 $$
 \cos(\omega_{0} n T) = \frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}
 $$
+$$
+X(z) = \sum_{n = - \infty} ^{\infty} \cos(\omega_{0} n T) z^{-n} = \left(\frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}\right) \cdot z^{-n}
+$$
+$$
+z= e^{sT} \Rightarrow z^{-n} = e^{-nsT}
+$$
+$$
+\left(\frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}\right) \cdot e^{-nsT}
+$$
