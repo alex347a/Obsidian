@@ -93,3 +93,5 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251002103322.png]]
 ### Partial fraction
 ![[Pasted image 20251002103653.png]]
+![[Pasted image 20251002104026.png]]
+![[Pasted image 20251002104225.png]]
