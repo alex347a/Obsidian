@@ -16,15 +16,15 @@ $$
 $$
 \frac{R}{R + sL + (sC)^{-1}}
 $$
-Jeg forlænger med s:
+Extend with s:
 $$
 \frac{R}{sR + s^{2}L + (C)^{-1}}
 $$
-Andengradsligning rødder:
+2nd degree polynomial
 $$
 d = b^{2} - 4ac
 $$
-I dette tilfælde er:
+In this case:
 $$
 \begin{align*}
 a = L\\
@@ -33,11 +33,23 @@ c = \frac{1}{C}
 \end{align*}
 $$
 $$
-R^{2} - \frac{4 L}{C}
+d = R^{2} - \frac{4 L}{C}
 $$
-
 $$
 \frac{-b \pm \sqrt{d}}{2a}
+$$
+$$
+\frac{-R + \sqrt{R^{2} - \frac{4 L}{C}}}{2L}
+$$
+$$
+\frac{-R - \sqrt{R^{2} - \frac{4 L}{C}}}{2L}
+$$
+Insert values:
+$$
+\frac{-320 + \sqrt{320^{2} - \frac{4 \cdot 0.1}{10^{-7}}}}{2 \cdot 0.1}
+$$
+$$
+
 $$
 
 Invers Laplace transformerede
