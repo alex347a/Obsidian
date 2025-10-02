@@ -91,3 +91,14 @@ $$
 $$
 
 ![[Pasted image 20251002135118.png]]
+
+So the answer is:
+![[Pasted image 20251002135245.png]]
+
+I have to find this out by deriving it using the z-transform formula, and not just using the table result or matlab.
+
+![[Pasted image 20251002135600.png]]
+![[Pasted image 20251002135619.png]]
+$$
+X(z) = \sum_{n = - \infty} ^{\infty} \cos(\omega_{0})
+$$
