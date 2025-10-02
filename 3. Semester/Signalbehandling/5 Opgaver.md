@@ -118,3 +118,6 @@ $$
 $$
 \left(\frac{e^{i \omega_{0} n T} + e^{- i \omega_{0} n T}}{2}\right) \cdot e^{-nsT}
 $$
+$$
+\left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot e^{-nsT}
+$$
