@@ -49,7 +49,7 @@ ROC is the region of the value that z will converge, if z is 0 here the system w
 Causal sequence means we only consider $n>0$ so all values of $n<0$ will be 0.
 
 ![[Pasted image 20251002094422.png]]
-### Common z-transform for signal
+### Common z-transform for signal (table)
 ![[Pasted image 20251002094538.png]]
 ![[Pasted image 20251002094904.png]]
 ### Transfer function in z-domain

@@ -10,7 +10,7 @@ $$
 2. Assuming that $V_{s}$ is an impulse $V_{s} = \delta (0)$, can you plot $V_{o}(t)$ time response
 
 I plot it in matlab:
-
+![[Pasted image 20251002135052.png]]
 
 
 I accidentally tried calculating it by hand:
@@ -25,7 +25,7 @@ $$
 $$
 Extend with s:
 $$
-\frac{R}{sR + s^{2}L + (C)^{-1}}
+\frac{Rs}{sR + s^{2}L + (C)^{-1}}
 $$
 2nd degree polynomial
 $$
@@ -90,3 +90,4 @@ $$
 \end{array}
 $$
 
+![[Pasted image 20251002135118.png]]
