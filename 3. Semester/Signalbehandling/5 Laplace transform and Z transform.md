@@ -81,9 +81,15 @@ Then inverse z-transform to get $y(n)$, which comes later.
 ![[Pasted image 20251002100736.png]]
 ### Pole-zero diagram
 ![[Pasted image 20251002100819.png]]
+### Factorization
 ![[Pasted image 20251002101059.png]]
+### Matlab functions
 ![[Pasted image 20251002101147.png]]
 Even if you dont have the value for c (here -4) you should still type 0, because it needs the inputs.
 ![[Pasted image 20251002101157.png]]
 ![[Pasted image 20251002101208.png]]
+### Inverse z-transform
 ![[Pasted image 20251002101247.png]]
+![[Pasted image 20251002103322.png]]
+### Partial fraction
+![[Pasted image 20251002103653.png]]
