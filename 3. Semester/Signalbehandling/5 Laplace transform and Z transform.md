@@ -44,3 +44,10 @@ ROC is the region of the value that z will converge, if z is 0 here the system w
 ![[Pasted image 20251002093707.png]]
 ### Z-transformation rules
 ![[Pasted image 20251002093919.png]]
+![[Pasted image 20251002094142.png]]
+### Causal sequence
+Causal sequence means we only consider $n>0$ so all values of $n<0$ will be 0.
+
+![[Pasted image 20251002094422.png]]
+### Common z-transform for signal
+![[Pasted image 20251002094538.png]]
