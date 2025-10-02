@@ -56,3 +56,6 @@ Causal sequence means we only consider $n>0$ so all values of $n<0$ will be 0.
 ![[Pasted image 20251002095134.png]]
 ![[Pasted image 20251002095157.png]]A recursive algorithm means the previous output is used to calculate the current output.
 ![[Pasted image 20251002095440.png]]
+![[Pasted image 20251002095912.png]]
+![[Pasted image 20251002095931.png]]
+This sho
