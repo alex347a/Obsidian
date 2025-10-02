@@ -50,3 +50,4 @@ Null is at $\frac{f_{s}}{d}$
 ### Z-transformation rules
 ![[Pasted image 20251002093707.png]]
 ![[Pasted image 20251002093929.png]]
+![[Pasted image 20251002094547.png]]

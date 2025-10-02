@@ -51,3 +51,4 @@ Causal sequence means we only consider $n>0$ so all values of $n<0$ will be 0.
 ![[Pasted image 20251002094422.png]]
 ### Common z-transform for signal
 ![[Pasted image 20251002094538.png]]
+![[Pasted image 20251002094904.png]]
