@@ -35,3 +35,4 @@ remember that $s = \sigma + j \omega$. $T$ is the sampling period. The amplitude
 ![[Pasted image 20251002090143.png]]![[Pasted image 20251002090154.png]]
 If the poles are not in the gray area the system will not be stable. So in the s-domain the values have to be negative $\sigma$ values.
 ![[Pasted image 20251002090320.png]]
+![[Pasted image 20251002091224.png]]
