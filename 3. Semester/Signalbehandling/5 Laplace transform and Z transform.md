@@ -16,7 +16,7 @@ When $|x| < 1$ you will always converge to 0.
 The poles are the values where the equation will become infinite, because the denominator becomes 0. This is impossible to draw, because of all the poles. Therefore we need to perform a Z-transform.
 ### Relation between s-domain and z-domain
 ![[Pasted image 20251002084151.png]]
-When going from the s domain to z domain you go from cartesian space to pole coordinates.
+In the s-domain there is $\omega_{s}$ gap between each value which in the z-domain would be $2 \pi$ since that is one roundtrip in the circle. When going from the s domain to z domain you go from cartesian space to pole coordinates. In the z-domain when moving $\theta + \pi$ you will be using only one point to represent all of the numbers in the s-domain that are repeated because of the $2 \pi$ space between each value. The relation between the first value and the sampling frequency is $\frac{f_{0}}{f_{s}}= \frac{1}{2}$ which is $\pi$ in the circle.
 
 The domains are used for:
 ### Filter Design:
@@ -27,3 +27,6 @@ The domains are used for:
 ### Stability Analysis:
 - **Continuous**: "Are all poles in the left-half plane?"
 - **Discrete**: "Are all poles inside the unit circle?"
+
+![[Pasted image 20251002085258.png]]
+![[Pasted image 20251002085314.png]]
