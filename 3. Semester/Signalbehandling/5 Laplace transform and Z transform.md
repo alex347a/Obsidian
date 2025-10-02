@@ -16,3 +16,14 @@ When $|x| < 1$ you will always converge to 0.
 The poles are the values where the equation will become infinite, because the denominator becomes 0. This is impossible to draw, because of all the poles. Therefore we need to perform a Z-transform.
 ### Relation between s-domain and z-domain
 ![[Pasted image 20251002084151.png]]
+When going from the s domain to z domain you go from cartesian space to pole coordinates.
+
+The domains are used for:
+### Filter Design:
+- **Analog filter poles** in s-domain (Butterworth, Chebyshev, etc.)
+- **Map to z-domain** using various methods:
+    - Impulse invariance: direct mapping $z = e^{sT}$
+    - Bilinear transform: more complex but avoids aliasing
+### Stability Analysis:
+- **Continuous**: "Are all poles in the left-half plane?"
+- **Discrete**: "Are all poles inside the unit circle?"
