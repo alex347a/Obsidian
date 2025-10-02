@@ -121,7 +121,7 @@ $$
 $$
 Then I can expand using:
 $$
-\sum_{i=0}^{\infty} x^{i} = \frac{1}{1-x}
+\sum_{i=0}^{\infty} x^{i} = \frac{1}{1-x}, \quad |x| < 1
 $$
 For $z^{-n}$:
 $$
