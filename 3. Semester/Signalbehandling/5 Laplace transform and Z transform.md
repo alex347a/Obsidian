@@ -12,3 +12,7 @@ On the left we have the time domain where the square wave consists of multiple s
 When passing through a Laplace transform you include $e^{-st}$, which will be converted from the time domain to the S-domain.
 ![[Pasted image 20251002083314.png]]
 When $|x| < 1$ you will always converge to 0.
+![[Pasted image 20251002083724.png]]
+The poles are the values where the equation will become infinite, because the denominator becomes 0. This is impossible to draw, because of all the poles. Therefore we need to perform a Z-transform.
+### Relation between s-domain and z-domain
+![[Pasted image 20251002084151.png]]
