@@ -94,6 +94,7 @@ Sandsynlighed (statistik er kun på koreansk men det lader til at noget statisti
 Introduction to computer engineering:
 ![[Pasted image 20251001173119.png]]
 ![[Pasted image 20251001173057.png]]
+TJEK Artificial Intelligence department.
 ## Sungkyunkwan University SKKU (NSC (Natural Science Campus))
 - Probability and random processes
 - Introduction to deep neural networks
