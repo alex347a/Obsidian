@@ -83,6 +83,7 @@ https://plms.postech.ac.kr/local/ubion/course/lists.php?year=2025&semester=20&de
 
 ![[Pasted image 20251001170220.png]]
 ## SEOULTECH
+"Exchange students must only choose Module courses"
 Machine Learning på electrical and information engineering
 ![[Pasted image 20251001172306.png]]
 Data structures and algorithms på electronic engineering
