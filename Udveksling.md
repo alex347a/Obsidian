@@ -89,6 +89,12 @@ Data structures and algorithms på electronic engineering
 ![[Pasted image 20251001172411.png]]
 Artificial Intelligence på CS and engineering
 ![[Pasted image 20251001172451.png]]
+Intelligent Control på electrical and information engineering
+![[Pasted image 20251003092401.png]]
+Deep learning på IT Management
+Machine learning og Statistik og sandsynlighed: "Recommended but not strictly required"
+![[Pasted image 20251003092517.png]]
+#### Der mangler statistik
 DER ER KUN OM FORÅRET: Sandsynlighed (statistik er kun på koreansk men det lader til at noget statistik indgår i dette fag idet de bruger bogen probability and statistics)
 ![[Pasted image 20251001172845.png]]
 TJEK Artificial Intelligence department.
