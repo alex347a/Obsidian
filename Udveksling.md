@@ -95,6 +95,8 @@ Intelligent Control på electrical and information engineering
 Deep learning på IT Management
 Machine learning og Statistik og sandsynlighed: "Recommended but not strictly required"
 ![[Pasted image 20251003092517.png]]
+Robotics
+![[Pasted image 20251003094250.png]]
 #### Der mangler statistik
 DER ER KUN OM FORÅRET: Sandsynlighed (statistik er kun på koreansk men det lader til at noget statistik indgår i dette fag idet de bruger bogen probability and statistics)
 ![[Pasted image 20251001172845.png]]
