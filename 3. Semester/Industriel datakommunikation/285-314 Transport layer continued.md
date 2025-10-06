@@ -100,5 +100,64 @@ The algorithm has three main parts: **Slow Start**, **Congestion Avoidance**, 
 **Summary FSM (Figure 3.51):**  
 ![[Pasted image 20251006084448.png]]
 The TCP congestion control algorithm can be represented as a finite state machine that transitions between these states (Slow Start, Congestion Avoidance, Fast Recovery) based on the events of ACK arrival, duplicate ACKs, and timeouts.
+### **Fast Recovery**
+- **Purpose:** A recommended (but not mandatory) component for handling loss indicated by **three duplicate ACKs**, which suggests that some data is still getting through.
+- **Action:**
+    - On entering Fast Recovery, `cwnd` is set to `ssthresh + 3 MSS` (accounting for the three duplicate ACKs received).
+    - For each **additional duplicate ACK** received, `cwnd` is increased by **1 MSS**. This artificially inflates the window to keep data flowing.
+    - When the **ACK for the retransmitted segment** (the one that caused the duplicate ACKs) finally arrives, `cwnd` is set to `ssthresh` and TCP enters **Congestion Avoidance**.
+- **Timeout in Fast Recovery:** If a timeout occurs, TCP behaves as it would in Slow Start or Congestion Avoidance: `cwnd` is set to **1 MSS** and it enters **Slow Start**.
 
-This is up to page 298, need fast recover and so forth.
+### **TCP Tahoe vs. TCP Reno**
+- **TCP Tahoe:** On _any_ loss event (timeout or 3 dup ACKs), it always sets `cwnd = 1 MSS` and enters Slow Start.
+- **TCP Reno:** Incorporates **Fast Recovery**. It only resets `cwnd` to 1 on a _timeout_. For triple duplicate ACKs, it uses Fast Recovery, which is less severe. (INSERT FIGURE 3.52 HERE)
+
+### **The AIMD Principle**
+- TCP's core congestion control mechanism is **Additive-Increase, Multiplicative-Decrease (AIMD)**.
+- **Additive Increase:** In Congestion Avoidance, `cwnd` increases by ~1 MSS per RTT.
+- **Multiplicative Decrease:** On a loss event, `cwnd` is halved.
+- This creates the classic **"sawtooth" pattern** of TCP's sending rate. (INSERT FIGURE 3.53 HERE)
+### **TCP CUBIC**
+- A more modern TCP flavor that changes the **Congestion Avoidance** phase to be more efficient, especially on high-speed, long-distance networks.
+- **Goal:** After a loss event, **ramp up the sending rate more quickly** to the pre-loss value (`W_max`), and then probe more carefully for new bandwidth.
+- **Method:** Instead of a linear increase, CUBIC increases `cwnd` based on a **cubic function** of the time since the last loss event.
+    - It grows quickly when far from `W_max`.
+    - It grows slowly when close to `W_max` to avoid causing another loss immediately.
+- **Result:** TCP CUBIC can achieve higher throughput and better utilize available bandwidth than TCP Reno.
+![[Pasted image 20251006085916.png]]
+### **Network-Assisted and Delay-Based Congestion Control**
+**1. Explicit Congestion Notification (ECN)**
+- A form of **network-assisted congestion control**.
+- **How it works:**
+    1. A congested router can **mark a bit** in the IP header of a packet instead of dropping it.
+    2. The receiver sees this mark and **echoes it back** to the sender in a TCP ACK.
+    3. The sender reacts to this explicit signal **by halving `cwnd`**, just as if a loss had occurred, but _before_ a loss actually happens.
+- This avoids the cost of packet loss and retransmission, leading to better performance. (INSERT FIGURE 3.55 HERE)
+    
+
+**2. Delay-Based Congestion Control (e.g., TCP Vegas, BBR)**
+
+- These protocols use **increases in RTT** (queuing delay) as a signal of impending congestion, rather than waiting for packet loss.
+    
+- **Intuition:** "Keep the pipe just full, but no fuller." Increase the sending rate until queuing delays start to build up, then back off.
+    
+- **Examples:** TCP Vegas, BBR (used by Google). BBR is designed to compete fairly with loss-based TCP flows like CUBIC.
+    
+
+---
+
+### **3.7.3 Fairness**
+
+**Goal of Fairness:** When multiple flows share a bottleneck link, a fair congestion-control protocol should give each flow an **equal share** of the bottleneck bandwidth.
+
+**Is TCP Fair?**
+
+- TCP's AIMD algorithm, under **idealized conditions** (same RTT, same packet size, long-lived flows), converges to provide fairness among competing TCP connections. (INSERT FIGURE 3.57 HERE)
+    
+- However, in practice, fairness can be broken:
+    
+    - **UDP:** Applications using UDP (e.g., VoIP, video streaming) do not have built-in congestion control and can grab an unfair share of bandwidth, "crowding out" TCP traffic.
+        
+    - **Parallel TCP Connections:** A single application (like a web browser) opening multiple parallel TCP connections to the same server will get a larger share of the bandwidth than an application using only a single connection.
+        
+    - **Different RTTs:** Connections with **shorter RTTs** can grab available bandwidth more quickly and thus achieve higher throughput than connections with longer RTTs.
