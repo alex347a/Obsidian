@@ -47,3 +47,58 @@ There are two broad approaches to congestion control.
     - A **mark in a packet header** (e.g., setting a bit) as it travels from sender to receiver. The receiver then informs the sender. This method takes a full round-trip time.
 - Examples: Early SNA, DECnet, ATM, and modern Explicit Congestion Notification (ECN) in IP/TCP.
 
+### **TCP Congestion Control**
+TCP uses **end-to-end congestion control**, as the IP layer provides no explicit network feedback. The sender infers congestion and adjusts its rate accordingly.
+
+**Classic TCP Congestion Control**
+**How TCP Limits its Sending Rate:**
+- TCP uses a **congestion window (`cwnd`)** to limit the amount of unacknowledged data in flight.
+- The constraint is: `LastByteSent – LastByteAcked <= min{cwnd, rwnd}`
+- Ignoring flow control (`rwnd`), the sender's rate is roughly **`cwnd / RTT`**.
+- By adjusting `cwnd`, the sender controls its transmission rate.
+
+**How TCP Perceives Congestion:**
+- A **"loss event"** is the primary signal of congestion. This is either:
+    1. A **timeout**.
+    2. The receipt of **three duplicate ACKs** (which triggers fast retransmit).
+- Loss is interpreted as an implicit indication that congestion has occurred somewhere in the network.
+
+**How TCP Adjusts its Rate: The Guiding Principles**
+1. **Decrease on Loss:** When a loss event occurs, decrease `cwnd` (and thus the sending rate).
+2. **Increase on ACK:** When an ACK for new data arrives, increase `cwnd`. This makes TCP **self-clocking**—ACKs clock the arrival of new data.
+3. **Bandwidth Probing:** TCP increases its rate until a loss event occurs, then backs off. This cycle of increasing and decreasing continuously probes the available bandwidth.
+### **The TCP Congestion Control Algorithm**
+The algorithm has three main parts: **Slow Start**, **Congestion Avoidance**, and **Fast Recovery**.
+**1. Slow Start**
+- **Goal:** Quickly find the available bandwidth.
+- **Initial State:** `cwnd` starts at **1 MSS**.
+- **Growth:** `cwnd` increases by **1 MSS for every ACK received**.
+    - This leads to **exponential growth** of the sending rate, doubling `cwnd` every RTT. 
+![[Pasted image 20251006084552.png]]
+- **How Slow Start Ends:**
+    - **Timeout:** A timeout indicates severe congestion. React by:
+        - `ssthresh` (slow start threshold) = `cwnd / 2`
+        - `cwnd` = **1 MSS**
+        - Restart Slow Start.
+    - **`cwnd` reaches `ssthresh`:** Transition to **Congestion Avoidance**.
+    - **Three Duplicate ACKs:** Transition to **Fast Recovery**.
+
+**2. Congestion Avoidance**
+- **Goal:** Increase the rate cautiously, probing for additional bandwidth without causing congestion.
+- **Growth:** `cwnd` increases by **roughly 1 MSS per RTT**.
+    - A common implementation: For each new ACK received, increase `cwnd` by `MSS * (MSS / cwnd)`. This results in a linear increase over time.
+- **How Congestion Avoidance Ends:**
+    - **Timeout:** Treat as severe congestion. Same reaction as in Slow Start:
+        - `ssthresh = cwnd / 2`
+        - `cwnd = 1 MSS`
+        - Enter **Slow Start**.
+    - **Three Duplicate ACKs:** Treat as a milder form of congestion. React by:
+        - `ssthresh = cwnd / 2`
+        - `cwnd = ssthresh + 3 MSS` (This is part of Fast Recovery)
+        - Enter **Fast Recovery**.
+
+**Summary FSM (Figure 3.51):**  
+![[Pasted image 20251006084448.png]]
+The TCP congestion control algorithm can be represented as a finite state machine that transitions between these states (Slow Start, Congestion Avoidance, Fast Recovery) based on the events of ACK arrival, duplicate ACKs, and timeouts.
+
+This is up to page 298, need fast recover and so forth.
