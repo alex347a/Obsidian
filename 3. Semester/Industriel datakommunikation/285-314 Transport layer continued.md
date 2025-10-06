@@ -132,32 +132,67 @@ The TCP congestion control algorithm can be represented as a finite state machin
     1. A congested router can **mark a bit** in the IP header of a packet instead of dropping it.
     2. The receiver sees this mark and **echoes it back** to the sender in a TCP ACK.
     3. The sender reacts to this explicit signal **by halving `cwnd`**, just as if a loss had occurred, but _before_ a loss actually happens.
-- This avoids the cost of packet loss and retransmission, leading to better performance. (INSERT FIGURE 3.55 HERE)
-    
-
+- This avoids the cost of packet loss and retransmission, leading to better performance.
+![[Pasted image 20251006085943.png]]
 **2. Delay-Based Congestion Control (e.g., TCP Vegas, BBR)**
-
 - These protocols use **increases in RTT** (queuing delay) as a signal of impending congestion, rather than waiting for packet loss.
-    
 - **Intuition:** "Keep the pipe just full, but no fuller." Increase the sending rate until queuing delays start to build up, then back off.
-    
 - **Examples:** TCP Vegas, BBR (used by Google). BBR is designed to compete fairly with loss-based TCP flows like CUBIC.
-    
-
----
-
-### **3.7.3 Fairness**
-
+### Fairness
 **Goal of Fairness:** When multiple flows share a bottleneck link, a fair congestion-control protocol should give each flow an **equal share** of the bottleneck bandwidth.
 
 **Is TCP Fair?**
-
-- TCP's AIMD algorithm, under **idealized conditions** (same RTT, same packet size, long-lived flows), converges to provide fairness among competing TCP connections. (INSERT FIGURE 3.57 HERE)
-    
+- TCP's AIMD algorithm, under **idealized conditions** (same RTT, same packet size, long-lived flows), converges to provide fairness among competing TCP connections.
+![[Pasted image 20251006090019.png]]
 - However, in practice, fairness can be broken:
-    
     - **UDP:** Applications using UDP (e.g., VoIP, video streaming) do not have built-in congestion control and can grab an unfair share of bandwidth, "crowding out" TCP traffic.
-        
     - **Parallel TCP Connections:** A single application (like a web browser) opening multiple parallel TCP connections to the same server will get a larger share of the bandwidth than an application using only a single connection.
-        
     - **Different RTTs:** Connections with **shorter RTTs** can grab available bandwidth more quickly and thus achieve higher throughput than connections with longer RTTs.
+### **Evolution of Transport-Layer Functionality**
+**The Proliferation of TCP Flavours**
+- While UDP and TCP are the foundational protocols, experience has shown they are not ideal for all scenarios.
+- This has led to the development of many specialized versions of TCP:
+    - **TCP CUBIC, BBR:** For high-speed, long-distance paths.
+    - **DCTCP, DCQCN:** Optimized for data center networks.
+    - Versions for wireless links, paths with packet reordering, and for different priorities.
+- The common thread is the use of the **TCP segment format** and a goal of **fairness**.
+### **QUIC: Quick UDP Internet Connections**
+QUIC is an **application-layer protocol** that uses **UDP** as its underlying transport. It is designed to improve performance for secure HTTP and is the basis for **HTTP/3**.
+**Key Features of QUIC:**
+1. **Connection-Oriented and Secure:**
+    - Requires a handshake to set up state.
+    - **All packets are encrypted.**
+    - **Major Innovation:** Combines the **transport connection handshake** with the **security (TLS) handshake** into a single step, reducing connection setup time from multiple RTTs to **1 RTT** (or 0 RTT for repeated connections).
+![[Pasted image 20251006090233.png]]
+2. **Streams:**
+    - Allows **multiple application-level "streams"** to be multiplexed over a single QUIC connection.
+    - Each stream provides reliable, in-order, bi-directional data delivery.
+    - This solves the **Head-of-Line (HOL) Blocking** problem of TCP. If a packet for one stream is lost, only that stream is blocked; other streams can continue to deliver data.
+![[Pasted image 20251006090249.png]]
+3. **Reliable, TCP-Friendly Congestion Control:**
+    - Provides **reliable data transfer on a per-stream basis**, using acknowledgment mechanisms similar to TCP.
+    - Its congestion control algorithm is based on **TCP NewReno**, making it friendly to competing TCP traffic.
+    - By implementing reliability and congestion control at the application layer, updates can be deployed much faster than changes to the core TCP protocol in operating systems.
+### **Summary**
+**Transport Layer Services:**
+- The transport layer provides logical communication between application processes.
+- It can range from a simple, **no-frills service** (like **UDP**) to a complex service with **reliability, flow control, and congestion control** (like **TCP**).
+
+**Reliable Data Transfer (RDT):**
+- Can be implemented at the link, network, transport, or application layer.
+- The core principles involve **sequence numbers, acknowledgments, timers, and retransmissions**.
+
+**TCP:**
+- A complex, connection-oriented protocol that provides **reliable data transfer, flow control, and congestion control**.
+- Its complexity is hidden from the application, which simply uses a socket interface.
+
+**Congestion Control:**
+- Essential to prevent network "gridlock."
+- **Classic TCP** uses an **end-to-end, Additive-Increase, Multiplicative-Decrease (AIMD)** approach.
+- Newer approaches include:
+    - **TCP CUBIC:** Faster probing for bandwidth.
+    - **Delay-based (e.g., BBR):** Uses increased delay as a congestion signal.
+    - **ECN (Explicit Congestion Notification):** Network-assisted congestion control.
+
+**Evolution:**
+- The transport layer continues to evolve, with **QUIC** being a prime example of moving traditional transport-layer functions (reliability, congestion control) into the **application layer** for greater flexibility and faster deployment.
