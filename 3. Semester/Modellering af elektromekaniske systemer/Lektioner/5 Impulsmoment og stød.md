@@ -94,6 +94,8 @@ $$
 Systemer der kolliderer med hinanden
 ### Elastisk stød vs. uelastisk stød
 ![[Pasted image 20251007132235.png]]
+### Impulsbevarelse for stød
 ![[Pasted image 20251007132251.png]]
 ### Fuldstændig uelastisk stød
 ![[Pasted image 20251007132318.png]]
+Hvor M er den totale masse.
