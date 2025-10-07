@@ -61,3 +61,8 @@ Igen er der et led der går ud idet to parallelle vektorer krydset giver 0.
 ![[3 Kræfter og bevægelser#Massemidtpunktssætningen]]
 ### Roterende bevægelse
 ![[Pasted image 20251007125847.png]]
+### Inertimoment
+![[Pasted image 20251007125906.png]]
+Partiklen bliver kun påvirket i z-retningen, så derfor er det $L_{zi}$ der er vigtig, som er z-komposanten af $L_{i}$ som er impulsmomentet der er vinkelret på $R_{i}$ og $r_{i}$.
+![[Pasted image 20251007130236.png]]
+Alle partiklerne vil have den samme vinkelhastighed, ellers ville objektet vride sig, men de har ikke samme translatorisk hastighed. Afstanden til omdrejningsaksen $R_{i}$ kvadreret bestemmer inertimomentet for partiklerne.
