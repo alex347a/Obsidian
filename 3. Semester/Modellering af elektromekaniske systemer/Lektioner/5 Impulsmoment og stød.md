@@ -81,6 +81,7 @@ Der er forskellige inertimomenter for de forskellige akser.
 Man kan regne inertimomentet ved brug af et volumeintegrale.
 Senere vil vi se forskelle imellem inertimomenter for akser der sidder fast på objektet og akser der sidder fast i jorden, inertimomentet vil være det samme for objektet, men vil være forskelligt for de forskellige typer af akser.
 
+### Forbindelse mellem den resulterende kraft og kraftmoment
 For translatoriske legemer er kraften givet ved:
 $$
 m \cdot \ddot{x} = F
