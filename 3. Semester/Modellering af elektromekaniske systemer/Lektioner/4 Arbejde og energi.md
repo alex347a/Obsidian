@@ -56,7 +56,7 @@ Hvis en partikel der kun påvirkes af konservative kræfter så vil den totale m
 Den potentielle energi er størst her når bolden er længst oppe i luften og det modsatte gælder for den kinetiske energi.
 ### Partikelsystemer: arbejdssætningen
 Et partikelsystem er når der er flere en én partikel.
-#### L-system og C-system
+### L-system og C-system
 ![[Pasted image 20250930132235.png]]
 Massemidtpunktet er den vægtede sum af masser.
 ![[Pasted image 20250930132549.png]]

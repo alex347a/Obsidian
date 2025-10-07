@@ -48,4 +48,9 @@ $$
 Når man tager den afledte af en sum så tager man den afledte af hvert enkelte parikels impuls og summere det op.
 ![[Pasted image 20251007124627.png]]
 ![[Pasted image 20251007124658.png]]
-[[l-sys]]
+### Indre impulsmoment og ydre impulsmoment
+![[Pasted image 20251007124941.png]]
+$r_{C}$ er afstanden til massemidtpunktet.
+P er massen af alle punkterne ganget med deres hastigheder
+###
+![[Pasted image 20251007125316.png]]
