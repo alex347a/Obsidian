@@ -6,7 +6,7 @@ Newtons 2. lov:
 $$
 \frac{d}{dt}\overline{p} = \overline{F}_{net}
 $$
-Men når det er for impulsmomentet, så kommer kraften til at være kraftmomentet.
+Men når det er for impulsmomentet $I$, så kommer kraften til at være kraftmomentet $\tau$.
 ![[Pasted image 20251007123245.png]]
 Hvis man forestiller sig en cirkel hvor $\theta$ er buelængden man har bevæget sig:
 $$
@@ -66,3 +66,22 @@ Igen er der et led der går ud idet to parallelle vektorer krydset giver 0.
 Partiklen bliver kun påvirket i z-retningen, så derfor er det $L_{zi}$ der er vigtig, som er z-komposanten af $L_{i}$ som er impulsmomentet der er vinkelret på $R_{i}$ og $r_{i}$.
 ![[Pasted image 20251007130236.png]]
 Alle partiklerne vil have den samme vinkelhastighed, ellers ville objektet vride sig, men de har ikke samme translatorisk hastighed. Afstanden til omdrejningsaksen $R_{i}$ kvadreret bestemmer inertimomentet for partiklerne.
+For z-retningen:
+$$
+\frac{d}{dt} (\omega \cdot I_{z}) = \overline{\tau}_{o}
+$$
+$$
+I_{z} \cdot \dot{\omega} = \overline{\tau}
+$$
+Hvilket er det der svarer til:
+$$
+m \overline{a} = \overline{F}_{net}
+$$
+Der er forskellige inertimomenter for de forskellige akser.
+Man kan regne inertimomentet ved brug af et volumeintegrale.
+Senere vil vi se forskelle imellem inertimomenter for akser der sidder fast på objektet og akser der sidder fast i jorden, inertimomentet vil være det samme for objektet, men vil være forskelligt for de forskellige typer af akser.
+
+For translatoriske legemer er kraften givet ved:
+$$
+F = m \cdot \dot{x}
+$$
