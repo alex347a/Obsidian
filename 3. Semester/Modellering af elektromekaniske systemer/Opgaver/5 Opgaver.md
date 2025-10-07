@@ -72,6 +72,9 @@ $$
 V = \sqrt{2 g h}
 $$
 
+$$
+m \cdot v = (m + M) \cdot \sqrt{2 g h}
+$$
 Hvis jeg sammenligner den kinetiske energi for kuglen og den potentielle energi for klodsen:
 $$
 E_{kin,kugle} = \frac{1}{2} m v^{2}
