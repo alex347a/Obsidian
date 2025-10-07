@@ -83,5 +83,9 @@ Senere vil vi se forskelle imellem inertimomenter for akser der sidder fast på 
 
 For translatoriske legemer er kraften givet ved:
 $$
-F = m \cdot \dot{x}
+m \cdot \ddot{x} = F
+$$
+Så vil det for rotationelle legemer:
+$$
+I \cdot \ddot{\theta} = \tau
 $$
