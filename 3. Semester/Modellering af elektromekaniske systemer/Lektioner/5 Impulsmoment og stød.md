@@ -107,4 +107,6 @@ Så man kan se på det på højresiden af plus er det der er lagt til når den a
 ### Restitutionskoefficient e
 ![[Pasted image 20251007133421.png]]
 ### Huskeregel
-Huskeregel: $e=1$ elastisk, $e \neq 1$ uelastisk, $e = 0$ fuldstændig uelastisk. HUSK at det er den relative hastighed.
+Huskeregel: $e=1$ elastisk, $e > 0 \land e < 1$ uelastisk, $e = 0$ fuldstændig uelastisk. HUSK at det er den relative hastighed.
+### Kollision i 2D
+![[Pasted image 20251007134246.png]]
