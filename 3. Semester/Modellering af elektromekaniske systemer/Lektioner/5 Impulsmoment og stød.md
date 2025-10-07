@@ -35,3 +35,17 @@ $$
 $$
 Idet krydsproduktet af to parallelle vektorer er 0.
 Når kraften er vinkelret med arm (r) så er impulsmomentet størst.
+### Størrelsen af kraftmomentet
+![[Pasted image 20251007124330.png]]
+$$
+\frac{d}{dt} \overline{L}_{O} = \overline{\tau_{0}}
+$$
+$$
+\overline{\tau_{0}} = \overline{r} \times \overline{F}
+$$
+### Det totale impulsmoment for partikelsystemer
+![[Pasted image 20251007124413.png]]
+Når man tager den afledte af en sum så tager man den afledte af hvert enkelte parikels impuls og summere det op.
+![[Pasted image 20251007124627.png]]
+![[Pasted image 20251007124658.png]]
+[[l-sys]]
