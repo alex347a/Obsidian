@@ -6,7 +6,7 @@ a) Find snorkraften $F_{1}$, loddets impulsmoment med hensyn til centrum $L_{1}$
 
 Impulsmomentet $L_{1}$ er givet ved:
 $$
-L_{1} = m (r_{1} \times v_{1})
+L_{1} = m r_{1}  v_{1})
 $$
 
 Snorkraften $F_{1}$ er givet ved centripetalkraften:
@@ -20,6 +20,24 @@ E_{kin,1} = \frac{1}{2} m \cdot v_{1}^{2}
 $$
 
 b) Ved langsomt at trække ned i snoren formindskes radius i cirkelbevægelsen, indtil den har værdien $r_{2}$ Find de værdier $F_{2}$, $L_{2}$ og $E_{kin,2}$, som snorkraften, loddets impulsmoment og loddets kinetiske energi nu har.
+Impulsmomentet $L_{2}$ er givet ved:
+$$
+L_{2} = m (r_{2} \times v_{2}) = m(r_{1} \times v_{1})
+$$
+$$
+v_{2} = 
+$$
+
+Snorkraften $F_{2}$ er givet ved centripetalkraften:
+$$
+F_{2} = \frac{m v_{1}^{2}}{r_{2}}
+$$
+
+Den kinetiske energi $E_{kin,1}$ er givet ved:
+$$
+E_{kin,2} = \frac{1}{2} m \cdot v_{1}^{2}
+$$
+
 
 c) Hvor stort et arbejde, $W_{12}$ er der blevet udført på systemet.
 
