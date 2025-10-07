@@ -1,3 +1,9 @@
+### Opsummering
+![[Pasted image 20251007134553.png]]
+![[Pasted image 20251007134602.png]]
+![[Pasted image 20251007134608.png]]
+![[Pasted image 20251007134615.png]]
+![[Pasted image 20251007134621.png]]
 ### Impulsmoment
 ![[Pasted image 20251007122739.png]]
 Hastigheden er proportionel med impuls, fordi impulsen er givet ved $m \cdot p$. Impulsmomentet er vinkelret med planet der er udspændt af $r$ og $p$, da det er krydsproduktet, brug højrehåndsregel.
