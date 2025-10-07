@@ -99,3 +99,10 @@ Systemer der kolliderer med hinanden
 ### Fuldstændig uelastisk stød
 ![[Pasted image 20251007132318.png]]
 Hvor M er den totale masse.
+### Elastisk stød med en stationær partikel
+![[Pasted image 20251007133127.png]]
+### Elastisk stød med en partikel i bevægelse
+![[Pasted image 20251007133224.png]]
+Så man kan se på det på højresiden af plus er det der er lagt til når den anden partikel er i bevægelse, så når den ikke er i bevægelse var det sat til 0.
+### Restitutionskoefficient e
+![[Pasted image 20251007133421.png]]
