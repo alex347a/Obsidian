@@ -76,9 +76,9 @@ $$
 $$
 \frac{1}{2} m v^{2} = 2513.92 \space J
 $$
-Jeg indsætter massen af kuglen:
+Dividerer med $2m$
 $$
-\frac{1}{2} 0.016 v^{2}  
+v^{2}= 2513.92/ J
 $$
 
 b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes til varme under kuglens indtrængning i klodsen.
