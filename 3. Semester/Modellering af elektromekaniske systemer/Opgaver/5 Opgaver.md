@@ -92,7 +92,10 @@ $$
 E_{kin, kugle} = \frac{1}{2} m v^{2}
 $$
 $$
-E_{kin, kugle} = 
+E_{kin, kugle} = \frac{1}{2} 0.008 \cdot 397^{2} = 0.004 \cdot 397^{2} = 630.436 \space J
+$$
+$$
+E_{pot, klods} = 
 $$
 
 
