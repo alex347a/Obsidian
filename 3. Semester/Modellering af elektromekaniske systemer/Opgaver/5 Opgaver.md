@@ -86,6 +86,10 @@ v = \frac{8.016}{0.016} \cdot \sqrt{0.62848} \approx 501 \cdot 0.793 \approx 397
 $$
 
 b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes til varme under kuglens indtrængning i klodsen.
+Jeg kan beregne den kinetiske energi for pistolkuglen og den potentielle energi for klodsen, og så ville forskellen mellem klodsens potentielle energi og pistolkuglens kinetiske energi være energien der er blevet tabt ved at blive omdannet til varme:
+$$
+
+$$
 
 
 5-5 (start med at opskrive en uendelig sum)
