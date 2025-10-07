@@ -82,7 +82,7 @@ $$
 v = \frac{0.016 + 8.0}{0.016} \cdot \sqrt{2 \cdot 9.82 \cdot 0.032}
 $$
 $$
-v = \frac{8.016}{0.016} \cdot \sqrt{0.62}
+v = \frac{8.016}{0.016} \cdot \sqrt{0.62848} \approx 501 \cdot 0.793 \approx 397 \frac{m}{s}
 $$
 
 b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes til varme under kuglens indtrængning i klodsen.
