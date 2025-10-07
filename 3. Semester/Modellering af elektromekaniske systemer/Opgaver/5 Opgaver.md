@@ -59,6 +59,19 @@ $$
 Princippet i et ballistisk pendul er vist på figuren. Hastigheden af en pistolkugle bestemmes ved at måle den højde h, som træblokken når op i, efter at kuglen er skudt ind i den. Pistolkuglens masse er $m=16 \space g$. Træklodsens masse er $M = 8,0 \space kg$. Man måler $h=3,2 \space cm$.
 
 a) Bestem pistolkuglens hastighed v.
+Dette er et fuldstændig uelastisk stød.
+Hvis jeg bruger impulsbevarelse under kollisionen (hvor V er fælleshastigheden lige efter kollisionen):
+$$
+m \cdot v = (m + M) V
+$$
+Energibevarelse efter kollisionen:
+$$
+\frac{1}{2} (m + M) V^{2} = (m + M) g h
+$$
+$$
+V = \sqrt{2 g h}
+$$
+
 Hvis jeg sammenligner den kinetiske energi for kuglen og den potentielle energi for klodsen:
 $$
 E_{kin,kugle} = \frac{1}{2} m v^{2}
@@ -78,7 +91,7 @@ $$
 $$
 Dividerer med $2m$
 $$
-v^{2}= \frac{2513.92 \space J}{0.0008 \space g}
+v^{2}= \frac{2513.92 \space J}{0.0016 \space g}
 $$
 
 
