@@ -90,3 +90,10 @@ Så vil det for rotationelle legemer:
 $$
 I \cdot \ddot{\theta} = \tau
 $$
+## Stød
+Systemer der kolliderer med hinanden
+### Elastisk stød vs. uelastisk stød
+![[Pasted image 20251007132235.png]]
+![[Pasted image 20251007132251.png]]
+### Fuldstændig uelastisk stød
+![[Pasted image 20251007132318.png]]
