@@ -27,3 +27,11 @@ L_{O} = m \cdot r^{2} \cdot \omega
 $$
 ![[Pasted image 20251007123614.png]]
 Krydsproduktet af to parallelle vektorer er 0.
+![[Pasted image 20251007123810.png]]
+Man bruger produktregellen ved differentiation.
+I Newtons 2. lov kan det ses at den tidsafledte af impulsen er kraften.
+$$
+\overline{v} \times  m \overline{v} = 0
+$$
+Idet krydsproduktet af to parallelle vektorer er 0.
+Når kraften er vinkelret med arm (r) så er impulsmomentet størst.
