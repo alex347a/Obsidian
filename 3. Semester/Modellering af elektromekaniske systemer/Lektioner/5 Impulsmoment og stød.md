@@ -106,3 +106,5 @@ Hvor M er den totale masse.
 Så man kan se på det på højresiden af plus er det der er lagt til når den anden partikel er i bevægelse, så når den ikke er i bevægelse var det sat til 0.
 ### Restitutionskoefficient e
 ![[Pasted image 20251007133421.png]]
+### Huskeregel
+Huskeregel: $e=1$ elastisk, $e \neq 1$ uelastisk, $e = 0$ fuldstændig uelastisk. HUSK at det er den relative hastighed.
