@@ -59,8 +59,29 @@ $$
 Princippet i et ballistisk pendul er vist på figuren. Hastigheden af en pistolkugle bestemmes ved at måle den højde h, som træblokken når op i, efter at kuglen er skudt ind i den. Pistolkuglens masse er $m=16 \space g$. Træklodsens masse er $M = 8,0 \space kg$. Man måler $h=3,2 \space cm$.
 
 a) Bestem pistolkuglens hastighed v.
+Hvis jeg sammenligner den kinetiske energi for kuglen og den potentielle energi for klodsen:
+$$
+E_{kin,kugle} = \frac{1}{2} m v^{2}
+$$
+$$
+E_{pot,klods} = M g h
+$$
+$$
+E_{pot,klods} = 8000 \cdot 9.82 \cdot 0.032 = 2513.92 \space J
+$$
+Så kan jeg isolere hastigheden af kuglen i formlen for den kinetiske energi ved at sætte den ligmed den potentielle energi for klodsen:
+$$
+E_{kin,kugle} = E_{pot, klods}
+$$
+$$
+\frac{1}{2} m v^{2} = 2513.92 \space J
+$$
+Jeg indsætter massen af kuglen:
+$$
+\frac{1}{2} 0.016 v^{2}  
+$$
 
-b) Beregn den pro
+b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes til varme under kuglens indtrængning i klodsen.
 
 
 5-5 (start med at opskrive en uendelig sum)
