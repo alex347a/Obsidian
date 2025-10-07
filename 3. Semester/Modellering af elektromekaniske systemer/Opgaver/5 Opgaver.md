@@ -78,8 +78,9 @@ $$
 $$
 Dividerer med $2m$
 $$
-v^{2}= 2513.92/ J
+v^{2}= \frac{2513.92 \space J}{0.0008 \space g}
 $$
+
 
 b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes til varme under kuglens indtrængning i klodsen.
 
