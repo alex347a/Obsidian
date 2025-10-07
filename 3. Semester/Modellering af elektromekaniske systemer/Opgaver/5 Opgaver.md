@@ -75,28 +75,15 @@ $$
 $$
 m \cdot v = (m + M) \cdot \sqrt{2 g h}
 $$
-Hvis jeg sammenligner den kinetiske energi for kuglen og den potentielle energi for klodsen:
 $$
-E_{kin,kugle} = \frac{1}{2} m v^{2}
-$$
-$$
-E_{pot,klods} = M g h
+v = \frac{m + M}{m} \cdot \sqrt{2 g h}
 $$
 $$
-E_{pot,klods} = 8000 \cdot 9.82 \cdot 0.032 = 2513.92 \space J
-$$
-Så kan jeg isolere hastigheden af kuglen i formlen for den kinetiske energi ved at sætte den ligmed den potentielle energi for klodsen:
-$$
-E_{kin,kugle} = E_{pot, klods}
+v = \frac{0.016 + 8.0}{0.016} \cdot \sqrt{2 \cdot 9.82 \cdot 0.032}
 $$
 $$
-\frac{1}{2} m v^{2} = 2513.92 \space J
+v = \frac{8.016}{0.016} \cdot \sqrt{0.62}
 $$
-Dividerer med $2m$
-$$
-v^{2}= \frac{2513.92 \space J}{0.0016 \space g}
-$$
-
 
 b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes til varme under kuglens indtrængning i klodsen.
 
