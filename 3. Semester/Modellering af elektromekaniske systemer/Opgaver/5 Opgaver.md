@@ -89,7 +89,10 @@ b) Beregn den procentdel $f_{p}$ af pistolkuglens kinetiske energi, der omdannes
 Jeg kan beregne den kinetiske energi for pistolkuglen og den potentielle energi for klodsen, og så ville forskellen mellem klodsens potentielle energi og pistolkuglens kinetiske energi være energien der er blevet tabt ved at blive omdannet til varme:
 
 $$
-
+E_{kin, kugle} = \frac{1}{2} m v^{2}
+$$
+$$
+E_{kin, kugle} = 
 $$
 
 
