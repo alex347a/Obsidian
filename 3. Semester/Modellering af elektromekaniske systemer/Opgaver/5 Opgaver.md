@@ -40,12 +40,20 @@ $$
 
 
 c) Hvor stort et arbejde, $W_{12}$ er der blevet udført på systemet.
-Arbejde er ligmed kraft gange vej:
-$$W = d \cdot F$$
-
-
+Arbejdet er ændringen i den kinetiske energi $W_{12}$:
+$$
+\begin{align*}
+W_{12} &=  E_{kin,2} - E_{kin,1}\\
+W_{12} &=  \frac{1}{2} m \cdot v_{2}^{2} - \frac{1}{2} m \cdot v_{1}^{2}
+\end{align*}
+$$
+Hvis jeg så indsætter $v_{2} = \frac{r_{1}}{r_{2}}v_{1}$:
+$$
+W_{12} =  \frac{1}{2} m \cdot \frac{r_{1}}{r_{2}}v_{1} - \frac{1}{2} m \cdot v_{1}^{2}
+$$
 5-7
 ![[Pasted image 20251007141151.png]]
+
 
 5-5 (start med at opskrive en uendelig sum)
 ![[Pasted image 20251007141208.png]]
