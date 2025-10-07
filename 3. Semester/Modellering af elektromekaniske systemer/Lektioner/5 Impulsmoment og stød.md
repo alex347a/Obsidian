@@ -50,7 +50,14 @@ Når man tager den afledte af en sum så tager man den afledte af hvert enkelte 
 ![[Pasted image 20251007124658.png]]
 ### Indre impulsmoment og ydre impulsmoment
 ![[Pasted image 20251007124941.png]]
-$r_{C}$ er afstanden til massemidtpunktet.
+$r_{C}$ er stedvektoren til massemidtpunktet.
 P er massen af alle punkterne ganget med deres hastigheder
 ###
 ![[Pasted image 20251007125316.png]]
+Igen er der et led der går ud idet to parallelle vektorer krydset giver 0.
+![[Pasted image 20251007125504.png]]
+### Bevægelse af stive legemer
+![[Pasted image 20251007125649.png]]
+![[3 Kræfter og bevægelser#Massemidtpunktssætningen]]
+### Roterende bevægelse
+![[Pasted image 20251007125847.png]]
