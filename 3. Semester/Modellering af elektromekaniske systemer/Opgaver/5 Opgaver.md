@@ -49,10 +49,18 @@ W_{12} &=  \frac{1}{2} m \cdot v_{2}^{2} - \frac{1}{2} m \cdot v_{1}^{2}
 $$
 Hvis jeg så indsætter $v_{2} = \frac{r_{1}}{r_{2}}v_{1}$:
 $$
-W_{12} =  \frac{1}{2} m \cdot \frac{r_{1}}{r_{2}}v_{1} - \frac{1}{2} m \cdot v_{1}^{2}
+W_{12} =  \frac{1}{2} m \cdot \left(\frac{r_{1}}{r_{2}}v_{1}\right)^{2} - \frac{1}{2} m \cdot v_{1}^{2}
+$$
+$$
+W_{12} =  \frac{1}{2} m v_{1}^{2} \cdot \left(\frac{r_{1}^{2}}{r_{2}^{2}} - 1\right)
 $$
 5-7
 ![[Pasted image 20251007141151.png]]
+Princippet i et ballistisk pendul er vist på figuren. Hastigheden af en pistolkugle bestemmes ved at måle den højde h, som træblokken når op i, efter at kuglen er skudt ind i den. Pistolkuglens masse er $m=16 \space g$. Træklodsens masse er $M = 8,0 \space kg$. Man måler $h=3,2 \space cm$.
+
+a) Bestem pistolkuglens hastighed v.
+
+b) Beregn den pro
 
 
 5-5 (start med at opskrive en uendelig sum)
