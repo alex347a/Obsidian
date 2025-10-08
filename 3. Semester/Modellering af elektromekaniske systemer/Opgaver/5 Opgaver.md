@@ -112,6 +112,9 @@ $$
 
 5-5 (start med at opskrive en uendelig sum)
 ![[Pasted image 20251007141208.png]]
+$$
+e = \sqrt{\frac{h}{H}}
+$$
 
 Eksempel 5.9
 ![[Pasted image 20251007141412.png]]
