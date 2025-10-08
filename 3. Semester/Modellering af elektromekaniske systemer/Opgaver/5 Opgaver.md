@@ -155,6 +155,16 @@ Summen $\sum_{k=1}^{\infty} e^{k} = \frac{e}{1-e}$ for $0 < e < 1$:
 $$
 T = \sqrt{\frac{2H}{g}} \left[1 + \frac{2e}{1-e}\right]
 $$
+Indsætter tal:
+$$
+\sqrt{\frac{0.5}{9.82}} \approx 0.22564
+$$
+$$
+T = 0.22564 \left[1 + \frac{2e}{1-e}\right]
+$$
+$$
+36 = 0.22564 \left[1 + \frac{2e}{1-e}\right]
+$$
 
 Eksempel 5.9
 ![[Pasted image 20251007141412.png]]
