@@ -115,6 +115,14 @@ $$
 $$
 e = \sqrt{\frac{h}{H}}
 $$
+Faldtiden for det første hop vil være:
+$$
+t_{0} = \sqrt{\frac{2H}{g}}
+$$
+Mens opsigtstiden for det første hop vil være:
+$$
+\sqrt{\frac{2h}{g}}
+$$
 
 Eksempel 5.9
 ![[Pasted image 20251007141412.png]]
