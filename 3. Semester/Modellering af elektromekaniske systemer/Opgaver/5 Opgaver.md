@@ -106,7 +106,7 @@ $$$$
 1260.9 \space J - 2.519 \space J = 1258.4 \space J
 $$
 $$
-\frac{1260.9 \space J}{1258.4 \space J} = 99.8 \text{%#%}
+\frac{1258.4 \space J}{1260.9 \space J} \approx 99.8 \%
 $$
 
 
