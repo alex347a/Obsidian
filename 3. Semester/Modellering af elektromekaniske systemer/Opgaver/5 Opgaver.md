@@ -128,9 +128,21 @@ Efter andet hop:
 $$
 h_{2} = e^{2}h_{1} \Rightarrow e^{4}H
 $$
-Tiden for et hop både op 
+Tiden for et hop både op og ned vil være den samme højde:
 $$
-\sqrt{\frac{2h}{g}}
+t_{hop} (h) = 2 \sqrt{\frac{2h}{g}}
+$$
+Det første hop bliver:
+$$
+t_{1} = 2 \sqrt{\frac{2e^{2}H}{g}} = 2 e \sqrt{\frac{2H}{g}}
+$$
+Det andet hop bliver:
+$$
+t_{2} = 2 \sqrt{\frac{2e^{4}H}{h}} = 2e^{2} \sqrt{\frac{2H}{g}}
+$$
+Dermed bliver det generelt:
+$$
+
 $$
 
 Eksempel 5.9
