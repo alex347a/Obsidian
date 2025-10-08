@@ -128,7 +128,7 @@ Efter andet hop:
 $$
 h_{2} = e^{2}h_{1} \Rightarrow e^{4}H
 $$
-
+Tiden for et hop både op 
 $$
 \sqrt{\frac{2h}{g}}
 $$
