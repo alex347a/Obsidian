@@ -92,10 +92,21 @@ $$
 E_{kin, kugle} = \frac{1}{2} m v^{2}
 $$
 $$
-E_{kin, kugle} = \frac{1}{2} 0.008 \cdot 397^{2} = 0.004 \cdot 397^{2} = 630.436 \space J
+E_{kin, kugle} = \frac{1}{2} 0.016 \cdot 397^{2} = 0.008 \cdot 397^{2} = 1260.9 \space J
 $$
 $$
-E_{pot, klods} = 
+E_{pot, klods} = (m+M) gh
+$$
+$$
+E_{pot, klods} = 8.016 \cdot 9.82 \cdot 0.032 = 2.519 \space J
+$$
+$$
+\Delta  E = E_{kin,kugle} - E_{pot, klods}
+$$$$
+1260.9 \space J - 2.519 \space J = 1258.4 \space J
+$$
+$$
+\frac{1260.9 \space J}{1258.4 \space J} = 99.8 \text{%#%}
 $$
 
 
