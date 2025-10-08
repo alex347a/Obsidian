@@ -117,9 +117,18 @@ e = \sqrt{\frac{h}{H}}
 $$
 Faldtiden for det første hop vil være:
 $$
-t_{0} = \sqrt{\frac{2H}{g}}
+t_{0} = \sqrt{\frac{2H}{g}} = \sqrt{\frac{2 \cdot 0.25}{9.82}} \approx 0.2256 \space s
 $$
-Mens opsigtstiden for det første hop vil være:
+Mens opsigtstiden for det første hop vil være $h_{1}$
+Hvor:
+$$
+e = \sqrt{\frac{h_{1}}{H}} \Rightarrow h_{1} = e^{2} H
+$$
+Efter andet hop:
+$$
+h_{2} = e^{2}h_{1} \Rightarrow e^{4}H
+$$
+
 $$
 \sqrt{\frac{2h}{g}}
 $$
