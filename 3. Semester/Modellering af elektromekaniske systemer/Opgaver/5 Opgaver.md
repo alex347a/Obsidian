@@ -142,6 +142,13 @@ t_{2} = 2 \sqrt{\frac{2e^{4}H}{h}} = 2e^{2} \sqrt{\frac{2H}{g}}
 $$
 Dermed bliver det generelt:
 $$
+t_{k} = e^{k} \sqrt{\frac{2H}{g}}, \quad k = 1,2,3 \dots
+$$
+Den totale tid T er:
+$$
+T = t_{0} + \sum_{k=1} ^{\infty} t_{k}
+$$
+$$
 
 $$
 
