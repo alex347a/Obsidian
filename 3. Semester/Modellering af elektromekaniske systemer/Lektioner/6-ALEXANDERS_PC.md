@@ -1,0 +1,82 @@
+### Opsummering
+![[Pasted image 20251009121915.png]]
+![[Pasted image 20251009121936.png]]
+### Pendul på vogn
+![[Pasted image 20251009121858.png]]
+### Pendul på vogn fritlegemediagram
+![[Pasted image 20251009121957.png]]
+T er tensionskraften der udgøres af snoren, for vognen er normalkraften og tyngdekraften ligegyldig. For pendulet er tyngdekraften og tensionskraften vigtig. I opgaven skal tensionskraften elimineres, da den ikke er givet og vi skal finde vinklen $\theta$.
+![[Pasted image 20251009123229.png]]
+Dette er en ikke-linære differentialligning, fordi der er sinus til en variabel $\theta$. 
+### Tensionskraften
+![[Pasted image 20251009123534.png]]
+![[Pasted image 20251009123650.png]]
+Idet pendulet ikke bevæger sig op og ned så er $y_{p}$ givet ved $-l$ som er længden af snoren og cos til vinklen, hvor de positive vinkler er mod uret.
+
+Man kan eliminere T ved (indsæt billede af tavlen)
+
+Derefter indsæt udtryk for $\ddot{x}_{p}, \ddot{y}_{p}$ (slide 9)
+
+### Relativ bevægelse: Koordinatsystemer
+![[Pasted image 20251009125301.png]]
+### Jævnt translatorisk bevægelse
+![[Pasted image 20251009125526.png]]
+Der er en hastighedsforskel mellem de to koordinatsystemer, men der er ikke forskel i acceleration, så systemet er også et inertialsystem, og systemet er ikke ikke-inertielt hvis koordinatsystemet accelerere.
+![[Pasted image 20251009131844.png]]
+Eksempel: Elevator. Når en elevator går opad føles det for personen som om man trækkes nedad. 
+
+Newtons 2. lov:
+$$
+m \cdot a = F_{net}
+$$
+
+Jævn translatorisk: $$
+m \cdot a' = F_{net}, \quad \text{da } a = a'
+$$
+Jævn acceleration:
+$$
+m \cdot(a_{0} \cdot a') = F_{net}
+$$
+$$
+m \cdot a' = F_{net} - m a_{0}
+$$
+![[Pasted image 20251009132027.png]]
+![[Pasted image 20251009132105.png]]
+### Effektiv tyngdekraft
+![[Pasted image 20251009132200.png]]
+![[Pasted image 20251009132342.png]]
+$$
+\begin{align*}
+v(t) &=  \int_{t_{0}}^{t} g d \tau + v(0)\\
+&= g \cdot(t - t_{0}), \quad t_{0} = 0\\
+&= g \cdot t\\
+h(t) &= \int_{0}^{t} g \cdot \tau \, d \tau + h(0)\\
+&= \left[g \frac{\tau^{2}}{2}\right]_{0}^{t} = g \frac{t^{2}}{2} + h(0)
+\end{align*}
+$$
+![[Pasted image 20251009132738.png]]
+### Roterende henførelsessystem
+![[Pasted image 20251009133035.png]]
+![[Pasted image 20251009133201.png]]
+e er enhedsvektorer der går i retningen af det der står i subscriptet.
+Det er vigtigt at vide om enhedsvektorerne er konstante eller om de også afhænger af tiden.
+![[Pasted image 20251009133411.png]]
+![[Pasted image 20251009134135.png]]
+![[Pasted image 20251009134145.png]]
+![[Pasted image 20251009134155.png]]
+![[Pasted image 20251009134202.png]]
+### Newtons 2. lov i roterende koordinatsystemer
+![[Pasted image 20251009134819.png]]
+![[Pasted image 20251009134826.png]]
+### Relativ bevægelse: Centrifugalkraft
+![[Pasted image 20251009134944.png]]
+Her vil der ikke være nogen bevægelse, fordi koordinatsystemet har samme hastighed som partiklen, og hastigheden er konstant.
+![[Pasted image 20251009135139.png]]
+Der er altså ingen acceleration.
+### Corioliskraften 
+![[Pasted image 20251009135414.png]]
+![[Pasted image 20251009135446.png]]
+![[Pasted image 20251009135541.png]]![[Pasted image 20251009135519.png]]
+Corioliskraften dannes når der er en relativ hastighed i et roterende koordinatsystem.
+### Friktionskraften
+![[Pasted image 20251009135729.png]]
