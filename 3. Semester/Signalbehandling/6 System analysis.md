@@ -70,8 +70,10 @@ In contrast to the impulse response the frequency response provides a response t
 ![[Pasted image 20251009093438.png]]
 Here:
 $$
-\underbrace{H(j \omega)}_{\text{system freq response}} \space \underbrace{e^{j \omega t}}_{\text{input signal}(\omega)}
+\underbrace{H(j \omega)}_{\text{system freq response at } \omega} \quad \underbrace{e^{j \omega t}}_{\text{input signal}(\omega)}
 $$
+How we get $H(-j \omega)$ from multiplying into the ue
+
 ![[Pasted image 20251009093548.png]]
 In the polar form you can easily identify the magnitude of the response and the phase shift.
 ### Bode plot
