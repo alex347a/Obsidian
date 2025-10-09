@@ -74,4 +74,6 @@ In the polar form you can easily identify the magnitude of the response and the 
 ![[Pasted image 20251009094025.png]]
 The bode plot shows the magnitude response and the phase response of your system for different frequencies.
 ![[Pasted image 20251009094120.png]]
-A point on the peripheral of the circle represents a sinusoidal.
+A point on the peripheral of the circle represents a sinusoidal. $f_{0}$ is the Nyquist frequency, which is half of the sampling frequency $f_{0} = \frac{f_{s}}{2}$.
+![[4 Sampling and reconstruction#Nyquist-Shannon theorem]]
+

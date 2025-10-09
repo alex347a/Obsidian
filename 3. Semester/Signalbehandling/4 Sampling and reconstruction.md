@@ -21,6 +21,7 @@ A periodic signal in the time domain becomes a discrete spectra in the frequency
 ![[Pasted image 20250925092423.png]]
 Aliasing is when the sample frequency is too low so the repeated spectra overlaps.
 ![[Pasted image 20250925092838.png]]
+### Nyquist-Shannon theorem
 ![[Pasted image 20250925092845.png]]
 Your sampling frequency must always be at least twice the highest frequency in the spectrum for $x(t)$
 ### Nyquist frequency: $\frac{f_{s}}{2}$ 
