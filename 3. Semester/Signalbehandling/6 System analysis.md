@@ -110,4 +110,7 @@ If you look at the distance between $z_{1}$ to $f=0$ it will be the max, if you 
 ![[Pasted image 20251009103614.png]]
 Just look at the top half of the circle. When the frequency is close to the pole the magnitude will increase, when the frequency is close to the zero the magnitude will decrease. So in this example when you reach $2 \space kHz$ the magnitude will be at the peak, afterwards it will decrease as the frequency increases, and when it reaches $z_{1}$ which is around $5 khZ$ the magnitude will be at the lowest magnitude. The phase angle is mostly the same.
 ![[Pasted image 20251009103835.png]]
-Here from the frequency 0 to 2k it will decrease at reach the lowest magnitude and after it will increase and peak at around $5 kHz$ and decrease again.
+Here from the frequency 0 to 2k it will decrease at reach the lowest magnitude and after it will increase and peak at around $5 kHz$ and decrease again. This is a band stop filter.
+### Sample rate
+![[Pasted image 20251009104120.png]]
+If you change the sampling frequency $T$ in $z = e^{j \omega T}$ The function will be scaled proportionally. So if you scale the sampling frequency by 5, then when it used to have a cutoff frequency at $1 \space kHz$, but if you scale it by 5 then the cutoff frequency will be at $5 \space kHz$.
