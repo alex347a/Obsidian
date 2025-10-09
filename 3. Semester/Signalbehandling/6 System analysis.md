@@ -39,4 +39,14 @@ The modulo describes the difference in values between the points (consecutive sa
 If the impulse response of the system converges to 0 as n goes towards infinite, the system will be stable. However if the impulse response of the system diverges and goes towards infinite as n goes towards infinite, the system will be unstable.
 ### Determination of stability
 ![[Pasted image 20251009090523.png]]
-If the absolute value of ALL of the poles are smaller than 1, then the system is STABLE.
+If the absolute value of ALL of the poles are smaller than 1, then the system is STABLE or if the absolute value of at least.
+If the absolute value of the poles are smaller than 1 or equal to one and at least one of the imaginary poles are equal to 0, then the system is MARGINALLY STABLE.
+If the absolute value of ALL of the imaginary poles are less than 1 the system is UNSTABLE.
+
+If we look at the slide 5 slides back:
+![[Pasted image 20251009085703.png]]
+Then we can see that $e^{0.1823 n}$ comes from the value $1.2^{n}$, where we can see that as n increases the system will be unstable because the values will increase infinitely as n approaches infinity.
+
+![[Pasted image 20251009090748.png]]
+![[Pasted image 20251009091007.png]]
+The orange circle is MARGINALLY STABLE, since the values are 1 it means the sequence is a unit sequence and the input sequence is the same as the output sequence. The green is STABLE since the values are smaller than 1, so the values will co and the red are UNSTABLE.
