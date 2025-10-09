@@ -68,6 +68,10 @@ If the location of the system poles in the s-domain are on the negative side of 
 ![[Pasted image 20251009093056.png]]
 In contrast to the impulse response the frequency response provides a response to a sinusoidal input sequence instead of just an impulse. The impulse response checks the stability of the system to an impulse while the frequency response checks the stability of the system to a specific frequency.
 ![[Pasted image 20251009093438.png]]
+Here:
+$$
+\underbrace{H(j \omega)}_{\text{system freq response}} \space \underbrace{e^{j \omega t}}_{\text{input signal}(\omega)}
+$$
 ![[Pasted image 20251009093548.png]]
 In the polar form you can easily identify the magnitude of the response and the phase shift.
 ### Bode plot
@@ -84,3 +88,11 @@ A point on the peripheral of the circle represents a sinusoidal. $f_{0}$ is the 
 As we can see the amplitude is multiplied by 1.65 and the phase is shifted -56$\degree$.
 ### Matlab function - bode()
 ![[Pasted image 20251009095439.png]]
+![[Pasted image 20251009095853.png]]
+Its not possible, because at $\omega T = 3$ we have $\pi$ which is where the vertical line is on the bode plot.
+$$
+f = \frac{1}{2\pi} f_{s}
+$$
+Since $\frac{f_{s}}{2}$. 
+### Graphical determination of frequency response
+![[Pasted image 20251009101507.png]]

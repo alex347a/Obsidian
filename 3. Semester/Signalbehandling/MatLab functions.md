@@ -9,5 +9,4 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251009083731.png]]
 ### bode plot
 ![[Pasted image 20251009095439.png]]
-![[Pasted image 20251009095853.png]]
-Its not possible, because at $\omega T = 3$ we have $\pi$ which is where the vertical line is on the bode plot.
+
