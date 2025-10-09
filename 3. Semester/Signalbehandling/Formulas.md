@@ -12,7 +12,8 @@ $$
 $$
 X(f) = \mathcal{F}(x(t)) = \int_{- \infty} ^{\infty} x(t) e^{-j 2 \pi f t} \, dt
 $$
-T is the step.
+t is the step.
+
 $f_{s}$ is the sampling frequency and is given by $f_{s}\frac{1}{T}$ 
 $N$ is the length of the signal, so how many data points there are.
 $F$ is the frequency resolution and is given by $F = \frac{f_{s}}{N} = \frac{100}{41} \approx 2.5$   
@@ -39,7 +40,10 @@ Stopband frequency: $\frac{\omega_{s}}{\omega_{a}}$
 Nyquist frequency: $\frac{f_{s}}{2}$
 
 ![[Pasted image 20250925093245.png]]
-T is the sampling interval
+T is the sampling interval/period
+$$
+T = \frac{1}{f_{s}}
+$$
 $\tau$ is the pulse width
 $d= \frac{\tau}{T}$ is the duty factor
 
@@ -51,3 +55,9 @@ Null is at $\frac{f_{s}}{d}$
 ![[Pasted image 20251002093707.png]]
 ![[Pasted image 20251002093929.png]]
 ![[Pasted image 20251002094547.png]]
+
+### Determination of stability
+![[Pasted image 20251009090523.png]]
+If the absolute value of ALL of the poles are smaller than 1, then the system is STABLE or if the absolute value of at least.
+If the absolute value of the poles are smaller than 1 or equal to one and at least one of the imaginary poles are equal to 0, then the system is MARGINALLY STABLE.
+If the absolute value of ALL of the imaginary poles are less than 1 the system is UNSTABLE.

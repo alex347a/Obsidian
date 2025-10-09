@@ -77,3 +77,7 @@ The bode plot shows the magnitude response and the phase response of your system
 A point on the peripheral of the circle represents a sinusoidal. $f_{0}$ is the Nyquist frequency, which is half of the sampling frequency $f_{0} = \frac{f_{s}}{2}$.
 ![[4 Sampling and reconstruction#Nyquist-Shannon theorem]]
 
+#### Example
+![[Pasted image 20251009094759.png]]
+![[Pasted image 20251009094920.png]]
+![[Pasted image 20251009095235.png]]
