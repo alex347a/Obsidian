@@ -7,6 +7,10 @@ $$
 $$
 V_{o} = \frac{iR}{V_{s}} = \frac{R}{R +  sL + (sC)^{-1}}
 $$
+
+$$
+H(s) = \frac{Rs}{Rs + Ls^{2} + \frac{1}{C}}
+$$
 2. Assuming that $V_{s}$ is an impulse $V_{s} = \delta (0)$, can you plot $V_{o}(t)$ time response
 
 I plot it in matlab:
@@ -129,4 +133,8 @@ $$
 $$
 $$
 \left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot z^{-n} + \left(\frac{e^{-i \omega_{0} n T}}{2}\right) \cdot z^{-n} \Rightarrow \left(\frac{e^{i \omega_{0} n T}}{2}\right) \cdot z^{-n} + \left(\frac{e^{-i \omega_{0} n T}}{2}\right) \cdot 
+$$
+Cheng reduced it to:
+$$
+\frac{1}{2}(\frac{z}{z})
 $$
