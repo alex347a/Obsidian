@@ -81,3 +81,6 @@ A point on the peripheral of the circle represents a sinusoidal. $f_{0}$ is the 
 ![[Pasted image 20251009094759.png]]
 ![[Pasted image 20251009094920.png]]
 ![[Pasted image 20251009095235.png]]
+As we can see the amplitude is multiplied by 1.65 and the phase is shifted -56$\degree$.
+### Matlab function - bode()
+![[Pasted image 20251009095439.png]]

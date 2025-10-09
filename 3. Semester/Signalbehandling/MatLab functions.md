@@ -3,3 +3,10 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251002101157.png]]
 ![[Pasted image 20251002101208.png]]
 ![[Pasted image 20251002105027.png]]
+### Transfer function tf()
+![[Pasted image 20251009083601.png]]
+### impulse()
+![[Pasted image 20251009083731.png]]
+### bode plot
+![[Pasted image 20251009095439.png]]
+
