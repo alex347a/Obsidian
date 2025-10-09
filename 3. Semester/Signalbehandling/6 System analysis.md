@@ -20,5 +20,12 @@ p_{1} \neq p_{i}, \quad i = 2 \dots N
 $$
 The pole determines the subsystems, which means if any subsystems are unstable, then your whole system will be unstable.
 
-### USE CASE 
-So we use impulse response to check if the system is stable or unstable, the complete transfer function can be considered as a lot of submodules where if any of the poles are unstable then that means the entire system is unstable.
+## USE CASE 
+So we use impulse response to check if the system is stable or unstable, the complete transfer function can be considered as a lot of submodules where if any of the poles are unstable then that means the entire system is unstable. The amount of poles are determined by the order of the transfer function
+
+### Relation between pole placement and impulse response
+![[Pasted image 20251009084518.png]]
+The first part (Modulo) determines the distance: $e^{\sigma_{i}n T}$
+The second part (Argument) determines the angle: $e^{j \omega n T}$
+
+The modulo describes the difference in values between the points (consecutive samples) in your discrete system.
