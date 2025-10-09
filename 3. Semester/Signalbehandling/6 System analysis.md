@@ -29,3 +29,7 @@ The first part (Modulo) determines the distance: $e^{\sigma_{i}n T}$
 The second part (Argument) determines the angle: $e^{j \omega n T}$
 
 The modulo describes the difference in values between the points (consecutive samples) in your discrete system.
+### Example: Impulse response of a 2nd order system
+![[Pasted image 20251009085553.png]]
+![[Pasted image 20251009085703.png]]
+![[Pasted image 20251009085713.png]]The blue line is $h_{1}$ and the red line is $h_{2}$. However remember this is in 3D space, which is hard to imagine from the slide. The x-axis consists of the real values while the z-axis consists of the imaginary values. If you look at the $h_{1}$ and $h_{2}$ from the previous slide the modulo is exactly the same as seen in the graph of the real part, while the phase is different, which can be seen in the graph of the imaginary part. 
