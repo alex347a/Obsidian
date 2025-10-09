@@ -32,4 +32,11 @@ The modulo describes the difference in values between the points (consecutive sa
 ### Example: Impulse response of a 2nd order system
 ![[Pasted image 20251009085553.png]]
 ![[Pasted image 20251009085703.png]]
-![[Pasted image 20251009085713.png]]The blue line is $h_{1}$ and the red line is $h_{2}$. However remember this is in 3D space, which is hard to imagine from the slide. The x-axis consists of the real values while the z-axis consists of the imaginary values. If you look at the $h_{1}$ and $h_{2}$ from the previous slide the modulo is exactly the same as seen in the graph of the real part, while the phase is different, which can be seen in the graph of the imaginary part. 
+![[Pasted image 20251009085713.png]]The blue line is $h_{1}$ and the red line is $h_{2}$. However remember this is in 3D space, which is hard to imagine from the slide. The x-axis consists of the real values while the z-axis consists of the imaginary values. If you look at the $h_{1}$ and $h_{2}$ from the previous slide the modulo is exactly the same as seen in the graph of the real part, while the phase is different, which can be seen in the graph of the imaginary part. As you can see the imaginary part is symmetric, because the phase is the same value, but with the opposite sign. Since the signal is continually increasing and unbounded the signal is unstable.
+![[Pasted image 20251009090342.png]]
+### Stability
+![[Pasted image 20251009090359.png]]
+If the impulse response of the system converges to 0 as n goes towards infinite, the system will be stable. However if the impulse response of the system diverges and goes towards infinite as n goes towards infinite, the system will be unstable.
+### Determination of stability
+![[Pasted image 20251009090523.png]]
+If the absolute value of ALL of the poles are smaller than 1, then the system is STABLE.
