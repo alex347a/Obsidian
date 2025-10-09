@@ -5,4 +5,16 @@
 #### Example
 ![[Pasted image 20251009083029.png]]
 ![[Pasted image 20251009083130.png]]
-So you just inser
+So you just isolate k and insert the pole values to find the k-values.
+![[Pasted image 20251009083610.png]]
+### Matlab function
+![[Pasted image 20251009083601.png]]
+![[Pasted image 20251009083731.png]]Remember the 0, or else matlab won't recognize it as a second order function. So this is for the function:
+$$
+H(z) = \frac{z^{2} + 0.4 z + 0}{z^{2} - 0.7z + 0.1}
+$$
+![[Pasted image 20251009083849.png]]
+Simple poles means no poles are repeated in the transfer functions, so:
+$$
+p_{1} \neq p_{i}, \quad i = 2 \dots N
+$$
