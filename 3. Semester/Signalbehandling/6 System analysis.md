@@ -69,4 +69,9 @@ If the location of the system poles in the s-domain are on the negative side of 
 In contrast to the impulse response the frequency response provides a response to a sinusoidal input sequence instead of just an impulse. The impulse response checks the stability of the system to an impulse while the frequency response checks the stability of the system to a specific frequency.
 ![[Pasted image 20251009093438.png]]
 ![[Pasted image 20251009093548.png]]
-In the polar form you can easily identify the magnitude of the response and the phase angle.
+In the polar form you can easily identify the magnitude of the response and the phase shift.
+### Bode plot
+![[Pasted image 20251009094025.png]]
+The bode plot shows the magnitude response and the phase response of your system for different frequencies.
+![[Pasted image 20251009094120.png]]
+A point on the peripheral of the circle represents a sinusoidal.
