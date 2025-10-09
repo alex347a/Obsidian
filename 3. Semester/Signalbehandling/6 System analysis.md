@@ -105,4 +105,9 @@ Here the line to the conjugated $p_{1}^{*}$ was forgotten by Cheng, but there is
 ![[Pasted image 20251009102843.png]]
 ![[Pasted image 20251009102948.png]]
 ![[Pasted image 20251009102956.png]]
-If you look at the distance between $z_{1}$ to $f=0$ it will be the max, if you look at the graph for the magnitude for the frequencies, as the frequencies increase the point will move along the peripheral of the circle decreasing the length of the line from $z_{1}$ to the frequency, and therefore the magnitude is decreasing. The 
+If you look at the distance between $z_{1}$ to $f=0$ it will be the max, if you look at the graph for the magnitude for the frequencies, as the frequencies increase the point will move along the peripheral of the circle decreasing the length of the line from $z_{1}$ to the frequency, and therefore the magnitude is decreasing. Since the theta has a negative in front of the parenthesis the phase is negative as the frequency increases.
+#### Example
+![[Pasted image 20251009103614.png]]
+Just look at the top half of the circle. When the frequency is close to the pole the magnitude will increase, when the frequency is close to the zero the magnitude will decrease. So in this example when you reach $2 \space kHz$ the magnitude will be at the peak, afterwards it will decrease as the frequency increases, and when it reaches $z_{1}$ which is around $5 khZ$ the magnitude will be at the lowest magnitude. The phase angle is mostly the same.
+![[Pasted image 20251009103835.png]]
+Here from the frequency 0 to 2k it will decrease at reach the lowest magnitude and after it will increase and peak at around $5 kHz$ and decrease again.
