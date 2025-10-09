@@ -103,3 +103,6 @@ Since $\frac{f_{s}}{2}$.
 Here the line to the conjugated $p_{1}^{*}$ was forgotten by Cheng, but there is supposed to be a line from z to $p_{1}^{*}$.
 ![[Pasted image 20251009102803.png]]
 ![[Pasted image 20251009102843.png]]
+![[Pasted image 20251009102948.png]]
+![[Pasted image 20251009102956.png]]
+If you look at the distance between $z_{1}$ to $f=0$ it will be the max, if you look at the graph for the magnitude for the frequencies, as the frequencies increase the point will move along the peripheral of the circle decreasing the length of the line from $z_{1}$ to the frequency, and therefore the magnitude is decreasing. The 
