@@ -64,3 +64,6 @@ If the crosses are outside the circle then the absolute value of the poles are b
 ### What about in continuous time system (s-domain)
 ![[Pasted image 20251009091508.png]]
 If the location of the system poles in the s-domain are on the negative side of the real axis the system is stable and if they are on the positive side of the real axis they are unstable.
+### Frequency response analysis
+![[Pasted image 20251009093056.png]]
+In contrast to the impulse response the frequency response provides a response to a sinusoidal input sequence instead of just an impu
