@@ -72,7 +72,6 @@ Here:
 $$
 \underbrace{H(j \omega)}_{\text{system freq response at } \omega} \quad \underbrace{e^{j \omega t}}_{\text{input signal}(\omega)}
 $$
-How we get $H(-j \omega)$ from multiplying into the ue
 
 ![[Pasted image 20251009093548.png]]
 In the polar form you can easily identify the magnitude of the response and the phase shift.
@@ -98,3 +97,9 @@ $$
 Since $\frac{f_{s}}{2}$. 
 ### Graphical determination of frequency response
 ![[Pasted image 20251009101507.png]]
+![[Pasted image 20251009102649.png]]
+![[Pasted image 20251009102704.png]]
+![[Pasted image 20251009102714.png]]
+Here the line to the conjugated $p_{1}^{*}$ was forgotten by Cheng, but there is supposed to be a line from z to $p_{1}^{*}$.
+![[Pasted image 20251009102803.png]]
+![[Pasted image 20251009102843.png]]
