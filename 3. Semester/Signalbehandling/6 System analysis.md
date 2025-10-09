@@ -48,5 +48,19 @@ If we look at the slide 5 slides back:
 Then we can see that $e^{0.1823 n}$ comes from the value $1.2^{n}$, where we can see that as n increases the system will be unstable because the values will increase infinitely as n approaches infinity.
 
 ![[Pasted image 20251009090748.png]]
+### Impulse response in z-plane related to pole position
 ![[Pasted image 20251009091007.png]]
-The orange circle is MARGINALLY STABLE, since the values are 1 it means the sequence is a unit sequence and the input sequence is the same as the output sequence. The green is STABLE since the values are smaller than 1, so the values will co and the red are UNSTABLE.
+- The green is STABLE since the values are smaller than 1, so the values will converge.  
+  
+- The orange circle is MARGINALLY STABLE, since the values are 1 it means the sequence is a unit sequence and the input sequence is the same as the output sequence. 
+  
+- The red are UNSTABLE because the value is above 1, meaning the values will keep increasing.
+
+### Are these systems stable
+![[Pasted image 20251009091348.png]]
+The crosses are the poles the O are the zeros, the zeros don't matter for the stability of the system.
+Left is stable, middle is marginally stable, the right is unstable.
+If the crosses are outside the circle then the absolute value of the poles are bigger than 1 and therefore the system is unstable, if they are on the circle they equal to 1 and are therefore marginally stable.
+### What about in continuous time system (s-domain)
+![[Pasted image 20251009091508.png]]
+If the location of the system poles in the s-domain are on the negative side of the real axis the system is stable and if they are on the positive side of the real axis they are unstable.
