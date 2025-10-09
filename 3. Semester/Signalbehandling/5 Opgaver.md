@@ -136,5 +136,11 @@ $$
 $$
 Cheng reduced it to:
 $$
-\frac{1}{2}(\frac{z}{z})
+\frac{1}{2}\left(\frac{z}{z - e^{j \omega_{0}n T}} + \frac{z}{z - e^{-j \omega_{0}n T}}\right)
+$$
+$$
+\frac{z \left(z - e^{- j \omega_{0} n T}\right)+ z - e^{-j \omega_{0} n T}}{\left(z- e^{j \omega n T}\right)(z - e^{-j \omega_ n T})}
+$$
+$$
+\frac{z^{2} - \cos(\omega T) z}{z^{2} - 2 z \cos(\omega T) + 1}
 $$
