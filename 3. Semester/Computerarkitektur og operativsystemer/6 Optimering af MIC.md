@@ -20,3 +20,5 @@ Data-risici
 Kontrol-risici
 - Når der er forgreninger der ændrer pipelinen.
 
+cache
+INDSÆT SLIDE 34
