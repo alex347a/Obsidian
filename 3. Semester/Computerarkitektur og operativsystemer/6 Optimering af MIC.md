@@ -12,6 +12,7 @@ Der er nogle risici ved at lave pipelining:
 
 Strukturelle risici
 - Når hardwaren ikke understøtter bestemte kombinationer af instruktioner samtidigt
+INDSÆT SLIDE 26 (Der er 2)
 
 Data-risici
 - Når der skal ventes på at dataet er klar til at blive læst
