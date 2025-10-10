@@ -22,3 +22,5 @@ Kontrol-risici
 
 cache
 INDSÆT SLIDE 34
+
+![[Pasted image 20251010103428.png]]
