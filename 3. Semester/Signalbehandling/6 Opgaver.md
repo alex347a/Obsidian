@@ -6,7 +6,7 @@ H_{1}(z) = \frac{z}{z^{2} - 3z + 2}
 $$
 Here I can factorize:
 $$
-z^{2} - 3z + 2 = (z - 1) (z - 2)
+z^{2} - 3z + 2 = (z - 1) (z - 2) = 0
 $$
 Therefore the roots are 1 and 2, which means the system is UNSTABLE
 $$
@@ -36,18 +36,28 @@ $$
 \sqrt{0.672^{2} - 0.6715} \approx 0.95
 $$
 Since the value is below 1 the system is STABLE.
-
-
 $$
 H_{3}(z) = \frac{z^{2} + 0.04z}{z^{2} - 1.556z + 1.21}
 $$
+
 $$
 H_{4}(s) = \frac{s}{s^{2} + 1}
 $$
 Factorization:
 $$
-s^{2} + 1 = (s - 1) (s-1)
+s^{2} + 1 = 0
 $$
+$$s = \pm j$$
+Since  $Re(s) = 0$ That means the system is MARGINALLY STABLE.
 $$
 H_{5}(s) = \frac{s + 2}{s^{2} - 1.344s + 0.9025}
 $$
+This is the exact same as the second one i did, but just in the s-plane this time:
+$$
+s = \frac{1.344 \pm 1.343 j}{2} = 0.672 \pm 0.6715 j
+$$
+These are COMPLEX CONJUGATE POLES:
+$$
+\sqrt{0.672^{2} - 0.6715} \approx 0.95
+$$
+Since the value is below 1 the system is STABLE.
