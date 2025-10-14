@@ -4,6 +4,7 @@ To check if the systems are stable the absolute value of ALL of the poles must b
 $$
 H_{1}(z) = \frac{z}{z^{2} - 3z + 2}
 $$
+
 $$
 H_{2}(z) = \frac{z-2}{z^{2} - 1.344z + 0.9025}
 $$
