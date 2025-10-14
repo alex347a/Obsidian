@@ -22,6 +22,20 @@ b &= -1.344\\
 c &= 0.9025 
 \end{align*}
 $$
+$$
+z = \frac{1.344 \pm \sqrt{(-1.344)^{2} - 4 \cdot 0.9025}}{2}
+$$
+$$
+z = \frac{1.344 \pm \sqrt{1.808 - 3.61}}{2}
+$$
+$$
+z = \frac{1.344 \pm 1.343 j}{2} = 0.672 \pm 0.6715 j
+$$
+These are COMPLEX CONJUGATE POLES:
+$$
+\sqrt{0.672^{2} - 0.6715} \approx 0.95
+$$
+Since the value is below 1 the system is STABLE.
 
 
 $$
