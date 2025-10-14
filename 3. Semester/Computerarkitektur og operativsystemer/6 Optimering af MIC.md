@@ -34,4 +34,29 @@ Der er nogle risici ved at lave pipelining:
 ![[Pasted image 20251013203739.png]]
 
 Den første opgave ligger i excelarket: Opgaver6
-Den anden opgave er et pythonscript der hedder:
+Den anden opgave er et pythonscript der hedder: Opgave6.py
+
+Konklusion fra Pythonopgaven:
+
+| Entries | LineSize | Pattern    | HitRate (%) |
+|----------|-----------|------------|-------------|
+| 4        | 4         | Sequential | 0.00        |
+| 4        | 4         | Random     | 9.38        |
+| 4        | 8         | Sequential | 50.00       |
+| 4        | 8         | Random     | 17.19       |
+| 4        | 16        | Sequential | 75.00       |
+| 4        | 16        | Random     | 34.38       |
+| 8        | 4         | Sequential | 0.00        |
+| 8        | 4         | Random     | 17.19       |
+| 8        | 8         | Sequential | 50.00       |
+| 8        | 8         | Random     | 31.25       |
+| 8        | 16        | Sequential | 75.00       |
+| 8        | 16        | Random     | 46.88       |
+| 16       | 4         | Sequential | 0.00        |
+| 16       | 4         | Random     | 29.69       |
+| 16       | 8         | Sequential | 50.00       |
+| 16       | 8         | Random     | 42.19       |
+| 16       | 16        | Sequential | 75.00       |
+| 16       | 16        | Random     | 75.00       |
+
+Sequential access patterns achieve higher hit rates due to spatial locality. Increasing line size generally increases hit rate for the sequential pattern but has little effect for random patterns. Increasing the number of entries also improves hit rate by reducing conflict misses.
