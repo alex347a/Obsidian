@@ -4,10 +4,25 @@ To check if the systems are stable the absolute value of ALL of the poles must b
 $$
 H_{1}(z) = \frac{z}{z^{2} - 3z + 2}
 $$
-
+Here I can factorize:
+$$
+z^{2} - 3z + 2 = (z - 1) (z - 2)
+$$
+Therefore the roots are 1 and 2, which means the system is UNSTABLE
 $$
 H_{2}(z) = \frac{z-2}{z^{2} - 1.344z + 0.9025}
 $$
+$$
+z = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
+$$
+$$
+\begin{align*}
+a &=  1\\
+b &= -1.344\\
+c &= 0.9025 
+\end{align*}
+$$
+
 
 $$
 H_{3}(z) = \frac{z^{2} + 0.04z}{z^{2} - 1.556z + 1.21}
