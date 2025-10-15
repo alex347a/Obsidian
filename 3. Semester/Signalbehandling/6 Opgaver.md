@@ -39,7 +39,25 @@ Since the value is below 1 the system is STABLE.
 $$
 H_{3}(z) = \frac{z^{2} + 0.04z}{z^{2} - 1.556z + 1.21}
 $$
+$$
+z = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
+$$
+$$
+\begin{align*}
+a &=  1\\
+b &= -1.556\\
+c &= 1.21 
+\end{align*}
+$$
+$$
+z = \frac{1.556 \pm \sqrt{(-1.556)^{2} - 4 \cdot 1.21}}{2}
+$$
+$$
+\frac{1.556 \pm \sqrt{-2.418864}}{2}
+$$
+$$
 
+$$
 $$
 H_{4}(s) = \frac{s}{s^{2} + 1}
 $$
