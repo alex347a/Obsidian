@@ -56,8 +56,13 @@ $$
 \frac{1.556 \pm \sqrt{-2.418864}}{2}
 $$
 $$
-
+z = 0.778 \pm 0.7776349 j
 $$
+These are COMPLEX CONJUGATE POLES:
+$$
+\sqrt{ 0.778^{2} \pm 0.7776349^{2}} = 1.10
+$$
+Since the value is above 1 the system is UNSTABLE.
 $$
 H_{4}(s) = \frac{s}{s^{2} + 1}
 $$
@@ -79,3 +84,25 @@ $$
 \sqrt{0.672^{2} - 0.6715} \approx 0.95
 $$
 Since the value is below 1 the system is STABLE.
+![[Pasted image 20251015114143.png]]
+1. 
+   
+   
+2. In order to determine whether the system is stable I have to calculate the poles:
+I use the quadratic formula:
+$$
+z = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
+$$
+$$
+\begin{align*}
+a &=  1\\
+b &= 0.8485\\
+c &= 0.36 
+\end{align*}
+$$
+$$
+z = \frac{-0.8485 \pm \sqrt{0.8485^{2} - 4 \cdot 0.36}}{2}
+$$
+$$
+
+$$
