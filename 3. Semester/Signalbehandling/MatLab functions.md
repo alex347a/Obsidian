@@ -15,5 +15,6 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ### bode() 
 ![[Pasted image 20251009095439.png]]
 ### impz()
-
+![[Pasted image 20251015122700.png]]
 ### filter()
+![[Pasted image 20251015122712.png]]
