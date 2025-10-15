@@ -128,59 +128,10 @@ Since the poles magnitude are below 1 that means the system is stable.
 
 ![[Pasted image 20251015122747.png]]
 1. Determine at which frequencies the gain of H(f) is maximum and minimum.
-   The maximum and minimum gain is determined by the 
-   
+![[Pasted image 20251015124039.png]]
+
 2. Determine the phase (using graphical methods) of H(f) at a frequency of 2 kHz.
-   
-   
-3. Plot a Bode diagram of H(z), and check if the above results are correct.
-   
-   ![[Pasted image 20251015123428.png]]
-
-% Plot magnitude and mark extrema
-
-figure('Units','normalized','Position',[0.1 0.1 0.7 0.6])
-
-subplot(2,1,1)
-
-plot(f, magdb, 'LineWidth', 1)
-
-hold on
-
-plot(f(idx_max), db_max, 'ro', 'MarkerFaceColor','r')
-
-plot(f(idx_min), db_min, 'ko', 'MarkerFaceColor','k')
-
-xlabel('Frequency (Hz)')
-
-ylabel('Magnitude (dB)')
-
-title('Magnitude response (H(e^{j\omega}))')
-
-grid on
-
-legend('Magnitude (dB)', sprintf('Global max: %.2f Hz (%.2f dB)', f_max, db_max), ...
-
-sprintf('Global min: %.2f Hz (%.2f dB)', f_min, db_min), 'Location','best')
-
-  
-
-% Plot phase response
-
-subplot(2,1,2)
-
-plot(f, ph_deg, 'LineWidth', 1)
-
-hold on
-
-plot(f0, phase0_deg, 'ms', 'MarkerFaceColor','m')
-
-xlabel('Frequency (Hz)')
-
-ylabel('Phase (deg)')
-
-title('Phase response (unwrapped)')
-
-grid on
-
-legend('Phase (deg)', sprintf('Phase @ %.0f Hz = %.2f°', f0, phase0_deg), 'Location','best')
+![[Pasted image 20251015124113.png]]   
+3. Plot a Bode diagram of H(z), and check if the above results are correct. 
+![[Pasted image 20251015123428.png]]
+They are correct.
