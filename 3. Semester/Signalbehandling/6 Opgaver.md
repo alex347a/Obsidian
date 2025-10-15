@@ -121,4 +121,4 @@ $$
 $$
 Since the poles magnitude are below 1 that means the system is stable.
 
-3. Plot the impulse response of the system with $n = 0:15$
+3. Plot the impulse response of the system with $n = 0:15$ (try different functions / ways)
