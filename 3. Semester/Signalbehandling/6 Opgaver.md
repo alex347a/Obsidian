@@ -104,5 +104,21 @@ $$
 z = \frac{-0.8485 \pm \sqrt{0.8485^{2} - 4 \cdot 0.36}}{2}
 $$
 $$
-
+z = \frac{-0.8485 \pm \sqrt{0.72 - 1.44}}{2}
 $$
+$$
+z = \frac{-0.8485 \pm \sqrt{-0.72}}{2}
+$$
+$$
+z = \frac{-0.8485 \pm 0.8485 j}{2}
+$$
+$$
+z = -0.42425 \pm 0.42425 j
+$$
+These are COMPLEX CONJUGATES:
+$$
+\sqrt{(-0.42425)^{2} \pm 0.42425^{2}} = 0.6
+$$
+Since the poles magnitude are below 1 that means the system is stable.
+
+3. Plot the impulse response of the system with $n = 0:15$
