@@ -122,3 +122,17 @@ $$
 Since the poles magnitude are below 1 that means the system is stable.
 
 3. Plot the impulse response of the system with $n = 0:15$ (try different functions / ways)
+![[Pasted image 20251015122700.png]]
+![[Pasted image 20251015122712.png]]
+![[Pasted image 20251015122721.png]]
+
+![[Pasted image 20251015122747.png]]
+1. Determine at which frequencies the gain of H(f) is maximum and minimum.
+   The maximum and minimum gain is determined by the 
+   
+2. Determine the phase (using graphical methods) of H(f) at a frequency of 2 kHz.
+   
+   
+3. Plot a Bode diagram of H(z), and check if the above results are correct.
+   
+   
