@@ -91,8 +91,33 @@ Dvs. kassens acceleration er $1.473 \frac{m}{s^{2}}$ fremad.
 #### I bilens system:
 Der er både gnidningskraften fremad og den fiktive kraft bagud $- ma_{t}$ bagud.
 Den positive retning er stadigvæk lastbilens køreretning.
+Gnidningskraften er: $f_{k}$
+Den fiktive kraft er: $-ma_{t}$
 
+Newtons 2. lov:
+$$
+m a_{rel}' = -m a_{t} + f_{k}
+$$
+$$
+a_{rel}' = -a_{t} + \mu_{k} g
+$$
+$$
+a_{rel}' = -2.0 \space \frac{m}{s^{2}} + 1.473 \space \frac{m}{s^{2}} = -0.537 \space \frac{m}{s^{2}}
+$$
+Dvs. kassen accelererer bagud med $-0.537 \frac{m}{s^{2}}$.
 
 c) Bestem den tid, som kassen er om at nå bagenden.
+For at bestemme dette skal jeg finde hvornår startpositionen af kassen har rykket sig 3 meter.
+$$
+x'(t) = 0 + 0 \cdot t + \frac{1}{2} a_{rel}' t^{2}
+$$
+Så hvis vi siger at kassen starter ved $x'(0) = 0$ så skal kassen nå $x' = -3.0 \space \text{m}$, hvilket jeg så indsætter i ligningen:
+$$
+-3 = \frac{1}{2} -0.537 t^{2}
+$$
+$$
+t^{2} = 2 \cdot3
+$$
+
 
 d) Bestem den vandrette komposant af kassens hastighed, når kassen rammer vejen.
