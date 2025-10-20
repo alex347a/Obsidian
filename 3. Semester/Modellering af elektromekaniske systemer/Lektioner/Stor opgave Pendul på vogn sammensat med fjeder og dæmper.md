@@ -12,7 +12,7 @@
 | Tyngdeacceleration | g                  | 9,82  | $m/s^{2}$ |
 # 2 Fritlegeme analyse
 
-Vi betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$.  
+Jeg betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$.  
 Pendulet er fastgjort i et hængsel på vognen, og vinklen $\theta$ måles **fra lodret**, positiv **med uret**.
 
 ## Kræfter på vognen
@@ -79,7 +79,7 @@ $$
 
 # 3 Bevægelsesligninger for systemet
 
-Vi ønsker at eliminere $T$ for at få to koblede 2. ordens differentialligninger.
+Jeg ønsker at eliminere $T$ for at få to koblede 2. ordens differentialligninger.
 
 Fra vognens ligning:
 
@@ -93,7 +93,7 @@ $$
 m_p \ddot{x}_c + m_p l\ddot{\theta}\cos\theta - m_p l \dot{\theta}^2\sin\theta = -T \sin\theta
 $$
 
-→ Læg de to sammen for at eliminere $T \sin\theta$:
+Jeg lægger de to sammen for at eliminere $T \sin\theta$:
 
 $$
 (m_c + m_p)\ddot{x}_c + m_p l \cos\theta\,\ddot{\theta} - m_p l \sin\theta\,\dot{\theta}^2 + kx_c + b\dot{x}_c = F(t)
@@ -156,7 +156,7 @@ I dette system indgår:
 - Dæmperen $b$ (ikke-konservativ)  
 - Den eksterne kraft $F(t)$ (ikke-konservativ)
 
-Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi.
+Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at 
 
 ---
 
