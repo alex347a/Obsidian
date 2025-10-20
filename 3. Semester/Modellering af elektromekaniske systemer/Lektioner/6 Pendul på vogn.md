@@ -13,9 +13,11 @@ Dette er en ikke-linære differentialligning, fordi der er sinus til en variabel
 ![[Pasted image 20251009123650.png]]
 Idet pendulet ikke bevæger sig op og ned så er $y_{p}$ givet ved $-l$ som er længden af snoren og cos til vinklen, hvor de positive vinkler er mod uret.
 
-Man kan eliminere T ved (indsæt billede af tavlen)
-
+Man kan eliminere T ved at gøre ligesom på tavlen:
+![[Eliminer T.JPG]]
 Derefter indsæt udtryk for $\ddot{x}_{p}, \ddot{y}_{p}$ (slide 9)
+Slide 9:
+![[Pasted image 20251009123650.png]]
 
 ### Relativ bevægelse: Koordinatsystemer
 ![[Pasted image 20251009125301.png]]
