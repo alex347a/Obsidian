@@ -67,8 +67,16 @@ f_{k} = \mu_{k} N = \mu_{k} m g
 $$
 Da kassen glider bagud betyder det at gnidningskraften er fremad.
 
+I et ikke-inertialsystem er der også:
+4. Fiktiv kraft $-m \vec{a}_{t}$, hvor $\vec{a}_{t}$ er lastbilens acceleration ift. jorden. I bilens system er den fiktive kraft bagud.
+
 
 b) Bestem kassens acceleration i begge henførelsessystemer.
+Lastbilens acceleration er givet ved:
+$$
+a = \frac{v_{1}}{t_{1}} = \frac{20 \space \frac{m}{s}}{10 \space \text{s}} = 2 \space \frac{m}{s^{2}}
+$$
+
 
 c) Bestem den tid, som kassen er om at nå bagenden.
 
