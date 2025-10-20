@@ -12,47 +12,66 @@
 | Tyngdeacceleration | g                  | 9,82  | $m/s^{2}$ |
 # 2 Fritlegeme analyse
 
-Jeg betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$, som er fastgjort til vognen.  
-Vognen påvirkes af:
+Vi betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$.  
+Pendulet er fastgjort i et hængsel på vognen, og vinklen $\theta$ måles **fra lodret**, positiv **med uret**.
 
-- En ydre kraft $F(t)$  
-- En fjeder med stivhed $k$  
-- En dæmper med konstant $b$  
-- Pendulets vandrette kraftkomponent  
-- Tyngdekraft via pendulet  
+## Kræfter på vognen
 
-Pendulet påvirkes af:
+På vognen virker:
+- Den eksterne kraft $F(t)$ mod højre  
+- Fjederkraft $-k x_c$ mod venstre  
+- Dæmpningskraft $-b \dot{x}_c$ mod venstre  
+- Den vandrette komponent af stangkraften $T \sin\theta$ mod venstre (fra pendulet)
 
-- Tyngdekraften $m_p g$  
-- En reaktionskraft i pivotpunktet (fra vognen)  
-- Dens egen inerti  
+**Fritlegemeligning for vognen:**
 
----
-### Fritlegemediagrammer
-
-**For vognen (masse $m_c$):**
-
-Vandret akse (positiv mod højre):
-
-$F(t) - b\dot{x}_c - k x_c - H = m_c \ddot{x}_c$
-
-hvor $H$ er den vandrette reaktionskraft fra pendulet på vognen.
+$$
+m_c \ddot{x}_c = F(t) - b\dot{x}_c - kx_c - T \sin\theta
+$$
 
 ---
 
-**For pendulet (masse $m_p$):**
+## Kræfter på pendulet
 
-Krafter på massen i enden af pendulet:
+På pendulets massepunkt virker:
+- Tyngdekraft $m_p g$ nedad  
+- Tensionskraft $T$ langs stangen (mod pivotpunktet)
 
-- Tyngde: $m_p g$  
-- Reaktionskræfter fra stangen i pivotpunktet: $H$ (vandret) og $V$ (lodret)  
+Pendulets position i globale koordinater er:
 
-Jeg skriver bevægelsesligninger for pendulets massepunkt:
+$$
+x_p = x_c + l \sin\theta, \quad y_p = -l \cos\theta
+$$
+
+Accelerationer:
+
+$$
+\ddot{x}_p = \ddot{x}_c + l\ddot{\theta}\cos\theta - l\dot{\theta}^2\sin\theta
+$$
+
+$$
+\ddot{y}_p = l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta
+$$
+
+---
+
+## Bevægelsesligninger for pendulet
+
+Newton’s 2. lov i x- og y-retningen giver:
 
 $$
 \begin{cases}
-m_p(\ddot{x}_c + l\ddot{\theta}\cos\theta - l\dot{\theta}^2\sin\theta) = H \\
-m_p(l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta) = V - m_p g
+m_p \ddot{x}_p = -T \sin\theta \\
+m_p \ddot{y}_p = T \cos\theta - m_p g
+\end{cases}
+$$
+
+eller indsat for $\ddot{x}_p$ og $\ddot{y}_p$:
+
+$$
+\begin{cases}
+m_p(\ddot{x}_c + l\ddot{\theta}\cos\theta - l\dot{\theta}^2\sin\theta) = -T \sin\theta \\
+m_p(l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta) = T \cos\theta - m_p g
 \end{cases}
 $$
 
@@ -60,40 +79,61 @@ $$
 
 # 3 Bevægelsesligninger for systemet
 
-Jeg eliminerer de ukendte reaktionskræfter $H$ og $V$ ved at kombinere vognens og pendulets ligninger.
+Vi ønsker at eliminere $T$ for at få to koblede 2. ordens differentialligninger.
 
 Fra vognens ligning:
 
-$m_c \ddot{x}_c = F(t) - b\dot{x}_c - kx_c - H$
+$$
+m_c \ddot{x}_c = F(t) - b\dot{x}_c - kx_c - T \sin\theta
+$$
 
-Fra pendulets vandrette ligning:
+Fra pendulets x-ligning:
 
-$H = m_p(\ddot{x}_c + l\ddot{\theta}\cos\theta - l\dot{\theta}^2\sin\theta)$
+$$
+m_p \ddot{x}_c + m_p l\ddot{\theta}\cos\theta - m_p l \dot{\theta}^2\sin\theta = -T \sin\theta
+$$
 
-Indsæt dette $H$ i vognens ligning:
+→ Læg de to sammen for at eliminere $T \sin\theta$:
 
-$(m_c + m_p)\ddot{x}_c + m_p l \cos\theta\,\ddot{\theta} - m_p l \sin\theta\,\dot{\theta}^2 + kx_c + b\dot{x}_c = F(t)$
+$$
+(m_c + m_p)\ddot{x}_c + m_p l \cos\theta\,\ddot{\theta} - m_p l \sin\theta\,\dot{\theta}^2 + kx_c + b\dot{x}_c = F(t)
+$$
 
 Dette er **bevægelsesligning (1)**.
 
-
 ---
 
-For pendulets rotation om pivotpunktet bruges $\sum M = I\alpha$:
+Fra pendulets y-ligning:
 
-Træk moment omkring pivot (positiv mod uret):
+$$
+m_p(l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta) = T \cos\theta - m_p g
+$$
 
-$m_p g l \sin\theta = m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c$
+Omskriv for $T$:
 
-eller omskrevet:
+$$
+T = \frac{m_p(l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta + g)}{\cos\theta}
+$$
 
-$m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta = 0$
+Indsæt dette i x-ligningen for pendulet, eller betragt momenten omkring pivotpunktet:
+
+Moment omkring pivotet (positiv mod uret):
+
+$$
+m_p g l \sin\theta = m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c
+$$
+
+eller
+
+$$
+m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta = 0
+$$
 
 Dette er **bevægelsesligning (2)**.
 
 ---
 
-**Opsummering:**
+## Samlede bevægelsesligninger
 
 $$
 \boxed{
@@ -108,34 +148,43 @@ $$
 
 # 4 Analyse af konservativitet
 
-Et system er **konservativt**, hvis summen af potentiel og kinetisk energi er konstant over tid, dvs. ingen energi tabes gennem friktion, dæmpning eller ydre arbejde.
+Et system er **konservativt**, hvis summen af potentiel og kinetisk energi er konstant over tid — dvs. der ingen energitab forekommer.
 
 I dette system indgår:
+- Fjederen (konservativ)  
+- Tyngdekraften (konservativ)  
+- Dæmperen $b$ (ikke-konservativ)  
+- Den eksterne kraft $F(t)$ (ikke-konservativ)
 
-- Fjeder (konservativ)  
-- Tyngdekraft (konservativ)  
-- Dæmper $b$ (ikke-konservativ)  
-- Ekstern kraft $F(t)$ (ikke-konservativ)  
-
-Systemet **er derfor ikke konservativt**, fordi dæmpningen $b\dot{x}_c$ dissipaterer energi og $F(t)$ kan tilføre energi.
+Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi.
 
 ---
 
 # 5 Potentiel og kinetisk energi
 
-Den potentielle og kinetiske energi findes som:
+Den potentielle og kinetiske energi for systemet er:
 
-$E_{\text{kin}} = \tfrac{1}{2}(m_c+m_p)\dot{x}_c^2 + m_p l \cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac{1}{2}m_p l^2\dot{\theta}^2$
+$$
+E_{\text{pot}} = \tfrac{1}{2} k x_c^2 + m_p g l(1 - \cos\theta)
+$$
 
-$E_{\text{pot}} = \tfrac{1}{2}k x_c^2 + m_p g l(1 - \cos\theta)$
+$$
+E_{\text{kin}} = \tfrac{1}{2} m_c \dot{x}_c^2 + \tfrac{1}{2} m_p(\dot{x}_p^2 + \dot{y}_p^2)
+$$
 
-Summen $E_{\text{tot}} = E_{\text{kin}} + E_{\text{pot}}$ er konstant, hvis $b=0$ og $F(t)=0$.
+Efter indsættelse af $\dot{x}_p$ og $\dot{y}_p$:
+
+$$
+E_{\text{kin}} = \tfrac{1}{2}(m_c + m_p)\dot{x}_c^2 + m_p l \cos\theta\,\dot{x}_c \dot{\theta} + \tfrac{1}{2}m_p l^2 \dot{\theta}^2
+$$
+
+Summen $E_{\text{tot}} = E_{\text{pot}} + E_{\text{kin}}$ er konstant, hvis $b=0$ og $F(t)=0$.
 
 ---
 
 # (Valgfrit) Linearisering for små vinkler
 
-For små $\theta$ ($\sin\theta \approx \theta$, $\cos\theta \approx 1$) reduceres systemet til:
+For små $\theta$ ($\sin\theta \approx \theta$, $\cos\theta \approx 1$):
 
 $$
 \begin{cases}
