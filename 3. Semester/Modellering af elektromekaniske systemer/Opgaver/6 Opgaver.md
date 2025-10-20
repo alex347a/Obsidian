@@ -50,5 +50,8 @@ $$
 $$
 e) Kablet knækker og elevatoren falder frit. Benyt både det faste system og et henførelsessystem, der følger elevatoren.
 Hvis elevatoren falder frit, så betyder det at han i et fast system bliver påvirket med $0 \space \text{N}$ fra normalkraften, fordi han accelerere med tyngdeaccelerationen.
-I et henførelsessystem 
+I et henførelsessystem så vil der være en fiktik kraft der er opadrettet og som udligner tyngdekraften:
+$$
+F_{fiktiv} = m \cdot a_{sys}
+$$derfor bliver den samlede kraft igen $0 \space \text{N}$ 
 ![[Pasted image 20251020131234.png]]
