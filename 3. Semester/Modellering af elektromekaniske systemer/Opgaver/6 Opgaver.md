@@ -58,6 +58,15 @@ $$derfor bliver den samlede kraft igen $0 \space \text{N}$
 En lastbil starter fra hvile til tiden $t=0$ og accelererer jævnt, således at dens fart er $v_{1} = 20 \frac{m}{s}$ til tiden $t = t_{1} = 10 \space \text{s}$. En lille kasse med massen $m = 5.0 \space \text{kg}$ er før starten anbragt i afstanden $l = 3.0 \space \text{m}$ fra bagenden. Til $t=0$ begynder kassen at glide. Gnidningskoefficienten mellem kasse og lad er $\mu_{k} = 0.15$.
 
 a) Angiv de kræfter, der virker på kassen såvel i bilens som i vejbanens henførelsessystem.
+I et inertialsystem har kassen:
+1. Tyngdekraften $m \vec{g}$ lodret nedad.
+2. Normalkraften $\vec{N}$ lodrat opad ($N = mg$)
+3. Gnidningskraften $\vec{f_{k}}$ vandret, modsat kassens bevægelsesretning ift. ladet.
+$$
+f_{k} = \mu_{k} N = \mu_{k} m g
+$$
+Da kassen glider bagud betyder det at gnidningskraften er fremad.
+
 
 b) Bestem kassens acceleration i begge henførelsessystemer.
 
