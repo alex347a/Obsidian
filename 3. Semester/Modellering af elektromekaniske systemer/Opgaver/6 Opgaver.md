@@ -129,7 +129,8 @@ Kassens hastighed:
 $$
 v_{k}(t) = 0 + a_{k} \cdot t = 1.473 \cdot 3.342 = 4.923 \space \frac{m}{s}
 $$
-Lastbilens hastighed på det tidspunkt:
+Dermed bliver kassens hastighed idet den rammer vejen $4.923 \space \frac{m}{s}$ vandret hen ad vejen.
+Man kan også let bestemme lastbilens hastighed på det tidspunkt:
 $$
 v_{t}(t) = a_{t} \cdot t = 2.0 \cdot 3.342 = 6.684 \frac{m}{s}
 $$
