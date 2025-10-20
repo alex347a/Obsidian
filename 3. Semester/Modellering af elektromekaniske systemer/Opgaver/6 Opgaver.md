@@ -116,8 +116,20 @@ $$
 -3 = \frac{1}{2} -0.537 t^{2}
 $$
 $$
-t^{2} = 2 \cdot3
+t^{2} = \frac{2 \cdot 3}{0.537} = \frac{6}{0.537} \approx 11.17 \space \text{s}
 $$
+$$
+\sqrt{11.17 } \space \text{s} \approx 3.342 \space \text{s}
+$$
+Dvs. kassen rammer bagenden ved tiden $t = 3.342 \space \text{s}$ 
 
 
 d) Bestem den vandrette komposant af kassens hastighed, når kassen rammer vejen.
+Kassens hastighed:
+$$
+v_{k}(t) = 0 + a_{k} \cdot t = 1.473 \cdot 3.342 = 4.923 \space \frac{m}{s}
+$$
+Lastbilens hastighed på det tidspunkt:
+$$
+v_{t}(t) = a_{t} \cdot t = 2.0 \cdot 3.342 = 6.684 \frac{m}{s}
+$$
