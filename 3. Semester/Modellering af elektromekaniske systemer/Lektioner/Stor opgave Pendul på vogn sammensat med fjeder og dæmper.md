@@ -1,6 +1,6 @@
 # 2 Fritlegeme analyse
 
-Vi betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$, som er fastgjort til vognen.  
+Jeg betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$, som er fastgjort til vognen.  
 Vognen påvirkes af:
 
 - En ydre kraft $F(t)$  
@@ -16,7 +16,6 @@ Pendulet påvirkes af:
 - Dens egen inerti  
 
 ---
-
 ### Fritlegemediagrammer
 
 **For vognen (masse $m_c$):**
@@ -36,7 +35,7 @@ Krafter på massen i enden af pendulet:
 - Tyngde: $m_p g$  
 - Reaktionskræfter fra stangen i pivotpunktet: $H$ (vandret) og $V$ (lodret)  
 
-Vi skriver bevægelsesligninger for pendulets massepunkt:
+Jeg skriver bevægelsesligninger for pendulets massepunkt:
 
 $$
 \begin{cases}
@@ -49,7 +48,7 @@ $$
 
 # 3 Bevægelsesligninger for systemet
 
-Vi eliminerer de ukendte reaktionskræfter $H$ og $V$ ved at kombinere vognens og pendulets ligninger.
+Jeg eliminerer de ukendte reaktionskræfter $H$ og $V$ ved at kombinere vognens og pendulets ligninger.
 
 Fra vognens ligning:
 
