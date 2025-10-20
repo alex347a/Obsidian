@@ -1,3 +1,15 @@
+
+| Navn               | Symbol             | Værdi | Enhed     |
+| ------------------ | ------------------ | ----- | --------- |
+| Ekstern kraft      | F                  | -     | N         |
+| Position for vogn  | ($x_{c}$; $y_{c}$) | -     | m         |
+| Vinkel for pendul  | θ                  | -     | rad       |
+| Stivhed            | k                  | 0,2   | N/m       |
+| Dæmpning           | b                  | 0,1   | N/(m/s)   |
+| Masse af vogn      | $m_{c}$            | 1     | kg        |
+| Masse af pendul    | $m_{p}$            | 0,5   | kg        |
+| Længde af pendul   | l                  | 0,3   | m         |
+| Tyngdeacceleration | g                  | 9,82  | $m/s^{2}$ |
 # 2 Fritlegeme analyse
 
 Jeg betragter systemet bestående af en vogn med masse $m_c$ og et pendul med masse $m_p$ og længde $l$, som er fastgjort til vognen.  
@@ -63,6 +75,7 @@ Indsæt dette $H$ i vognens ligning:
 $(m_c + m_p)\ddot{x}_c + m_p l \cos\theta\,\ddot{\theta} - m_p l \sin\theta\,\dot{\theta}^2 + kx_c + b\dot{x}_c = F(t)$
 
 Dette er **bevægelsesligning (1)**.
+
 
 ---
 
