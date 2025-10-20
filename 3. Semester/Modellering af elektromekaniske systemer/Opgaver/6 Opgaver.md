@@ -76,6 +76,21 @@ Lastbilens acceleration er givet ved:
 $$
 a = \frac{v_{1}}{t_{1}} = \frac{20 \space \frac{m}{s}}{10 \space \text{s}} = 2 \space \frac{m}{s^{2}}
 $$
+#### I vejbanens system:
+Den positiv retning er lastbilens køreretning.
+
+På kassen er der kun gnidningskraften $f_{k}$ vandret fremad:
+$$
+ma_{k} = f_{k} = \mu_{k} m g
+$$
+$$
+a_{k} = \mu_{k} g = 0.15 \cdot 9.82 = 1.473 \frac{m}{s^{2}} 
+$$
+Dvs. kassens acceleration er $1.473 \frac{m}{s^{2}}$ fremad.
+
+#### I bilens system:
+Der er både gnidningskraften fremad og den fiktive kraft bagud $- ma_{t}$ bagud.
+Den positive retning er stadigvæk lastbilens køreretning.
 
 
 c) Bestem den tid, som kassen er om at nå bagenden.
