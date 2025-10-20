@@ -30,10 +30,25 @@ $$
 $$
 a_{mand} = 3.0 \frac{m}{s^{2}}
 $$
-Da der er tale om normalkraften så har normalkraften og tyngdekraften samme retning.
+Da der er tale om normalkraften så har normalkraften og tyngdekraften modsat retning, så normalkraften skal både have en størrelse der ophæver tyngdekraften og derudover er stor nok til også at accelerere med $3.0 \frac{m}{s^{2}}$.
 $$
-90 \space \text{kg} \cdot (9.82 \frac{m}{s^{2}}) = 883.8 \space \text{N}
+90 \space \text{kg} \cdot \left(9.82 \frac{m}{s^{2}} + 3.0 \frac{m}{s^{2}}\right) =  \space 1153.8 \space \text{N}
 $$
 d) Elevatoren accelereres nedad med 3,0 $\frac{m}{s^{2}}$
+$$
+a = (a_{mand} + g)
+$$
+$$
+F_{mand} = m \cdot a
+$$
+$$
+a_{mand} = 3.0 \frac{m}{s^{2}}
+$$
+Da der er tale om normalkraften så har normalkraften og tyngdekraften her samme retning, dette betyder at normalkraften skal accelerere med $3.0 \frac{m}{s^{2}}$ nedad, hvilket så kan trækkes fra tyngdekraften, derfor bliver normalkraften:
+$$
+90 \space \text{kg} \cdot \left(9.82 \frac{m}{s^{2}} - 3.0 \frac{m}{s^{2}}\right) =  \space 613.8 \space \text{N}
+$$
 e) Kablet knækker og elevatoren falder frit. Benyt både det faste system og et henførelsessystem, der følger elevatoren.
+Hvis elevatoren falder frit, så betyder det at han i et fast system bliver påvirket med $0 \space \text{N}$ fra normalkraften, fordi han accelerere med tyngdeaccelerationen.
+I et henførelsessystem 
 ![[Pasted image 20251020131234.png]]
