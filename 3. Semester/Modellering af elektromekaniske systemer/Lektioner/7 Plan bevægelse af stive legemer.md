@@ -105,3 +105,29 @@ $$
 I \dot{\omega} = - B \omega
 $$
 Det eneste der ændres fra Newtons 2. lov kraft er ligmed masse gange acceleration, til at være at kraftmomentet er ligmed inertimomentet ganget med vinkelaccelerationen.
+
+Hvis vi tager to legemer der er sammensat med en fjeder og en dæmper:
+$$
+m_{1} \cdot \ddot{x}_{1} = f_{net,1}
+$$
+$$
+m_{2} \cdot \ddot{x}_{2} = f_{net,2}
+$$
+Man antager at fjederen er i hvilke når x-positionen er 0.
+For legeme 1:
+$$
+f_{net,1} = \underbrace{-K(x_{1} - x_{2})}_{\text{fjederkraft}} - \underbrace{B(\dot{x}_{1} - \dot{x}_{2})}_{\text{dæmperkraft}}
+$$
+Det er altså bare forskel i position og forskel i hastighed.
+For legeme 2:
+$$
+f_{net,2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}})
+$$
+Det er altså bare en fortegnsændring i de to positioner og de to hastigheder, fordi det er i den modsatte retning af legeme 1.
+
+$$
+m_{1} \ddot{x}_{2} = -K(x_{1} - x_{2}) - B(\dot{x_{1}} - \dot{x}_{2})
+$$
+$$
+m_{2} \ddot{x}_{2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}})
+$$
