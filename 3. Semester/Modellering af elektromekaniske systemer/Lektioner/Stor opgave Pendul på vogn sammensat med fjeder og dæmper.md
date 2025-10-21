@@ -231,35 +231,32 @@ Fortolkning af leddene:
 - $\tfrac12 m_p l^2 \dot{\theta}^2$: rotationsenergi af pendulet om pivotet.
 #### Potentiel energi:
 Systemet har to former for potentiel energi:
-
 1. **Fjederenergi:**
-
 $$
 E_{\text{fjeder}} = \tfrac12 k x_c^2
 $$
-
 2. **Gravitationsenergi for pendul-massen:**
-
 Pendulets højde er $y_p = -l\cos\theta$.  
 Ved $\theta=0$ er højden $y_p=-l$.  
 Vi vælger denne til reference ($E_{\text{pot}}=0$ ved $\theta=0$).
 
 Ændringen i potentiel energi bliver derfor:
-
 $$
 E_{\text{grav}} = m_p g (y_p - y_{|\theta=0}) = m_p g(-l\cos\theta + l) = m_p g l (1 - \cos\theta)
 $$
-
 Samlet potentiel energi:
-
 $$
 E_{\text{pot}} = \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta)
 $$
-
-eller eksplicit:
+Dvs. de to er givet ved:
 $$
 \begin{aligned}
 E_{\text{kin}} &= \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2, \\
 E_{\text{pot}} &= \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta).
 \end{aligned}
+$$
+Dermed er den mekaniske energi givet ved:
+$$
+E_{mek} = \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2 +
+\tfrac12 k x_c^2 + m_p g l (1 - \cos\theta)
 $$
