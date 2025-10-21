@@ -54,7 +54,14 @@ $$
 Dermed kan det forkortes til inertimomentet ganget med vinkelhastigheden i anden.
 ![[Pasted image 20251021131602.png]]
 Hvis man har et legeme der både translaterer og roterer så kan man beregne det ved at addere den kinetiske energi for begge bevægelser.
-### Steiners sætning
+### Steiners sætning / parallel access theorem
 ![[Pasted image 20251021131923.png]]
 Vi kan sætte $\omega^{2}$ udenfor en parentes idet det indgår i begge led.
 ![[Pasted image 20251021132149.png]]
+kaldes også for parallel-axis theorem.
+![[Pasted image 20251021132427.png]]
+Ligesom kraft gange arm/vej, så er det kraftmoment ganget med ændringen i vinkel.
+$p = f \cdot v$
+$p = \tau \cdot \omega$
+![[Pasted image 20251021132612.png]]
+$\theta_{i}$ står for initial og $\theta_{f}$ står for final.
