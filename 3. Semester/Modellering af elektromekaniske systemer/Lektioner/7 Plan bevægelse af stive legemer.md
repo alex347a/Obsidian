@@ -25,4 +25,4 @@ Man adderer de to hastighedsvektorer. $v_{C}$ er hastigheden for massemidtpunkte
 ![[Pasted image 20251021123223.png]]
 Den tidsafledte af s (strækningen) er hastigheden af massemidtpunktet, mens den tidsafledte af hastigheden giver accelerationen af massemidtpunktet.
 ### Bevægelse af stive legemer
-![[Pasted image 20251021123421.png]]Den første bevæger sig med massemidtpunktssætningen, mens den anden ikke bevæger sig, fordi krydsproduktet af F og R er 0, idet de to krafter er parallelle
+![[Pasted image 20251021123421.png]]Den første bevæger sig med massemidtpunktssætningen, mens den anden ikke bevæger sig, fordi krydsproduktet af F og R er 0, idet de to kræfter er parallelle og det er kun komposanten der er parallel.
