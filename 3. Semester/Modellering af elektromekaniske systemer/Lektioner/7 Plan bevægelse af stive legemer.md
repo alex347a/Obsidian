@@ -74,14 +74,34 @@ Newtons 2. lov:
 $$
 m \ddot{x} = f_{net}
 $$
-Vi sætter $f(s)$
+Vi sætter $f(s) = f_{net}$
 $$
 m \ddot{x} = -kx
 $$
-
 Så er det for et rotationel legeme givet ved:
 $$
-
+\tau_{s} = - K \Delta \theta
 $$
+Impulsmomentssætning ud fra Newtons 2. lov:
+$$
+I \dot{\omega} = \tau_{net}
+$$
+$$
+I \dot{\omega} = -K \Delta \theta
+$$
+Grunden til der står delta er fordi det er den nuværende vinkel minus hvilevinklen. Så hvis man bare antager at hvilevinklen er 0 så behøver man ikke delta.
 ![[Pasted image 20251021132800.png]]
+Ligesom ved en translatorisk bevægelse for en kasse der rykkes hen ad jorden.
+$$
+f_{d} = -B v
+$$
+$$
+m \ddot{x} = - B \dot{x}
+$$
+Hvor B er friktionskraften.
 
+Så kan man for en rotationel bevægelse:
+$$
+I \dot{\omega} = - B \omega
+$$
+Det eneste der ændres fra Newtons 2. lov kraft er ligmed masse gange acceleration, til at være at kraftmomentet er ligmed inertimomentet ganget med vinkelaccelerationen.
