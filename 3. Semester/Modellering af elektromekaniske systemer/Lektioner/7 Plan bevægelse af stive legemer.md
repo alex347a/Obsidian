@@ -65,3 +65,23 @@ $p = f \cdot v$
 $p = \tau \cdot \omega$
 ![[Pasted image 20251021132612.png]]
 $\theta_{i}$ står for initial og $\theta_{f}$ står for final.
+![[Pasted image 20251021132746.png]]
+Ligesom en translatorisk bevægelse med en fjeder er givet ved Hookes lov:
+$$
+f(s) = -kx
+$$
+Newtons 2. lov:
+$$
+m \ddot{x} = f_{net}
+$$
+Vi sætter $f(s)$
+$$
+m \ddot{x} = -kx
+$$
+
+Så er det for et rotationel legeme givet ved:
+$$
+
+$$
+![[Pasted image 20251021132800.png]]
+
