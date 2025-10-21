@@ -34,3 +34,6 @@ Husk at impulsmomentet er givet ved masse gange hastighed, hvor hastigheden her 
 ![[Pasted image 20251021125045.png]]
 Inertimomentet er konstant, fordi massen ikke ændrer sig. Man kan regne inertimomentet ved at integrere radius ganget med massen, eller hvis man ikke har massen men i stedet har densiteten (massetætheden) og volumen, så kan dette også bruges.
 ![[Pasted image 20251021125302.png]]
+![[Pasted image 20251021130812.png]]
+![[Pasted image 20251021130831.png]]
+Så længe vi bliver ved med at påtrykke en kraft så vil legemet accelerere idet der ingen friktioner er i dette eksempel, mens den i den virkelige verden med friktion vil være en tophastighed.
