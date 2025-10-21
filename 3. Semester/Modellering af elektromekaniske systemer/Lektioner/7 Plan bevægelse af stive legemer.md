@@ -121,7 +121,7 @@ $$
 Det er altså bare forskel i position og forskel i hastighed.
 For legeme 2:
 $$
-f_{net,2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}}) + unde
+f_{net,2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}}) + \underbrace{f}_{\text{eksterne kraft}}
 $$
 Det er altså bare en fortegnsændring i de to positioner og de to hastigheder, fordi det er i den modsatte retning af legeme 1.
 
@@ -139,7 +139,7 @@ $$
 I_{1} \dot{\omega}_{1} &= \tau_{net,1}\\
 I_{2} \dot{\omega}_{2} &= \tau_{net,2}\\
 \tau_{net,1} &= -K(\theta_{1} - \theta_{2}) - B(\omega_{1} - \omega_{2})\\
-\tau_{net,2} &= -K(\theta_{2} - \theta_{1}) - B(\omega_{2} - \omega_{1}) + \underbrace{\tau}_{\text{Eksterne kraft}}\\
+\tau_{net,2} &= -K(\theta_{2} - \theta_{1}) - B(\omega_{2} - \omega_{1}) + \underbrace{\tau}_{\text{eksterne kraft}}\\
 \end{align*}
 $$
 Sætter de to ligningssystemer ligmed hinanden:
@@ -148,4 +148,25 @@ $$
 I_{1} \dot{\omega}_{1} &=  -K(\theta_{1} - \theta_{2}) - B(\omega_{1} - \omega_{2})\\
 I_{2} \dot{\omega}_{2} &= -K(\theta_{2} - \theta_{1}) - B(\omega_{2} - \omega_{1}) + \tau
 \end{align*}
+$$
+Hvis man gør det samme for en fjeder og en dæmper.
+For en translatorisk bevægelse:
+$$
+m \ddot{x}= f_{net}
+$$
+$$
+f_{net} = - k x - B \dot{x}
+$$
+$$
+m \ddot{x} = - kx - B \dot{x}
+$$
+For rotationel bevægelse:
+$$
+I \dot{\omega} = \tau_{net}
+$$
+$$
+\tau_{net} = -k \omega - B \omega
+$$
+$$
+I \dot{\omega} = -k \omega - B \omega
 $$
