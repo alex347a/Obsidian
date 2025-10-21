@@ -121,7 +121,7 @@ $$
 Det er altså bare forskel i position og forskel i hastighed.
 For legeme 2:
 $$
-f_{net,2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}})
+f_{net,2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}}) + unde
 $$
 Det er altså bare en fortegnsændring i de to positioner og de to hastigheder, fordi det er i den modsatte retning af legeme 1.
 
@@ -129,5 +129,23 @@ $$
 m_{1} \ddot{x}_{2} = -K(x_{1} - x_{2}) - B(\dot{x_{1}} - \dot{x}_{2})
 $$
 $$
-m_{2} \ddot{x}_{2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}})
+m_{2} \ddot{x}_{2} = -K(x_{2}-x_{1}) - B(\dot{x_{2}} - \dot{x_{1}}) + f
+$$
+For en rotationel bevægelse:
+Man sætter to roterende cylindre sammen med en fjeder og en dæmper (her antager man altid at dæmperen kun påvirker rotationen, fordi cylindrene kun roterer og ikke bevæger sig).
+I stedet for Newtons 2. lov bruger man impulsmomentssætningen.
+$$
+\begin{align*}
+I_{1} \dot{\omega}_{1} &= \tau_{net,1}\\
+I_{2} \dot{\omega}_{2} &= \tau_{net,2}\\
+\tau_{net,1} &= -K(\theta_{1} - \theta_{2}) - B(\omega_{1} - \omega_{2})\\
+\tau_{net,2} &= -K(\theta_{2} - \theta_{1}) - B(\omega_{2} - \omega_{1}) + \underbrace{\tau}_{\text{Eksterne kraft}}\\
+\end{align*}
+$$
+Sætter de to ligningssystemer ligmed hinanden:
+$$
+\begin{align*}
+I_{1} \dot{\omega}_{1} &=  -K(\theta_{1} - \theta_{2}) - B(\omega_{1} - \omega_{2})\\
+I_{2} \dot{\omega}_{2} &= -K(\theta_{2} - \theta_{1}) - B(\omega_{2} - \omega_{1}) + \tau
+\end{align*}
 $$
