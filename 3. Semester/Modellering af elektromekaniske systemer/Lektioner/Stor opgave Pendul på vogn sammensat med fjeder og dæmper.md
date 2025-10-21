@@ -168,6 +168,11 @@ $$
 Summen $E_{\text{tot}} = E_{\text{pot}} + E_{\text{kin}}$ er konstant, hvis $b=0$ og $F(t)=0$.
 
 # 5 Potentiel og kinetisk energi
+Den totale mekaniske energi er givet ved:
+$$
+E_{\text{tot}} = E_{\text{kin}} + E_{\text{pot}}
+$$
+#### Kinetisk energi
 Pivotpunktet sidder på vognen, og vinklen $\theta$ måles fra lodret, positiv med uret.  
 Pendulets massepunkt har derfor koordinaterne:
 
@@ -179,13 +184,12 @@ Når $\theta = 0$, hænger pendulet lodret nedad og har $y_p = -l$.
 
 Hastigheder:
 
-Differentierer positionerne med hensyn til tid (hvor $\dot{}$ betyder $\frac{d}{dt}$):
+Differentierer positionerne mht. tid:
 
 $$
 \dot{x}_p = \dot{x}_c + l\cos\theta\,\dot{\theta}, \qquad 
 \dot{y}_p = l\sin\theta\,\dot{\theta}.
 $$
-
 Hastighedens kvadrat:
 
 Den totale hastighed for pendul-massen er:
@@ -194,7 +198,7 @@ $$
 v_p^2 = \dot{x}_p^2 + \dot{y}_p^2
 $$
 
-Indsæt udtrykkene fra ovenfor:
+Indsætter udtrykkene fra ovenfor:
 
 $$
 \begin{aligned}
@@ -204,9 +208,6 @@ v_p^2
 &= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\dot{\theta}^2.
 \end{aligned}
 $$
-
-I sidste trin brugte vi $\cos^2\theta + \sin^2\theta = 1$.
-
 Kinetisk energi:
 
 Den kinetiske energi for systemet består af vognen og pendul-massen.
@@ -228,11 +229,7 @@ Fortolkning af leddene:
 - $\tfrac12 (m_c + m_p)\dot{x}_c^2$: translationel energi for hele systemet.  
 - $m_p l\cos\theta\,\dot{x}_c\,\dot{\theta}$: koblingsled mellem vognens bevægelse og pendulets rotation.  
 - $\tfrac12 m_p l^2 \dot{\theta}^2$: rotationsenergi af pendulet om pivotet.
-
----
-
-## 5) Potentiel energi
-
+#### Potentiel energi:
 Systemet har to former for potentiel energi:
 
 1. **Fjederenergi:**
@@ -259,11 +256,6 @@ $$
 E_{\text{pot}} = \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta)
 $$
 
-Den totale mekaniske energi er summen:
-
-$$
-E_{\text{tot}} = E_{\text{kin}} + E_{\text{pot}}
-$$
 eller eksplicit:
 $$
 \begin{aligned}
