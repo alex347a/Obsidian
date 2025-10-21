@@ -156,7 +156,7 @@ I dette system indgår:
 - Dæmperen $b$ (ikke-konservativ)  
 - Den eksterne kraft $F(t)$ (ikke-konservativ)
 
-Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at 
+Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister energi, hvilket betyder det eventuelt vil ende med at stå stille.
 
 ---
 
