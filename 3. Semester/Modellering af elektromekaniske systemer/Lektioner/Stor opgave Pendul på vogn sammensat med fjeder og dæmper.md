@@ -179,16 +179,14 @@ Når $\theta = 0$, hænger pendulet lodret nedad og har $y_p = -l$.
 
 Hastigheder:
 
-Differentier positionerne med hensyn til tid (hvor $\dot{}$ betyder $\frac{d}{dt}$):
+Differentierer positionerne med hensyn til tid (hvor $\dot{}$ betyder $\frac{d}{dt}$):
 
 $$
 \dot{x}_p = \dot{x}_c + l\cos\theta\,\dot{\theta}, \qquad 
 \dot{y}_p = l\sin\theta\,\dot{\theta}.
 $$
 
----
-
-## 3) Hastighedens kvadrat
+Hastighedens kvadrat:
 
 Den totale hastighed for pendul-massen er:
 
@@ -202,16 +200,14 @@ $$
 \begin{aligned}
 v_p^2 
 &= (\dot{x}_c + l\cos\theta\,\dot{\theta})^2 + (l\sin\theta\,\dot{\theta})^2 \\
-&= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2(\cos^2\theta + \sin^2\theta)\dot{\theta}^2 \\
+&= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\underbrace{(\cos^2\theta + \sin^2\theta)}_{\cos^2\theta + \sin^2\theta = 1}\dot{\theta}^2 \\
 &= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\dot{\theta}^2.
 \end{aligned}
 $$
 
 I sidste trin brugte vi $\cos^2\theta + \sin^2\theta = 1$.
 
----
-
-## 4) Kinetisk energi
+Kinetisk energi:
 
 Den kinetiske energi for systemet består af vognen og pendul-massen.
 
