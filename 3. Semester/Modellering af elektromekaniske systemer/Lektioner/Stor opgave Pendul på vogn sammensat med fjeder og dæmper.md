@@ -29,8 +29,6 @@ $$
 m_c \ddot{x}_c = F(t) - b\dot{x}_c - kx_c - T \sin\theta
 $$
 
----
-
 ## Kræfter på pendulet
 
 På pendulets massepunkt virker:
@@ -52,9 +50,6 @@ $$
 $$
 \ddot{y}_p = l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta
 $$
-
----
-
 ## Bevægelsesligninger for pendulet
 
 Newton’s 2. lov i x- og y-retningen giver:
@@ -74,9 +69,6 @@ m_p(\ddot{x}_c + l\ddot{\theta}\cos\theta - l\dot{\theta}^2\sin\theta) = -T \sin
 m_p(l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta) = T \cos\theta - m_p g
 \end{cases}
 $$
-
----
-
 # 3 Bevægelsesligninger for systemet
 
 Jeg ønsker at eliminere $T$ for at få to koblede 2. ordens differentialligninger.
@@ -101,7 +93,6 @@ $$
 
 Dette er **bevægelsesligning (1)**.
 
----
 
 Fra pendulets y-ligning:
 
@@ -131,8 +122,6 @@ $$
 
 Dette er **bevægelsesligning (2)**.
 
----
-
 ## Samlede bevægelsesligninger
 
 $$
@@ -144,8 +133,6 @@ m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta &= 0 \
 }
 $$
 
----
-
 # 4 Analyse af konservativitet
 
 Et system er **konservativt**, hvis summen af potentiel og kinetisk energi er konstant over tid — dvs. der ingen energitab forekommer.
@@ -156,7 +143,7 @@ I dette system indgår:
 - Dæmperen $b$ (ikke-konservativ)  
 - Den eksterne kraft $F(t)$ (ikke-konservativ)
 
-Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister mekanisk energi, hvilket betyder det eventuelt vil ende med at stå stille.
+Systemet er derfor **ikke konservativt**, da $b$ dissiperer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister mekanisk energi, hvilket betyder det eventuelt vil ende med at stå stille.
 
 ---
 
@@ -179,16 +166,3 @@ E_{\text{kin}} = \tfrac{1}{2}(m_c + m_p)\dot{x}_c^2 + m_p l \cos\theta\,\dot{x}_
 $$
 
 Summen $E_{\text{tot}} = E_{\text{pot}} + E_{\text{kin}}$ er konstant, hvis $b=0$ og $F(t)=0$.
-
----
-
-# (Valgfrit) Linearisering for små vinkler
-
-For små $\theta$ ($\sin\theta \approx \theta$, $\cos\theta \approx 1$):
-
-$$
-\begin{cases}
-(m_c + m_p)\ddot{x}_c + m_p l \ddot{\theta} + kx_c + b\dot{x}_c = F(t) \\
-m_p l^2 \ddot{\theta} + m_p l \ddot{x}_c + m_p g l \theta = 0
-\end{cases}
-$$
