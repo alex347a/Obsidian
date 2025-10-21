@@ -166,3 +166,112 @@ E_{\text{kin}} = \tfrac{1}{2}(m_c + m_p)\dot{x}_c^2 + m_p l \cos\theta\,\dot{x}_
 $$
 
 Summen $E_{\text{tot}} = E_{\text{pot}} + E_{\text{kin}}$ er konstant, hvis $b=0$ og $F(t)=0$.
+
+# 5 Potentiel og kinetisk energi
+Pivotpunktet sidder på vognen, og vinklen $\theta$ måles fra lodret, positiv med uret.  
+Pendulets massepunkt har derfor koordinaterne:
+
+$$
+x_p = x_c + l\sin\theta, \qquad y_p = -\,l\cos\theta
+$$
+
+Når $\theta = 0$, hænger pendulet lodret nedad og har $y_p = -l$.
+
+Hastigheder:
+
+Differentier positionerne med hensyn til tid (hvor $\dot{}$ betyder $\frac{d}{dt}$):
+
+$$
+\dot{x}_p = \dot{x}_c + l\cos\theta\,\dot{\theta}, \qquad 
+\dot{y}_p = l\sin\theta\,\dot{\theta}.
+$$
+
+---
+
+## 3) Hastighedens kvadrat
+
+Den totale hastighed for pendul-massen er:
+
+$$
+v_p^2 = \dot{x}_p^2 + \dot{y}_p^2
+$$
+
+Indsæt udtrykkene fra ovenfor:
+
+$$
+\begin{aligned}
+v_p^2 
+&= (\dot{x}_c + l\cos\theta\,\dot{\theta})^2 + (l\sin\theta\,\dot{\theta})^2 \\
+&= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2(\cos^2\theta + \sin^2\theta)\dot{\theta}^2 \\
+&= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\dot{\theta}^2.
+\end{aligned}
+$$
+
+I sidste trin brugte vi $\cos^2\theta + \sin^2\theta = 1$.
+
+---
+
+## 4) Kinetisk energi
+
+Den kinetiske energi for systemet består af vognen og pendul-massen.
+
+- For vognen: $\tfrac12 m_c \dot{x}_c^2$  
+- For pendul-massen: $\tfrac12 m_p v_p^2$
+
+Summen bliver:
+
+$$
+\begin{aligned}
+E_{\text{kin}} 
+&= \tfrac12 m_c \dot{x}_c^2 + \tfrac12 m_p(\dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\dot{\theta}^2) \\
+&= \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2
+\end{aligned}
+$$
+
+Fortolkning af leddene:
+- $\tfrac12 (m_c + m_p)\dot{x}_c^2$: translationel energi for hele systemet.  
+- $m_p l\cos\theta\,\dot{x}_c\,\dot{\theta}$: koblingsled mellem vognens bevægelse og pendulets rotation.  
+- $\tfrac12 m_p l^2 \dot{\theta}^2$: rotationsenergi af pendulet om pivotet.
+
+---
+
+## 5) Potentiel energi
+
+Systemet har to former for potentiel energi:
+
+1. **Fjederenergi:**
+
+$$
+E_{\text{fjeder}} = \tfrac12 k x_c^2
+$$
+
+2. **Gravitationsenergi for pendul-massen:**
+
+Pendulets højde er $y_p = -l\cos\theta$.  
+Ved $\theta=0$ er højden $y_p=-l$.  
+Vi vælger denne til reference ($E_{\text{pot}}=0$ ved $\theta=0$).
+
+Ændringen i potentiel energi bliver derfor:
+
+$$
+E_{\text{grav}} = m_p g (y_p - y_{|\theta=0}) = m_p g(-l\cos\theta + l) = m_p g l (1 - \cos\theta)
+$$
+
+Samlet potentiel energi:
+
+$$
+E_{\text{pot}} = \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta)
+$$
+
+Den totale mekaniske energi er summen:
+
+$$
+E_{\text{tot}} = E_{\text{kin}} + E_{\text{pot}}
+$$
+eller eksplicit:
+$$
+\begin{aligned}
+E_{\text{kin}} &= \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2, \\
+E_{\text{pot}} &= \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta).
+\end{aligned}
+$$
