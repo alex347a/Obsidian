@@ -37,3 +37,18 @@ Inertimomentet er konstant, fordi massen ikke ændrer sig. Man kan regne inertim
 ![[Pasted image 20251021130812.png]]
 ![[Pasted image 20251021130831.png]]
 Så længe vi bliver ved med at påtrykke en kraft så vil legemet accelerere idet der ingen friktioner er i dette eksempel, mens den i den virkelige verden med friktion vil være en tophastighed.
+![[Pasted image 20251021131229.png]]
+Den øverste fordi inertimomentet afhænger af radius i anden, ligesom vi så i tidligere slide 16:
+![[Pasted image 20251021125045.png]]
+![[Pasted image 20251021131305.png]]
+![[Pasted image 20251021131430.png]]
+Vi har bare indsat i formlen for kinetisk energi:
+$$
+E_{kin} = \frac{1}{2} m v^{2}
+$$
+hvor hastigheden i anden er givet ved:
+$$
+v^{2}  = r^{2} \cdot \omega^{2}
+$$
+Dermed kan det forkortes til inertimomentet ganget med vinkelhastigheden i anden.
+![[Pasted image 20251021131602.png]]
