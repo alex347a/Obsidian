@@ -155,9 +155,7 @@ m_p l^2 \ddot{\theta}
 \right)
 + m_p g l \sin\theta = 0
 $$
-
 Udvid og saml led med $\ddot{\theta}$:
-
 $$
 \left(
 m_p l^2 - \frac{m_p^2 l^2 \cos^2\theta}{m_c + m_p}
@@ -166,9 +164,7 @@ m_p l^2 - \frac{m_p^2 l^2 \cos^2\theta}{m_c + m_p}
 -\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
 - m_p g l \sin\theta
 $$
-
 Divider til sidst for at isolere $\ddot{\theta}$:
-
 $$
 \boxed{
 \ddot{\theta}
@@ -181,19 +177,7 @@ m_p l^2\left(1 - \frac{m_p \cos^2\theta}{m_c + m_p}\right)
 }
 }
 $$
-
-
-## 4) Bemærkninger
-
-- Disse to udtryk udgør **de eksplicitte ikke-lineære bevægelsesligninger** for vogn–pendul-systemet.  
-- De bruges direkte i numerisk integration (f.eks. Runge–Kutta).  
-- Systemet er stærkt koblet: $\ddot{x}_c$ afhænger af $\ddot{\theta}$ og omvendt.  
-- Ved små vinkler ($\sin\theta \approx \theta$, $\cos\theta \approx 1$) kan man linearisere og få lineære tilstandsrumsligninger.
-
----
-
-## 5) Sammenfatning
-
+Dermed får jeg altså:
 $$
 \boxed{
 \begin{aligned}
@@ -209,8 +193,6 @@ m_p l^2\left(1 - \frac{m_p \cos^2\theta}{m_c + m_p}\right)
 \end{aligned}
 }
 $$
-
-
 # 4 Analyse af konservativitet
 
 Et system er **konservativt**, hvis summen af potentiel og kinetisk energi er konstant over tid — dvs. der ingen energitab forekommer.
@@ -222,9 +204,6 @@ I dette system indgår:
 - Den eksterne kraft $F(t)$ (ikke-konservativ)
 
 Systemet er derfor **ikke konservativt**, da $b$ dissiperer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister mekanisk energi, hvilket betyder det eventuelt vil ende med at stå stille.
-
----
-
 # 5 Potentiel og kinetisk energi
 
 Den potentielle og kinetiske energi for systemet er:
