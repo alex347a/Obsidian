@@ -37,6 +37,7 @@ Inertimomentet er konstant, fordi massen ikke ændrer sig. Man kan regne inertim
 ![[Pasted image 20251021130812.png]]
 ![[Pasted image 20251021130831.png]]
 Så længe vi bliver ved med at påtrykke en kraft så vil legemet accelerere idet der ingen friktioner er i dette eksempel, mens den i den virkelige verden med friktion vil være en tophastighed.
+### Kinetisk energi og arbejde for stive legemer
 ![[Pasted image 20251021131229.png]]
 Den øverste fordi inertimomentet afhænger af radius i anden, ligesom vi så i tidligere slide 16:
 ![[Pasted image 20251021125045.png]]
@@ -52,3 +53,8 @@ v^{2}  = r^{2} \cdot \omega^{2}
 $$
 Dermed kan det forkortes til inertimomentet ganget med vinkelhastigheden i anden.
 ![[Pasted image 20251021131602.png]]
+Hvis man har et legeme der både translaterer og roterer så kan man beregne det ved at addere den kinetiske energi for begge bevægelser.
+### Steiners sætning
+![[Pasted image 20251021131923.png]]
+Vi kan sætte $\omega^{2}$ udenfor en parentes idet det indgår i begge led.
+![[Pasted image 20251021132149.png]]
