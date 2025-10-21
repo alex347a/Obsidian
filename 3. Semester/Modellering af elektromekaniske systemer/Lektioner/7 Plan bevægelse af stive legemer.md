@@ -32,3 +32,5 @@ Det er bare ligesom robotkinematik. Man kan kun integrere vinkler ved euler vink
 ![[Pasted image 20251021124605.png]]
 Husk at impulsmomentet er givet ved masse gange hastighed, hvor hastigheden her er givet ved: $\overline{\omega} \times \overline{r}_{i}$ hvor vi så her kan gange massen udenfor, fordi det blot er en størrelse. Sinus fordi det er den modstående katete over hypotenusen. Husk at det kun er for z-retningen. Husk at alle partikler har samme vinkelhastighed, fordi ellers ville objektet deformere.
 ![[Pasted image 20251021125045.png]]
+Inertimomentet er konstant, fordi massen ikke ændrer sig. Man kan regne inertimomentet ved at integrere radius ganget med massen, eller hvis man ikke har massen men i stedet har densiteten (massetætheden) og volumen, så kan dette også bruges.
+![[Pasted image 20251021125302.png]]
