@@ -132,6 +132,84 @@ m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta &= 0 \
 \end{aligned}
 }
 $$
+Jeg isolerer for $\ddot{x}_c$:
+$$
+(m_c + m_p)\ddot{x}_c = F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}
+$$
+Divider med $(m_c + m_p)$:
+$$
+\boxed{
+\ddot{x}_c = \frac{F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}}{m_c + m_p}
+}
+$$
+Indsætter $\ddot{x}_c$ i (2) for at isolere $\ddot{\theta}$:
+$$
+m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta = 0
+$$
+Erstat $\ddot{x}_c$ fra udtrykket ovenfor:
+$$
+m_p l^2 \ddot{\theta}
++ m_p l \cos\theta
+\left(
+\frac{F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}}{m_c + m_p}
+\right)
++ m_p g l \sin\theta = 0
+$$
+
+Udvid og saml led med $\ddot{\theta}$:
+
+$$
+\left(
+m_p l^2 - \frac{m_p^2 l^2 \cos^2\theta}{m_c + m_p}
+\right)\ddot{\theta}
+=
+-\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
+- m_p g l \sin\theta
+$$
+
+Divider til sidst for at isolere $\ddot{\theta}$:
+
+$$
+\boxed{
+\ddot{\theta}
+=
+\frac{
+-\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
+- m_p g l \sin\theta
+}{
+m_p l^2\left(1 - \frac{m_p \cos^2\theta}{m_c + m_p}\right)
+}
+}
+$$
+
+
+## 4) Bemærkninger
+
+- Disse to udtryk udgør **de eksplicitte ikke-lineære bevægelsesligninger** for vogn–pendul-systemet.  
+- De bruges direkte i numerisk integration (f.eks. Runge–Kutta).  
+- Systemet er stærkt koblet: $\ddot{x}_c$ afhænger af $\ddot{\theta}$ og omvendt.  
+- Ved små vinkler ($\sin\theta \approx \theta$, $\cos\theta \approx 1$) kan man linearisere og få lineære tilstandsrumsligninger.
+
+---
+
+## 5) Sammenfatning
+
+$$
+\boxed{
+\begin{aligned}
+\ddot{x}_c &= \frac{F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}}{m_c + m_p}, \\[6pt]
+\ddot{\theta}
+&=
+\frac{
+-\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
+- m_p g l \sin\theta
+}{
+m_p l^2\left(1 - \frac{m_p \cos^2\theta}{m_c + m_p}\right)
+}.
+\end{aligned}
+}
+$$
+
 
 # 4 Analyse af konservativitet
 
