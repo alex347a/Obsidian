@@ -29,8 +29,6 @@ $$
 m_c \ddot{x}_c = F(t) - b\dot{x}_c - kx_c - T \sin\theta
 $$
 
----
-
 ## Kræfter på pendulet
 
 På pendulets massepunkt virker:
@@ -52,9 +50,6 @@ $$
 $$
 \ddot{y}_p = l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta
 $$
-
----
-
 ## Bevægelsesligninger for pendulet
 
 Newton’s 2. lov i x- og y-retningen giver:
@@ -74,9 +69,6 @@ m_p(\ddot{x}_c + l\ddot{\theta}\cos\theta - l\dot{\theta}^2\sin\theta) = -T \sin
 m_p(l\ddot{\theta}\sin\theta + l\dot{\theta}^2\cos\theta) = T \cos\theta - m_p g
 \end{cases}
 $$
-
----
-
 # 3 Bevægelsesligninger for systemet
 
 Jeg ønsker at eliminere $T$ for at få to koblede 2. ordens differentialligninger.
@@ -101,7 +93,6 @@ $$
 
 Dette er **bevægelsesligning (1)**.
 
----
 
 Fra pendulets y-ligning:
 
@@ -131,8 +122,6 @@ $$
 
 Dette er **bevægelsesligning (2)**.
 
----
-
 ## Samlede bevægelsesligninger
 
 $$
@@ -143,9 +132,67 @@ m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta &= 0 \
 \end{aligned}
 }
 $$
-
----
-
+Jeg isolerer for $\ddot{x}_c$:
+$$
+(m_c + m_p)\ddot{x}_c = F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}
+$$
+Divider med $(m_c + m_p)$:
+$$
+\boxed{
+\ddot{x}_c = \frac{F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}}{m_c + m_p}
+}
+$$
+Indsætter $\ddot{x}_c$ i (2) for at isolere $\ddot{\theta}$:
+$$
+m_p l^2 \ddot{\theta} + m_p l \cos\theta\,\ddot{x}_c + m_p g l \sin\theta = 0
+$$
+Erstat $\ddot{x}_c$ fra udtrykket ovenfor:
+$$
+m_p l^2 \ddot{\theta}
++ m_p l \cos\theta
+\left(
+\frac{F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}}{m_c + m_p}
+\right)
++ m_p g l \sin\theta = 0
+$$
+Udvid og saml led med $\ddot{\theta}$:
+$$
+\left(
+m_p l^2 - \frac{m_p^2 l^2 \cos^2\theta}{m_c + m_p}
+\right)\ddot{\theta}
+=
+-\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
+- m_p g l \sin\theta
+$$
+Divider til sidst for at isolere $\ddot{\theta}$:
+$$
+\boxed{
+\ddot{\theta}
+=
+\frac{
+-\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
+- m_p g l \sin\theta
+}{
+m_p l^2\left(1 - \frac{m_p \cos^2\theta}{m_c + m_p}\right)
+}
+}
+$$
+Dermed får jeg altså:
+$$
+\boxed{
+\begin{aligned}
+\ddot{x}_c &= \frac{F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2 - m_p l \cos\theta\,\ddot{\theta}}{m_c + m_p}, \\[6pt]
+\ddot{\theta}
+&=
+\frac{
+-\frac{m_p l \cos\theta}{m_c + m_p}\left(F(t) - b\dot{x}_c - kx_c + m_p l \sin\theta\,\dot{\theta}^2\right)
+- m_p g l \sin\theta
+}{
+m_p l^2\left(1 - \frac{m_p \cos^2\theta}{m_c + m_p}\right)
+}.
+\end{aligned}
+}
+$$
 # 4 Analyse af konservativitet
 
 Et system er **konservativt**, hvis summen af potentiel og kinetisk energi er konstant over tid — dvs. der ingen energitab forekommer.
@@ -156,9 +203,12 @@ I dette system indgår:
 - Dæmperen $b$ (ikke-konservativ)  
 - Den eksterne kraft $F(t)$ (ikke-konservativ)
 
+
 Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister energi, hvilket betyder det eventuelt vil ende med at stå stille.
 
 ---
+
+Systemet er derfor **ikke konservativt**, da $b$ dissiperer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister mekanisk energi, hvilket betyder det eventuelt vil ende med at stå stille.
 
 # 5 Potentiel og kinetisk energi
 
@@ -180,15 +230,96 @@ $$
 
 Summen $E_{\text{tot}} = E_{\text{pot}} + E_{\text{kin}}$ er konstant, hvis $b=0$ og $F(t)=0$.
 
----
-
-# (Valgfrit) Linearisering for små vinkler
-
-For små $\theta$ ($\sin\theta \approx \theta$, $\cos\theta \approx 1$):
+# 5 Potentiel og kinetisk energi
+Den totale mekaniske energi er givet ved:
+$$
+E_{\text{tot}} = E_{\text{kin}} + E_{\text{pot}}
+$$
+#### Kinetisk energi
+Pivotpunktet sidder på vognen, og vinklen $\theta$ måles fra lodret, positiv med uret.  
+Pendulets massepunkt har derfor koordinaterne:
 
 $$
-\begin{cases}
-(m_c + m_p)\ddot{x}_c + m_p l \ddot{\theta} + kx_c + b\dot{x}_c = F(t) \\
-m_p l^2 \ddot{\theta} + m_p l \ddot{x}_c + m_p g l \theta = 0
-\end{cases}
+x_p = x_c + l\sin\theta, \qquad y_p = -\,l\cos\theta
+$$
+
+Når $\theta = 0$, hænger pendulet lodret nedad og har $y_p = -l$.
+
+Hastigheder:
+
+Differentierer positionerne mht. tid:
+
+$$
+\dot{x}_p = \dot{x}_c + l\cos\theta\,\dot{\theta}, \qquad 
+\dot{y}_p = l\sin\theta\,\dot{\theta}.
+$$
+Hastighedens kvadrat:
+
+Den totale hastighed for pendul-massen er:
+
+$$
+v_p^2 = \dot{x}_p^2 + \dot{y}_p^2
+$$
+
+Indsætter udtrykkene fra ovenfor:
+
+$$
+\begin{aligned}
+v_p^2 
+&= (\dot{x}_c + l\cos\theta\,\dot{\theta})^2 + (l\sin\theta\,\dot{\theta})^2 \\
+&= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\underbrace{(\cos^2\theta + \sin^2\theta)}_{\cos^2\theta + \sin^2\theta = 1}\dot{\theta}^2 \\
+&= \dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\dot{\theta}^2.
+\end{aligned}
+$$
+Kinetisk energi:
+
+Den kinetiske energi for systemet består af vognen og pendul-massen.
+
+- For vognen: $\tfrac12 m_c \dot{x}_c^2$  
+- For pendul-massen: $\tfrac12 m_p v_p^2$
+
+Summen bliver:
+
+$$
+\begin{aligned}
+E_{\text{kin}} 
+&= \tfrac12 m_c \dot{x}_c^2 + \tfrac12 m_p(\dot{x}_c^2 + 2l\cos\theta\,\dot{x}_c\,\dot{\theta} + l^2\dot{\theta}^2) \\
+&= \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2
+\end{aligned}
+$$
+
+Fortolkning af leddene:
+- $\tfrac12 (m_c + m_p)\dot{x}_c^2$: translationel energi for hele systemet.  
+- $m_p l\cos\theta\,\dot{x}_c\,\dot{\theta}$: koblingsled mellem vognens bevægelse og pendulets rotation.  
+- $\tfrac12 m_p l^2 \dot{\theta}^2$: rotationsenergi af pendulet om pivotet.
+#### Potentiel energi:
+Systemet har to former for potentiel energi:
+1. **Fjederenergi:**
+$$
+E_{\text{fjeder}} = \tfrac12 k x_c^2
+$$
+2. **Gravitationsenergi for pendul-massen:**
+Pendulets højde er $y_p = -l\cos\theta$.  
+Ved $\theta=0$ er højden $y_p=-l$.  
+Vi vælger denne til reference ($E_{\text{pot}}=0$ ved $\theta=0$).
+
+Ændringen i potentiel energi bliver derfor:
+$$
+E_{\text{grav}} = m_p g (y_p - y_{|\theta=0}) = m_p g(-l\cos\theta + l) = m_p g l (1 - \cos\theta)
+$$
+Samlet potentiel energi:
+$$
+E_{\text{pot}} = \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta)
+$$
+Dvs. de to er givet ved:
+$$
+\begin{aligned}
+E_{\text{kin}} &= \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2, \\
+E_{\text{pot}} &= \tfrac12 k x_c^2 + m_p g l (1 - \cos\theta).
+\end{aligned}
+$$
+Dermed er den mekaniske energi givet ved:
+$$
+E_{mek} = \tfrac12 (m_c + m_p)\dot{x}_c^2 + m_p l\cos\theta\,\dot{x}_c\,\dot{\theta} + \tfrac12 m_p l^2 \dot{\theta}^2 +
+\tfrac12 k x_c^2 + m_p g l (1 - \cos\theta)
 $$
