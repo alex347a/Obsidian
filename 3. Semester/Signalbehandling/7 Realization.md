@@ -63,3 +63,6 @@ $a_{22}$ should be zero, since there is constant value in $-0.3624z^{2} + 0.2558
 FIR and IIR will come later, but basically if you DONT consider your previous output its FIR (so parallel structure) and if you DO consider your previous output its IIR (so cascade)
 ### Block diagrams and signal flow graphs
 ![[Pasted image 20251023102101.png]]
+### Transpose of the system
+![[Pasted image 20251023102341.png]]
+Keep in mind $y(n)$ and $x(n)$ have been swapped, and the arrows are reversed.
