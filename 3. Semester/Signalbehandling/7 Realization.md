@@ -13,3 +13,4 @@ if $x(n)$ goes through a delay it becomes $x(n-1)$
 For the blue part each amplification $a$ is passed through a delay and then added to all of the previous values. For the green part the only difference is the - in front of the sum, so it is a negative amplification of $b$. The function $y(n)$ is the sum of the two amplifications that are each a sum of all of the values. Its a loop that is recursive, so the function is dependent on all of the previous values of the output signal and the input signal as well. Here it is easily visualised that if the amplification is above 1 then the signal becomes unstable, because you will keep amplifying the signal to infinity.
 #### Example
 ![[Pasted image 20251023084256.png]]
+Mistake, b should be negative, its $-b$ in the amplification.
