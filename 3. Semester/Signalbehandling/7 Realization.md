@@ -14,3 +14,12 @@ For the blue part each amplification $a$ is passed through a delay and then adde
 #### Example
 ![[Pasted image 20251023084256.png]]
 Mistake, b should be negative, its $-b$ in the amplification.
+![[Pasted image 20251023085450.png]]
+Look for new slides, he basically just isolates $y(n)$ like in the example above and then draws it, it is very simple and intuitive. This is type 1.
+
+### Direct type 2 cascading
+![[Pasted image 20251023085533.png]]
+![[Pasted image 20251023085549.png]]
+here $H_{1}$ should be in the green box, not in the blue one, and the opposite, the amplifications are in swapped order.
+Just like multiplying in a different order mathematically.
+![[Pasted image 20251023085708.png]]
