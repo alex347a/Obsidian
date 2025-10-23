@@ -51,3 +51,9 @@ You need to consider the sequence of sections. So it should be the middle one fi
 You scale between the transfer functions in order to not lose your accuracy. If they are too small you amplify and if they are too big you need to reduce.
 ### Parallel realization
 ![[Pasted image 20251023100117.png]]
+![[Pasted image 20251023100936.png]]
+![[Pasted image 20251023100941.png]]
+![[Pasted image 20251023100947.png]]
+![[Pasted image 20251023100956.png]]
+![[Pasted image 20251023101004.png]]
+![[Pasted image 20251023101015.png]]
