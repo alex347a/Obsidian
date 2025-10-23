@@ -57,3 +57,9 @@ You scale between the transfer functions in order to not lose your accuracy. If 
 ![[Pasted image 20251023100956.png]]
 ![[Pasted image 20251023101004.png]]
 ![[Pasted image 20251023101015.png]]
+$a_{22}$ should be zero, since there is constant value in $-0.3624z^{2} + 0.2558z$ 
+### Cascade vs. parallel structure
+![[Pasted image 20251023102035.png]]
+FIR and IIR will come later, but basically if you DONT consider your previous output its FIR (so parallel structure) and if you DO consider your previous output its IIR (so cascade)
+### Block diagrams and signal flow graphs
+![[Pasted image 20251023102101.png]]
