@@ -1,6 +1,6 @@
 ### roots()
 ![[Pasted image 20251002101147.png]]
-Even if you dont have the value for c (here -4) you should still type 0, because it needs the inputs.
+Even if you dont have the value for c (here -4) you should still type 0, because it needs three inputs.
 ### tf2zp()
 ![[Pasted image 20251002101157.png]]
 ### zplane()
@@ -18,3 +18,5 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251015122700.png]]
 ### filter()
 ![[Pasted image 20251015122712.png]]
+### $[p,z]$  = pzmap(H_{z})
+combined with roots() can be used to calculate the zeros and poles

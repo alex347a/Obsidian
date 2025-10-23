@@ -34,3 +34,7 @@ The amplification need to be able to handle large margins, or else the signal wi
 ![[Pasted image 20251023090921.png]]
 ### What can be the problems for direct realization?
 ![[Pasted image 20251023092647.png]]
+For example if you want to amplify both low frequencies and high frequencies you create two filters and add them together.
+### Cascade realization
+![[Pasted image 20251023093335.png]]
+![[Pasted image 20251023093354.png]]
