@@ -45,4 +45,9 @@ If you have conjugated poles you put them together in one function.
 You want to make sure the zeros and poles that are close together in the pole-zero map , because if its far apart then it can result in the system becoming unstable, because of rounding errors. If they are close they can almost cancel each other out.
 ![[Pasted image 20251023094841.png]]
 ![[Pasted image 20251023095413.png]]
-You need to consider the sequence of sections. So it should be the middle one first because it is the most gentle one, then the lowest one and then the highest one (1st order)
+You need to consider the sequence of sections. So it should be the middle one first because it is the most gentle one, and then after it has decayed by -5dB then we should use the amplified one, which is the highest one, and then at the end use the lowest one (1st order), this makes sure there is as low of a range of amplification as possible.
+### Scaling
+![[Pasted image 20251023095957.png]]
+You scale between the transfer functions in order to not lose your accuracy. If they are too small you amplify and if they are too big you need to reduce.
+### Parallel realization
+![[Pasted image 20251023100117.png]]
