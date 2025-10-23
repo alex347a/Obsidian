@@ -29,3 +29,6 @@ Since every line is a value, reducing the total amount of lines will make comput
 ![[Pasted image 20251023090329.png]]
 ### Why not always use type 2
 ![[Pasted image 20251023090356.png]]
+The amplification need to be able to handle large margins, or else the signal will be truncated. Rounding errors can be enough to change the behaviour of the system.
+### Rounding errors
+![[Pasted image 20251023090921.png]]
