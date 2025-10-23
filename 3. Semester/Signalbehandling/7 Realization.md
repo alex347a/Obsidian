@@ -39,3 +39,7 @@ For example if you want to amplify both low frequencies and high frequencies you
 ![[Pasted image 20251023093335.png]]
 ![[Pasted image 20251023093354.png]]
 If you have conjugated poles you put them together in one function.
+![[Pasted image 20251023094356.png]]
+### Organize poles and zeros into different sections
+![[Pasted image 20251023094406.png]]
+You want to make sure the zeros and poles that are close together in the diagram, because if its far apart then it makes the bode plot more curvy
