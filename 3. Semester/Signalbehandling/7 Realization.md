@@ -42,4 +42,5 @@ If you have conjugated poles you put them together in one function.
 ![[Pasted image 20251023094356.png]]
 ### Organize poles and zeros into different sections
 ![[Pasted image 20251023094406.png]]
-You want to make sure the zeros and poles that are close together in the diagram, because if its far apart then it makes the bode plot more curvy
+You want to make sure the zeros and poles that are close together in the pole-zero map , because if its far apart then it can result in the system becoming unstable, because of rounding errors. If they are close they can almost cancel each other out.
+![[Pasted image 20251023094841.png]]
