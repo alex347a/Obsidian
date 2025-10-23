@@ -44,3 +44,5 @@ If you have conjugated poles you put them together in one function.
 ![[Pasted image 20251023094406.png]]
 You want to make sure the zeros and poles that are close together in the pole-zero map , because if its far apart then it can result in the system becoming unstable, because of rounding errors. If they are close they can almost cancel each other out.
 ![[Pasted image 20251023094841.png]]
+![[Pasted image 20251023095413.png]]
+You need to consider the sequence of sections. So it should be the middle one first because it is the most gentle one, then the lowest one and then the highest one (1st order)
