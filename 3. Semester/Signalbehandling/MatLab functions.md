@@ -18,5 +18,5 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251015122700.png]]
 ### filter()
 ![[Pasted image 20251015122712.png]]
-### $[p,z]$  = pzmap(H_{z})
-combined with roots() can be used to calculate the zeros and poles
+### $[p,z]$  = pzmap(H_z)
+combined with roots() can be used to calculate the zeros and poles. Pzmap means poles-zero-map

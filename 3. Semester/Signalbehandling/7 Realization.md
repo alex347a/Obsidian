@@ -38,3 +38,4 @@ For example if you want to amplify both low frequencies and high frequencies you
 ### Cascade realization
 ![[Pasted image 20251023093335.png]]
 ![[Pasted image 20251023093354.png]]
+If you have conjugated poles you put them together in one function.
