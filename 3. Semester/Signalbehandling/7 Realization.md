@@ -32,3 +32,5 @@ Since every line is a value, reducing the total amount of lines will make comput
 The amplification need to be able to handle large margins, or else the signal will be truncated. Rounding errors can be enough to change the behaviour of the system.
 ### Rounding errors
 ![[Pasted image 20251023090921.png]]
+### What can be the problems for direct realization?
+![[Pasted image 20251023092647.png]]
