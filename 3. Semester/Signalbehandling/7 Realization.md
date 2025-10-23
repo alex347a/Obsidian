@@ -66,3 +66,6 @@ FIR and IIR will come later, but basically if you DONT consider your previous ou
 ### Transpose of the system
 ![[Pasted image 20251023102341.png]]
 Keep in mind $y(n)$ and $x(n)$ have been swapped, and the arrows are reversed.
+
+In this lecture Simulink for MatLab was also introduced.
+![[Matlab tutorial Simulink.pdf]]
