@@ -20,9 +20,12 @@ $$
 For parallel structure I use the residuez function in MatLab:
 ![[Pasted image 20251024141035.png]]
 ![[Pasted image 20251024150713.png]]
+![[Pasted image 20251024161654.png]]
 This means the parallel structure must be:
 $$
-H(z) = -0.6060 + \frac{0.1804 - 0.0123z^{-1}}{1 - 0.0714z^{-1} + 0.4045z^{-2}} + \frac{-1.0340 + 0.3044z^{-1}}{1 + 0.5884z^{-1} + 0.8114z^{-2}} + \frac{1.5260}{1 - 0.3345z^{-1}}
+H(z) = 1 + \frac{0.1804 - 0.0123z^{-1}}{1 - 0.0714z^{-1} + 0.4045z^{-2}} + \frac{-1.0340 + 0.3044z^{-1}}{1 + 0.5884z^{-1} + 0.8114z^{-2}} + \frac{1.5260}{1 - 0.3345z^{-1}}
 $$
 
 3. Draw the above cascade realization and parallel structure using Simulink. Check if they give you the same result with a 20Hz sinusoidal input.
+![[Pasted image 20251024161841.png]]
+No I don't get the same, the cascade maxes out at a little over 1 amplitude and goes to 1, while the parallel is above 2 and goes to around 1.7.
