@@ -12,15 +12,13 @@ if $x(n)$ goes through a delay it becomes $x(n-1)$
 ![[Pasted image 20251023083004.png]]
 For the blue part each amplification $a$ is passed through a delay and then added to all of the previous values. For the green part the only difference is the - in front of the sum, so it is a negative amplification of $b$. The function $y(n)$ is the sum of the two amplifications that are each a sum of all of the values. Its a loop that is recursive, so the function is dependent on all of the previous values of the output signal and the input signal as well. Here it is easily visualised that if the amplification is above 1 then the signal becomes unstable, because you will keep amplifying the signal to infinity.
 #### Example
-![[Pasted image 20251023084256.png]]
-Mistake, b should be negative, its $-b$ in the amplification.
+![[Pasted image 20251024131230.png]]
 ![[Pasted image 20251023085450.png]]
 Look 4 slides down (Example (type II)), he basically just isolates $y(n)$ like in the example above and then draws it, it is very simple and intuitive. This is type 1.
 
 ### Direct type 2 cascading
 ![[Pasted image 20251023085533.png]]
-![[Pasted image 20251023085549.png]]
-here $H_{1}$ should be in the green box, not in the blue one, and the opposite, the amplifications are in swapped order.
+![[Pasted image 20251024131338.png]]
 Just like multiplying in a different order mathematically.
 ![[Pasted image 20251023085708.png]]
 Since every line is a value, reducing the total amount of lines will make computation faster.
@@ -56,7 +54,7 @@ You scale between the transfer functions in order to not lose your accuracy. If 
 ![[Pasted image 20251023100947.png]]
 ![[Pasted image 20251023100956.png]]
 ![[Pasted image 20251023101004.png]]
-![[Pasted image 20251023101015.png]]
+![[Pasted image 20251024131459.png]]
 $a_{22}$ should be zero, since there is constant value in $-0.3624z^{2} + 0.2558z$ 
 ### Cascade vs. parallel structure
 ![[Pasted image 20251023102035.png]]
@@ -65,7 +63,7 @@ FIR and IIR will come later, but basically if you DONT consider your previous ou
 ![[Pasted image 20251023102101.png]]
 ### Transpose of the system
 ![[Pasted image 20251023102341.png]]
-Keep in mind $y(n)$ and $x(n)$ have been swapped, and the arrows are reversed.
+Here you can see, when transposing a system $y(n)$ and $x(n)$ have been swapped, and the arrows are reversed.
 
 In this lecture Simulink for MatLab was also introduced.
 ![[Matlab tutorial Simulink.pdf]]
