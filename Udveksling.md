@@ -115,6 +115,15 @@ TJEK Artificial Intelligence department.
 ## Chung-Ang University (intet program måske)
 
 ## Inha University
+Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semiconductor)
+- Design of algorithm
+- Statistics
+- Data structure
+- Artificial Intelligence programming
+- Artificial Intelligence System on Chip
+- Artificial Intelligence Semiconductor Design
+- Introduction to Machine Learning
+
 
 ## Hankuk University
 Engineering is at Campus Yong-In 1 hour from Seoul approximately.
