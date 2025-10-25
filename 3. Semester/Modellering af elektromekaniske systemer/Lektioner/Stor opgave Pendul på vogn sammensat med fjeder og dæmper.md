@@ -203,7 +203,13 @@ I dette system indgår:
 - Dæmperen $b$ (ikke-konservativ)  
 - Den eksterne kraft $F(t)$ (ikke-konservativ)
 
+
+Systemet er derfor **ikke konservativt**, da $b$ dissipaterer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister energi, hvilket betyder det eventuelt vil ende med at stå stille.
+
+---
+
 Systemet er derfor **ikke konservativt**, da $b$ dissiperer energi som varme, og $F(t)$ kan tilføre energi. Konsekvensen af dette for systemet er at systemet mister mekanisk energi, hvilket betyder det eventuelt vil ende med at stå stille.
+
 # 5 Potentiel og kinetisk energi
 
 Den potentielle og kinetiske energi for systemet er:
