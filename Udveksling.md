@@ -74,7 +74,7 @@ List over courses for computer science:
 https://imai.snu.ac.kr/%ea%b5%90%ec%9c%a1/%ec%a0%84%ea%b3%b5%ea%b5%90%ea%b3%bc%eb%aa%a9/
 ![[Pasted image 20251001165047.png]]
 
-## Pohang University POSTECH
+## Pohang University POSTECH IKKE TÆT PÅ SEOUL
 Fag for computer science:
 https://plms.postech.ac.kr/local/ubion/course/lists.php?year=2025&semester=20&dept=00039100&groupcode=U&cc&lang=all&keyfield=coursename&keyword&page=2
 - Introduction to Data Analysis
@@ -126,7 +126,7 @@ Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semico
 ## Hankuk University
 Engineering is at Campus Yong-In 1 hour from Seoul approximately.
 ## Hanyang University
-## Kyungpook National University
+## Kyungpook National University IKKE TÆT PÅ SEOUL
 
 # Liste 
 1. SNU 
