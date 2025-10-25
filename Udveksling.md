@@ -128,6 +128,8 @@ Engineering is at Campus Yong-In 1 hour from Seoul approximately.
 ## Hanyang University
 ## Kyungpook National University IKKE TÆT PÅ SEOUL
 
+## Map over university locations
+![[university locations.png]]
 # Liste 
 1. SNU 
 2. SKKU 
