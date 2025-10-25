@@ -10,10 +10,10 @@ First I use MatLab to calculate the transfer functions, for cascade structure I 
 For cascade structure i use sos in matlab:
 The sos matrix has the structure:
 $[b0, b1, b2, 1, a1, a2]$
-![[Pasted image 20251024142903.png]]
+![[Pasted image 20251025143737.png]]
 This means the cascade structure must be:
 $$
-H(z) = \frac{1 + 0.999 z^{-1}}{1-0.3345 z^{-1}} \cdot \frac{1 + 2.0015 z^{-1} + 1.0015 z^{-2}}{1 -0.0714 z^{-1} + 0.4045 z^{-2}} \cdot \frac{1 + 1.9994 z^{-1} + 0.9994 z^{-2}}{1 + 0.5884 z^{-1} + 0.8114 z^{-2}}
+H(z) = 0.06654 \cdot \frac{1 + 0.999 z^{-1}}{1-0.3345 z^{-1}} \cdot \frac{1 + 2.0015 z^{-1} + 1.0015 z^{-2}}{1 -0.0714 z^{-1} + 0.4045 z^{-2}} \cdot \frac{1 + 1.9994 z^{-1} + 0.9994 z^{-2}}{1 + 0.5884 z^{-1} + 0.8114 z^{-2}}
 $$
 
 2. Rewrite the above transfer function to a parallel structure using first- and second-order transfer functions.
