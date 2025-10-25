@@ -116,11 +116,12 @@ TJEK Artificial Intelligence department.
 
 ## Inha University
 Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semiconductor)
-- Design of algorithm
-- Statistics
-- Data structure
-- Artificial Intelligence programming (AIE2002)
-- Artificial Intelligence System on Chip
+- Design of algorithm (EEC3414) (den er der vidst kun om foråret ❎)
+- Statistics (MCT2901) vinterkursus ☑️
+- Data structure (EEC2208) vinterkursus ☑️
+- Artificial Intelligence (CSE4302) vinterkursus ☑️
+- Artificial Intelligence programming (AIE2002) vinterkursus ☑️
+- Artificial Intelligence System on Chip (AIS4001)
 - Artificial Intelligence Semiconductor Design (AIS4010)
 - Introduction to Machine Learning
 ## Hankuk University
