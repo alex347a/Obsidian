@@ -119,9 +119,9 @@ Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semico
 - Design of algorithm
 - Statistics
 - Data structure
-- Artificial Intelligence programming
+- Artificial Intelligence programming (AIE2002)
 - Artificial Intelligence System on Chip
-- Artificial Intelligence Semiconductor Design
+- Artificial Intelligence Semiconductor Design (AIS4010)
 - Introduction to Machine Learning
 ## Hankuk University
 Engineering is at Campus Yong-In 1 hour from Seoul approximately.
