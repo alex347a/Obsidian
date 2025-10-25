@@ -123,8 +123,6 @@ Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semico
 - Artificial Intelligence System on Chip
 - Artificial Intelligence Semiconductor Design
 - Introduction to Machine Learning
-
-
 ## Hankuk University
 Engineering is at Campus Yong-In 1 hour from Seoul approximately.
 ## Hanyang University
