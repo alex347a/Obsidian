@@ -85,10 +85,9 @@ $$
 $$
 Since the value is below 1 the system is STABLE.
 ![[Pasted image 20251015114143.png]]
-1. 
-   
-   
-2. In order to determine whether the system is stable I have to calculate the poles:
+1. In order to draw the pole-zero plot by hand I have to first calculate the poles and zeros:
+The zeros are easy, since the numerator is zero when $z=0$.
+For the poles:
 I use the quadratic formula:
 $$
 z = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
@@ -115,11 +114,19 @@ $$
 $$
 z = -0.42425 \pm 0.42425 j
 $$
-These are COMPLEX CONJUGATES:
+These are COMPLEX CONJUGATES
+
+![[Exercise 6 - System analysis.pdf]]
+
+I can also draw the pole-zero plot in MatLab by simply using the zplane() function.
+   ![[Pasted image 20251025121758.png]]
+2. In order to determine whether the system is stable I have to calculate the poles:
+Which I already did for drawing the pole-zero plot by hand. However to calculate the stability of the system I have to calculate the magnitude of the poles both the real and imaginary part summed, and if the magnitude is less that 1 the system is stable:
 $$
 \sqrt{(-0.42425)^{2} \pm 0.42425^{2}} = 0.6
 $$
-Since the poles magnitude are below 1 that means the system is stable.
+Since the poles magnitude are below 1 that means the system is STABLE.
+I can also analyse the pole-zero plot to see if any of the poles are outside of the circle or on the right side of the imaginary axis (so if they have a positive real value), because if they are that means the system is UNSTABLE. If they are on the negative real axis and inside the unit circle which they are, that means the system is STABLE.
 
 3. Plot the impulse response of the system with $n = 0:15$ (try different functions / ways)
 ![[Pasted image 20251015122700.png]]
