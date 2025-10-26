@@ -1,5 +1,6 @@
 ![[Pasted image 20251026135629.png]]
 ![[Pasted image 20251026135637.png]]
+1. Opstil differentialligninger, der beskriver dynamikken for systemet.
 Ligesom ved en translatorisk bevægelse for en kasse der rykkes hen ad jorden.
 $$
 f_{d} = -b_{m} v
@@ -29,3 +30,14 @@ Hvilket også kan skrives som:
 $$
 J_{l} \ddot{\theta}_{l} + k_{s}(\theta_{l} - \theta_{m}) = 0
 $$
+2. Omskriv differentialligningerne til et system af 1. ordens differentialligninger.
+
+
+
+
+
+
+3. Simuler systemet med to forskellige input (og parametrene fra Tabel 1)
+(a) $\tau_{m}(t) = 1$
+
+(b) $\tau_{m}(t) = \sin(t)$
