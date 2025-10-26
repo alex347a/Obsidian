@@ -31,10 +31,19 @@ $$
 J_{l} \ddot{\theta}_{l} + k_{s}(\theta_{l} - \theta_{m}) = 0
 $$
 2. Omskriv differentialligningerne til et system af 1. ordens differentialligninger.
+Der er 4 tilstandsvariabler:
+$x_{1} = \theta_{m}$
+$x_{2} = \theta_{l}$
+$x_{3} = \dot{\theta}_{m}$
+$x_{4} = \dot{\theta}_{l}$
 
+Dvs.
+$x_{3} = \dot{x}_{1}$
+$x_{4} = \dot{x}_{2}$
 
-
-
+$$
+\dot{x}_{3} = \ddot{\theta}_{m} = \frac{1}{J_{m}} \cdot (-b_{m} \dot{\theta}_{m} - k_{s}(\theta_{m} - \theta_{l})
+$$
 
 
 3. Simuler systemet med to forskellige input (og parametrene fra Tabel 1)
