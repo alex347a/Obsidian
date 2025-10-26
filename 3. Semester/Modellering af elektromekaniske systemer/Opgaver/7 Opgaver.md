@@ -51,6 +51,9 @@ $$
 
 
 3. Simuler systemet med to forskellige input (og parametrene fra Tabel 1)
+Look at opgaver7.m
 (a) $\tau_{m}(t) = 1$
-
+Blue line
 (b) $\tau_{m}(t) = \sin(t)$
+Orange line
+![[Pasted image 20251026160613.png]]
