@@ -5,12 +5,16 @@ $$
 f_{d} = -b_{m} v
 $$
 $$
-m \ddot{x} = - b_{m} \dot{x}
+J_{m} \ddot{\theta} = - b_{m} \dot{\theta}
 $$
 Hvor $b_{m}$ er friktionskraften.
-
-Så kan man for en rotationel bevægelse:
+På samme side:
 $$
-J_{m} \dot{\omega} = - b_{m} \omega
+J_{m} \ddot{\theta} + b_{m} \dot{\theta}
 $$
-Det eneste der ændres fra Newtons 2. lov kraft er ligmed masse gange acceleration, til at være at kraftmomentet er ligmed inertimomentet ganget med vinkelaccelerationen.
+Denne er så koblet med fjederen med stivhed $k_{s}$, som roterer med både motorsidens $\theta_{m}$ og linkets side $\theta_{l}$
+$$k(\theta_{m} - \theta_{l})$$
+Koblet bliver det:
+$$
+J_{m} \ddot{\theta} + b_{m} \dot{\theta} + k(\theta_{m} - \theta_{l}) = \tau_{m}(t)
+$$
