@@ -42,8 +42,12 @@ $x_{3} = \dot{x}_{1}$
 $x_{4} = \dot{x}_{2}$
 
 $$
-\dot{x}_{3} = \ddot{\theta}_{m} = \frac{1}{J_{m}} \cdot (-b_{m} \dot{\theta}_{m} - k_{s}(\theta_{m} - \theta_{l})
+\dot{x}_{3} = \ddot{\theta}_{m} = \frac{1}{J_{m}} \cdot (\tau_{m}(t) -b_{m} x_{3} - k_{s}(x_{1} - x_{2}))
 $$
+$$
+\dot{x}_{4} = \ddot{\theta_{l}} = \frac{1}{J_{l}} \cdot (k_{s} (x_{1} - x_{2})) = \frac{k_{s}}{J_{l}} \cdot (x_{1} - x_{2})
+$$
+
 
 
 3. Simuler systemet med to forskellige input (og parametrene fra Tabel 1)
