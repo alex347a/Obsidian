@@ -24,5 +24,4 @@ This means the parallel structure must be:
 $$
 H(z) = -0.6060 + \frac{0.1804 - 0.0624z^{-1}}{1 - 0.0714z^{-1} + 0.4045z^{-2}} + \frac{-1.0340 + 0.3044z^{-1}}{1 + 0.5884z^{-1} + 0.8114z^{-2}} + \frac{1.5260}{1 - 0.3345z^{-1}}
 $$
-
 3. Draw the above cascade realization and parallel structure using Simulink. Check if they give you the same result with a 20Hz sinusoidal input.
