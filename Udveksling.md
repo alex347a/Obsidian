@@ -134,5 +134,4 @@ Engineering is at Campus Yong-In 1 hour from Seoul approximately.
 1. SNU 
 2. SKKU 
 3. Inha 
-4. POSTECH 
-5. SEOULTECH 
+4. SEOULTECH 
