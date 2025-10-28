@@ -1,0 +1,2 @@
+1. The audio is sampled at a fixed sampling rate to amplitude values.
+2. The values are converted into spectrogram by using a Short-Time Fourier Transform, which is the wave is broken into tiny windows and Fourier transformed, so we know how much of each specific frequency there is present. Then 
