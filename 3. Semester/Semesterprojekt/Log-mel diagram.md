@@ -1,2 +1,3 @@
 1. The audio is sampled at a fixed sampling rate to amplitude values.
-2. The values are converted into spectrogram by using a Short-Time Fourier Transform, which is the wave is broken into tiny windows and Fourier transformed, so we know how much of each specific frequency there is present. Then 
+2. The values are converted into spectrogram by using a Short-Time Fourier Transform, which is the wave is broken into tiny windows and Fourier transformed, so we know how much of each specific frequency there is present. Then a spectrogram is created where the x-axis is time, the y-axis is frequency and the z-axis is the magnitude of each frequency (given by different colors)
+3. The spectrogram are converted into Mel-spectrogram, which uses a logarithmic scale to emulate human hearing, because humans have a non-linear response.
