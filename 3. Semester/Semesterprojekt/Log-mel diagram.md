@@ -1,6 +1,7 @@
 1. The audio is sampled at a fixed sampling rate to amplitude values.
 2. The values are converted into spectrogram by using a Short-Time Fourier Transform, which is the wave is broken into tiny windows and Fourier transformed, so we know how much of each specific frequency there is present. Then a spectrogram is created where the x-axis is time, the y-axis is frequency and the z-axis is the magnitude of each frequency (given by different colors)
-3. The spectrogram are converted into Mel-spectrogram, which uses a logarithmic scale to emulate human hearing, because humans have a non-linear response. The linear frequencies are grouped into filters that are spread across the mel-warped frequency axis, which compresses the data so we have high resolution at lower frequency ranges and low resolution at higher frequency ranges. (An example of how this is done could be included, check #2)
+3. The spectrogram are converted into Mel-spectrogram, which is a scale that approximates the non-linear response humans have to sound. The linear frequencies are grouped into filters that are spread across the mel-warped frequency axis, which compresses the data so we have high resolution at lower frequency ranges and low resolution at higher frequency ranges. (An example of how this is done could be included, check #2)
+4. The Mel-spectrogram is converted into a logarithmic scale of the magnitudes 
 
 
 # 2
@@ -48,10 +49,8 @@ For a single time frame `t`:
 
 **What does this sum represent?** It represents the **total amount of energy** present in the frequency band covered by that specific Mel filter.
 
-$$\text{Energy in Mel Band k} = \sum (\text{Magnitude}[\text{linear_bin_i}] \cdot \text{Weight_of_Filter_k}[\text{linear_bin_i}])$$
-
+$$\text{Energy in Mel Band k} = \sum (\text{Magnitude}(\text{linear} \textunderscore \text{bin} \textunderscore \text{i}) \cdot \text{Weight} \textunderscore \text{of} \textunderscore \text{filter} \textunderscore \text{k}(\text{linear} \textunderscore \text{bin} \textunderscore \text{i}))$$
 We repeat this for all 80 filters. The result for time frame `t` is a vector of 80 values, not 256.
-
 ### The "Compression" and "Alignment" Explained
 
 1. **"Averages the energy in critical frequency bands":** Instead of knowing the exact energy at 100Hz, 101Hz, 102Hz, etc., we now know the _total energy_ in the "band of small fish" (e.g., 0-200Hz). We've gone from 256 precise measurements to 80 broader, more perceptually relevant summaries.
