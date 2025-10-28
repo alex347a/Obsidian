@@ -1,7 +1,7 @@
 1. The audio is sampled at a fixed sampling rate to amplitude values.
 2. The values are converted into spectrogram by using a Short-Time Fourier Transform, which is the wave is broken into tiny windows and Fourier transformed, so we know how much of each specific frequency there is present. Then a spectrogram is created where the x-axis is time, the y-axis is frequency and the z-axis is the magnitude of each frequency (given by different colors)
 3. The spectrogram are converted into Mel-spectrogram, which is a scale that approximates the non-linear response humans have to sound. The linear frequencies are grouped into filters that are spread across the mel-warped frequency axis, which compresses the data so we have high resolution at lower frequency ranges and low resolution at higher frequency ranges. (An example of how this is done could be included, check #2)
-4. The Mel-spectrogram is converted into a logarithmic scale of the magnitudes 
+4. The Mel-spectrogram is converted into a logarithmic scale of the magnitudes, because humans hear a sound twice as loud only if the sound is 10 times more powerful.
 
 
 # 2
