@@ -66,6 +66,11 @@ Der er ingen kurser til robtek.
 Der er ingen kurser til robtek
 
 ## Seoul National University
+Gå ind på:
+https://sugang.snu.ac.kr/sugang/cc/cc100InterfaceSrch.action
+Sæt i advanced til english lectures og vær sikker på der er en globus på alle fagene.
+
+
 FAQ
 https://oia.snu.ac.kr/exchange-program-faqs
 List over all courses for all departments
