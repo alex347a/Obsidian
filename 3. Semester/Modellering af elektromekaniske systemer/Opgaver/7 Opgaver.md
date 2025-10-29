@@ -56,4 +56,5 @@ Look at opgaver7.m
 Blue line
 (b) $\tau_{m}(t) = \sin(t)$
 Orange line
+![[Pasted image 20251026161005.png]]
 ![[Pasted image 20251026160613.png]]
