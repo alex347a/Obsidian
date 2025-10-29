@@ -111,8 +111,12 @@ TJEK Artificial Intelligence department.
 - Introduction to deep neural networks
 - Fundamentals of machine learning
 - Introduction to Artificial Intelligence
+- System programming
+![[Pasted image 20251029211729.png]]
 - Algorithms
+![[Pasted image 20251029211715.png]]
 - Data structures
+![[Pasted image 20251029211651.png]]
 ## Kyung Hee University
 
 ## Sejong University
