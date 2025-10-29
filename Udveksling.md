@@ -111,6 +111,7 @@ TJEK Artificial Intelligence department.
 - Introduction to deep neural networks
 - Fundamentals of machine learning
 - Introduction to Artificial Intelligence
+![[Pasted image 20251029212136.png]]
 - System programming
 ![[Pasted image 20251029211729.png]]
 - Algorithms
