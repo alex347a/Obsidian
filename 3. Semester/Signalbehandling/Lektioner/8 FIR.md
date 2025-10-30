@@ -82,3 +82,11 @@ Remember $f_{a}$ is the cut-off frequency. m is the index of the Fourier series.
 ![[Pasted image 20251030103911.png]]
 ### Windows functions in FIR
 ![[Pasted image 20251030104121.png]]
+You can use a high order of FIR to get rid of side lope, but then you will increase your computation and increase the signal time delay (Latency), the delay introduced into your filtered signal. If you are processing data in real-time (like audio or a control system), this is the lag you experience. So you need to balance it.
+This is because of the group delay:
+$$
+\text{Group delay = }\frac{N}{2}
+$$
+So if you increase the order you will linearly increase the group delay.
+### Frequency response
+![[Pasted image 20251030104705.png]]
