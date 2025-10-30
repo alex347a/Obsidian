@@ -76,4 +76,9 @@ The blue part is using some sort of newton law, apparently.
 ### FIR design summary
 ![[Pasted image 20251030101546.png]]
 Remember $f_{a}$ is the cut-off frequency. m is the index of the Fourier series. $T = \frac{1}{f_{s}}$ 
+### Problems of the current design. Importance of window function 
 ![[Pasted image 20251030103223.png]]
+### Relationship between time domain and frequency domain
+![[Pasted image 20251030103911.png]]
+### Windows functions in FIR
+![[Pasted image 20251030104121.png]]
