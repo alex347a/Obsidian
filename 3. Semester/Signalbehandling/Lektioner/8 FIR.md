@@ -65,3 +65,13 @@ You shift the signal from -M to M to instead be from 0 to 2M, because the signal
 ![[Pasted image 20251030100746.png]]
 The blue part is using some sort of newton law, apparently. 
 ![[Pasted image 20251030101149.png]]
+![[Pasted image 20251030101443.png]]
+### Example: High pass filter
+![[Pasted image 20251030101501.png]]
+### Example: Bandpass filter
+![[Pasted image 20251030101508.png]]
+### Example: Bandstop filter
+![[Pasted image 20251030101529.png]]
+### FIR design summary
+![[Pasted image 20251030101546.png]]
+Remember $f_{a}$ is the cut-off frequency.
