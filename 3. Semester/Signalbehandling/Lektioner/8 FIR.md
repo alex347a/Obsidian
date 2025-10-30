@@ -123,3 +123,9 @@ $L$ is the length of the filter, so $L = N+1$ if $N$ is the order of the filter.
 ![[Pasted image 20251030110208.png]]
 ### Specs of a FIR filter
 ![[Pasted image 20251030110237.png]]
+### Determination of the filter order
+![[Pasted image 20251030110504.png]]
+![[Pasted image 20251030110510.png]]
+$B_{n}$ is the main lobe width. Remember $M$ is half of the filter order, $M = \frac{N-1}{2}$.
+### Find Bn for different window functions
+![[Pasted image 20251030110519.png]]
