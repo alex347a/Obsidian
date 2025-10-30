@@ -25,4 +25,9 @@ $N$ here and not $N-1$
 Stable, because the poles are all inside the circle. It can't be unstable because the output is finished when the input signal finished.
 ### Linear phase
 ![[Pasted image 20251030092010.png]]
-$N$ here and not $N-1$
+Very confusing here: $N$ here and not $N-1$, because here in this figure N is the amount of samples, but it should be the order.
+When the order is an uneven number the number of parameters are even.
+The transfer function would be:
+$$
+a_{0} + a_{1} z^{-1} + a_{2}z^{-2} + a_{3} z^{-3} + a_{4} z^{-4} + a_{5} z^{-5}
+$$
