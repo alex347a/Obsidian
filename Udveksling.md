@@ -108,6 +108,7 @@ DER ER KUN OM FORÅRET: Sandsynlighed (statistik er kun på koreansk men det lad
 TJEK Artificial Intelligence department.
 ## Sungkyunkwan University SKKU (NSC (Natural Science Campus))
 - Probability and random processes
+
 - Introduction to deep neural networks
 - Fundamentals of machine learning
 - Introduction to Artificial Intelligence
