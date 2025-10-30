@@ -9,3 +9,6 @@ In FIR you use only your input signal to generate your output signal, while in i
 ![[Pasted image 20251030084600.png]]For a sixth order filter you need 7 parameters, because you need to count $a_{0}$ as well.
 ### FIR filter transfer function
 ![[Pasted image 20251030084822.png]]
+The sum should be to $N$ and not $N-1$. It depends on how you define N, but normally N is the order of the filter, while others say N is the number of samples. The order of the filter is the amount of samples minus one.
+### FIR filter realization structure
+![[Pasted image 20251030085008.png]]
