@@ -137,5 +137,6 @@ $f_{a}$ is the cut-off frequency, $\Delta f$  is the transition frequency. $H_{s
 ![[Pasted image 20251030111202.png]]
 ### Example in Matlab
 ![[Pasted image 20251030111309.png]]
+fliplr(c) means flip left-right. Blue is with the window (hamming window) and red is without the window (rectangular window) (you can see it ripples)
 ### Matlab function fir1()
 ![[Pasted image 20251030111326.png]]

@@ -31,3 +31,5 @@ Simplify simplifies an equation by reducing it. vpa() simplifies to a specified 
 ![[Pasted image 20251030085606.png]]
 ### Matlab window functions
 ![[Pasted image 20251030105755.png]]
+### Matlab function fir1()
+![[Pasted image 20251030111326.png]]
