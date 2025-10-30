@@ -29,3 +29,5 @@ Simplify simplifies an equation by reducing it. vpa() simplifies to a specified 
 
 ### conv(input_sig, fir_filter, 'same')
 ![[Pasted image 20251030085606.png]]
+### Matlab window functions
+![[Pasted image 20251030105755.png]]

@@ -103,8 +103,23 @@ This is when you don't use any window, you just directly apply the filter.
 ### Hamming window and Hanning window
 ![[Pasted image 20251030105600.png]]
 ![[Pasted image 20251030105709.png]]
+If the main lobe is a bit wide like here, that means the nearby frequencies will blur together, so it's less precise but you will cut off the unwanted stuff better.
+
+With a **rectangular window** (narrow main lobe):
+- You see two distinct peaks at 100.0 and 100.2 MHz
+- You can precisely identify that Station A is exactly at 100.0 MHz
+
+With **Hanning/Hamming windows** (wider main lobe):
+- The two peaks blur into one wide hump centered around 100.1 MHz
+- Your measurement says "the signal is around 100.1 MHz" rather than exactly 100.0 MHz
+this is called **frequency smearing**
 ### Kaiser window
 ![[Pasted image 20251030105720.png]]
 ![[Pasted image 20251030105732.png]]
 ### Matlab window functions
 ![[Pasted image 20251030105740.png]]
+$L$ is the length of the filter, so $L = N+1$ if $N$ is the order of the filter.
+### Design procedure
+![[Pasted image 20251030110208.png]]
+### Specs of a FIR filter
+![[Pasted image 20251030110237.png]]
