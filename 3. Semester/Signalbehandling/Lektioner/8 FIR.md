@@ -16,3 +16,5 @@ The sum should also be to $N$ here and not $N-1$
 ### Matlab function convolution
 ![[Pasted image 20251030085606.png]]
 You have to put 'same' to ensure you get an output of 5 values if you have 4 values as the input. If you don't put 'same' you will only get 4 output values from 4 values as input.
+The gaussian FIR filter is normally used as a low pass filter, and ensures a smooth curve despite the noise in the input signal.
+The differential filter is normally used to show when you have a transition, so because the sum of the differential filter is 0, that means when the value is 0 you don't have a change in output, but when it differs from 0 it means you have a transition.
