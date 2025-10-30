@@ -17,7 +17,7 @@ Remember the scale of the phase is logarithmical.
 $T_{g}$ is the change in phase for the frequency so the graph for $T_{g}(\omega)$ is just the derivative of the phase $\phi (\omega)$ 
  Example:
  ![[Pasted image 20250918084854.png]]
- So if tau ($T_{g}$) is linear then the signal is just shifted by a constant, but if tau is non-linear it will fuck up your signal because it the different frequencies will have different phase shifts.
+ Importance of linear phase: If tau ($T_{g}$) is linear then the signal is just shifted by a constant, but if tau is non-linear it will fuck up your signal because it the different frequencies will have different phase shifts.
  ![[Pasted image 20250918091635.png]]
  ![[Pasted image 20250918091747.png]]
  ![[Pasted image 20250918091756.png]]

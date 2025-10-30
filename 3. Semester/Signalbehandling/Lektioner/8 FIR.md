@@ -31,3 +31,6 @@ The transfer function would be:
 $$
 a_{0} + a_{1} z^{-1} + a_{2}z^{-2} + a_{3} z^{-3} + a_{4} z^{-4} + a_{5} z^{-5}
 $$
+The linear phase is important because when summing signals you have to make sure all of the functions are delayed linearly, or else the signal will become distorted.
+### Prove
+![[Pasted image 20251030093027.png]]
