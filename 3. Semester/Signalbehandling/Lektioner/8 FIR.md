@@ -90,3 +90,4 @@ $$
 So if you increase the order you will linearly increase the group delay.
 ### Frequency response
 ![[Pasted image 20251030104705.png]]
+![[Pasted image 20251030105038.png]]
