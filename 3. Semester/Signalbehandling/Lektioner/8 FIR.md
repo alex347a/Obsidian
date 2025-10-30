@@ -75,7 +75,7 @@ The blue part is using some sort of newton law, apparently.
 ![[Pasted image 20251030101529.png]]
 ### FIR design summary
 ![[Pasted image 20251030101546.png]]
-Remember $f_{a}$ is the cut-off frequency. m is the index of the Fourier series. $T = \frac{1}{f_{s}}$ 
+Remember $f_{a}$ is the cut-off frequency. m is the index of the Fourier series. $T = \frac{1}{f_{s}}$. $c_{m} = c_{-m}$ means you changed the index so it starts from 0, because the system is causal, so you can't start from negative values. so instead of going from example $-3$ to 3 you go from 0 to 6.
 ### Problems of the current design. Importance of window function 
 ![[Pasted image 20251030103223.png]]
 ### Relationship between time domain and frequency domain
