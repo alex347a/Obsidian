@@ -129,3 +129,13 @@ $L$ is the length of the filter, so $L = N+1$ if $N$ is the order of the filter.
 $B_{n}$ is the main lobe width. Remember $M$ is half of the filter order, $M = \frac{N-1}{2}$.
 ### Find Bn for different window functions
 ![[Pasted image 20251030110519.png]]
+### Calculation of filter coefficients (with window)
+![[Pasted image 20251030110838.png]]
+### Design of lowpass filter
+![[Pasted image 20251030110931.png]]
+$f_{a}$ is the cut-off frequency, $\Delta f$  is the transition frequency. $H_{s}$ is the, $f_{s}$ is the sampling frequency
+![[Pasted image 20251030111202.png]]
+### Example in Matlab
+![[Pasted image 20251030111309.png]]
+### Matlab function fir1()
+![[Pasted image 20251030111326.png]]
