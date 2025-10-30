@@ -51,3 +51,6 @@ Checking with graphical solution:
 ![[Pasted image 20251030094759.png]]
 ### Design of FIR filter
 ![[Pasted image 20251030094822.png]]
+### Recap: Fourier series of periodic signal
+![[Pasted image 20251030095215.png]]
+![[Pasted image 20251030095539.png]]
