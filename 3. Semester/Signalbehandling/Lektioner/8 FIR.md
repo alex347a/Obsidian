@@ -34,3 +34,6 @@ $$
 The linear phase is important because when summing signals you have to make sure all of the functions are delayed linearly, or else the signal will become distorted.
 ### Prove
 ![[Pasted image 20251030093027.png]]
+### Impulse response reformulation
+![[Pasted image 20251030093116.png]]
+![[Pasted image 20251030093306.png]]
