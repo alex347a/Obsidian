@@ -56,9 +56,10 @@ Checking with graphical solution:
 ![[Pasted image 20251030095539.png]]
 ### Fourier transform of $|H(f)|$
 ![[Pasted image 20251030095834.png]]
+m is the index of the Fourier series.
 ### Fourier transform of a FIR filter
 ![[Pasted image 20251030095859.png]]
-You don't need to go to infinity, you only need to consider the finite range of the impulse, which is from $-m$ to m. But by truncating our signal we can run into some issues.
+m is the index of the Fourier series. You don't need to go to infinity, you only need to consider the finite range of the impulse, which is from $-m$ to m. But by truncating our signal we can run into some issues.
 ![[Pasted image 20251030100344.png]]
 You shift the signal from -M to M to instead be from 0 to 2M, because the signal is not causal, meaning the values are not 0 for negative time values.
 ### Example: low pass filter
@@ -74,4 +75,5 @@ The blue part is using some sort of newton law, apparently.
 ![[Pasted image 20251030101529.png]]
 ### FIR design summary
 ![[Pasted image 20251030101546.png]]
-Remember $f_{a}$ is the cut-off frequency.
+Remember $f_{a}$ is the cut-off frequency. m is the index of the Fourier series. $T = \frac{1}{f_{s}}$ 
+![[Pasted image 20251030103223.png]]
