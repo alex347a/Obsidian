@@ -61,4 +61,7 @@ Checking with graphical solution:
 You don't need to go to infinity, you only need to consider the finite range of the impulse, which is from $-m$ to m. But by truncating our signal we can run into some issues.
 ![[Pasted image 20251030100344.png]]
 You shift the signal from -M to M to instead be from 0 to 2M, because the signal is not causal, meaning the values are not 0 for negative time values.
+### Example: low pass filter
 ![[Pasted image 20251030100746.png]]
+The blue part is using some sort of newton law, apparently. 
+![[Pasted image 20251030101149.png]]
