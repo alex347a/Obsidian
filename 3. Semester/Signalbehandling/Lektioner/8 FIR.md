@@ -46,3 +46,8 @@ Then it is proven that if the FIR filter is designed symmetrically then the phas
 ![[Pasted image 20251030094303.png]]
 The number of order is 10.
 ![[Pasted image 20251030094627.png]]
+Do not be confused by 10k, its just 10000 Hz.
+Checking with graphical solution:
+![[Pasted image 20251030094759.png]]
+### Design of FIR filter
+![[Pasted image 20251030094822.png]]
