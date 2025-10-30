@@ -54,3 +54,8 @@ Checking with graphical solution:
 ### Recap: Fourier series of periodic signal
 ![[Pasted image 20251030095215.png]]
 ![[Pasted image 20251030095539.png]]
+### Fourier transform of $|H(f)|$
+![[Pasted image 20251030095834.png]]
+### Fourier transform of a FIR filter
+![[Pasted image 20251030095859.png]]
+You don't need to go to infinity, you only need to consider 
