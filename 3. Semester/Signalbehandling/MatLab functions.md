@@ -23,3 +23,5 @@ combined with roots() can be used to calculate the zeros and poles. Pzmap means 
 
 ### residuez() or residue()
 ![[Pasted image 20251023101226.png]]
+### simplify() and vpa()
+Simplify simplifies an equation by reducing it. vpa() simplifies to a specified value, so for example you only want to keep 3 numbers after the decimal, for example vpa(tmp, 3)
