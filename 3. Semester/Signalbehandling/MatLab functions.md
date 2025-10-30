@@ -26,3 +26,6 @@ This is used for cascade structure.
 This is used for parallel structure
 ### simplify() and vpa()
 Simplify simplifies an equation by reducing it. vpa() simplifies to a specified value, so for example you only want to keep 3 numbers after the decimal, for example vpa(tmp, 3)
+
+### conv(input_sig, fir_filter, 'same')
+![[Pasted image 20251030085606.png]]
