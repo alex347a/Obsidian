@@ -38,3 +38,11 @@ The linear phase is important because when summing signals you have to make sure
 ![[Pasted image 20251030093116.png]]
 ![[Pasted image 20251030093306.png]]
 We replace z with $e^{j \omega T}$ to investigate a point running on the half circle in the z-plane to see the response of the filter to all of the frequencies.
+![[IMG_2132.JPG]]
+### Amplitude and phase
+![[Pasted image 20251030094210.png]]
+Then it is proven that if the FIR filter is designed symmetrically then the phase will always be linear.
+### Example
+![[Pasted image 20251030094303.png]]
+The number of order is 10.
+![[Pasted image 20251030094627.png]]
