@@ -20,8 +20,9 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251015122712.png]]
 ### $[p,z]$  = pzmap(H_z)
 combined with roots() can be used to calculate the zeros and poles. Pzmap means poles-zero-map
-
-### residuez() or residue()
+This is used for cascade structure.
+### residuez() and residue()
 ![[Pasted image 20251023101226.png]]
+This is used for parallel structure
 ### simplify() and vpa()
 Simplify simplifies an equation by reducing it. vpa() simplifies to a specified value, so for example you only want to keep 3 numbers after the decimal, for example vpa(tmp, 3)
