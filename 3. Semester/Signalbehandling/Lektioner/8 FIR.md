@@ -37,3 +37,4 @@ The linear phase is important because when summing signals you have to make sure
 ### Impulse response reformulation
 ![[Pasted image 20251030093116.png]]
 ![[Pasted image 20251030093306.png]]
+We replace z with $e^{j \omega T}$ to investigate a point running on the half circle in the z-plane to see the response of the filter to all of the frequencies.
