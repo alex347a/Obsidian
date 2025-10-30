@@ -91,3 +91,20 @@ So if you increase the order you will linearly increase the group delay.
 ### Frequency response
 ![[Pasted image 20251030104705.png]]
 ![[Pasted image 20251030105038.png]]
+### Window function desired characteristics
+![[Pasted image 20251030105324.png]]
+### Typical window functions
+![[Pasted image 20251030105411.png]]
+### Rectangular window / rectangle window
+![[Pasted image 20251030105509.png]]
+This is when you don't use any window, you just directly apply the filter.
+### Bartlett window
+![[Pasted image 20251030105548.png]]
+### Hamming window and Hanning window
+![[Pasted image 20251030105600.png]]
+![[Pasted image 20251030105709.png]]
+### Kaiser window
+![[Pasted image 20251030105720.png]]
+![[Pasted image 20251030105732.png]]
+### Matlab window functions
+![[Pasted image 20251030105740.png]]
