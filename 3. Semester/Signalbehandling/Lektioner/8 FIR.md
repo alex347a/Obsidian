@@ -58,4 +58,7 @@ Checking with graphical solution:
 ![[Pasted image 20251030095834.png]]
 ### Fourier transform of a FIR filter
 ![[Pasted image 20251030095859.png]]
-You don't need to go to infinity, you only need to consider 
+You don't need to go to infinity, you only need to consider the finite range of the impulse, which is from $-m$ to m. But by truncating our signal we can run into some issues.
+![[Pasted image 20251030100344.png]]
+You shift the signal from -M to M to instead be from 0 to 2M, because the signal is not causal, meaning the values are not 0 for negative time values.
+![[Pasted image 20251030100746.png]]
