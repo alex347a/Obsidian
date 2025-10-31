@@ -128,10 +128,9 @@ TJEK Artificial Intelligence department.
 ## Chung-Ang University (intet program måske)
 
 ## Inha University
+Inha er cooked, mange af fagene der er under engelsk er på koreansk hvis man læser fagbeskrivelserne (f.eks. python and machine learning og data structure and algorithm)
 Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semiconductor)
 ![[Pasted image 20251031143834.png]]
-
-![[Pasted image 20251031143454.png]]
 
 ![[Pasted image 20251031143523.png]]
 
