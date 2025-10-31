@@ -135,7 +135,6 @@ Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semico
 
 ![[Pasted image 20251031143523.png]]
 
-![[Pasted image 20251031143545.png]]
 ![[Pasted image 20251031150735.png]]
 ## Hankuk University
 Engineering is at Campus Yong-In 1 hour from Seoul approximately.
