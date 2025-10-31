@@ -129,13 +129,12 @@ TJEK Artificial Intelligence department.
 
 ## Inha University
 Under Electrical and Electronic Engineering (Artificial Intelligence (AI) Semiconductor)
-- Statistics (MCT2901) vinterkursus ☑️
+![[Pasted image 20251031143834.png]]
+
 ![[Pasted image 20251031143454.png]]
-- Artificial Intelligence (CSE4302) vinterkursus ☑️
+
 ![[Pasted image 20251031143523.png]]
-- Artificial Intelligence programming (AIE2002) vinterkursus ☑️
-- Artificial Intelligence System on Chip (AIS4001) (forårskursus ❎)
-- Introduction to Machine Learning (SME3006) vinterkursus ☑️
+
 ![[Pasted image 20251031143545.png]]
 ## Hankuk University
 Engineering is at Campus Yong-In 1 hour from Seoul approximately.
