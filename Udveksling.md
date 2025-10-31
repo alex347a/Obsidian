@@ -144,7 +144,5 @@ Engineering is at Campus Yong-In 1 hour from Seoul approximately.
 ![[university locations.png]]
 # Liste 
 1. SKKU 
-2. Sejong
-3. Inha
 
 https://outgoingapp.sdu.dk/Default.aspx?ticket=ST-754668-b9Dy7KxL2W3tnUzZPtedUEkXN9aNxWwq4sVhP56Z5vvwEHhVRs
