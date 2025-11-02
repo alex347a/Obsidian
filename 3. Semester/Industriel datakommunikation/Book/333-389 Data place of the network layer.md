@@ -57,7 +57,6 @@ A router's primary job is to forward packets from an incoming link to the approp
 ### **Input Port Processing and Destination-Based Forwarding**
 A detailed view of input port processing shows the steps: line termination, data-link processing, and the crucial lookup/forwarding function.
 ![[Pasted image 20251102143255.png]]
-
 The forwarding table is copied from the routing processor to the input ports, allowing them to make local, high-speed forwarding decisions without creating a central bottleneck.
 
 **The Lookup Problem**  
@@ -67,7 +66,6 @@ A brute-force forwarding table with an entry for every possible IP address (over
 The forwarding table contains entries for network prefixes. A packet's destination address is matched against these prefixes. The key rule is **longest prefix matching**: the router forwards the packet based on the entry with the _longest_ (i.e., most specific) matching prefix.
 - **Example:** A packet with destination address `11001000 00010111 00010110 10100001` is matched against the table. It matches the first entry (`/21`) and the third entry (`/16`). The **longest prefix match** is the first entry (`/21`), so the packet is forwarded to link interface 0. 
 ![[Pasted image 20251102143342.png]]
-
 This lookup must be done in nanoseconds. Routers use specialized hardware and algorithms, such as **Ternary Content Addressable Memories (TCAMs)**, which can perform a lookup in constant time.
 **Other Input Port Actions**  
 Besides lookup, input ports also:
@@ -135,14 +133,12 @@ The packet scheduler at the output port determines the order in which queued pac
 - If the queue is full, the packet-discarding policy (e.g., drop-tail) determines which packet is lost. 
 ![[Pasted image 20251102143453.png]]
 ![[Pasted image 20251102143500.png]]
-
 **Priority Queuing**
 - Packets are classified into priority classes upon arrival, each with its own queue.
 - The scheduler _always_ transmits a packet from the highest-priority queue that has a packet. Only when that queue is empty does it serve the next lower-priority queue.
 - **Non-preemptive:** Once a packet starts transmission, it is not interrupted, even if a higher-priority packet arrives.
 ![[Pasted image 20251102143510.png]]
 ![[Pasted image 20251102143516.png]]
-
 **Round Robin and Weighted Fair Queuing (WFQ)**
 - **Round Robin:** The scheduler cycles through the class queues, serving one packet from each class in turn. It is **work-conserving**, meaning it will skip an empty queue and move to the next. 
 ![[Pasted image 20251102143532.png]]
@@ -201,7 +197,6 @@ A **subnet** (or "IP network") is a group of interconnected interfaces that ca
 - **Subnet Address:** A subnet is given an address, written as `a.b.c.d/x`, where `/x` (the **subnet mask**) indicates the number of bits in the common prefix.
 - **Example:** In the diagram, the hosts and router interface with addresses `223.1.1.1`, `223.1.1.2`, `223.1.1.3`, and `223.1.1.4` all share the leftmost 24 bits. They form the subnet `223.1.1.0/24`.
 ![[Pasted image 20251102143613.png]]
-
 **Subnets Beyond Simple LANs**  
 Subnets are not just for Ethernet LANs. A point-to-point link between two routers also forms a subnet, typically with a `/24` or `/30` prefix.
 ![[Pasted image 20251102143621.png]]
@@ -220,13 +215,11 @@ The original IP addressing scheme, known as **classful addressing**, required s
 - The ISP then **advertises to the rest of the Internet** only the single, aggregated prefix `200.23.16.0/20`.
 - This means routers outside the ISP only need one entry to reach all eight organizations, instead of eight separate entries.
 ![[Pasted image 20251102143645.png]]
-
 **The Exception: Longest Prefix Matching**  
 Aggregation works perfectly when addresses are allocated hierarchically. But what if an organization changes ISPs and keeps its old IP addresses?
 - In this case, the organization's original ISP (ISPs-R-Us) must advertise a _more specific route_ to that organization's block (e.g., `200.23.18.0/23`).
 - Other routers in the Internet will use the **longest prefix matching** rule. A packet destined for this organization will be sent to ISPs-R-Us because its `/23` advertisement is a longer (more specific) match than the original ISP's `/20` advertisement.
 ![[Pasted image 20251102143656.png]]
-
 **Special Address: IP Broadcast**
 - The address `255.255.255.255` is the **limited broadcast address**. A datagram sent to this address is delivered to all hosts on the same subnet. Routers typically do not forward these packets.
 ### **Obtaining a Block of Addresses**
@@ -249,7 +242,8 @@ A DHCP server can provide a host with:
 - If no server is on the subnet, a **DHCP relay agent** (typically a router on the subnet) knows the address of a DHCP server and will forward DHCP messages between the client and server.
 ![[Pasted image 20251102143711.png]]
 ### **DHCP Protocol Operation**
-DHCP is a four-step process that allows a client to automatically obtain an IP address and other network configuration parameters. The client and server exchange the following messages, often using broadcast addresses since the client doesn't have an IP address initially: (INSERT FIGURE 4.24, DHCP CLIENT-SERVER INTERACTION, HERE)
+DHCP is a four-step process that allows a client to automatically obtain an IP address and other network configuration parameters. The client and server exchange the following messages, often using broadcast addresses since the client doesn't have an IP address initially:
+![[Pasted image 20251102143720.png]]
 1. **DHCP Discover:** The client broadcasts a **DHCPDISCOVER** message to find available DHCP servers. The source IP is `0.0.0.0` and the destination is `255.255.255.255`.
 2. **DHCP Offer:** A DHCP server that receives the discover message responds with a **DHCPOFFER** message. This message is broadcast back to the client and contains the offered IP address, subnet mask, lease time (how long the address is valid), and other parameters.
 3. **DHCP Request:** The client chooses one of the offers and broadcasts a **DHCPREQUEST** message, specifying the server it has selected.
@@ -262,8 +256,8 @@ NAT is a technique that allows a single device (like a home router) to act as an
 **How NAT Works:**
 - **Private Addresses:** Devices within the home network use IP addresses from a **private address space** (e.g., `10.0.0.0/8`, `192.168.0.0/16`). These addresses are not globally unique and are only meaningful within the local network.
 - **Public Address:** The NAT router has a single public IP address on its WAN side (e.g., `138.76.29.7`), which is used for all communication with the outside world.
-- **The NAT Translation Table:** This is the key to the operation. The router maintains a table that maps `(private IP, private port)` to `(public IP, public port)` for every ongoing connection. (INSERT FIGURE 4.25, NETWORK ADDRESS TRANSLATION, HERE)
-
+- **The NAT Translation Table:** This is the key to the operation. The router maintains a table that maps `(private IP, private port)` to `(public IP, public port)` for every ongoing connection.
+![[Pasted image 20251102143734.png]]
 **The NAT Process (Step-by-Step):**
 1. A host inside the network (e.g., `10.0.0.1:3345`) sends a packet to a web server (`128.119.40.186:80`).
 2. The NAT router intercepts the packet, creates a new source port (e.g., `5001`), and rewrites the packet header so the source is now `138.76.29.7:5001`. It adds an entry `(10.0.0.1, 3345) <-> (138.76.29.7, 5001)` to its translation table.
@@ -287,7 +281,8 @@ To protect a network from malicious packets, administrators use:
 
 These systems cannot protect against all attacks, especially new, unknown ones (zero-day exploits), but they are crucial for defending against known threats.
 ### **IPv6 Datagram Format**
-The IPv6 datagram format was designed for efficiency and to accommodate the much larger 128-bit address space. Its key fields are: (INSERT FIGURE 4.26, IPV6 DATAGRAM FORMAT, HERE)
+The IPv6 datagram format was designed for efficiency and to accommodate the much larger 128-bit address space. Its key fields are:
+![[Pasted image 20251102143750.png]]
 - **Version (4 bits):** Set to 6 for IPv6.
 - **Traffic Class (8 bits):** Similar to IPv4's TOS field, used for distinguishing between different classes of traffic.
 - **Flow Label (20 bits):** Used to identify packets belonging to the same "flow" (a series of packets from a source to a destination) that may require special handling.
@@ -306,8 +301,8 @@ To streamline the header and speed up router processing, IPv6 removed several IP
 A "flag day" where the entire Internet switches over at once is impossible. The most widely adopted transition technique is **tunneling**.
 **Tunneling:**
 - **Concept:** Allows IPv6 packets to travel over an IPv4 network by **encapsulating** the entire IPv6 datagram inside an IPv4 datagram as its payload.
-- **Process:** The IPv6 node on the sending side of the tunnel places the IPv6 packet into the data field of an IPv4 packet. The IPv4 packet is addressed to the IPv6 node on the receiving end of the tunnel. The IPv4 routers in between forward this packet normally, unaware of the IPv6 packet inside. The receiving IPv6 node then extracts and processes the original IPv6 datagram. (INSERT FIGURE 4.27, TUNNELING, HERE)
-
+- **Process:** The IPv6 node on the sending side of the tunnel places the IPv6 packet into the data field of an IPv4 packet. The IPv4 packet is addressed to the IPv6 node on the receiving end of the tunnel. The IPv4 routers in between forward this packet normally, unaware of the IPv6 packet inside. The receiving IPv6 node then extracts and processes the original IPv6 datagram.
+![[Pasted image 20251102143803.png]]
 **A Key Lesson:** Changing the network layer is extremely difficult and slow (like replacing a house's foundation), while deploying new application-layer protocols is fast and easy (like painting the house).
 ### **Generalized Forwarding and SDN**
 The traditional "match-plus-action" model, where a router matches a destination IP address and forwards to an output port, is a specific case of a more powerful, **generalized forwarding** paradigm.
@@ -320,8 +315,8 @@ The traditional "match-plus-action" model, where a router matches a destination 
     - Rewrite header fields (NAT).
     - Send to a special server for processing.
 
-This abstraction is central to **Software-Defined Networking (SDN)**. In this model, a physically separate, **remote controller** computes, installs, and updates the forwarding tables in all the packet switches. (INSERT FIGURE 4.28, GENERALIZED FORWARDING, HERE)
-
+This abstraction is central to **Software-Defined Networking (SDN)**. In this model, a physically separate, **remote controller** computes, installs, and updates the forwarding tables in all the packet switches.
+![[Pasted image 20251102143814.png]]
 **OpenFlow and Flow Tables**  
 OpenFlow is a key SDN standard that implements this abstraction. Its forwarding table is called a **flow table**. Each entry in the flow table contains:
 1. **A set of header field values to match** against incoming packets.
@@ -332,7 +327,8 @@ This flow table is the API through which the behaviour of the entire network can
 ### **Generalized Forwarding: Match and Action**
 The power of generalized forwarding in SDN comes from its flexible "match-plus-action" abstraction, as implemented in standards like OpenFlow.
 #### **Match**
-OpenFlow allows a packet switch to match on a wide range of header fields from multiple layers, defying strict protocol layering to provide great flexibility. The matchable fields in OpenFlow 1.0 include: (INSERT FIGURE 4.29, PACKET MATCHING FIELDS, HERE)
+OpenFlow allows a packet switch to match on a wide range of header fields from multiple layers, defying strict protocol layering to provide great flexibility. The matchable fields in OpenFlow 1.0 include:
+![[Pasted image 20251102143827.png]]
 - **Link Layer (Layer 2):**
     - **Source/Destination MAC Address:** The hardware addresses of the network interfaces.
     - **Ethernet Type:** Identifies the upper-layer protocol (e.g., IP).
@@ -356,8 +352,8 @@ When a packet matches a flow table entry, a set of actions is executed. Key acti
 - **Drop:** Discard the packet (a fundamental firewall action).
 - **Modify-field:** Rewrite the values in certain header fields (e.g., for Network Address Translation - NAT).
 ### **OpenFlow Examples of Match-plus-Action**
-Let's see how match-plus-action rules can be used to implement different network-wide behaviors in a sample network. (INSERT FIGURE 4.30, OPENFLOW NETWORK, HERE)
-
+Let's see how match-plus-action rules can be used to implement different network-wide behaviors in a sample network.
+![[Pasted image 20251102143842.png]]
 **Example 1: Simple, Custom Forwarding**
 - **Goal:** Route traffic from h5/h6 to h3/h4 via the path s3 -> s1 -> s2, avoiding the direct s3-s2 link.
 - **Implementation:**

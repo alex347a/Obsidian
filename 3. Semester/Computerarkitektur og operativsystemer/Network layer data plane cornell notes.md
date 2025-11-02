@@ -1,0 +1,54 @@
+### **Network Layer: Data Plane - Cornell Notes**
+
+|Term|Definition|
+|---|---|
+|**Network Layer**|Layer 3 of the protocol stack. Provides **host-to-host** communication service, unlike the transport layer's process-to-process service. Exists in every host and router.|
+|**Data Plane**|The router-local, per-packet functions that determine how a datagram arriving on an input link is **forwarded** to an output link. Operates at nanosecond timescales, implemented in hardware.|
+|**Control Plane**|The network-wide logic that determines how a datagram is **routed** along an end-to-end path from source to destination. Operates at second timescales, often implemented in software.|
+|**Forwarding**|The router-local action of transferring a packet from an input link interface to the appropriate output link interface. (The "how").|
+|**Routing**|The network-wide process that determines the end-to-end paths that packets take from source to destination. (The "where to").|
+|**Forwarding Table**|A table in a router that is indexed by values in the arriving packet's header (e.g., destination IP). The entry indicates the outgoing link interface.|
+|**Traditional Control Plane**|Approach where each router has its own routing component that communicates with other routers via routing protocols to compute forwarding tables.|
+|**SDN (Software-Defined Networking)**|Approach where a physically separate, **remote controller** computes and distributes forwarding tables to routers. Separates control and data planes.|
+|**Network Service Model**|Defines the characteristics of end-to-end packet delivery between hosts (e.g., guaranteed delivery, in-order delivery, bounded delay).|
+|**Best-Effort Service**|The Internet's network service model. Packets are not guaranteed to be received, received in order, or have a bounded delay.|
+|**Router Components**|1. **Input Ports** (line termination, lookup, forwarding)  <br>2. **Switching Fabric** (connects inputs to outputs)  <br>3. **Output Ports** (queuing, transmission)  <br>4. **Routing Processor** (runs control-plane software)|
+|**Switching Via Memory**|The CPU (routing processor) directly copies packets from an input port to an output port. Slow; allows only one packet at a time.|
+|**Switching Via a Bus**|Input port sends packet directly to output port over a shared bus. **Bus speed is a bottleneck**; only one packet can cross at a time.|
+|**Switching Via Interconnection Network**|Uses a crossbar switch to connect N inputs to N outputs. **Non-blocking**; allows multiple packets to be transferred in parallel to _different_ outputs.|
+|**Head-of-the-Line (HOL) Blocking**|In an input-queued switch, a packet at the front of the queue destined for a busy output port blocks all packets behind it, even if their output ports are free.|
+|**Output Port Queuing**|Queuing that occurs when packets from multiple inputs arrive faster than the output link's transmission rate. If buffers fill, **packet loss** occurs.|
+|**Active Queue Management (AQM)**|Proactively drops or marks packets _before_ buffers are full to signal congestion. Examples: **RED (Random Early Detection), PIE, CoDel**.|
+|**Bufferbloat**|The problem of excessively large buffers in networks causing persistently high delays, even without traditional congestion, due to constant queue buildup.|
+|**Packet Scheduling**|Determines the order in which queued packets are transmitted over an outgoing link.|
+|**FIFO (First-In-First-Out) Scheduling**|The simplest discipline; packets are transmitted in the exact order they arrive.|
+|**Priority Queuing**|Packets are classified into priority classes. The scheduler _always_ transmits a packet from the highest-priority non-empty queue.|
+|**Round Robin Scheduling**|The scheduler cycles through class queues, serving one packet from each class in turn. **Work-conserving** (skips empty queues).|
+|**WFQ (Weighted Fair Queuing)**|A generalized round robin. Each class gets a weighted minimum share of the link bandwidth.|
+|**Net Neutrality**|The principle that ISPs must treat all data on the internet equally, without discriminating or charging differently based on user, content, etc.|
+|**IP (Internet Protocol)**|The Internet's network-layer protocol. Defines the datagram format, addressing, and packet handling.|
+|**IPv4 Datagram**|The Internet's network-layer packet. Key fields: Version, Header Length, TOS, TTL, Protocol, Source/Dest IP Address.|
+|**TTL (Time-to-Live)**|Field decremented by each router. Prevents infinite loops; packet is dropped if TTL reaches 0.|
+|**Interface**|The boundary between a host/router and a physical link. An IP address is associated with an **interface**.|
+|**Subnet**|A group of interconnected interfaces that can communicate directly without passing through a router. Interfaces in a subnet share a common IP prefix.|
+|**Subnet Mask (/x)**|Notation indicating the number of bits in the common prefix that defines a subnet address (e.g., `223.1.1.0/24`).|
+|**CIDR (Classless Inter-Domain Routing)**|Allows arbitrary-length prefixes (not just 8, 16, 24 bits). Enables **address aggregation** (route summarization), reducing routing table sizes.|
+|**Longest Prefix Matching**|The rule that a router uses when a destination address matches multiple table entries: it forwards based on the entry with the **longest** (most specific) prefix.|
+|**Private Address Space**|IP addresses (e.g., `10.0.0.0/8`) reserved for use within private networks, not routable on the global Internet.|
+|**ICANN (Internet Corp. for Assigned Names and Numbers)**|The global authority that manages IP address space allocation and the DNS root.|
+|**DHCP (Dynamic Host Configuration Protocol)**|A **plug-and-play** protocol that automatically provides a host with its IP address, subnet mask, default gateway, and DNS server.|
+|**DHCP Process**|4 steps: 1. **DHCP Discover** (client broadcast)  <br>2. **DHCP Offer** (server response)  <br>3. **DHCP Request** (client selects offer)  <br>4. **DHCP ACK** (server confirms).|
+|**NAT (Network Address Translation)**|A technique that allows a private network to use one public IP address for all outbound traffic. Uses a **NAT translation table** to map (private IP, port) to (public IP, port).|
+|**NAT Translation Table**|The table in a NAT router that maps `(private IP, private port)` to `(public IP, public port)` to keep track of connections.|
+|**IPv6**|The successor to IPv4. Primary motivation: vastly larger **128-bit address space**.|
+|**Key IPv6 Changes**|1. **Streamlined 40-byte header** (fixed length)  <br>2. **No fragmentation** by routers  <br>3. **No header checksum**  <br>4. **Flow Label** field.|
+|**Tunneling**|The key transition technique from IPv4 to IPv6. An IPv6 datagram is carried as the payload inside an IPv4 datagram to traverse IPv4 networks.|
+|**Generalized Forwarding**|An abstraction where "match" can be on **multiple header fields** (link, network, transport layers) and "action" can be more than just forward (e.g., drop, modify).|
+|**OpenFlow**|A key SDN standard that implements generalized forwarding using **flow tables**.|
+|**Flow Table**|The match-plus-action table in an OpenFlow switch. Contains: 1. **Match Fields**  <br>2. **Counters**  <br>3. **Actions**.|
+|**OpenFlow Match Fields**|Can match on 12+ header fields, including: Ingress Port, MAC addresses, IP addresses, IP protocol, TCP/UDP port numbers.|
+|**OpenFlow Actions**|Include: **Forward** to port(s), **Drop**, **Modify-field** (rewrite header values).|
+|**P4 (Programming Protocol-independent Packet Processors)**|A high-level language for programming the data plane of network devices, providing more flexibility than fixed flow tables.|
+|**Firewall**|A network device that inspects packet headers and segments, denying entry to suspicious datagrams based on IP addresses, port numbers, or connection state.|
+|**IDS (Intrusion Detection System)**|Performs **deep packet inspection** on payloads, matching against a database of attack signatures and creating alerts.|
+|**IPS (Intrusion Prevention System)**|Similar to an IDS, but can also actively **block** malicious p|
