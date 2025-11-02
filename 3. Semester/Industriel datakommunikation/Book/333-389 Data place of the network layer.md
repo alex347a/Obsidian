@@ -7,7 +7,8 @@ The network layer is decomposed into two interacting parts:
 2. **Control Plane (Routing):** The **network-wide** process that determines the end-to-end paths packets take from source to destination. This happens at second timescales and is often implemented in software.
     - **Analogy:** Planning the entire trip from Pennsylvania to Florida.
 
-**Forwarding Tables:** Routers use **forwarding tables** to determine where to send packets. The router examines header fields in arriving packets, uses them to index into its forwarding table, and finds the appropriate output link interface. (INSERT FIGURE 4.2 HERE)
+**Forwarding Tables:** Routers use **forwarding tables** to determine where to send packets. The router examines header fields in arriving packets, uses them to index into its forwarding table, and finds the appropriate output link interface.
+![[Pasted image 20251102143214.png]]
 #### Control Plane Approaches
 **Traditional Approach:**
 - Each router has its own **routing component** that communicates with other routers' routing components using **routing protocols**.
@@ -17,7 +18,8 @@ The network layer is decomposed into two interacting parts:
 **SDN Approach (Software-Defined Networking):**
 - A **physically separate, remote controller** computes and distributes forwarding tables to all routers.
 - Routers only perform forwarding; the control logic is centralized in the remote controller.
-- This separation allows for more flexible, software-based control of network functionality. (INSERT FIGURE 4.3 HERE)
+- This separation allows for more flexible, software-based control of network functionality. 
+![[Pasted image 20251102143227.png]]
 #### Network Service Model
 The network service model defines the characteristics of end-to-end packet delivery. Possible services include:
 - Guaranteed delivery
@@ -38,7 +40,8 @@ However, it's important to distinguish between types of packet-switching devices
 
 Since this chapter focuses on the network layer, we will primarily use the term **router**.
 ### **What’s Inside a Router?**
-A router's primary job is to forward packets from an incoming link to the appropriate outgoing link. Its architecture consists of four main components: (INSERT FIGURE 4.4, ROUTER ARCHITECTURE, HERE)
+A router's primary job is to forward packets from an incoming link to the appropriate outgoing link. Its architecture consists of four main components:
+![[Pasted image 20251102143241.png]]
 1. **Input Ports:** This is where an incoming physical link connects. It performs several key functions:
     - **Physical and Link-Layer Processing:** Terminates the physical link and handles the data link protocol (e.g., Ethernet).
     - **Lookup Function:** The most critical step. Here, the **forwarding table** is consulted to determine the output port for an arriving packet. This decision must be made in nanoseconds.
@@ -52,7 +55,8 @@ A router's primary job is to forward packets from an incoming link to the approp
 
 **Hardware vs. Software:** The data plane (input ports, switching fabric, output ports) is implemented in hardware to achieve nanosecond-speed operations. The control plane is implemented in software on the routing processor.
 ### **Input Port Processing and Destination-Based Forwarding**
-A detailed view of input port processing shows the steps: line termination, data-link processing, and the crucial lookup/forwarding function. (INSERT FIGURE 4.5, INPUT PORT PROCESSING, HERE)
+A detailed view of input port processing shows the steps: line termination, data-link processing, and the crucial lookup/forwarding function.
+![[Pasted image 20251102143255.png]]
 
 The forwarding table is copied from the routing processor to the input ports, allowing them to make local, high-speed forwarding decisions without creating a central bottleneck.
 
@@ -61,7 +65,8 @@ A brute-force forwarding table with an entry for every possible IP address (over
 
 **Longest Prefix Matching (LPM)**  
 The forwarding table contains entries for network prefixes. A packet's destination address is matched against these prefixes. The key rule is **longest prefix matching**: the router forwards the packet based on the entry with the _longest_ (i.e., most specific) matching prefix.
-- **Example:** A packet with destination address `11001000 00010111 00010110 10100001` is matched against the table. It matches the first entry (`/21`) and the third entry (`/16`). The **longest prefix match** is the first entry (`/21`), so the packet is forwarded to link interface 0. (INSERT A TABLE ILLUSTRATING LONGEST PREFIX MATCHING, LIKE THE ONE IN THE TEXT, HERE)
+- **Example:** A packet with destination address `11001000 00010111 00010110 10100001` is matched against the table. It matches the first entry (`/21`) and the third entry (`/16`). The **longest prefix match** is the first entry (`/21`), so the packet is forwarded to link interface 0. 
+![[Pasted image 20251102143342.png]]
 
 This lookup must be done in nanoseconds. Routers use specialized hardware and algorithms, such as **Ternary Content Addressable Memories (TCAMs)**, which can perform a lookup in constant time.
 **Other Input Port Actions**  
@@ -74,7 +79,8 @@ Besides lookup, input ports also:
 The input port operation—matching a header field and then taking an action (like forwarding, dropping, or modifying)—is a powerful, general abstraction used in many network devices, including switches, firewalls, and NATs. This is central to **generalized forwarding**.
 ### **Switching**
 
-The switching fabric is the "heart" of the router, physically moving packets from an input port to an output port. There are three primary ways to implement switching: (INSERT FIGURE 4.6, THREE SWITCHING TECHNIQUES, HERE)
+The switching fabric is the "heart" of the router, physically moving packets from an input port to an output port. There are three primary ways to implement switching:
+![[Pasted image 20251102143357.png]]
 1. **Switching via Memory:**
     - The earliest routers were essentially computers. The routing processor (CPU) directly controlled the switch.
     - When a packet arrived, it was copied into the main memory of the router. The CPU would then extract the destination address, look up the output port, and copy the packet to the output port's buffer.
@@ -93,12 +99,14 @@ The switching fabric is the "heart" of the router, physically moving packets fro
 Output port processing takes packets that have been switched through the fabric and transmits them onto the outgoing link. Its key functions are:
 - **Queuing:** Storing packets that have arrived faster than the transmission rate.
 - **Scheduling:** Selecting which packet to transmit next from the queue.
-- **Link & Physical Layer Processing:** Performing the necessary operations to send the packet out on the wire. (INSERT FIGURE 4.7, OUTPUT PORT PROCESSING, HERE)
+- **Link & Physical Layer Processing:** Performing the necessary operations to send the packet out on the wire.
+![[Pasted image 20251102143410.png]]
 ### **Where Does Queuing Occur?**
 Queuing happens when the rate of incoming packets exceeds the rate at which they can be processed. The location of the queues is critical for performance and can lead to **packet loss** if buffers become full.
 **A. Input Queuing**
 - **Scenario:** The switching fabric is slower than the combined input line speeds.
-- **Problem: Head-of-the-Line (HOL) Blocking:** This occurs when a packet at the front of an input queue is blocked because it is destined for a busy output port. This single blocked packet also prevents _other packets behind it_ in the same queue from being forwarded, even if _their_ destined output ports are free. (INSERT FIGURE 4.8, HOL BLOCKING, HERE)
+- **Problem: Head-of-the-Line (HOL) Blocking:** This occurs when a packet at the front of an input queue is blocked because it is destined for a busy output port. This single blocked packet also prevents _other packets behind it_ in the same queue from being forwarded, even if _their_ destined output ports are free.
+![[Pasted image 20251102143419.png]]
 - HOL blocking can severely limit a switch's throughput.
 
 **B. Output Queuing**
@@ -106,7 +114,8 @@ Queuing happens when the rate of incoming packets exceeds the rate at which they
 - **Problem:** Packets arriving simultaneously from _multiple_ input ports and destined for the _same_ output port must be queued at that output port. If the queue (buffer) fills up, packets must be dropped.
 - **Packet-Dropping Policies:**
     - **Drop-tail:** Simply drops an arriving packet if the queue is full.
-    - **Active Queue Management (AQM):** Proactively drops or marks packets _before_ the buffer is completely full to signal congestion to the sender. Examples include **Random Early Detection (RED)** and more modern algorithms like **PIE** and **CoDel**. (INSERT FIGURE 4.9, OUTPUT PORT QUEUING, HERE)
+    - **Active Queue Management (AQM):** Proactively drops or marks packets _before_ the buffer is completely full to signal congestion to the sender. Examples include **Random Early Detection (RED)** and more modern algorithms like **PIE** and **CoDel**.
+![[Pasted image 20251102143430.png]]
 ### **How Much Buffering is "Enough"?**
 The amount of buffering (memory) in a router is a critical design choice. While more buffering can absorb traffic bursts and reduce packet loss, it also increases queuing delay.
 - **Old Rule of Thumb:** The buffer size (B) should be equal to the link capacity (C) multiplied by the average round-trip time (RTT). For a 10 Gbps link with a 250 ms RTT, this would be **B = RTT * C = 2.5 Gbits**.
@@ -115,25 +124,32 @@ The amount of buffering (memory) in a router is a critical design choice. While 
 ### **Bufferbloat**
 This is a problem where excessively large buffers in network links (often at the network edge, like in home routers) cause persistently high delays, even when the network is not heavily congested.
 - **Scenario:** Imagine a home gamer with a slow uplink. A burst of packets fills the home router's large buffer. Due to TCP's "ACK clocking" mechanism, a new packet arrives to refill the buffer every time a packet is transmitted, maintaining a constant, large queue.
-- **Result:** The link is fully utilized, but packets experience a consistently high queuing delay, making interactive applications unusable, even though there is no "congestion" in the traditional sense. (INSERT FIGURE 4.10, BUFFERBLOAT, HERE)
+- **Result:** The link is fully utilized, but packets experience a consistently high queuing delay, making interactive applications unusable, even though there is no "congestion" in the traditional sense.
+![[Pasted image 20251102143442.png]]
 - **Solution:** Active Queue Management (AQM) algorithms like PIE and CoDel are designed to combat bufferbloat by keeping queuing delays short.
 ### **Packet Scheduling**
 The packet scheduler at the output port determines the order in which queued packets are transmitted. Different disciplines provide different services.
 
 **First-In-First-Out (FIFO)**
 - The simplest method. Packets are transmitted in the exact order they arrive.
-- If the queue is full, the packet-discarding policy (e.g., drop-tail) determines which packet is lost. (INSERT FIGURE 4.11 & 4.12, FIFO QUEUING, HERE)
+- If the queue is full, the packet-discarding policy (e.g., drop-tail) determines which packet is lost. 
+![[Pasted image 20251102143453.png]]
+![[Pasted image 20251102143500.png]]
 
 **Priority Queuing**
 - Packets are classified into priority classes upon arrival, each with its own queue.
 - The scheduler _always_ transmits a packet from the highest-priority queue that has a packet. Only when that queue is empty does it serve the next lower-priority queue.
-- **Non-preemptive:** Once a packet starts transmission, it is not interrupted, even if a higher-priority packet arrives. (INSERT FIGURE 4.13 & 4.14, PRIORITY QUEUING, HERE)
+- **Non-preemptive:** Once a packet starts transmission, it is not interrupted, even if a higher-priority packet arrives.
+![[Pasted image 20251102143510.png]]
+![[Pasted image 20251102143516.png]]
 
 **Round Robin and Weighted Fair Queuing (WFQ)**
-- **Round Robin:** The scheduler cycles through the class queues, serving one packet from each class in turn. It is **work-conserving**, meaning it will skip an empty queue and move to the next. (INSERT FIGURE 4.15, ROUND ROBIN QUEUING, HERE)
+- **Round Robin:** The scheduler cycles through the class queues, serving one packet from each class in turn. It is **work-conserving**, meaning it will skip an empty queue and move to the next. 
+![[Pasted image 20251102143532.png]]
 - **Weighted Fair Queuing (WFQ):** A generalized form of round robin. Each class `i` is assigned a weight `w_i`.
     - WFQ guarantees that each class `i` will receive a _minimum_ fraction of the link bandwidth equal to `w_i / (sum of all weights of classes with packets)`.
-    - This allows an Internet Provider to give different service guarantees to different traffic types or customers. (INSERT FIGURE 4.16, WEIGHTED FAIR QUEUING, HERE)
+    - This allows an Internet Provider to give different service guarantees to different traffic types or customers.
+![[Pasted image 20251102143542.png]]
 ### **PRINCIPLES IN PRACTICE: Net Neutrality**
 Packet scheduling mechanisms (like Priority Queuing and WFQ) allow ISPs to provide different levels of service to different "classes" of traffic. This capability is at the heart of the **net neutrality** debate.
 **What is Net Neutrality?**  
@@ -152,7 +168,8 @@ The legal and regulatory landscape for net neutrality continues to evolve.
 
 This section focuses on the specific protocols of the Internet's network layer, primarily the **Internet Protocol (IP)**. The two main versions are **IPv4** (the currently dominant version) and **IPv6** (its successor).
 ### **IPv4 Datagram Format**
-The Internet's network-layer packet is called a **datagram**. The IPv4 datagram format is crucial to understand. Its key fields are as follows: (INSERT FIGURE 4.17, IPV4 DATAGRAM FORMAT, HERE)
+The Internet's network-layer packet is called a **datagram**. The IPv4 datagram format is crucial to understand. Its key fields are as follows:
+![[Pasted image 20251102143555.png]]
 - **Version (4 bits):** Specifies the IP protocol version (4 for IPv4). This allows routers to know how to interpret the rest of the datagram.
 - **Header Length (4 bits):** Indicates where the header ends and the data begins, as the IP header can be variable length due to options. A typical header with no options is 20 bytes.
 - **Type of Service (TOS) (8 bits):** Originally intended to allow different types of datagrams (e.g., real-time vs. non-real-time) to be distinguished. Two bits are now used for **Explicit Congestion Notification (ECN)**.
@@ -182,11 +199,13 @@ IP addressing is a subtle and central topic for understanding the Internet.
 A **subnet** (or "IP network") is a group of interconnected interfaces that can communicate directly without passing through a router.
 - **How to identify a subnet:** Interfaces on the same subnet have a common prefix of bits in their IP addresses.
 - **Subnet Address:** A subnet is given an address, written as `a.b.c.d/x`, where `/x` (the **subnet mask**) indicates the number of bits in the common prefix.
-- **Example:** In the diagram, the hosts and router interface with addresses `223.1.1.1`, `223.1.1.2`, `223.1.1.3`, and `223.1.1.4` all share the leftmost 24 bits. They form the subnet `223.1.1.0/24`. (INSERT FIGURE 4.18, IP ADDRESSING AND INTERFACES, HERE)
+- **Example:** In the diagram, the hosts and router interface with addresses `223.1.1.1`, `223.1.1.2`, `223.1.1.3`, and `223.1.1.4` all share the leftmost 24 bits. They form the subnet `223.1.1.0/24`.
+![[Pasted image 20251102143613.png]]
 
 **Subnets Beyond Simple LANs**  
-Subnets are not just for Ethernet LANs. A point-to-point link between two routers also forms a subnet, typically with a `/24` or `/30` prefix. (INSERT FIGURES 4.19 & 4.20, ILLUSTRATING SUBNETS IN MORE COMPLEX TOPOLOGIES, HERE)
-
+Subnets are not just for Ethernet LANs. A point-to-point link between two routers also forms a subnet, typically with a `/24` or `/30` prefix.
+![[Pasted image 20251102143621.png]]
+![[Pasted image 20251102143627.png]]
 **The General Rule for Defining Subnets:**  
 To find the subnets in an interconnected system, detach each interface from its host or router, creating isolated "islands" of networks. Each of these islands is a subnet.
 ### **Classless Inter-Domain Routing (CIDR)**
@@ -199,12 +218,14 @@ The original IP addressing scheme, known as **classful addressing**, required s
 - An ISP is allocated a large block of addresses (e.g., `200.23.16.0/20`).
 - The ISP can then divide this block into smaller, contiguous sub-blocks for its customer organizations (e.g., `200.23.18.0/23` for Organization 1).
 - The ISP then **advertises to the rest of the Internet** only the single, aggregated prefix `200.23.16.0/20`.
-- This means routers outside the ISP only need one entry to reach all eight organizations, instead of eight separate entries. (INSERT FIGURE 4.21, HIERARCHICAL ADDRESSING AND ROUTE AGGREGATION, HERE)
+- This means routers outside the ISP only need one entry to reach all eight organizations, instead of eight separate entries.
+![[Pasted image 20251102143645.png]]
 
 **The Exception: Longest Prefix Matching**  
 Aggregation works perfectly when addresses are allocated hierarchically. But what if an organization changes ISPs and keeps its old IP addresses?
 - In this case, the organization's original ISP (ISPs-R-Us) must advertise a _more specific route_ to that organization's block (e.g., `200.23.18.0/23`).
-- Other routers in the Internet will use the **longest prefix matching** rule. A packet destined for this organization will be sent to ISPs-R-Us because its `/23` advertisement is a longer (more specific) match than the original ISP's `/20` advertisement. (INSERT FIGURE 4.22, ILLUSTRATING THIS SCENARIO, HERE)
+- Other routers in the Internet will use the **longest prefix matching** rule. A packet destined for this organization will be sent to ISPs-R-Us because its `/23` advertisement is a longer (more specific) match than the original ISP's `/20` advertisement.
+![[Pasted image 20251102143656.png]]
 
 **Special Address: IP Broadcast**
 - The address `255.255.255.255` is the **limited broadcast address**. A datagram sent to this address is delivered to all hosts on the same subnet. Routers typically do not forward these packets.
@@ -225,7 +246,8 @@ A DHCP server can provide a host with:
 **DHCP Operation (Client-Server Protocol):**
 - A newly connected host (the client) needs to obtain an IP address.
 - In the simplest case, each subnet has its own DHCP server.
-- If no server is on the subnet, a **DHCP relay agent** (typically a router on the subnet) knows the address of a DHCP server and will forward DHCP messages between the client and server. (INSERT FIGURE 4.23, DHCP CLIENT-SERVER SCENARIO, HERE)
+- If no server is on the subnet, a **DHCP relay agent** (typically a router on the subnet) knows the address of a DHCP server and will forward DHCP messages between the client and server.
+![[Pasted image 20251102143711.png]]
 ### **DHCP Protocol Operation**
 DHCP is a four-step process that allows a client to automatically obtain an IP address and other network configuration parameters. The client and server exchange the following messages, often using broadcast addresses since the client doesn't have an IP address initially: (INSERT FIGURE 4.24, DHCP CLIENT-SERVER INTERACTION, HERE)
 1. **DHCP Discover:** The client broadcasts a **DHCPDISCOVER** message to find available DHCP servers. The source IP is `0.0.0.0` and the destination is `255.255.255.255`.
