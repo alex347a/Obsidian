@@ -51,3 +51,7 @@ Since they have different IP's it shouldn't be an issue but since people on the 
 ### Subnets
 ![[Pasted image 20251103101202.png]]
 ![[Pasted image 20251103101213.png]]
+### IP addressing: CIDR
+![[Pasted image 20251103101924.png]]
+![[Pasted image 20251103101934.png]]
+1 subnet because .
