@@ -80,7 +80,7 @@ Since they have different IP's it shouldn't be an issue but since people on the 
 ![[Pasted image 20251103103306.png]]
 ### Transitioning from IPv4 to IPv6
 ![[Pasted image 20251103103314.png]]
-### Tunneling
+### Tunnelling
 ![[Pasted image 20251103103402.png]]
 ### IPv6: adoption
 ![[Pasted image 20251103103413.png]]
