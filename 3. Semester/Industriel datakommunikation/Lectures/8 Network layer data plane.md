@@ -66,3 +66,21 @@ Since they have different IP's it shouldn't be an issue but since people on the 
 ### IP addresses: how to get one?
 ![[Pasted image 20251103102705.png]]
 ![[Pasted image 20251103102723.png]]
+### NAT: Network Address Translation
+![[Pasted image 20251103103226.png]]
+![[Pasted image 20251103103235.png]]
+![[Pasted image 20251103103239.png]]
+![[Pasted image 20251103103245.png]]
+![[Pasted image 20251103103249.png]]
+### Port forwarding
+![[Pasted image 20251103103254.png]]
+### IPv6: Motivation
+![[Pasted image 20251103103300.png]]
+### IPv6 datagram format
+![[Pasted image 20251103103306.png]]
+### Transitioning from IPv4 to IPv6
+![[Pasted image 20251103103314.png]]
+### Tunneling
+![[Pasted image 20251103103402.png]]
+### IPv6: adoption
+![[Pasted image 20251103103413.png]]
