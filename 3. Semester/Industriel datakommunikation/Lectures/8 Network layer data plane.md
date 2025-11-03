@@ -26,7 +26,7 @@ It's a fabric because the connections are interwoven together, it's just an elec
 You just modify the forwarding table.
 ### Longest prefix matching
 ![[Pasted image 20251103083216.png]]
-
+The first example goes to 0, the second goes to 1.
 ### Switching fabrics
 ![[Pasted image 20251103083228.png]]
 ### Input port queuing
