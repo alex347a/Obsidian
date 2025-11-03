@@ -63,3 +63,6 @@ Since they have different IP's it shouldn't be an issue but since people on the 
 ![[Pasted image 20251103102258.png]]
 ### DHCP: more than IP addresses
 ![[Pasted image 20251103102315.png]]
+### IP addresses: how to get one?
+![[Pasted image 20251103102705.png]]
+![[Pasted image 20251103102723.png]]
