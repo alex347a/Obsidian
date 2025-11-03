@@ -54,4 +54,12 @@ Since they have different IP's it shouldn't be an issue but since people on the 
 ### IP addressing: CIDR
 ![[Pasted image 20251103101924.png]]
 ![[Pasted image 20251103101934.png]]
-1 subnet because .
+1 subnet because its out of 16, so 223.1 is all the same, but if it was 24, then the next number would also count making it a higher number of subnets.
+### IP addresses: How to get one?
+![[Pasted image 20251103102050.png]]
+### DHCP: Dynamic Host Configuration Protocol
+![[Pasted image 20251103102157.png]]
+### DHCP client-server scenario
+![[Pasted image 20251103102258.png]]
+### DHCP: more than IP addresses
+![[Pasted image 20251103102315.png]]
