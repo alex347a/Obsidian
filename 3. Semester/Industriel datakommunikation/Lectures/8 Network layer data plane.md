@@ -17,6 +17,7 @@ The routers know how to reach the others by communicating through the other rout
 ![[Pasted image 20251103083042.png]]
 ### Router architecture overview
 ![[Pasted image 20251103083100.png]]
+It's a fabric because the connections are interwoven together, it's just an electrical circuit.
 ### Input port functions
 ![[Pasted image 20251103083117.png]]
 ![[Pasted image 20251103083154.png]]
