@@ -18,3 +18,26 @@
 ![[Pasted image 20251103083100.png]]
 ### Input port functions
 ![[Pasted image 20251103083117.png]]
+![[Pasted image 20251103083154.png]]
+### Destination-based forwarding
+![[Pasted image 20251103083200.png]]
+### Longest prefix matching
+![[Pasted image 20251103083216.png]]
+### Switching fabrics
+![[Pasted image 20251103083228.png]]
+### Input port queuing
+![[Pasted image 20251103083234.png]]
+### Output ports
+![[Pasted image 20251103083249.png]]
+### Scheduling mechanisms
+![[Pasted image 20251103083258.png]]
+### The internet network layer
+![[Pasted image 20251103083310.png]]
+### IP datagram format
+![[Pasted image 20251103083324.png]]
+### IP fragmentation, reassembly
+![[Pasted image 20251103083334.png]]
+### IP fragmentation and reassembly
+![[Pasted image 20251103083345.png]]
+### IP addressing: introduction
+![[Pasted image 20251103083408.png]]
