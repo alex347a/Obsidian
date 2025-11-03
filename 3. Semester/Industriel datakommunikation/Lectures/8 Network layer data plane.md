@@ -23,8 +23,10 @@ It's a fabric because the connections are interwoven together, it's just an elec
 ![[Pasted image 20251103083154.png]]
 ### Destination-based forwarding
 ![[Pasted image 20251103083200.png]]
+You just modify the forwarding table.
 ### Longest prefix matching
 ![[Pasted image 20251103083216.png]]
+
 ### Switching fabrics
 ![[Pasted image 20251103083228.png]]
 ### Input port queuing
