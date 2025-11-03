@@ -44,6 +44,10 @@ The first one is slow, but it's cheap and can transfer multiple at a time, the s
 ![[Pasted image 20251103083334.png]]
 ### IP fragmentation and reassembly
 ![[Pasted image 20251103083345.png]]
-Since they have different IP's it shouldn't be an issue but since people on private networks use NAT, it will look like they share the same IP
+Since they have different IP's it shouldn't be an issue but since people on the same network use NAT, it will look like they share the same public IP. In practise it isn't an issue because the ID is a random 16 bit number.
 ### IP addressing: introduction
 ![[Pasted image 20251103083408.png]]
+![[Pasted image 20251103101131.png]]
+### Subnets
+![[Pasted image 20251103101202.png]]
+![[Pasted image 20251103101213.png]]
