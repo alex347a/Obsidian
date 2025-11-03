@@ -10,6 +10,7 @@
 ![[Pasted image 20251103082952.png]]
 ### Per-router control plane
 ![[Pasted image 20251103083007.png]]
+The routers know how to reach the others by communicating through the other routers, so not every router has a direct connection to another router, but it will find a way to a router that is connected to the router it wants to communicate with.
 ### Logically centralized control plane
 ![[Pasted image 20251103083026.png]]
 ### Network service model
