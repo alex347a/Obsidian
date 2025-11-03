@@ -44,5 +44,6 @@ The first one is slow, but it's cheap and can transfer multiple at a time, the s
 ![[Pasted image 20251103083334.png]]
 ### IP fragmentation and reassembly
 ![[Pasted image 20251103083345.png]]
+Since they have different IP's it shouldn't be an issue but since people on private networks use NAT, it will look like they share the same IP
 ### IP addressing: introduction
 ![[Pasted image 20251103083408.png]]
