@@ -29,6 +29,7 @@ You just modify the forwarding table.
 The first example goes to 0, the second goes to 1.
 ### Switching fabrics
 ![[Pasted image 20251103083228.png]]
+The first one is slow, but it's cheap and can transfer multiple at a time, the second one can only do one at a time, but it's cheap, the third one is fast, but expensive.
 ### Input port queuing
 ![[Pasted image 20251103083234.png]]
 ### Output ports
