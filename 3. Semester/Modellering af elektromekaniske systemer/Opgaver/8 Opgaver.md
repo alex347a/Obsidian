@@ -52,9 +52,28 @@ $$
 ![[Pasted image 20251104145111.png]]
 ![[Pasted image 20251104140211.png]]
 $$
+6 \times 3
+$$
+$$
 \begin{align*}
 \begin{bmatrix}
-J_{P_{1}}  &  J_{P_{2}}  &  J_{P}
+J_{P_{1}}  &  J_{P_{2}}  &  J_{P}\\
+J_{O_{1}}  &  J_{O_{2}}  &  J_{O_{3}}
+\end{bmatrix}
+\end{align*}
+$$
+
+$$
+J_{O_{1}} = \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix}
+$$
+$$
+J_{O_{1,2,3}} = \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix}
+$$
+$$
+\begin{align*}
+\begin{bmatrix}
+J_{P_{1}}  &  J_{P_{2}}  &  J_{P}\\
+J_{O_{1}}  &  J_{O_{2}}  &  J_{O_{3}}
 \end{bmatrix}
 \end{align*}
 $$
