@@ -40,6 +40,7 @@ The first one is slow, but it's cheap and can transfer multiple at a time, the s
 ![[Pasted image 20251103083310.png]]
 ### IP datagram format
 ![[Pasted image 20251103083324.png]]
+Type of service er vigtigheden af dataet, så man kan prioritere.
 ### IP fragmentation, reassembly
 ![[Pasted image 20251103083334.png]]
 ### IP fragmentation and reassembly
@@ -78,9 +79,17 @@ Since they have different IP's it shouldn't be an issue but since people on the 
 ![[Pasted image 20251103103300.png]]
 ### IPv6 datagram format
 ![[Pasted image 20251103103306.png]]
+Priority er f.eks. best effort, voice, excellent effort osv. flow er at man f.eks. kan skrive at dataet er videostreaming, og så kan der hurtigere findes ud af hvor dataet skal hen. Next hdr er hvilken type af data det er, f.eks. TCP, UDP, ICMPv6 osv.
 ### Transitioning from IPv4 to IPv6
 ![[Pasted image 20251103103314.png]]
 ### Tunnelling
 ![[Pasted image 20251103103402.png]]
 ### IPv6: adoption
 ![[Pasted image 20251103103413.png]]
+### Generalized forwarding and SDN (Software-Defined Networking)
+![[Pasted image 20251103105108.png]]
+### OpenFlow data plane abstraction
+![[Pasted image 20251103105200.png]]
+![[Pasted image 20251103105217.png]]
+### Openflow: Flow table entries
+![[Pasted image 20251103105226.png]]
