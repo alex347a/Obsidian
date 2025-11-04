@@ -51,13 +51,11 @@ $$
 
 ![[Pasted image 20251104145111.png]]
 ![[Pasted image 20251104140211.png]]
-$$
-6 \times 3
-$$
+Jeg forventer at få en $6 \times 3$ matrice
 $$
 \begin{align*}
 \begin{bmatrix}
-J_{P_{1}}  &  J_{P_{2}}  &  J_{P}\\
+J_{P_{1}}  &  J_{P_{2}}  &  J_{P_{3}}\\
 J_{O_{1}}  &  J_{O_{2}}  &  J_{O_{3}}
 \end{bmatrix}
 \end{align*}
@@ -65,28 +63,20 @@ $$
 
 $$z_{i-1} = \begin{bmatrix} 0  \\  0  \\  1\end{bmatrix}$$
 $$
-p_{1} = \begin{bmatrix} a_{1}\cos(p_{1})   \\  a_{1} \sin(p_{1}) \\ 0\end{bmatrix}
+p_{1} = \begin{bmatrix} a_{1}\cos(q_{1})   \\  a_{1} \sin(q_{1}) \\ 0\end{bmatrix}
 $$
 $$
-p_{2} = \begin{bmatrix} a_{1}\cos(p_{1}) + a_{2} \cos(p_{1} + p_{2})   \\  a_{1} \sin(p_{1}) + a_{2} \sin(p_{1} + p_{2}) \\ 0\end{bmatrix}
+p_{2} = \begin{bmatrix} a_{1}\cos(q_{1}) + a_{2} \cos(q_{1} + q_{2})   \\  a_{1} \sin(q_{1}) + a_{2} \sin(q_{1} + q_{2}) \\ 0\end{bmatrix}
 $$
 $$
-p_{3} = \begin{bmatrix} a_{1}\cos(p_{1}) + a_{2} \cos(p_{1} + p_{2}) + a_{3} \cos(p_{1} + p_{2} + p_{3})   \\  a_{1} \sin(p_{1}) + a_{2} \sin(p_{1} + p_{2})  + a_{3} \sin(p_{1} + p_{2} + p_{3}) \\ 0\end{bmatrix}
+p_{3} = \begin{bmatrix} a_{1}\cos(q_{1}) + a_{2} \cos(q_{1} + q_{2}) + a_{3} \cos(q_{1} + q_{2} + q_{3})   \\  a_{1} \sin(q_{1}) + a_{2} \sin(q_{1} + q_{2})  + a_{3} \sin(q_{1} + q_{2} + q_{3}) \\ 0\end{bmatrix}
 $$
 $$
-J_{P_{1}} = z_{1}\times \begin{bmatrix} a_{1}\cos(p_{1})   \\  a_{1} \sin(p_{1}) \\ 0\end{bmatrix} - 0
+J_{P_{1}} = z_{1}\times \begin{bmatrix} a_{1}\cos(q_{1})   \\  a_{1} \sin(q_{1}) \\ 0\end{bmatrix} - 0
 $$
 $$
 J_{P_{1}} = \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix} \times \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix}
 $$
 $$
 J_{O_{1,2,3}} = \begin{bmatrix}0 \\ 0  \\ a_{1,2,3}\end{bmatrix}
-$$
-$$
-\begin{align*}
-\begin{bmatrix}
-J_{P_{1}}  &  J_{P_{2}}  &  J_{P}\\
-J_{O_{1}}  &  J_{O_{2}}  &  J_{O_{3}}
-\end{bmatrix}
-\end{align*}
 $$
