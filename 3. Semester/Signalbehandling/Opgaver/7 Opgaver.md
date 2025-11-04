@@ -27,4 +27,5 @@ $$
 3. Draw the above cascade realization and parallel structure using Simulink. Check if they give you the same result with a 20Hz sinusoidal input.
 ![[Pasted image 20251104091448.png]]
 They give the same result.
-However 
+However it looks like Cheng got a completely different answer for the coefficients.
+

@@ -1,0 +1,26 @@
+IETF (Internet Engineering Task Force)
+
+### Internet structure
+![[Internet structure.png]]
+
+![[IP-adresses.png]]
+There are more than 4 billion devices.
+NAT (Network Address Translation) is used so every device using the same network use the same IP-address. 
+**NAT (Network Address Translation)** is a method used by routers to translate between two different "worlds" of IP addresses:
+
+1. **The Public Internet:** Uses a limited number of unique, public IP addresses.
+2. **Your Private Network (e.g., your home Wi-Fi):** Uses a set of reusable, private IP addresses.
+
+A NAT device (almost always your home router) acts as a **gatekeeper** or a **receptionist** for your entire private network.
+
+### Throughput depends on the bottleneck link
+![[Throughput depends on the bottleneck link.png]]
+### ISO/OSI reference model revisited
+![[ISO OSI reference model revisited.png]]
+### Encapsulation
+![[Encapsulation.png]]
+
+Lab exercise
+![[Pasted image 20250908113159.png]]
+![[Pasted image 20250908113142.png]]
+![[Pasted image 20250908110621.png]]

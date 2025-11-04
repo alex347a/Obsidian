@@ -1,0 +1,33 @@
+![[Pasted image 20251006082214.png]]
+![[Pasted image 20251006082420.png]]
+### TCP Round trip time, timeout
+![[Pasted image 20251006082436.png]]
+![[Pasted image 20251006083040.png]]
+![[Pasted image 20251006084702.png]]
+### TCP Flow control
+![[Pasted image 20251006085352.png]]
+![[Pasted image 20251006085656.png]]
+![[Pasted image 20251006085709.png]]
+### Congestion control
+![[Pasted image 20251006092426.png]]
+![[Pasted image 20251006092431.png]]
+![[Pasted image 20251006092440.png]]
+![[Pasted image 20251006093054.png]]
+![[Pasted image 20251006093101.png]]
+![[Pasted image 20251006093107.png]]
+![[Pasted image 20251006093113.png]]
+![[Pasted image 20251006093118.png]]
+![[Pasted image 20251006093730.png]]
+![[Pasted image 20251006094140.png]]
+![[Pasted image 20251006094619.png]]
+Because only the sender needs to know how congested the network is to throttle their sending speed.
+### AIMD
+![[Pasted image 20251006094958.png]]
+![[Pasted image 20251006095251.png]]
+### Slow start
+![[Pasted image 20251006095409.png]]
+![[Pasted image 20251006095419.png]]
+### TCP Fairness
+![[Pasted image 20251006095824.png]]
+![[Pasted image 20251006100526.png]]
+![[Pasted image 20251006101015.png]]
