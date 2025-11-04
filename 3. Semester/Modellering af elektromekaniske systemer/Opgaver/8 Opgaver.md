@@ -54,7 +54,7 @@ $$
 $$
 \begin{align*}
 \begin{bmatrix}
-J_{P_{1}}
+J_{P_{1}}  &  J_{P_{2}}  &  J_{P}
 \end{bmatrix}
 \end{align*}
 $$
