@@ -50,3 +50,11 @@ L_{O} = l \times m \boldsymbol{g} \times \frac{\frac{\sqrt{200 l g}}{r^{2}}}{100
 $$
 
 ![[Pasted image 20251104145111.png]]
+![[Pasted image 20251104140211.png]]
+$$
+\begin{align*}
+\begin{bmatrix}
+J_{P_{1}}
+\end{bmatrix}
+\end{align*}
+$$
