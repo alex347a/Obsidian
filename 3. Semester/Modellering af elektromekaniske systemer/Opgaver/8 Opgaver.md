@@ -33,4 +33,15 @@ $$
 $$
 \omega_{0} = \frac{\sqrt{200 l g}}{r^{2}}
 $$
-b) Find systemets samlede im
+b) Find systemets samlede impulsmoment, $L_{0}$
+$$
+\Omega_{0} \times L_{0} = \tau
+$$
+Isolerer $L_{0}$:
+$$
+\Omega_{0} \times \tau = L_{0}
+$$
+$\tau = lmg$
+$$
+
+$$
