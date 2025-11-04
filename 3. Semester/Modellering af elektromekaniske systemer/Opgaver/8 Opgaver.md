@@ -39,12 +39,14 @@ $$
 $$
 Isolerer $L_{O}$:
 $$
-\Omega_{O} \times \tau = L_{O}
+\tau \times \Omega_{O} = L_{O}
 $$
 $\tau = l \times m \boldsymbol{g}$
 $$
-\Omega_{O} \times l \times m \boldsymbol{g} = L_{O}
+l \times m \boldsymbol{g} \times \Omega_{O}  = L_{O}
 $$
 $$
-L_{O} = \frac{\frac{\sqrt{200 l g}}{r^{2}}}{100} \times l \times m \boldsymbol{g}
+L_{O} = l \times m \boldsymbol{g} \times \frac{\frac{\sqrt{200 l g}}{r^{2}}}{100}
 $$
+
+![[Pasted image 20251104145111.png]]
