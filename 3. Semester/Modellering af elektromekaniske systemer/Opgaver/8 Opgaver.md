@@ -6,12 +6,31 @@ $$
 \Omega \omega I = \tau
 $$
 $\tau = l m g$
+I dette tilfælde bliver det så:
 
 $$
-\Omega \times L = l m g
+\Omega_{0} \omega_{0} I = l m g
 $$
-For at regne impulsmomentet skal vi regne inertimomentet.
 Ud fra inertitensoren for et svinghjul så er inertimomentet givet ved:
 $$
 I = \frac{1}{2} m r^{2}
 $$
+$$
+\Omega_{0} \omega_{0} \frac{1}{2} m r^{2}  = l m g
+$$
+$$
+\Omega_{0} = \frac{lmg}{\frac{1}{2} m r^{2}  \omega_{0}}
+$$
+$$
+\Omega_{0}= \frac{2lg}{ r^{2}  \omega_{0}}
+$$
+$$
+\Omega_{0} = \frac{\omega_{0}}{100}
+$$
+$$
+\omega_{0}^{2} = \frac{200lg}{r^{2}}
+$$
+$$
+\omega_{0} = \frac{\sqrt{200 l g}}{r^{2}}
+$$
+b) Find systemets samlede im
