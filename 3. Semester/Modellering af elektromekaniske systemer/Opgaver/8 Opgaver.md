@@ -63,11 +63,15 @@ J_{O_{1}}  &  J_{O_{2}}  &  J_{O_{3}}
 \end{align*}
 $$
 
+$$z_{i-1} = \begin{bmatrix} 0  \\  0  \\  1\end{bmatrix}$$
 $$
-J_{O_{1}} = \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix}
+J_{P_{1}} = z_{1}\times \begin{bmatrix} a_{1}\cos(p_{1})   \\  a_{1} \sin(p_{1}) \\ 0\end{bmatrix}
 $$
 $$
-J_{O_{1,2,3}} = \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix}
+J_{P_{1}} = \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix} \times \begin{bmatrix}0 \\ 0  \\ 1\end{bmatrix}
+$$
+$$
+J_{O_{1,2,3}} = \begin{bmatrix}0 \\ 0  \\ a_{1,2,3}\end{bmatrix}
 $$
 $$
 \begin{align*}
