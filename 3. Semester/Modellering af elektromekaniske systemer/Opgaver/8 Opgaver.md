@@ -72,114 +72,115 @@ $$
 p_{3} = \begin{bmatrix} a_{1}\cos(q_{1}) + a_{2} \cos(q_{1} + q_{2}) + a_{3} \cos(q_{1} + q_{2} + q_{3})   \\  a_{1} \sin(q_{1}) + a_{2} \sin(q_{1} + q_{2})  + a_{3} \sin(q_{1} + q_{2} + q_{3}) \\ 0\end{bmatrix}
 $$
 
-Vi ved at for et revolut-led gælder:
+Hvis:
 $$
-J_{P_i} = z_{i-1} \times (p_3 - p_{i-1}), \qquad J_{O_i} = z_{i-1}
+x_1 = a_1\cos(q_1), \quad y_1 = a_1\sin(q_1)
+$$
+$$
+x_2 = a_1\cos(q_1) + a_2\cos(q_1+q_2), \quad
+y_2 = a_1\sin(q_1) + a_2\sin(q_1+q_2)
+$$
+$$
+x_3 = a_1\cos(q_1) + a_2\cos(q_1+q_2) + a_3\cos(q_1+q_2+q_3)
+$$
+$$
+y_3 = a_1\sin(q_1) + a_2\sin(q_1+q_2) + a_3\sin(q_1+q_2+q_3)
 $$
 
-Da alle rotationsakser er parallelle, gælder:
-$$
-z_{i-1} = 
-\begin{bmatrix}
-0 \\ 0 \\ 1
-\end{bmatrix}
-$$
+Da $z_{i-1} = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$, får vi for hvert led:
 
----
-
-\textbf{Første søjle:}
+Første søjle:
 $$
 J_{P_1} = z_0 \times (p_3 - p_0)
 = 
-\begin{bmatrix}
-0 \\ 0 \\ 1
-\end{bmatrix}
+\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
 \times
-\begin{bmatrix}
-x_3 \\ y_3 \\ 0
-\end{bmatrix}
+\begin{bmatrix} x_3 \\ y_3 \\ 0 \end{bmatrix}
 =
+\begin{bmatrix} -y_3 \\ x_3 \\ 0 \end{bmatrix}
+$$
+Indsat med $a_i, q_i$:
+$$
+J_{P_1} =
 \begin{bmatrix}
- -y_3 \\ x_3 \\ 0
+-(a_1\sin q_1 + a_2\sin(q_1+q_2) + a_3\sin(q_1+q_2+q_3))\\[4pt]
+a_1\cos q_1 + a_2\cos(q_1+q_2) + a_3\cos(q_1+q_2+q_3)\\[4pt]
+0
 \end{bmatrix}
 $$
 
----
-
-\textbf{Anden søjle:}
+Anden søjle:
 $$
 J_{P_2} = z_1 \times (p_3 - p_1)
 =
-\begin{bmatrix}
-0 \\ 0 \\ 1
-\end{bmatrix}
+\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
 \times
 \left(
-\begin{bmatrix}
-x_3 \\ y_3 \\ 0
-\end{bmatrix}
+\begin{bmatrix} x_3 \\ y_3 \\ 0 \end{bmatrix}
 -
-\begin{bmatrix}
-x_1 \\ y_1 \\ 0
-\end{bmatrix}
+\begin{bmatrix} x_1 \\ y_1 \\ 0 \end{bmatrix}
 \right)
 =
+\begin{bmatrix} -(y_3 - y_1) \\ x_3 - x_1 \\ 0 \end{bmatrix}
+$$
+Indsat:
+$$
+J_{P_2} =
 \begin{bmatrix}
- -(y_3 - y_1) \\ x_3 - x_1 \\ 0
+-(a_2\sin(q_1+q_2) + a_3\sin(q_1+q_2+q_3))\\[4pt]
+a_2\cos(q_1+q_2) + a_3\cos(q_1+q_2+q_3)\\[4pt]
+0
 \end{bmatrix}
 $$
 
----
-
-\textbf{Tredje søjle:}
+Tredje søjle:
 $$
 J_{P_3} = z_2 \times (p_3 - p_2)
 =
-\begin{bmatrix}
-0 \\ 0 \\ 1
-\end{bmatrix}
+\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
 \times
 \left(
-\begin{bmatrix}
-x_3 \\ y_3 \\ 0
-\end{bmatrix}
+\begin{bmatrix} x_3 \\ y_3 \\ 0 \end{bmatrix}
 -
-\begin{bmatrix}
-x_2 \\ y_2 \\ 0
-\end{bmatrix}
+\begin{bmatrix} x_2 \\ y_2 \\ 0 \end{bmatrix}
 \right)
 =
+\begin{bmatrix} -(y_3 - y_2) \\ x_3 - x_2 \\ 0 \end{bmatrix}
+$$
+Indsat:
+$$
+J_{P_3} =
 \begin{bmatrix}
- -(y_3 - y_2) \\ x_3 - x_2 \\ 0
+-\,a_3\sin(q_1+q_2+q_3)\\[4pt]
+a_3\cos(q_1+q_2+q_3)\\[4pt]
+0
 \end{bmatrix}
 $$
 
----
-
-\textbf{Orientationsdelen:}
+Orientationsdelen:
 $$
-J_{O_1} = J_{O_2} = J_{O_3} = 
-\begin{bmatrix}
-0 \\ 0 \\ 1
-\end{bmatrix}
+J_{O_1} = J_{O_2} = J_{O_3} =
+\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
 $$
 
----
-
-\textbf{Den fulde Jacobian bliver:}
+Den fulde Jacobian:
 $$
 J =
 \begin{bmatrix}
-J_{P_1} & J_{P_2} & J_{P_3} \\
+J_{P_1} & J_{P_2} & J_{P_3}\\
 J_{O_1} & J_{O_2} & J_{O_3}
 \end{bmatrix}
 =
 \begin{bmatrix}
- -y_3 & -(y_3 - y_1) & -(y_3 - y_2) \\
- x_3  &  x_3 - x_1   &  x_3 - x_2 \\
- 0 & 0 & 0 \\
- 0 & 0 & 0 \\
- 0 & 0 & 0 \\
- 1 & 1 & 1
+-(a_1\sin q_1 + a_2\sin(q_1+q_2) + a_3\sin(q_1+q_2+q_3)) &
+-(a_2\sin(q_1+q_2) + a_3\sin(q_1+q_2+q_3)) &
+-\,a_3\sin(q_1+q_2+q_3) \\[6pt]
+a_1\cos q_1 + a_2\cos(q_1+q_2) + a_3\cos(q_1+q_2+q_3) &
+a_2\cos(q_1+q_2) + a_3\cos(q_1+q_2+q_3) &
+a_3\cos(q_1+q_2+q_3) \\[6pt]
+0 & 0 & 0 \\[4pt]
+0 & 0 & 0 \\[4pt]
+0 & 0 & 0 \\[4pt]
+1 & 1 & 1
 \end{bmatrix}
 $$
