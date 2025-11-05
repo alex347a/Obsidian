@@ -4,6 +4,70 @@
 4. The Mel-spectrogram is converted into a logarithmic scale of the magnitudes, because humans hear a sound twice as loud only if the sound is 10 times more powerful.
 
 
+### How whisper processes the Log-mel spectrogram
+#### 1. The Encoder
+
+- The log-mel spectrogram is passed through a small stack of convolutional layers. Think of these as layers that can detect simple patterns (like edges) in the first layer, and progressively more complex patterns (like formants, which are crucial for vowel sounds) in deeper layers.
+    
+- The output of these convolutions is then fed into the main part of the Encoder, which is a Transformer network. The Transformer's self-attention mechanism allows it to see the _context_ for every time step. For example, to understand a mumbled syllable, it can "pay attention" to the clear syllables that come before and after it.
+    
+- The encoder's job is to transform the input spectrogram into a high-level, contextualized representation—a sequence of feature vectors that encapsulate "what was said."
+    
+
+#### 2. The Decoder
+
+- The decoder is also a Transformer network. It is responsible for generating the text, one token (word/subword) at a time.
+    
+- It starts with a special **start-of-transcript** token.
+    
+- To generate the next token, it uses two sources of information:
+    
+    1. **The Encoder's Output:** It "cross-attends" to the encoded audio features to understand what it should be saying.
+        
+    2. **The Previously Generated Tokens:** It uses self-attention on the text it has already produced to ensure grammatical coherence and consistency.
+        
+- This process is auto-regressive—the newly generated token is appended to the sequence and fed back in to generate the next one, until an **end-of-transcript** token is produced.
+    
+
+### Part 3: What Makes Whisper Special? Multitask Training
+
+Whisper's remarkable robustness doesn't just come from its architecture, but from its training. It was trained on a massive dataset of 680,000 hours of audio from the web, covering a vast range of accents, languages, recording conditions, and topics.
+
+Crucially, it was trained as a **multitask model**. The training data included various "tasks" like:
+
+- Transcription in the original language.
+    
+- Translation to English.
+    
+- Voice activity detection (identifying when speech starts and stops).
+    
+- Language identification.
+    
+
+During training, Whisper is given special tokens that tell the decoder _what task to perform_. For example:
+
+- `<|startoftranscript|><|en|><|transcribe|>` means "Start, the language is English, transcribe it."
+    
+- `<|startoftranscript|><|fr|><|translate|>` means "Start, the source language is French, translate it to English."
+    
+
+This is why a single Whisper model is so versatile. The decoder learns to condition its output on these instructions, allowing it to perform transcription, translation, and language ID seamlessly.
+
+### Summary: The Complete Whisper Pipeline
+
+1. **Pre-processing:** Audio file is loaded and converted to a 16kHz mono waveform.
+    
+2. **Feature Extraction:** The waveform is converted into an **80-channel log-mel spectrogram**.
+    
+3. **Encoding:** The spectrogram is passed through the Encoder (Convolutions + Transformer), which converts it into a rich, contextualized representation.
+    
+4. **Decoding:** The Decoder, guided by a task-specific prompt (e.g., "transcribe to English"), auto-regressively generates the text output by attending to both the encoder's output and its own previous tokens.
+    
+5. **Output:** The sequence of tokens is converted back into human-readable text.
+    
+
+The **log-mel spectrogram** is the critical bridge that transforms the chaotic world of sound waves into a structured, perceptually-relevant "image" that the Transformer model can successfully learn from and process.
+
 # 2
 #### Step 1: We have a Linear Spectrogram
 
