@@ -6,16 +6,10 @@
 
 ### How whisper processes the Log-mel spectrogram
 #### 1. The Encoder
-
 - The log-mel spectrogram is passed through a small stack of convolutional layers. Think of these as layers that can detect simple patterns (like edges) in the first layer, and progressively more complex patterns (like formants, which are crucial for vowel sounds) in deeper layers.
-    
 - The output of these convolutions is then fed into the main part of the Encoder, which is a Transformer network. The Transformer's self-attention mechanism allows it to see the _context_ for every time step. For example, to understand a mumbled syllable, it can "pay attention" to the clear syllables that come before and after it.
-    
 - The encoder's job is to transform the input spectrogram into a high-level, contextualized representation—a sequence of feature vectors that encapsulate "what was said."
-    
-
 #### 2. The Decoder
-
 - The decoder is also a Transformer network. It is responsible for generating the text, one token (word/subword) at a time.
     
 - It starts with a special **start-of-transcript** token.
@@ -26,7 +20,7 @@
         
     2. **The Previously Generated Tokens:** It uses self-attention on the text it has already produced to ensure grammatical coherence and consistency.
         
-- This process is auto-regressive—the newly generated token is appended to the sequence and fed back in to generate the next one, until an **end-of-transcript** token is produced.
+- This process is auto-regressive, the newly generated token is appended to the sequence and fed back in to generate the next one, until an **end-of-transcript** token is produced.
     
 
 ### Part 3: What Makes Whisper Special? Multitask Training
