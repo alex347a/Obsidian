@@ -21,7 +21,6 @@
     2. **The Previously Generated Tokens:** It uses self-attention on the text it has already produced to ensure grammatical coherence and consistency.
         
 - This process is auto-regressive, the newly generated token is appended to the sequence and fed back in to generate the next one, until an **end-of-transcript** token is produced.
-    
 
 ### Part 3: What Makes Whisper Special? Multitask Training
 
