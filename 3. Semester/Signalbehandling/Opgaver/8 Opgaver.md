@@ -62,3 +62,19 @@ Apparently the Matlab function fir(1) automatically uses the hamming window type
 3. Make a transfer function and drawing the Bode plot for the designed filter.
 
 4. Simulating the filter in Matlab by applying different input signals with frequencies of 1 kHz, 2 kHz, and 3.5 kHz. Does the response match the Bode plot? (Use lsim in MATLAB for the simulation).
+
+Exercise FIR.2
+Design an FIR highpass filter with cutoff frequency $f_{a} = 1 \space kHz$. The transition region is $\Delta f \leq 0.5 \space kHz$, and the maximum allowable stop-band attenuation is $H_{s} \leq -50 \space dB$. The sampling frequency is 5 kHz.
+
+1. Which window function should be chosen?
+
+
+2. What should the order of the filter be? What happens if the order is increased?
+   
+   
+3. Make the final FIR filter with the selected window function.
+   
+   
+4. Draw a Bode plot for the filter and argue that the filter specifications are met.
+   
+   
