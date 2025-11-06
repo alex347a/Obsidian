@@ -58,12 +58,17 @@ The analog filter's frequency response $H_{a}​(\omega)$ is defined for all f
 
 ![[Pasted image 20251106102257.png]]
 ![[Pasted image 20251106102729.png]]
+#### Example
+![[Pasted image 20251106103002.png]]
+### Impulse invariant v.s. matched z-transform
 
-|Feature|Impulse Invariant|Matched Z-Transform|
-|---|---|---|
-|**Core Idea**|Match the **impulse response**|Match the **pole/zero locations**|
-|**Pole Mapping**|s=pk→z=epkTs=pk​→z=epk​T|s=pk→z=epkTs=pk​→z=epk​T|
-|**Zero Mapping**|No direct mapping. Zeros are a result of the process.|s=zk→z=ezkTs=zk​→z=ezk​T|
-|**Aliasing**|**Severe problem** if analog filter not band-limited.|Less severe, but still present.|
-|**DC Gain**|Must be explicitly normalized after design.|Must be explicitly normalized after design.|
-|**Best For**|Simulating analog time-domain behavior (e.g., in control systems).|Designing filters where frequency response shape is primary.|
+| Feature          | Impulse Invariant                                                  | Matched Z-Transform                                          |
+| ---------------- | ------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Core Idea**    | Match the **impulse response**                                     | Match the **pole/zero locations**                            |
+| **Pole Mapping** | $s = p_{k} \rightarrow z = e^{p_{k} T}$                            | $s = p_{k} \rightarrow z = e^{p_{k} T}$                      |
+| **Zero Mapping** | No direct mapping. Zeros are a result of the process.              | $s = z_{k} \rightarrow z = e^{z_{k}T}$                       |
+| **Aliasing**     | **Severe problem** if analog filter not band-limited.              | Less severe, but still present.                              |
+| **DC Gain**      | Must be explicitly normalized after design.                        | Must be explicitly normalized after design.                  |
+| **Best For**     | Simulating analog time-domain behavior (e.g., in control systems). | Designing filters where frequency response shape is primary. |
+For impulse invariant:
+- Use Case: It's a good choice only when the analog filter is essentially band-limited (e.g., a sharp low-pass filter with high stopband attenuation) and when preserving the time-domain shape of the impulse response is the most important requirement.
