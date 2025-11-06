@@ -9,3 +9,6 @@ We convert from the specifications in the s-domain to the z-domain
 ![[Pasted image 20251106085358.png]]
 ### Recap: Filter specification
 ![[Pasted image 20251106085524.png]]
+### Transformation from an analog prototype filter
+![[Pasted image 20251106085653.png]]
+![[Pasted image 20251106085714.png]]
