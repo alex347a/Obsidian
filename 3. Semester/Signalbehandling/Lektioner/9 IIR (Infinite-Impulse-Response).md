@@ -14,8 +14,11 @@ We convert from the specifications in the s-domain to the z-domain
 ![[Pasted image 20251106085714.png]]
 ### Matched z-transform
 ![[Pasted image 20251106091742.png]]
+Remember $T = \frac{1}{f_{s}}$ which is the sampling period.
 ### Matched z-transform for 1st order system
 ![[Pasted image 20251106091753.png]]
+Remember $s = \underbrace{\sigma}_{\text{real}} + j \underbrace{\omega}_{\text{imaginary}}$
+
 ![[Pasted image 20251106091806.png]]
 ![[Pasted image 20251106091811.png]]
 ![[Pasted image 20251106091817.png]]
