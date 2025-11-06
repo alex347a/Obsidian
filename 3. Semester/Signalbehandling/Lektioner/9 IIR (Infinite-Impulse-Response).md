@@ -22,6 +22,7 @@ Remember $s = \underbrace{\sigma}_{\text{real}} + j \underbrace{\omega}_{\text{i
 ![[Pasted image 20251106091806.png]]
 ![[Pasted image 20251106091811.png]]
 ![[Pasted image 20251106091817.png]]
+So we use an amplification factor to make sure the value of the transfer function is 1, when $z=$
 #### Example
 ![[Pasted image 20251106091829.png]]
 ![[Pasted image 20251106091834.png]]
