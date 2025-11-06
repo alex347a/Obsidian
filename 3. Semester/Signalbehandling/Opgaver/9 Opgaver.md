@@ -13,3 +13,7 @@ Please design a corresponding digital low-pass filter with a cut-off frequency o
 3. Use MATLAB to compare Bode plots for these 3 filters $𝐻(s)$, $𝐻_{1}(𝑧)$ and $𝐻_{2}(𝑧)$.
 ![[Pasted image 20251106175436.png]]
 4. Use MATLAB to compare the impulse responses of $𝐻(s)$, $𝐻_{1}(𝑧)$ and $𝐻_{2}(𝑧)$.
+![[Pasted image 20251106180446.png]]
+![[Pasted image 20251106180441.png]]
+![[Pasted image 20251106180415.png]]
+![[Pasted image 20251106180421.png]]
