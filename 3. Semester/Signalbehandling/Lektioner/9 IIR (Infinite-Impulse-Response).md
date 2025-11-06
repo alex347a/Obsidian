@@ -12,3 +12,14 @@ We convert from the specifications in the s-domain to the z-domain
 ### Transformation from an analog prototype filter
 ![[Pasted image 20251106085653.png]]
 ![[Pasted image 20251106085714.png]]
+### Matched z-transform
+![[Pasted image 20251106091742.png]]
+### Matched z-transform for 1st order system
+![[Pasted image 20251106091753.png]]
+![[Pasted image 20251106091806.png]]
+![[Pasted image 20251106091811.png]]
+![[Pasted image 20251106091817.png]]
+#### Example
+![[Pasted image 20251106091829.png]]
+![[Pasted image 20251106091834.png]]
+![[Pasted image 20251106091840.png]]
