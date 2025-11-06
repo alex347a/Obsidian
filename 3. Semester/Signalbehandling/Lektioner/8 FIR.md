@@ -118,7 +118,9 @@ this is called **frequency smearing**
 ![[Pasted image 20251030105732.png]]
 ### Matlab window functions
 ![[Pasted image 20251030105740.png]]
-$L$ is the length of the filter, so $L = N+1$ if $N$ is the order of the filter.
+$L$ is the length of the filter, so $L = N+1$ if $N$ is the order of the filter. It can also be given by $M$ which is the half lobe of the filter, so: 
+- if the filter is even: $L = 2M$
+- if the filter is odd: $L = 2M + 1$
 ### Design procedure
 ![[Pasted image 20251030110208.png]]
 ### Specs of a FIR filter
