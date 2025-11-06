@@ -35,3 +35,6 @@ The mapping $z = e^{sT}$ perfectly maps the positions of the poles and zeros
 ### Example: 2nd order system
 ![[Pasted image 20251106093803.png]]
 ![[Pasted image 20251106093939.png]]
+![[Pasted image 20251106094127.png]]
+### Exercise
+![[Pasted image 20251106094135.png]]
