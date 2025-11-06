@@ -18,6 +18,7 @@ Even if you dont have the value for c (here -4) you should still type 0, because
 ![[Pasted image 20251015122700.png]]
 ### filter()
 ![[Pasted image 20251015122712.png]]
+For an FIR filter you can actually use convolute as well, but not for IIR.
 ### $[p,z]$  = pzmap(H_z)
 combined with roots() can be used to calculate the zeros and poles. Pzmap means poles-zero-map
 This is used for cascade structure.
