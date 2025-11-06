@@ -38,3 +38,5 @@ The mapping $z = e^{sT}$ perfectly maps the positions of the poles and zeros
 ![[Pasted image 20251106094127.png]]
 ### Exercise
 ![[Pasted image 20251106094135.png]]
+### Matlab function: Hz=c2d(Hs, Ts, method)
+![[Pasted image 20251106095458.png]]
