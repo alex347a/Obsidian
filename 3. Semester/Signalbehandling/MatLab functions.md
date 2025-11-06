@@ -38,3 +38,5 @@ Simplify simplifies an equation by reducing it. vpa() simplifies to a specified 
 ![[Pasted image 20251106095458.png]]
 #### Example
 ![[Pasted image 20251106095833.png]]
+### Impulse invariant z-transform
+![[Pasted image 20251106102007.png]]This method is motivated by a very intuitive desire: we want the digital filter to behave similarly to the analog filter when presented with the same type of input signal, at least for the impulse response.
