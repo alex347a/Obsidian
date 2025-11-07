@@ -71,3 +71,6 @@ $\alpha$ is a weight, so if $\alpha$ is 1 then you only rely on the most recent 
 ![[Pasted image 20251107103544.png]]
 ### Multilevel feedback queue scheduling
 ![[Pasted image 20251107103807.png]]
+It uses a reward/punish system where if a task takes a long time it will get a lower priority in the queue, if a task has waited a long time it will move up to a higher priority queue.
+### Multi-processor scheduling
+![[Pasted image 20251107104244.png]]
