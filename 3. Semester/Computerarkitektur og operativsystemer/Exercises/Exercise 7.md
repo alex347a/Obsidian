@@ -1,3 +1,4 @@
+## Operating System Structures
 ### What is a kernel and what are its objectives?
 A kernel is the core component of an operating system. Using inter-process communication and system calls, it acts as a bridge between applications (user space) and the data processing performed at the hardware level (kernel space).
 ### What is the purpose of system calls? Give some examples of system calls.
@@ -37,11 +38,10 @@ Yes, it is possible to develop a new command interpreter using the system-call i
 The Unix family of operating systems provides multiple command-line interpreters (sh, bash, csh, etc.) The “sh” in each of these programs stands for and is pronounced as “shell”, because the command-line interpreter is thought to serve as a protective shell around the system programs.
 ### Describe why Android uses ahead-of-time (AOT) rather than just-in-time (JIT) compilation.
 Whereas many Java virtual machines perform just-in-time (JIT) compilation to improve application efficiency, ART performs ahead-of-time (AOT) compilation. Here, .dex files are compiled into native ma-chine code when they are installed on a device, from which they can execute on the ART.
-Just in Time (JIT)
-Ahead of Time (AOT)
-Each time when the app is run, it dynamically translates a part of the bytecode into machine code.
-During the app’s installation phase, it statically translates the bytecode into machine code and stores in the device’s storage.
-(source)
+
+| Just in Time (JIT)                                                                                     | Ahead of Time (AOT)                                                                                                              |
+| ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| Each time when the app is run, it dynamically translates a part of the bytecode into machine code.<br> | During the app’s installation phase, it statically translates the bytecode into machine code and stores in the device’s storage. |
 Since JIT compiles only a part of the code, it has a smaller memory footprint and uses less physical space on the device. However, AOT compilation allows more efficient application execution as well as reduced power consumption, features that are crucial for mobile systems.
 ### What are the two models of inter-process communication? What are the strengths and weaknesses of the two approaches?
 Message passing model and the shared-memory model.
@@ -58,6 +58,8 @@ Microkernels ease the extension of the operating system; new services are added 
 Both are based on UNIX, Android uses the Linux (monolithic) kernel, whereas iOS uses a hybrid kernel. Both use middleware that supports databases, multimedia, and graphics (to name only a few).to augment the functionality of the OS.
 ### What is the difference between a process and a program?
 A process is an instance of a program, i.e., a program is essentially code waiting to be executed.
+
+## Process concept
 ### What process states are there?
 - New. The process is being created.
 - Running. Instructions are being executed.
@@ -67,6 +69,7 @@ A process is an instance of a program, i.e., a program is essentially code waiti
 ### What is the difference between a thread and process?
 A process is a program that is running with its own PCB and allocated memory, and can own multiple threads.
 A thread is a subset of the process, and can be seen as a “lightweight process”. All the threads running within a process share the same address space, but threads typically get their own stack.
+![[Pasted image 20251107163054.png]]
 ### What is a Process Control Block (PCB) and what is its purpose? Can users access the information stored in one?
 The process control stores many data items that are needed for efficient process management, such as the process state, process id, program counter, registers etc. The process control block is kept in a memory area that is protected from the normal user access.
 ### What is the difference between heap and stack storage?
@@ -74,14 +77,16 @@ Both are allocated memory to store data such as variables.
 The stack has a fixed size and is used for local variables, return values etc. When a function executes, it is added onto the call stack in a FIFO order as a stack frame with allocated memory for the local variables of that function. If a stack runs out of space, a stack overflow occurs and the program crashes.
 The heap is used for dynamic memory allocation and can grow in size if necessary. It may experience problems of fragmentation and is generally a bit slower due to allocation.
 ### Using the program shown in below, explain what the output will be at LINE A.
+![[Pasted image 20251107163022.png]]
 Since a fork creates a new process with its own global variables, the value variable of the parent process is unaffected by the child process. The output value will thus be 5.
-### Including the initial parent process, how many processes are created by the following pro-gram?
+### Including the initial parent process, how many processes are created by the following program?
+![[Pasted image 20251107162945.png]]
 After each fork, the number of processes doubles, making the total number of processes 8.
-### Original versions of Apple’s mobile iOS operating system provided no means of concur-rent processing. Discuss three major complications that concurrent processing adds to an operating system.
+### Original versions of Apple’s mobile iOS operating system provided no means of concurrent processing. Discuss three major complications that concurrent processing adds to an operating system.
 - Scheduling The CPU scheduler must be aware of the different concurrent processes and must choose an appropriate algorithm that schedules the concurrent processes.
 - Inter-process communication Concurrent processes may need to communicate with one another, and the operating system must therefore develop one or more methods for providing inter-process communication.
 - Memory management Because mobile devices often have limited memory, a process that manages memory poorly will have an overall negative impact on other concurrent processes. The operating system must therefore manage memory to support multiple concurrent processes.
-### Some computer systems provide multiple register sets. Describe what happens when a con-text switch occurs if the new context is already loaded into one of the register sets. What hap-pens if the new context is in memory rather than in a register set and all the register sets are in use?
+### Some computer systems provide multiple register sets. Describe what happens when a context switch occurs if the new context is already loaded into one of the register sets. What hap-pens if the new context is in memory rather than in a register set and all the register sets are in use?
 The CPU current-register-set pointer is changed to point to the set containing the new context, which takes very little time. If the context is in memory, one of the contexts in a register set must be chosen and be moved to memory, and the new context must be loaded from memory into the set. 
 ### When a process creates a new process using the fork() operation, which of the following states is shared between the parent process and the child process?
 a. Stack
