@@ -94,36 +94,38 @@ This is the canonical Link-State algorithm. It computes the least-cost path from
 ![[Pasted image 20251109173153.png]]
 - **Solution:** Prevent all routers from running the LS algorithm at the same time by adding randomization.
 ### **The Distance-Vector (DV) Routing Algorithm**
-The **Distance-Vector (DV) algorithm** is a **decentralized, iterative, and asynchronous** algorithm where each node only communicates with its directly connected neighbors.
+The **Distance-Vector (DV) algorithm** is a **decentralized, iterative, and asynchronous** algorithm where each node only communicates with its directly connected neighbours.
 
 **The Bellman-Ford Equation**  
-This is the heart of the DV algorithm. It states that the least cost from node `x` to node `y` is the minimum, over all of `x`'s neighbors `v`, of the cost from `x` to `v` plus the least cost from `v` to `y`.
+This is the heart of the DV algorithm. It states that the least cost from node `x` to node `y` is the minimum, over all of `x`'s neighbours `v`, of the cost from `x` to `v` plus the least cost from `v` to `y`.
 - **Formula:** `dₓ(y) = minᵥ { c(x, v) + dᵥ(y) }`
-- **Intuition:** To get to `y`, `x` must first go to a neighbor `v`. The total cost is the cost to get to `v` plus the cost from `v` to `y`. The best path is found by choosing the neighbor `v` that minimizes this sum.
+- **Intuition:** To get to `y`, `x` must first go to a neighbour `v`. The total cost is the cost to get to `v` plus the cost from `v` to `y`. The best path is found by choosing the neighbour `v` that minimizes this sum.
 
 **Distance Vectors**
 - Each node `x` maintains a **distance vector**: `Dₓ = [Dₓ(y): y in N]`, which is its current estimate of the cost to all other nodes `y` in the network.
-- Each node also maintains the distance vectors it has received from each of its neighbors.
+- Each node also maintains the distance vectors it has received from each of its neighbours.
 
 **The DV Algorithm Process**
-1. **Initialization:** Each node starts by knowing only the cost to its direct neighbors. Costs to all other nodes are set to infinity.
-2. **Update:** From time to time, each node sends a copy of its distance vector to its neighbors.
-3. **Recomputation:** When a node `x` receives a new distance vector from a neighbor, it saves it and uses the Bellman-Ford equation to update its own distance vector: `Dₓ(y) = minᵥ { c(x, v) + Dᵥ(y) }`.
-4. **Propagation:** If its own distance vector changes as a result of this update, node `x` then sends its updated vector to its neighbors. This process continues iteratively until no more updates are sent.
+1. **Initialization:** Each node starts by knowing only the cost to its direct neighbours. Costs to all other nodes are set to infinity.
+2. **Update:** From time to time, each node sends a copy of its distance vector to its neighbours.
+3. **Recomputation:** When a node `x` receives a new distance vector from a neighbour, it saves it and uses the Bellman-Ford equation to update its own distance vector: `Dₓ(y) = minᵥ { c(x, v) + Dᵥ(y) }`.
+4. **Propagation:** If its own distance vector changes as a result of this update, node `x` then sends its updated vector to its neighbours. This process continues iteratively until no more updates are sent.
 
-**Example:** The figure illustrates the algorithm's operation in a simple 3-node network, showing how distance vectors are exchanged and updated until they converge to the actual least costs. (INSERT FIGURE 5.6, DV ALGORITHM IN OPERATION, HERE)
+**Example:** The figure illustrates the algorithm's operation in a simple 3-node network, showing how distance vectors are exchanged and updated until they converge to the actual least costs.
+![[Pasted image 20251109173339.png]]
 ### **DV: Link-Cost Changes and Link Failure**
 **Good News Travels Fast**
 - When a link cost **decreases**, the network converges to the new least-cost paths very quickly (often in just a few iterations).
 
 **Bad News Travels Slow & The Count-to-Infinity Problem**
 - When a link cost **increases**, a major problem can occur.
-- **Scenario:** Two neighboring nodes, `y` and `z`, both route through each other to get to `x`. When the direct link from `y` to `x` fails (cost becomes very high), `y` thinks it can still get to `x` via `z`, and `z` simultaneously thinks it can get to `x` via `y`. This creates a **routing loop**.
-- They will slowly increment their cost estimates to `x` in a series of steps until the cost finally exceeds the value of a direct (but more expensive) link, a phenomenon known as **count-to-infinity**. (INSERT FIGURE 5.7, CHANGES IN LINK COST, HERE)
+- **Scenario:** Two neighbouring nodes, `y` and `z`, both route through each other to get to `x`. When the direct link from `y` to `x` fails (cost becomes very high), `y` thinks it can still get to `x` via `z`, and `z` simultaneously thinks it can get to `x` via `y`. This creates a **routing loop**.
+- They will slowly increment their cost estimates to `x` in a series of steps until the cost finally exceeds the value of a direct (but more expensive) link, a phenomenon known as **count-to-infinity**.
+![[Pasted image 20251109173436.png]]
 
 **Poisoned Reverse**
 - A technique used to avoid two-node routing loops.
-- **Rule:** If node `A` routes through neighbor `B` to get to destination `X`, then `A` will **advertise to `B` that its cost to `X` is infinity**.
+- **Rule:** If node `A` routes through neighbour `B` to get to destination `X`, then `A` will **advertise to `B` that its cost to `X` is infinity**.
 - This prevents `B` from thinking it can use `A` to get to `X`, thus breaking the immediate loop.
 - **Limitation:** Poisoned reverse does **not** solve count-to-infinity problems involving loops of **three or more nodes**.
 ### **A Comparison of LS and DV Routing Algorithms**
