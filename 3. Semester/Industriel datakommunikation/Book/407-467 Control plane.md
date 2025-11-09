@@ -273,7 +273,8 @@ SDN makes a clear **separation between the data and control planes**. The contr
 3. **Network Control Functions: External to Data-Plane Switches:** The control logic runs on servers, not inside the switches. The control plane consists of:
     - An **SDN Controller** (or Network OS): Maintains network state and provides an API to applications.
     - **Network-Control Applications:** The "brains" that implement functions like routing, access control, and load balancing.
-4. **A Programmable Network:** The network's behaviour is defined by software applications, leading to innovation and flexibility. (INSERT FIGURE 5.14, SDN CONTROL PLANE ARCHITECTURE, HERE)
+4. **A Programmable Network:** The network's behaviour is defined by software applications, leading to innovation and flexibility.
+![[Pasted image 20251109180909.png]]
 
 **The "Unbundling" of Networking:**  
 SDN unbundles network functionality, similar to the shift from monolithic mainframes to PCs with separate hardware, operating systems, and applications. This allows for independent innovation in switches, controllers, and control applications.
