@@ -206,7 +206,8 @@ A router often learns multiple possible paths (routes) to a destination prefix. 
 This is a simple, "selfish" routing strategy where a router chooses the route that gets the packet **out of its own AS as quickly as possible**.
 - **Process:** The router uses its **intra-AS routing information** to calculate the cost to each possible NEXT-HOP router for the destination prefix. It then selects the route with the **closest NEXT-HOP.**
 - **Analogy:** The packet is a "hot potato" that you want to pass to someone else (another AS) as fast as possible.
-- **Result:** Different routers within the same AS might choose different exit points for the same destination. (INSERT FIGURE 5.11, STEPS FOR HOT POTATO ROUTING, HERE)
+- **Result:** Different routers within the same AS might choose different exit points for the same destination.
+![[Pasted image 20251109174421.png]]
 #### **The BGP Route-Selection Algorithm**
 In practice, BGP uses a more sophisticated algorithm that incorporates but supersedes hot potato routing. The router applies the following elimination rules **in sequence** until only one route remains:
 1. **Local Preference (Highest):** This is a **policy attribute** set by the network administrator. Routes with the **highest local preference** are chosen first. This is the primary policy control knob.
