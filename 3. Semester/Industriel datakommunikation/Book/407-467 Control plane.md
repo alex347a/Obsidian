@@ -377,12 +377,13 @@ ICMP is used by hosts and routers to communicate network-layer information, most
     - **SNMP Protocol:** The protocol used for communication between the NMS and agents, allowing the manager to **get** (retrieve), **set** (configure), and **trap** (receive notifications from) managed devices.
 - **NETCONF/YANG:**
     - **NETCONF:** A more modern network management protocol that uses XML-based data encoding and remote procedure calls (RPCs) over SSH. It provides operations to retrieve, configure, copy, and delete configuration data.
-    - **YANG:** A **data modeling language** used to model the configuration and state data manipulated by NETCONF. It defines the structure, constraints, and semantics of the managed data.
+    - **YANG:** A **data modelling language** used to model the configuration and state data manipulated by NETCONF. It defines the structure, constraints, and semantics of the managed data.
 ### **Network Management and SNMP, NETCONF/YANG**
-**Network Management** is the deployment and coordination of hardware, software, and human elements to monitor, configure, analyze, and control a network to meet performance and QoS requirements.
+**Network Management** is the deployment and coordination of hardware, software, and human elements to monitor, configure, analyse, and control a network to meet performance and QoS requirements.
 #### **The Network Management Framework**
-The framework consists of several key components: (INSERT FIGURE 5.20, ELEMENTS OF NETWORK MANAGEMENT, HERE)
-- **Managing Server:** An application (with human managers) in a central Network Operations Center (NOC) that collects, processes, and dispatches management information and commands.
+The framework consists of several key components:
+![[Pasted image 20251109183632.png]]
+- **Managing Server:** An application (with human managers) in a central Network Operations Centre (NOC) that collects, processes, and dispatches management information and commands.
 - **Managed Device:** Network equipment (routers, switches, hosts, etc.) that is managed.
 - **Data (State):** Information associated with a managed device.
     - **Configuration Data:** Set by the manager (e.g., IP address).
@@ -403,13 +404,14 @@ The framework consists of several key components: (INSERT FIGURE 5.20, ELEMENTS 
 - Objects are defined using a formal data description language called **SMI (Structure of Management Information)**.
 - Related objects are grouped into **MIB modules**.
 
-**SNMP Protocol Data Units (PDUs):** (INSERT TABLE 5.2, SNMPV3 PDU TYPES, HERE)
+**SNMP Protocol Data Units (PDUs):**
+![[Pasted image 20251109183821.png]]
 - **GetRequest, GetNextRequest, GetBulkRequest:** Sent from manager to agent to **retrieve** MIB object values. The agent replies with a **Response** PDU.
 - **SetRequest:** Sent from manager to agent to **set** (modify) MIB object values.
 - **Response:** Sent by an agent (or manager) in response to a request.
 - **InformRequest:** Sent by one manager to notify another manager of MIB information.
-- **SNMPv2-Trap:** An **asynchronous notification** sent from an agent to a manager to report an exceptional event (e.g., link failure, system reboot). (INSERT FIGURE 5.21, SNMP PDU FORMAT, HERE)
-
+- **SNMPv2-Trap:** An **asynchronous notification** sent from an agent to a manager to report an exceptional event (e.g., link failure, system reboot).
+![[Pasted image 20251109183852.png]]
 **Key Points:**
 - SNMP is primarily used for **monitoring** rather than control, partly due to historical security concerns.
 - **SNMPv3** added critical security and administration features that were lacking in earlier versions.
