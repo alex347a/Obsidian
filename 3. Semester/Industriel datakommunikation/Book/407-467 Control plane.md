@@ -281,7 +281,8 @@ SDN unbundles network functionality, similar to the shift from monolithic mainfr
 ### **The SDN Control Plane: SDN Controller and Applications**
 The SDN control plane is divided into two main parts: the **SDN Controller** (the "network operating system") and the **SDN Network-Control Applications** (the programs that define network behaviour).
 #### **SDN Controller Architecture**
-A generic SDN controller's functionality is organized into three layers: (INSERT FIGURE 5.15, COMPONENTS OF AN SDN CONTROLLER, HERE)
+A generic SDN controller's functionality is organized into three layers:
+![[Pasted image 20251109180942.png]]
 1. **Communication Layer (Southbound Interface):**
     - This is the lowest layer, responsible for **communicating between the controller and the network devices** (switches, hosts).
     - It uses a protocol (like **OpenFlow**) to send commands to devices and to receive event notifications from them (e.g., link up/down, new device).
