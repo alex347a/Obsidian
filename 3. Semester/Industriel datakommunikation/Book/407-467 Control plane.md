@@ -343,7 +343,8 @@ Two major open-source SDN controllers are **OpenDaylight (ODL)** and **ONOS**
 - **Northbound API:** Provides a **RESTful API** for applications.
 - **Model-Driven Approach:** Uses the **YANG** data modelling language to define network models, which are then configured using the **NETCONF** protocol.
 
-**The ONOS Controller:** (INSERT FIGURE 5.18, ONOS CONTROLLER, HERE)
+**The ONOS Controller:**
+![[Pasted image 20251109183205.png]]
 - **Intent Framework:** A key feature that allows applications to specify _what_ they want the network to do (e.g., "connect host A to host B") without specifying _how_ to do it.
 - **Distributed Core:** Designed from the ground up to run as a distributed service on multiple servers for scalability and high availability.
 - **Southbound Abstractions:** Provides a high-level abstraction layer that hides the heterogeneity of the underlying network devices and protocols.
@@ -352,7 +353,8 @@ ICMP is used by hosts and routers to communicate network-layer information, most
 - **Architecture:** ICMP messages are carried **inside IP datagrams** as payload (IP protocol number 1).
 - **Message Structure:** ICMP messages have a **type** and **code** field, and include the header and first 8 bytes of the IP datagram that triggered the message.
 
-**Common ICMP Message Types:** (INSERT FIGURE 5.19, ICMP MESSAGE TYPES, HERE)
+**Common ICMP Message Types:**
+![[Pasted image 20251109183349.png]]
 - **Type 0/8: Echo Reply / Echo Request:** Used by the **`ping`** program to test reachability.
 - **Type 3: Destination Unreachable:** Indicates a packet could not be delivered (e.g., network, host, port unreachable).
 - **Type 11: Time Exceeded:** Used when a packet's TTL reaches 0. This is the fundamental mechanism behind **`traceroute`**.
