@@ -233,7 +233,8 @@ BGP is also used to implement **IP-Anycast**, a service that allows multiple, g
 ### **BGP Routing Policy**
 In BGP, **policy considerations often trump technical metrics** like shortest path. Policy is primarily implemented through the **Local Preference** attribute, which is set by the network administrator.
 
-**Example Policy Scenario:** (INSERT FIGURE 5.13, A SIMPLE BGP POLICY SCENARIO, HERE)
+**Example Policy Scenario:**
+![[Pasted image 20251109174853.png]]
 - **ASs W, X, Y** are **access ISPs** (stub networks). Their traffic must only be to/from themselves.
 - **ASs A, B, C** are **backbone provider** networks.
 
