@@ -266,19 +266,19 @@ To make a company's server (e.g., `www.xanadu.com`) accessible on the Internet 
 SDN makes a clear **separation between the data and control planes**. The control plane is logically centralized and implemented in software.
 
 **Four Key Characteristics of SDN:**
-1. **Flow-Based Forwarding:** Packet forwarding is based on **any number of header fields** (not just destination IP), as defined by the flow tables we saw in Section 4.4.
+1. **Flow-Based Forwarding:** Packet forwarding is based on **any number of header fields** (not just destination IP), as defined by the flow tables seen in Section 4.4.
 2. **Separation of Data and Control Planes:**
     - **Data Plane:** Simple, fast packet switches that perform "match-plus-action."
     - **Control Plane:** A separate, remote entity that computes and manages the flow tables.
 3. **Network Control Functions: External to Data-Plane Switches:** The control logic runs on servers, not inside the switches. The control plane consists of:
     - An **SDN Controller** (or Network OS): Maintains network state and provides an API to applications.
     - **Network-Control Applications:** The "brains" that implement functions like routing, access control, and load balancing.
-4. **A Programmable Network:** The network's behavior is defined by software applications, leading to innovation and flexibility. (INSERT FIGURE 5.14, SDN CONTROL PLANE ARCHITECTURE, HERE)
+4. **A Programmable Network:** The network's behaviour is defined by software applications, leading to innovation and flexibility. (INSERT FIGURE 5.14, SDN CONTROL PLANE ARCHITECTURE, HERE)
 
 **The "Unbundling" of Networking:**  
 SDN unbundles network functionality, similar to the shift from monolithic mainframes to PCs with separate hardware, operating systems, and applications. This allows for independent innovation in switches, controllers, and control applications.
 ### **The SDN Control Plane: SDN Controller and Applications**
-The SDN control plane is divided into two main parts: the **SDN Controller** (the "network operating system") and the **SDN Network-Control Applications** (the programs that define network behavior).
+The SDN control plane is divided into two main parts: the **SDN Controller** (the "network operating system") and the **SDN Network-Control Applications** (the programs that define network behaviour).
 #### **SDN Controller Architecture**
 A generic SDN controller's functionality is organized into three layers: (INSERT FIGURE 5.15, COMPONENTS OF AN SDN CONTROLLER, HERE)
 1. **Communication Layer (Southbound Interface):**
