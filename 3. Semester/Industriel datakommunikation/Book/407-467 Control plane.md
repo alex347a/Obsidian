@@ -435,14 +435,16 @@ This is a modern framework for network management, with a strong emphasis on **
 #### **NETCONF Protocol**
 NETCONF is a protocol that provides mechanisms to install, manipulate, and delete the configuration of network devices.
 - **Operation:** Uses a **Remote Procedure Call (RPC)** model. Messages are encoded in **XML** and exchanged over a **secure, connection-oriented session** (like TLS over TCP).
-- **Session Flow:** (INSERT FIGURE 5.22, NETCONF SESSION, HERE)
+- **Session Flow:**
+![[Pasted image 20251109184127.png]]
     1. Establish a secure connection.
     2. Exchange `<hello>` messages to declare capabilities.
     3. Exchange `<rpc>` (request) and `<rpc-reply>` (response) messages.
     4. Managed devices can send asynchronous `<notification>` messages.
     5. Close the session.
 
-**Key NETCONF Operations:** (INSERT TABLE 5.3, SELECTED NETCONF OPERATIONS, HERE)
+**Key NETCONF Operations:**
+![[Pasted image 20251109184143.png]]
 - **`<get-config>`, `<get>`:** Retrieve configuration and operational data from the device.
 - **`<edit-config>`:** Modify the device's configuration. Supports atomic transactions and rollback on error.
 - **`<lock>`, `<unlock>`:** Lock the device's configuration to prevent conflicting changes from other sources.
@@ -451,7 +453,7 @@ NETCONF is a protocol that provides mechanisms to install, manipulate, and delet
 **Example NETCONF Message:**  
 An `<edit-config>` message to set the MTU of an interface to 1500 bytes is a human-readable XML document that clearly specifies the target and the new value. The device replies with an `<ok/>` message upon success.
 #### **YANG (Yet Another Next Generation)**
-YANG is the **data modeling language** used with NETCONF.
+YANG is the **data modelling language** used with NETCONF.
 - **Purpose:** To **model** the configuration and operational data used by NETCONF. It precisely defines the structure, constraints, and semantics of the data.
 - **Function:** Similar to **SMI** for SNMP, but more powerful and modern.
 - **Capabilities:**
