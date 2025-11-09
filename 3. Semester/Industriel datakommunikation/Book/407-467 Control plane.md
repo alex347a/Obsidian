@@ -13,199 +13,113 @@ This chapter covers the **control-plane** component of the network layer—the
 - **BGP:** The inter-domain routing protocol that interconnects all networks in the Internet; the "glue" that holds it together.
 - **SDN Controllers:** The logically centralized control in Software-Defined Networking.
 - **Management Protocols:** ICMP and SNMP.
-
 ### **Two Control Plane Approaches**
-
 The control plane's job is to compute, maintain, and install the forwarding/flow tables used by the data plane.
-
 1. **Per-Router Control (Traditional):**
-    
     - A **routing algorithm** runs in _each and every_ router.
-        
     - Each router has a routing component that communicates with the routing components in _other routers_ to compute its forwarding table.
-        
     - Used for decades in the Internet (OSPF, BGP are based on this). (INSERT FIGURE 5.1, PER-ROUTER CONTROL, HERE)
-        
 2. **Logically Centralized Control (SDN):**
-    
     - A **logically centralized controller** computes and distributes the forwarding tables to all routers.
-        
     - Each router has a simple **Control Agent (CA)** that communicates with the controller and follows its commands.
-        
     - The CAs do not communicate with each other or compute paths themselves.
-        
     - This is the approach of **SDN** and is used in major production networks (Google's B4, Microsoft's SWAN, AT&T, 4G/5G). (INSERT FIGURE 5.2, LOGICALLY CENTRALIZED CONTROL, HERE)
-        
-
 ### **Routing Algorithms**
-
 The goal of a routing algorithm is to determine **good paths** (routes) from senders to receivers through a network of routers. A "good" path is typically the **least cost path**.
 
 **Graph Abstraction:**
-
 - We model the network as a graph `G = (N, E)`.
-    
 - **Nodes (N):** Represent **routers** (or, in BGP, entire networks).
-    
 - **Edges (E):** Represent the **physical links** between routers.
-    
 - **Edge Cost:** A value assigned to a link, which could represent physical length, link speed, monetary cost, etc. We denote the cost between node `x` and `y` as `c(x, y)`. (INSERT FIGURE 5.3, ABSTRACT GRAPH MODEL, HERE)
-    
 
 **The Least-Cost Path Problem:**
-
 - A **path** is a sequence of nodes connected by edges.
-    
 - The **path cost** is the sum of the costs of all edges in the path.
-    
 - The goal is to find the path between a source and destination that has the **minimum possible cost**.
-    
-
 ### **Classification of Routing Algorithms**
-
 Routing algorithms can be classified in several ways:
-
 **1. Based on Information Scope:**
-
 - **Centralized Routing Algorithm:**
-    
     - Computes least-cost paths using **complete, global knowledge** of the network (all nodes, all links, all costs).
-        
     - Also known as **Link-State (LS) algorithms**.
-        
     - The algorithm can be run on a central controller or replicated in every router.
-        
 - **Decentralized Routing Algorithm:**
-    
     - The calculation is **iterative and distributed**.
-        
     - No node has global information. Each node starts with knowledge only of its own directly connected links.
-        
     - Through iterative message exchange with neighbors, it gradually calculates least-cost paths.
-        
     - Also known as **Distance-Vector (DV) algorithms**.
-        
 
 **2. Based on Change Frequency:**
-
 - **Static Routing Algorithms:** Routes change very slowly, often via manual human intervention.
-    
 - **Dynamic Routing Algorithms:** Routes change as network traffic loads or topology change. They are more responsive but also more susceptible to issues like routing loops.
-    
 
 **3. Based on Load Sensitivity:**
-
 - **Load-Sensitive Algorithms:** Link costs change dynamically to reflect current congestion levels. (Early ARPAnet; not used in today's Internet main protocols).
-    
 - **Load-Insensitive Algorithms:** Link costs do not reflect current congestion. (Used in today's Internet routing protocols like RIP, OSPF, and BGP).
-
 ### **The Link-State (LS) Routing Algorithm**
-
 In a **Link-State (LS) algorithm**, every node has **complete, global knowledge** of the network topology and all link costs. This is achieved by having each node broadcast **link-state packets** to all other nodes in the network.
 
 **Dijkstra's Algorithm**  
 This is the canonical Link-State algorithm. It computes the least-cost path from a **source node** to **all other nodes** in the network. It is iterative; after the *k*th iteration, the least-cost paths to *k* destinations are known.
 
 **Notation:**
-
 - **D(v):** Current cost of the least-cost path from the source to node `v`.
-    
-- **p(v):** The previous node (neighbor) along the current least-cost path from the source to `v`.
-    
+- **p(v):** The previous node (neighbour) along the current least-cost path from the source to `v`.
 - **N':** The set of nodes to which the least-cost path is **definitively known**.
-    
 
 **Algorithm Steps:**
-
-1. **Initialization:** Start with the source node. Set costs to neighbors to the direct link cost, and costs to all other nodes to infinity.
-    
+1. **Initialization:** Start with the source node. Set costs to neighbours to the direct link cost, and costs to all other nodes to infinity.
 2. **Loop:** Find the node `w` not in `N'` with the minimum cost.
-    
 3. Add `w` to `N'`.
-    
-4. **Update** the cost to each of `w`'s neighbors not in `N'`. The new cost is the minimum of the old cost or the cost to `w` plus the cost from `w` to the neighbor.
-    
+4. **Update** the cost to each of `w`'s neighbours not in `N'`. The new cost is the minimum of the old cost or the cost to `w` plus the cost from `w` to the neighbour.
 5. Repeat until all nodes are in `N'`.
-    
 
 **Example:** The table shows the algorithm's progress for the network graph, computing paths from source node `u`. (INSERT TABLE 5.1, RUNNING THE LINK-STATE ALGORITHM, HERE)
 
 **Result:** When the algorithm terminates, we can construct the **entire least-cost path** from the source to every destination and build the node's **forwarding table**. (INSERT FIGURE 5.4, LEAST COST PATH AND FORWARDING TABLE, HERE)
 
 **Computational Complexity:**
-
 - The straightforward implementation has a worst-case complexity of **O(n²)**, where `n` is the number of nodes.
-    
 - A more efficient implementation using a heap data structure can reduce this.
-    
 
 **Oscillations:**
-
 - A potential problem arises when **link costs depend on the traffic load** (e.g., delay).
-    
 - This can cause **oscillations**, where routers simultaneously run LS, shift traffic to a better path, which then becomes congested, leading them to shift back in a cycle. (INSERT FIGURE 5.5, OSCILLATIONS, HERE)
-    
 - **Solution:** Prevent all routers from running the LS algorithm at the same time by adding randomization.
-
 ### **The Distance-Vector (DV) Routing Algorithm**
-
 The **Distance-Vector (DV) algorithm** is a **decentralized, iterative, and asynchronous** algorithm where each node only communicates with its directly connected neighbors.
 
 **The Bellman-Ford Equation**  
 This is the heart of the DV algorithm. It states that the least cost from node `x` to node `y` is the minimum, over all of `x`'s neighbors `v`, of the cost from `x` to `v` plus the least cost from `v` to `y`.
-
 - **Formula:** `dₓ(y) = minᵥ { c(x, v) + dᵥ(y) }`
-    
 - **Intuition:** To get to `y`, `x` must first go to a neighbor `v`. The total cost is the cost to get to `v` plus the cost from `v` to `y`. The best path is found by choosing the neighbor `v` that minimizes this sum.
-    
 
 **Distance Vectors**
-
 - Each node `x` maintains a **distance vector**: `Dₓ = [Dₓ(y): y in N]`, which is its current estimate of the cost to all other nodes `y` in the network.
-    
 - Each node also maintains the distance vectors it has received from each of its neighbors.
-    
 
 **The DV Algorithm Process**
-
 1. **Initialization:** Each node starts by knowing only the cost to its direct neighbors. Costs to all other nodes are set to infinity.
-    
 2. **Update:** From time to time, each node sends a copy of its distance vector to its neighbors.
-    
 3. **Recomputation:** When a node `x` receives a new distance vector from a neighbor, it saves it and uses the Bellman-Ford equation to update its own distance vector: `Dₓ(y) = minᵥ { c(x, v) + Dᵥ(y) }`.
-    
 4. **Propagation:** If its own distance vector changes as a result of this update, node `x` then sends its updated vector to its neighbors. This process continues iteratively until no more updates are sent.
-    
 
 **Example:** The figure illustrates the algorithm's operation in a simple 3-node network, showing how distance vectors are exchanged and updated until they converge to the actual least costs. (INSERT FIGURE 5.6, DV ALGORITHM IN OPERATION, HERE)
-
 ### **DV: Link-Cost Changes and Link Failure**
-
 **Good News Travels Fast**
-
 - When a link cost **decreases**, the network converges to the new least-cost paths very quickly (often in just a few iterations).
-    
 
 **Bad News Travels Slow & The Count-to-Infinity Problem**
-
 - When a link cost **increases**, a major problem can occur.
-    
 - **Scenario:** Two neighboring nodes, `y` and `z`, both route through each other to get to `x`. When the direct link from `y` to `x` fails (cost becomes very high), `y` thinks it can still get to `x` via `z`, and `z` simultaneously thinks it can get to `x` via `y`. This creates a **routing loop**.
-    
 - They will slowly increment their cost estimates to `x` in a series of steps until the cost finally exceeds the value of a direct (but more expensive) link, a phenomenon known as **count-to-infinity**. (INSERT FIGURE 5.7, CHANGES IN LINK COST, HERE)
-    
 
 **Poisoned Reverse**
-
 - A technique used to avoid two-node routing loops.
-    
 - **Rule:** If node `A` routes through neighbor `B` to get to destination `X`, then `A` will **advertise to `B` that its cost to `X` is infinity**.
-    
 - This prevents `B` from thinking it can use `A` to get to `X`, thus breaking the immediate loop.
-    
 - **Limitation:** Poisoned reverse does **not** solve count-to-infinity problems involving loops of **three or more nodes**.
-    
-
 ### **A Comparison of LS and DV Routing Algorithms**
 
 |Attribute|Link-State (LS) Algorithm|Distance-Vector (DV) Algorithm|
@@ -216,333 +130,170 @@ This is the heart of the DV algorithm. It states that the least cost from node 
 |**Robustness**|**More robust**. Routers compute their own paths. An incorrect node calculation has a more limited impact.|**Less robust**. An incorrect or malicious node can advertise incorrect paths, and this error can **diffuse through the entire network**.|
 
 **Conclusion:** Neither algorithm is a clear "winner." Both are used in the Internet (OSPF is LS-based, RIP and BGP are DV-based).
-
 ### **Intra-AS Routing in the Internet: OSPF**
-
 Organizing all Internet routers under a single routing algorithm is impractical due to:
-
 1. **Scale:** The sheer number of routers (hundreds of millions) makes storing routing information and broadcasting updates infeasible.
-    
 2. **Administrative Autonomy:** ISPs want to operate and control their own networks independently.
-    
 
 **Solution: Autonomous Systems (ASs)**
-
 - An **Autonomous System (AS)** is a group of routers under the same administrative control (e.g., a single ISP).
-    
 - Each AS is assigned a globally unique **Autonomous System Number (ASN)**.
-    
 - The routing algorithm running _within_ an AS is called an **intra-autonomous system routing protocol**.
-    
-
 #### **Open Shortest Path First (OSPF)**
-
 OSPF is a widely used **intra-AS routing protocol**. It is a **link-state protocol**.
-
 - **Operation:** Each router:
-    
     1. Broadcasts **link-state information** to **all other routers in the AS** (using flooding).
-        
     2. Constructs a complete topological map of the AS.
-        
     3. Locally runs **Dijkstra's algorithm** to compute the shortest-path tree to all subnets, with itself as the root.
-        
 - **Link Weights:** The network administrator configures the cost (weight) of each link. This allows for traffic engineering (e.g., setting weights inversely proportional to link capacity).
-    
 
 **Key OSPF Features:**
-
 - **Security:** OSPF messages can be authenticated to prevent malicious routers from participating.
-    
 - **Multiple Same-Cost Paths:** OSPF can use multiple paths if they have the same cost (load balancing).
-    
 - **Support for Hierarchy (Areas):** A large OSPF AS can be partitioned into **areas** to reduce overhead.
-    
     - Each area runs its own OSPF link-state algorithm.
-        
     - **Area Border Routers** route traffic between areas.
-        
     - A **backbone area** interconnects all other areas.
-        
 - **Integrated Multicast Support:** Multicast OSPF (MOSPF) extends OSPF for multicast routing.
-    
 
 **PRINCIPLES IN PRACTICE: Setting OSPF Weights**
-
 - The cause-and-effect relationship can be reversed. Instead of weights determining paths, network operators often **set OSPF link weights to achieve specific traffic engineering goals**, such as minimizing the maximum link utilization, based on known traffic demands.
-    
-
----
-
 ### **Routing Among the ISPs: BGP**
-
 To route packets _between_ autonomous systems, an **inter-autonomous system routing protocol** is needed. The Internet uses a single, standardized protocol: the **Border Gateway Protocol (BGP)**. BGP is the "glue" that holds the Internet together.
-
 #### **The Role of BGP**
-
 BGP provides each router with the means to:
-
 1. **Obtain prefix reachability information:** Allows subnets to advertise their existence to the entire Internet. ("I exist and I am here!").
-    
 2. **Determine the "best" routes to prefixes:** When multiple routes to a prefix exist, BGP runs a route-selection procedure to choose the best one based on reachability information and, crucially, **policy**.
-    
 
 In BGP, routers exchange information about **CIDRized prefixes** (e.g., `138.16.68/22`), not individual IP addresses.
-
 #### **Advertising BGP Route Information**
-
 **BGP Connections:**
-
 - BGP routers exchange routing information over semi-permanent **TCP connections** (port 179).
-    
 - **eBGP (external BGP):** A BGP connection between routers in **different** ASs. Used to exchange routing information across AS boundaries.
-    
 - **iBGP (internal BGP):** A BGP connection between routers in the **same** AS. Used to ensure all routers in the AS have consistent routing information. (INSERT FIGURE 5.9, BGP CONNECTIONS, HERE)
-    
 
 **Propagating Reachability:**
-
 - The process of advertising a prefix involves a chain of eBGP and iBGP messages.
-    
 - **Example:** For prefix `x` in AS3 to be known in AS1:
-    
     1. Router 3a (AS3) sends an **eBGP** message to 2c (AS2): "`AS3 x`".
-        
     2. Router 2c uses **iBGP** to tell all routers in AS2, including 2a.
-        
     3. Router 2a sends an **eBGP** message to 1c (AS1): "`AS2 AS3 x`".
-        
     4. Router 1c uses **iBGP** to tell all routers in AS1.
-        
 - This process informs routers not only that `x` exists, but also the **AS path** (`AS2, AS3`) to reach it. (INSERT FIGURE 5.8, NETWORK WITH THREE ASs, HERE)
-    
 
 **Multiple Paths:**
-
 - There can be multiple paths to a prefix. In the example, if a direct link is added from AS1 to AS3, routers in AS1 would learn two paths: "`AS2 AS3 x`" and "`AS3 x`". BGP will select the best one. (INSERT FIGURE 5.10, NETWORK WITH MULTIPLE PATHS, HERE)
-
 ### **Determining the Best Routes in BGP**
-
 A router often learns multiple possible paths (routes) to a destination prefix. BGP selects the best one using a sequential, multi-step decision process that considers both technical metrics and policy.
 
 **BGP Terminology: Routes and Attributes**
-
 - In BGP, a **route** is a prefix along with its attributes.
-    
 - Key Attributes:
-    
     - **AS-PATH:** The list of ASs that the advertisement for the prefix has passed through. Used to **prevent loops** (a router rejects a route if it sees its own AS in the path).
-        
-    - **NEXT-HOP:** The **IP address** of the router interface that begins the AS-PATH. This is the critical link between inter-AS (BGP) and intra-AS (e.g., OSPF) routing.
-        
-
+    - **NEXT-HOP:** The **IP address** of the router interface that begins the AS-PATH. This is the critical link between inter-AS (BGP) and intra-AS (e.g., OSPF) routing
 #### **Hot Potato Routing**
-
 This is a simple, "selfish" routing strategy where a router chooses the route that gets the packet **out of its own AS as quickly as possible**.
-
-- **Process:** The router uses its **intra-AS routing information** to calculate the cost to each possible NEXT-HOP router for the destination prefix. It then selects the route with the **closest NEXT-HOP**.
-    
+- **Process:** The router uses its **intra-AS routing information** to calculate the cost to each possible NEXT-HOP router for the destination prefix. It then selects the route with the **closest NEXT-HOP.**
 - **Analogy:** The packet is a "hot potato" that you want to pass to someone else (another AS) as fast as possible.
-    
 - **Result:** Different routers within the same AS might choose different exit points for the same destination. (INSERT FIGURE 5.11, STEPS FOR HOT POTATO ROUTING, HERE)
-    
-
 #### **The BGP Route-Selection Algorithm**
-
 In practice, BGP uses a more sophisticated algorithm that incorporates but supersedes hot potato routing. The router applies the following elimination rules **in sequence** until only one route remains:
-
 1. **Local Preference (Highest):** This is a **policy attribute** set by the network administrator. Routes with the **highest local preference** are chosen first. This is the primary policy control knob.
-    
 2. **Shortest AS-PATH:** From the remaining routes, the one with the **shortest AS-PATH** (fewest AS hops) is selected.
-    
 3. **Hot Potato Routing (Closest NEXT-HOP):** From the remaining routes, the one with the **closest NEXT-HOP** router (using the intra-AS routing metric) is selected.
-    
 4. **BGP Identifier:** If multiple routes still remain, the router uses the BGP identifier to break the tie.
-    
 
 **Key Takeaway:** Policy (Local Pref) is considered first, then the inter-AS path length, and finally the intra-AS path cost (hot potato).
-
----
-
 ### **IP-Anycast**
-
 BGP is also used to implement **IP-Anycast**, a service that allows multiple, geographically distributed servers to share the **same IP address**.
-
 - **How it works:**
-    
     1. **Configuration:** Multiple servers in different locations are configured with the **same IP address**.
-        
     2. **BGP Advertisement:** Each server's local router uses BGP to advertise this shared IP address into the Internet.
-        
     3. **Route Selection:** BGP routers throughout the Internet receive these multiple advertisements. They run the standard BGP route-selection algorithm and install the "best" route (typically the one with the shortest AS-PATH, i.e., the geographically closest server) in their forwarding tables.
-        
     4. **Traffic Direction:** When a client sends a packet to this IP address, BGP automatically routes it to the **"nearest"** server.
-        
 
 **Primary Use Case: DNS**
-
 - IP-Anycast is extensively used for **DNS root servers** and top-level domain (TLD) servers.
-    
 - There are 13 IP addresses for root servers, but each address corresponds to **many physical servers** around the world. BGP and IP-Anycast direct a user's query to the closest root server instance.
-    
 
 **Limitation for Stateful Protocols:**
-
 - CDNs generally **avoid** IP-Anycast for serving web content because BGP route changes could cause different packets of the **same TCP connection** to be delivered to different servers, breaking the connection. It is ideal for stateless protocols like DNS queries.
-
 ### **BGP Routing Policy**
-
 In BGP, **policy considerations often trump technical metrics** like shortest path. Policy is primarily implemented through the **Local Preference** attribute, which is set by the network administrator.
 
 **Example Policy Scenario:** (INSERT FIGURE 5.13, A SIMPLE BGP POLICY SCENARIO, HERE)
-
 - **ASs W, X, Y** are **access ISPs** (stub networks). Their traffic must only be to/from themselves.
-    
 - **ASs A, B, C** are **backbone provider** networks.
-    
 
 **Implementing Policy with Route Advertisement:**
-
 - An access ISP like **X** can prevent itself from being used as a transit network by **only advertising routes to itself**. Even if X knows a path to Y (via C), it will not advertise this path to B. This way, B will never send traffic for Y through X.
-    
 - A backbone ISP like **B** may choose not to advertise routes from A to C (and vice versa) to avoid carrying **transit traffic** between them without compensation. The rule of thumb is that traffic on an ISP's backbone should be to/from one of its own customers.
-    
 
 **Peering Agreements:** The commercial contracts between ISPs that govern these routing policies are often confidential.
-
----
-
 ### **PRINCIPLES IN PRACTICE: Why Different Inter-AS and Intra-AS Routing Protocols?**
-
 The Internet uses different protocols for routing within an AS (Intra-AS, e.g., OSPF) and between ASs (Inter-AS, e.g., BGP) for three fundamental reasons:
-
 1. **Policy:**
-    
     - **Inter-AS:** **Policy dominates.** An AS needs strict control over what traffic it carries and which paths are allowed. BGP is built for this, with attributes like AS-PATH and LOCAL-PREF.
-        
     - **Intra-AS:** **Policy is less important.** A single organization controls the entire network, so the primary goal is efficient routing.
-        
 2. **Scale:**
-    
     - **Inter-AS:** Routing algorithms and data structures must **scale to the entire Internet**. BGP is designed for this massive scale.
-        
     - **Intra-AS:** Scalability is less critical. If an AS becomes too large, it can be split into two separate ASs.
-        
 3. **Performance:**
-    
     - **Inter-AS:** Performance is often **secondary to policy**. A longer path that satisfies a policy may be chosen over a shorter one.
-        
     - **Intra-AS:** With policy concerns minimized, the focus can be on **performance metrics** like delay and throughput.
-        
-
----
-
 ### **Putting the Pieces Together: Obtaining Internet Presence**
-
 To make a company's server (e.g., `www.xanadu.com`) accessible on the Internet requires several steps and protocols working together:
-
 1. **Contract with a Local ISP:** Obtain **Internet connectivity** and a block of IP addresses (e.g., a `/24` prefix).
-    
 2. **Contract with a Registrar:** Obtain a **domain name** (e.g., `xanadu.com`).
-    
 3. **Configure DNS:**
-    
     - Provide your registrar with the IP address of your **authoritative DNS server**.
-        
     - In your DNS server, create records (e.g., A records) that map your server names (`www.xanadu.com`) to their specific IP addresses.
-        
 4. **Advertise Your Prefix via BGP:** Your local ISP uses **BGP** to advertise your company's IP prefix to the rest of the Internet. This is the final, crucial step that allows routers worldwide to know how to forward packets destined for your servers.
-    
-
----
-
 ### **The SDN Control Plane**
-
 SDN makes a clear **separation between the data and control planes**. The control plane is logically centralized and implemented in software.
 
 **Four Key Characteristics of SDN:**
-
 1. **Flow-Based Forwarding:** Packet forwarding is based on **any number of header fields** (not just destination IP), as defined by the flow tables we saw in Section 4.4.
-    
 2. **Separation of Data and Control Planes:**
-    
     - **Data Plane:** Simple, fast packet switches that perform "match-plus-action."
-        
     - **Control Plane:** A separate, remote entity that computes and manages the flow tables.
-        
 3. **Network Control Functions: External to Data-Plane Switches:** The control logic runs on servers, not inside the switches. The control plane consists of:
-    
     - An **SDN Controller** (or Network OS): Maintains network state and provides an API to applications.
-        
     - **Network-Control Applications:** The "brains" that implement functions like routing, access control, and load balancing.
-        
 4. **A Programmable Network:** The network's behavior is defined by software applications, leading to innovation and flexibility. (INSERT FIGURE 5.14, SDN CONTROL PLANE ARCHITECTURE, HERE)
-    
 
 **The "Unbundling" of Networking:**  
 SDN unbundles network functionality, similar to the shift from monolithic mainframes to PCs with separate hardware, operating systems, and applications. This allows for independent innovation in switches, controllers, and control applications.
-
 ### **The SDN Control Plane: SDN Controller and Applications**
-
 The SDN control plane is divided into two main parts: the **SDN Controller** (the "network operating system") and the **SDN Network-Control Applications** (the programs that define network behavior).
-
 #### **SDN Controller Architecture**
-
 A generic SDN controller's functionality is organized into three layers: (INSERT FIGURE 5.15, COMPONENTS OF AN SDN CONTROLLER, HERE)
-
 1. **Communication Layer (Southbound Interface):**
-    
     - This is the lowest layer, responsible for **communicating between the controller and the network devices** (switches, hosts).
-        
     - It uses a protocol (like **OpenFlow**) to send commands to devices and to receive event notifications from them (e.g., link up/down, new device).
-        
     - This defines the **southbound API**.
-        
 2. **Network-Wide State-Management Layer:**
-    
     - The controller maintains a **centralized, global view** of the entire network's state.
-        
     - This includes information about hosts, links, switches, statistics, and the flow tables themselves.
-        
     - This database provides a consistent source of truth for all control applications.
-        
 3. **Interface to Network-Control Applications (Northbound Interface):**
-    
     - This is the **API** that network-control applications use to interact with the controller.
-        
     - Applications can read/write network state, register for event notifications, and control the network through this interface.
-        
     - Many controllers use a **RESTful API** for this northbound interface.
-        
 
 **Logical vs. Physical Centralization:** The controller is **logically centralized** (it appears as a single point of control) but is often **physically distributed** across multiple servers for fault tolerance, high availability, and scalability.
-
 #### **OpenFlow Protocol**
-
 The **OpenFlow protocol** is a specific, widely used protocol that operates in the controller's **communication layer**. It runs over **TCP** (port 6653).
-
 **Key Messages from Controller to Switch:**
-
 - **Configuration:** Query/set a switch's parameters.
-    
 - **Modify-State:** Add, delete, or modify entries in the switch's **flow table**.
-    
 - **Read-State:** Collect statistics and counter values from the switch.
-    
 - **Send-Packet:** Direct the switch to send a specific packet out of a specified port.
-    
 
 **Key Messages from Switch to Controller:**
-
 - **Flow-Removed:** Informs the controller that a flow table entry has been removed (e.g., due to a timeout).
-    
 - **Port-status:** Informs the controller of a change in a port's state (e.g., link goes down).
-    
 - **Packet-in:** Sends a packet to the controller because it didn't match any flow table entry, or because a matching rule specified this action.
-    
-
----
-
 ### **PRINCIPLES IN PRACTICE: Google's Software-Defined Global Network (B4)**
 
 Google operates a global WAN called **B4** that interconnects its data centers using a custom SDN control plane built on OpenFlow.
