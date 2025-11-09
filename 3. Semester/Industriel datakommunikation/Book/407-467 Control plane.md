@@ -1,6 +1,6 @@
 ### **Chapter 5 Summary**
 - Two broad approaches to control: **per-router control** (e.g., OSPF, BGP) and **logically centralized, SDN control**.
-- We covered the fundamental **routing algorithms**: **Link-State (LS/Dijkstra)** and **Distance-Vector (DV/Bellman-Ford)**.
+- Fundamental **routing algorithms**: **Link-State (LS/Dijkstra)** and **Distance-Vector (DV/Bellman-Ford)**.
 - Key Internet routing protocols: **OSPF** (Intra-AS) and **BGP** (Inter-AS), the "glue" of the Internet.
 - **SDN**, examining the architecture of the **SDN controller**, the **OpenFlow protocol**, and how they enable programmable networks.
 - Network management protocols: **ICMP** (for error reporting and `traceroute`), **SNMP/MIB** (for monitoring), and the modern **NETCONF/YANG** framework (for configuration).
@@ -18,12 +18,14 @@ The control plane's job is to compute, maintain, and install the forwarding/flow
 1. **Per-Router Control (Traditional):**
     - A **routing algorithm** runs in _each and every_ router.
     - Each router has a routing component that communicates with the routing components in _other routers_ to compute its forwarding table.
-    - Used for decades in the Internet (OSPF, BGP are based on this). (INSERT FIGURE 5.1, PER-ROUTER CONTROL, HERE)
+    - Used for decades in the Internet (OSPF, BGP are based on this).
+![[Pasted image 20251109172501.png]]
 2. **Logically Centralized Control (SDN):**
     - A **logically centralized controller** computes and distributes the forwarding tables to all routers.
     - Each router has a simple **Control Agent (CA)** that communicates with the controller and follows its commands.
     - The CAs do not communicate with each other or compute paths themselves.
-    - This is the approach of **SDN** and is used in major production networks (Google's B4, Microsoft's SWAN, AT&T, 4G/5G). (INSERT FIGURE 5.2, LOGICALLY CENTRALIZED CONTROL, HERE)
+    - This is the approach of **SDN** and is used in major production networks (Google's B4, Microsoft's SWAN, AT&T, 4G/5G).
+![[Pasted image 20251109172526.png]]
 ### **Routing Algorithms**
 The goal of a routing algorithm is to determine **good paths** (routes) from senders to receivers through a network of routers. A "good" path is typically the **least cost path**.
 
@@ -31,7 +33,8 @@ The goal of a routing algorithm is to determine **good paths** (routes) from s
 - We model the network as a graph `G = (N, E)`.
 - **Nodes (N):** Represent **routers** (or, in BGP, entire networks).
 - **Edges (E):** Represent the **physical links** between routers.
-- **Edge Cost:** A value assigned to a link, which could represent physical length, link speed, monetary cost, etc. We denote the cost between node `x` and `y` as `c(x, y)`. (INSERT FIGURE 5.3, ABSTRACT GRAPH MODEL, HERE)
+- **Edge Cost:** A value assigned to a link, which could represent physical length, link speed, monetary cost, etc. We denote the cost between node `x` and `y` as `c(x, y)`.
+![[Pasted image 20251109172614.png]]
 
 **The Least-Cost Path Problem:**
 - A **path** is a sequence of nodes connected by edges.
@@ -47,7 +50,7 @@ Routing algorithms can be classified in several ways:
 - **Decentralized Routing Algorithm:**
     - The calculation is **iterative and distributed**.
     - No node has global information. Each node starts with knowledge only of its own directly connected links.
-    - Through iterative message exchange with neighbors, it gradually calculates least-cost paths.
+    - Through iterative message exchange with neighbours, it gradually calculates least-cost paths.
     - Also known as **Distance-Vector (DV) algorithms**.
 
 **2. Based on Change Frequency:**
