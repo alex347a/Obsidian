@@ -310,13 +310,13 @@ The **OpenFlow protocol** is a specific, widely used protocol that operates in
 - **Port-status:** Informs the controller of a change in a port's state (e.g., link goes down).
 - **Packet-in:** Sends a packet to the controller because it didn't match any flow table entry, or because a matching rule specified this action.
 ### **PRINCIPLES IN PRACTICE: Google's Software-Defined Global Network (B4)**
-Google operates a global WAN called **B4** that interconnects its data centers using a custom SDN control plane built on OpenFlow.
+Google operates a global WAN called **B4** that interconnects its data centres using a custom SDN control plane built on OpenFlow.
 - **Why it's a good fit for SDN:** Google controls all devices, the main traffic is large, deferrable data transfers, and the number of sites is manageable for centralized control.
 - **Result:** B4 achieves dramatically higher link utilization (~70% vs. the typical ~30%) by using SDN to perform **traffic engineering**, splitting application flows over multiple paths based on priority and demand.
 - **Architecture:** Uses custom switches with an OpenFlow Agent (OFA) that communicates with an OpenFlow Controller (OFC) in a central Network Control Server (NCS).
 ### **Data and Control Plane Interaction: An Example**
-Let's trace the steps of how the SDN control plane responds to a network event, like a **link failure**, to recompute routes using Dijkstra's algorithm. (INSERT FIGURE 5.16, SDN CONTROLLER SCENARIO, HERE)
-
+Let's trace the steps of how the SDN control plane responds to a network event, like a **link failure**, to recompute routes using Dijkstra's algorithm.
+![[Pasted image 20251109181714.png]]
 **Scenario:** The link between switch s1 and s2 fails.
 1. **Detection & Notification:** Switch s1 detects the link failure and sends a **Port-status** message to the SDN controller via OpenFlow.
 2. **State Update:** The controller's communication layer receives the message. The **link-state manager** in the state-management layer updates the network-wide link-state database.
@@ -325,7 +325,7 @@ Let's trace the steps of how the SDN control plane responds to a network event, 
 5. **Flow Table Determination:** The application works with the **flow table manager** to determine the exact changes needed in the flow tables of affected switches (s1, s3, s4).
 6. **Configuration:** The flow table manager uses **OpenFlow Modify-State messages** to update the flow tables on the affected switches, implementing the new paths.
 
-**Key Advantage:** This demonstrates the flexibility of SDN. Changing the entire network's routing behavior only requires updating the software in the centralized controller, not in every individual router.
+**Key Advantage:** This demonstrates the flexibility of SDN. Changing the entire network's routing behaviour only requires updating the software in the centralized controller, not in every individual router.
 ### **SDN: Past and Future**
 **Historical Roots:**
 - The technical roots of SDN and data/control plane separation go back to the early 2000s and even to ATM networks in the late 1990s.
