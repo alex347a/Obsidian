@@ -337,10 +337,11 @@ Let's trace the steps of how the SDN control plane responds to a network event, 
 ### **PRINCIPLES IN PRACTICE: SDN Controller Case Studies**
 Two major open-source SDN controllers are **OpenDaylight (ODL)** and **ONOS**.
 
-**The OpenDaylight (ODL) Controller:** (INSERT FIGURE 5.17, OPENDAYLIGHT CONTROLLER, HERE)
+**The OpenDaylight (ODL) Controller:**
+![[Pasted image 20251109182244.png]]
 - **Service Abstraction Layer (SAL):** The core that allows different components and applications to communicate and abstracts the underlying southbound protocols (OpenFlow, NETCONF, SNMP).
 - **Northbound API:** Provides a **RESTful API** for applications.
-- **Model-Driven Approach:** Uses the **YANG** data modeling language to define network models, which are then configured using the **NETCONF** protocol.
+- **Model-Driven Approach:** Uses the **YANG** data modelling language to define network models, which are then configured using the **NETCONF** protocol.
 
 **The ONOS Controller:** (INSERT FIGURE 5.18, ONOS CONTROLLER, HERE)
 - **Intent Framework:** A key feature that allows applications to specify _what_ they want the network to do (e.g., "connect host A to host B") without specifying _how_ to do it.
