@@ -178,7 +178,8 @@ In BGP, routers exchange information about **CIDRized prefixes** (e.g., `138.
 **BGP Connections:**
 - BGP routers exchange routing information over semi-permanent **TCP connections** (port 179).
 - **eBGP (external BGP):** A BGP connection between routers in **different** ASs. Used to exchange routing information across AS boundaries.
-- **iBGP (internal BGP):** A BGP connection between routers in the **same** AS. Used to ensure all routers in the AS have consistent routing information. (INSERT FIGURE 5.9, BGP CONNECTIONS, HERE)
+- **iBGP (internal BGP):** A BGP connection between routers in the **same** AS. Used to ensure all routers in the AS have consistent routing information.
+![[Pasted image 20251109174021.png]]
 
 **Propagating Reachability:**
 - The process of advertising a prefix involves a chain of eBGP and iBGP messages.
@@ -187,10 +188,12 @@ In BGP, routers exchange information about **CIDRized prefixes** (e.g., `138.
     2. Router 2c uses **iBGP** to tell all routers in AS2, including 2a.
     3. Router 2a sends an **eBGP** message to 1c (AS1): "`AS2 AS3 x`".
     4. Router 1c uses **iBGP** to tell all routers in AS1.
-- This process informs routers not only that `x` exists, but also the **AS path** (`AS2, AS3`) to reach it. (INSERT FIGURE 5.8, NETWORK WITH THREE ASs, HERE)
+- This process informs routers not only that `x` exists, but also the **AS path** (`AS2, AS3`) to reach it.
+![[Pasted image 20251109174033.png]]
 
 **Multiple Paths:**
-- There can be multiple paths to a prefix. In the example, if a direct link is added from AS1 to AS3, routers in AS1 would learn two paths: "`AS2 AS3 x`" and "`AS3 x`". BGP will select the best one. (INSERT FIGURE 5.10, NETWORK WITH MULTIPLE PATHS, HERE)
+- There can be multiple paths to a prefix. In the example, if a direct link is added from AS1 to AS3, routers in AS1 would learn two paths: "`AS2 AS3 x`" and "`AS3 x`". BGP will select the best one.
+![[Pasted image 20251109174210.png]]
 ### **Determining the Best Routes in BGP**
 A router often learns multiple possible paths (routes) to a destination prefix. BGP selects the best one using a sequential, multi-step decision process that considers both technical metrics and policy.
 
