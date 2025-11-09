@@ -78,9 +78,11 @@ This is the canonical Link-State algorithm. It computes the least-cost path from
 4. **Update** the cost to each of `w`'s neighbours not in `N'`. The new cost is the minimum of the old cost or the cost to `w` plus the cost from `w` to the neighbour.
 5. Repeat until all nodes are in `N'`.
 
-**Example:** The table shows the algorithm's progress for the network graph, computing paths from source node `u`. (INSERT TABLE 5.1, RUNNING THE LINK-STATE ALGORITHM, HERE)
+**Example:** The table shows the algorithm's progress for the network graph, computing paths from source node `u`.
+![[Pasted image 20251109173047.png]]
 
-**Result:** When the algorithm terminates, we can construct the **entire least-cost path** from the source to every destination and build the node's **forwarding table**. (INSERT FIGURE 5.4, LEAST COST PATH AND FORWARDING TABLE, HERE)
+**Result:** When the algorithm terminates, we can construct the **entire least-cost path** from the source to every destination and build the node's **forwarding table**.
+![[Pasted image 20251109173054.png]]
 
 **Computational Complexity:**
 - The straightforward implementation has a worst-case complexity of **O(n²)**, where `n` is the number of nodes.
@@ -88,7 +90,8 @@ This is the canonical Link-State algorithm. It computes the least-cost path from
 
 **Oscillations:**
 - A potential problem arises when **link costs depend on the traffic load** (e.g., delay).
-- This can cause **oscillations**, where routers simultaneously run LS, shift traffic to a better path, which then becomes congested, leading them to shift back in a cycle. (INSERT FIGURE 5.5, OSCILLATIONS, HERE)
+- This can cause **oscillations**, where routers simultaneously run LS, shift traffic to a better path, which then becomes congested, leading them to shift back in a cycle.
+![[Pasted image 20251109173153.png]]
 - **Solution:** Prevent all routers from running the LS algorithm at the same time by adding randomization.
 ### **The Distance-Vector (DV) Routing Algorithm**
 The **Distance-Vector (DV) algorithm** is a **decentralized, iterative, and asynchronous** algorithm where each node only communicates with its directly connected neighbors.
