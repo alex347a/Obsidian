@@ -295,289 +295,147 @@ The **OpenFlow protocol** is a specific, widely used protocol that operates in
 - **Port-status:** Informs the controller of a change in a port's state (e.g., link goes down).
 - **Packet-in:** Sends a packet to the controller because it didn't match any flow table entry, or because a matching rule specified this action.
 ### **PRINCIPLES IN PRACTICE: Google's Software-Defined Global Network (B4)**
-
 Google operates a global WAN called **B4** that interconnects its data centers using a custom SDN control plane built on OpenFlow.
-
 - **Why it's a good fit for SDN:** Google controls all devices, the main traffic is large, deferrable data transfers, and the number of sites is manageable for centralized control.
-    
 - **Result:** B4 achieves dramatically higher link utilization (~70% vs. the typical ~30%) by using SDN to perform **traffic engineering**, splitting application flows over multiple paths based on priority and demand.
-    
 - **Architecture:** Uses custom switches with an OpenFlow Agent (OFA) that communicates with an OpenFlow Controller (OFC) in a central Network Control Server (NCS).
-    
-
----
-
 ### **Data and Control Plane Interaction: An Example**
-
 Let's trace the steps of how the SDN control plane responds to a network event, like a **link failure**, to recompute routes using Dijkstra's algorithm. (INSERT FIGURE 5.16, SDN CONTROLLER SCENARIO, HERE)
 
 **Scenario:** The link between switch s1 and s2 fails.
-
 1. **Detection & Notification:** Switch s1 detects the link failure and sends a **Port-status** message to the SDN controller via OpenFlow.
-    
 2. **State Update:** The controller's communication layer receives the message. The **link-state manager** in the state-management layer updates the network-wide link-state database.
-    
 3. **Application Notification:** The **Dijkstra's routing application** had previously registered for link-state change events. It is now notified of the change.
-    
 4. **Recomputation:** The routing application gets the updated link state from the database and **recomputes the least-cost paths** for the entire network.
-    
 5. **Flow Table Determination:** The application works with the **flow table manager** to determine the exact changes needed in the flow tables of affected switches (s1, s3, s4).
-    
 6. **Configuration:** The flow table manager uses **OpenFlow Modify-State messages** to update the flow tables on the affected switches, implementing the new paths.
-    
 
 **Key Advantage:** This demonstrates the flexibility of SDN. Changing the entire network's routing behavior only requires updating the software in the centralized controller, not in every individual router.
-
 ### **SDN: Past and Future**
-
 **Historical Roots:**
-
 - The technical roots of SDN and data/control plane separation go back to the early 2000s and even to ATM networks in the late 1990s.
-    
 - The **Ethane project (2007)** was a direct precursor to OpenFlow, featuring a network of simple flow-based switches and a centralized controller.
-    
 
 **Future Directions:**
-
 - **Network Functions Virtualization (NFV):** A generalization of SDN that aims to replace dedicated, proprietary middleboxes (e.g., firewalls, load balancers) with software running on commodity servers.
-    
 - **Inter-AS SDN:** Extending SDN concepts from within a single AS to routing _between_ autonomous systems.
-    
-
----
-
 ### **PRINCIPLES IN PRACTICE: SDN Controller Case Studies**
-
 Two major open-source SDN controllers are **OpenDaylight (ODL)** and **ONOS**.
 
 **The OpenDaylight (ODL) Controller:** (INSERT FIGURE 5.17, OPENDAYLIGHT CONTROLLER, HERE)
-
 - **Service Abstraction Layer (SAL):** The core that allows different components and applications to communicate and abstracts the underlying southbound protocols (OpenFlow, NETCONF, SNMP).
-    
 - **Northbound API:** Provides a **RESTful API** for applications.
-    
 - **Model-Driven Approach:** Uses the **YANG** data modeling language to define network models, which are then configured using the **NETCONF** protocol.
-    
 
 **The ONOS Controller:** (INSERT FIGURE 5.18, ONOS CONTROLLER, HERE)
-
 - **Intent Framework:** A key feature that allows applications to specify _what_ they want the network to do (e.g., "connect host A to host B") without specifying _how_ to do it.
-    
 - **Distributed Core:** Designed from the ground up to run as a distributed service on multiple servers for scalability and high availability.
-    
 - **Southbound Abstractions:** Provides a high-level abstraction layer that hides the heterogeneity of the underlying network devices and protocols.
-    
-
----
-
 ### **ICMP: The Internet Control Message Protocol**
-
 ICMP is used by hosts and routers to communicate network-layer information, most commonly for **error reporting**.
-
 - **Architecture:** ICMP messages are carried **inside IP datagrams** as payload (IP protocol number 1).
-    
 - **Message Structure:** ICMP messages have a **type** and **code** field, and include the header and first 8 bytes of the IP datagram that triggered the message.
-    
 
 **Common ICMP Message Types:** (INSERT FIGURE 5.19, ICMP MESSAGE TYPES, HERE)
-
 - **Type 0/8: Echo Reply / Echo Request:** Used by the **`ping`** program to test reachability.
-    
 - **Type 3: Destination Unreachable:** Indicates a packet could not be delivered (e.g., network, host, port unreachable).
-    
 - **Type 11: Time Exceeded:** Used when a packet's TTL reaches 0. This is the fundamental mechanism behind **`traceroute`**.
-    
 
 **How Traceroute Works:**
-
 1. The source sends a series of IP datagrams to the destination. The first has a **TTL=1**, the second **TTL=2**, and so on.
-    
 2. The *n*th router discards the *n*th datagram (because the TTL expires) and sends an **ICMP Time Exceeded** message back to the source. This message reveals the router's identity.
-    
 3. The source stops when it receives an **ICMP Port Unreachable** message from the destination host, which indicates a packet finally reached it.
-    
 
 **ICMPv6:** A new version of ICMP exists for IPv6, adding new types and codes required by the new protocol's functionality.
-
----
-
 ### **Network Management and SNMP, NETCONF/YANG**
-
 **Network Management** includes the set of architecture, protocols, and tools that allow network administrators to monitor, configure, and maintain network devices.
 
 **Key Protocols:**
-
 - **SNMP (Simple Network Management Protocol):** A widely used protocol for network management. Its core components are:
-    
     - **Managed Device:** A network node (router, switch, server) that is managed.
-        
     - **Agent:** Software running on the managed device that maintains management data and communicates with the manager.
-        
     - **Network Management Station (NMS):** The central management system that runs applications to monitor and control managed devices.
-        
     - **Management Information Base (MIB):** A structured, hierarchical database of managed objects on a device that can be queried or set.
-        
     - **SNMP Protocol:** The protocol used for communication between the NMS and agents, allowing the manager to **get** (retrieve), **set** (configure), and **trap** (receive notifications from) managed devices.
-        
 - **NETCONF/YANG:**
-    
     - **NETCONF:** A more modern network management protocol that uses XML-based data encoding and remote procedure calls (RPCs) over SSH. It provides operations to retrieve, configure, copy, and delete configuration data.
-        
     - **YANG:** A **data modeling language** used to model the configuration and state data manipulated by NETCONF. It defines the structure, constraints, and semantics of the managed data.
-
 ### **Network Management and SNMP, NETCONF/YANG**
-
 **Network Management** is the deployment and coordination of hardware, software, and human elements to monitor, configure, analyze, and control a network to meet performance and QoS requirements.
-
 #### **The Network Management Framework**
-
 The framework consists of several key components: (INSERT FIGURE 5.20, ELEMENTS OF NETWORK MANAGEMENT, HERE)
-
 - **Managing Server:** An application (with human managers) in a central Network Operations Center (NOC) that collects, processes, and dispatches management information and commands.
-    
 - **Managed Device:** Network equipment (routers, switches, hosts, etc.) that is managed.
-    
 - **Data (State):** Information associated with a managed device.
-    
     - **Configuration Data:** Set by the manager (e.g., IP address).
-        
     - **Operational Data:** Acquired by the device (e.g., OSPF neighbors).
-        
     - **Device Statistics:** Status indicators and counts (e.g., packets dropped).
-        
 - **Network Management Agent:** A software process running on the managed device that communicates with the managing server and executes commands locally.
-    
 - **Network Management Protocol:** The protocol that runs between the managing server and managed devices, enabling querying and control. It provides capabilities but does not _do_ the management itself.
-    
 
 **Three Common Management Approaches:**
-
 1. **CLI (Command Line Interface):** Direct, device-specific commands (via console, Telnet, SSH). Powerful but error-prone and difficult to scale.
-    
 2. **SNMP/MIB:** Uses the **Simple Network Management Protocol** to query and set data in a device's **Management Information Base**. Good for monitoring; less so for large-scale configuration.
-    
 3. **NETCONF/YANG:** A modern approach with a **network-wide, holistic view**, emphasizing configuration management with correctness constraints and atomic operations across multiple devices.
-    
-
 #### **The Simple Network Management Protocol (SNMP) and MIB**
-
 **SNMPv3** is an application-layer protocol used for network management, typically running over **UDP**.
 
 **Management Information Base (MIB):**
-
 - A structured, hierarchical database of **managed objects** on a device.
-    
 - Objects are defined using a formal data description language called **SMI (Structure of Management Information)**.
-    
 - Related objects are grouped into **MIB modules**.
-    
 
 **SNMP Protocol Data Units (PDUs):** (INSERT TABLE 5.2, SNMPV3 PDU TYPES, HERE)
-
 - **GetRequest, GetNextRequest, GetBulkRequest:** Sent from manager to agent to **retrieve** MIB object values. The agent replies with a **Response** PDU.
-    
 - **SetRequest:** Sent from manager to agent to **set** (modify) MIB object values.
-    
 - **Response:** Sent by an agent (or manager) in response to a request.
-    
 - **InformRequest:** Sent by one manager to notify another manager of MIB information.
-    
 - **SNMPv2-Trap:** An **asynchronous notification** sent from an agent to a manager to report an exceptional event (e.g., link failure, system reboot). (INSERT FIGURE 5.21, SNMP PDU FORMAT, HERE)
-    
 
 **Key Points:**
-
 - SNMP is primarily used for **monitoring** rather than control, partly due to historical security concerns.
-    
 - **SNMPv3** added critical security and administration features that were lacking in earlier versions.
-    
-
 #### **NETCONF/YANG**
-
 This is a more modern and powerful approach to network management, especially for configuration.
-
 - **YANG (Yet Another Next Generation):** A **data modeling language** used to model the configuration and operational data for a network. It defines the structure, constraints, and semantics of the data.
-    
 - **NETCONF:** A network management protocol used to **install, manipulate, and delete** the configuration of network devices. It uses XML-based data encoding and RPCs over SSH.
-    
 - **Together:** YANG defines the "what" (the data model), and NETCONF defines the "how" (the protocol) to manage that data. This approach provides a structured, programmatic, and network-wide way to manage device configuration.
-
 ### **The Management Information Base (MIB) in Detail**
-
 An MIB is a structured collection of **managed objects** that represent a device's operational state, configuration, and statistics.
-
 - **MIB Objects:** Can be counters (e.g., number of IP datagrams discarded), descriptive info (e.g., software version), status information, or protocol-specific data.
-    
 - **MIB Modules:** Related MIB objects are grouped into modules. There are hundreds of standard IETF MIB modules (e.g., for IP, TCP, UDP) and many more vendor-specific ones.
-    
 - **SMI (Structure of Management Information):** The formal data description language used to define the syntax and semantics of MIB objects, ensuring they are unambiguous.
-    
 
 **Example MIB Object: `ipSystemStatsInDelivers`**
-
 - **Type:** A 32-bit, read-only counter.
-    
 - **Purpose:** Tracks the total number of IP datagrams successfully delivered to an upper-layer protocol (like TCP, UDP, or ICMP) on the managed device.
-    
 - This object is defined within the IP MIB module ([RFC 4293]).
-    
-
----
-
 ### **The Network Configuration Protocol (NETCONF) and YANG**
-
 This is a modern framework for network management, with a strong emphasis on **configuration**.
-
 #### **NETCONF Protocol**
-
 NETCONF is a protocol that provides mechanisms to install, manipulate, and delete the configuration of network devices.
-
 - **Operation:** Uses a **Remote Procedure Call (RPC)** model. Messages are encoded in **XML** and exchanged over a **secure, connection-oriented session** (like TLS over TCP).
-    
 - **Session Flow:** (INSERT FIGURE 5.22, NETCONF SESSION, HERE)
-    
     1. Establish a secure connection.
-        
     2. Exchange `<hello>` messages to declare capabilities.
-        
     3. Exchange `<rpc>` (request) and `<rpc-reply>` (response) messages.
-        
     4. Managed devices can send asynchronous `<notification>` messages.
-        
     5. Close the session.
-        
 
 **Key NETCONF Operations:** (INSERT TABLE 5.3, SELECTED NETCONF OPERATIONS, HERE)
-
 - **`<get-config>`, `<get>`:** Retrieve configuration and operational data from the device.
-    
 - **`<edit-config>`:** Modify the device's configuration. Supports atomic transactions and rollback on error.
-    
 - **`<lock>`, `<unlock>`:** Lock the device's configuration to prevent conflicting changes from other sources.
-    
 - **`<create-subscription>`:** Subscribe to event notifications from the device.
-    
 
 **Example NETCONF Message:**  
 An `<edit-config>` message to set the MTU of an interface to 1500 bytes is a human-readable XML document that clearly specifies the target and the new value. The device replies with an `<ok/>` message upon success.
-
 #### **YANG (Yet Another Next Generation)**
-
 YANG is the **data modeling language** used with NETCONF.
-
 - **Purpose:** To **model** the configuration and operational data used by NETCONF. It precisely defines the structure, constraints, and semantics of the data.
-    
 - **Function:** Similar to **SMI** for SNMP, but more powerful and modern.
-    
 - **Capabilities:**
-    
     - Defines a hierarchy of data.
-        
     - Allows modelers to express **constraints** that a valid configuration must satisfy, helping to prevent errors.
-        
     - Used to specify NETCONF notifications.
-        
 - **Modules:** YANG definitions are contained in modules, from which XML documents for device configuration can be generated.
-    
-
----
