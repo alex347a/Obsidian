@@ -41,3 +41,9 @@ You add the cost of all of the neighbours of the starting point to the end point
 ![[Pasted image 20251110094643.png]]
 ### Hierarchical OSPF
 ![[Pasted image 20251110094753.png]]
+### Internet inter-AS routing: BGP
+![[Pasted image 20251110094920.png]]
+1 inter-AS routing BGP to rule them all, since all intranet can have different protocols.
+![[Pasted image 20251110095137.png]]
+**eBGP (external BGP)** is a BGP session between routers in **different** ASs. Used to exchange routes across AS boundaries. **iBGP (internal BGP)** a BGP session between routers in the **same** AS. Used to ensure all routers in the AS have consistent routing information.
+![[Pasted image 20251110095301.png]]
