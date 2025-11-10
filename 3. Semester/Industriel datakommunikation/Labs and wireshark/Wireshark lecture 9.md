@@ -4,4 +4,7 @@
 2. Why is it that an ICMP packet does not have source and destination port numbers?
 	Because you are not asking for the port on a router, you are asking the router not a server
 3. Examine one of the ping request packets sent by your host. What are the ICMP type and code numbers? What other fields does this ICMP packet have? How many bytes are the checksum, sequence number and identifier fields?
-	Type 8 code 0 (echo (ping) request), the checksum is 2 bytes
+	Type 8 code 0 (echo (ping) request), the checksum is 2 bytes, sequence number (BE): 6048 (LE): 40983, identifier fields (BE) 1 and (LE) 256
+![[Pasted image 20251110104347.png]]
+4. Examine the corresponding ping reply packet. What are the ICMP type and code numbers? What other fields does this ICMP packet have? How many bytes are the checksum, sequence number and identifier fields?
+Type 0 code 0, identifier (BE) 1 and (LE) 256, sequence number (BE): 6048 (LE): 40983
