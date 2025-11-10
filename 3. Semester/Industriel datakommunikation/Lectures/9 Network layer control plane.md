@@ -13,3 +13,5 @@ E = edges (vertices), which is the links.
 ![[Pasted image 20251110082950.png]]
 ### A link-state routing algorithm
 ![[Pasted image 20251110083113.png]]
+### Dijkstra's algorithm: example
+![[Pasted image 20251110083550.png]]
