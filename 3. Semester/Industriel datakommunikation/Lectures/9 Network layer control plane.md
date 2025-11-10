@@ -53,3 +53,10 @@ You add the cost of all of the neighbours of the starting point to the end point
 ![[Pasted image 20251110095631.png]]
 ### BGP: achieving policy via advertisements
 ![[Pasted image 20251110095821.png]]
+![[Pasted image 20251110095839.png]]
+### Hot potato routing
+![[Pasted image 20251110095851.png]]
+### Intra-AS vs. inter-AS routing
+![[Pasted image 20251110100247.png]]
+### SDN: Software-Defined Network
+![[Pasted image 20251110100352.png]]
