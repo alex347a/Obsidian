@@ -63,3 +63,7 @@ You add the cost of all of the neighbours of the starting point to the end point
 ![[Pasted image 20251110100649.png]]
 ![[Pasted image 20251110100702.png]]
 ![[Pasted image 20251110100754.png]]
+### ICMP: Internet Control Message Protocol
+![[Pasted image 20251110101127.png]]
+### Traceroute and ICMP
+![[Pasted image 20251110101409.png]]
