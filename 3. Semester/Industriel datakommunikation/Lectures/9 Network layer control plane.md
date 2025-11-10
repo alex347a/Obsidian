@@ -15,3 +15,5 @@ E = edges (vertices), which is the links.
 ![[Pasted image 20251110083113.png]]
 ### Dijkstra's algorithm: example
 ![[Pasted image 20251110083550.png]]
+You simply check the paths which ones have the lowest combined weight, if you can find another path that has a lower weight you update the table, if not you keep the lowest value in the table.
+![[Pasted image 20251110084231.png]]
