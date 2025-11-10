@@ -31,3 +31,13 @@ You add the cost of all of the neighbours of the starting point to the end point
 ![[Pasted image 20251110093845.png]]
 ### Internet approach to scalable routing
 ![[Pasted image 20251110094121.png]]
+### Interconnected AS's
+![[Pasted image 20251110094305.png]]
+### Inter-AS tasks
+![[Pasted image 20251110094348.png]]
+### Intra-AS routing
+![[Pasted image 20251110094501.png]]
+### OSPF: Open Shortest Path First
+![[Pasted image 20251110094643.png]]
+### Hierarchical OSPF
+![[Pasted image 20251110094753.png]]
