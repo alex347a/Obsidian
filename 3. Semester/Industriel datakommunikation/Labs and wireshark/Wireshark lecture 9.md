@@ -8,3 +8,8 @@
 ![[Pasted image 20251110104347.png]]
 4. Examine the corresponding ping reply packet. What are the ICMP type and code numbers? What other fields does this ICMP packet have? How many bytes are the checksum, sequence number and identifier fields?
 Type 0 code 0, identifier (BE) 1 and (LE) 256, sequence number (BE): 6048 (LE): 40983
+5. What is the IP address of your host? What is the IP address of the target destination host?
+The same as last:
+![[Pasted image 20251110105645.png]]
+6. If ICMP sent UDP packets instead (as in Unix/Linux), would the IP protocol number still be 01 for the probe packets? If not, what would it be?
+	UDP has the protocol 
