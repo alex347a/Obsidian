@@ -47,3 +47,9 @@ You add the cost of all of the neighbours of the starting point to the end point
 ![[Pasted image 20251110095137.png]]
 **eBGP (external BGP)** is a BGP session between routers in **different** ASs. Used to exchange routes across AS boundaries. **iBGP (internal BGP)** a BGP session between routers in the **same** AS. Used to ensure all routers in the AS have consistent routing information.
 ![[Pasted image 20251110095301.png]]
+### Path attributes and BGP routes
+![[Pasted image 20251110095444.png]]
+### BGP path advertisement
+![[Pasted image 20251110095631.png]]
+### BGP: achieving policy via advertisements
+![[Pasted image 20251110095821.png]]
