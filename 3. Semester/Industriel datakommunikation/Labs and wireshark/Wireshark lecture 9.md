@@ -18,4 +18,7 @@ The same as last:
 8. Examine the ICMP error packet in your screenshot. It has more fields than the ICMP echo packet. What is included in those fields?
 	It sends the 8 bytes of data that caused the error + header.
 9. Examine the last three ICMP packets received by the source host. How are these packets different from the ICMP error packets? Why are they different?
-	
+The time to live is type 11.
+![[Pasted image 20251110110612.png]]
+10. Within the tracert measurements, is there a link whose delay is significantly longer than others? Refer to the screenshot in Figure 4, is there a link whose delay is significantly longer than others? On the basis of the router names, can you guess the location of the two routers on the end of this link?
+When going from Great Britain to Hong kong, the delay increases.
