@@ -22,4 +22,6 @@ You simply check the paths which ones have the lowest combined weight, if you ca
 ![[Pasted image 20251110085005.png]]
 ### Bellman-Ford example
 ![[Pasted image 20251110085234.png]]
-You add the cost of all of the neighbours of the starting point to the end point and thereby find the shortest path.
+You add the cost of all of the neighbours of the starting point to the end point and thereby find the shortest path. This has the infinity counting up problem when two links think they are both the shorter path to the destination and keep going through each other until one of them realise another link is shorter. This is solved by Poison reverse, where it sets its number to infinity if it is going through the same one as before.
+### Distance vector algorithm strategy
+![[Pasted image 20251110090347.png]]
