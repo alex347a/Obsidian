@@ -22,3 +22,4 @@ You simply check the paths which ones have the lowest combined weight, if you ca
 ![[Pasted image 20251110085005.png]]
 ### Bellman-Ford example
 ![[Pasted image 20251110085234.png]]
+You add the cost of all of the neighbours of the starting point to the end point and thereby find the shortest path.
