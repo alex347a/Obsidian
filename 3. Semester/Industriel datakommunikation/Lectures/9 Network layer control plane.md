@@ -27,3 +27,7 @@ You add the cost of all of the neighbours of the starting point to the end point
 ![[Pasted image 20251110090347.png]]
 ### Comparison of LS and DV algorithms
 ![[Pasted image 20251110093454.png]]
+### Intra Autonomous System Routing
+![[Pasted image 20251110093845.png]]
+### Internet approach to scalable routing
+![[Pasted image 20251110094121.png]]
