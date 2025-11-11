@@ -2,13 +2,26 @@
 9.2 En tynd, homogen stang med længden $l = 1,00 \space m$ er ophængt i sit ene endepunkt. Stangen kan udføre svingninger om en vandret akse.
 
 a) Bestem stangens svingningstid
+Længden af stangen er $l$, men i formlerne plejer $l$ at være distancen ud til massemidtpunktet, så det kan jeg så for d:
 $$
-T = 2 \pi \sqrt{\frac{I_{O}}{g}}
+d = \frac{1}{2}l
 $$
-For en homogen stang:
 $$
-I_{CM} = \frac{1}{12} m l^{2}
+T = 2 \pi \sqrt{\frac{I_{O}}{dmg}}
 $$
+For en homogen stang er inertimomentet:
+$$
+I_{O} = \frac{1}{3} m d^{2}
+$$
+$$
+T = 2 \pi \sqrt{\frac{\frac{1}{3} d}{g}}
+$$
+Husker at: $d = \frac{1}{2}l$, så jeg indsætter:
+$$
+T = 2 \pi \sqrt{\frac{\frac{1}{6} l}{g}} = 
+$$
+
+
 
 
 
