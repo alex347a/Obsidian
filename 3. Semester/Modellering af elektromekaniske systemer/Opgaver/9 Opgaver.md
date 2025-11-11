@@ -14,10 +14,13 @@ $$
 \sqrt{\frac{\frac{1}{3} m l ^{2}}{lmg}} = \sqrt{\frac{\frac{1}{3}l}{g}}
 $$
 $$
-T = 
+T = \sqrt{\frac{\frac{1}{3}l}{g}} \approx 1.16 \space s
+$$
+b) Stangen ophænges nu i et andet punkt på stangen. Bestemt dette punkts position, således at stangens svingningstid bliver mindst mulig. Bestem den minimale svingningstid.
+Hvis jeg skal have den minimale svingningstid så skal jeg have at T bliver så lille som mulig, hvilket gøres ved at lave l så lille som mulig.
 $$
 
-b) Stangen ophænges nu i et andet punkt på stangen. Bestemt dette punkts position, således at stangens svingningstid bliver mindst mulig. Bestem den minimale svingningstid.
+$$
 
 
 ![[Pasted image 20251111141720.png]]
