@@ -69,7 +69,7 @@ A process is an instance of a program, i.e., a program is essentially code waiti
 ### What is the difference between a thread and process?
 A process is a program that is running with its own PCB and allocated memory, and can own multiple threads.
 A thread is a subset of the process, and can be seen as a “lightweight process”. All the threads running within a process share the same address space, but threads typically get their own stack.
-![[Pasted image 20251107163054.png]]
+![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/9/Lab/Pasted image 20251107163054.png]]
 ### What is a Process Control Block (PCB) and what is its purpose? Can users access the information stored in one?
 The process control stores many data items that are needed for efficient process management, such as the process state, process id, program counter, registers etc. The process control block is kept in a memory area that is protected from the normal user access.
 ### What is the difference between heap and stack storage?
@@ -77,7 +77,7 @@ Both are allocated memory to store data such as variables.
 The stack has a fixed size and is used for local variables, return values etc. When a function executes, it is added onto the call stack in a FIFO order as a stack frame with allocated memory for the local variables of that function. If a stack runs out of space, a stack overflow occurs and the program crashes.
 The heap is used for dynamic memory allocation and can grow in size if necessary. It may experience problems of fragmentation and is generally a bit slower due to allocation.
 ### Using the program shown in below, explain what the output will be at LINE A.
-![[Pasted image 20251107163022.png]]
+![[Noter/Pasted Images/3. Semester/Industriel datakommunikation/9/Lab/Pasted image 20251107163022.png]]
 Since a fork creates a new process with its own global variables, the value variable of the parent process is unaffected by the child process. The output value will thus be 5.
 ### Including the initial parent process, how many processes are created by the following program?
 ![[Pasted image 20251107162945.png]]
