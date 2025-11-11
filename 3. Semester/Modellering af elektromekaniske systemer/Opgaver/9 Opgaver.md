@@ -4,7 +4,7 @@
 a) Bestem stangens svingningstid
 Længden af stangen er $l$, men i formlerne plejer $l$ at være distancen ud til massemidtpunktet, så det kan jeg så for d:
 $$
-d = \frac{1}{2}l
+d = 2l
 $$
 $$
 T = 2 \pi \sqrt{\frac{I_{O}}{dmg}}
@@ -18,19 +18,9 @@ T = 2 \pi \sqrt{\frac{\frac{1}{3} d}{g}}
 $$
 Husker at: $d = \frac{1}{2}l$, så jeg indsætter:
 $$
-T = 2 \pi \sqrt{\frac{\frac{1}{6} l}{g}} = 
+T = 2 \pi \sqrt{\frac{\frac{2}{3}}{g}} \approx 1.64 \space s
 $$
-
-
-
-
-
 b) Stangen ophænges nu i et andet punkt på stangen. Bestemt dette punkts position, således at stangens svingningstid bliver mindst mulig. Bestem den minimale svingningstid.
 Hvis jeg skal have den minimale svingningstid så skal jeg have at T bliver så lille som mulig, hvilket gøres ved at lave l så lille som mulig.
-$$
-
-$$
-
-
 ![[Pasted image 20251111141720.png]]
 9.4 Fjederkonstanterne for fjedrene på figurerne er henholdsvis $k_{1}$ og $k_{2}$. Massen af klodserne er m.
