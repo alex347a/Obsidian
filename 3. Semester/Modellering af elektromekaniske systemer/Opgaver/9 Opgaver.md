@@ -21,6 +21,11 @@ $$
 T = 2 \pi \sqrt{\frac{\frac{2}{3}}{g}} \approx 1.64 \space s
 $$
 b) Stangen ophænges nu i et andet punkt på stangen. Bestemt dette punkts position, således at stangens svingningstid bliver mindst mulig. Bestem den minimale svingningstid.
-Hvis jeg skal have den minimale svingningstid så skal jeg have at T bliver så lille som mulig, hvilket gøres ved at lave l så lille som mulig.
+Hvis jeg skal have den minimale svingningstid så skal jeg have at T bliver så lille som mulig, hvilket gøres ved at lave d så lille som mulig.
+
+$$
+I_{z} = I_{C} + \frac{1}{2} 
+$$
+
 ![[Pasted image 20251111141720.png]]
 9.4 Fjederkonstanterne for fjedrene på figurerne er henholdsvis $k_{1}$ og $k_{2}$. Massen af klodserne er m.
