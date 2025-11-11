@@ -3,19 +3,15 @@
 
 a) Bestem stangens svingningstid
 $$
-T = 2 \pi \sqrt{\frac{I_{O}}{lmg}}
+T = 2 \pi \sqrt{\frac{I_{O}}{g}}
 $$
-inertimomentet regnes for en homogen stang ved:
+For en homogen stang:
 $$
-I_{O} = \frac{1}{3} m l^{2}
+I_{CM} = \frac{1}{12} m l^{2}
 $$
-Så går masserne ud:
-$$
-\sqrt{\frac{\frac{1}{3} m l ^{2}}{lmg}} = \sqrt{\frac{\frac{1}{3}l}{g}}
-$$
-$$
-T = \sqrt{\frac{\frac{1}{3}l}{g}} \approx 1.16 \space s
-$$
+
+
+
 b) Stangen ophænges nu i et andet punkt på stangen. Bestemt dette punkts position, således at stangens svingningstid bliver mindst mulig. Bestem den minimale svingningstid.
 Hvis jeg skal have den minimale svingningstid så skal jeg have at T bliver så lille som mulig, hvilket gøres ved at lave l så lille som mulig.
 $$
