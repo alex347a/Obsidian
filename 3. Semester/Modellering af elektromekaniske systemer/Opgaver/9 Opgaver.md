@@ -45,6 +45,9 @@ Så må $k_{eq}$:
 $$
 k_{eq} = \frac{k_{1}k_{2}}{k_{1} + k_{2}}
 $$
+$$
+T = 2 \pi \sqrt{\frac{m}{k_{eq}}} = \sqrt{\frac{m(k_{1} + k_{2})}{k_{1}k_{2}}}
+$$
 
 Når fjedre er i parallelforbindelse har de samme forskydning x og deler den samlede kraft F:
 $$
@@ -54,4 +57,6 @@ Dermed er $k_{eq}$:
 $$
 k_{eq} = k_{1} + k_{2}
 $$
-Dvs. for seriekoblinger så er der større total forspændbarhed og mindre effektiv stiffhed, mens der for parallelkoblinger er større effektiv stiffhed og mindre forspændbarhed.
+$$
+T = 2 \pi \sqrt{\frac{m}{k_{1} + k_{2}}}
+$$
