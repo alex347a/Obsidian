@@ -48,6 +48,7 @@ $$
 $$
 T = 2 \pi \sqrt{\frac{m}{k_{eq}}} = \sqrt{\frac{m(k_{1} + k_{2})}{k_{1}k_{2}}}
 $$
+Ellers kunne jeg dividere med $2 \pi$ og så havde den heddet $\frac{2 \pi}{\sqrt{\frac{k_{eq}}{m}}}$  i stedet for
 
 Når fjedre er i parallelforbindelse har de samme forskydning x og deler den samlede kraft F:
 $$
