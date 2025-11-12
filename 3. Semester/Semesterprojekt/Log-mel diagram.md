@@ -11,15 +11,10 @@
 - The encoder's job is to transform the input spectrogram into a high-level, contextualized representation—a sequence of feature vectors that encapsulate "what was said."
 #### 2. The Decoder
 - The decoder is also a Transformer network. It is responsible for generating the text, one token (word/subword) at a time.
-    
 - It starts with a special **start-of-transcript** token.
-    
 - To generate the next token, it uses two sources of information:
-    
     1. **The Encoder's Output:** It "cross-attends" to the encoded audio features to understand what it should be saying.
-        
     2. **The Previously Generated Tokens:** It uses self-attention on the text it has already produced to ensure grammatical coherence and consistency.
-        
 - This process is auto-regressive, the newly generated token is appended to the sequence and fed back in to generate the next one, until an **end-of-transcript** token is produced.
 
 ### Part 3: What Makes Whisper Special? Multitask Training
