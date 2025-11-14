@@ -311,6 +311,7 @@ The Ethernet frame has several key fields:
 - **UDP:** The application would see a gap in the data.
 - **TCP:** TCP would notice the missing data (via lack of ACK) and retransmit it. The retransmitted data would be sent in a new Ethernet frame, so reliability is achieved at a higher layer.
 ### **Ethernet Technologies**
+![[Pasted image 20251114183848.png]]
 Ethernet is not a single standard but a family of technologies standardized by IEEE 802.3. The naming convention provides key information:
 - **Speed:** The first number (10, 100, 1000, 10G, 40G) indicates the data rate in Mbps or Gbps.
 - **BASE:** Stands for "baseband," meaning the physical medium carries only Ethernet traffic.
@@ -328,6 +329,7 @@ Switches are core components of modern LANs. They are **transparent** to hosts
 3. **Buffering:** Temporarily storing frames when the output link is busy, preventing frame loss.
 These functions are performed using a **switch table**.
 #### **The Switch Table**
+![[Pasted image 20251114183857.png]]
 The switch table contains mappings to guide frame forwarding. Each entry typically includes:
 - A **MAC Address**
 - The **switch interface** that leads toward that MAC address
@@ -337,6 +339,7 @@ The switch table contains mappings to guide frame forwarding. Each entry typical
 - **Entry Matches Interface `x`:** The switch **filters** (discards) the frame, as the destination is already on the same LAN segment from which the frame came.
 - **Entry Points to Interface `y` (different from `x`):** The switch **forwards** the frame only to the output buffer for interface `y`.
 #### **Self-Learning (How the Table is Built)**
+![[Pasted image 20251114183907.png]]
 Switch tables are built **automatically**; they are **plug-and-play** devices with no need for manual configuration. The process is:
 1. The switch table is initially empty.
 2. For every incoming frame, the switch examines the **source MAC address** and:
@@ -347,6 +350,7 @@ Switch tables are built **automatically**; they are **plug-and-play** devices
 **Full-Duplex Operation:** Modern switches can send and receive on an interface simultaneously without interference.
 
 ### **Properties of Link-Layer Switching**
+![[Pasted image 20251114183921.png]]
 Using switches (instead of hubs or buses) provides significant advantages:
 - **Elimination of Collisions:** Switches buffer frames, allowing each link to operate at its full speed without collisions. The maximum total throughput is the sum of all interface rates.
 - **Heterogeneous Links:** Different switch interfaces can operate at different speeds (e.g., 1 Gbps, 100 Mbps) and over different media (copper, fiber), making it easy to mix old and new equipment.
@@ -355,6 +359,7 @@ Using switches (instead of hubs or buses) provides significant advantages:
 - In a normal switched LAN, a host only receives frames addressed to it, making sniffing difficult.
 - **Switch Poisoning** is an attack where an attacker floods the switch with frames containing bogus source MAC addresses. This fills the switch table, causing it to **broadcast** most traffic, which the attacker can then sniff.
 ### **Switches vs. Routers**
+![[Pasted image 20251114183936.png]]
 This is a fundamental comparison between layer-2 and layer-3 packet forwarding devices.
 
 |Feature|Switches (Layer-2)|Routers (Layer-3)|
@@ -370,6 +375,7 @@ This is a fundamental comparison between layer-2 and layer-3 packet forwarding d
 - **Switches** are ideal for **smaller networks** (a few hundred hosts) due to their plug-and-play nature and simplicity.
 - **Routers** are necessary within **larger networks** (thousands of hosts) to provide robust traffic isolation, prevent broadcast storms, and enable intelligent routing.
 ### **Virtual Local Area Networks (VLANs)**
+![[Pasted image 20251114183945.png]]
 VLANs solve several problems in a large switched network by creating **logical broadcast domains** over a single physical switch infrastructure.
 **Drawbacks of a Single Large Switched LAN:**
 1. **Lack of Traffic Isolation:** Broadcast traffic (ARP, DHCP) must traverse the entire network, hurting performance and security.
@@ -386,9 +392,12 @@ VLANs solve several problems in a large switched network by creating **logical 
 **Other VLAN Types:**
 - **MAC-based VLANs:** VLAN membership is based on a device's MAC address, not the physical port it is connected to.
 - VLANs can also be defined by network-layer protocol (IP, IPv6) and can be extended across routers.
+![[Pasted image 20251114184000.png]]
+![[Pasted image 20251114184320.png]]
 ### **Link Virtualization: A Network as a Link Layer**
 **Core Concept:** The Internet can treat an entire, complex network (like the telephone system or an MPLS network) as a single **virtual link**. From the perspective of Internet hosts and routers, this complex network appears to be a simple link-layer channel.
 ### **Multiprotocol Label Switching (MPLS)**
+![[Pasted image 20251114184330.png]]
 MPLS is a packet-switched, virtual-circuit network that blends concepts from circuit-switched networks with IP routing. From an Internet perspective, it is often viewed as a **link-layer technology** that interconnects IP devices.
 #### **How MPLS Works**
 - **The MPLS Header:** An MPLS-capable router adds a short MPLS header between the layer-2 and layer-3 (IP) headers. This header contains a **label**, which is used for forwarding.
