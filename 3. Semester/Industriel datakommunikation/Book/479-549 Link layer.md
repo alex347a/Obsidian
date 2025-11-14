@@ -403,6 +403,7 @@ MPLS is a packet-switched, virtual-circuit network that blends concepts from cir
 - **The MPLS Header:** An MPLS-capable router adds a short MPLS header between the layer-2 and layer-3 (IP) headers. This header contains a **label**, which is used for forwarding.
 - **Label-Switched Routers (LSRs):** MPLS-capable routers are called LSRs. They forward frames by looking up the **MPLS label** in a table, not by performing a longest-prefix match on the IP address. This makes forwarding simpler and faster.
 - **The Path (Label-Switched Path - LSP):** A path through the MPLS network is pre-established, and labels are distributed using a signalling protocol (like RSVP-TE). Routers along the path have a table that maps an incoming label on one interface to an outgoing label on another.
+![[Pasted image 20251114184405.png]]
 #### **Key Advantages and Uses of MPLS**
 The main value of MPLS is not raw speed but advanced **traffic management** and **traffic engineering**:
 1. **Traffic Engineering:** MPLS allows network operators to override standard IP routing. It can force traffic to specific paths based on policy or performance, enabling **load balancing** across multiple paths that standard IP routing would not use.
@@ -410,6 +411,7 @@ The main value of MPLS is not raw speed but advanced **traffic management** an
 3. **Virtual Private Networks (VPNs):** MPLS is widely used to implement VPNs, allowing an ISP to securely connect a customer's multiple networks while isolating their traffic from other users on the same infrastructure.
 **Relationship to SDN:** MPLS provides many traffic engineering capabilities that can also be achieved using **Software-Defined Networking (SDN)** and generalized forwarding. The two technologies currently co-exist.
 ### **Data Center Networking**
+![[Pasted image 20251114184421.png]]
 **Purpose of Data Centers:**
 - Deliver content (web pages, video) to users.
 - Act as a massively-parallel computing infrastructure (e.g., for search indexing).
@@ -442,6 +444,7 @@ With multiple paths, data centres rely heavily on **multi-path routing**.
 - **ECMP (Equal Cost Multi Path):** A common technique that performs a randomized next-hop selection for flows, spreading traffic across multiple paths.
 - More advanced schemes can perform finer-grained load balancing, sometimes even routing packets from the _same flow_ across different paths.
 ### **Trends in Data Center Networking**
+![[Pasted image 20251114184442.png]]
 Data center design is driven by the goals of reducing cost, improving performance, and increasing flexibility. Key trends include:
 #### **1. Hierarchical, Multi-Tiered Interconnection Networks**
 - The standard architecture uses a hierarchy of switches (TOR, Tier-2, Tier-1) to create a massive, interconnected fabric.
@@ -467,6 +470,7 @@ Data center design is driven by the goals of reducing cost, improving performanc
 - **Availability Zones:** To improve fault tolerance, providers replicate data centers in separate, nearby buildings. This allows for synchronous data replication while protecting against facility-level failures.
 ### **Retrospective: A Day in the Life of a Web Page Request**
 This section provides an integrated view of how all the protocols from the link layer up to the application layer work together to perform a simple task: downloading a web page.
+![[Pasted image 20251114184522.png]]
 #### **Phase 1: Getting an IP Address (DHCP)**
 Before anything else, Bob's laptop needs an IP address. This is done via DHCP.
 1. **DHCP Discovery:** Bob's laptop creates a **DHCP request** message.
