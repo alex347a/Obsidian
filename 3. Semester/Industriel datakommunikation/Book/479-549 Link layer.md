@@ -9,6 +9,7 @@ The link layer is responsible for transferring datagrams over a **single commun
 **Two Fundamental Types of Link-Layer Channels:**
 1. **Broadcast Channels:** Connect multiple hosts (e.g., wireless LANs, HFC cable access networks). Require a **Medium Access Control (MAC) protocol** to coordinate transmissions and avoid collisions.
 2. **Point-to-Point Links:** Connect two individual nodes (e.g., a long-distance router link, a computer to an Ethernet switch). Coordination is simpler.
+![[Pasted image 20251114183257.png]]
 
 **Transportation Analogy:**
 - **Tourist = Datagram**
@@ -32,9 +33,11 @@ The link layer is implemented in a combination of **hardware and software**, an
     - Assembling link-layer addressing information.
     - Activating the controller hardware.
     - Handling controller interrupts (e.g., frame received).
-    - Passing datagrams up to the network layer. (INSERT FIGURE 6.2, TYPICAL HOST ARCHITECTURE, HERE)
+    - Passing datagrams up to the network layer.
+![[Pasted image 20251114183318.png]]
 ### **Error-Detection and -Correction Techniques**
-The link layer often provides services to detect and sometimes correct bit errors introduced during transmission. These techniques involve the sender adding extra **Error-Detection and -Correction (EDC)** bits to the data (D). The receiver uses these bits to determine if the received data (D') is error-free. (INSERT FIGURE 6.3, ERROR-DETECTION SCENARIO, HERE)
+The link layer often provides services to detect and sometimes correct bit errors introduced during transmission. These techniques involve the sender adding extra **Error-Detection and -Correction (EDC)** bits to the data (D). The receiver uses these bits to determine if the received data (D') is error-free.
+![[Pasted image 20251114183327.png]]
 
 **Key Trade-off:** More robust error detection/correction techniques reduce the probability of **undetected errors** but incur a higher overhead (more EDC bits and more computation).
 #### **Parity Checks**
