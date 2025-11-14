@@ -43,13 +43,15 @@ The link layer often provides services to detect and sometimes correct bit error
 #### **Parity Checks**
 **Single Parity Bit:**
 - The sender adds one extra bit so that the total number of 1s in the `d+1` bits is either **even** (even parity) or **odd** (odd parity).
-- The receiver counts the 1s. If the count doesn't match the expected parity (e.g., an odd number found with even parity), an error is detected. (INSERT FIGURE 6.4, ONE-BIT EVEN PARITY, HERE)
+- The receiver counts the 1s. If the count doesn't match the expected parity (e.g., an odd number found with even parity), an error is detected.
 - **Limitation:** Can only detect an **odd number of bit errors**. If an even number of bits are flipped, the error goes **undetected**. This is problematic with burst errors.
+![[Pasted image 20251114183342.png]]
 
 **Two-Dimensional Parity:**
 - A generalization that provides **error correction** capability.
 - The `d` data bits are arranged in an `i x j` matrix.
-- A parity bit is computed for each **row** and each **column**. The `i + j + 1` parity bits are sent as EDC. (INSERT FIGURE 6.5, TWO-DIMENSIONAL EVEN PARITY, HERE)
+- A parity bit is computed for each **row** and each **column**. The `i + j + 1` parity bits are sent as EDC.
+![[Pasted image 20251114183352.png]]
 - **Capabilities:**
     - Can **detect and correct** any **single-bit error**. The intersection of the row and column with parity errors identifies the corrupted bit.
     - Can **detect (but not correct)** any combination of **two errors**.
@@ -77,7 +79,9 @@ CRC is a powerful error-detection technique widely used in the **link layer**, 
 - **Modulo-2 Arithmetic:** The core of CRC calculations. It is binary arithmetic without carries or borrows.
     - Addition and subtraction are both equivalent to the **bitwise XOR** operation.
     - Example: `1011 XOR 0101 = 1110`.
-- **Calculating R (the CRC bits):** `R = remainder( (D • 2^r) / G )` (INSERT FIGURE 6.7, A SAMPLE CRC CALCULATION, HERE)
+![[Pasted image 20251114183420.png]]
+- **Calculating R (the CRC bits):** `R = remainder( (D • 2^r) / G )` 
+![[Pasted image 20251114183433.png]]
 - **Strengths:**
     - Can detect all **burst errors** shorter than `r+1` bits.
     - Can detect any **odd number** of bit errors.
@@ -90,7 +94,8 @@ CRC is a powerful error-detection technique widely used in the **link layer**, 
 
 This section addresses the problem of coordinating access to a **shared broadcast channel** (e.g., Ethernet, wireless LANs), where multiple nodes are connected to the same communication medium.
 - **The Multiple Access Problem:** How to coordinate the transmissions of multiple sending and receiving nodes to a single, shared broadcast channel to avoid, or recover from, **collisions**.
-- **Collision:** When two or more nodes transmit at the same time, their signals "collide," become intertwined, and the frames are **lost**, wasting channel bandwidth. (INSERT FIGURE 6.8, VARIOUS MULTIPLE ACCESS CHANNELS, HERE)
+- **Collision:** When two or more nodes transmit at the same time, their signals "collide," become intertwined, and the frames are **lost**, wasting channel bandwidth.
+![[Pasted image 20251114183444.png]]
 
 **Ideally, a multiple access protocol should have the following characteristics:**
 1. **High throughput when only one node is active:** A single active node should be able to use the full channel rate, R bps.
@@ -112,7 +117,8 @@ These protocols divide the broadcast channel's resources to avoid collisions ent
     - **Perfectly fair:** Each node gets a dedicated rate of **R/N bps**.
 - **Disadvantages:**
     - **Inefficient:** A node is limited to R/N bps **even if it is the only node with data to send**.
-    - **Fixed Delay:** A node must always wait for its turn, even if the channel is idle. (INSERT FIGURE 6.9, TDM AND FDM EXAMPLE, HERE)
+    - **Fixed Delay:** A node must always wait for its turn, even if the channel is idle.
+![[Pasted image 20251114183458.png]]
 
 **2. Frequency-Division Multiplexing (FDM)**
 - **Concept:** The channel's frequency spectrum is divided into **N different frequency bands**, each with a bandwidth of R/N. Each node is assigned its own dedicated frequency band.
@@ -134,7 +140,8 @@ This is a simple random access protocol with specific assumptions to make analys
 **Protocol Operation:**
 1. When a node has a new frame, it transmits at the beginning of the next slot.
 2. If no collision occurs, the transmission is successful. The node is done.
-3. If a collision occurs, the node detects it. The node then **retransmits the frame in each subsequent slot with probability `p`** until it is successful. (INSERT FIGURE 6.10, SLOTTED ALOHA OPERATION, HERE)
+3. If a collision occurs, the node detects it. The node then **retransmits the frame in each subsequent slot with probability `p`** until it is successful.
+![[Pasted image 20251114183509.png]]
 
 **Advantages:**
 - **Single Active Node:** A single node can use the **full channel rate, R bps**.
@@ -149,8 +156,9 @@ This is a simple random access protocol with specific assumptions to make analys
 **Pure ALOHA (Unslotted ALOHA)**
 - **Operation:** A fully decentralized protocol. When a frame first arrives, the node **immediately transmits** it in its entirety.
 - **Collision Handling:** If a collision occurs, the node **immediately retransmits the frame with probability `p`** after the transmission is complete. Otherwise, it waits one frame transmission time and tries again.
-- **Vulnerability Period:** For a frame starting at time `t₀` to be successful, no other node can start transmitting in the interval `[t₀ - 1, t₀ + 1]`. This is a **2-unit time** window. (INSERT FIGURE 6.11, INTERFERING TRANSMISSIONS IN PURE ALOHA, HERE)
+- **Vulnerability Period:** For a frame starting at time `t₀` to be successful, no other node can start transmitting in the interval `[t₀ - 1, t₀ + 1]`. This is a **2-unit time** window.
 - **Efficiency:** The maximum efficiency of pure ALOHA is **1/(2e) ≈ 0.18**. This is **half the efficiency of slotted ALOHA**, which is the price paid for being completely unslotted and decentralized.
+![[Pasted image 20251114183520.png]]
 ### **Carrier Sense Multiple Access (CSMA)**
 CSMA protocols introduce two simple, polite rules to reduce the chance of collisions, inspired by human conversation:
 1. **Carrier Sensing: "Listen before speaking."** A node listens to the channel (**senses the carrier**) before transmitting. If the channel is busy, it waits.
@@ -158,7 +166,8 @@ CSMA protocols introduce two simple, polite rules to reduce the chance of collis
 
 **Why Do Collisions Still Occur in CSMA?**
 - Due to **channel propagation delay**. A signal takes time to travel across the medium.
-- **Scenario:** Node B starts transmitting. Its signal hasn't reached Node D yet. Node D senses the channel as idle and starts transmitting, leading to a collision. (INSERT FIGURE 6.12, CSMA WITH COLLIDING TRANSMISSIONS, HERE)
+- **Scenario:** Node B starts transmitting. Its signal hasn't reached Node D yet. Node D senses the channel as idle and starts transmitting, leading to a collision.
+![[Pasted image 20251114183533.png]]
 ### **CSMA with Collision Detection (CSMA/CD)**
 This is the protocol used in **Ethernet**. It combines carrier sensing with collision detection to improve efficiency by not wasting time transmitting corrupted frames in full.
 **CSMA/CD Operation:**
@@ -166,8 +175,9 @@ This is the protocol used in **Ethernet**. It combines carrier sensing with col
 2. If the channel is idle, it starts transmitting. If busy, it waits until idle.
 3. **While transmitting,** the adapter monitors the channel for collisions.
 4. If the entire frame is transmitted without a collision, the process is done.
-5. If a collision is detected **during transmission**, the adapter **immediately aborts** the transmission. (INSERT FIGURE 6.13, CSMA WITH COLLISION DETECTION, HERE)
+5. If a collision is detected **during transmission**, the adapter **immediately aborts** the transmission. 
 6. After aborting, the adapter waits a **random** amount of time before returning to step 2.
+![[Pasted image 20251114183545.png]]
 
 **Binary Exponential Backoff:**
 - This is the algorithm used to determine the random wait time after a collision. It ensures stability by adapting the wait time based on how many collisions a frame has experienced.
@@ -214,8 +224,8 @@ DOCSIS is the protocol used in cable internet access networks. It provides a fas
 - The **Cable Modem Termination System (CMTS)** at the headend communicates with thousands of residential **cable modems**.
 - **Downstream (CMTS → Modems):** A pure broadcast channel from a single sender (the CMTS), so no multiple access problem.
 - **Upstream (Modems → CMTS):** A shared broadcast channel where multiple modems can transmit, requiring a multiple access protocol.
-
-**How DOCSIS Works (Upstream Channel):** (INSERT FIGURE 6.14, DOCSIS UPSTREAM AND DOWNSTREAM, HERE)
+![[Pasted image 20251114183559.png]]
+**How DOCSIS Works (Upstream Channel):**
 1. **TDM-like Structure:** The upstream channel is divided into time intervals containing **mini-slots**.
 2. **Centralized Allocation (Taking-Turns):** The CMTS sends a **MAP message** (downstream) to explicitly grant specific mini-slots to specific cable modems for data transmission. This **prevents collisions** for data frames.
 3. **Random Access for Requests:** To tell the CMTS it has data to send, a modem transmits a **mini-slot-request frame** during a special set of mini-slots reserved for this purpose. These requests are sent using a **random access** method and **can collide**.
@@ -229,6 +239,7 @@ DOCSIS is the protocol used in cable internet access networks. It provides a fas
 
 ### **Switched Local Area Networks**
 **Core Concept:** A network where hosts and routers are connected by **link-layer switches**. These switches operate at the link layer, forwarding **frames** (not datagrams) based on **MAC addresses**, not IP addresses.
+![[Pasted image 20251114183627.png]]
 ### **Link-Layer Addressing and ARP**
 #### **MAC Addresses**
 - **What they are:** A unique, 6-byte (48-bit) identifier assigned to a device's network adapter (interface).
@@ -243,6 +254,7 @@ DOCSIS is the protocol used in cable internet access networks. It provides a fas
 #### **Why Both IP and MAC Addresses? (Layered Independence)**
 1. **Protocol Neutrality:** LANs must support various network-layer protocols (IP, IPX), not just IP.
 2. **Independence:** To keep layers as independent building blocks, each needs its own addressing scheme.
+![[Pasted image 20251114183637.png]]
 #### **Address Resolution Protocol (ARP)**
 - **Purpose:** To resolve a **network-layer IP address** to a **link-layer MAC address** for a destination on the **same subnet**.
 - **Analogy:** ARP is to IP/MAC resolution as **DNS** is to hostname/IP resolution, but ARP only works within a local subnet.
@@ -260,6 +272,8 @@ DOCSIS is the protocol used in cable internet access networks. It provides a fas
 - **Key Characteristics of ARP:**
     - **Plug-and-Play:** ARP tables are built automatically; no manual configuration is needed.
     - **Architectural Placement:** ARP straddles the boundary between the link and network layers, as it uses link-layer framing but contains network-layer addresses.
+![[Pasted image 20251114183800.png]]
+![[Pasted image 20251114183809.png]]
 ### **Sending a Datagram Off the Subnet**
 **The Scenario:** A host needs to send a datagram to a destination on a **different subnet**. This requires traversing a router.
 **Key Insight:** The host does **not** use the final destination's MAC address. Instead, it uses the MAC address of the **first-hop router** (the "default gateway").
@@ -272,7 +286,9 @@ DOCSIS is the protocol used in cable internet access networks. It provides a fas
 6. **Second Hop:** The forwarding table dictates the datagram should be sent out the interface with IP 222.222.222.220.
 7. **ARP for Final Host:** The router's second interface uses **ARP** to find the **MAC address** of the final destination host (222.222.222.222).
 8. **Final Delivery:** The router creates a _new_ frame with the **destination MAC address of the final host** and sends it onto Subnet 2.
+![[Pasted image 20251114183818.png]]
 ### **Ethernet**
+![[Pasted image 20251114183827.png]]
 **Dominance:** Ethernet is the dominant wired LAN technology due to its early deployment, simplicity, low cost, and constant evolution to higher data rates.
 **Evolution of Topology:**
 - **Past:** Bus topology (coaxial cable), which was a broadcast LAN.
