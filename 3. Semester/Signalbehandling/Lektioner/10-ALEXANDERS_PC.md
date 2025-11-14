@@ -1,0 +1,86 @@
+### Summary
+![[Pasted image 20251113081636.png]]
+
+### Recap: Realization
+![[Pasted image 20251113081829.png]]
+### Recap: Filter designs
+![[Pasted image 20251113081844.png]]
+### Recap: Design of digital IIR filter
+![[Pasted image 20251113081859.png]]
+### Bilinear z-transform
+![[Pasted image 20251113082335.png]]
+If you remember from this slide:
+![[Pasted image 20251002085314.png]]
+### Approximation of logarithm
+![[Pasted image 20251113082350.png]]
+INSERT NEW SLIDE OF THIS HERE:
+So you can approximate that the values are the same close to the value of $z = 1$.
+### Principle
+![[Pasted image 20251113082700.png]]
+### Non-linear frequency mapping
+![[Pasted image 20251113083043.png]]
+Substitute $z = e^{j \omega T}$ to understand the frequency response of the approximation on the previous slide.
+$\Omega$ is the frequency in s-domain analogue filter
+$\omega$ is the frequency in z-domain digital filter
+### Frequency warping
+![[Pasted image 20251113084250.png]]
+When mapping from the z-domain to the s-domain you have a limit, because of $f_{0} = \frac{f_{s}}{2}$ Nyquist frequency is the whole circle in the z-domain, while in the s-domain you usually have from $- \infty$ to $\infty$ so your spectrum becomes compressed.
+### Frequency prewarping
+![[Pasted image 20251113084912.png]]
+As you can see on the graph the digital filter is compressed compared to the prewarped analogue filter.
+How do we fix this? We prewarp.
+![[Pasted image 20251113085037.png]]
+As you can see the relationship is not linear, it is a tangential relationship. So first you map from the digital filter to the analogue filter and then you find the transfer function
+$$
+s = \frac{2}{T} \left(\frac{z-1}{z+1}\right)
+$$
+Then you substitute the calculated $s$ from the formula above into $H(s)$ and you will then have your $H(z)$
+#### Tangent relationship
+![[Pasted image 20251113085256.png]]
+#### Example (with analogue filter)
+![[Pasted image 20251113085454.png]]
+So when you want the analogue filter to have a cutoff frequency at $3 \space kHz$ and a stopband frequency at $6 \space kHz$, after its converted by bilinear z-transform it is warped to $2.7 \space kHz$ and $4.4 \space kHz$
+![[Pasted image 20251113085907.png]]
+#### Example (now with digital filter)
+![[Pasted image 20251113090000.png]]
+#### Example 
+![[Pasted image 20251113090127.png]]
+Here you don't use the stopband frequency directly, you just design a low pass filter and select an order that ensures the stopband frequency is satisfied.
+![[Pasted image 20251113090325.png]]
+When doing bilinear you use $c2d$ with 'tustin' which is the name of the creator of the bilinear z-transform
+### Design procedure
+![[Pasted image 20251113090557.png]]
+### Frequency-normalized design
+![[Pasted image 20251113092146.png]]
+For a frequency normalized you can just make the cut-off frequency 1, which is just a prototype filter, and then later you can insert the specific frequency you want the cut-off frequency to be at. So you just substitute $s = s \cdot \omega_{a}$ 
+![[Pasted image 20251113093152.png]]
+![[Pasted image 20251113093341.png]]
+The frequency-normalised is better because we don't approximate like we did in this previous slide:
+![[Pasted image 20251113082350.png]]
+When you make a frequency-normalised the cut-off frequency is at 1, which is when the approximation is perfectly mapped and not an approximation, when for example at $1 \space kHz$ or $10 \space kHz$ the approximation is not very accurate.
+### Advantage of using bilinear z transform
+![[Pasted image 20251113093502.png]]
+The bilinear z-transform is compressing which is why the filter is decreasing when approaching $f_{0}$
+### Bilinear z-transform v.s. Impulse invariant v.s. matched z-transform
+
+|Feature|Impulse Invariant|Matched Z-Transform|Bilinear Transform|
+|---|---|---|---|
+|**Core Idea**|Match the **impulse response**|Match the **pole/zero locations**|Map the **entire s-plane** to the z-plane using a algebraic substitution.|
+|**Pole Mapping**|$s = p_{k} \rightarrow z = e^{p_{k} T}$|$s = p_{k} \rightarrow z = e^{p_{k} T}$|Achieved via the transform $s = \frac{2}{T} \frac{z-1}{z+1}$|
+|**Zero Mapping**|No direct mapping. Zeros are a result of the process.|$s = z_{k} \rightarrow z = e^{z_{k}T}$|Achieved via the transform $s = \frac{2}{T} \frac{z-1}{z+1}$ (results in a nonlinear zero mapping)|
+|**Stability**|Preserved (poles inside unit circle if analog poles in LHP).|Preserved (poles inside unit circle if analog poles in LHP).|**Always Preserved** (LHP maps to inside unit circle).|
+|**Aliasing**|**Severe problem** if analog filter not band-limited.|Less severe, but still present.|**No Aliasing** (warping is the trade-off).|
+|**Frequency Warping**|No frequency warping.|No frequency warping.|**Yes, significant warping.**  <br>$\omega_{digital} = 2 \arctan(\frac{T}{2} \omega_{analog})$|
+|**DC Gain Match**|Must be explicitly normalized after design.|Must be explicitly normalized after design.|Automatically matches at DC if designed correctly.|
+|**Best For**|Simulating analog time-domain behavior (e.g., in control systems).|Designing filters where frequency response shape is primary (and warping is undesirable).|General-purpose discrete filter design, especially where aliasing is unacceptable (e.g., high-pass, band-stop).|
+#### Comparison:
+- **Impulse Invariant:** Its main strength (sampling the impulse response) is its main weakness, as it leads to aliasing. It's a niche method today.
+- **Matched Z-Transform:** A simple, intuitive method that preserves the general frequency response shape better than Impulse Invariant, but aliasing is still a concern.
+- **Bilinear Transform:** The most widely used method for general filter design. Its key feature is the **complete absence of aliasing**, which is a huge advantage. However, this comes at the cost of **frequency warping**, which must be compensated for ("pre-warping") during the design process to ensure the cut-off frequencies are correct.
+### Convert directly from an analogue prototype filter
+![[Pasted image 20251113094120.png]]
+#### Example
+![[Pasted image 20251113094303.png]]
+![[Pasted image 20251113094648.png]]
+### Summary
+INSERT FROM THE NEW SLIDE

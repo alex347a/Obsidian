@@ -1,0 +1,121 @@
+### Opsummering
+![[Pasted image 20251111121437.png]]
+![[Pasted image 20251111121656.png]]
+![[Pasted image 20251111121708.png]]
+![[Pasted image 20251111140117.png]]
+### Svingninger
+![[Pasted image 20251111122858.png]]
+## Simpel harmonisk bevægelse
+### Definition
+![[Pasted image 20251111123017.png]]
+### Hastighed og acceleration
+![[Pasted image 20251111123038.png]]
+Hastigheden er faseforskudt med 90 og accelerationen er forskudt med 180.
+### Translatorisk mekanisk system
+![[Pasted image 20251111123429.png]]
+###  Masse-fjeder system
+![[Pasted image 20251111123647.png]]
+Hvis man skal laplacetransformerer en simpel fjeder:
+$$
+\begin{align*}
+m \ddot{x} &=  f_{net}\\
+f_{net} &= -kx \\
+m \ddot{x} &= - kx\\
+\ddot{x} &= - \frac{k}{m} x + u\\
+\text{Laplace transformeret:}\\
+\left(s^{2} + \frac{k}{m}\right) X(s) &= u(s)\\
+\frac{X(s)}{u(s)} &= \frac{1}{s^{2} + \frac{k}{m}}\\
+s = \pm j \sqrt{\frac{k}{m}}
+\end{align*}
+$$
+Begge poler er på den imaginære akse.
+### Energi
+![[Pasted image 20251111123701.png]]
+![[Pasted image 20251111124731.png]]
+### Løsning til differentialligning
+![[Pasted image 20251111124740.png]]
+#### Eksempel
+![[Pasted image 20251111124802.png]]
+Dvs. for at ændre svingningsfrekvensen så gør massen ingen forskel, det er længden af pendulet og tyngdeacceleration der har en indflydelse.
+![[Pasted image 20251111125119.png]]
+Det svarer til forrige formel, hvor $I_{O}$ skal være $m \cdot l^{2}$ for at det svarer til formlen for en punktmasse, ud fra Steiners sætning:
+$$
+I_{z} = I_{C} + m l^{2}
+$$
+## Dæmpet simpel harmonisk bevægelse
+### Definition
+![[Pasted image 20251111131152.png]]
+Husk at $\gamma = \frac{b}{m}$, jo mere vi dæmper, jo lavere en frekvens får vi, hvilket kan ses på $\omega_{d}$ som er dæmpnings-vinkelfrekvensen. Hvis dæmpningen er stor nok fås reelle rødder, hvis kvadratroden giver 0 så får man to poler oveni hinanden, hvis dæmpningen er lav nok så er der komplekse rødder. Jo større $\omega_{d}$ er jo længere til venstre på den reelle akse vil polerne ligge.
+### Løsninger til 2. ordens differentialligningerne
+![[Pasted image 20251111131628.png]]
+### Dæmpet svingning
+Underdæmpet:
+![[Pasted image 20251111131719.png]]
+Jo større dæmpningen er, jo hurtigere konvergeres der mod 0.
+![[Pasted image 20251111132010.png]]
+### Aperiodisk grænsetilfælde
+Kritisk dæmpet
+![[Pasted image 20251111132128.png]]
+Overdæmpet (Det tager længere tid om at blive dæmpet end den kritiske dæmpning)
+![[Pasted image 20251111132141.png]]
+Dvs. komplekse poler betyder at der bliver oscillation omkring hvilepunktet. Når der er reelle poler så bliver der dæmpet uden at det oscillere. 
+### Løsninger
+![[Pasted image 20251111132454.png]]
+## Tvunget harmonisk bevægelse
+### Definition
+![[Pasted image 20251111132549.png]]
+Det svarer til en fjeder med en dæmpning, men der er også en tilføjet kraft.
+Homogen differentialligning er når den ene side giver nul.
+![[Pasted image 20251111132732.png]]
+Der er en partikulær del og en homogen del.
+Den partikulære del er:
+$$
+A_{0} \cos(\omega_{t} t - \alpha)
+$$
+Den homogene del er:
+$$
+A e^{- \gamma t/2} \cos(\omega_{d} t + \phi)
+$$
+Hvis tiden går mod uendelig går den homogene del mod 0 og dermed dominerer den partikulære del.
+### Løsning til differentialligning
+![[Pasted image 20251111132958.png]]
+### Resonans
+![[Pasted image 20251111133157.png]]
+Frekvensanalyse (bode plot) fortæller kun noget om den stationære del.
+![[Pasted image 20251111133305.png]]
+Dette er $\omega_{d}$
+Se dette forrige slide:
+![[Pasted image 20251111131152.png]]
+## Frekvensdomæne-beskrivelse af svingninger
+![[Pasted image 20251111133449.png]]
+![[Pasted image 20251111134156.png]]
+Det afhænger både af begyndelsesbetingelsen for positionen og hastigheden. Normalt når vi kun kigger på den stationære del og ikke begyndelsesbetingelserne:
+$$
+s^{2} Z(s) = - \Phi Z(s)
+$$
+Hvor begyndelsesbetingelserne for positionen og hastigheden er henholdsvis:
+$$
+-sz(0) - \frac{dz}{dt} (0)
+$$
+Vi får to poler og et nulpunkt, fordi det er et andenordenspolynomium i nævneren og et førsteordens i tælleren.
+![[Pasted image 20251111133516.png]]
+Ved at invers Laplace transformere så kan det ses at hvis brøkerne deles op er der et cosinusled og et sinusled.
+Så i virkeligheden betyder det at hvis der ikke er en starthastighed så afhænger det kun af cosinus, mens hvis den har så afhænger det også af sinus.
+![[Pasted image 20251111134317.png]]
+### Polers position ift. hvilken dæmpning systemet har
+![[Pasted image 20251111134336.png]]
+Her kan man tydeligt se hvor polerne ligger ift. om systemet er underdæmpet, kritisk dæmpet eller overdæmpet, idet det svarer henholdsvis til blå, grøn og rød.
+#### Eksempel
+![[Pasted image 20251111134910.png]]
+Rettet til $y(0)$ i stedet for $q(0)$.
+![[Pasted image 20251111135038.png]]
+Efter man har lavet partialbrøksopløsning så har man koefficienter for konstanterne og så kan man dele brøkerne op i nogle der kan invers Laplace transformeres til cosinusser og sinusser. Dette kommer ikke fra et fysisk system fordi koefficienten for dæmpningen er negativ, hvilket betyder at det er en friktion der hjælper, hvilket ikke giver mening. Det er ustabilt, man kan også se det på at:
+$$
+-11 e^{3t}
+$$
+det er et led der eksponentielt stiger. Et stabilt system er når løsningen konvergerer mod 0. Tænk på signalbehandling, polerne SKAL være på venstre side af den imaginære akse.  Ligesom her
+![[Pasted image 20251002090154.png]]
+### Opsummering
+![[Pasted image 20251111121656.png]]
+![[Pasted image 20251111121708.png]]
+![[Pasted image 20251111140117.png]]
