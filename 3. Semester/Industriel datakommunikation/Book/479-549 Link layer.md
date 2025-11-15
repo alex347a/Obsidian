@@ -38,7 +38,6 @@ The link layer is implemented in a combination of **hardware and software**, an
 ### **Error-Detection and -Correction Techniques**
 The link layer often provides services to detect and sometimes correct bit errors introduced during transmission. These techniques involve the sender adding extra **Error-Detection and -Correction (EDC)** bits to the data (D). The receiver uses these bits to determine if the received data (D') is error-free.
 ![[Pasted image 20251114183327.png]]
-
 **Key Trade-off:** More robust error detection/correction techniques reduce the probability of **undetected errors** but incur a higher overhead (more EDC bits and more computation).
 #### **Parity Checks**
 **Single Parity Bit:**
